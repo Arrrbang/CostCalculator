@@ -35,7 +35,7 @@
         const result = await response.json();
 
         if (result.success) {
-          messageDiv.textContent = 'Login successful!';
+          window.location.href = 'dashboard.html';  // 새로운 페이지로 이동
         } else {
           messageDiv.textContent = 'Invalid username or password.';
         }
@@ -46,3 +46,4 @@
   </script>
 </body>
 </html>
+
