@@ -3,9 +3,6 @@
 <head>
   <title>Leaflet MAPS</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
@@ -13,12 +10,13 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
   <style>
     html, body {width: 100%; height: 100%; margin: 0; padding: 0;}
-    #map {position: absolute; top: 0; bottom: 0; right: 0; left: 0; height: 75vh;} /* Adjust height to 75% of the viewport */
+    #map {position: absolute; top: 0; bottom: 0; right: 0; left: 0; height: 100%;}
   </style>
 </head>
 <body>
   <div id="map"></div>
   <script>
+    // 지도 초기화
     var map = L.map('map').setView([33.0, -83.5], 7);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -26,9 +24,10 @@
     }).addTo(map);
 
     var markers = []; // 마커를 저장할 배열
+    var minZoomForMarkers = 10; // 마커 표시 최소 줌 레벨
 
-    // JSON 파일에서 데이터를 로드
-    fetch('./locations.json') // JSON 파일 경로
+    // JSON 데이터 로드
+    fetch('./locations.json') // JSON 경로
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch JSON');
@@ -36,7 +35,7 @@
         return response.json();
       })
       .then(locations => {
-        locations.forEach(function(location) {
+        locations.forEach(location => {
           var customIcon = L.AwesomeMarkers.icon({
             extraClasses: 'fa-rotate-0',
             icon: 'info-sign',
@@ -45,49 +44,50 @@
             prefix: 'glyphicon'
           });
 
-          var marker = L.marker([location.lat, location.lng], {icon: customIcon}).addTo(map);
+          var marker = L.marker([location.lat, location.lng], {icon: customIcon});
 
           if (location.SOSlink) {
-            // 마커: 팝업에 이름과 SOS 링크 표시
             marker.bindPopup(
-              `${location.name}<br><a href="javascript:void(0)" onclick="navigateTo('${location.SOSlink}')" style="text-decoration: none; color: blue;">SOS</a>`
+              `${location.name}<br>
+              <a href="javascript:void(0)" onclick="navigateTo('${location.SOSlink}')" style="text-decoration: none; color: blue;">SOS</a>`
             );
           } else {
-            // 다른 마커: 팝업에 이름만 표시
             marker.bindPopup(location.name);
           }
 
-          // 생성한 마커를 배열에 추가
-          markers.push(marker);
+          markers.push(marker); // 배열에 마커 저장
         });
+
+        updateMarkers(); // 초기 상태에서 마커 가시성 업데이트
       })
       .catch(error => console.error('Error loading JSON:', error));
 
-    // 페이지 이동 함수 (현재 창에서 이동)
+    // 마커 표시 상태 업데이트
+    function updateMarkers() {
+      var currentZoom = map.getZoom(); // 현재 줌 레벨
+      markers.forEach(marker => {
+        if (currentZoom >= minZoomForMarkers) {
+          if (!map.hasLayer(marker)) map.addLayer(marker); // 마커 추가
+        } else {
+          if (map.hasLayer(marker)) map.removeLayer(marker); // 마커 제거
+        }
+      });
+    }
+
+    // 줌 이벤트 핸들러
+    map.on('zoomend', updateMarkers);
+
+    // 페이지 이동 함수
     function navigateTo(link) {
       window.location.assign(link); // 현재 창에서 이동
     }
 
-    // 줌 이벤트에 따라 마커 표시 여부 제어
-    map.on('zoomend', function() {
-      var currentZoom = map.getZoom();
-      var minZoomForMarkers = 10; // 마커가 표시되기 위한 최소 줌 레벨
-
-      markers.forEach(marker => {
-        if (currentZoom >= minZoomForMarkers) {
-          map.addLayer(marker); // 마커 표시
-        } else {
-          map.removeLayer(marker); // 마커 숨김
-        }
-      });
-    });
-
-    // Add search control and keep it always open
+    // 검색 컨트롤 추가 및 항상 열려 있게 설정
     var geocoder = L.Control.geocoder({
       defaultMarkGeocode: false
     }).addTo(map);
 
-    geocoder._toggle(); // Ensure the search bar is always expanded
+    geocoder._toggle(); // 검색 바를 항상 확장된 상태로 유지
 
     geocoder.on('markgeocode', function(e) {
       var bbox = e.geocode.bbox;
@@ -102,3 +102,4 @@
   </script>
 </body>
 </html>
+
