@@ -24,7 +24,7 @@
     }).addTo(map);
 
     var markers = []; // 마커를 저장할 배열
-    var minZoomForMarkers = 2; // 마커 표시 최소 줌 레벨
+    var minZoomForMarkers = 5; // 마커 표시 최소 줌 레벨
 
     // JSON 데이터 로드
   fetch('./location.json')
@@ -38,12 +38,12 @@
     console.log('Loaded locations:', locations); // JSON 데이터 확인
     locations.forEach(location => {
       var customIcon = L.AwesomeMarkers.icon({
-        extraClasses: 'fa-rotate-0',
-        icon: 'info-sign',
-        iconColor: 'white',
-        markerColor: 'red',
-        prefix: 'glyphicon'
-      });
+  extraClasses: 'fa-rotate-0',
+  icon: 'info-sign', // 기본 아이콘 유지
+  iconColor: 'white', // 아이콘 색상
+  markerColor: 'red', // 마커 색상
+  prefix: 'glyphicon' // Glyphicons 사용
+});
 
       var marker = L.marker([location.lat, location.lng], {icon: customIcon});
 
