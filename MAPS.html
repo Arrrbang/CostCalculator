@@ -29,7 +29,7 @@
       {lat: 33.749, lng: -84.388, name: 'Atlanta, GA'},
       {lat: 33.0362, lng: -85.0319, name: 'LaGrange, GA'},
       {lat: 33.4700, lng: -81.9748, name: 'Augusta, GA'},
-      {lat: 32.0835, lng: -81.0998, name: 'Savannah, GA'}
+      {lat: 32.0835, lng: -81.0998, name: 'Savannah, GA', link: 'USA/SAVANNAH/SOS/PAGE'}
     ];
 
     locations.forEach(function(location) {
@@ -40,8 +40,18 @@
             markerColor: 'red',
             prefix: 'glyphicon'
         });
-        L.marker([location.lat, location.lng], {icon: customIcon}).addTo(map)
-          .bindPopup(location.name);
+
+        var marker = L.marker([location.lat, location.lng], {icon: customIcon}).addTo(map);
+        
+        if (location.link) {
+          // Savannah 마커: 팝업에 이름과 SOS 링크 표시
+          marker.bindPopup(
+            `${location.name}<br><a href="${location.link}" target="_blank" style="text-decoration: none; color: blue;">SOS</a>`
+          );
+        } else {
+          // 다른 마커: 팝업에 이름만 표시
+          marker.bindPopup(location.name);
+        }
     });
 
     // Add search control and keep it always open
