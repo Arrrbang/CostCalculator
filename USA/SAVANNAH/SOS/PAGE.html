@@ -134,7 +134,7 @@
     // Fetch JSON data
     async function fetchData() {
       try {
-        const response = await fetch('USA/SAVANNAH/SOS/TABLE'); // JSON 경로
+        const response = await fetch('USA/SAVANNAH/SOS/TABLE.json'); // JSON 경로
         const data = await response.json();
         dataNonDiplomat = data.nonDiplomat;
         dataDiplomat = data.diplomat;
