@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +19,7 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       width: 500px;
-      margin-bottom: 10px; /* 각 박스 사이 간격 */
+      margin-bottom: 10px;
       text-align: center;
     }
     h2 {
@@ -45,7 +44,7 @@
       font-size: 18px;
     }
     tr:nth-child(1) {
-      border-bottom: 1px dashed #8BC34A; /* 외교화물 유무와 CBM 사이에 점선 추가 */
+      border-bottom: 1px dashed #8BC34A;
     }
     label {
       font-weight: bold;
@@ -53,29 +52,29 @@
     .checkbox-group {
       display: flex;
       align-items: center;
-      justify-content: flex-start; /* 왼쪽 정렬 */
-      gap: 50px; /* 두 체크박스 사이 간격 */
+      justify-content: flex-start;
+      gap: 50px;
     }
     select, input[type="checkbox"] {
       margin: 5px 0;
     }
     /* 현지 비용 스타일링 */
     .result-row {
-      display: table; /* 테이블 구조로 변경하여 중앙 정렬 */
+      display: table;
       width: 100%;
       padding: 10px 0;
     }
     .result-label {
       display: table-cell;
       font-size: 18px;
-      text-align: left; /* 왼쪽 정렬 */
+      text-align: left;
       font-weight: bold;
-      padding-left: 40px; /* 왼쪽에 여백 추가로 오른쪽으로 이동한 효과 */
+      padding-left: 40px;
     }
     .result-value {
       display: table-cell;
       font-size: 18px;
-      text-align: middle; /* 중앙 정렬 */
+      text-align: middle;
       padding-right: 0px;
     }
   </style>
@@ -101,15 +100,11 @@
           </select>
         </td>
       </tr>
-      <!-- 추가된 드롭다운 -->
       <tr>
         <td>CONTAINER TYPE</td>
         <td>
           <select id="container-dropdown" style="width: 100%;">
             <option value="">-- Select an Option --</option>
-            <option value="CONSOLE">CONSOLE</option>
-            <option value="20DRY">20DRY</option>
-            <option value="40HC">40HC</option>
           </select>
         </td>
       </tr>
@@ -126,22 +121,29 @@
   </div>
 
   <script>
-    const dataNonDiplomat = {
-      "A": 100,
-      "B": 200,
-      "C": 300
-    };
-
-    const dataDiplomat = {
-      "X": 400,
-      "Y": 500,
-      "Z": 600
-    };
+    let dataNonDiplomat = {};
+    let dataDiplomat = {};
+    let containerTypes = [];
 
     const dropdown = document.getElementById('cbm-dropdown');
+    const containerDropdown = document.getElementById('container-dropdown');
     const result = document.getElementById('result');
     const nonDiplomat = document.getElementById('non-diplomat');
     const diplomat = document.getElementById('diplomat');
+
+    // Fetch JSON data
+    async function fetchData() {
+      try {
+        const response = await fetch('USA/SAVANNAH/SOS/TABLE'); // JSON 경로
+        const data = await response.json();
+        dataNonDiplomat = data.nonDiplomat;
+        dataDiplomat = data.diplomat;
+        containerTypes = data.containerType;
+        updateContainerDropdown();
+      } catch (error) {
+        console.error('Failed to fetch data:', error);
+      }
+    }
 
     function updateDropdown(data) {
       dropdown.innerHTML = '<option value="">-- Select an Option --</option>';
@@ -150,6 +152,16 @@
         option.value = key;
         option.textContent = key;
         dropdown.appendChild(option);
+      });
+    }
+
+    function updateContainerDropdown() {
+      containerDropdown.innerHTML = '<option value="">-- Select an Option --</option>';
+      containerTypes.forEach(type => {
+        const option = document.createElement('option');
+        option.value = type;
+        option.textContent = type;
+        containerDropdown.appendChild(option);
       });
     }
 
@@ -175,6 +187,9 @@
       const selectedValue = dropdown.value;
       result.textContent = dataNonDiplomat[selectedValue] || dataDiplomat[selectedValue] || 'Value not found';
     });
+
+    // Load JSON data on page load
+    fetchData();
   </script>
 </body>
 </html>
