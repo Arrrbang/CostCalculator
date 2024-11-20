@@ -24,6 +24,7 @@
       padding: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       border-radius: 5px;
+      z-index: 1000;
     }
     #search-input {
       width: 300px;
@@ -32,6 +33,27 @@
     #search-button {
       padding: 5px 10px;
     }
+    #results {
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      width: 320px;
+      max-height: 200px;
+      overflow-y: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      z-index: 1000;
+    }
+    #results div {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+    }
+    #results div:hover {
+      background: #f0f0f0;
+    }
   </style>
 </head>
 <body>
@@ -39,6 +61,7 @@
     <input type="text" id="search-input" placeholder="Search for a location" />
     <button id="search-button">Search</button>
   </div>
+  <div id="results"></div>
   <div id="map"></div>
   <script>
     // 지도 초기화
@@ -65,10 +88,10 @@
           // Leaflet Awesome Marker 설정
           var customIcon = L.AwesomeMarkers.icon({
             extraClasses: 'fa-rotate-0',
-            icon: 'info-sign', // 기본 아이콘 유지
-            iconColor: 'white', // 아이콘 색상
-            markerColor: 'red', // 마커 색상
-            prefix: 'glyphicon' // Glyphicons 사용
+            icon: 'info-sign',
+            iconColor: 'white',
+            markerColor: 'red',
+            prefix: 'glyphicon'
           });
 
           var marker = L.marker([location.lat, location.lng], {icon: customIcon});
@@ -122,17 +145,30 @@
         .then(response => response.json())
         .then(results => {
           if (results.length > 0) {
-            var location = results[0];
-            map.setView([location.lat, location.lon], 15); // 검색 결과로 지도 이동
-            L.marker([location.lat, location.lon]).addTo(map)
-              .bindPopup(`${location.display_name}`)
-              .openPopup();
+            handleSearchResults(results); // 검색 결과 목록 표시
           } else {
             alert('Location not found.');
           }
         })
         .catch(error => console.error('Error with Nominatim API:', error));
     });
+
+    // 검색 결과 표시 함수
+    function handleSearchResults(data) {
+      const resultsContainer = document.getElementById('results');
+      resultsContainer.innerHTML = '';
+
+      data.forEach(result => {
+        const resultElement = document.createElement('div');
+        resultElement.textContent = result.display_name;
+        resultElement.onclick = () => moveToLocation(result.lat, result.lon);
+        resultsContainer.appendChild(resultElement);
+      });
+    }
+
+    function moveToLocation(lat, lon) {
+      map.setView([lat, lon], 15); // 줌 레벨 15
+    }
   </script>
 </body>
 </html>
