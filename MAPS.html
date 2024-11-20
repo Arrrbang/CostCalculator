@@ -27,14 +27,14 @@
     var minZoomForMarkers = 2; // 마커 표시 최소 줌 레벨
 
     // JSON 데이터 로드
-    fetch('./locations.json') // JSON 경로
+    fetch('./location.json') // JSON 경로
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch JSON');
         }
         return response.json();
       })
-      .then(locations => {
+      .then(location => {
         locations.forEach(location => {
           var customIcon = L.AwesomeMarkers.icon({
             extraClasses: 'fa-rotate-0',
