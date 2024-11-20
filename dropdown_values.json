@@ -1,0 +1,17 @@
+{
+    "nonDiplomat": {
+        "A": 100,
+        "B": 200,
+        "C": 300
+    },
+    "diplomat": {
+        "X": 400,
+        "Y": 500,
+        "Z": 600
+    },
+    "containerType": [
+        "CONSOLE",
+        "20DRY",
+        "40HC"
+    ]
+}
