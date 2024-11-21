@@ -125,7 +125,7 @@
     function verifyToken() {
       const token = localStorage.getItem('token'); // 로컬 스토리지에서 토큰 가져오기
       if (!token) {
-        alert('You are not logged in. Redirecting to login page.');
+        alert('로그인이 해제되었습니다. 다시 로그인해주세요.');
         window.location.href = 'index.html'; // 로그인 페이지로 리다이렉션
         return;
       }
