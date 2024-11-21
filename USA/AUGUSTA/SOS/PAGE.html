@@ -2,89 +2,124 @@
 <html>
 <head>
   <title>Dropdown with Conditional Logic</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
+ <style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* 반응형으로 조정 */
+    max-width: 500px; /* 최대 너비 */
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  h2 {
+    background-color: #8BC34A;
+    color: white;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+  }
+
+  table {
+    width: 100%; /* 테이블이 컨테이너 크기에 맞게 확장 */
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  td {
+    padding: 10px;
+    vertical-align: middle;
+    white-space: nowrap; /* 줄바꿈 방지 */
+  }
+
+  td:first-child {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  tr:nth-child(1) {
+    border-bottom: 1px dashed #8BC34A;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px; /* 모바일에서도 자연스럽게 간격 조정 */
+    white-space: nowrap; /* 줄바꿈 방지 */
+    flex-wrap: wrap; /* 공간이 부족할 경우 다음 줄로 배치 */
+  }
+
+  select, input[type="checkbox"] {
+    margin: 5px 0;
+    width: 100%; /* 부모 컨테이너 너비에 맞추기 */
+    box-sizing: border-box; /* 패딩과 테두리를 포함한 크기 계산 */
+  }
+
+  /* 현지 비용 스타일링 */
+  .result-row {
+    display: table;
+    width: 100%;
+    padding: 10px 0;
+    white-space: nowrap; /* 줄바꿈 방지 */
+  }
+
+  .result-label {
+    display: table-cell;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+
+  .result-value {
+    display: table-cell;
+    font-size: 18px;
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  /* 반응형 미디어 쿼리 */
+  @media (max-width: 768px) {
     .form-container {
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      width: 500px;
-      margin-bottom: 10px;
-      text-align: center;
+      width: 100%; /* 모바일에서는 화면 전체 너비 사용 */
+      padding: 15px; /* 여백 줄이기 */
     }
-    h2 {
-      background-color: #8BC34A;
-      color: white;
-      padding: 10px 0;
-      margin: 0;
-      border-radius: 5px 5px 0 0;
+
+    .checkbox-group {
+      flex-wrap: wrap; /* 체크박스가 공간이 부족하면 다음 줄로 넘기기 */
+      gap: 10px; /* 간격 줄이기 */
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-    td {
-      padding: 10px;
-      vertical-align: middle;
-    }
+
     td:first-child {
-      text-align: center;
-      font-weight: bold;
-      font-size: 18px;
+      font-size: 14px; /* 모바일에서 글씨 크기 줄이기 */
     }
-    tr:nth-child(1) {
-      border-bottom: 1px dashed #8BC34A;
+
+    table {
+      font-size: 14px; /* 테이블 전체 글씨 크기 축소 */
     }
-    label {
-      font-weight: bold;
-    }
-    .checkbox-group {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 50px;
-    }
-    select, input[type="checkbox"] {
-      margin: 5px 0;
-    }
-    /* 현지 비용 스타일링 */
-    .result-row {
-      display: table;
-      width: 100%;
-      padding: 10px 0;
-    }
-    .result-label {
-      display: table-cell;
-      font-size: 18px;
-      text-align: left;
-      font-weight: bold;
-      padding-left: 40px;
-    }
-    .result-value {
-      display: table-cell;
-      font-size: 18px;
-      text-align: middle;
-      padding-right: 0px;
-    }
-    .checkbox-group {
-    white-space: nowrap; /* 줄바꿈 방지 */
   }
-      td {
-    white-space: nowrap; /* 줄바꿈 방지 */
-  }
-    
-  </style>
+</style>
+
 </head>
 <body>
   <!-- 첫 번째 박스 -->
