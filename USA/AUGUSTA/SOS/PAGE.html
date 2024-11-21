@@ -149,6 +149,7 @@
     align-items: center; /* 그룹 전체를 가운데 정렬 */
     gap: 10px; /* 체크박스 간 간격 */
     margin-bottom: 20px; /* CBM과의 간격 */
+    margin-top: 15px; /*외교화물 유무 타이틀과 간격*/
   }
 
   .checkbox-group label {
@@ -201,7 +202,12 @@
     text-align: right; /* 결과 텍스트 오른쪽 정렬 */
     flex: 1;
   }
-
+/* "외교화물 유무" 글씨 크기 키우기 */
+  td:first-child {
+    font-size: 1.4rem; /* 글씨 크기 키움 */
+    font-weight: bold; /* 굵기 추가 */
+    margin-bottom: 10px; /* 아래쪽 간격 추가 */
+  }
 }
 
 
