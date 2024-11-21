@@ -91,6 +91,13 @@
       color: red;
       font-size: 14px;
     }
+
+    #caps-lock-warning {
+      margin-top: 10px;
+      color: orange;
+      font-size: 14px;
+      display: none; /* 초기 상태에서는 숨김 */
+    }
   </style>
 </head>
 <body>
@@ -101,12 +108,29 @@
     <form id="login-form">
       <input type="text" id="username" placeholder="Username" required>
       <input type="password" id="password" placeholder="Password" required>
+      <div id="caps-lock-warning">Caps Lock이 켜져 있습니다.</div> <!-- Caps Lock 경고 -->
       <button type="submit">Login</button>
     </form>
     <div id="message"></div>
   </div>
 
   <script>
+    // Caps Lock 경고 표시
+    const passwordInput = document.getElementById('password');
+    const capsLockWarning = document.getElementById('caps-lock-warning');
+
+    passwordInput.addEventListener('keydown', (event) => {
+      if (event.getModifierState('CapsLock')) {
+        capsLockWarning.style.display = 'block';
+      } else {
+        capsLockWarning.style.display = 'none';
+      }
+    });
+
+    passwordInput.addEventListener('blur', () => {
+      capsLockWarning.style.display = 'none'; // 입력 필드에서 포커스를 벗어나면 경고 숨김
+    });
+
     document.getElementById('login-form').addEventListener('submit', async (e) => {
       e.preventDefault();
 
@@ -139,4 +163,3 @@
   </script>
 </body>
 </html>
-
