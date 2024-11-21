@@ -67,7 +67,49 @@
     }
     .leaflet-popup-content {
           white-space: nowrap; /* 텍스트 줄바꿈 방지 */
-    
+    }
+      @media (max-width: 480px) {
+    #map {
+      height: calc(100vh - 10%); /* 지도를 전체 화면에 가깝게 확장 */
+    }
+
+    .leaflet-popup-content {
+      font-size: 1.5rem; /* 팝업 텍스트 크기 더 크게 */
+      max-width: 350px; /* 팝업 최대 너비 더 확대 */
+    }
+
+    .leaflet-popup-tip {
+      width: 15px; /* 팝업 화살표 크기 더 확대 */
+      height: 15px;
+    }
+
+    .leaflet-marker-icon {
+      transform: scale(2); /* 마커 크기 더 확대 */
+    }
+
+    .leaflet-marker-shadow {
+      transform: scale(2); /* 마커 그림자 크기 더 확대 */
+    }
+      /* 검색창 스타일 */
+  #search-container {
+    top: 15px; /* 상단 간격 */
+    right: 10px; /* 우측 간격 */
+    padding: 15px; /* 내부 여백 증가 */
+    gap: 10px; /* 입력 필드와 버튼 간 간격 증가 */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* 그림자 강조 */
+  }
+
+  #search-input {
+    width: 250px; /* 검색창 너비 확대 */
+    font-size: 1.2rem; /* 글씨 크기 확대 */
+    padding: 10px; /* 입력 필드 내부 여백 증가 */
+  }
+
+  #search-button {
+    font-size: 1.2rem; /* 버튼 텍스트 크기 확대 */
+    padding: 10px 15px; /* 버튼 내부 여백 증가 */
+  }
+        
   </style>
 </head>
 <body>
