@@ -89,7 +89,7 @@
       fetch('https://backend-beta-lemon.vercel.app/verifyToken', {
         method: 'POST',
         headers: {
-          'Authorization': Bearer ${token}, // 토큰 전송
+          'Authorization': `Bearer ${token}`, // 토큰 전송
           'Content-Type': 'application/json'
         }
       })
@@ -121,6 +121,16 @@
     var markers = []; // 마커를 저장할 배열
     var minZoomForMarkers = 7; // 마커 표시 최소 줌 레벨
 
+    // 팝업 크기를 동적으로 변경하는 함수
+    function resizePopup(popup, zoomLevel) {
+      const baseSize = 150; // 기본 팝업 크기
+      const scaleFactor = 20; // 줌 레벨에 따른 크기 증가량
+      const newWidth = baseSize + (zoomLevel - minZoomForMarkers) * scaleFactor;
+    
+      popup.getElement().style.width = `${newWidth}px`;
+      popup.getElement().style.fontSize = `${14 + (zoomLevel - minZoomForMarkers)}px`; // 폰트 크기 증가
+    }
+    
     // JSON 데이터 로드
     fetch('./location.json')
       .then(response => {
@@ -145,8 +155,8 @@
 
           if (location.SOSlink) {
             marker.bindPopup(
-              ${location.name}<br>
-              <a href="javascript:void(0)" onclick="navigateTo('${location.SOSlink}')" style="text-decoration: none; color: blue;">SOS</a>
+              `${location.name}<br>
+              <a href="javascript:void(0)" onclick="navigateTo('${location.SOSlink}')" style="text-decoration: none; color: blue;">SOS</a>`
             );
           } else {
             marker.bindPopup(location.name);
@@ -173,6 +183,16 @@
 
     // 줌 이벤트 핸들러
     map.on('zoomend', updateMarkers);
+    // 줌 이벤트 핸들러 - 팝업 크기 업데이트
+    map.on('zoomend', () => {
+      const currentZoom = map.getZoom();
+      markers.forEach(marker => {
+        const popup = marker.getPopup();
+        if (popup.isOpen()) {
+          resizePopup(popup, currentZoom);
+        }
+      });
+    });
 
     // 지도 클릭 시 검색 결과 숨김
     map.on('click', function() {
@@ -199,7 +219,7 @@
         return;
       }
 
-      var url = https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)};
+      var url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}`;
       fetch(url)
         .then(response => response.json())
         .then(results => {
@@ -231,3 +251,5 @@
   </script>
 </body>
 </html>
+
+~
