@@ -162,25 +162,28 @@
     // 페이지 로드 시 토큰 확인
     verifyToken();
 
-    // 지도 초기화
-    var map = L.map('map').setView([33.0, -83.5], 7);
+// 지도 초기화
+var map = L.map('map', {
+  minZoom: window.innerWidth <= 480 ? 4 : 7  // 화면 크기가 480px 이하일 경우 minZoom 4, 아니면 7
+}).setView([33.0, -83.5], window.innerWidth <= 480 ? 4 : 7);  // 기본 줌 레벨도 모바일에서만 4로 설정
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap contributors'
-    }).addTo(map);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© OpenStreetMap contributors'
+}).addTo(map);
 
-    var markers = []; // 마커를 저장할 배열
-    var minZoomForMarkers = 7; // 마커 표시 최소 줌 레벨
+var markers = []; // 마커를 저장할 배열
+var minZoomForMarkers = 7; // 마커 표시 최소 줌 레벨
 
-    // 팝업 크기를 동적으로 변경하는 함수
-    function resizePopup(popup, zoomLevel) {
-      const baseSize = 150; // 기본 팝업 크기
-      const scaleFactor = 20; // 줌 레벨에 따른 크기 증가량
-      const newWidth = baseSize + (zoomLevel - minZoomForMarkers) * scaleFactor;
-    
-      popup.getElement().style.width = `${newWidth}px`;
-      popup.getElement().style.fontSize = `${14 + (zoomLevel - minZoomForMarkers)}px`; // 폰트 크기 증가
-    }
+// 팝업 크기를 동적으로 변경하는 함수
+function resizePopup(popup, zoomLevel) {
+  const baseSize = 150; // 기본 팝업 크기
+  const scaleFactor = 20; // 줌 레벨에 따른 크기 증가량
+  const newWidth = baseSize + (zoomLevel - minZoomForMarkers) * scaleFactor;
+
+  popup.getElement().style.width = `${newWidth}px`;
+  popup.getElement().style.fontSize = `${14 + (zoomLevel - minZoomForMarkers)}px`; // 폰트 크기 증가
+}
+
     
     // JSON 데이터 로드
     fetch('./location.json')
