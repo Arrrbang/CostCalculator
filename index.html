@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 뷰포트 메타 태그 -->
   <title>Login Page</title>
   <!-- Noto Sans KR 폰트 추가 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -97,6 +98,20 @@
       color: orange;
       font-size: 14px;
       display: none; /* 초기 상태에서는 숨김 */
+    }
+    @media (max-width: 480px) {
+      .form-container {
+        width: 90%; /* 모바일 화면에서는 가로 90% */
+        padding: 30px 20px;
+      }
+      .form-container input,
+      .form-container button {
+        font-size: 14px;
+        padding: 12px;
+      }
+      .form-container p {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
