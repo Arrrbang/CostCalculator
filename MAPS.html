@@ -68,29 +68,32 @@
     .leaflet-popup-content {
           white-space: nowrap; /* 텍스트 줄바꿈 방지 */
     }
-      @media (max-width: 480px) {
-    #map {
-      height: calc(100vh - 10%); /* 지도를 전체 화면에 가깝게 확장 */
-    }
+@media (max-width: 480px) {
+  #map {
+    height: calc(100vh - 10%); /* 지도를 전체 화면에 가깝게 확장 */
+  }
 
-    .leaflet-popup-content {
-      font-size: 1.5rem; /* 팝업 텍스트 크기 더 크게 */
-      max-width: 350px; /* 팝업 최대 너비 더 확대 */
-    }
+  .leaflet-popup-content {
+    font-size: 1.5rem; /* 팝업 텍스트 크기 더 크게 */
+    max-width: 350px; /* 팝업 최대 너비 더 확대 */
+  }
 
-    .leaflet-popup-tip {
-      width: 15px; /* 팝업 화살표 크기 더 확대 */
-      height: 15px;
-    }
+  .leaflet-popup-tip {
+    width: 15px; /* 팝업 화살표 크기 더 확대 */
+    height: 15px;
+  }
 
-    .leaflet-marker-icon {
-      transform: scale(2); /* 마커 크기 더 확대 */
-    }
+  .leaflet-marker-icon {
+    transform: scale(2); /* 마커 크기 더 확대 */
+    width: auto; /* 자동 크기 설정 */
+    height: auto; /* 자동 크기 설정 */
+  }
 
-    .leaflet-marker-shadow {
-      transform: scale(2); /* 마커 그림자 크기 더 확대 */
-    }
-      /* 검색창 스타일 */
+  .leaflet-marker-shadow {
+    transform: scale(2); /* 마커 그림자 크기 더 확대 */
+  }
+
+  /* 검색창 스타일 */
   #search-container {
     top: 15px; /* 상단 간격 */
     right: 10px; /* 우측 간격 */
@@ -109,6 +112,7 @@
     font-size: 1.2rem; /* 버튼 텍스트 크기 확대 */
     padding: 10px 15px; /* 버튼 내부 여백 증가 */
   }
+}
         
   </style>
 </head>
@@ -227,17 +231,22 @@
     }
 
     // 줌 이벤트 핸들러
-    map.on('zoomend', updateMarkers);
-    // 줌 이벤트 핸들러 - 팝업 크기 업데이트
-    map.on('zoomend', () => {
-      const currentZoom = map.getZoom();
-      markers.forEach(marker => {
-        const popup = marker.getPopup();
-        if (popup.isOpen()) {
-          resizePopup(popup, currentZoom);
-        }
-      });
-    });
+map.on('zoomend', function () {
+  const zoomLevel = map.getZoom();
+
+  markers.forEach(marker => {
+    const popup = marker.getPopup();
+    if (popup.isOpen()) {
+      const popupElement = popup.getElement();
+      if (popupElement) {
+        // 팝업 너비와 폰트 크기 동적으로 조정
+        popupElement.style.width = `${150 + (zoomLevel * 10)}px`;
+        popupElement.style.fontSize = `${14 + (zoomLevel * 0.5)}px`;
+      }
+    }
+  });
+});
+
 
     // 지도 클릭 시 검색 결과 숨김
     map.on('click', function() {
