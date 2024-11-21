@@ -123,7 +123,21 @@
       font-size: 1.5rem; /* 제목 폰트 크기 확대 */
     }
 
+    table {
+      display: flex;
+      flex-direction: column; /* 테이블을 세로로 배치 */
+      gap: 15px; /* 행 간 간격 추가 */
+    }
+
+    tr {
+      display: flex;
+      flex-direction: column; /* 각 행을 세로로 배치 */
+      margin-bottom: 10px; /* 행 간 간격 */
+    }
+
     td {
+      display: block; /* 셀을 블록 요소로 변환 */
+      width: 100%; /* 셀이 전체 너비를 차지하도록 설정 */
       font-size: 1.2rem; /* 테이블 폰트 크기 확대 */
     }
 
@@ -136,6 +150,8 @@
     }
 
     .checkbox-group {
+      flex-direction: column; /* 체크박스를 세로로 정렬 */
+      align-items: flex-start;
       gap: 15px; /* 체크박스 간 간격 확대 */
     }
 
@@ -147,12 +163,14 @@
     select {
       font-size: 1.2rem; /* 드롭다운 메뉴 글씨 크기 확대 */
       padding: 10px; /* 드롭다운 터치 영역 확대 */
+      margin-top: 5px; /* 드롭다운과 라벨 간 간격 */
     }
 
     .result-label, .result-value {
       font-size: 1.4rem; /* 결과 텍스트 크기 확대 */
     }
   }
+
 </style>
 
 
