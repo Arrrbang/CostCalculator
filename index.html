@@ -2,25 +2,103 @@
 <html>
 <head>
   <title>Login Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: url('https://via.placeholder.com/800x600') no-repeat center center/cover;
+      filter: blur(4px);
+      position: relative;
+    }
+
+    .form-container {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      text-align: center;
+    }
+
+    .form-container img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+    }
+
+    .form-container h2 {
+      margin: 0 0 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: #0056b3;
+    }
+
+    #message {
+      margin-top: 15px;
+      color: red;
+      font-size: 14px;
+    }
+
+    /* 블러 효과 배경을 분리 */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: inherit;
+      filter: blur(8px);
+    }
+  </style>
 </head>
 <body>
-  <h2>Login</h2>
-  <form id="login-form">
-    <label for="username">Username:</label>
-    <input type="text" id="username" required>
-    <br>
-    <label for="password">Password:</label>
-    <input type="password" id="password" required>
-    <br>
-    <button type="submit">Login</button>
-  </form>
-
-  <div id="message"></div>
+  <div class="form-container">
+    <img src="https://via.placeholder.com/80" alt="User Icon">
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <div id="message"></div>
+  </div>
 
   <script>
     document.getElementById('login-form').addEventListener('submit', async (e) => {
       e.preventDefault();
-      
+
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
       const messageDiv = document.getElementById('message');
@@ -37,7 +115,7 @@
         if (result.success) {
           // JWT 토큰을 로컬 스토리지에 저장
           localStorage.setItem('token', result.token);
-          
+
           // 보호된 페이지로 이동
           window.location.href = 'MAPS.html';
         } else {
@@ -50,4 +128,3 @@
   </script>
 </body>
 </html>
-
