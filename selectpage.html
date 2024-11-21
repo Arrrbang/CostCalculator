@@ -1,62 +1,113 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>새로운 페이지</title>
-  <!-- 폰트 설정 -->
+  <title>Search Method Selection</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+
   <style>
+    /* 배경 이미지와 블러 효과 */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; 
+      background: 
+        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), /* 반투명 흰색 오버레이 */
+        url('https://arrrbang.github.io/frontend/image/background.jpg') no-repeat center center/cover;
+      filter: blur(10px); /* 블러 효과 */
+      z-index: -1; /* 콘텐츠 뒤로 이동 */
+    }
+
     body {
-      font-family: 'Noto Sans KR', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4; /* 배경 색상 */
+      font-family: 'Noto Sans KR', Arial, sans-serif; /* Noto Sans KR 폰트 적용 */
+      margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin: 0;
+      background-color: #f4f4f4; /* 배경색 */
+      position: relative;
     }
 
-.container {
-  background-color: #ffffff; /* 컨테이너 배경색 */
-  padding: 40px;
-  border-radius: 8px; /* 둥근 모서리 */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
+    .container {
+      background-color: #ffffff; /* 컨테이너 배경색 */
+      padding: 60px 50px;
+      border-radius: 12px; /* 둥근 모서리 */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 90%; /* 가로 90% */
+      max-width: 700px; /* 최대 너비 설정 */
+    }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px; /* 버튼 간 간격 */
-}
+    .container img {
+      height: 100px; /* 이미지 높이 설정 */
+      width: auto; /* 너비 자동 설정 */
+      margin-bottom: 20px; /* 이미지와 텍스트 간격 */
+    }
 
-.button {
-  padding: 15px 30px; /* 버튼 크기 조정 */
-  font-size: 16px;
-  color: white;
-  background-color: #8BC34A; /* 버튼 색상 */
-  border: none;
-  border-radius: 8px; /* 둥근 버튼 모서리 */
-  cursor: pointer;
-  transition: background-color 0.3s;
-  width: 150px; /* 버튼 너비 설정 */
-}
+    .container p {
+      font-size: 24px;
+      font-weight: bold; /* 볼드체 */
+      color: #555;
+      margin-top: 20px;
+    }
 
-.button:hover {
-  background-color: #6fae3b; /* 호버 시 색상 */
-}
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px; /* 버튼 간 간격 */
+      margin-top: 20px;
+    }
 
+    .button {
+      padding: 25px 50px; /* 버튼 크기 */
+      font-size: 20px; /* 버튼 글씨 크기 */
+      font-weight: bold; /* 버튼 글씨 두껍게 */
+      color: white;
+      background-color: #8BC34A; /* 버튼 색상 */
+      border: none;
+      border-radius: 8px; /* 둥근 버튼 모서리 */
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 250px; /* 버튼 너비 설정 */
+      white-space: nowrap; /* 글씨 줄바꿈 방지 */
+    }
+
+    .button:hover {
+      background-color: #6fae3b; /* 호버 시 색상 */
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        width: 90%; /* 모바일 화면에서 컨테이너 너비 90% */
+      }
+
+      .button {
+        width: 150px; /* 모바일에서 버튼 너비 조금 줄이기 */
+        font-size: 16px; /* 모바일에서 버튼 폰트 크기 줄이기 */
+      }
+
+      .container img {
+        height: 60px; /* 이미지 크기 줄이기 */
+      }
+    }
   </style>
 </head>
 <body>
+
   <div class="container">
+    <img src="https://arrrbang.github.io/frontend/image/pumexlogonew.png" alt="Login Icon">
+    <p>검색 방법을 선택해주세요.</p>
     <div class="button-container">
-      <button class="button" onclick="window.location.href='list-search.html'">리스트에서 검색</button>
-      <button class="button" onclick="window.location.href='map-search.html'">지도에서 검색</button>
+      <button class="button">리스트에서 검색</button>
+      <button class="button">지도에서 검색</button>
     </div>
   </div>
 
@@ -96,5 +147,6 @@
     // 페이지 로드 시 토큰 확인
     verifyToken();
   </script>
+
 </body>
 </html>
