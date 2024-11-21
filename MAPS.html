@@ -231,21 +231,17 @@
     }
 
     // 줌 이벤트 핸들러
-map.on('zoomend', function () {
-  const zoomLevel = map.getZoom();
-
-  markers.forEach(marker => {
-    const popup = marker.getPopup();
-    if (popup.isOpen()) {
-      const popupElement = popup.getElement();
-      if (popupElement) {
-        // 팝업 너비와 폰트 크기 동적으로 조정
-        popupElement.style.width = `${150 + (zoomLevel * 10)}px`;
-        popupElement.style.fontSize = `${14 + (zoomLevel * 0.5)}px`;
-      }
-    }
-  });
-});
+    map.on('zoomend', updateMarkers);
+    // 줌 이벤트 핸들러 - 팝업 크기 업데이트
+    map.on('zoomend', () => {
+      const currentZoom = map.getZoom();
+      markers.forEach(marker => {
+        const popup = marker.getPopup();
+        if (popup.isOpen()) {
+          resizePopup(popup, currentZoom);
+        }
+      });
+    });
 
 
     // 지도 클릭 시 검색 결과 숨김
