@@ -168,11 +168,16 @@
     margin-top: -5px; /* 드롭다운과 텍스트 간격 줄이기 */
   }
 
-  /* Container Type 관련 스타일 */
-  #container-dropdown {
-    margin-top: 15px; /* 드롭다운 상단 간격 조정 */
-    margin-bottom: 5px; /* 드롭다운 하단 간격 조정 */
+  /* CONTAINER TYPE 텍스트와 드롭다운 간 간격 줄이기 */
+  td:nth-child(1):nth-of-type(3) {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
+
+  #container-dropdown {
+    margin-top: -5px; /* CONTAINER TYPE 드롭다운과 텍스트 간격 */
+  }
+
    
   select {
     width: 90%; /* 드롭다운 메뉴 너비를 조정 */
