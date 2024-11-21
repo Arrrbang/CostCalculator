@@ -43,6 +43,7 @@
   td {
     padding: 10px;
     vertical-align: middle;
+    word-wrap: break-word; /* 글자 줄바꿈 허용 */
   }
 
   td:first-child {
@@ -65,10 +66,17 @@
     gap: 10px; /* 체크박스와 텍스트 간 간격 */
     flex-wrap: wrap; /* 공간이 부족하면 다음 줄로 넘기기 */
     white-space: normal; /* 텍스트 줄바꿈 허용 */
+    max-width: 100%; /* 부모 컨테이너 너비에 맞춤 */
   }
 
   input[type="checkbox"] {
     margin-right: 5px; /* 체크박스와 텍스트 사이 간격 추가 */
+  }
+
+  select {
+    width: 100%; /* 박스 너비에 맞추기 */
+    max-width: 100%; /* 부모 컨테이너를 넘지 않도록 제한 */
+    box-sizing: border-box; /* 패딩 포함하여 크기 계산 */
   }
 
   select, input[type="checkbox"] {
@@ -115,8 +123,13 @@
     table {
       font-size: 14px; /* 테이블 전체 글씨 크기 줄이기 */
     }
+
+    select {
+      font-size: 14px; /* 모바일에서 드롭다운 글씨 크기 줄이기 */
+    }
   }
 </style>
+
 
 
 </head>
