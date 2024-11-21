@@ -38,23 +38,24 @@
       color: #333;
     }
 
-    .form-container input {
-      width: 100%;
+    .form-container input,
+    .form-container button {
+      width: 90%; /* 입력 필드와 버튼 동일 너비 */
+      max-width: 320px; /* 최대 너비 제한 */
       padding: 10px;
       margin: 10px 0;
-      border: 1px solid #ddd;
       border-radius: 5px;
       font-size: 14px;
     }
 
+    .form-container input {
+      border: 1px solid #ddd;
+    }
+
     .form-container button {
-      width: 100%;
-      padding: 10px;
       background-color: #007BFF;
       color: white;
       border: none;
-      border-radius: 5px;
-      font-size: 16px;
       cursor: pointer;
     }
 
@@ -127,4 +128,3 @@
   </script>
 </body>
 </html>
-
