@@ -157,6 +157,12 @@
     text-align: left; /* 텍스트 정렬 */
   }
 
+     /* CBM, container 관련 스타일 */
+  #cbm-dropdown, #container-dropdown {
+  margin-top: 5px; /* 드롭다운과 텍스트 간격 */
+  margin-bottom: 10px; /* 다음 요소와의 간격 */
+}
+   
   select {
     width: 90%; /* 드롭다운 메뉴 너비를 조정 */
     margin: 5px auto; /* 드롭다운 메뉴를 가운데 정렬 */
@@ -176,6 +182,7 @@
     text-align: right; /* 결과 텍스트 오른쪽 정렬 */
     flex: 1;
   }
+
 }
 
 
@@ -230,7 +237,7 @@
       const token = localStorage.getItem('token'); // 로컬 스토리지에서 토큰 가져오기
       if (!token) {
         alert('로그인이 해제되었습니다. 다시 로그인해주세요.');
-        window.location.href = 'index.html'; // 로그인 페이지로 리다이렉션
+        window.location.href = '/frontend/index.html'; // 로그인 페이지로 리다이렉션
         return;
       }
 
