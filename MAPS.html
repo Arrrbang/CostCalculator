@@ -198,80 +198,79 @@ function updateMarkers() {
     }
   });
 }
-    
-    // JSON 데이터 로드
-    fetch('./location.json')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Failed to fetch JSON');
-        }
-        return response.json();
-      })
-      .then(locations => {
-        console.log('Loaded locations:', locations); // JSON 데이터 확인
-        locations.forEach(location => {
-          // Leaflet Awesome Marker 설정
-          var customIcon = L.AwesomeMarkers.icon({
-            extraClasses: 'fa-rotate-0',
-            icon: 'info-sign',
-            iconColor: 'white',
-            markerColor: 'red',
-            prefix: 'glyphicon'
-          });
 
-          var marker = L.marker([location.lat, location.lng], {icon: customIcon});
-
-          if (location.SOSlink) {
-            marker.bindPopup(
-              `${location.name}<br>
-              <a href="javascript:void(0)" onclick="navigateTo('${location.SOSlink}')" style="text-decoration: none; color: blue;">SOS</a>`
-            );
-          } else {
-            marker.bindPopup(location.name);
-          }
-
-          markers.push(marker); // 마커를 배열에 저장
-        });
-
-        updateMarkers(); // 초기 상태에서 마커 업데이트
-      })
-      .catch(error => console.error('Error loading JSON:', error));
-
-    // 마커 표시 상태 업데이트
-    function updateMarkers() {
-      var currentZoom = map.getZoom(); // 현재 줌 레벨
-      markers.forEach(marker => {
-        if (currentZoom >= minZoomForMarkers) {
-          if (!map.hasLayer(marker)) map.addLayer(marker); // 마커 추가
-        } else {
-          if (map.hasLayer(marker)) map.removeLayer(marker); // 마커 제거
-        }
-      });
+// JSON 데이터 로드 후 마커 생성 및 초기화
+fetch('./location.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Failed to fetch JSON');
     }
-
-    // 줌 이벤트 핸들러
-    map.on('zoomend', updateMarkers);
-    // 줌 이벤트 핸들러 - 팝업 크기 업데이트
-    map.on('zoomend', () => {
-      const currentZoom = map.getZoom();
-      markers.forEach(marker => {
-        const popup = marker.getPopup();
-        if (popup.isOpen()) {
-          resizePopup(popup, currentZoom);
-        }
+    return response.json();
+  })
+  .then(locations => {
+    console.log('Loaded locations:', locations); // JSON 데이터 확인
+    locations.forEach(location => {
+      // Leaflet Awesome Marker 설정
+      var customIcon = L.AwesomeMarkers.icon({
+        extraClasses: 'fa-rotate-0',
+        icon: 'info-sign',
+        iconColor: 'white',
+        markerColor: 'red',
+        prefix: 'glyphicon'
       });
+
+      var marker = L.marker([location.lat, location.lng], {icon: customIcon});
+
+      if (location.SOSlink) {
+        marker.bindPopup(
+          `${location.name}<br>
+          <a href="javascript:void(0)" onclick="navigateTo('${location.SOSlink}')" style="text-decoration: none; color: blue;">SOS</a>`
+        );
+      } else {
+        marker.bindPopup(location.name);
+      }
+
+      markers.push(marker); // 마커를 배열에 저장
     });
 
+    updateMarkers(); // 초기 상태에서 마커 업데이트
+  })
+  .catch(error => console.error('Error loading JSON:', error));
 
-    // 지도 클릭 시 검색 결과 숨김
-    map.on('click', function() {
-      document.getElementById('results').innerHTML = '';
-    });
+// 줌 레벨 변경 시 마커 상태 업데이트
+map.on('zoomend', updateMarkers);
 
-    // 페이지 이동 함수
-    function navigateTo(link) {
-      window.location.assign(link); // 현재 창에서 이동
+// 지도 클릭 시 검색 결과 숨김
+map.on('click', function() {
+  document.getElementById('results').innerHTML = '';
+});
+
+// 줌 이벤트 핸들러 - 팝업 크기 업데이트
+map.on('zoomend', () => {
+  const currentZoom = map.getZoom();
+  markers.forEach(marker => {
+    const popup = marker.getPopup();
+    if (popup.isOpen()) {
+      resizePopup(popup, currentZoom);
     }
+  });
+});
+
+// 팝업 크기를 동적으로 변경하는 함수
+function resizePopup(popup, zoomLevel) {
+  const baseSize = 150; // 기본 팝업 크기
+  const scaleFactor = 20; // 줌 레벨에 따른 크기 증가량
+  const newWidth = baseSize + (zoomLevel - minZoomForMarkersWeb) * scaleFactor;
+
+  popup.getElement().style.width = `${newWidth}px`;
+  popup.getElement().style.fontSize = `${14 + (zoomLevel - minZoomForMarkersWeb)}px`; // 폰트 크기 증가
+}
+
+// 페이지 이동 함수
+function navigateTo(link) {
+  window.location.assign(link); // 현재 창에서 이동
+}
+
 
     // Nominatim API로 검색 기능 추가
     document.getElementById('search-button').addEventListener('click', performSearch);
