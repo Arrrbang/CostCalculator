@@ -50,7 +50,7 @@
     #results {
       position: absolute;
       top: 50px;
-      right: 10px;
+      right: 0px;
       background: white;
       width: 220px;
       max-height: 200px;
@@ -67,6 +67,14 @@
     #results div:hover {
       background: #f0f0f0;
     }
+    
+     input[type="text"], input[type="search"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      font-size: 16px;
+    }
+    
     .leaflet-popup-content {
           white-space: nowrap; /* 텍스트 줄바꿈 방지 */
     }
@@ -165,6 +173,10 @@
 // 지도 초기화 (줌 레벨에 따른 마커 표시 설정)
 var map = L.map('map', {
   minZoom: 1,  // 최소 줌은 설정하지 않음
+  zoomControl: false,  // 기본 줌 컨트롤 비활성화
+  touchZoom: true,  // 터치 줌 활성화
+  dragging: true,   // 지도 드래그 가능
+  scrollWheelZoom: false  // 마우스 휠 줌 비활성화
 }).setView([33.0, -83.5], 7);  // 기본 줌 레벨은 7로 설정
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
