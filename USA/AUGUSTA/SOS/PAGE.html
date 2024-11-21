@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dropdown with Conditional Logic</title>
  <style>
   body {
@@ -22,7 +23,6 @@
     width: 90%; /* 반응형 크기 */
     max-width: 500px;
     margin: 0 auto;
-    margin-bottom: 10px;
     text-align: center;
   }
 
@@ -32,6 +32,7 @@
     padding: 10px 0;
     margin: 0;
     border-radius: 5px 5px 0 0;
+    font-size: 1.2rem; /* 폰트 크기 */
   }
 
   table {
@@ -44,12 +45,13 @@
     padding: 10px;
     vertical-align: middle;
     word-wrap: break-word; /* 글자 줄바꿈 허용 */
+    font-size: 1rem; /* 기본 폰트 크기 */
   }
 
   td:first-child {
     text-align: center;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.2rem; /* 테이블 주요 텍스트 크기 */
   }
 
   tr:nth-child(1) {
@@ -58,25 +60,30 @@
 
   label {
     font-weight: bold;
+    font-size: 1rem;
   }
 
   .checkbox-group {
     display: flex;
     align-items: center;
-    gap: 10px; /* 체크박스와 텍스트 간 간격 */
-    flex-wrap: wrap; /* 공간이 부족하면 다음 줄로 넘기기 */
-    white-space: normal; /* 텍스트 줄바꿈 허용 */
+    gap: 10px;
+    flex-wrap: nowrap; /* 줄바꿈 금지 */
+    white-space: nowrap; /* 텍스트 줄바꿈 금지 */
     max-width: 100%; /* 부모 컨테이너 너비에 맞춤 */
   }
 
   input[type="checkbox"] {
     margin-right: 5px; /* 체크박스와 텍스트 사이 간격 추가 */
+    width: 18px; /* 체크박스 크기 고정 */
+    height: 18px;
   }
 
   select {
-    width: 100%; /* 박스 너비에 맞추기 */
+    width: 100%; /* 드롭다운 너비 */
     max-width: 100%; /* 부모 컨테이너를 넘지 않도록 제한 */
     box-sizing: border-box; /* 패딩 포함하여 크기 계산 */
+    font-size: 1rem;
+    padding: 8px;
   }
 
   select, input[type="checkbox"] {
@@ -92,7 +99,7 @@
 
   .result-label {
     display: table-cell;
-    font-size: 18px;
+    font-size: 1.2rem;
     text-align: left;
     font-weight: bold;
     padding-left: 10px;
@@ -100,36 +107,53 @@
 
   .result-value {
     display: table-cell;
-    font-size: 18px;
+    font-size: 1.2rem;
     text-align: right;
     padding-right: 10px;
   }
 
-  /* 반응형 미디어 쿼리 */
+  /* 모바일 반응형 */
   @media (max-width: 768px) {
     .form-container {
-      width: 100%; /* 모바일에서는 전체 화면 사용 */
-      padding: 15px;
+      width: 90%; /* 모바일에서는 전체 너비의 90% */
+      padding: 20px; /* 내부 패딩 유지 */
     }
 
-    .checkbox-group {
-      gap: 10px; /* 모바일에서도 적당한 간격 유지 */
+    h2 {
+      font-size: 1.5rem; /* 제목 폰트 크기 확대 */
+    }
+
+    td {
+      font-size: 1.2rem; /* 테이블 폰트 크기 확대 */
     }
 
     td:first-child {
-      font-size: 14px; /* 모바일에서 글씨 크기 줄이기 */
+      font-size: 1.4rem; /* 주요 텍스트 폰트 크기 확대 */
     }
 
-    table {
-      font-size: 14px; /* 테이블 전체 글씨 크기 줄이기 */
+    label {
+      font-size: 1.2rem; /* 체크박스 라벨 크기 확대 */
+    }
+
+    .checkbox-group {
+      gap: 15px; /* 체크박스 간 간격 확대 */
+    }
+
+    input[type="checkbox"] {
+      width: 20px; /* 체크박스 크기 확대 */
+      height: 20px;
     }
 
     select {
-      font-size: 14px; /* 모바일에서 드롭다운 글씨 크기 줄이기 */
+      font-size: 1.2rem; /* 드롭다운 메뉴 글씨 크기 확대 */
+      padding: 10px; /* 드롭다운 터치 영역 확대 */
+    }
+
+    .result-label, .result-value {
+      font-size: 1.4rem; /* 결과 텍스트 크기 확대 */
     }
   }
 </style>
-
 
 
 </head>
