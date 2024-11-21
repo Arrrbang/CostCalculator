@@ -148,6 +148,7 @@
     flex-direction: column; /* 체크박스 그룹 세로 배치 */
     align-items: center; /* 그룹 전체를 가운데 정렬 */
     gap: 10px; /* 체크박스 간 간격 */
+    margin-bottom: 20px; /* CBM과의 간격 */
   }
 
   .checkbox-group label {
@@ -157,11 +158,16 @@
     text-align: left; /* 텍스트 정렬 */
   }
 
-     /* CBM, container 관련 스타일 */
-  #cbm-dropdown, #container-dropdown {
-  margin-top: 5px; /* 드롭다운과 텍스트 간격 */
-  margin-bottom: 10px; /* 다음 요소와의 간격 */
-}
+  /* CBM, Container Type 관련 간격 조정 */
+  #cbm-dropdown {
+    margin-top: 10px; /* CBM 드롭다운 상단 간격 */
+    margin-bottom: 5px; /* CBM 드롭다운과 제목 간 간격 */
+  }
+
+  #container-dropdown {
+    margin-top: 20px; /* Container Type 드롭다운 상단 간격 */
+    margin-bottom: 5px; /* Container Type 드롭다운과 제목 간 간격 */
+  }
    
   select {
     width: 90%; /* 드롭다운 메뉴 너비를 조정 */
