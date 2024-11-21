@@ -158,15 +158,20 @@
     text-align: left; /* 텍스트 정렬 */
   }
 
-  /* CBM, Container Type 관련 간격 조정 */
-  #cbm-dropdown {
-    margin-top: 10px; /* CBM 드롭다운 상단 간격 */
-    margin-bottom: 5px; /* CBM 드롭다운과 제목 간 간격 */
+  /* CBM 관련 스타일 */
+  td:nth-child(1) {
+    margin-bottom: 0; /* 텍스트 아래 여백 제거 */
+    padding-bottom: 0; /* 텍스트 아래 패딩 제거 */
   }
 
+  #cbm-dropdown {
+    margin-top: -5px; /* 드롭다운과 텍스트 간격 줄이기 */
+  }
+
+  /* Container Type 관련 스타일 */
   #container-dropdown {
-    margin-top: 20px; /* Container Type 드롭다운 상단 간격 */
-    margin-bottom: 5px; /* Container Type 드롭다운과 제목 간 간격 */
+    margin-top: 15px; /* 드롭다운 상단 간격 조정 */
+    margin-bottom: 5px; /* 드롭다운 하단 간격 조정 */
   }
    
   select {
