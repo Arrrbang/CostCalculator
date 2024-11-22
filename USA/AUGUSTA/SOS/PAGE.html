@@ -133,6 +133,12 @@
 
   /* 모바일 반응형 */
   @media (max-width: 480px) {
+    body {
+    align-items: flex-start; /* 화면 상단부터 배치 */
+    padding: 10px; /* 상하좌우 여백 추가 */
+    overflow-y: auto; /* 스크롤 활성화 */
+  }
+    
   .form-container {
     width: 90%; /* 화면의 90%만 차지 */
     margin: 0 auto 20px; /* 양옆 여백과 아래쪽 간격 추가 */
@@ -302,15 +308,15 @@
   <div class="form-container">
     <h2>추가 비용</h2>
     <div class="result-row">
-      <span class="result-label" style="font-size: 1rem; font-weight: normal;">SHTTULE CHARGE</span>
+      <span class="result-labe" style="font-size: 1rem; font-weight: normal;">SHTTULE CHARGE</span>
       <span class="result-value" id="shttule-charge">NONE</span>
     </div>
     <div class="result-row">
-      <span class="result-label" style="font-size: 1rem; font-weight: normal;">LONG CARRY CHARGE</span>
+      <span class="result-labe" style="font-size: 1rem; font-weight: normal;">LONG CARRY CHARGE</span>
       <span class="result-value" id="long-carry-charge">NONE</span>
     </div>
     <div class="result-row">
-      <span class="result-label" style="font-size: 1rem; font-weight: normal;">STAIR CHARGE</span>
+      <span class="result-labe" style="font-size: 1rem; font-weight: normal;">STAIR CHARGE</span>
       <span class="result-value" id="stair-charge">NONE</span>
     </div>
   </div>
