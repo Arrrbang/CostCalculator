@@ -451,8 +451,8 @@ function verifyToken() {
 
     // 컨테이너 드롭다운 및 결과값 초기화
     containerDropdown.value = "";
-    document.getElementById("thc-value").textContent = "NONE";
-    document.getElementById("poc-value").textContent = "NONE";
+    document.getElementById("thc-value").textContent = "None";
+    document.getElementById("poc-value").textContent = "None";
 
       // 기본 배송 비용 초기화
   document.getElementById("result").textContent = "None"; // 기본 배송 비용 초기화
@@ -460,19 +460,19 @@ function verifyToken() {
     // 추가 비용 초기화
     ["SHTTULE CHARGE", "LONG CARRY CHARGE", "STAIR CHARGE"].forEach((category) => {
       const id = category.toLowerCase().replace(/ /g, "-");
-      document.getElementById(id).textContent = "NONE";
+      document.getElementById(id).textContent = "None";
     });
   }
 
   // NON-DIPLOMAT/DIPLOMAT 영향을 받는 결과값 업데이트
   function updateDiplomatSensitiveResult(category) {
     const selectedContainer = containerDropdown.value;
-    let result = "NONE";
+    let result = "None";
 
     if (nonDiplomat.checked) {
-      result = basicExtraCost[category]?.NonDiplomat?.[selectedContainer] || "미설정";
+      result = basicExtraCost[category]?.NonDiplomat?.[selectedContainer] || "None";
     } else if (diplomat.checked) {
-      result = basicExtraCost[category]?.Diplomat?.[selectedContainer] || "NONE";
+      result = basicExtraCost[category]?.Diplomat?.[selectedContainer] || "None";
     }
 
     document.getElementById(`${category.toLowerCase()}-value`).textContent = result;
@@ -483,7 +483,7 @@ function verifyToken() {
     const selectedCBM = dropdown.value;
     ["SHTTULE CHARGE", "LONG CARRY CHARGE", "STAIR CHARGE"].forEach((category) => {
       const id = category.toLowerCase().replace(/ /g, "-");
-      const result = basicExtraCost[category]?.[selectedCBM] || "NONE";
+      const result = basicExtraCost[category]?.[selectedCBM] || "None";
       document.getElementById(id).textContent = result;
     });
   }
