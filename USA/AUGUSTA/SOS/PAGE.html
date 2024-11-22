@@ -356,8 +356,14 @@ async function fetchData() {
   }
 }
 
+// 드롭다운 초기화 함수
+function resetDropdown(dropdownElement, placeholder = '-- Select an Option --') {
+  dropdownElement.innerHTML = `<option value="">${placeholder}</option>`;
+}
+
+// CBM 드롭다운 업데이트
 function updateDropdown(data) {
-  dropdown.innerHTML = '<option value="">-- Select an Option --</option>';
+  resetDropdown(dropdown);
   Object.keys(data).forEach(key => {
     const option = document.createElement('option');
     option.value = key;
@@ -366,8 +372,9 @@ function updateDropdown(data) {
   });
 }
 
+// 컨테이너 타입 드롭다운 업데이트
 function updateContainerDropdown() {
-  containerDropdown.innerHTML = '<option value="">-- Select an Option --</option>';
+  resetDropdown(containerDropdown);
   containerTypes.forEach(type => {
     const option = document.createElement('option');
     option.value = type;
@@ -376,47 +383,47 @@ function updateContainerDropdown() {
   });
 }
 
-nonDiplomat.addEventListener('change', function () {
-  diplomat.checked = false; // Reset diplomat checkbox
-  if (this.checked) {
-    updateDropdown(dataNonDiplomat);
+// 체크박스 변경 시 공통 동작 처리
+function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
+  inactiveCheckbox.checked = false; // 다른 체크박스 초기화
+  if (activeCheckbox.checked) {
+    updateDropdown(dataToUpdate);
   } else {
-    dropdown.innerHTML = '<option value="">-- Select an Option --</option>';
+    resetDropdown(dropdown); // CBM 드롭다운 초기화
   }
-  
-  // 컨테이너 타입 초기화
+
+  // 컨테이너 드롭다운 및 THC 초기화
   containerDropdown.value = '';
-  document.getElementById('thc-value').textContent = 'NONE'; // THC 값도 초기화
+  document.getElementById('thc-value').textContent = 'NONE';
+}
+
+// THC, POC 등 결과값 업데이트
+function updateResult(category) {
+  const selectedContainer = containerDropdown.value;
+  let result = 'NONE'; // 기본값
+
+  if (nonDiplomat.checked) {
+    result = basicExtraCost[category]?.NonDiplomat?.[selectedContainer] || '미설정';
+  } else if (diplomat.checked) {
+    result = basicExtraCost[category]?.Diplomat?.[selectedContainer] || 'NONE';
+  }
+
+  // DOM에 결과 업데이트
+  document.getElementById(`${category.toLowerCase()}-value`).textContent = result;
+}
+
+// 이벤트 리스너
+nonDiplomat.addEventListener('change', function () {
+  handleCheckboxChange(nonDiplomat, diplomat, dataNonDiplomat);
 });
 
 diplomat.addEventListener('change', function () {
-  nonDiplomat.checked = false; // Reset non-diplomat checkbox
-  if (this.checked) {
-    updateDropdown(dataDiplomat);
-  } else {
-    dropdown.innerHTML = '<option value="">-- Select an Option --</option>';
-  }
-  
-  // 컨테이너 타입 초기화
-  containerDropdown.value = '';
-  document.getElementById('thc-value').textContent = 'NONE'; // THC 값도 초기화
+  handleCheckboxChange(diplomat, nonDiplomat, dataDiplomat);
 });
 
-
-// THC 값 업데이트 로직 수정
 containerDropdown.addEventListener('change', function () {
-  const selectedContainer = containerDropdown.value;
-
-  // 올바른 THC 값 결정
-  let thcResult = 'NONE'; // 기본값
-  if (nonDiplomat.checked) {
-    thcResult = basicExtraCost.THC?.NonDiplomat?.[selectedContainer] || '미설정';
-  } else if (diplomat.checked) {
-    thcResult = basicExtraCost.THC?.Diplomat?.[selectedContainer] || 'NONE';
-  }
-
-  // THC 결과값 DOM에 업데이트
-  document.getElementById('thc-value').textContent = thcResult;
+  updateResult('THC'); // THC 업데이트
+  updateResult('POC'); // POC 업데이트 (추가 가능)
 });
 
 dropdown.addEventListener('change', function () {
@@ -425,8 +432,6 @@ dropdown.addEventListener('change', function () {
 });
 
 // 데이터 로드 호출
-fetchData();
-
 fetchData();
 
   </script>
