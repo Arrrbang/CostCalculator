@@ -117,7 +117,14 @@
     padding-right: 10px;
   }
    
-     #thc-value {
+     #thc-value 
+     #poc-value,
+     #drayage-value,
+     #devanning-value,
+     #inspection-value,
+     #shttule-charge,
+     #long-carry-charge,
+     #stair-charge {
     font-size: 1rem; /* THC 결과값 크기만 줄임 */
   }
 
@@ -292,15 +299,15 @@
   <div class="form-container">
     <h2>추가 비용</h2>
     <div class="result-row">
-      <span class="result-label">SHTTULE CHARGE</span>
+      <span class="result-label" style="font-size: 1rem; font-weight: normal;">SHTTULE CHARGE</span>
       <span class="result-value" id="shttule-charge">NONE</span>
     </div>
     <div class="result-row">
-      <span class="result-label">LONG CARRY CHARGE</span>
+      <span class="result-label" style="font-size: 1rem; font-weight: normal;">LONG CARRY CHARGE</span>
       <span class="result-value" id="long-carry-charge">NONE</span>
     </div>
     <div class="result-row">
-      <span class="result-label">STAIR CHARGE</span>
+      <span class="result-label" style="font-size: 1rem; font-weight: normal;">STAIR CHARGE</span>
       <span class="result-value" id="stair-charge">NONE</span>
     </div>
   </div>
@@ -411,7 +418,7 @@ function verifyToken() {
     if (activeCheckbox.checked) {
       updateDropdown(dataToUpdate);
     } else {
-      resetDropdown(dropdown);
+      resetDropdown(dropdown); // CBM 드롭다운 초기화
     }
 
     // 컨테이너 드롭다운 및 결과값 초기화
@@ -419,6 +426,9 @@ function verifyToken() {
     document.getElementById("thc-value").textContent = "NONE";
     document.getElementById("poc-value").textContent = "NONE";
 
+      // 기본 배송 비용 초기화
+  document.getElementById("result").textContent = "None"; // 기본 배송 비용 초기화
+    
     // 추가 비용 초기화
     ["SHTTULE CHARGE", "LONG CARRY CHARGE", "STAIR CHARGE"].forEach((category) => {
       const id = category.toLowerCase().replace(/ /g, "-");
