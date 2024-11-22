@@ -373,22 +373,31 @@ function updateContainerDropdown() {
 }
 
 nonDiplomat.addEventListener('change', function () {
-  diplomat.checked = false;
+  diplomat.checked = false; // Reset diplomat checkbox
   if (this.checked) {
     updateDropdown(dataNonDiplomat);
   } else {
     dropdown.innerHTML = '<option value="">-- Select an Option --</option>';
   }
+  
+  // 컨테이너 타입 초기화
+  containerDropdown.value = '';
+  document.getElementById('thc-value').textContent = 'NONE'; // THC 값도 초기화
 });
 
 diplomat.addEventListener('change', function () {
-  nonDiplomat.checked = false;
+  nonDiplomat.checked = false; // Reset non-diplomat checkbox
   if (this.checked) {
     updateDropdown(dataDiplomat);
   } else {
     dropdown.innerHTML = '<option value="">-- Select an Option --</option>';
   }
+  
+  // 컨테이너 타입 초기화
+  containerDropdown.value = '';
+  document.getElementById('thc-value').textContent = 'NONE'; // THC 값도 초기화
 });
+
 
 // THC 값 업데이트 로직 수정
 containerDropdown.addEventListener('change', function () {
