@@ -134,18 +134,23 @@
 
   /* 모바일 반응형 */
   @media (max-width: 480px) {
-    body {
-    align-items: flex-start; /* 화면 상단부터 배치 */
-    padding: 10px; /* 상하좌우 여백 추가 */
-    overflow-y: auto; /* 스크롤 활성화 */
-  }
-    
-  .form-container {
-    width: 90%; /* 화면의 90%만 차지 */
-    margin: 0 auto 20px; /* 양옆 여백과 아래쪽 간격 추가 */
-    padding: 20px; /* 내부 여백 유지 */
-    text-align: center; /* 텍스트를 가운데 정렬 */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 중앙 정렬 */
+    justify-content: flex-start; /* 상단부터 시작 */
+    padding: 20px 10px; /* 여백 조정 */
+    margin: 0; /* 기본 margin 제거 */
+    min-height: 100vh; /* 화면 높이를 꽉 채우도록 설정 */
+    overflow-y: auto; /* 세로 스크롤 활성화 */
     box-sizing: border-box;
+  }
+
+  .form-container {
+    width: 100%; /* 화면 너비 꽉 채우기 */
+    max-width: 480px; /* 최대 너비 설정 */
+    margin: 10px 0; /* 상단 여백 추가 */
+    padding: 20px; /* 내부 여백 유지 */
     background-color: #ffffff; /* 흰색 배경 유지 */
     border-radius: 8px; /* 둥근 모서리 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 약간의 그림자 */
@@ -228,6 +233,19 @@
     text-align: right; /* 결과 텍스트 오른쪽 정렬 */
     flex: 1;
   }
+
+   #basic-delivery-label {
+      font-size: 1.4rem; /* 폰트 크기 */
+      font-weight: bold; /* 굵기 추가 */
+      text-align: left;
+    }
+    
+    #basic-delivery-value {
+      font-size: 1.4rem; /* 폰트 크기 */
+      font-weight: bold; /* 굵기 추가 */
+      text-align: right;
+    }
+    
 /* "외교화물 유무" 글씨 크기 키우기 */
   td:first-child {
     font-size: 1.4rem; /* 글씨 크기 키움 */
