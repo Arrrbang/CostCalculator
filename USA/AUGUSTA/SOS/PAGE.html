@@ -123,13 +123,16 @@
   font-size: 1.2rem; /* 폰트 크기 */
   font-weight: bold; /* 굵기 추가 */
   text-align: left;
+  display: inline-block; /* 기본 정렬 보장 */
 }
 
-#basic-delivery-value {
-  font-size: 1.2rem; /* 폰트 크기 */
-  font-weight: bold; /* 굵기 추가 */
-  text-align: right;
-}
+  #basic-delivery-value {
+    font-size: 1.2rem; /* 폰트 크기 */
+    font-weight: bold; /* 굵기 추가 */
+    text-align: right;
+    display: inline-block; /* 기본 정렬 보장 */
+    float: right; /* 결과값을 오른쪽으로 배치 */
+  }
 
 
   /* 모바일 반응형 */
@@ -295,8 +298,8 @@
 <div class="form-container">
   <h2>현지 비용</h2>
   <div class="result-row">
-    <span class="basic-delivery-label">기본 배송 비용</span>
-    <span class="basic-delivery-value" id="result">None</span>
+    <span id="basic-delivery-label">기본 배송 비용</span>
+    <span id="basic-delivery-value">None</span>
   </div>
   <!-- 새로운 항목들 -->
   <div class="additional-costs">
