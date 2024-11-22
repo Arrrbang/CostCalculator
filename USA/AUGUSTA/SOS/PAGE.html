@@ -348,134 +348,138 @@ function verifyToken() {
 
     // json 데이터 로드
     
-let dataNonDiplomat = {};
-let dataDiplomat = {};
-let containerTypes = [];
-let basicExtraCost = {};
+<script>
+  let dataNonDiplomat = {};
+  let dataDiplomat = {};
+  let containerTypes = [];
+  let basicExtraCost = {};
 
-const dropdown = document.getElementById('cbm-dropdown');
-const containerDropdown = document.getElementById('container-dropdown');
-const result = document.getElementById('result');
-const nonDiplomat = document.getElementById('non-diplomat');
-const diplomat = document.getElementById('diplomat');
+  const dropdown = document.getElementById("cbm-dropdown");
+  const containerDropdown = document.getElementById("container-dropdown");
+  const result = document.getElementById("result");
+  const nonDiplomat = document.getElementById("non-diplomat");
+  const diplomat = document.getElementById("diplomat");
 
-async function fetchData() {
-  try {
-    const tableResponse = await fetch('TABLE.json');
-    const tableData = await tableResponse.json();
-    dataNonDiplomat = tableData.nonDiplomat;
-    dataDiplomat = tableData.diplomat;
+  async function fetchData() {
+    try {
+      const tableResponse = await fetch("TABLE.json");
+      const tableData = await tableResponse.json();
+      dataNonDiplomat = tableData.nonDiplomat;
+      dataDiplomat = tableData.diplomat;
+      containerTypes = tableData.containerType;
 
-    containerTypes = tableData.containerType;
+      const extraCostResponse = await fetch("basicextracost.json");
+      basicExtraCost = await extraCostResponse.json();
 
-    const extraCostResponse = await fetch('basicextracost.json');
-    basicExtraCost = await extraCostResponse.json();
-
-    updateContainerDropdown();
-  } catch (error) {
-    console.error('Failed to fetch data:', error);
-  }
-}
-
-// 드롭다운 초기화 함수
-function resetDropdown(dropdownElement, placeholder = '-- Select an Option --') {
-  dropdownElement.innerHTML = `<option value="">${placeholder}</option>`;
-}
-
-// CBM 드롭다운 업데이트
-function updateDropdown(data) {
-  resetDropdown(dropdown);
-  Object.keys(data).forEach(key => {
-    const option = document.createElement('option');
-    option.value = key;
-    option.textContent = key;
-    dropdown.appendChild(option);
-  });
-}
-
-// 컨테이너 타입 드롭다운 업데이트
-function updateContainerDropdown() {
-  resetDropdown(containerDropdown);
-  containerTypes.forEach(type => {
-    const option = document.createElement('option');
-    option.value = type;
-    option.textContent = type;
-    containerDropdown.appendChild(option);
-  });
-}
-
-// 체크박스 변경 시 공통 동작 처리
-function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
-  inactiveCheckbox.checked = false; // 다른 체크박스 초기화
-  if (activeCheckbox.checked) {
-    updateDropdown(dataToUpdate);
-  } else {
-    resetDropdown(dropdown); // CBM 드롭다운 초기화
+      // 초기화
+      updateDropdown(dataNonDiplomat); // 기본으로 Non-Diplomat 데이터 로드
+      updateContainerDropdown();
+    } catch (error) {
+      console.error("Failed to fetch data:", error);
+    }
   }
 
-  // 컨테이너 드롭다운 및 THC 초기화
-  containerDropdown.value = '';
-  document.getElementById('thc-value').textContent = 'NONE'; // THC 초기화
-  document.getElementById('poc-value').textContent = 'NONE'; // POC 초기화
-
-  // 추가 비용 초기화
-  ['SHTTULE CHARGE', 'LONG CARRY CHARGE', 'STAIR CHARGE'].forEach(category => {
-    const id = category.toLowerCase().replace(/ /g, '-');
-    document.getElementById(id).textContent = 'NONE'; // 추가 비용 초기화
-  });
-
-// THC와 POC 결과값 업데이트
-function updateDiplomatSensitiveResult(category) {
-  const selectedContainer = containerDropdown.value;
-  let result = 'NONE'; // 기본값
-
-  if (nonDiplomat.checked) {
-    result = basicExtraCost[category]?.NonDiplomat?.[selectedContainer] || '미설정';
-  } else if (diplomat.checked) {
-    result = basicExtraCost[category]?.Diplomat?.[selectedContainer] || 'NONE';
+  // 드롭다운 초기화 함수
+  function resetDropdown(dropdownElement, placeholder = "-- Select an Option --") {
+    dropdownElement.innerHTML = `<option value="">${placeholder}</option>`;
   }
 
-  // DOM에 결과 업데이트
-  document.getElementById(`${category.toLowerCase()}-value`).textContent = result;
-}
+  // CBM 드롭다운 업데이트
+  function updateDropdown(data) {
+    resetDropdown(dropdown);
+    Object.keys(data).forEach((key) => {
+      const option = document.createElement("option");
+      option.value = key;
+      option.textContent = key;
+      dropdown.appendChild(option);
+    });
+  }
 
-// NON-DIPLOMAT/DIPLOMAT의 영향을 받지 않는 추가 비용 업데이트
-function updateAdditionalCosts() {
-  const selectedCBM = dropdown.value; // 현재 선택된 CBM 값
-  const categories = ['SHTTULE CHARGE', 'LONG CARRY CHARGE', 'STAIR CHARGE'];
+  // 컨테이너 타입 드롭다운 업데이트
+  function updateContainerDropdown() {
+    resetDropdown(containerDropdown);
+    containerTypes.forEach((type) => {
+      const option = document.createElement("option");
+      option.value = type;
+      option.textContent = type;
+      containerDropdown.appendChild(option);
+    });
+  }
 
-  categories.forEach(category => {
-    const id = category.toLowerCase().replace(/ /g, '-'); // ID 변환
-    let result = basicExtraCost[category]?.[selectedCBM] || 'NONE'; // JSON 데이터에서 값 가져오기
+  // 체크박스 변경 시 공통 동작 처리
+  function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
+    inactiveCheckbox.checked = false; // 다른 체크박스 초기화
+    if (activeCheckbox.checked) {
+      updateDropdown(dataToUpdate);
+    } else {
+      resetDropdown(dropdown); // CBM 드롭다운 초기화
+    }
 
-    document.getElementById(id).textContent = result; // DOM 업데이트
+    // 컨테이너 드롭다운 및 결과값 초기화
+    containerDropdown.value = "";
+    document.getElementById("thc-value").textContent = "NONE"; // THC 초기화
+    document.getElementById("poc-value").textContent = "NONE"; // POC 초기화
+
+    // 추가 비용 초기화
+    ["SHTTULE CHARGE", "LONG CARRY CHARGE", "STAIR CHARGE"].forEach((category) => {
+      const id = category.toLowerCase().replace(/ /g, "-");
+      document.getElementById(id).textContent = "NONE"; // 추가 비용 초기화
+    });
+  }
+
+  // THC와 POC 결과값 업데이트
+  function updateDiplomatSensitiveResult(category) {
+    const selectedContainer = containerDropdown.value;
+    let result = "NONE"; // 기본값
+
+    if (nonDiplomat.checked) {
+      result = basicExtraCost[category]?.NonDiplomat?.[selectedContainer] || "미설정";
+    } else if (diplomat.checked) {
+      result = basicExtraCost[category]?.Diplomat?.[selectedContainer] || "NONE";
+    }
+
+    // DOM에 결과 업데이트
+    document.getElementById(`${category.toLowerCase()}-value`).textContent = result;
+  }
+
+  // NON-DIPLOMAT/DIPLOMAT의 영향을 받지 않는 추가 비용 업데이트
+  function updateAdditionalCosts() {
+    const selectedCBM = dropdown.value; // 현재 선택된 CBM 값
+    const categories = ["SHTTULE CHARGE", "LONG CARRY CHARGE", "STAIR CHARGE"];
+
+    categories.forEach((category) => {
+      const id = category.toLowerCase().replace(/ /g, "-"); // ID 변환
+      let result = basicExtraCost[category]?.[selectedCBM] || "NONE"; // JSON 데이터에서 값 가져오기
+
+      document.getElementById(id).textContent = result; // DOM 업데이트
+    });
+  }
+
+  // 이벤트 리스너
+  nonDiplomat.addEventListener("change", function () {
+    handleCheckboxChange(nonDiplomat, diplomat, dataNonDiplomat);
   });
-}
 
-// 이벤트 리스너
-nonDiplomat.addEventListener('change', function () {
-  handleCheckboxChange(nonDiplomat, diplomat, dataNonDiplomat);
-});
+  diplomat.addEventListener("change", function () {
+    handleCheckboxChange(diplomat, nonDiplomat, dataDiplomat);
+  });
 
-diplomat.addEventListener('change', function () {
-  handleCheckboxChange(diplomat, nonDiplomat, dataDiplomat);
-});
+  containerDropdown.addEventListener("change", function () {
+    updateDiplomatSensitiveResult("THC"); // THC 업데이트
+    updateDiplomatSensitiveResult("POC"); // POC 업데이트
+  });
 
-containerDropdown.addEventListener('change', function () {
-  updateDiplomatSensitiveResult('THC'); // THC 업데이트
-  updateDiplomatSensitiveResult('POC'); // POC 업데이트
-});
+  dropdown.addEventListener("change", function () {
+    const selectedValue = dropdown.value;
+    result.textContent = dataNonDiplomat[selectedValue] || dataDiplomat[selectedValue] || "Value not found";
 
-dropdown.addEventListener('change', function () {
-  const selectedValue = dropdown.value;
-  result.textContent = dataNonDiplomat[selectedValue] || dataDiplomat[selectedValue] || 'Value not found';
+    // 추가 비용 업데이트
+    updateAdditionalCosts();
+  });
 
-  // 추가 비용 업데이트
-  updateAdditionalCosts();
-});
+  // 데이터 로드 호출
+  fetchData();
 
-// 데이터 로드 호출
-fetchData();
 
   </script>
 </body>
