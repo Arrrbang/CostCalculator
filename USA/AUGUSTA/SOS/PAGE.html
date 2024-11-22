@@ -28,6 +28,7 @@
     max-width: 500px;
     margin: 0 auto 30px;
     text-align: center;
+    min-height: auto;
   }
 
   h2 {
@@ -252,13 +253,37 @@
   </div>
 
   <!-- 두 번째 박스 -->
-  <div class="form-container">
-    <h2>현지 비용</h2>
+<div class="form-container">
+  <h2>현지 비용</h2>
+  <div class="result-row">
+    <span class="result-label">기본 배송 비용</span>
+    <span class="result-value" id="result">None</span>
+  </div>
+  <!-- 새로운 항목들 -->
+  <div class="additional-costs">
     <div class="result-row">
-      <span class="result-label">기본 배송 비용</span>
-      <span class="result-value" id="result">None</span>
+      <span class="result-label" style="font-size: 1rem; font-weight: normal;">THC</span>
+      <span class="result-value" id="thc-value">None</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label" style="font-size: 1rem; font-weight: normal;">POC</span>
+      <span class="result-value" id="poc-value">None</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label" style="font-size: 1rem; font-weight: normal;">DRAYAGE</span>
+      <span class="result-value" id="drayage-value">None</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label" style="font-size: 1rem; font-weight: normal;">DEVANNING</span>
+      <span class="result-value" id="devanning-value">None</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label" style="font-size: 1rem; font-weight: normal;">INSPECTION</span>
+      <span class="result-value" id="inspection-value">None</span>
     </div>
   </div>
+</div>
+
 
   <script>
     // 인증 확인: 토큰 검증
