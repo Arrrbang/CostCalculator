@@ -1,7 +1,14 @@
 {
   "THC": {
-    "20DRY": "20thc",
-    "40HC": "40hc",
-    "CONSOLE": "미설정"
+    "NonDiplomat": {
+      "20DRY": "20thc",
+      "40HC": "40hc",
+      "CONSOLE": "미설정"
+    },
+    "Diplomat": {
+      "20DRY": "D-20THC",
+      "40HC": "D-40THC",
+      "CONSOLE": "NONE"
+    }
   }
 }
