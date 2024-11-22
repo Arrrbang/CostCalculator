@@ -288,6 +288,23 @@
   </div>
 </div>
 
+  <!-- 추가된 컨테이너 -->
+  <div class="form-container">
+    <h2>추가 비용</h2>
+    <div class="result-row">
+      <span class="result-label">SHTTULE CHARGE</span>
+      <span class="result-value" id="shttule-charge">NONE</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label">LONG CARRY CHARGE</span>
+      <span class="result-value" id="long-carry-charge">NONE</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label">STAIR CHARGE</span>
+      <span class="result-value" id="stair-charge">NONE</span>
+    </div>
+  </div>
+
 
   <script>
     // 인증 확인: 토큰 검증
@@ -398,11 +415,17 @@ function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
 
   // 컨테이너 드롭다운 및 THC 초기화
   containerDropdown.value = '';
-  document.getElementById('thc-value').textContent = 'NONE';
-}
+  document.getElementById('thc-value').textContent = 'NONE'; // THC 초기화
+  document.getElementById('poc-value').textContent = 'NONE'; // POC 초기화
 
-// THC, POC 등 결과값 업데이트
-function updateResult(category) {
+  // 추가 비용 초기화
+  ['SHTTULE CHARGE', 'LONG CARRY CHARGE', 'STAIR CHARGE'].forEach(category => {
+    const id = category.toLowerCase().replace(/ /g, '-');
+    document.getElementById(id).textContent = 'NONE'; // 추가 비용 초기화
+  });
+
+// THC와 POC 결과값 업데이트
+function updateDiplomatSensitiveResult(category) {
   const selectedContainer = containerDropdown.value;
   let result = 'NONE'; // 기본값
 
@@ -416,6 +439,19 @@ function updateResult(category) {
   document.getElementById(`${category.toLowerCase()}-value`).textContent = result;
 }
 
+// NON-DIPLOMAT/DIPLOMAT의 영향을 받지 않는 추가 비용 업데이트
+function updateAdditionalCosts() {
+  const selectedCBM = dropdown.value; // 현재 선택된 CBM 값
+  const categories = ['SHTTULE CHARGE', 'LONG CARRY CHARGE', 'STAIR CHARGE'];
+
+  categories.forEach(category => {
+    const id = category.toLowerCase().replace(/ /g, '-'); // ID 변환
+    let result = basicExtraCost[category]?.[selectedCBM] || 'NONE'; // JSON 데이터에서 값 가져오기
+
+    document.getElementById(id).textContent = result; // DOM 업데이트
+  });
+}
+
 // 이벤트 리스너
 nonDiplomat.addEventListener('change', function () {
   handleCheckboxChange(nonDiplomat, diplomat, dataNonDiplomat);
@@ -426,13 +462,16 @@ diplomat.addEventListener('change', function () {
 });
 
 containerDropdown.addEventListener('change', function () {
-  updateResult('THC'); // THC 업데이트
-  updateResult('POC'); // POC 업데이트 (추가 가능)
+  updateDiplomatSensitiveResult('THC'); // THC 업데이트
+  updateDiplomatSensitiveResult('POC'); // POC 업데이트
 });
 
 dropdown.addEventListener('change', function () {
   const selectedValue = dropdown.value;
   result.textContent = dataNonDiplomat[selectedValue] || dataDiplomat[selectedValue] || 'Value not found';
+
+  // 추가 비용 업데이트
+  updateAdditionalCosts();
 });
 
 // 데이터 로드 호출
