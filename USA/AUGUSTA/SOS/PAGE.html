@@ -322,67 +322,83 @@
     verifyToken();
 
     // JSON 데이터 로드
-    let dataNonDiplomat = {};
-    let dataDiplomat = {};
-    let containerTypes = [];
+let dataNonDiplomat = {};
+let dataDiplomat = {};
+let containerTypes = [];
+let basicExtraCost = {}; // 변수명 통일
 
-    const dropdown = document.getElementById('cbm-dropdown');
-    const containerDropdown = document.getElementById('container-dropdown');
-    const result = document.getElementById('result');
-    const nonDiplomat = document.getElementById('non-diplomat');
-    const diplomat = document.getElementById('diplomat');
+const dropdown = document.getElementById('cbm-dropdown');
+const containerDropdown = document.getElementById('container-dropdown');
+const result = document.getElementById('result');
+const nonDiplomat = document.getElementById('non-diplomat');
+const diplomat = document.getElementById('diplomat');
 
-    async function fetchData() {
-      try {
-        const response = await fetch('TABLE.json'); // JSON 경로
-        const data = await response.json();
-        dataNonDiplomat = data.nonDiplomat;
-        dataDiplomat = data.diplomat;
-        containerTypes = data.containerType;
-        updateContainerDropdown();
-      } catch (error) {
-        console.error('Failed to fetch data:', error);
-      }
-    }
+async function fetchData() {
+  try {
+    const response = await fetch('TABLE.json'); // table JSON 경로
+    const data = await response.json();
+    dataNonDiplomat = data.nonDiplomat;
+    dataDiplomat = data.diplomat;
 
-    function updateDropdown(data) {
-      dropdown.innerHTML = '<option value="">-- Select an Option --</option>';
-      Object.keys(data).forEach(key => {
-        const option = document.createElement('option');
-        option.value = key;
-        option.textContent = key;
-        dropdown.appendChild(option);
-      });
-    }
+    // containerTypes를 정의한 뒤 updateContainerDropdown 호출
+    containerTypes = data.containerType;
+    updateContainerDropdown();
 
-    function updateContainerDropdown() {
-      containerDropdown.innerHTML = '<option value="">-- Select an Option --</option>';
-      containerTypes.forEach(type => {
-        const option = document.createElement('option');
-        option.value = type;
-        option.textContent = type;
-        containerDropdown.appendChild(option);
-      });
-    }
+    // basicextracost.json 파일 로드
+    const extraCostResponse = await fetch('basicextracost.json');
+    basicExtraCost = await extraCostResponse.json();
+  } catch (error) {
+    console.error('Failed to fetch data:', error);
+  }
+}
 
-    nonDiplomat.addEventListener('change', function() {
-      diplomat.checked = false; // Reset other checkbox
-      if (this.checked) {
-        updateDropdown(dataNonDiplomat);
-      } else {
-        dropdown.innerHTML = '<option value="">-- Select an Option --</option>';
-      }
-    });
+function updateDropdown(data) {
+  dropdown.innerHTML = '<option value="">-- Select an Option --</option>';
+  Object.keys(data).forEach(key => {
+    const option = document.createElement('option');
+    option.value = key;
+    option.textContent = key;
+    dropdown.appendChild(option);
+  });
+}
 
-    diplomat.addEventListener('change', function() {
-      nonDiplomat.checked = false; // Reset other checkbox
-      if (this.checked) {
-        updateDropdown(dataDiplomat);
-      } else {
-        dropdown.innerHTML = '<option value="">-- Select an Option --</option>';
-      }
-    });
+function updateContainerDropdown() {
+  containerDropdown.innerHTML = '<option value="">-- Select an Option --</option>';
+  containerTypes.forEach(type => {
+    const option = document.createElement('option');
+    option.value = type;
+    option.textContent = type;
+    containerDropdown.appendChild(option);
+  });
+}
 
+nonDiplomat.addEventListener('change', function () {
+  diplomat.checked = false; // Reset other checkbox
+  if (this.checked) {
+    updateDropdown(dataNonDiplomat);
+  } else {
+    dropdown.innerHTML = '<option value="">-- Select an Option --</option>';
+  }
+});
+
+diplomat.addEventListener('change', function () {
+  nonDiplomat.checked = false; // Reset other checkbox
+  if (this.checked) {
+    updateDropdown(dataDiplomat);
+  } else {
+    dropdown.innerHTML = '<option value="">-- Select an Option --</option>';
+  }
+});
+
+// containerDropdown 변경 시 THC 값 업데이트
+containerDropdown.addEventListener('change', function () {
+  const selectedContainer = containerDropdown.value;
+
+  // THC 결과값 업데이트
+  const thcResult = basicExtraCost.THC[selectedContainer] || '미설정';
+  document.getElementById('thc-value').textContent = thcResult;
+});
+ 
     dropdown.addEventListener('change', function() {
       const selectedValue = dropdown.value;
       result.textContent = dataNonDiplomat[selectedValue] || dataDiplomat[selectedValue] || 'Value not found';
