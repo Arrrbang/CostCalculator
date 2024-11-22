@@ -395,7 +395,7 @@ function verifyToken() {
 
   const dropdown = document.getElementById("cbm-dropdown");
   const containerDropdown = document.getElementById("container-dropdown");
-  const result = document.getElementById("result");
+  const result = document.getElementById("basic-delivery-value");
   const nonDiplomat = document.getElementById("non-diplomat");
   const diplomat = document.getElementById("diplomat");
 
@@ -460,7 +460,7 @@ function verifyToken() {
     document.getElementById("poc-value").textContent = "None";
 
       // 기본 배송 비용 초기화
-  document.getElementById("result").textContent = "None"; // 기본 배송 비용 초기화
+  document.getElementById("basic-delivery-value").textContent = "None"; // 기본 배송 비용 초기화
     
     // 추가 비용 초기화
     ["SHTTULE CHARGE", "LONG CARRY CHARGE", "STAIR CHARGE"].forEach((category) => {
