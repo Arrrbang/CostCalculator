@@ -325,7 +325,7 @@
 let dataNonDiplomat = {};
 let dataDiplomat = {};
 let containerTypes = [];
-let basicExtraCost = {}; // 변수명 통일
+let basicExtraCost = {};
 
 const dropdown = document.getElementById('cbm-dropdown');
 const containerDropdown = document.getElementById('container-dropdown');
@@ -335,18 +335,17 @@ const diplomat = document.getElementById('diplomat');
 
 async function fetchData() {
   try {
-    const response = await fetch('TABLE.json'); // table JSON 경로
-    const data = await response.json();
-    dataNonDiplomat = data.nonDiplomat;
-    dataDiplomat = data.diplomat;
+    const tableResponse = await fetch('TABLE.json');
+    const tableData = await tableResponse.json();
+    dataNonDiplomat = tableData.nonDiplomat;
+    dataDiplomat = tableData.diplomat;
 
-    // containerTypes를 정의한 뒤 updateContainerDropdown 호출
-    containerTypes = data.containerType;
-    updateContainerDropdown();
+    containerTypes = tableData.containerType;
 
-    // basicextracost.json 파일 로드
     const extraCostResponse = await fetch('basicextracost.json');
     basicExtraCost = await extraCostResponse.json();
+
+    updateContainerDropdown();
   } catch (error) {
     console.error('Failed to fetch data:', error);
   }
@@ -373,7 +372,7 @@ function updateContainerDropdown() {
 }
 
 nonDiplomat.addEventListener('change', function () {
-  diplomat.checked = false; // Reset other checkbox
+  diplomat.checked = false;
   if (this.checked) {
     updateDropdown(dataNonDiplomat);
   } else {
@@ -382,7 +381,7 @@ nonDiplomat.addEventListener('change', function () {
 });
 
 diplomat.addEventListener('change', function () {
-  nonDiplomat.checked = false; // Reset other checkbox
+  nonDiplomat.checked = false;
   if (this.checked) {
     updateDropdown(dataDiplomat);
   } else {
@@ -390,22 +389,30 @@ diplomat.addEventListener('change', function () {
   }
 });
 
-// containerDropdown 변경 시 THC 값 업데이트
 containerDropdown.addEventListener('change', function () {
   const selectedContainer = containerDropdown.value;
+  let thcResult = 'NONE'; // 기본값
+
+  if (nonDiplomat.checked) {
+    // NON-DIPLOMAT 체크된 경우
+    thcResult = basicExtraCost.THC.NonDiplomat[selectedContainer] || '미설정';
+  } else if (diplomat.checked) {
+    // DIPLOMAT 체크된 경우
+    thcResult = basicExtraCost.THC.Diplomat[selectedContainer] || 'NONE';
+  }
 
   // THC 결과값 업데이트
-  const thcResult = basicExtraCost.THC[selectedContainer] || '미설정';
   document.getElementById('thc-value').textContent = thcResult;
 });
- 
-    dropdown.addEventListener('change', function() {
-      const selectedValue = dropdown.value;
-      result.textContent = dataNonDiplomat[selectedValue] || dataDiplomat[selectedValue] || 'Value not found';
-    });
 
-    // Load JSON data on page load
-    fetchData();
+dropdown.addEventListener('change', function () {
+  const selectedValue = dropdown.value;
+  result.textContent = dataNonDiplomat[selectedValue] || dataDiplomat[selectedValue] || 'Value not found';
+});
+
+// JSON 데이터 로드
+fetchData();
+
   </script>
 </body>
 </html>
