@@ -321,7 +321,8 @@
     // 페이지 로드 시 토큰 확인
     verifyToken();
 
-    // JSON 데이터 로드
+    // json 데이터 로드
+    
 let dataNonDiplomat = {};
 let dataDiplomat = {};
 let containerTypes = [];
@@ -389,19 +390,19 @@ diplomat.addEventListener('change', function () {
   }
 });
 
+// THC 값 업데이트 로직 수정
 containerDropdown.addEventListener('change', function () {
   const selectedContainer = containerDropdown.value;
-  let thcResult = 'NONE'; // 기본값
 
+  // 올바른 THC 값 결정
+  let thcResult = 'NONE'; // 기본값
   if (nonDiplomat.checked) {
-    // NON-DIPLOMAT 체크된 경우
-    thcResult = basicExtraCost.THC.NonDiplomat[selectedContainer] || '미설정';
+    thcResult = basicExtraCost.THC?.NonDiplomat?.[selectedContainer] || '미설정';
   } else if (diplomat.checked) {
-    // DIPLOMAT 체크된 경우
-    thcResult = basicExtraCost.THC.Diplomat[selectedContainer] || 'NONE';
+    thcResult = basicExtraCost.THC?.Diplomat?.[selectedContainer] || 'NONE';
   }
 
-  // THC 결과값 업데이트
+  // THC 결과값 DOM에 업데이트
   document.getElementById('thc-value').textContent = thcResult;
 });
 
@@ -410,7 +411,9 @@ dropdown.addEventListener('change', function () {
   result.textContent = dataNonDiplomat[selectedValue] || dataDiplomat[selectedValue] || 'Value not found';
 });
 
-// JSON 데이터 로드
+// 데이터 로드 호출
+fetchData();
+
 fetchData();
 
   </script>
