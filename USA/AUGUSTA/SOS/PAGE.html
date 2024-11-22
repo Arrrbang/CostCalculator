@@ -99,10 +99,11 @@
 
   /* 현지 비용 스타일링 */
   .result-row {
-    display: table;
-    width: 100%;
-    padding: 10px 0;
-  }
+  display: flex; /* 플렉스 레이아웃으로 설정 */
+  justify-content: space-between; /* 양 끝으로 정렬 */
+  align-items: center; /* 세로 축 가운데 정렬 */
+  padding: 10px 0; /* 상하 간격 */
+}
 
   .result-label {
     display: table-cell;
@@ -123,17 +124,14 @@
   font-size: 1.2rem; /* 폰트 크기 */
   font-weight: bold; /* 굵기 추가 */
   text-align: left;
-  display: inline-block; /* 기본 정렬 보장 */
-  width: 50%;
 }
 
   #basic-delivery-value {
     font-size: 1.2rem; /* 폰트 크기 */
     font-weight: bold; /* 굵기 추가 */
     text-align: right;
-    display: inline-block; /* 기본 정렬 보장 */
     float: right; /* 결과값을 오른쪽으로 배치 */
-    margin-right: -5px; /* 결과값을 조금 왼쪽으로 이동 */
+    margin-right: 5px; /* 결과값을 조금 왼쪽으로 이동 */
   }
 
 
@@ -152,13 +150,14 @@
   }
 
   .form-container {
-    width: 100%; /* 화면 너비 꽉 채우기 */
+    width: 90%; /* 화면 너비 꽉 채우기 */
     max-width: 480px; /* 최대 너비 설정 */
     margin: 10px 0; /* 상단 여백 추가 */
     padding: 20px; /* 내부 여백 유지 */
     background-color: #ffffff; /* 흰색 배경 유지 */
     border-radius: 8px; /* 둥근 모서리 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 약간의 그림자 */
+    box-sizing: border-box; /* 패딩을 포함한 크기 계산 */
   }
 
   h2 {
