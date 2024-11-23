@@ -444,17 +444,11 @@ async function fetchData() {
     basicExtraCost = await extraCostResponse.json();
     console.log("basicextracost.json 데이터:", basicExtraCost);
 
-    // 데이터 확인
-    if (!dataNonDiplomat || !dataDiplomat || !containerTypes || !basicExtraCost) {
-      console.error("JSON 데이터가 제대로 로드되지 않았습니다.");
-      return;
-    }
-
     // 기본값 로드
     updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat);
     updateContainerDropdown();
     updateAdditionalCosts();
-    updateStairChargeDropdown();
+    updateStairChargeDropdown(); // 초기화
   } catch (error) {
     console.error("Failed to fetch data:", error);
   }
@@ -491,23 +485,26 @@ function updateContainerDropdown() {
 function updateStairChargeDropdown() {
   resetDropdown(stairCbmDropdown, "이동 CBM을 선택하세요");
 
-  if (!basicExtraCost["STAIR CHARGE"]) {
-    console.error("STAIR CHARGE 데이터가 없습니다.");
+  const selectedCBM = parseInt(dropdown.value, 10); // 상위 CBM 선택값
+  if (isNaN(selectedCBM)) {
+    console.log("CBM 값이 선택되지 않았습니다.");
     return;
   }
 
-  Object.keys(basicExtraCost["STAIR CHARGE"]).forEach((key) => {
+  // STAIR CBM 옵션 추가 (1 ~ selectedCBM 범위)
+  for (let i = 1; i <= selectedCBM; i++) {
     const option = document.createElement("option");
-    option.value = key;
-    option.textContent = key;
+    option.value = i;
+    option.textContent = i;
     stairCbmDropdown.appendChild(option);
-  });
+  }
 
+  // STAIR FLOOR 옵션 추가 (1 ~ 10 고정)
   resetDropdown(stairFloorDropdown, "이동할 층을 선택하세요");
   for (let i = 1; i <= 10; i++) {
     const option = document.createElement("option");
     option.value = i;
-    option.textContent = i;
+    option.textContent = `${i}층`;
     stairFloorDropdown.appendChild(option);
   }
 }
@@ -604,6 +601,7 @@ dropdown.addEventListener("change", function () {
     dataNonDiplomat[selectedValue] || dataDiplomat[selectedValue] || "Value not found";
 
   updateAdditionalCosts();
+  updateStairChargeDropdown(); // CBM 변경 시 STAIR 초기화
 });
 
 // STAIR CHARGE 드롭다운 이벤트 리스너
@@ -612,6 +610,7 @@ stairFloorDropdown.addEventListener("change", calculateStairCharge);
 
 // 데이터 로드 호출
 fetchData();
+
     </script>
 </body>
 </html>
