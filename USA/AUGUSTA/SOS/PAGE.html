@@ -310,27 +310,26 @@
   }
 
   .stair-container {
-      display: flex !important;
-      justify-content: flex-end !important;
-      align-items: center !important;
-      width: 100% !important;
-      gap: 10;
-      margin
-      padding: 0 10px; /* 좌우 패딩 추가 */
+      display: flex !important; /* 플렉스 컨테이너 */
+      justify-content: space-between !important; /* 양 끝 배치 */
+      align-items: center !important; /* 수직 가운데 정렬 */
+      width: calc(100% - 40px) !important; /* 부모의 padding 값을 제외한 너비 */
+      margin: 0 auto !important; /* 좌우 중앙 정렬 */
       box-sizing: border-box; /* 패딩 포함 크기 계산 */
   }
 
   .stairchargelabel {
-      font-size: 1rem !important;
-      white-space: nowrap !important;
+      font-size: 1rem !important; /* 텍스트 크기 */
+      white-space: nowrap !important; /* 줄바꿈 방지 */
+      text-align: left !important; /* 좌측 정렬 */
   }
 
   #staircbm, #stairfloor {
       width: 140px !important; /* 드롭다운 너비 */
-      font-size: 0.8rem !important;
-      padding: 6px !important;
-      box-sizing: border-box !important;
-      margin-left: 0;
+      font-size: 0.8rem !important; /* 폰트 크기 */
+      padding: 6px !important; /* 내부 여백 */
+      box-sizing: border-box !important; /* 패딩 포함 크기 계산 */
+      margin: 0 !important; /* 여백 초기화 */
   }
 }
 
