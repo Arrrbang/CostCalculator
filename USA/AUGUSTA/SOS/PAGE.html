@@ -733,6 +733,12 @@ function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
     const element = document.getElementById(id);
     if (element) element.textContent = "None";
   });
+
+    // TOTAL COST 초기화
+  const totalCostElement = document.getElementById("total-value");
+  if (totalCostElement) {
+    totalCostElement.textContent = "$0.00"; // 초기화 값
+  }
 }
 
 // NON-DIPLOMAT/DIPLOMAT 영향을 받는 결과값 업데이트
