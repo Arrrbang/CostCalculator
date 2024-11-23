@@ -442,7 +442,7 @@ async function fetchData() {
     basicExtraCost = await extraCostResponse.json();
 
     // 기본값 로드
-    updateDropdown(dataNonDiplomat);
+    updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat);
     updateContainerDropdown();
 
     // 추가된 STAIR CHARGE 드롭다운 초기화
@@ -588,6 +588,6 @@ stairFloorDropdown.addEventListener("change", calculateStairCharge);
 
 // 데이터 로드 호출
 fetchData();
-
+    </script>
 </body>
 </html>
