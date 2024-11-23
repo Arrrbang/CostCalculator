@@ -601,11 +601,11 @@ function updateContainerDropdown() {
     containerDropdown.appendChild(option);
   });
 }
-    
-// HEAVY ITEM 드롭다운 업데이트
+
+    // HEAVY ITEM 드롭다운 업데이트
 function updateHeavyItemDropdown() {
   resetDropdown(heavyItemDropdown, "중량 화물 개수 선택");
-  Object.keys(heavyItemData).forEach((key) => {
+  Object.keys(basicExtraCost["HEAVY ITEM"] || {}).forEach((key) => {
     const option = document.createElement("option");
     option.value = key; // JSON 키를 값으로 설정
     option.textContent = `${key} Units`; // 사용자에게 보여줄 텍스트
@@ -616,7 +616,7 @@ function updateHeavyItemDropdown() {
 // HEAVY ITEM 결과 계산
 heavyItemDropdown.addEventListener("change", function () {
   const selectedValue = heavyItemDropdown.value; // 선택된 드롭다운 값
-  const heavyItemCost = heavyItemData[selectedValue] || "None"; // JSON 데이터에서 값 검색
+  const heavyItemCost = basicExtraCost["HEAVY ITEM"]?.[selectedValue] || "None"; // JSON 데이터에서 값 검색
 
   if (heavyItemCost !== "None") {
     heavyItemValue.textContent = `$${heavyItemCost}`; // 결과 표시
