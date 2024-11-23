@@ -309,18 +309,25 @@
     margin-bottom: 10px; /* 아래쪽 간격 추가 */
   }
 
-    .stairchargelabel {
-      font-size: 1rem ; /* 모바일 환경에 맞는 크기로 조정 */
-      white-space: nowrap ; /* 텍스트 줄바꿈 방지 */
+    .stair-container {
+      display: flex; /* 플렉스 컨테이너 */
+      justify-content: space-between; /* 양끝 정렬 */
+      align-items: center; /* 수직 가운데 정렬 */
+      width: 100%; /* 컨테이너 전체 너비 */
+      box-sizing: border-box; /* 패딩 포함 크기 계산 */
     }
     
-    /* 드롭다운 스타일 */
+    .stairchargelabel {
+      font-size: 1rem; /* 기본 폰트 크기 */
+      white-space: nowrap; /* 줄바꿈 방지 */
+    }
+    
     #staircbm, #stairfloor {
-    width: 140px; /* 드롭다운 너비 */
-    font-size: 0.8rem; /* 드롭다운 폰트 크기 */
-    padding: 6px; /* 드롭다운 내부 여백 */
-    box-sizing: border-box; /* 패딩 포함 크기 계산 */
-  }
+      width: 140px; /* 드롭다운 너비 */
+      font-size: 0.8rem; /* 폰트 크기 */
+      padding: 6px; /* 내부 여백 */
+      box-sizing: border-box; /* 패딩 포함 크기 계산 */
+    }
 }
 
 
