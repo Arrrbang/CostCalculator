@@ -444,9 +444,8 @@ async function fetchData() {
     // 기본값 로드
     updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat);
     updateContainerDropdown();
-
-    // 추가된 STAIR CHARGE 드롭다운 초기화
-    updateStairChargeDropdown();
+    updateAdditionalCosts();
+    updateStairChargeDropdown();  // 추가된 STAIR CHARGE 드롭다운 초기화
   } catch (error) {
     console.error("Failed to fetch data:", error);
   }
@@ -569,10 +568,12 @@ function updateAdditionalCosts() {
 // 이벤트 리스너 설정
 nonDiplomat.addEventListener("change", function () {
   handleCheckboxChange(nonDiplomat, diplomat, dataNonDiplomat);
+  updateStairChargeDropdown(); // 체크박스 변경 시 STAIR 초기화
 });
 
 diplomat.addEventListener("change", function () {
   handleCheckboxChange(diplomat, nonDiplomat, dataDiplomat);
+  updateStairChargeDropdown(); // 체크박스 변경 시 STAIR 초기화
 });
 
 containerDropdown.addEventListener("change", function () {
