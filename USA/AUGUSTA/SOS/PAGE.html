@@ -159,57 +159,48 @@
     margin-top: 10px;
     padding: 10px 0;
     border-top: 1px dashed #8BC34A; /* 위쪽 점선 */
-    padding-top: 10px; /* 점선과 위 텍스트 간격 */
-    margin-top: 15px;
+    display: flex;
+    flex-direction: column; /* 수직 정렬 */
+    gap: 10px; /* 옵션 간 간격 */
+    align-items: center; /* 가운데 정렬 */
   }
 
   #stair-charge-options label {
     font-weight: bold;
     font-size: 1rem;
-    display: block; /* 위아래 간격 추가 */
-    margin-bottom: 5px;
+    width: 80px; /* 고정 너비로 균일 정렬 */
+    text-align: right; /* 라벨 오른쪽 정렬 */
   }
 
   #stair-charge-options select {
-    width: 50%; /* 드롭다운 크기 축소 */
+    flex: 1;
+    max-width: 180px; /* 드롭다운 최대 크기 */
     font-size: 1rem;
-    padding: 5px; /* 내부 패딩 */
+    padding: 5px;
   }
 
   /* 드롭다운 사이 줄 간격 줄이기 */
   #stair-charge-options .dropdown-container {
-    display: flex;
-    justify-content: center; /* 가운데 정렬 */
-    gap: 20px; /* 드롭다운 간 간격 */
-  }
+     display: flex;
+      justify-content: center; /* 드롭다운과 라벨 가운데 정렬 */
+      gap: 20px; /* 라벨과 드롭다운 간격 */
+      width: 100%; /* 가로 너비 조정 */
+    }
 
-   #staircbm {
-    position: relative;
-    left: -40px; /* 중심 기준 왼쪽으로 이동 */
-  }
-
-  #stairfloor {
-    position: relative;
-    left: -40px; /* 중심 기준 왼쪽으로 이동 */
-  }
-
-   #stair-charge-options select {
-      text-align: right;
-      margin-left: 40px; /* 오른쪽으로 이동 */
+    /* STAIR CHARGE 결과 스타일 */
+    #stair-charge-row {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10px;
     }
     
     #stair-charge {
-      font-size: 1.5rem; /* 텍스트 크기 */
-      font-weight: bold;
-      color: #000;
-      text-align: center;
-      margin-top: 10px;
-      display: block; /* 라벨 제거 */
-    }
-
-   /* 구분선이 다른 영역에 영향을 주지 않도록 */
-    .result-row + #stair-charge-options {
-      border-top: none;
+      font-size: 1rem; /* SHUTTLE CHARGE와 동일한 크기 */
+      font-weight: normal; /* 기본 굵기 */
+      color: #000; /* 검정색 */
+      text-align: right;
     }
 
 
@@ -423,15 +414,15 @@
       <span class="result-label" style="font-size: 1rem; font-weight: bold;">STAIR CHARGE OPTIONS</span>
     </div>
     <div class="result-row" id="stair-charge-options">
-      <span class="result-label">CBM</span>
+      <span class="dropdown-container">CBM</span>
       <select id="staircbm">
-        <option value="">이동 CBM을 선택하세요</option>
+        <option value="">이동 CBM을 선택</option>
       </select>
     </div>
-    <div class="result-row">
+    <div class="dropdown-container">
       <span class="result-label">FLOOR</span>
       <select id="stairfloor">
-        <option value="">이동할 층을 선택하세요</option>
+        <option value="">이동할 층을 선택</option>
       </select>
     </div>
 
