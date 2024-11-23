@@ -334,7 +334,7 @@
   <div class="form-container">
     <h2>추가 비용</h2>
     <div class="result-row">
-      <span class="result-label" style="font-size: 1rem; font-weight: normal;">SHTTULE CHARGE</span>
+      <span class="result-label" style="font-size: 1rem; font-weight: normal;">SHUTTLE CHARGE</span>
       <span class="result-value" id="shttule-charge">None</span>
     </div>
     <div class="result-row">
@@ -465,7 +465,7 @@ function verifyToken() {
   document.getElementById("basic-delivery-value").textContent = "None"; // 기본 배송 비용 초기화
     
     // 추가 비용 초기화
-    ["SHTTULE CHARGE", "LONG CARRY CHARGE", "STAIR CHARGE"].forEach((category) => {
+    ["SHUTTLE CHARGE", "LONG CARRY CHARGE", "STAIR CHARGE"].forEach((category) => {
       const id = category.toLowerCase().replace(/ /g, "-");
       document.getElementById(id).textContent = "None";
     });
@@ -488,7 +488,7 @@ function verifyToken() {
   // CBM에 따른 추가 비용 업데이트
   function updateAdditionalCosts() {
     const selectedCBM = dropdown.value;
-    ["SHTTULE CHARGE", "LONG CARRY CHARGE", "STAIR CHARGE"].forEach((category) => {
+    ["SHUTTLE CHARGE", "LONG CARRY CHARGE", "STAIR CHARGE"].forEach((category) => {
       const id = category.toLowerCase().replace(/ /g, "-");
       const result = basicExtraCost[category]?.[selectedCBM] || "None";
       document.getElementById(id).textContent = result;
