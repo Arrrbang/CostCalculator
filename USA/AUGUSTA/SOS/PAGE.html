@@ -341,7 +341,7 @@
     <h2>추가 비용</h2>
     <div class="result-row">
       <span class="result-label" style="font-size: 1rem; font-weight: normal;">SHUTTLE CHARGE</span>
-      <span class="result-value" id="shttule-charge">None</span>
+      <span class="result-value" id="shuttle-charge">None</span>
     </div>
     <div class="result-row">
       <span class="result-label" style="font-size: 1rem; font-weight: normal;">LONG CARRY CHARGE</span>
@@ -447,7 +447,7 @@ async function fetchData() {
     updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat);
     updateContainerDropdown();
     updateAdditionalCosts();
-    updateStairChargeDropdown(); // 초기화
+    updateStairChargeDropdown();
   } catch (error) {
     console.error("Failed to fetch data:", error);
   }
@@ -566,13 +566,11 @@ function updateDiplomatSensitiveResult(category) {
 // CBM에 따른 추가 비용 업데이트
 function updateAdditionalCosts() {
   const selectedCBM = dropdown.value;
-  console.log("선택된 CBM:", selectedCBM);
 
   ["SHUTTLE CHARGE", "LONG CARRY CHARGE"].forEach((category) => {
     const id = category.toLowerCase().replace(/ /g, "-");
     const result = basicExtraCost[category]?.[selectedCBM] || "None";
-    console.log(`${category} 결과값:`, result);
-    document.getElementById(id).textContent = result;
+    document.getElementById(id)?.textContent = result;
   });
 }
 
@@ -608,6 +606,7 @@ stairFloorDropdown.addEventListener("change", calculateStairCharge);
 
 // 데이터 로드 호출
 fetchData();
+
 
     </script>
 </body>
