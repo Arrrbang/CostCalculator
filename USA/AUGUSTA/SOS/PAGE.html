@@ -434,12 +434,15 @@ async function fetchData() {
   try {
     const tableResponse = await fetch("TABLE.json");
     const tableData = await tableResponse.json();
+    console.log("TABLE.json 데이터:", tableData); // 데이터를 확인합니다.
     dataNonDiplomat = tableData.nonDiplomat;
     dataDiplomat = tableData.diplomat;
     containerTypes = tableData.containerType;
 
     const extraCostResponse = await fetch("basicextracost.json");
     basicExtraCost = await extraCostResponse.json();
+    console.log("basicextracost.json 데이터:", extraCostData); // 데이터를 확인합니다.
+    basicExtraCost = extraCostData;
 
     // 기본값 로드
     updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat);
@@ -558,9 +561,11 @@ function updateDiplomatSensitiveResult(category) {
 // CBM에 따른 추가 비용 업데이트
 function updateAdditionalCosts() {
   const selectedCBM = dropdown.value;
+  console.log("선택된 CBM:", selectedCBM); // 선택된 CBM 값을 확인합니다.
   ["SHUTTLE CHARGE", "LONG CARRY CHARGE", ].forEach((category) => {
     const id = category.toLowerCase().replace(/ /g, "-");
     const result = basicExtraCost[category]?.[selectedCBM] || "None";
+    console.log(`${category} 결과값:`, result); // 카테고리별 결과값 확인
     document.getElementById(id).textContent = result;
   });
 }
@@ -591,6 +596,10 @@ dropdown.addEventListener("change", function () {
 // STAIR CHARGE 드롭다운 이벤트 리스너
 stairCbmDropdown.addEventListener("change", calculateStairCharge);
 stairFloorDropdown.addEventListener("change", calculateStairCharge);
+
+console.log("stairCbmDropdown:", stairCbmDropdown);
+console.log("stairFloorDropdown:", stairFloorDropdown);
+
 
 // 데이터 로드 호출
 fetchData();
