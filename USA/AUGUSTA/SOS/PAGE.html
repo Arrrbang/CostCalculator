@@ -563,6 +563,7 @@ const stairFloorDropdown = document.getElementById("stairfloor");
 const stairChargeResult = document.getElementById("stair-charge");
 const heavyItemDropdown = document.getElementById("heavyitemunit");
 const heavyItemValue = document.getElementById("heavyitem-value");
+const totalCostElement = document.getElementById("total-value");
 
 async function fetchData() {
   try {
@@ -583,7 +584,8 @@ async function fetchData() {
     updateContainerDropdown();
     updateAdditionalCosts();
     updateStairChargeDropdown();
-    updateHeavyItemDropdown(); // 초기화
+    updateHeavyItemDropdown(); 
+    calculateTotalCost();// 초기화
   } catch (error) {
     console.error("Failed to fetch data:", error);
   }
@@ -679,6 +681,29 @@ function calculateStairCharge() {
     stairChargeResult.textContent = "None"; // 기본값
   }
 }
+  // TOTAL COST 계산
+function calculateTotalCost() {
+  const ids = [
+    "thc-value",
+    "poc-value",
+    "drayage-value",
+    "devanning-value",
+    "inspection-value",
+  ];
+  let total = 0;
+
+  ids.forEach((id) => {
+    const element = document.getElementById(id);
+    if (element && element.textContent !== "None") {
+      const value = parseFloat(element.textContent.replace("$", "").trim());
+      if (!isNaN(value)) {
+        total += value;
+      }
+    }
+  });
+
+  totalCostElement.textContent = `$${total.toFixed(2)}`;
+}  
 
 // 체크박스 상태 관리 및 초기화
 function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
@@ -750,6 +775,7 @@ diplomat.addEventListener("change", function () {
 containerDropdown.addEventListener("change", function () {
   updateDiplomatSensitiveResult("THC");
   updateDiplomatSensitiveResult("POC");
+  calculateTotalCost(); // TOTAL COST 업데이트
 });
 
 dropdown.addEventListener("change", function () {
@@ -760,6 +786,7 @@ dropdown.addEventListener("change", function () {
 
   updateAdditionalCosts();
   updateStairChargeDropdown(); // CBM 변경 시 STAIR 초기화
+  calculateTotalCost(); // TOTAL COST 업데이트
 });
 
 // STAIR CHARGE 드롭다운 이벤트 리스너
