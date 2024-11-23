@@ -161,13 +161,19 @@
 
 
       /* CBM과 FLOOR의 라벨 스타일 */
+   
+     .stairlabel-container { 
+    display: flex;
+    justify-content: flex-end; /* 라벨을 오른쪽 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    width: 120px; /* 라벨 컨테이너 고정 너비 */
+    margin-right: 10px; /* 드롭다운과의 간격 */
+  }
+
     .stairchargelabel {
-      display: inline-block; /* 인라인 블록으로 설정 */
-      position: relative; /* 위치 조정 가능 */
       text-align: right; /* 텍스트 우측 정렬 */
       font-size: 1rem; /* 기본 폰트 크기 */
-      width: auto; /* 고정 너비 제거 */
-      margin-right: 30px; /* 드롭다운과의 고정 간격 */
+      width: 100%; /* 컨테이너 내에서 정렬 */
     }
     
     /* 드롭다운 스타일 */
@@ -392,13 +398,17 @@
       <span class="result-label" style="font-size: 1rem; font-weight: bold;">STAIR CHARGE OPTIONS</span>
     </div>
     <div class="result-row" id="stair-charge-options">
+      <div class="stairlabel-container">
       <span class="stairchargelabel">CBM</span>
+      </div>
       <select id="staircbm">
         <option value="">이동 CBM 선택</option>
       </select>
     </div>
     <div class="result-row" id="stair-charge-options">
+      <div class="stairlabel-container">
       <span class="stairchargelabel">FLOOR</span>
+      </div>
       <select id="stairfloor">
         <option value="">이동 층 선택</option>
       </select>
