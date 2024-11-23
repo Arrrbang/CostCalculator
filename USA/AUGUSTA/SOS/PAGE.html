@@ -163,17 +163,15 @@
       /* CBM과 FLOOR의 라벨 스타일 */
     .stairchargelabel {
       display: inline-block; /* 인라인 블록으로 설정 */
-      position: relative; /* 위치 조정 가능 */
       text-align: right; /* 텍스트 우측 정렬 */
       font-size: 1rem; /* 기본 폰트 크기 */
-      width: 80px; /* 고정 너비 */
-      margin-right: 30px; /* 드롭다운과의 간격 */
+      width: auto; /* 고정 너비 제거 */
+      margin-right: 30px; /* 드롭다운과의 고정 간격 */
     }
     
     /* 드롭다운 스타일 */
     #staircbm, #stairfloor {
       display: inline-block;
-      margin-right: 0
       padding: 8px; /* 내부 여백 */
       font-size: 1rem; /* 폰트 크기 */
       width: 180px; /* 드롭다운 박스 크기 */
