@@ -435,9 +435,9 @@ async function fetchData() {
     const tableData = await tableResponse.json();
     console.log("TABLE.json 데이터:", tableData);
 
-    dataNonDiplomat = tableData.nonDiplomat;
-    dataDiplomat = tableData.diplomat;
-    containerTypes = tableData.containerType;
+    dataNonDiplomat = tableData.nonDiplomat || {};
+    dataDiplomat = tableData.diplomat || {};
+    containerTypes = tableData.containerType || [];
 
     const extraCostResponse = await fetch("basicextracost.json");
     basicExtraCost = await extraCostResponse.json();
@@ -447,7 +447,7 @@ async function fetchData() {
     updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat);
     updateContainerDropdown();
     updateAdditionalCosts();
-    updateStairChargeDropdown();
+    updateStairChargeDropdown(); // 초기화
   } catch (error) {
     console.error("Failed to fetch data:", error);
   }
@@ -543,9 +543,9 @@ function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
   document.getElementById("basic-delivery-value").textContent = "None";
 
   // 추가 비용 초기화
-  ["SHUTTLE CHARGE", "LONG CARRY CHARGE", "STAIR CHARGE"].forEach((category) => {
-    const id = category.toLowerCase().replace(/ /g, "-");
-    document.getElementById(id).textContent = "None";
+  ["shuttle-charge", "long-carry-charge", "stair-charge"].forEach((id) => {
+    const element = document.getElementById(id);
+    if (element) element.textContent = "None";
   });
 }
 
@@ -560,7 +560,8 @@ function updateDiplomatSensitiveResult(category) {
     result = basicExtraCost[category]?.Diplomat?.[selectedContainer] || "None";
   }
 
-  document.getElementById(`${category.toLowerCase()}-value`).textContent = result;
+  const element = document.getElementById(`${category.toLowerCase()}-value`);
+  if (element) element.textContent = result;
 }
 
 // CBM에 따른 추가 비용 업데이트
@@ -570,7 +571,8 @@ function updateAdditionalCosts() {
   ["SHUTTLE CHARGE", "LONG CARRY CHARGE"].forEach((category) => {
     const id = category.toLowerCase().replace(/ /g, "-");
     const result = basicExtraCost[category]?.[selectedCBM] || "None";
-    document.getElementById(id)?.textContent = result;
+    const element = document.getElementById(id);
+    if (element) element.textContent = result;
   });
 }
 
@@ -606,7 +608,6 @@ stairFloorDropdown.addEventListener("change", calculateStairCharge);
 
 // 데이터 로드 호출
 fetchData();
-
 
     </script>
 </body>
