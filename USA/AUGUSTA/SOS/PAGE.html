@@ -516,12 +516,17 @@ function calculateStairCharge() {
 // 체크박스 상태 관리 및 초기화
 function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
   inactiveCheckbox.checked = false; // 다른 체크박스 초기화
+  
   if (activeCheckbox.checked) {
     updateDropdown(dataToUpdate);
   } else {
     resetDropdown(dropdown); // CBM 드롭다운 초기화
   }
 
+    // STAIR CBM 및 FLOOR 드롭다운 초기화
+  resetDropdown(stairCbmDropdown, "이동 CBM을 선택하세요");
+  resetDropdown(stairFloorDropdown, "이동할 층을 선택하세요");
+  
   // 컨테이너 드롭다운 및 결과값 초기화
   containerDropdown.value = "";
   document.getElementById("thc-value").textContent = "None";
@@ -554,7 +559,7 @@ function updateDiplomatSensitiveResult(category) {
 // CBM에 따른 추가 비용 업데이트
 function updateAdditionalCosts() {
   const selectedCBM = dropdown.value;
-  ["SHUTTLE CHARGE", "LONG CARRY CHARGE", "STAIR CHARGE"].forEach((category) => {
+  ["SHUTTLE CHARGE", "LONG CARRY CHARGE", ].forEach((category) => {
     const id = category.toLowerCase().replace(/ /g, "-");
     const result = basicExtraCost[category]?.[selectedCBM] || "None";
     document.getElementById(id).textContent = result;
