@@ -383,54 +383,6 @@
     <span id="basic-delivery-label">기본 배송 비용</span>
     <span id="basic-delivery-value">None</span>
   </div>
-  <!-- 기본 발생 비용 항목     margin: 0 !important; /* 여백 초기화 */
-  }
-}
-
-
-</style>
-
-
-</head>
-<body>
-  <!-- 첫 번째 박스 -->
-  <div class="form-container">
-    <h2>기본 정보 입력</h2>
-    
-    <table>
-      <tr>
-        <td>외교화물 유무</td>
-        <td class="checkbox-group">
-          <label><input type="checkbox" id="non-diplomat" name="cargoType" value="Non-Diplomat"> Non-Diplomat</label>
-          <label><input type="checkbox" id="diplomat" name="cargoType" value="Diplomat"> Diplomat</label>
-        </td>
-      </tr>
-      <tr>
-        <td>CBM</td>
-        <td>
-          <select id="cbm-dropdown" style="width: 100%;">
-            <option value="">-- Select an Option --</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>CONTAINER TYPE</td>
-        <td>
-          <select id="container-dropdown" style="width: 100%;">
-            <option value="">-- Select an Option --</option>
-          </select>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-  <!-- 두 번째 박스 -->
-<div class="form-container">
-  <h2>현지 비용</h2>
-  <div class="result-row">
-    <span id="basic-delivery-label">기본 배송 비용</span>
-    <span id="basic-delivery-value">None</span>
-  </div>
   <!-- 기본 발생 비용 항목 -->
   <div class="additional-costs">
     <div class="result-row">
@@ -452,8 +404,7 @@
     <div class="result-row">
       <span class="result-label" style="font-size: 1rem; font-weight: normal;">INSPECTION</span>
       <span class="result-value" id="inspection-value">None</span>
-    </div>
-    /*국가별로 기본 비용이 목록이 필요한 경우 여기에 추가*/
+    </div>  /*국가별로 기본 비용이 목록이 필요한 경우 여기에 추가*/
   </div>
 </div>
 
