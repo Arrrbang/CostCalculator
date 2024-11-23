@@ -184,6 +184,25 @@
       box-sizing: border-box; /* 패딩 포함 크기 계산 */
     }
 
+    #heavyitemrow {
+     border-top: 1px dashed #8BC34A; /* 초록색 구분선 */
+     margin-top: 10px; /* 위쪽 간격 */
+     padding-top: 10px; /* 구분선과 텍스트 간격 */
+    }
+     #heavyitemunit {
+      width: 180px; /* 드롭다운 크기 설정 */
+      padding: 8px; /* 내부 여백 */
+      font-size: 1rem; /* 폰트 크기 */
+      box-sizing: border-box; /* 패딩 포함 크기 계산 */
+    }
+    
+    .heavy-item-info {
+      font-size: 0.9rem;
+      margin: 10px 0;
+      text-align: center;
+      color: #ff6666; /* 빨간색 경고 텍스트 */
+    }
+
 
 
   /* 모바일 반응형 */
@@ -454,6 +473,22 @@
       <span class="result-value" id="stair-charge">None</span>
     </div>
 
+    <div class="result-row" id="heavyitemrow">
+      <span class="result-label" style="font-size: 1rem; font-weight: normal;">HEAVY ITEM CHARGE</span>
+      <select id="heavyitemunit">
+        <option value="">중량 화물 개수 선택</option>
+      </select>
+    </div>
+    <p class="heavy-item-info">
+      해당 업체의 중량 화물 단가는 $100/100KG 입니다.<br>
+      대략적인 중량을 선택하면 금액이 계산됩니다.
+    </p>
+    <div class="result-row">
+      <span class="result-value" id="heavyitem-value">None</span>
+    </div>
+
+    
+
   </div>
 
 
@@ -502,6 +537,7 @@ let dataNonDiplomat = {};
 let dataDiplomat = {};
 let containerTypes = [];
 let basicExtraCost = {};
+let heavyItemData = {};
 
 const dropdown = document.getElementById("cbm-dropdown");
 const containerDropdown = document.getElementById("container-dropdown");
@@ -511,6 +547,8 @@ const diplomat = document.getElementById("diplomat");
 const stairCbmDropdown = document.getElementById("staircbm");
 const stairFloorDropdown = document.getElementById("stairfloor");
 const stairChargeResult = document.getElementById("stair-charge");
+const heavyItemDropdown = document.getElementById("heavyitemunit");
+const heavyItemValue = document.getElementById("heavyitem-value");
 
 async function fetchData() {
   try {
@@ -521,6 +559,7 @@ async function fetchData() {
     dataNonDiplomat = tableData.nonDiplomat || {};
     dataDiplomat = tableData.diplomat || {};
     containerTypes = tableData.containerType || [];
+    heavyItemData = tableData["HEAVY ITEM"] || {};
 
     const extraCostResponse = await fetch("basicextracost.json");
     basicExtraCost = await extraCostResponse.json();
@@ -530,7 +569,8 @@ async function fetchData() {
     updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat);
     updateContainerDropdown();
     updateAdditionalCosts();
-    updateStairChargeDropdown(); // 초기화
+    updateStairChargeDropdown();
+    updateHeavyItemDropdown(); // 초기화
   } catch (error) {
     console.error("Failed to fetch data:", error);
   }
@@ -562,6 +602,30 @@ function updateContainerDropdown() {
     containerDropdown.appendChild(option);
   });
 }
+    
+// HEAVY ITEM 드롭다운 업데이트
+function updateHeavyItemDropdown() {
+  resetDropdown(heavyItemDropdown, "중량 화물 개수 선택");
+  Object.keys(heavyItemData).forEach((key) => {
+    const option = document.createElement("option");
+    option.value = key; // JSON 키를 값으로 설정
+    option.textContent = `${key} Units`; // 사용자에게 보여줄 텍스트
+    heavyItemDropdown.appendChild(option);
+  });
+}
+
+// HEAVY ITEM 결과 계산
+heavyItemDropdown.addEventListener("change", function () {
+  const selectedValue = heavyItemDropdown.value; // 선택된 드롭다운 값
+  const heavyItemCost = heavyItemData[selectedValue] || "None"; // JSON 데이터에서 값 검색
+
+  if (heavyItemCost !== "None") {
+    heavyItemValue.textContent = `$${heavyItemCost}`; // 결과 표시
+  } else {
+    heavyItemValue.textContent = "None"; // 기본값
+  }
+});
+    
 
 // STAIR CHARGE 드롭다운 업데이트
 function updateStairChargeDropdown() {
@@ -626,7 +690,7 @@ function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
   document.getElementById("basic-delivery-value").textContent = "None";
 
   // 추가 비용 초기화
-  ["shuttle-charge", "long-carry-charge", "stair-charge"].forEach((id) => {
+  ["shuttle-charge", "long-carry-charge", "stair-charge","heavyitem-value" ].forEach((id) => {
     const element = document.getElementById(id);
     if (element) element.textContent = "None";
   });
