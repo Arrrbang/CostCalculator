@@ -559,7 +559,6 @@ async function fetchData() {
     dataNonDiplomat = tableData.nonDiplomat || {};
     dataDiplomat = tableData.diplomat || {};
     containerTypes = tableData.containerType || [];
-    heavyItemData = tableData["HEAVY ITEM"] || {};
 
     const extraCostResponse = await fetch("basicextracost.json");
     basicExtraCost = await extraCostResponse.json();
