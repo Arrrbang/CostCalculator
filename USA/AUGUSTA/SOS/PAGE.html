@@ -135,11 +135,6 @@
   display: block; /* 블록 스타일 */
 }
 
-   #stair-charge-options {
-    border-top: 1px dashed #8BC34A; /* 위쪽 점선 */
-    padding-top: 10px; /* 점선과 위 텍스트 간격 */
-}
-
    .form-container h2 {
     background-color: #8BC34A;
     color: white;
@@ -162,6 +157,9 @@
   #stair-charge-options {
     margin-top: 10px;
     padding: 10px 0;
+    border-top: 1px dashed #8BC34A; /* 위쪽 점선 */
+    padding-top: 10px; /* 점선과 위 텍스트 간격 */
+    margin-top: 15px;
   }
 
   #stair-charge-options label {
@@ -172,8 +170,7 @@
   }
 
   #stair-charge-options select {
-    width: 80%; /* 드롭다운 크기 축소 */
-    margin: 5px 10%; /* 가운데 정렬 */
+    width: 50%; /* 드롭다운 크기 축소 */
     font-size: 1rem;
     padding: 5px; /* 내부 패딩 */
   }
@@ -181,22 +178,39 @@
   /* 드롭다운 사이 줄 간격 줄이기 */
   #stair-charge-options .dropdown-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* CBM과 Floor 간격 조정 */
-    margin-top: -10px;
+    justify-content: center; /* 가운데 정렬 */
+    gap: 20px; /* 드롭다운 간 간격 */
   }
 
-  /* 계산 결과 텍스트 */
-  #stair-charge {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #000;
-    text-align: center;
-    margin-top: 10px;
-    display: block; /* 라벨 제거 */
+   #staircbm {
+    position: relative;
+    left: -40px; /* 중심 기준 왼쪽으로 이동 */
   }
 
+  #stairfloor {
+    position: relative;
+    left: -40px; /* 중심 기준 왼쪽으로 이동 */
+  }
 
+   #stair-charge-options select {
+      text-align: right;
+      margin-left: 40px; /* 오른쪽으로 이동 */
+    }
+    
+    #stair-charge {
+      font-size: 1.5rem; /* 텍스트 크기 */
+      font-weight: bold;
+      color: #000;
+      text-align: center;
+      margin-top: 10px;
+      display: block; /* 라벨 제거 */
+    }
+
+   /* 구분선이 다른 영역에 영향을 주지 않도록 */
+    .result-row + #stair-charge-options {
+      border-top: none;
+    }
+       
 
 
   /* 모바일 반응형 */
