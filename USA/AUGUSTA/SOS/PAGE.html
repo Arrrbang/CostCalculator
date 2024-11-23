@@ -71,6 +71,21 @@
     font-size: 1rem;
   }
 
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap; /* 줄바꿈 금지 */
+    white-space: nowrap; /* 텍스트 줄바꿈 금지 */
+    max-width: 100%; /* 부모 컨테이너 너비에 맞춤 */
+  }
+
+  input[type="checkbox"] {
+    margin-right: 5px; /* 체크박스와 텍스트 사이 간격 추가 */
+    width: 18px; /* 체크박스 크기 고정 */
+    height: 18px;
+  }
+
   select {
     width: 100%; /* 드롭다운 너비 */
     max-width: 100%; /* 부모 컨테이너를 넘지 않도록 제한 */
@@ -83,49 +98,119 @@
     margin: 5px 0;
   }
 
+  /* 현지 비용 스타일링 */
+  .result-row {
+  display: flex; /* 플렉스 레이아웃으로 설정 */
+  justify-content: space-between; /* 양 끝으로 정렬 */
+  align-items: center; /* 세로 축 가운데 정렬 */
+  padding: 10px 0; /* 상하 간격 */
+}
+
+  .result-label {
+    display: table-cell;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+
+  .result-value {
+    display: table-cell;
+    font-size: 1rem;
+    text-align: right;
+    padding-right: 10px;
+  }
+   
+#basic-delivery-label {
+  font-size: 1.2rem; /* 폰트 크기 */
+  font-weight: bold; /* 굵기 추가 */
+  text-align: left;
+  padding-left: 10px; /* 라벨 왼쪽 간격 */
+}
+
+#basic-delivery-value {
+  font-size: 1.2rem; /* 폰트 크기 */
+  font-weight: bold; /* 굵기 추가 */
+  text-align: right; /* 오른쪽 정렬 */
+  padding-right: 10px; /* 값 오른쪽 간격 */
+  display: block; /* 블록 스타일 */
+}
+
+   .form-container h2 {
+    background-color: #8BC34A;
+    color: white;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+    font-size: 1.2rem;
+  }
+
+  .result-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0; /* 줄 간격 줄임 */
+    margin: 0 10px; /* 좌우 여백 */
+    border-bottom: 1px dashed #8BC34A; /* 초록 점선 추가 */
+  }
+
   /* 추가 비용 섹션 */
   #stair-charge-options {
     margin-top: 10px;
     padding: 10px 0;
-    border-top: 1px dashed #8BC34A; /* 초록 점선 추가 */
+    border-top: 1px dashed #8BC34A; /* 위쪽 점선 */
+    padding-top: 10px; /* 점선과 위 텍스트 간격 */
     margin-top: 15px;
-  }
-
-  /* STAIR CHARGE OPTIONS 레이블과 드롭다운 위치 조정 */
-  #stair-charge-options .dropdown-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px; /* 레이블과 드롭다운 간격 */
   }
 
   #stair-charge-options label {
     font-weight: bold;
     font-size: 1rem;
-    margin-right: auto; /* 레이블을 왼쪽 정렬 */
-    position: relative;
-    left: -30px; /* 중심 기준 왼쪽으로 이동 */
+    display: block; /* 위아래 간격 추가 */
+    margin-bottom: 5px;
   }
 
   #stair-charge-options select {
     width: 50%; /* 드롭다운 크기 축소 */
     font-size: 1rem;
     padding: 5px; /* 내부 패딩 */
-    text-align: center;
-    position: relative;
-    left: 30px; /* 중심 기준 오른쪽으로 이동 */
   }
 
-  /* STAIR CHARGE 결과 값 */
-  #stair-charge {
-    font-size: 1rem; /* SHUTTLE CHARGE와 동일한 크기 */
-    font-weight: normal; /* BOLD 제거 */
-    color: #000;
-    text-align: center;
-    margin-top: 10px;
-    display: block; /* 라벨 제거 */
+  /* 드롭다운 사이 줄 간격 줄이기 */
+  #stair-charge-options .dropdown-container {
+    display: flex;
+    justify-content: center; /* 가운데 정렬 */
+    gap: 20px; /* 드롭다운 간 간격 */
   }
-</style>
+
+   #staircbm {
+    position: relative;
+    left: -40px; /* 중심 기준 왼쪽으로 이동 */
+  }
+
+  #stairfloor {
+    position: relative;
+    left: -40px; /* 중심 기준 왼쪽으로 이동 */
+  }
+
+   #stair-charge-options select {
+      text-align: right;
+      margin-left: 40px; /* 오른쪽으로 이동 */
+    }
+    
+    #stair-charge {
+      font-size: 1.5rem; /* 텍스트 크기 */
+      font-weight: bold;
+      color: #000;
+      text-align: center;
+      margin-top: 10px;
+      display: block; /* 라벨 제거 */
+    }
+
+   /* 구분선이 다른 영역에 영향을 주지 않도록 */
+    .result-row + #stair-charge-options {
+      border-top: none;
+    }
 
 
   /* 모바일 반응형 */
