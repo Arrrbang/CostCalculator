@@ -162,10 +162,12 @@
 
       /* CBM과 FLOOR의 라벨 스타일 */
     .stairchargelabel {
-      text-align: right; /* 라벨 텍스트 우측 정렬 */
-      margin-right: 20px; /* 라벨과 드롭다운 간 여백 */
+      display: inline-block; /* 인라인 블록으로 설정 */
+      position: relative; /* 위치 조정 가능 */
+      text-align: right; /* 텍스트 우측 정렬 */
+      right: 40px; /* 컨테이너 중앙에서 오른쪽으로 이동 */
       font-size: 1rem; /* 기본 폰트 크기 */
-      font-weight: bold; /* 굵기 강조 */
+      width: 80px; /* 고정 너비 */
     }
     
     /* 드롭다운 스타일 */
