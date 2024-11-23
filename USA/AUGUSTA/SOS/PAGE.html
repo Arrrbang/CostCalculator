@@ -184,6 +184,12 @@
       box-sizing: border-box; /* 패딩 포함 크기 계산 */
     }
 
+   #heavy-item-row {
+     border-top: 1px dashed #8BC34A; /* 초록색 구분선 */
+     margin-top: 10px; /* 위쪽 간격 */
+     padding-top: 10px; /* 구분선과 텍스트 간격 */
+    }
+
 
 
   /* 모바일 반응형 */
@@ -377,7 +383,55 @@
     <span id="basic-delivery-label">기본 배송 비용</span>
     <span id="basic-delivery-value">None</span>
   </div>
-  <!-- 새로운 항목들 -->
+  <!-- 기본 발생 비용 항목     margin: 0 !important; /* 여백 초기화 */
+  }
+}
+
+
+</style>
+
+
+</head>
+<body>
+  <!-- 첫 번째 박스 -->
+  <div class="form-container">
+    <h2>기본 정보 입력</h2>
+    
+    <table>
+      <tr>
+        <td>외교화물 유무</td>
+        <td class="checkbox-group">
+          <label><input type="checkbox" id="non-diplomat" name="cargoType" value="Non-Diplomat"> Non-Diplomat</label>
+          <label><input type="checkbox" id="diplomat" name="cargoType" value="Diplomat"> Diplomat</label>
+        </td>
+      </tr>
+      <tr>
+        <td>CBM</td>
+        <td>
+          <select id="cbm-dropdown" style="width: 100%;">
+            <option value="">-- Select an Option --</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>CONTAINER TYPE</td>
+        <td>
+          <select id="container-dropdown" style="width: 100%;">
+            <option value="">-- Select an Option --</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- 두 번째 박스 -->
+<div class="form-container">
+  <h2>현지 비용</h2>
+  <div class="result-row">
+    <span id="basic-delivery-label">기본 배송 비용</span>
+    <span id="basic-delivery-value">None</span>
+  </div>
+  <!-- 기본 발생 비용 항목 -->
   <div class="additional-costs">
     <div class="result-row">
       <span class="result-label" style="font-size: 1rem; font-weight: normal;">THC</span>
@@ -399,10 +453,11 @@
       <span class="result-label" style="font-size: 1rem; font-weight: normal;">INSPECTION</span>
       <span class="result-value" id="inspection-value">None</span>
     </div>
+    /*국가별로 기본 비용이 목록이 필요한 경우 여기에 추가*/
   </div>
 </div>
 
-  <!-- 추가된 컨테이너 -->
+  <!-- 세번째 박스 -->
   <div class="form-container">
     <h2>추가 비용</h2>
     <div class="result-row">
@@ -440,6 +495,18 @@
       <span class="result-label"></span>
       <span class="result-value" id="stair-charge">None</span>
     </div>
+
+     <div class="result-row" id="heavy-item-row">
+      <span class="result-label" style="font-size: 1rem; font-weight: normal;">HEAVY ITEM CHARGE</span>
+      <span class="result-value" id="heavy-item-charge">None</span>
+       <p style="font-size: 0.9rem; margin: 10px 0; text-align: center; color: #ff6666">
+         해당 업체의 중량 화물의 기본 단가는 $100/100kg 입니다.<br> /*필요시 중량 및 단가를 기재*/
+        대략적인 중량을 선택하시면 금액이 표시됩니다.</p> 
+        <select id="heavyitemunit">
+        <option value="">중량화물 개수 선택</option> /*중량화물 단가는 기본적으로 unit으로 표기. 필요시 cbm으로 정정*/
+      </select>
+    </div>
+
     
   </div>
 
@@ -498,6 +565,7 @@ const diplomat = document.getElementById("diplomat");
 const stairCbmDropdown = document.getElementById("staircbm");
 const stairFloorDropdown = document.getElementById("stairfloor");
 const stairChargeResult = document.getElementById("stair-charge");
+const heavyItemDropdown = document.getElementById("heavyitemunit");
 
 async function fetchData() {
   try {
@@ -646,6 +714,18 @@ function updateAdditionalCosts() {
   });
 }
 
+  //HEAVY ITEM CBM에 따른 비용 업데이트
+    function updateHeavyItemCost() {
+  const heavyItemDropdown = document.getElementById("heavyitemunit");
+  const selectedValue = heavyItemDropdown.value; // 선택된 드롭다운 값
+  const heavyItemCost = basicExtraCost["HEAVY ITEM"]?.[selectedValue] || "None"; // JSON 데이터에서 값 검색
+
+  const resultElement = document.getElementById("heavy-item-charge");
+  if (resultElement) {
+    resultElement.textContent = heavyItemCost; // 결과 업데이트
+  }
+}
+
 // 이벤트 리스너 설정
 nonDiplomat.addEventListener("change", function () {
   handleCheckboxChange(nonDiplomat, diplomat, dataNonDiplomat);
@@ -675,6 +755,10 @@ dropdown.addEventListener("change", function () {
 // STAIR CHARGE 드롭다운 이벤트 리스너
 stairCbmDropdown.addEventListener("change", calculateStairCharge);
 stairFloorDropdown.addEventListener("change", calculateStairCharge);
+
+  // HEAVY ITEM CHARGE 드롭다운 이벤트 리스너
+  const heavyItemDropdown = document.getElementById("heavyitemunit");
+heavyItemDropdown.addEventListener("change", updateHeavyItemCost);
 
 // 데이터 로드 호출
 fetchData();
