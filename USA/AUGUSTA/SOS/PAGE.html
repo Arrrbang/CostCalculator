@@ -309,12 +309,13 @@
     margin-bottom: 10px; /* 아래쪽 간격 추가 */
   }
 
-         .stair-container { 
+     .stair-container { 
     display: flex;
     justify-content: flex-end; /* 라벨을 오른쪽 정렬 */
     align-items: center; /* 수직 가운데 정렬 */
-    gap: 30px; /* 라벨과 드롭다운 간의 간격 */
-    width: 100%; /* 부모 컨테이너의 너비를 채우기 */
+    gap: 10px; /* 라벨과 드롭다운 간의 간격 */
+    margin-right: 5px; /* 부모 컨테이너 기준 오른쪽 여백 */
+    width: auto; 
   }
 
     .stairchargelabel {
@@ -325,9 +326,9 @@
     
     /* 드롭다운 스타일 */
     #staircbm, #stairfloor {
-      width: 180px; /* 드롭다운 너비 */
-      padding: 8px; /* 내부 여백 */
-      font-size: 1rem; /* 폰트 크기 */
+      width: 150px; /* 드롭다운 너비 */
+      padding: 6px; /* 내부 여백 */
+      font-size: 0.8rem; /* 폰트 크기 */
       box-sizing: border-box; /* 패딩 포함 크기 계산 */
     }
 }
