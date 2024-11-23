@@ -135,10 +135,66 @@
   display: block; /* 블록 스타일 */
 }
 
-   #stair-charge-row {
+   #stair-charge-options {
     border-top: 1px dashed #8BC34A; /* 위쪽 점선 */
     padding-top: 10px; /* 점선과 위 텍스트 간격 */
 }
+
+   .form-container h2 {
+    background-color: #8BC34A;
+    color: white;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+    font-size: 1.2rem;
+  }
+
+  .result-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0; /* 줄 간격 줄임 */
+    margin: 0 10px; /* 좌우 여백 */
+    border-bottom: 1px dashed #8BC34A; /* 초록 점선 추가 */
+  }
+
+  /* 추가 비용 섹션 */
+  #stair-charge-options {
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+
+  #stair-charge-options label {
+    font-weight: bold;
+    font-size: 1rem;
+    display: block; /* 위아래 간격 추가 */
+    margin-bottom: 5px;
+  }
+
+  #stair-charge-options select {
+    width: 80%; /* 드롭다운 크기 축소 */
+    margin: 5px 10%; /* 가운데 정렬 */
+    font-size: 1rem;
+    padding: 5px; /* 내부 패딩 */
+  }
+
+  /* 드롭다운 사이 줄 간격 줄이기 */
+  #stair-charge-options .dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* CBM과 Floor 간격 조정 */
+    margin-top: -10px;
+  }
+
+  /* 계산 결과 텍스트 */
+  #stair-charge {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
+    display: block; /* 라벨 제거 */
+  }
 
 
 
@@ -352,7 +408,7 @@
     <div class="result-row">
       <span class="result-label" style="font-size: 1rem; font-weight: bold;">STAIR CHARGE OPTIONS</span>
     </div>
-    <div class="result-row">
+    <div class="result-row" id="stair-charge-options">
       <span class="result-label">CBM</span>
       <select id="staircbm">
         <option value="">이동 CBM을 선택하세요</option>
