@@ -207,6 +207,11 @@
   text-align: right; /* 텍스트를 오른쪽으로 정렬 */
   margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
 }
+      #total-cost {
+     border-top: 1px dashed #8BC34A; /* 초록색 구분선 */
+     margin-top: 10px; /* 위쪽 간격 */
+     padding-top: 10px; /* 구분선과 텍스트 간격 */
+    }
 
 
 
@@ -436,9 +441,9 @@
       <span class="result-label" style="font-size: 1rem; font-weight: normal;">INSPECTION</span>
       <span class="result-value" id="inspection-value">None</span>
     </div>
-    <div class="result-row">
-  <span class="result-label" style="font-size: 1.4rem; font-weight: bold;" color:#ff6666>TOTAL COST</span>
-  <span class="result-value" id="total-value" style="font-size: 1.4rem; font-weight:bold; color:#ff6666>None</span>
+    <div class="result-row" id="total-cost">
+  <span class="result-label" style="font-size: 1.4rem; font-weight: bold;">TOTAL COST</span>
+  <span class="result-value" id="total-value" style="font-size: 1.4rem; font-weight:bold;">None</span>
   </div>
   </div>
 </div>
