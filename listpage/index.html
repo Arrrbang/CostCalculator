@@ -56,12 +56,6 @@
       return await response.json();
     };
 
-    // Resolve relative paths into absolute paths
-    const resolvePath = (relativePath) => {
-      const currentDir = window.location.href.split('/').slice(0, -1).join('/') + '/';
-      return new URL(relativePath, currentDir).href;
-    };
-
     // Populate dropdown options dynamically
     const populateDropdown = (dropdown, options, placeholder, key = "value") => {
       dropdown.innerHTML = `<option value="">${placeholder}</option>`;
@@ -111,7 +105,7 @@
           const companies = locations
             .filter(loc => loc.name === selectedRegion)
             .map(loc => ({
-              value: resolvePath(loc.link), // Convert relative path to absolute
+              value: loc.link, // Use absolute path directly from JSON
               text: loc.company
             }));
           populateDropdown(companyDropdown, companies, "Select a Company", "text");
@@ -129,7 +123,7 @@
         if (selectedLink) {
           navigateButton.disabled = false;
           navigateButton.onclick = () => {
-            window.location.href = selectedLink; // Use absolute path for navigation
+            window.location.href = selectedLink; // Use absolute path directly
           };
         } else {
           navigateButton.disabled = true;
