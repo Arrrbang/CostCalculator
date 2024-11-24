@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dynamic Dropdowns</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -50,31 +49,18 @@
     <button id="navigate-button" disabled>Go to Page</button>
   </div>
 
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
-    // Load the locations JSON
+    // Load the listlocation.json file
     const fetchLocations = async () => {
-      const response = await fetch('location.json');
+      const response = await fetch('listlocation.json');
       return await response.json();
     };
 
-    // Function to determine the country using Nominatim API
-    const getCountryFromLatLng = async (lat, lng) => {
-      const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`;
-      const response = await fetch(url);
-      const data = await response.json();
-      return data.address.country || "Unknown";
-    };
-
     // Populate the country dropdown
-    const populateCountryDropdown = async (locations) => {
-      const countries = new Set();
-      for (const loc of locations) {
-        const country = await getCountryFromLatLng(loc.lat, loc.lng);
-        countries.add(country);
-      }
-
+    const populateCountryDropdown = (locations) => {
+      const countries = [...new Set(locations.map(loc => loc.country))]; // Unique countries
       const countryDropdown = document.getElementById("country-dropdown");
+
       countries.forEach(country => {
         const option = document.createElement("option");
         option.value = country;
@@ -90,7 +76,10 @@
       regionDropdown.disabled = !selectedCountry;
 
       if (selectedCountry) {
-        const regions = locations.filter(loc => loc.country === selectedCountry).map(loc => loc.name);
+        const regions = locations
+          .filter(loc => loc.country === selectedCountry)
+          .map(loc => loc.name);
+
         regions.forEach(region => {
           const option = document.createElement("option");
           option.value = region;
@@ -108,13 +97,13 @@
 
       if (selectedRegion) {
         const companies = locations
-          .filter(loc => loc.name === selectedRegion && loc.SOSlink)
-          .map(loc => loc.SOSlink.split("/")[4]); // Extract "SOS"
+          .filter(loc => loc.name === selectedRegion && loc.SOS)
+          .map(loc => loc.SOS);
 
-        companies.forEach(company => {
+        companies.forEach((company, index) => {
           const option = document.createElement("option");
           option.value = company;
-          option.textContent = company;
+          option.textContent = `Option ${index + 1}`;
           companyDropdown.appendChild(option);
         });
       }
@@ -127,12 +116,12 @@
 
       if (!navigateButton.disabled) {
         const selectedLocation = locations.find(
-          loc => loc.name === selectedRegion && loc.SOSlink?.includes(selectedCompany)
+          loc => loc.name === selectedRegion && loc.SOS === selectedCompany
         );
 
         navigateButton.onclick = () => {
-          if (selectedLocation?.SOSlink) {
-            window.location.href = selectedLocation.SOSlink;
+          if (selectedLocation?.SOS) {
+            window.location.href = selectedLocation.SOS;
           } else {
             alert("Link not found for the selected options.");
           }
@@ -145,7 +134,7 @@
       const locations = await fetchLocations();
 
       // Populate countries
-      await populateCountryDropdown(locations);
+      populateCountryDropdown(locations);
 
       // Event listeners
       document.getElementById("country-dropdown").addEventListener("change", (e) => {
@@ -171,5 +160,8 @@
     // Start the initialization
     initializePage();
   </script>
+</body>
+</html>
+
 </body>
 </html>
