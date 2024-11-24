@@ -392,10 +392,13 @@
   }
     
       .charge-info {
-        text-align: center; /* 텍스트 가운데 정렬 */
-        font-size: 0.7rem; /* 폰트 크기 조정 */
-        margin-top: 0; /* 추가 여백 제거 */
-      }
+      text-align: center; /* 텍스트 가운데 정렬 */
+      font-size: clamp(0.5rem, 2vw, 0.7rem); /* 컨테이너 크기에 맞춰 폰트 크기 조정 */
+      white-space: nowrap; /* 줄바꿈 방지 */
+      overflow: hidden; /* 텍스트가 넘칠 경우 숨김 */
+      text-overflow: ellipsis; /* 텍스트가 넘칠 경우 말줄임(...) 처리 */
+      margin-top: 0; /* 추가 여백 제거 */
+    }
 }
 
 
