@@ -16,7 +16,7 @@
       max-width: 300px;
       margin: auto;
     }
-    select, input {
+    select {
       padding: 10px;
       font-size: 1rem;
     }
@@ -37,21 +37,15 @@
 <body>
   <h1>Dynamic Location Navigation</h1>
   <div class="dropdown-container">
-    <input type="text" id="country-search" placeholder="Search for a Country..." />
     <select id="country-dropdown">
       <option value="">Select a Country</option>
     </select>
-
-    <input type="text" id="region-search" placeholder="Search for a Region..." disabled />
     <select id="region-dropdown" disabled>
       <option value="">Select a Region</option>
     </select>
-
-    <input type="text" id="company-search" placeholder="Search for a Company..." disabled />
     <select id="company-dropdown" disabled>
       <option value="">Select a Company</option>
     </select>
-    
     <button id="navigate-button" disabled>Go to Page</button>
   </div>
 
@@ -64,7 +58,7 @@
 
     // Populate dropdown options dynamically
     const populateDropdown = (dropdown, options, placeholder, key = "value") => {
-      dropdown.innerHTML = `<option value="">${placeholder}</option>`;
+      dropdown.innerHTML = `<option value="">${placeholder}</option>`; // 수정된 부분
       options.forEach(option => {
         const element = document.createElement("option");
         element.value = option[key]; // Ensure this points to the correct key (e.g., loc.link)
@@ -73,55 +67,18 @@
       });
     };
 
-    // Add search functionality to a dropdown
-    const addSearchFunctionality = (inputId, dropdownId, options) => {
-      const searchInput = document.getElementById(inputId);
-      const dropdown = document.getElementById(dropdownId);
-
-      // Filter options based on search input
-      searchInput.addEventListener("keyup", () => {
-        const filterText = searchInput.value.toLowerCase();
-
-        // Clear existing dropdown options
-        dropdown.innerHTML = `<option value="">${dropdown.getAttribute('data-placeholder')}</option>`;
-
-        // Add options that match the filter text
-        options
-          .filter(option => option.toLowerCase().includes(filterText))
-          .forEach(option => {
-            const element = document.createElement("option");
-            element.value = option; // Use original value
-            element.textContent = option;
-            dropdown.appendChild(element);
-          });
-
-        // Trigger the 'change' event to reset dependent dropdowns
-        dropdown.dispatchEvent(new Event('change'));
-      });
-    };
-
     // Initialize dropdown functionality
     const initializePage = async () => {
       const locations = await fetchLocations();
 
       const countryDropdown = document.getElementById("country-dropdown");
-      const countrySearch = document.getElementById("country-search");
-
       const regionDropdown = document.getElementById("region-dropdown");
-      const regionSearch = document.getElementById("region-search");
-
       const companyDropdown = document.getElementById("company-dropdown");
-      const companySearch = document.getElementById("company-search");
-
       const navigateButton = document.getElementById("navigate-button");
 
       // Populate the country dropdown
       const countries = [...new Set(locations.map(loc => loc.country))];
       populateDropdown(countryDropdown, countries.map(c => ({ value: c })), "Select a Country");
-      countryDropdown.setAttribute("data-placeholder", "Select a Country");
-
-      // Add search functionality to the country dropdown
-      addSearchFunctionality("country-search", "country-dropdown", countries);
 
       // Handle country selection
       countryDropdown.addEventListener("change", () => {
@@ -129,21 +86,14 @@
         if (selectedCountry) {
           const regions = locations
             .filter(loc => loc.country === selectedCountry)
-            .map(loc => loc.name);
-          populateDropdown(regionDropdown, regions.map(r => ({ value: r })), "Select a Region");
+            .map(loc => ({ value: loc.name }));
+          populateDropdown(regionDropdown, regions, "Select a Region");
           regionDropdown.disabled = false;
-          regionSearch.disabled = false;
           companyDropdown.disabled = true;
-          companySearch.disabled = true;
           navigateButton.disabled = true;
-
-          // Add search functionality to the region dropdown
-          addSearchFunctionality("region-search", "region-dropdown", regions);
         } else {
           regionDropdown.disabled = true;
-          regionSearch.disabled = true;
           companyDropdown.disabled = true;
-          companySearch.disabled = true;
           navigateButton.disabled = true;
         }
       });
@@ -160,14 +110,9 @@
             }));
           populateDropdown(companyDropdown, companies, "Select a Company", "value");
           companyDropdown.disabled = false;
-          companySearch.disabled = false;
           navigateButton.disabled = true;
-
-          // Add search functionality to the company dropdown
-          addSearchFunctionality("company-search", "company-dropdown", companies.map(c => c.text));
         } else {
           companyDropdown.disabled = true;
-          companySearch.disabled = true;
           navigateButton.disabled = true;
         }
       });
@@ -193,4 +138,3 @@
   </script>
 </body>
 </html>
-
