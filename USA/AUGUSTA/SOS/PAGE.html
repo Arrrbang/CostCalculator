@@ -213,6 +213,32 @@
      padding-top: 10px; /* 구분선과 텍스트 간격 */
     }
 
+         .link-container {
+        display: flex;
+        justify-content: space-between; /* 좌우 공간 균등 배치 */
+        gap: 20px; /* 컨테이너 간 간격 */
+        margin-top: 20px; /* 위쪽 여백 */
+      }
+    
+      /* 링크 박스 스타일 */
+      .link-box {
+        background-color: #8BC34A; /* 기본 초록색 */
+        color: white; /* 텍스트 색상 */
+        font-size: 1.2rem; /* 폰트 크기 */
+        font-weight: bold; /* 텍스트 굵게 */
+        padding: 20px; /* 내부 여백 */
+        text-align: center; /* 텍스트 가운데 정렬 */
+        border-radius: 8px; /* 둥근 모서리 */
+        flex: 1; /* 각 컨테이너가 동일한 크기 */
+        cursor: pointer; /* 클릭 가능 표시 */
+        transition: background-color 0.3s ease; /* 배경색 전환 효과 */
+      }
+    
+      /* 마우스 오버 효과 */
+      .link-box:hover {
+        background-color: #4CAF50; /* 마우스 올렸을 때 진한 초록색 */
+      }
+
 
 
   /* 모바일 반응형 */
@@ -550,6 +576,14 @@
       대략적인 중량을 선택하면 금액이 계산됩니다.
     </p>
   </div>
+
+  <div class="form-container">
+  <h2>링크 섹션</h2>
+  <div class="link-container">
+    <div class="link-box" id="link1" onclick="window.location.href='https://example.com';">link1</div>
+    <div class="link-box" id="link2" onclick="window.location.href='https://example2.com';">link2</div>
+  </div>
+</div>
 
 
   <script>
