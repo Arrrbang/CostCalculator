@@ -393,7 +393,7 @@
     
       .charge-info {
       text-align: center; /* 텍스트 가운데 정렬 */
-      font-size: calc(min(1rem + 0.5vw, 2rem)); /* 부모 컨테이너 크기에 맞춰 동적 폰트 크기 조정 */
+      font-size: calc(2rem * (100vw / 768)); /* 뷰포트 너비에 따라 동적 폰트 크기 */
       white-space: nowrap; /* 줄바꿈 방지 */
       overflow: hidden; /* 텍스트 넘침 방지 */
       text-overflow: clip; /* 말줄임표 없이 넘침 방지 */
