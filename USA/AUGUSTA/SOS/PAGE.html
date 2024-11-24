@@ -775,7 +775,7 @@ function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
   document.getElementById("basic-delivery-value").textContent = "None";
 
   // 추가 비용 초기화
-  ["shuttle-charge", "long-carry-charge", "stair-charge","heavyitem-value","fst-charge","phc-charge","weekend-charge","phc-charge" ].forEach((id) => {
+  ["shuttle-charge", "long-carry-charge", "stair-charge","heavyitem-value","full-setting-charge","uplight-piano","weekend-charge","phc-charge" ].forEach((id) => {
     const element = document.getElementById(id);
     if (element) element.textContent = "None";
   });
