@@ -1,6 +1,6 @@
 [
   {"country": "미국 (USA)", "name": "Atlanta, GA", "company": "SOS", "link": "../COUNTRY/USA/ATLANTA/SOS/PAGE.html"},
   {"country": "미국 (USA)", "name": "LaGrange, GA", "company": "SOS", "link": "../COUNTRY/USA/LAGRANGE/SOS/PAGE.html"},
-  {"country": "미국 (USA)", "name": "Augusta, GA", "company": "SOS", "link": "../COUNTRY/USA/AUGUSTA/SOS/PAGE.html"},
+  {"country": "미국 (USA)", "name": "Augusta, GA", "company": "SOS", "link": "/frontend/COUNTRY/USA/AUGUSTA/SOS/PAGE.html"},
   {"country": "미국 (USA)", "name": "Savannah, GA", "company": "SOS", "link": "../COUNTRY/USA/SAVANNAH/SOS/PAGE.html"}
 ]
