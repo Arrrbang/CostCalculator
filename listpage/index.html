@@ -3,12 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Searchable Dropdowns</title>
+  <title>업체 리스트 검색</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
+      font-family: 'Noto Sans KR', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 80px;
+      overflow-y: auto;
     }
+
+      .form-container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 90%; /* 반응형 크기 */
+      max-width: 500px;
+      margin: 0 auto 30px;
+      text-align: center;
+      min-height: auto;
+    }
+
+    h2 {
+      background-color: #8BC34A;
+      color: white;
+      padding: 10px 0;
+      margin: 0;
+      border-radius: 5px 5px 0 0;
+      font-size: 1.2rem;
+    }
+    
     .dropdown-container {
       display: flex;
       flex-direction: column;
@@ -26,6 +59,7 @@
       width: 100%;
       box-sizing: border-box;
       cursor: pointer;
+      font-family: 'Noto Sans KR', Arial, sans-serif; /* 폰트 변경 */
     }
     .custom-dropdown ul {
       list-style: none;
@@ -39,6 +73,7 @@
       background-color: white;
       z-index: 1000;
       display: none;
+      font-family: 'Noto Sans KR', Arial, sans-serif; /* 폰트 변경 */
     }
     .custom-dropdown ul li {
       padding: 10px;
@@ -55,6 +90,7 @@
       border: none;
       cursor: pointer;
       border-radius: 5px;
+      font-family: 'Noto Sans KR', Arial, sans-serif; /* 폰트 변경 */
     }
     button:hover {
       background-color: #45a049;
@@ -62,8 +98,9 @@
   </style>
 </head>
 <body>
-  <h1>Searchable Dropdown Navigation</h1>
-  <div class="dropdown-container">
+  <div class="form-container">
+    <h2>업체 리스트 검색</h2>
+   <div class="dropdown-container">
     <div class="custom-dropdown">
       <input type="text" id="country-search" placeholder="Select a Country" autocomplete="off" readonly>
       <ul id="country-dropdown"></ul>
@@ -78,6 +115,7 @@
     </div>
     <button id="navigate-button" disabled>Go to Page</button>
   </div>
+ </div>
 
   <script>
     // Fetch locations from listlocation.json
