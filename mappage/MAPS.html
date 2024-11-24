@@ -24,16 +24,13 @@
       display: flex;
       flex-direction: column;
     }
-    #header-space {
-      height: 16.66%; /* 페이지의 1/6 */
-      background-color: #f4f4f4; /* 공백 영역의 배경색 */
-    }
 
     #logo {
       position: relative; /* 정적 위치 */
       margin-left: 10px; /* 왼쪽 마진 */
       margin-top: 10px; /* 상단 마진 */
-      width: 400px; /* 이미지 너비 */
+      width: 300px; /* 이미지 너비 */
+      margin-bottom: 10px; 
     }
     
     #map {
@@ -136,7 +133,6 @@
   </style>
 </head>
 <body>
-  <div id="header-space"></div> <!-- 페이지 상단 1/6 공백 -->
   <img id="logo" src="https://arrrbang.github.io/frontend/image/pumexlogonew.png" alt="Logo">
   <div id="search-container">
     <input type="text" id="search-input" placeholder="Search for a location" />
