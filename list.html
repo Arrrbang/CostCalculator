@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Dropdowns</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .dropdown-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 300px;
+      margin: auto;
+    }
+    select {
+      padding: 10px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 10px;
+      font-size: 1rem;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dynamic Location Navigation</h1>
+  <div class="dropdown-container">
+    <select id="country-dropdown">
+      <option value="">Select a Country</option>
+    </select>
+    <select id="region-dropdown" disabled>
+      <option value="">Select a Region</option>
+    </select>
+    <select id="company-dropdown" disabled>
+      <option value="">Select a Company</option>
+    </select>
+    <button id="navigate-button" disabled>Go to Page</button>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Load the locations JSON
+    const fetchLocations = async () => {
+      const response = await fetch('location.json');
+      return await response.json();
+    };
+
+    // Function to determine the country using Nominatim API
+    const getCountryFromLatLng = async (lat, lng) => {
+      const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`;
+      const response = await fetch(url);
+      const data = await response.json();
+      return data.address.country || "Unknown";
+    };
+
+    // Populate the country dropdown
+    const populateCountryDropdown = async (locations) => {
+      const countries = new Set();
+      for (const loc of locations) {
+        const country = await getCountryFromLatLng(loc.lat, loc.lng);
+        countries.add(country);
+      }
+
+      const countryDropdown = document.getElementById("country-dropdown");
+      countries.forEach(country => {
+        const option = document.createElement("option");
+        option.value = country;
+        option.textContent = country;
+        countryDropdown.appendChild(option);
+      });
+    };
+
+    // Populate the region dropdown
+    const populateRegionDropdown = (locations, selectedCountry) => {
+      const regionDropdown = document.getElementById("region-dropdown");
+      regionDropdown.innerHTML = '<option value="">Select a Region</option>';
+      regionDropdown.disabled = !selectedCountry;
+
+      if (selectedCountry) {
+        const regions = locations.filter(loc => loc.country === selectedCountry).map(loc => loc.name);
+        regions.forEach(region => {
+          const option = document.createElement("option");
+          option.value = region;
+          option.textContent = region;
+          regionDropdown.appendChild(option);
+        });
+      }
+    };
+
+    // Populate the company dropdown
+    const populateCompanyDropdown = (locations, selectedRegion) => {
+      const companyDropdown = document.getElementById("company-dropdown");
+      companyDropdown.innerHTML = '<option value="">Select a Company</option>';
+      companyDropdown.disabled = !selectedRegion;
+
+      if (selectedRegion) {
+        const companies = locations
+          .filter(loc => loc.name === selectedRegion && loc.SOSlink)
+          .map(loc => loc.SOSlink.split("/")[4]); // Extract "SOS"
+
+        companies.forEach(company => {
+          const option = document.createElement("option");
+          option.value = company;
+          option.textContent = company;
+          companyDropdown.appendChild(option);
+        });
+      }
+    };
+
+    // Set up the navigation button
+    const setupNavigateButton = (locations, selectedRegion, selectedCompany) => {
+      const navigateButton = document.getElementById("navigate-button");
+      navigateButton.disabled = !(selectedRegion && selectedCompany);
+
+      if (!navigateButton.disabled) {
+        const selectedLocation = locations.find(
+          loc => loc.name === selectedRegion && loc.SOSlink?.includes(selectedCompany)
+        );
+
+        navigateButton.onclick = () => {
+          if (selectedLocation?.SOSlink) {
+            window.location.href = selectedLocation.SOSlink;
+          } else {
+            alert("Link not found for the selected options.");
+          }
+        };
+      }
+    };
+
+    // Initialize the page
+    const initializePage = async () => {
+      const locations = await fetchLocations();
+
+      // Populate countries
+      await populateCountryDropdown(locations);
+
+      // Event listeners
+      document.getElementById("country-dropdown").addEventListener("change", (e) => {
+        const selectedCountry = e.target.value;
+        populateRegionDropdown(locations, selectedCountry);
+        document.getElementById("company-dropdown").disabled = true;
+        document.getElementById("navigate-button").disabled = true;
+      });
+
+      document.getElementById("region-dropdown").addEventListener("change", (e) => {
+        const selectedRegion = e.target.value;
+        populateCompanyDropdown(locations, selectedRegion);
+        document.getElementById("navigate-button").disabled = true;
+      });
+
+      document.getElementById("company-dropdown").addEventListener("change", (e) => {
+        const selectedRegion = document.getElementById("region-dropdown").value;
+        const selectedCompany = e.target.value;
+        setupNavigateButton(locations, selectedRegion, selectedCompany);
+      });
+    };
+
+    // Start the initialization
+    initializePage();
+  </script>
+</body>
+</html>
