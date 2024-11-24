@@ -202,11 +202,11 @@
       text-align: center;
       color: #ff6666; /* 빨간색 경고 텍스트 */
     }
-   
-   #heavyitem-value {
-  text-align: right; /* 텍스트를 오른쪽으로 정렬 */
-  margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
-}
+       
+       #heavyitem-value {
+      text-align: right; /* 텍스트를 오른쪽으로 정렬 */
+      margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
+    }
       #total-cost {
      border-top: 1px dashed #8BC34A; /* 초록색 구분선 */
      margin-top: 10px; /* 위쪽 간격 */
@@ -368,11 +368,34 @@
       padding: 6px !important;
       box-sizing: border-box !important;
       margin-left: 0;
-      font-size: 0.8rem !important; /* 폰트 크기 */
-      padding: 6px !important; /* 내부 여백 */
-      box-sizing: border-box !important; /* 패딩 포함 크기 계산 */
       margin: 0 !important; /* 여백 초기화 */
   }
+
+    #heavyitemrow {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+    #heavyitemrow .result-label {
+        margin-bottom: 10px; /* 라벨과 드롭다운 사이 간격 */
+      }
+
+    #heavyitemunit {
+      width: 140px; /* 드롭다운 너비 */
+      font-size: 0.8rem;
+      padding: 6px;
+      box-sizing: border-box;
+      margin-left: 0;
+      margin: 0; /* 여백 초기화 */
+      margin-bottom: 20px; /* 드롭다운과 설명 텍스트 사이 간격 */
+  }
+    
+      .charge-info {
+        text-align: center; /* 텍스트 가운데 정렬 */
+        font-size: 0.7rem; /* 폰트 크기 조정 */
+        margin-top: 0; /* 추가 여백 제거 */
+      }
 }
 
 
@@ -464,10 +487,6 @@
     <div class="result-row" id="stairchargetitle">
       <span class="result-label" style="font-size: 1rem; font-weight: bold;">STAIR CHARGE OPTIONS</span>
     </div>
-    <p class="charge-info">
-      층수 선택이 시작하는 층수 이전 층의 계단 비용은 무료입니다.<br>
-      해당 업체의 계단 비용 단가는 $10*cbm*floor 입니다.
-    </p>
     <div class="result-row" id="stair-charge-options">
       <div class="stair-container">
       <span class="stairchargelabel">CBM</span>
@@ -483,6 +502,10 @@
         <option value="">이동 층 선택</option>
       </select>
       </div>
+      <p class="charge-info">
+      층수 선택이 시작하는 층수 이전 층의 계단 비용은 무료입니다.<br>
+      해당 업체의 계단 비용 단가는 $10*cbm*floor 입니다.
+      </p>
     </div>
 
         <!-- STAIR CHARGE 결과 -->
@@ -497,16 +520,13 @@
         <option value="">중량 화물 개수 선택</option>
       </select>
     </div>
+    <div class="result-row">
+      <span class="result-value" id="heavyitem-value">None</span>
+    </div>
     <p class="charge-info">
       해당 업체의 중량 화물 단가는 $100/100KG 입니다.<br>
       대략적인 중량을 선택하면 금액이 계산됩니다.
     </p>
-    <div class="result-row">
-      <span class="result-value" id="heavyitem-value">None</span>
-    </div>
-
-    
-
   </div>
 
 
