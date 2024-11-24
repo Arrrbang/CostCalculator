@@ -808,7 +808,10 @@ function updateAdditionalCosts() {
 
   ["SHUTTLE CHARGE", "LONG CARRY CHARGE", "FULL SETTING CHARGE", "WEEKEND CHARGE", "UPLIGHT PIANO"].forEach((category) => {
     const id = category.toLowerCase().replace(/ /g, "-");
-    const result = basicExtraCost[category]?.[selectedCBM] || "None";
+     // 선택된 CBM 값을 확인하고 없으면 "ANY" 키를 사용
+    const result = basicExtraCost[category]?.[selectedCBM]
+      ?? basicExtraCost[category]?.["ANY"] 
+      ?? "None";
     const element = document.getElementById(id);
     if (element) element.textContent = result;
   });
