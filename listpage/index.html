@@ -52,14 +52,14 @@
   <script>
     // Load the listlocation.json file
     const fetchLocations = async () => {
-      const response = await fetch('../listlocation.json'); // JSON 파일이 상위 폴더에 위치
+      const response = await fetch('listlocation.json'); // JSON 파일이 동일한 폴더에 있음
       return await response.json();
     };
 
     // Resolve relative paths into absolute paths
     const resolvePath = (relativePath) => {
-      const base = window.location.origin + '/frontend/'; // Use root path to resolve correctly
-      return new URL(relativePath.replace('../', ''), base).href; // Remove '../' and resolve
+      const currentDir = window.location.href.split('/').slice(0, -1).join('/') + '/';
+      return new URL(relativePath, currentDir).href;
     };
 
     // Populate dropdown options dynamically
@@ -110,7 +110,10 @@
         if (selectedRegion) {
           const companies = locations
             .filter(loc => loc.name === selectedRegion)
-            .map(loc => ({ value: resolvePath(loc.link), text: loc.company })); // Use `resolvePath` to fix the link
+            .map(loc => ({
+              value: resolvePath(loc.link), // Convert relative path to absolute
+              text: loc.company
+            }));
           populateDropdown(companyDropdown, companies, "Select a Company", "text");
           companyDropdown.disabled = false;
           navigateButton.disabled = true;
