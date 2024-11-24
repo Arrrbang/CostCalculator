@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dynamic Dropdowns</title>
+  <title>Searchable Dropdowns</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -16,9 +16,35 @@
       max-width: 300px;
       margin: auto;
     }
-    select {
+    .custom-dropdown {
+      position: relative;
+      width: 100%;
+    }
+    .custom-dropdown input {
       padding: 10px;
       font-size: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .custom-dropdown ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      width: 100%;
+      max-height: 150px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      background-color: white;
+      z-index: 1000;
+      display: none;
+    }
+    .custom-dropdown ul li {
+      padding: 10px;
+      cursor: pointer;
+    }
+    .custom-dropdown ul li:hover {
+      background-color: #f0f0f0;
     }
     button {
       padding: 10px;
@@ -35,105 +61,96 @@
   </style>
 </head>
 <body>
-  <h1>Dynamic Location Navigation</h1>
+  <h1>Searchable Dropdown Navigation</h1>
   <div class="dropdown-container">
-    <select id="country-dropdown">
-      <option value="">Select a Country</option>
-    </select>
-    <select id="region-dropdown" disabled>
-      <option value="">Select a Region</option>
-    </select>
-    <select id="company-dropdown" disabled>
-      <option value="">Select a Company</option>
-    </select>
+    <div class="custom-dropdown">
+      <input type="text" id="country-search" placeholder="Search for a Country" autocomplete="off">
+      <ul id="country-dropdown"></ul>
+    </div>
+    <div class="custom-dropdown">
+      <input type="text" id="region-search" placeholder="Search for a Region" autocomplete="off" disabled>
+      <ul id="region-dropdown"></ul>
+    </div>
+    <div class="custom-dropdown">
+      <input type="text" id="company-search" placeholder="Search for a Company" autocomplete="off" disabled>
+      <ul id="company-dropdown"></ul>
+    </div>
     <button id="navigate-button" disabled>Go to Page</button>
   </div>
 
   <script>
-    // Load the listlocation.json file
+    // Fetch locations from listlocation.json
     const fetchLocations = async () => {
-      const response = await fetch('listlocation.json'); // JSON 파일이 동일한 폴더에 있음
+      const response = await fetch('listlocation.json');
       return await response.json();
     };
 
-    // Populate dropdown options dynamically
-    const populateDropdown = (dropdown, options, placeholder, key = "value") => {
-      dropdown.innerHTML = `<option value="">${placeholder}</option>`; // 수정된 부분
-      options.forEach(option => {
-        const element = document.createElement("option");
-        element.value = option[key]; // Ensure this points to the correct key (e.g., loc.link)
-        element.textContent = option.text || option[key]; // Display text
-        dropdown.appendChild(element);
-      });
+    // Populate dropdown with search functionality
+    const populateSearchableDropdown = (input, dropdown, options, onSelect) => {
+      const updateDropdown = (filter = "") => {
+        dropdown.innerHTML = "";
+        options
+          .filter(option => option.text.toLowerCase().includes(filter.toLowerCase()))
+          .forEach(option => {
+            const li = document.createElement("li");
+            li.textContent = option.text;
+            li.dataset.value = option.value;
+            li.addEventListener("click", () => {
+              input.value = li.textContent;
+              dropdown.style.display = "none";
+              onSelect(li.dataset.value);
+            });
+            dropdown.appendChild(li);
+          });
+        dropdown.style.display = dropdown.innerHTML ? "block" : "none";
+      };
+
+      input.addEventListener("input", () => updateDropdown(input.value));
+      input.addEventListener("focus", () => updateDropdown(input.value));
+      input.addEventListener("blur", () => setTimeout(() => dropdown.style.display = "none", 150));
+
+      // Initial population
+      updateDropdown();
     };
 
-    // Initialize dropdown functionality
+    // Initialize the page
     const initializePage = async () => {
       const locations = await fetchLocations();
 
+      const countrySearch = document.getElementById("country-search");
       const countryDropdown = document.getElementById("country-dropdown");
+
+      const regionSearch = document.getElementById("region-search");
       const regionDropdown = document.getElementById("region-dropdown");
+
+      const companySearch = document.getElementById("company-search");
       const companyDropdown = document.getElementById("company-dropdown");
+
       const navigateButton = document.getElementById("navigate-button");
 
-      // Populate the country dropdown
-      const countries = [...new Set(locations.map(loc => loc.country))];
-      populateDropdown(countryDropdown, countries.map(c => ({ value: c })), "Select a Country");
-
-      // Handle country selection
-      countryDropdown.addEventListener("change", () => {
-        const selectedCountry = countryDropdown.value;
-        if (selectedCountry) {
-          const regions = locations
-            .filter(loc => loc.country === selectedCountry)
-            .map(loc => ({ value: loc.name }));
-          populateDropdown(regionDropdown, regions, "Select a Region");
-          regionDropdown.disabled = false;
-          companyDropdown.disabled = true;
-          navigateButton.disabled = true;
-        } else {
-          regionDropdown.disabled = true;
-          companyDropdown.disabled = true;
-          navigateButton.disabled = true;
-        }
-      });
-
-      // Handle region selection
-      regionDropdown.addEventListener("change", () => {
-        const selectedRegion = regionDropdown.value;
-        if (selectedRegion) {
+      // Populate countries
+      const countries = [...new Set(locations.map(loc => loc.country))].map(c => ({ text: c, value: c }));
+      populateSearchableDropdown(countrySearch, countryDropdown, countries, selectedCountry => {
+        const regions = locations
+          .filter(loc => loc.country === selectedCountry)
+          .map(loc => ({ text: loc.name, value: loc.name }));
+        populateSearchableDropdown(regionSearch, regionDropdown, regions, selectedRegion => {
           const companies = locations
             .filter(loc => loc.name === selectedRegion)
-            .map(loc => ({
-              value: loc.link, // Correctly set the link as the value
-              text: loc.company // Display company name
-            }));
-          populateDropdown(companyDropdown, companies, "Select a Company", "value");
-          companyDropdown.disabled = false;
-          navigateButton.disabled = true;
-        } else {
-          companyDropdown.disabled = true;
-          navigateButton.disabled = true;
-        }
-      });
-
-      // Handle company selection
-      companyDropdown.addEventListener("change", () => {
-        const selectedLink = companyDropdown.value; // Correctly get the link value
-        console.log('Selected Link:', selectedLink); // Debugging: Output selected link
-        if (selectedLink) {
-          navigateButton.disabled = false;
-          navigateButton.onclick = () => {
-            console.log('Navigating to:', selectedLink); // Debugging: Output navigation action
-            window.location.href = selectedLink; // Redirect to the selected link
-          };
-        } else {
-          navigateButton.disabled = true;
-        }
+            .map(loc => ({ text: loc.company, value: loc.link }));
+          populateSearchableDropdown(companySearch, companyDropdown, companies, selectedLink => {
+            navigateButton.disabled = false;
+            navigateButton.onclick = () => {
+              window.location.href = selectedLink;
+            };
+          });
+          companySearch.disabled = false;
+        });
+        regionSearch.disabled = false;
       });
     };
 
-    // Start the initialization
+    // Start initialization
     initializePage();
   </script>
 </body>
