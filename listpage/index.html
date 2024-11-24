@@ -105,7 +105,7 @@
           const companies = locations
             .filter(loc => loc.name === selectedRegion)
             .map(loc => ({
-              value: loc.link, // Use absolute path directly from JSON
+              value: loc.link, // Use `link` field from JSON
               text: loc.company
             }));
           populateDropdown(companyDropdown, companies, "Select a Company", "text");
@@ -119,12 +119,13 @@
 
       // Handle company selection
       companyDropdown.addEventListener("change", () => {
-        const selectedLink = companyDropdown.value;
-        console.log('Selected Link:', selectedLink); // 선택된 링크 출력
+        const selectedLink = companyDropdown.value; // Get the link value
+        console.log('Selected Link:', selectedLink); // Debugging: Output selected link
         if (selectedLink) {
           navigateButton.disabled = false;
           navigateButton.onclick = () => {
-            window.location.href = selectedLink; // Use absolute path directly
+            console.log('Navigating to:', selectedLink); // Debugging: Output navigation action
+            window.location.href = selectedLink; // Redirect to the selected link
           };
         } else {
           navigateButton.disabled = true;
@@ -137,3 +138,4 @@
   </script>
 </body>
 </html>
+
