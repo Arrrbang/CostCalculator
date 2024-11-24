@@ -120,6 +120,7 @@
       // Handle company selection
       companyDropdown.addEventListener("change", () => {
         const selectedLink = companyDropdown.value;
+        console.log('Selected Link:', selectedLink); // 선택된 링크 출력
         if (selectedLink) {
           navigateButton.disabled = false;
           navigateButton.onclick = () => {
