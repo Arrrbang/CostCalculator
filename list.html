@@ -56,112 +56,80 @@
       return await response.json();
     };
 
-    // Populate the country dropdown
-    const populateCountryDropdown = (locations) => {
-      const countries = [...new Set(locations.map(loc => loc.country))]; // Unique countries
-      const countryDropdown = document.getElementById("country-dropdown");
-
-      countries.forEach(country => {
-        const option = document.createElement("option");
-        option.value = country;
-        option.textContent = country;
-        countryDropdown.appendChild(option);
+    // Populate dropdown options dynamically
+    const populateDropdown = (dropdown, options, placeholder, key = "value") => {
+      dropdown.innerHTML = `<option value="">${placeholder}</option>`;
+      options.forEach(option => {
+        const element = document.createElement("option");
+        element.value = option[key];
+        element.textContent = option[key];
+        dropdown.appendChild(element);
       });
     };
 
-    // Populate the region dropdown
-    const populateRegionDropdown = (locations, selectedCountry) => {
-      const regionDropdown = document.getElementById("region-dropdown");
-      regionDropdown.innerHTML = '<option value="">Select a Region</option>';
-      regionDropdown.disabled = !selectedCountry;
-
-      if (selectedCountry) {
-        const regions = locations
-          .filter(loc => loc.country === selectedCountry)
-          .map(loc => loc.name);
-
-        regions.forEach(region => {
-          const option = document.createElement("option");
-          option.value = region;
-          option.textContent = region;
-          regionDropdown.appendChild(option);
-        });
-      }
-    };
-
-    // Populate the company dropdown
-    const populateCompanyDropdown = (locations, selectedRegion) => {
-      const companyDropdown = document.getElementById("company-dropdown");
-      companyDropdown.innerHTML = '<option value="">Select a Company</option>';
-      companyDropdown.disabled = !selectedRegion;
-
-      if (selectedRegion) {
-        const companies = locations
-          .filter(loc => loc.name === selectedRegion && loc.SOS)
-          .map(loc => loc.SOS);
-
-        companies.forEach((company, index) => {
-          const option = document.createElement("option");
-          option.value = company;
-          option.textContent = `Option ${index + 1}`;
-          companyDropdown.appendChild(option);
-        });
-      }
-    };
-
-    // Set up the navigation button
-    const setupNavigateButton = (locations, selectedRegion, selectedCompany) => {
-      const navigateButton = document.getElementById("navigate-button");
-      navigateButton.disabled = !(selectedRegion && selectedCompany);
-
-      if (!navigateButton.disabled) {
-        const selectedLocation = locations.find(
-          loc => loc.name === selectedRegion && loc.SOS === selectedCompany
-        );
-
-        navigateButton.onclick = () => {
-          if (selectedLocation?.SOS) {
-            window.location.href = selectedLocation.SOS;
-          } else {
-            alert("Link not found for the selected options.");
-          }
-        };
-      }
-    };
-
-    // Initialize the page
+    // Initialize dropdown functionality
     const initializePage = async () => {
       const locations = await fetchLocations();
 
-      // Populate countries
-      populateCountryDropdown(locations);
+      const countryDropdown = document.getElementById("country-dropdown");
+      const regionDropdown = document.getElementById("region-dropdown");
+      const companyDropdown = document.getElementById("company-dropdown");
+      const navigateButton = document.getElementById("navigate-button");
 
-      // Event listeners
-      document.getElementById("country-dropdown").addEventListener("change", (e) => {
-        const selectedCountry = e.target.value;
-        populateRegionDropdown(locations, selectedCountry);
-        document.getElementById("company-dropdown").disabled = true;
-        document.getElementById("navigate-button").disabled = true;
+      // Populate the country dropdown
+      const countries = [...new Set(locations.map(loc => loc.country))];
+      populateDropdown(countryDropdown, countries.map(c => ({ value: c })), "Select a Country");
+
+      // Handle country selection
+      countryDropdown.addEventListener("change", () => {
+        const selectedCountry = countryDropdown.value;
+        if (selectedCountry) {
+          const regions = locations
+            .filter(loc => loc.country === selectedCountry)
+            .map(loc => ({ value: loc.name }));
+          populateDropdown(regionDropdown, regions, "Select a Region");
+          regionDropdown.disabled = false;
+          companyDropdown.disabled = true;
+          navigateButton.disabled = true;
+        } else {
+          regionDropdown.disabled = true;
+          companyDropdown.disabled = true;
+          navigateButton.disabled = true;
+        }
       });
 
-      document.getElementById("region-dropdown").addEventListener("change", (e) => {
-        const selectedRegion = e.target.value;
-        populateCompanyDropdown(locations, selectedRegion);
-        document.getElementById("navigate-button").disabled = true;
+      // Handle region selection
+      regionDropdown.addEventListener("change", () => {
+        const selectedRegion = regionDropdown.value;
+        if (selectedRegion) {
+          const companies = locations
+            .filter(loc => loc.name === selectedRegion)
+            .map(loc => ({ value: loc.link, text: loc.company })); // Show company, link for navigation
+          populateDropdown(companyDropdown, companies, "Select a Company", "text");
+          companyDropdown.disabled = false;
+          navigateButton.disabled = true;
+        } else {
+          companyDropdown.disabled = true;
+          navigateButton.disabled = true;
+        }
       });
 
-      document.getElementById("company-dropdown").addEventListener("change", (e) => {
-        const selectedRegion = document.getElementById("region-dropdown").value;
-        const selectedCompany = e.target.value;
-        setupNavigateButton(locations, selectedRegion, selectedCompany);
+      // Handle company selection
+      companyDropdown.addEventListener("change", () => {
+        const selectedLink = companyDropdown.value;
+        if (selectedLink) {
+          navigateButton.disabled = false;
+          navigateButton.onclick = () => {
+            window.location.href = selectedLink;
+          };
+        } else {
+          navigateButton.disabled = true;
+        }
       });
     };
 
     // Start the initialization
     initializePage();
   </script>
-</body>
-</html>
-
 </body>
 </html>
