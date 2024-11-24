@@ -25,6 +25,7 @@
       font-size: 1rem;
       width: 100%;
       box-sizing: border-box;
+      cursor: pointer;
     }
     .custom-dropdown ul {
       list-style: none;
@@ -64,15 +65,15 @@
   <h1>Searchable Dropdown Navigation</h1>
   <div class="dropdown-container">
     <div class="custom-dropdown">
-      <input type="text" id="country-search" placeholder="Search for a Country" autocomplete="off">
+      <input type="text" id="country-search" placeholder="Select a Country" autocomplete="off" readonly>
       <ul id="country-dropdown"></ul>
     </div>
     <div class="custom-dropdown">
-      <input type="text" id="region-search" placeholder="Search for a Region" autocomplete="off" disabled>
+      <input type="text" id="region-search" placeholder="Select a Region" autocomplete="off" readonly disabled>
       <ul id="region-dropdown"></ul>
     </div>
     <div class="custom-dropdown">
-      <input type="text" id="company-search" placeholder="Search for a Company" autocomplete="off" disabled>
+      <input type="text" id="company-search" placeholder="Select a Company" autocomplete="off" readonly disabled>
       <ul id="company-dropdown"></ul>
     </div>
     <button id="navigate-button" disabled>Go to Page</button>
@@ -105,12 +106,14 @@
         dropdown.style.display = dropdown.innerHTML ? "block" : "none";
       };
 
+      input.addEventListener("focus", () => updateDropdown());
+      input.addEventListener("click", () => updateDropdown());
       input.addEventListener("input", () => updateDropdown(input.value));
-      input.addEventListener("focus", () => updateDropdown(input.value));
       input.addEventListener("blur", () => setTimeout(() => dropdown.style.display = "none", 150));
 
-      // Initial population
-      updateDropdown();
+      input.addEventListener("click", () => {
+        dropdown.style.display = "block"; // Show dropdown on click
+      });
     };
 
     // Initialize the page
