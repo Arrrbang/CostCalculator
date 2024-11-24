@@ -393,12 +393,12 @@
     
       .charge-info {
       text-align: center; /* 텍스트 가운데 정렬 */
-      font-size: calc(2rem * (100vw / 768)); /* 뷰포트 너비에 따라 동적 폰트 크기 */
+      font-size: clamp(0.5rem, 5vw, 2rem); /* 컨테이너에 맞게 동적 폰트 크기 조정 */
       white-space: nowrap; /* 줄바꿈 방지 */
       overflow: hidden; /* 텍스트 넘침 방지 */
       text-overflow: clip; /* 말줄임표 없이 넘침 방지 */
       margin: 0 auto; /* 수평 가운데 정렬 */
-      max-width: 100%; /* 부모 컨테이너 크기를 초과하지 않도록 제한 */
+      max-width: 90%; /* 부모 컨테이너 크기를 초과하지 않도록 제한 */
       display: block; /* margin auto 적용을 위해 블록 요소로 변경 */
     }
    #heavyitemunit {
