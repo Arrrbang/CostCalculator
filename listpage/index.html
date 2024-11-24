@@ -61,8 +61,8 @@
       dropdown.innerHTML = `<option value="">${placeholder}</option>`;
       options.forEach(option => {
         const element = document.createElement("option");
-        element.value = option[key];
-        element.textContent = option[key];
+        element.value = option[key]; // Ensure this points to the correct key (e.g., loc.link)
+        element.textContent = option.text || option[key]; // Display text
         dropdown.appendChild(element);
       });
     };
@@ -105,10 +105,10 @@
           const companies = locations
             .filter(loc => loc.name === selectedRegion)
             .map(loc => ({
-              value: loc.link, // Use `link` field from JSON
-              text: loc.company
+              value: loc.link, // Correctly set the link as the value
+              text: loc.company // Display company name
             }));
-          populateDropdown(companyDropdown, companies, "Select a Company", "text");
+          populateDropdown(companyDropdown, companies, "Select a Company", "value");
           companyDropdown.disabled = false;
           navigateButton.disabled = true;
         } else {
@@ -119,7 +119,7 @@
 
       // Handle company selection
       companyDropdown.addEventListener("change", () => {
-        const selectedLink = companyDropdown.value; // Get the link value
+        const selectedLink = companyDropdown.value; // Correctly get the link value
         console.log('Selected Link:', selectedLink); // Debugging: Output selected link
         if (selectedLink) {
           navigateButton.disabled = false;
@@ -138,4 +138,3 @@
   </script>
 </body>
 </html>
-
