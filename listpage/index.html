@@ -52,14 +52,14 @@
   <script>
     // Load the listlocation.json file
     const fetchLocations = async () => {
-      const response = await fetch('listlocation.json'); // Ensure this is the correct path to your JSON file
+      const response = await fetch('../listlocation.json'); // JSON 파일이 상위 폴더에 위치
       return await response.json();
     };
 
-    // Convert relative paths to absolute paths
+    // Resolve relative paths into absolute paths
     const resolvePath = (relativePath) => {
-      const base = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '/'); // Get base URL
-      return new URL(relativePath, base).href; // Resolve relative to base
+      const base = window.location.origin + '/frontend/'; // Use root path to resolve correctly
+      return new URL(relativePath.replace('../', ''), base).href; // Remove '../' and resolve
     };
 
     // Populate dropdown options dynamically
@@ -110,7 +110,7 @@
         if (selectedRegion) {
           const companies = locations
             .filter(loc => loc.name === selectedRegion)
-            .map(loc => ({ value: loc.link, text: loc.company })); // Use `company` for display, `link` for value
+            .map(loc => ({ value: resolvePath(loc.link), text: loc.company })); // Use `resolvePath` to fix the link
           populateDropdown(companyDropdown, companies, "Select a Company", "text");
           companyDropdown.disabled = false;
           navigateButton.disabled = true;
@@ -124,10 +124,9 @@
       companyDropdown.addEventListener("change", () => {
         const selectedLink = companyDropdown.value;
         if (selectedLink) {
-          const resolvedLink = resolvePath(selectedLink); // Convert to absolute path
           navigateButton.disabled = false;
           navigateButton.onclick = () => {
-            window.location.href = resolvedLink; // Use absolute path for navigation
+            window.location.href = selectedLink; // Use absolute path for navigation
           };
         } else {
           navigateButton.disabled = true;
