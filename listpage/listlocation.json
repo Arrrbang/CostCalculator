@@ -1,6 +1,6 @@
 [
-  {"country": "미국 (USA)", "name": "Atlanta, GA", "company": "Company A", "link": "/frontend/USA/ATLANTA/SOS/PAGE.html"},
-  {"country": "미국 (USA)", "name": "LaGrange, GA", "company": "Company B", "link": "/frontend/USA/LAGRANGE/SOS/PAGE.html"},
-  {"country": "미국 (USA)", "name": "Augusta, GA", "company": "Company C", "link": "/frontend/USA/AUGUSTA/SOS/PAGE.html"},
-  {"country": "미국 (USA)", "name": "Savannah, GA", "company": "Company D", "link": "/frontend/USA/SAVANNAH/SOS/PAGE.html"}
+  {"country": "미국 (USA)", "name": "Atlanta, GA", "company": "SOS", "link": "/frontend/COUNTRY/USA/ATLANTA/SOS/PAGE.html"},
+  {"country": "미국 (USA)", "name": "LaGrange, GA", "company": "SOS", "link": "/frontend/COUNTRY/USA/LAGRANGE/SOS/PAGE.html"},
+  {"country": "미국 (USA)", "name": "Augusta, GA", "company": "SOS", "link": "/frontend/COUNTRY/USA/AUGUSTA/SOS/PAGE.html"},
+  {"country": "미국 (USA)", "name": "Savannah, GA", "company": "SOS", "link": "/frontend/COUNTRY/USA/SAVANNAH/SOS/PAGE.html"}
 ]
