@@ -96,6 +96,65 @@
     button:hover {
       background-color: #45a049;
     }
+
+    @media (max-width: 576px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 중앙 정렬 */
+    justify-content: flex-start; /* 상단부터 시작 */
+    padding: 20px 10px; /* 여백 조정 */
+    margin: 0; /* 기본 margin 제거 */
+    min-height: 100vh; /* 화면 높이를 꽉 채우도록 설정 */
+    overflow-y: auto; /* 세로 스크롤 활성화 */
+    box-sizing: border-box;
+  }
+
+  .form-container {
+    width: 100%; /* 화면 너비를 가득 채움 */
+    max-width: 480px; /* 최대 너비 제한 */
+    margin: 20px 0; /* 위아래 간격 */
+    padding: 20px; /* 내부 여백 */
+    background-color: #ffffff; /* 배경색 */
+    border-radius: 8px; /* 둥근 모서리 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    box-sizing: border-box; /* 패딩 포함 크기 계산 */
+  }
+
+  h2 {
+    font-size: 1.2rem; /* 폰트 크기 조정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    margin-bottom: 20px; /* 제목과 요소 간의 간격 */
+  }
+
+  .dropdown-container {
+    gap: 20px; /* 드롭다운 간 간격 조정 */
+    width: 100%; /* 드롭다운 너비를 부모 컨테이너에 맞춤 */
+  }
+
+  .custom-dropdown {
+    width: 100%; /* 드롭다운 너비 조정 */
+  }
+
+  .custom-dropdown input {
+    font-size: 0.9rem; /* 모바일에서 입력 필드의 폰트 크기 조정 */
+    padding: 10px; /* 내부 여백 */
+    border-radius: 5px; /* 둥근 모서리 */
+  }
+
+  .custom-dropdown ul {
+    max-height: 120px; /* 드롭다운 최대 높이 */
+    overflow-y: auto; /* 스크롤 활성화 */
+  }
+
+  button {
+    width: 100%; /* 버튼 너비를 컨테이너에 맞춤 */
+    font-size: 1rem; /* 버튼 폰트 크기 */
+    padding: 10px; /* 내부 여백 */
+    margin-top: 10px; /* 위쪽 여백 */
+    border-radius: 5px; /* 둥근 모서리 */
+  }
+      
   </style>
 </head>
 <body>
