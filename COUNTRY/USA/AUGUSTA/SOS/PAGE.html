@@ -898,12 +898,28 @@ containerDropdown.addEventListener("change", function () {
   calculateTotalCost(); // TOTAL COST 업데이트
 });
 
+        // CBM 변동 시 가격 초기화
 dropdown.addEventListener("change", function () {
   const selectedValue = dropdown.value;
   console.log("선택된 CBM 값:", selectedValue);
   result.textContent =
     dataNonDiplomat[selectedValue] || dataDiplomat[selectedValue] || "Value not found";
 
+  // 초기화가 필요한 요소들
+  const idsToReset = [
+    "poc-value",   // POC 값 초기화
+    "thc-value",   // THC 값 초기화
+
+  ];
+
+  // 각 요소 초기화
+  idsToReset.forEach((id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.textContent = "None"; // 초기화 값
+    }
+  });
+  
   updateAdditionalCosts();
   updateStairChargeDropdown(); // CBM 변경 시 STAIR 초기화
   calculateTotalCost(); // TOTAL COST 업데이트
