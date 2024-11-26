@@ -831,7 +831,16 @@ function updateDiplomatSensitiveResult(category) {
   const selectedContainer = containerDropdown.value; // 선택된 컨테이너 타입 (CONSOLE, 20DRY, 40HC)
   const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값 (숫자로 변환)
   let result = "None";
-
+  
+    // 기본 배송 비용 처리
+  if (category === "BASIC-DELIVERY-VALUE") {
+    if (nonDiplomat.checked) {
+      result = dataNonDiplomat[selectedCBM] || dataNonDiplomat["ANY"] || "None";
+    } else if (diplomat.checked) {
+      result = dataDiplomat[selectedCBM] || dataDiplomat["ANY"] || "None";
+    }
+  } else {
+    // 다른 카테고리 처리
     const multiplierByCategory = {
     POC: 10,  // POC는 10 곱하기
     THC: 100, // THC는 100 곱하기
@@ -913,6 +922,7 @@ containerDropdown.addEventListener("change", function () {
 });
 
 dropdown.addEventListener("change", function () {
+  updateDiplomatSensitiveResult("BASIC-DELIVERY-VALUE");
   updateDiplomatSensitiveResult("POC");
   updateDiplomatSensitiveResult("THC");
   updateAdditionalCosts();
