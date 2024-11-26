@@ -634,12 +634,14 @@ function verifyToken() {
     verifyToken();
 
 // json 데이터 로드
+// JSON 데이터 로드
 let dataNonDiplomat = {};
 let dataDiplomat = {};
 let containerTypes = [];
 let basicExtraCost = {};
 let heavyItemData = {};
 
+// DOM 요소 참조
 const dropdown = document.getElementById("cbm-dropdown");
 const containerDropdown = document.getElementById("container-dropdown");
 const result = document.getElementById("basic-delivery-value");
@@ -652,22 +654,20 @@ const heavyItemDropdown = document.getElementById("heavyitemunit");
 const heavyItemValue = document.getElementById("heavyitem-value");
 const totalCostElement = document.getElementById("total-value");
 
+// 데이터 로드 함수
 async function fetchData() {
   try {
     const tableResponse = await fetch("TABLE.json");
     const tableData = await tableResponse.json();
-    console.log("TABLE.json 데이터:", tableData);
 
     dataNonDiplomat = tableData.nonDiplomat || {};
     dataDiplomat = tableData.diplomat || {};
     containerTypes = tableData.containerType || [];
 
-      // basicextracost.json 데이터 로드
     const extraCostResponse = await fetch("basicextracost.json");
     basicExtraCost = await extraCostResponse.json();
-    console.log("basicextracost.json 데이터:", basicExtraCost);
 
-        // 기본값 초기화: Non-Diplomat 체크박스가 초기화된 경우 설정
+    // 체크박스 상태에 따라 기본값 설정
     if (nonDiplomat.checked) {
       updateDropdown(dataNonDiplomat);
     } else if (diplomat.checked) {
@@ -676,14 +676,10 @@ async function fetchData() {
       resetDropdown(dropdown, "CBM을 선택하세요");
       resetDropdown(containerDropdown, "컨테이너 타입을 선택하세요");
     }
-    
-    // 기본값 로드
-    updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat);
+
     updateContainerDropdown();
-    updateAdditionalCosts();
-    updateStairChargeDropdown();
-    updateHeavyItemDropdown(); 
-    calculateTotalCost();// 초기화
+    resetDropdowns();
+    calculateTotalCost();
   } catch (error) {
     console.error("Failed to fetch data:", error);
   }
@@ -692,6 +688,31 @@ async function fetchData() {
 // 드롭다운 초기화
 function resetDropdown(dropdownElement, placeholder = "-- Select an Option --") {
   dropdownElement.innerHTML = `<option value="">${placeholder}</option>`;
+}
+
+// 드롭다운 초기화 및 업데이트
+function resetDropdowns() {
+  resetDropdown(stairCbmDropdown, "이동 CBM을 선택하세요");
+  resetDropdown(stairFloorDropdown, "이동 층을 선택하세요");
+  updateStairChargeDropdown();
+  updateHeavyItemDropdown();
+}
+
+// 값 초기화
+function resetValues() {
+  const elementsToReset = [
+    "thc-value", "poc-value", "basic-delivery-value",
+    "shuttle-charge", "long-carry-charge", "stair-charge",
+    "heavyitem-value", "full-setting-charge",
+    "uplight-piano", "weekend-charge", "phc-charge"
+  ];
+
+  elementsToReset.forEach((id) => {
+    const element = document.getElementById(id);
+    if (element) element.textContent = "None";
+  });
+
+  totalCostElement.textContent = "$0.00";
 }
 
 // CBM 드롭다운 업데이트
@@ -716,48 +737,38 @@ function updateContainerDropdown() {
   });
 }
 
-    // HEAVY ITEM 드롭다운 업데이트
+// HEAVY ITEM 드롭다운 업데이트
 function updateHeavyItemDropdown() {
   resetDropdown(heavyItemDropdown, "중량 화물 개수 선택");
   Object.keys(basicExtraCost["HEAVY ITEM"] || {}).forEach((key) => {
     const option = document.createElement("option");
-    option.value = key; // JSON 키를 값으로 설정
-    option.textContent = `${key} Units`; // 사용자에게 보여줄 텍스트
+    option.value = key;
+    option.textContent = `${key} Units`;
     heavyItemDropdown.appendChild(option);
   });
 }
 
 // HEAVY ITEM 결과 계산
 heavyItemDropdown.addEventListener("change", function () {
-  const selectedValue = heavyItemDropdown.value; // 선택된 드롭다운 값
-  const heavyItemCost = basicExtraCost["HEAVY ITEM"]?.[selectedValue] || "None"; // JSON 데이터에서 값 검색
-
-  if (heavyItemCost !== "None") {
-    heavyItemValue.textContent = `$${heavyItemCost}`; // 결과 표시
-  } else {
-    heavyItemValue.textContent = "None"; // 기본값
-  }
+  const selectedValue = heavyItemDropdown.value;
+  const heavyItemCost = basicExtraCost["HEAVY ITEM"]?.[selectedValue] || "None";
+  heavyItemValue.textContent = heavyItemCost !== "None" ? `$${heavyItemCost}` : "None";
 });
-    
 
 // STAIR CHARGE 드롭다운 업데이트
 function updateStairChargeDropdown() {
   resetDropdown(stairCbmDropdown, "이동 CBM 선택");
 
-  const selectedCBM = parseInt(dropdown.value, 10); // 상위 CBM 선택값
+  const selectedCBM = parseInt(dropdown.value, 10);
   if (!isNaN(selectedCBM)) {
-    // STAIR CBM 옵션 추가 (1 ~ selectedCBM 범위)
     for (let i = 1; i <= selectedCBM; i++) {
       const option = document.createElement("option");
       option.value = i;
       option.textContent = i;
       stairCbmDropdown.appendChild(option);
     }
-  } else {
-    console.log("CBM 값이 선택되지 않았습니다.");
   }
 
-  // STAIR FLOOR 옵션 추가 (1 ~ 10 고정)
   resetDropdown(stairFloorDropdown, "이동 층 선택");
   for (let i = 1; i <= 10; i++) {
     const option = document.createElement("option");
@@ -772,25 +783,18 @@ function calculateStairCharge() {
   const cbmValue = parseInt(stairCbmDropdown.value, 10);
   const floorValue = parseInt(stairFloorDropdown.value, 10);
 
-  if (!isNaN(cbmValue) && !isNaN(floorValue)) {
-    const stairCharge = cbmValue * floorValue * 500; // 계산 공식
-    stairChargeResult.textContent = stairCharge;
-  } else {
-    stairChargeResult.textContent = "None"; // 기본값
-  }
+  stairChargeResult.textContent =
+    !isNaN(cbmValue) && !isNaN(floorValue) ? cbmValue * floorValue * 500 : "None";
 }
-  // TOTAL COST 계산
+
+// 총 비용 계산
 function calculateTotalCost() {
   const ids = [
-    "thc-value",
-    "poc-value",
-    "drayage-value",
-    "devanning-value",
-    "inspection-value",
-    "basic-delivery-value",
+    "thc-value", "poc-value", "drayage-value",
+    "devanning-value", "inspection-value", "basic-delivery-value"
   ];
-  let total = 0;
 
+  let total = 0;
   ids.forEach((id) => {
     const element = document.getElementById(id);
     if (element && element.textContent !== "None") {
@@ -802,83 +806,53 @@ function calculateTotalCost() {
   });
 
   totalCostElement.textContent = `$${total.toFixed(2)}`;
-}  
+}
 
-// 체크박스 상태 관리 및 초기화
+// 체크박스 상태 관리
 function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
-  inactiveCheckbox.checked = false; // 다른 체크박스 초기화
+  inactiveCheckbox.checked = false;
 
   if (activeCheckbox.checked) {
-    updateDropdown(dataToUpdate); // CBM 드롭다운 업데이트
-    updateContainerDropdown(); // Container Type 드롭다운 업데이트
+    updateDropdown(dataToUpdate);
+    updateContainerDropdown();
   } else {
     resetDropdown(dropdown, "CBM을 선택하세요");
     resetDropdown(containerDropdown, "컨테이너 타입을 선택하세요");
   }
 
-  // STAIR CBM 및 FLOOR 드롭다운 초기화
-  resetDropdown(stairCbmDropdown, "이동 CBM을 선택하세요");
-  resetDropdown(stairFloorDropdown, "이동할 층을 선택하세요");
-  updateStairChargeDropdown();
-  updateHeavyItemDropdown();
-  
-
-  // 컨테이너 드롭다운 및 결과값 초기화
-  containerDropdown.value = "";
-  document.getElementById("thc-value").textContent = "None";
-  document.getElementById("poc-value").textContent = "None";
-
-  // 기본 배송 비용 초기화
-  document.getElementById("basic-delivery-value").textContent = "None";
-
-  // 추가 비용 초기화
-  ["shuttle-charge", "long-carry-charge", "stair-charge","heavyitem-value","full-setting-charge","uplight-piano","weekend-charge","phc-charge" ].forEach((id) => {
-    const element = document.getElementById(id);
-    if (element) element.textContent = "None";
-  });
-
-    // TOTAL COST 초기화
-  const totalCostElement = document.getElementById("total-value");
-  if (totalCostElement) {
-    totalCostElement.textContent = "$0.00"; // 초기화 값
-  }
+  resetDropdowns();
+  resetValues();
+  calculateTotalCost();
 }
 
-// NON-DIPLOMAT/DIPLOMAT 영향을 받는 결과값 업데이트
+// NON-DIPLOMAT/DIPLOMAT 값 업데이트
 function updateDiplomatSensitiveResult(category) {
-  const selectedContainer = containerDropdown.value; // 선택된 컨테이너 타입 (CONSOLE, 20DRY, 40HC)
-  const selectedCBM = dropdown.value; // 선택된 CBM 값
+  const selectedContainer = containerDropdown.value;
+  const selectedCBM = dropdown.value;
   let result = "None";
 
   if (selectedContainer === "CONSOLE") {
-    // 컨테이너 타입이 'CONSOLE'일 경우 CBM 값을 사용
-    if (nonDiplomat.checked) {
-      result = basicExtraCost[category]?.NonDiplomat?.CONSOLE?.[selectedCBM] || "None";
-    } else if (diplomat.checked) {
-      result = basicExtraCost[category]?.Diplomat?.CONSOLE?.[selectedCBM] || "None";
-    }
+    result = nonDiplomat.checked
+      ? basicExtraCost[category]?.NonDiplomat?.CONSOLE?.[selectedCBM] || "None"
+      : basicExtraCost[category]?.Diplomat?.CONSOLE?.[selectedCBM] || "None";
   } else {
-    // 컨테이너 타입이 '20DRY' 또는 '40HC'일 경우 CBM 무시하고 단일 값을 사용
-    if (nonDiplomat.checked) {
-      result = basicExtraCost[category]?.NonDiplomat?.[selectedContainer] || "None";
-    } else if (diplomat.checked) {
-      result = basicExtraCost[category]?.Diplomat?.[selectedContainer] || "None";
-    }
+    result = nonDiplomat.checked
+      ? basicExtraCost[category]?.NonDiplomat?.[selectedContainer] || "None"
+      : basicExtraCost[category]?.Diplomat?.[selectedContainer] || "None";
   }
 
   const element = document.getElementById(`${category.toLowerCase()}-value`);
-  if (element) element.textContent = `$${result}`; // 결과값 업데이트
+  if (element) element.textContent = `$${result}`;
 }
 
-// CBM에 따른 추가 비용 업데이트
+// 추가 비용 업데이트
 function updateAdditionalCosts() {
   const selectedCBM = dropdown.value;
 
   ["SHUTTLE CHARGE", "LONG CARRY CHARGE", "FULL SETTING CHARGE", "WEEKEND CHARGE", "UPLIGHT PIANO"].forEach((category) => {
     const id = category.toLowerCase().replace(/ /g, "-");
-     // 선택된 CBM 값을 확인하고 없으면 "ANY" 키를 사용
     const result = basicExtraCost[category]?.[selectedCBM]
-      ?? basicExtraCost[category]?.["ANY"] 
+      ?? basicExtraCost[category]?.["ANY"]
       ?? "None";
     const element = document.getElementById(id);
     if (element) element.textContent = result;
@@ -886,64 +860,37 @@ function updateAdditionalCosts() {
 }
 
 // 이벤트 리스너 설정
-    
-// Non-Diplomat 체크박스 변경
-nonDiplomat.addEventListener("change", function () {
-  handleCheckboxChange(nonDiplomat, diplomat, dataNonDiplomat); // 체크박스 상태 업데이트
-  resetDropdown(containerDropdown); // 컨테이너 타입 초기화
-  resetDropdown(dropdown); // CBM 초기화
-  updateStairChargeDropdown(); // Stair Charge 옵션 초기화
-  updateHeavyItemDropdown(); // Heavy Item 옵션 초기화
-  resetValues(); // 모든 값 초기화
-  calculateTotalCost(); // 총 비용 초기화
+nonDiplomat.addEventListener("change", () => {
+  handleCheckboxChange(nonDiplomat, diplomat, dataNonDiplomat);
 });
 
-// Diplomat 체크박스 변경
-diplomat.addEventListener("change", function () {
-  handleCheckboxChange(diplomat, nonDiplomat, dataDiplomat); // 체크박스 상태 업데이트
-  resetDropdown(containerDropdown); // 컨테이너 타입 초기화
-  resetDropdown(dropdown); // CBM 초기화
-  updateStairChargeDropdown(); // Stair Charge 옵션 초기화
-  updateHeavyItemDropdown(); // Heavy Item 옵션 초기화
-  resetValues(); // 모든 값 초기화
-  calculateTotalCost(); // 총 비용 초기화
+diplomat.addEventListener("change", () => {
+  handleCheckboxChange(diplomat, nonDiplomat, dataDiplomat);
 });
 
-// 컨테이너 타입 변경
-containerDropdown.addEventListener("change", function () {
-  updateDiplomatSensitiveResult("POC"); // POC 값 업데이트
-  updateDiplomatSensitiveResult("THC"); // THC 값 업데이트
-  resetDropdown(dropdown); // CBM 초기화
-  updateStairChargeDropdown(); // Stair Charge 드롭다운 초기화
-  resetValues(); // 관련 값 초기화
-  calculateTotalCost(); // 총 비용 업데이트
+containerDropdown.addEventListener("change", () => {
+  updateDiplomatSensitiveResult("POC");
+  updateDiplomatSensitiveResult("THC");
+  resetDropdowns();
+  resetValues();
+  calculateTotalCost();
 });
 
-// CBM 드롭다운 변경
-dropdown.addEventListener("change", function () {
-  console.log("선택된 CBM 값:", dropdown.value); // 디버깅용
-  updateDiplomatSensitiveResult("POC"); // POC 값 업데이트
-  updateAdditionalCosts(); // 추가 비용 업데이트
-  updateStairChargeDropdown(); // Stair Charge 드롭다운 초기화
-  calculateTotalCost(); // 총 비용 업데이트
+dropdown.addEventListener("change", () => {
+  updateDiplomatSensitiveResult("POC");
+  updateAdditionalCosts();
+  resetDropdowns();
+  calculateTotalCost();
 });
 
-// Stair Charge 드롭다운 변경
 stairCbmDropdown.addEventListener("change", calculateStairCharge);
 stairFloorDropdown.addEventListener("change", calculateStairCharge);
 
-// Heavy Item Charge 드롭다운 변경
-heavyItemDropdown.addEventListener("change", function () {
+heavyItemDropdown.addEventListener("change", () => {
   const selectedValue = heavyItemDropdown.value;
   const heavyItemCost = basicExtraCost["HEAVY ITEM"]?.[selectedValue] || "None";
-
-  if (heavyItemCost !== "None") {
-    heavyItemValue.textContent = `$${heavyItemCost}`; // 값 업데이트
-  } else {
-    heavyItemValue.textContent = "None"; // 기본값
-  }
+  heavyItemValue.textContent = heavyItemCost !== "None" ? `$${heavyItemCost}` : "None";
 });
-
 
 // 데이터 로드 호출
 fetchData();
