@@ -695,10 +695,14 @@ function resetAll() {
 
   totalCostElement.textContent = "$0.00";
 
-  updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat);
-  updateContainerDropdown();
-  updateAdditionalCosts(); // 추가 비용 업데이트
-  updateHeavyItemDropdown(); // Heavy Items 활성화
+  // 체크박스 상태에 따라 드롭다운 업데이트
+  if (nonDiplomat.checked) {
+    updateDropdown(dataNonDiplomat);
+    updateContainerDropdown();
+  } else if (diplomat.checked) {
+    updateDropdown(dataDiplomat);
+    updateContainerDropdown();
+  }
 }
 
 // CBM 드롭다운 업데이트
@@ -723,6 +727,18 @@ function updateContainerDropdown() {
   });
 }
 
+    // 기본 배송 비용 업데이트
+function updateBasicDeliveryCost() {
+  const selectedCBM = dropdown.value;
+  const deliveryCost =
+    nonDiplomat.checked
+      ? dataNonDiplomat[selectedCBM] || "None"
+      : diplomat.checked
+      ? dataDiplomat[selectedCBM] || "None"
+      : "None";
+  result.textContent = deliveryCost !== "None" ? `$${deliveryCost}` : "None";
+}
+    
 // 추가 비용 업데이트
 function updateAdditionalCosts() {
   const selectedCBM = dropdown.value;
@@ -758,17 +774,7 @@ heavyItemDropdown.addEventListener("change", () => {
   heavyItemValue.textContent = heavyItemCost !== "None" ? `$${heavyItemCost}` : "None";
 });
 
-// 기본 배송 비용 업데이트
-function updateBasicDeliveryCost() {
-  const selectedCBM = dropdown.value;
-  const deliveryCost =
-    nonDiplomat.checked
-      ? dataNonDiplomat[selectedCBM] || "None"
-      : diplomat.checked
-      ? dataDiplomat[selectedCBM] || "None"
-      : "None";
-  result.textContent = deliveryCost !== "None" ? `$${deliveryCost}` : "None";
-}
+
 
 // 컨테이너 타입에 따른 POC 및 THC 값 업데이트
 function updateContainerDependentValues() {
