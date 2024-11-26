@@ -634,7 +634,6 @@ function verifyToken() {
     verifyToken();
 
 // json 데이터 로드
-// json 데이터 로드
 let dataNonDiplomat = {};
 let dataDiplomat = {};
 let containerTypes = [];
@@ -898,31 +897,23 @@ containerDropdown.addEventListener("change", function () {
   calculateTotalCost(); // TOTAL COST 업데이트
 });
 
-        // CBM 변동 시 가격 초기화
 dropdown.addEventListener("change", function () {
   const selectedValue = dropdown.value;
   console.log("선택된 CBM 값:", selectedValue);
+
+    // 선택된 CBM에 따라 result 값을 업데이트
   result.textContent =
     dataNonDiplomat[selectedValue] || dataDiplomat[selectedValue] || "Value not found";
 
-  // 초기화가 필요한 요소들
-  const idsToReset = [
-    "poc-value",   // POC 값 초기화
-    "thc-value",   // THC 값 초기화
-
-  ];
-
-  // 각 요소 초기화
-  idsToReset.forEach((id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.textContent = "None"; // 초기화 값
-    }
-  });
-  
+    // POC 및 THC 값 업데이트
+  updateDiplomatSensitiveResult("POC");
+  updateDiplomatSensitiveResult("THC");
+    // 추가 비용 업데이트 (SHUTTLE CHARGE, LONG CARRY CHARGE 등)
   updateAdditionalCosts();
-  updateStairChargeDropdown(); // CBM 변경 시 STAIR 초기화
-  calculateTotalCost(); // TOTAL COST 업데이트
+   // STAIR CHARGE 드롭다운 업데이트 (CBM 값 변경에 따라)
+  updateStairChargeDropdown();
+    // TOTAL COST 업데이트
+  calculateTotalCost(); 
 });
 
 // STAIR CHARGE 드롭다운 이벤트 리스너
@@ -931,7 +922,6 @@ stairFloorDropdown.addEventListener("change", calculateStairCharge);
 
 // 데이터 로드 호출
 fetchData();
-
   
     </script>
 </body>
