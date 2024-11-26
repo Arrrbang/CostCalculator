@@ -867,14 +867,41 @@ function updateDiplomatSensitiveResult(category) {
 
 // CBM에 따른 추가 비용 업데이트
 function updateAdditionalCosts() {
-  const selectedCBM = dropdown.value;
+  const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값을 숫자로 변환
 
   ["SHUTTLE CHARGE", "LONG CARRY CHARGE", "FULL SETTING CHARGE", "WEEKEND CHARGE", "UPLIGHT PIANO"].forEach((category) => {
     const id = category.toLowerCase().replace(/ /g, "-");
-     // 선택된 CBM 값을 확인하고 없으면 "ANY" 키를 사용
-    const result = basicExtraCost[category]?.[selectedCBM]
-      ?? basicExtraCost[category]?.["ANY"] 
-      ?? "None";
+    let result = "None";
+    
+    if (basicExtraCost[category]) {
+      // 1. 정확한 값이 JSON에 있는지 확인
+      if (basicExtraCost[category][selectedCBM] !== undefined) {
+        result = basicExtraCost[category][selectedCBM];
+      } else {
+        // 2. 범위 키를 처리
+        result = Object.keys(basicExtraCost[category]).reduce((acc, key) => {
+          if (key.includes("-")) {
+            const [start, end] = key.split("-").map(Number);
+            if (selectedCBM >= start && selectedCBM <= end) {
+              return basicExtraCost[category][key];
+            }
+          }
+          return acc;
+        }, "None");
+
+        // 3. 범위에도 없는 경우 "ANY" 키 확인
+        if (result === "None") {
+          result = basicExtraCost[category]["ANY"] || "None";
+        }
+
+        // 4. "ANY" 키도 없으면 특정 값 곱하기
+        if (result === "None" && !isNaN(selectedCBM)) {
+          result = selectedCBM * 10; // 예: CBM 값에 10 곱하기
+        }
+      }
+    }
+
+    // 결과를 해당 요소에 업데이트
     const element = document.getElementById(id);
     if (element) element.textContent = result;
   });
