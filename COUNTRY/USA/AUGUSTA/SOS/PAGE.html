@@ -662,10 +662,21 @@ async function fetchData() {
     dataDiplomat = tableData.diplomat || {};
     containerTypes = tableData.containerType || [];
 
+      // basicextracost.json 데이터 로드
     const extraCostResponse = await fetch("basicextracost.json");
     basicExtraCost = await extraCostResponse.json();
     console.log("basicextracost.json 데이터:", basicExtraCost);
 
+        // 기본값 초기화: Non-Diplomat 체크박스가 초기화된 경우 설정
+    if (nonDiplomat.checked) {
+      updateDropdown(dataNonDiplomat);
+    } else if (diplomat.checked) {
+      updateDropdown(dataDiplomat);
+    } else {
+      resetDropdown(dropdown, "CBM을 선택하세요");
+      resetDropdown(containerDropdown, "컨테이너 타입을 선택하세요");
+    }
+    
     // 기본값 로드
     updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat);
     updateContainerDropdown();
@@ -798,14 +809,19 @@ function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
   inactiveCheckbox.checked = false; // 다른 체크박스 초기화
 
   if (activeCheckbox.checked) {
-    updateDropdown(dataToUpdate);
+    updateDropdown(dataToUpdate); // CBM 드롭다운 업데이트
+    updateContainerDropdown(); // Container Type 드롭다운 업데이트
   } else {
-    resetDropdown(dropdown); // CBM 드롭다운 초기화
+    resetDropdown(dropdown, "CBM을 선택하세요");
+    resetDropdown(containerDropdown, "컨테이너 타입을 선택하세요");
   }
 
   // STAIR CBM 및 FLOOR 드롭다운 초기화
   resetDropdown(stairCbmDropdown, "이동 CBM을 선택하세요");
   resetDropdown(stairFloorDropdown, "이동할 층을 선택하세요");
+  updateStairChargeDropdown();
+  updateHeavyItemDropdown();
+  
 
   // 컨테이너 드롭다운 및 결과값 초기화
   containerDropdown.value = "";
