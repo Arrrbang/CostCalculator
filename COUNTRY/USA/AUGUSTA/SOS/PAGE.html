@@ -869,6 +869,14 @@ function updateDiplomatSensitiveResult(category) {
 function updateAdditionalCosts() {
   const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값을 숫자로 변환
 
+  const multiplierByCategory = {
+    "shuttle-charge": 10,
+    "long-carry-charge": 15,
+    "full-setting-charge": 20,
+    "weekend-charge": 25,
+    "uplight-piano": 30
+  };
+
   ["SHUTTLE CHARGE", "LONG CARRY CHARGE", "FULL SETTING CHARGE", "WEEKEND CHARGE", "UPLIGHT PIANO"].forEach((category) => {
     const id = category.toLowerCase().replace(/ /g, "-");
     let result = "None";
@@ -896,7 +904,8 @@ function updateAdditionalCosts() {
 
         // 4. "ANY" 키도 없으면 특정 값 곱하기
         if (result === "None" && !isNaN(selectedCBM)) {
-          result = selectedCBM * 10; // 예: CBM 값에 10 곱하기
+          const multiplier = multiplierByCategory[id] || 1; // 기본값은 1
+          result = selectedCBM * multiplier;
         }
       }
     }
