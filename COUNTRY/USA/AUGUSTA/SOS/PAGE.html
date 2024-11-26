@@ -634,7 +634,6 @@ function verifyToken() {
     verifyToken();
 
 // JSON 데이터 로드
-// JSON 데이터 로드
 let dataNonDiplomat = {};
 let dataDiplomat = {};
 let containerTypes = [];
@@ -698,6 +697,8 @@ function resetAll() {
 
   updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat);
   updateContainerDropdown();
+  updateAdditionalCosts(); // 추가 비용 업데이트
+  updateHeavyItemDropdown(); // Heavy Items 활성화
 }
 
 // CBM 드롭다운 업데이트
@@ -721,6 +722,41 @@ function updateContainerDropdown() {
     containerDropdown.appendChild(option);
   });
 }
+
+// 추가 비용 업데이트
+function updateAdditionalCosts() {
+  const selectedCBM = dropdown.value;
+
+  ["SHUTTLE CHARGE", "LONG CARRY CHARGE", "FULL SETTING CHARGE", "WEEKEND CHARGE", "UPLIGHT PIANO"].forEach(category => {
+    const id = category.toLowerCase().replace(/ /g, "-");
+    const result = basicExtraCost[category]?.[selectedCBM]
+      ?? basicExtraCost[category]?.["ANY"]
+      ?? "None";
+    const element = document.getElementById(id);
+    if (element) element.textContent = result !== "None" ? `$${result}` : "None";
+  });
+}
+
+// HEAVY ITEM 드롭다운 업데이트
+function updateHeavyItemDropdown() {
+  resetDropdown(heavyItemDropdown, "중량 화물 개수 선택");
+
+  if (basicExtraCost["HEAVY ITEM"]) {
+    Object.keys(basicExtraCost["HEAVY ITEM"]).forEach(key => {
+      const option = document.createElement("option");
+      option.value = key;
+      option.textContent = `${key} Units`;
+      heavyItemDropdown.appendChild(option);
+    });
+  }
+}
+
+// HEAVY ITEM 결과 계산
+heavyItemDropdown.addEventListener("change", () => {
+  const selectedValue = heavyItemDropdown.value;
+  const heavyItemCost = basicExtraCost["HEAVY ITEM"]?.[selectedValue] || "None";
+  heavyItemValue.textContent = heavyItemCost !== "None" ? `$${heavyItemCost}` : "None";
+});
 
 // 기본 배송 비용 업데이트
 function updateBasicDeliveryCost() {
@@ -757,7 +793,8 @@ function updateContainerDependentValues() {
 function calculateTotalCost() {
   const ids = [
     "thc-value", "poc-value", "basic-delivery-value",
-    "drayage-value", "devanning-value", "inspection-value"
+    "shuttle-charge", "long-carry-charge", "stair-charge",
+    "heavyitem-value", "full-setting-charge", "uplight-piano", "weekend-charge"
   ];
 
   let total = 0;
@@ -770,38 +807,6 @@ function calculateTotalCost() {
   });
 
   totalCostElement.textContent = `$${total.toFixed(2)}`;
-}
-
-// STAIR CHARGE 드롭다운 업데이트
-function updateStairChargeDropdown() {
-  resetDropdown(stairCbmDropdown, "이동 CBM 선택");
-
-  const selectedCBM = parseInt(dropdown.value, 10);
-  if (!isNaN(selectedCBM)) {
-    for (let i = 1; i <= selectedCBM; i++) {
-      const option = document.createElement("option");
-      option.value = i;
-      option.textContent = i;
-      stairCbmDropdown.appendChild(option);
-    }
-  }
-
-  resetDropdown(stairFloorDropdown, "이동 층 선택");
-  for (let i = 1; i <= 10; i++) {
-    const option = document.createElement("option");
-    option.value = i;
-    option.textContent = `${i}층`;
-    stairFloorDropdown.appendChild(option);
-  }
-}
-
-// STAIR CHARGE 결과 계산
-function calculateStairCharge() {
-  const cbmValue = parseInt(stairCbmDropdown.value, 10);
-  const floorValue = parseInt(stairFloorDropdown.value, 10);
-
-  stairChargeResult.textContent =
-    !isNaN(cbmValue) && !isNaN(floorValue) ? `$${cbmValue * floorValue * 500}` : "None";
 }
 
 // 이벤트 리스너 설정
@@ -817,6 +822,7 @@ diplomat.addEventListener("change", () => {
 
 dropdown.addEventListener("change", () => {
   updateBasicDeliveryCost();
+  updateAdditionalCosts();
   updateStairChargeDropdown();
   calculateTotalCost();
 });
@@ -831,6 +837,7 @@ stairFloorDropdown.addEventListener("change", calculateStairCharge);
 
 // 데이터 로드 호출
 fetchData();
+
 
     </script>
 </body>
