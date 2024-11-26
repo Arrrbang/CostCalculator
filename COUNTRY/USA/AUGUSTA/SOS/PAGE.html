@@ -836,7 +836,7 @@ function updateDiplomatSensitiveResult(category) {
 
   if (selectedContainer === "console") {
         // 컨테이너 타입이 'console'이면 CBM 값을 기반으로 POC 값 가져옴
-    result = basicExtraCost[category]?.[selectedCBM] || "None";
+    result = basicExtraCost[category]?.CONSOLE?.[selectedCBM] || "None";
   } else {
       
   if (nonDiplomat.checked) {
