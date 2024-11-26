@@ -832,38 +832,24 @@ function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
 // NON-DIPLOMAT/DIPLOMAT 영향을 받는 결과값 업데이트
 function updateDiplomatSensitiveResult(category) {
   const selectedContainer = containerDropdown.value;
-  const selectedContainer = containerDropdown.value; // 선택된 컨테이너 타입 (CONSOLE, 20DRY, 40HC)
   const selectedCBM = dropdown.value; // 선택된 CBM 값
   let result = "None";
 
   if (selectedContainer === "console") {
         // 컨테이너 타입이 'console'이면 CBM 값을 기반으로 POC 값 가져옴
+    result = basicExtraCost[category]?.[selectedCBM] || "None";
     result = basicExtraCost[category]?.CONSOLE?.[selectedCBM] || "None";
-  if (selectedContainer === "CONSOLE") {
-    // 컨테이너 타입이 'CONSOLE'일 경우 CBM 값을 사용
-    if (nonDiplomat.checked) {
-      result = basicExtraCost[category]?.NonDiplomat?.CONSOLE?.[selectedCBM] || "None";
-    } else if (diplomat.checked) {
-      result = basicExtraCost[category]?.Diplomat?.CONSOLE?.[selectedCBM] || "None";
-    }
   } else {
-      
+
   if (nonDiplomat.checked) {
     result = basicExtraCost[category]?.NonDiplomat?.[selectedContainer] || "None";
   } else if (diplomat.checked) {
     result = basicExtraCost[category]?.Diplomat?.[selectedContainer] || "None";
   }
-    // 컨테이너 타입이 '20DRY' 또는 '40HC'일 경우 CBM 무시하고 단일 값을 사용
-    if (nonDiplomat.checked) {
-      result = basicExtraCost[category]?.NonDiplomat?.[selectedContainer] || "None";
-    } else if (diplomat.checked) {
-      result = basicExtraCost[category]?.Diplomat?.[selectedContainer] || "None";
-    }
   }
 
   const element = document.getElementById(`${category.toLowerCase()}-value`);
   if (element) element.textContent = result;
-  if (element) element.textContent = `$${result}`; // 결과값 업데이트
 }
 
 // CBM에 따른 추가 비용 업데이트
