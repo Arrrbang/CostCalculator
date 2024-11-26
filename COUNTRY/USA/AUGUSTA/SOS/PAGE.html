@@ -831,12 +831,19 @@ function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
 // NON-DIPLOMAT/DIPLOMAT 영향을 받는 결과값 업데이트
 function updateDiplomatSensitiveResult(category) {
   const selectedContainer = containerDropdown.value;
+  const selectedCBM = dropdown.value; // 선택된 CBM 값
   let result = "None";
 
+  if (selectedContainer === "console") {
+        // 컨테이너 타입이 'console'이면 CBM 값을 기반으로 POC 값 가져옴
+    result = basicExtraCost[category]?.[selectedCBM] || "None";
+  } else {
+      
   if (nonDiplomat.checked) {
     result = basicExtraCost[category]?.NonDiplomat?.[selectedContainer] || "None";
   } else if (diplomat.checked) {
     result = basicExtraCost[category]?.Diplomat?.[selectedContainer] || "None";
+  }
   }
 
   const element = document.getElementById(`${category.toLowerCase()}-value`);
@@ -870,8 +877,18 @@ diplomat.addEventListener("change", function () {
 });
 
 containerDropdown.addEventListener("change", function () {
+  const selectedContainer = containerDropdown.value;
+
+    if (selectedContainer === "console") {
+    // CBM 변경에 따라 POC 값을 업데이트
+    dropdown.addEventListener("change", function () {
+      updateDiplomatSensitiveResult("POC");
+      calculateTotalCost(); // TOTAL COST 업데이트
+    });
+  } else {
   updateDiplomatSensitiveResult("THC");
   updateDiplomatSensitiveResult("POC");
+    }
   calculateTotalCost(); // TOTAL COST 업데이트
 });
 
