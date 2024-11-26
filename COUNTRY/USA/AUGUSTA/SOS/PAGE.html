@@ -870,46 +870,64 @@ function updateAdditionalCosts() {
 }
 
 // 이벤트 리스너 설정
+    
+// Non-Diplomat 체크박스 변경
 nonDiplomat.addEventListener("change", function () {
-  handleCheckboxChange(nonDiplomat, diplomat, dataNonDiplomat);
-  updateStairChargeDropdown(); // 체크박스 변경 시 STAIR 초기화
+  handleCheckboxChange(nonDiplomat, diplomat, dataNonDiplomat); // 체크박스 상태 업데이트
+  resetDropdown(containerDropdown); // 컨테이너 타입 초기화
+  resetDropdown(dropdown); // CBM 초기화
+  updateStairChargeDropdown(); // Stair Charge 옵션 초기화
+  updateHeavyItemDropdown(); // Heavy Item 옵션 초기화
+  resetValues(); // 모든 값 초기화
+  calculateTotalCost(); // 총 비용 초기화
 });
 
+// Diplomat 체크박스 변경
 diplomat.addEventListener("change", function () {
-  handleCheckboxChange(diplomat, nonDiplomat, dataDiplomat);
-  updateStairChargeDropdown(); // 체크박스 변경 시 STAIR 초기화
+  handleCheckboxChange(diplomat, nonDiplomat, dataDiplomat); // 체크박스 상태 업데이트
+  resetDropdown(containerDropdown); // 컨테이너 타입 초기화
+  resetDropdown(dropdown); // CBM 초기화
+  updateStairChargeDropdown(); // Stair Charge 옵션 초기화
+  updateHeavyItemDropdown(); // Heavy Item 옵션 초기화
+  resetValues(); // 모든 값 초기화
+  calculateTotalCost(); // 총 비용 초기화
 });
 
+// 컨테이너 타입 변경
 containerDropdown.addEventListener("change", function () {
-  const selectedContainer = containerDropdown.value;
-
-    if (selectedContainer === "console") {
-    // CBM 변경에 따라 POC 값을 업데이트
-    dropdown.addEventListener("change", function () {
-      updateDiplomatSensitiveResult("POC");
-      calculateTotalCost(); // TOTAL COST 업데이트
-    });
-  } else {
-  updateDiplomatSensitiveResult("THC");
-  updateDiplomatSensitiveResult("POC");
-    }
-  calculateTotalCost(); // TOTAL COST 업데이트
+  updateDiplomatSensitiveResult("POC"); // POC 값 업데이트
+  updateDiplomatSensitiveResult("THC"); // THC 값 업데이트
+  resetDropdown(dropdown); // CBM 초기화
+  updateStairChargeDropdown(); // Stair Charge 드롭다운 초기화
+  resetValues(); // 관련 값 초기화
+  calculateTotalCost(); // 총 비용 업데이트
 });
 
+// CBM 드롭다운 변경
 dropdown.addEventListener("change", function () {
-  const selectedValue = dropdown.value;
-  console.log("선택된 CBM 값:", selectedValue);
-  result.textContent =
-    dataNonDiplomat[selectedValue] || dataDiplomat[selectedValue] || "Value not found";
-
-  updateAdditionalCosts();
-  updateStairChargeDropdown(); // CBM 변경 시 STAIR 초기화
-  calculateTotalCost(); // TOTAL COST 업데이트
+  console.log("선택된 CBM 값:", dropdown.value); // 디버깅용
+  updateDiplomatSensitiveResult("POC"); // POC 값 업데이트
+  updateAdditionalCosts(); // 추가 비용 업데이트
+  updateStairChargeDropdown(); // Stair Charge 드롭다운 초기화
+  calculateTotalCost(); // 총 비용 업데이트
 });
 
-// STAIR CHARGE 드롭다운 이벤트 리스너
+// Stair Charge 드롭다운 변경
 stairCbmDropdown.addEventListener("change", calculateStairCharge);
 stairFloorDropdown.addEventListener("change", calculateStairCharge);
+
+// Heavy Item Charge 드롭다운 변경
+heavyItemDropdown.addEventListener("change", function () {
+  const selectedValue = heavyItemDropdown.value;
+  const heavyItemCost = basicExtraCost["HEAVY ITEM"]?.[selectedValue] || "None";
+
+  if (heavyItemCost !== "None") {
+    heavyItemValue.textContent = `$${heavyItemCost}`; // 값 업데이트
+  } else {
+    heavyItemValue.textContent = "None"; // 기본값
+  }
+});
+
 
 // 데이터 로드 호출
 fetchData();
