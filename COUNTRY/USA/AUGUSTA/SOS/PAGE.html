@@ -900,7 +900,7 @@ function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
   resetDropdown(stairCbmDropdown, "이동 CBM 선택");
   resetDropdown(stairFloorDropdown, "이동 층 선택");
 
-  // ●추가 비용 초기화 츠기 비용 더 생기면 추가
+  // ●추가 비용 초기화 추가비용 더 생기면 추가
   ["basic-delivery-value", "shuttle-charge", "long-carry-charge", "stair-charge","heavyitem-value","full-setting-charge","uplight-piano","weekend-charge","thc-value", "poc-value" ].forEach((id) => {
     const element = document.getElementById(id);
     if (element) element.textContent = "None";
@@ -915,7 +915,7 @@ function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
 
 
 
-// 이벤트 리스너 설정
+// --------------이벤트 리스너 설정----------------------
 nonDiplomat.addEventListener("change", function () {
   handleCheckboxChange(nonDiplomat, diplomat, dataNonDiplomat);
   updateStairChargeDropdown(); // 체크박스 변경 시 STAIR 초기화
@@ -926,22 +926,33 @@ diplomat.addEventListener("change", function () {
   updateStairChargeDropdown(); // 체크박스 변경 시 STAIR 초기화
 });
 
+    // 컨테이너 타입 변경 시 실행되는 이벤트 리스너
 containerDropdown.addEventListener("change", function () {
   const selectedContainer = containerDropdown.value;
 
-    if (selectedContainer === "console") {
-    // CBM 변경에 따라 POC 값을 업데이트 ▲이 부분 다른 비용도 적용되게 변경해야됨
+        // 업데이트해야 할 비용 카테고리를 배열로 정의
+  const costCategories = ["POC", "THC", "DRAYAGE", "DEVANNING", "INSPECTION", "SHUTTLE CHARGE"];
+
+  if (selectedContainer === "console") {
+    // CONSOLE의 경우 CBM 변경에 따라 모든 카테고리 업데이트
     dropdown.addEventListener("change", function () {
-      updateDiplomatSensitiveResult("POC");
-      calculateTotalCost(); // TOTAL COST 업데이트
+      updateCosts(costCategories); // costCategories에 정의된 모든 항목 업데이트
+      calculateTotalCost(); // 총 비용 업데이트
     });
   } else {
-    // 20DRY 또는 40HC는 CBM을 무시하고 단일 값만 사용 ▲이 부분도 변경 좀 더 유연한 로직으로 변경해야됨
-    updateDiplomatSensitiveResult("POC");
-    updateDiplomatSensitiveResult("THC");
-    }
-  calculateTotalCost(); // TOTAL COST 업데이트
+    // CONSOLE이 아닌 경우 CBM을 무시하고 단일 값 업데이트
+    updateCosts(costCategories); // costCategories에 정의된 모든 항목 업데이트
+  }
+
+  calculateTotalCost(); // 총 비용 업데이트
 });
+
+// 비용 업데이트 함수 정의
+function updateCosts(categories) {
+  categories.forEach((category) => {
+    updateDiplomatSensitiveResult(category); // 각 카테고리에 대해 diplomat-sensitive 업데이트 실행
+  });
+}
 
 dropdown.addEventListener("change", function () {
   const selectedValue = dropdown.value;
