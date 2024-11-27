@@ -937,14 +937,8 @@ containerDropdown.addEventListener("change", () => {
   const selectedContainer = containerDropdown.value;
   const costCategories = ["POC", "THC", "DRAYAGE", "DEVANNING", "INSPECTION", "SHUTTLE CHARGE"];
 
-  if (selectedContainer === "console") {
-    dropdown.addEventListener("change", () => {
-      updateCosts(costCategories); // CONSOLE의 경우 CBM 값 사용
-    });
-  } else {
-    updateCosts(costCategories); // 20DRY 또는 40HC의 경우 CBM 무시
-  }
-
+  // 선택된 컨테이너 타입에 따라 비용 업데이트
+  updateCosts(costCategories); // 비용 업데이트
   updateAdditionalCosts(); // 추가 비용 업데이트
   calculateTotalCost(); // 총 비용 업데이트
 });
@@ -955,12 +949,7 @@ dropdown.addEventListener("change", () => {
   console.log("선택된 CBM 값:", dropdown.value);
 
   // 선택된 CBM 값 업데이트
-  result.textContent =
-    dataNonDiplomat[dropdown.value] || dataDiplomat[dropdown.value] || "Value not found";
-
   updateCosts(costCategories); // 비용 카테고리 업데이트
-  updateDiplomatSensitiveResult("POC"); // POC 업데이트
-  updateDiplomatSensitiveResult("THC"); // THC 업데이트
   updateAdditionalCosts(); // 추가 비용 업데이트
   updateStairChargeDropdown(); // STAIR CHARGE 초기화
   calculateTotalCost(); // 총 비용 업데이트
@@ -972,6 +961,7 @@ stairFloorDropdown.addEventListener("change", calculateStairCharge);
 
 // 데이터 로드 호출
 fetchData();
+
   
     </script>
 </body>
