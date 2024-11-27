@@ -921,65 +921,49 @@ function updateAdditionalCosts() {
 }
 
 // 이벤트 리스너 설정
-nonDiplomat.addEventListener("change", function () {
+nonDiplomat.addEventListener("change", () => {
   handleCheckboxChange(nonDiplomat, diplomat, dataNonDiplomat);
-  updateStairChargeDropdown(); // 체크박스 변경 시 STAIR 초기화
+  updateStairChargeDropdown(); // STAIR 초기화
   calculateTotalCost(); // 총 비용 초기화
 });
 
-diplomat.addEventListener("change", function () {
+diplomat.addEventListener("change", () => {
   handleCheckboxChange(diplomat, nonDiplomat, dataDiplomat);
-  updateStairChargeDropdown(); // 체크박스 변경 시 STAIR 초기화
+  updateStairChargeDropdown(); // STAIR 초기화
   calculateTotalCost(); // 총 비용 초기화
 });
 
-containerDropdown.addEventListener("change", function () {
+containerDropdown.addEventListener("change", () => {
   const selectedContainer = containerDropdown.value;
-
-     // 업데이트해야 할 비용 카테고리 정의
-    const costCategories = ["POC", "THC", "DRAYAGE", "DEVANNING", "INSPECTION", "SHUTTLE CHARGE"];
-   
-  // CONSOLE의 경우 CBM에 따라 카테고리의 값 변경 업데이트
-    if (selectedContainer === "console") {
-    dropdown.addEventListener("change", function () {
-      updateCosts(costCategories);
-    });
-  } else {
-    // 20DRY 또는 40HC는 CBM을 무시하고 단일 값만 사용
-    updateCosts(costCategories);
-  }
-  updateAdditionalCosts(); // CBM에 따른 추가 비용 업데이트
-  calculateTotalCost(); // TOTAL COST 업데이트
-});
-
-    // CBM 드롭다운 변경 이벤트 리스너
-dropdown.addEventListener("change", function () {
-  // 업데이트해야 할 비용 카테고리 정의
   const costCategories = ["POC", "THC", "DRAYAGE", "DEVANNING", "INSPECTION", "SHUTTLE CHARGE"];
 
-  // CBM 변경에 따라 모든 비용 업데이트
-  updateCosts(costCategories);
+  if (selectedContainer === "console") {
+    dropdown.addEventListener("change", () => {
+      updateCosts(costCategories); // CONSOLE의 경우 CBM 값 사용
+    });
+  } else {
+    updateCosts(costCategories); // 20DRY 또는 40HC의 경우 CBM 무시
+  }
+
   updateAdditionalCosts(); // 추가 비용 업데이트
   calculateTotalCost(); // 총 비용 업데이트
 });
 
-dropdown.addEventListener("change", function () {
-  const selectedValue = dropdown.value;
-  console.log("선택된 CBM 값:", selectedValue);
+dropdown.addEventListener("change", () => {
+  const costCategories = ["POC", "THC", "DRAYAGE", "DEVANNING", "INSPECTION", "SHUTTLE CHARGE"];
 
-    // 선택된 CBM에 따라 result 값을 업데이트
+  console.log("선택된 CBM 값:", dropdown.value);
+
+  // 선택된 CBM 값 업데이트
   result.textContent =
-    dataNonDiplomat[selectedValue] || dataDiplomat[selectedValue] || "Value not found";
+    dataNonDiplomat[dropdown.value] || dataDiplomat[dropdown.value] || "Value not found";
 
-    // POC 및 THC 값 업데이트 ▲ 이 부분도 로직 변경 진행
-  updateDiplomatSensitiveResult("POC");
-  updateDiplomatSensitiveResult("THC");
-    // 추가 비용 업데이트 (SHUTTLE CHARGE, LONG CARRY CHARGE 등)
-  updateAdditionalCosts();
-   // STAIR CHARGE 드롭다운 업데이트 (CBM 값 변경에 따라)
-  updateStairChargeDropdown();
-    // TOTAL COST 업데이트
-  calculateTotalCost(); 
+  updateCosts(costCategories); // 비용 카테고리 업데이트
+  updateDiplomatSensitiveResult("POC"); // POC 업데이트
+  updateDiplomatSensitiveResult("THC"); // THC 업데이트
+  updateAdditionalCosts(); // 추가 비용 업데이트
+  updateStairChargeDropdown(); // STAIR CHARGE 초기화
+  calculateTotalCost(); // 총 비용 업데이트
 });
 
 // STAIR CHARGE 드롭다운 이벤트 리스너
