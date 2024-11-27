@@ -915,7 +915,7 @@ function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
 
 
 
-// --------------이벤트 리스너 설정----------------------
+// =================이벤트 리스너 설정======================
 nonDiplomat.addEventListener("change", function () {
   handleCheckboxChange(nonDiplomat, diplomat, dataNonDiplomat);
   updateStairChargeDropdown(); // 체크박스 변경 시 STAIR 초기화
@@ -958,20 +958,28 @@ dropdown.addEventListener("change", function () {
   const selectedValue = dropdown.value;
   console.log("선택된 CBM 값:", selectedValue);
 
+   // 업데이트해야 할 비용 카테고리를 배열로 정의
+  const costCategories = ["POC", "THC", "DRAYAGE", "DEVANNING", "INSPECTION", "SHUTTLE CHARGE"];
+  
     // 선택된 CBM에 따라 result 값을 업데이트
   result.textContent =
     dataNonDiplomat[selectedValue] || dataDiplomat[selectedValue] || "Value not found";
 
-    // POC 및 THC 값 업데이트 ▲ 이 부분도 로직 변경 진행
-  updateDiplomatSensitiveResult("POC");
-  updateDiplomatSensitiveResult("THC");
-    // 추가 비용 업데이트 (SHUTTLE CHARGE, LONG CARRY CHARGE 등)
-  updateAdditionalCosts();
-   // STAIR CHARGE 드롭다운 업데이트 (CBM 값 변경에 따라)
-  updateStairChargeDropdown();
-    // TOTAL COST 업데이트
-  calculateTotalCost(); 
+  // 비용 카테고리 업데이트
+  updateCosts(costCategories);
+
+  // 추가 비용 및 기타 업데이트
+  updateAdditionalCosts(); // SHUTTLE CHARGE, LONG CARRY CHARGE 등 추가 비용 업데이트
+  updateStairChargeDropdown(); // STAIR CHARGE 드롭다운 업데이트
+  calculateTotalCost(); // 총 비용 업데이트
 });
+
+// 비용 업데이트 함수 정의
+function updateCosts(categories) {
+  categories.forEach((category) => {
+    updateDiplomatSensitiveResult(category); // 각 카테고리에 대해 diplomat-sensitive 업데이트 실행
+  });
+}
 
 // STAIR CHARGE 드롭다운 이벤트 리스너
 stairCbmDropdown.addEventListener("change", calculateStairCharge);
