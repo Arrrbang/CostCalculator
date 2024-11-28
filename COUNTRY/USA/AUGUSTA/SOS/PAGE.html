@@ -961,7 +961,7 @@ containerDropdown.addEventListener("change", function () {
   const selectedContainer = containerDropdown.value;
 
         // ▼업데이트해야 할 비용 카테고리를 배열로 정의
-  const costCategories = ["POC", "THC", "DRAYAGE", "DEVANNING", "INSPECTION", "SHUTTLE CHARGE"];
+  const costCategories = ["POC", "THC", "DRAYAGE", "DEVANNING", "INSPECTION", "CUSTOMER ENTRY"];
 
   if (selectedContainer === "console") {
     // CONSOLE의 경우 CBM 변경에 따라 모든 카테고리 업데이트
@@ -989,7 +989,7 @@ dropdown.addEventListener("change", function () {
   console.log("선택된 CBM 값:", selectedValue);
 
    // ▼ 업데이트해야 할 비용 카테고리를 배열로 정의
-  const costCategories = ["POC", "THC", "DRAYAGE", "DEVANNING", "INSPECTION", "SHUTTLE CHARGE"];
+  const costCategories = ["POC", "THC", "DRAYAGE", "DEVANNING", "INSPECTION", "CUSTOMER ENTRY"];
 
     // 선택된 CBM에 따라 result 값을 업데이트
   result.textContent =
