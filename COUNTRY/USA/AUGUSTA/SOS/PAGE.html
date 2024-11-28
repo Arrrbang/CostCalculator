@@ -768,7 +768,6 @@ function updateDiplomatSensitiveResult(category) {
   const element = document.getElementById(`${category.toLowerCase().replace(/ /g, "-")}-value`);
   if (element) element.textContent = result; // 결과값 업데이트
 
-  formatAllNumbersInPage();
   
 }
 
@@ -825,7 +824,6 @@ function updateAdditionalCosts() {
     const element = document.getElementById(id);
     if (element) element.textContent = result;
   });
-    formatAllNumbersInPage();
 }
 
 
@@ -891,8 +889,12 @@ function calculateStairCharge() {
     stairChargeResult.textContent = "None"; // 기본값
   }
 }
-    
+
+function formatNumberWithCommas(number) {
+  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 // ★★★★★★★★★★★★TOTAL COST 계산 기본 배송 비용 추가 있을 경우 추가
+
 function calculateTotalCost() {
   const ids = [
     "thc-value",
@@ -920,9 +922,7 @@ function calculateTotalCost() {
     }
   });
 
-  totalCostElement.textContent = `$${total.toFixed(2)}`;
-
-    formatAllNumbersInPage();
+  totalCostElement.textContent = `$${formatNumberWithCommas(total.toFixed(2))}`;
 }
 
 
@@ -1023,35 +1023,6 @@ stairFloorDropdown.addEventListener("change", calculateStairCharge);
 fetchData();
 
     fetchData();
-
-// 숫자 포맷팅 코드 삽입
-function formatNumberWithCommas(number) {
-  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
-
-function formatAllNumbersInPage() {
-  const elements = document.querySelectorAll(".result-value, #total-value");
-  elements.forEach((element) => {
-    if (!element.classList.contains("formatted")) {
-      const rawText = element.textContent.trim();
-      const formattedText = rawText.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
-      if (formattedText !== rawText) {
-        element.textContent = formattedText;
-        element.classList.add("formatted");
-      }
-    }
-  });
-}
-
-const observer = new MutationObserver(() => {
-  formatAllNumbersInPage();
-});
-
-observer.observe(document.body, { childList: true, subtree: true });
-
-document.addEventListener("DOMContentLoaded", () => {
-  formatAllNumbersInPage();
-});
 
     </script>
 </body>
