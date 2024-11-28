@@ -514,6 +514,10 @@
         컨테이너 전체 검사에 걸렸을 경우 발생되는 금액입니다. <br>
         콘솔 금액은 전체 60CBM 기준으로 분할됩니다.
       </p>
+    <div class="result-row">
+      <span class="result-label" style="font-size: 1rem; font-weight: normal;">CUSTOMER ENTRY</span>
+      <span class="result-value" id="customer-entry-value">None</span>
+    </div>
     <div class="result-row" id="total-cost">
   <span class="result-label" style="font-size: 1.4rem; font-weight: bold;">TOTAL COST</span>
   <span class="result-value" id="total-value" style="font-size: 1.4rem; font-weight:bold;">None</span>
@@ -876,6 +880,7 @@ function calculateTotalCost() {
     "drayage-value",
     "devanning-value",
     "inspection-value",
+    "customer-entry-value",
     "basic-delivery-value",
   ];
   let total = 0;
@@ -908,7 +913,7 @@ function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
   resetDropdown(stairFloorDropdown, "이동 층 선택");
 
   // ▼추가 비용 초기화 추가비용 더 생기면 추가
-  ["basic-delivery-value", "shuttle-charge", "long-carry-charge", "stair-charge","heavyitem-value","full-setting-charge","uplight-piano","weekend-charge","thc-value", "poc-value" ].forEach((id) => {
+  ["basic-delivery-value", "shuttle-charge", "long-carry-charge", "stair-charge","heavyitem-value","full-setting-charge","uplight-piano","weekend-charge","thc-value", "poc-value", "customer-entry-value" ].forEach((id) => {
     const element = document.getElementById(id);
     if (element) element.textContent = "None";
   });
