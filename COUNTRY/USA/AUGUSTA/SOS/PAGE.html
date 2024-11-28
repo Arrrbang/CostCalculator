@@ -1017,35 +1017,31 @@ stairFloorDropdown.addEventListener("change", calculateStairCharge);
 fetchData();
 
 // 숫자 포맷팅 함수
-function formatNumberWithCommas(number) {
-  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
-
-// 페이지 내 모든 숫자 포맷팅 함수
 function formatAllNumbersInPage() {
   const elements = document.querySelectorAll("*");
   elements.forEach((element) => {
     element.childNodes.forEach((node) => {
       if (node.nodeType === Node.TEXT_NODE) {
+        const parent = node.parentElement;
         const text = node.nodeValue;
+
+        // 숫자를 포맷팅
         const formattedText = text.replace(/\d+/g, (match) => {
           return formatNumberWithCommas(match);
         });
+
+        // 포맷팅된 텍스트를 기존 텍스트와 비교
         if (formattedText !== text) {
-          node.nodeValue = formattedText;
+          // 텍스트를 HTML로 바꾸어 스타일 유지
+          const span = document.createElement("span");
+          span.textContent = formattedText;
+          span.style.cssText = parent?.style.cssText || ""; // 기존 스타일 유지
+          parent.replaceChild(span, node);
         }
       }
     });
   });
 }
-
-// MutationObserver로 DOM 변경 감지 및 숫자 포맷팅
-const observer = new MutationObserver(() => {
-  formatAllNumbersInPage(); // 변경이 감지될 때마다 숫자 포맷팅
-});
-
-// body 전체를 감지하도록 설정
-observer.observe(document.body, { childList: true, subtree: true });
 
 
     </script>
