@@ -42,6 +42,17 @@
     }
   },
 
+  "DEVANNING": {
+    "NonDiplomat": {
+      "20DRY": "200",
+      "40HC": "300"
+    },
+    "Diplomat": {
+      "20DRY": "200",
+      "40HC": "300"
+    }
+  },
+
   "SHUTTLE CHARGE": {
     "1-10": "120",
     "20": "240",
