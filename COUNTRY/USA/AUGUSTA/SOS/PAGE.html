@@ -780,9 +780,14 @@ function updateAdditionalCosts() {
       } else {
         // 2. 범위 키를 처리
         result = Object.keys(basicExtraCost[category]).reduce((acc, key) => {
+          console.log(`Processing key: ${key}`);
+          
           if (key.includes("-")) {
             const [start, end] = key.split("-").map(Number);
+            console.log(`Range: ${start} - ${end}, Selected CBM: ${selectedCBM}`);
+            
             if (selectedCBM >= start && selectedCBM <= end) {
+              console.log(`Match found: ${basicExtraCost[category][key]}`);
               return basicExtraCost[category][key];
             }
           }
