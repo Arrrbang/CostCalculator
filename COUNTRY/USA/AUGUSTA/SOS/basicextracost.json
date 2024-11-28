@@ -64,6 +64,23 @@
     }
   },
 
+  "CUSTOMER ENTRY": {
+    "NonDiplomat": {
+      "CONSOLE": {
+        "1-60": "170"
+      },
+      "20DRY": "170",
+      "40HC": "170"
+    },
+    "Diplomat": {
+      "CONSOLE": {
+        "1-60":"170"
+      },
+      "20DRY": "170",
+      "40HC": "170"
+    }
+  },
+
   "SHUTTLE CHARGE": {
     "ANY":"미확인"
   },
