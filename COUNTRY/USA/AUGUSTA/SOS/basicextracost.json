@@ -65,8 +65,10 @@
   },
 
   "SHUTTLE CHARGE": {
+    "ANY":"미확인"
   },
   "LONG CARRY CHARGE": {
+    "ANY":"미확인"
   },
   "STAIR CHARGE": {
   },
