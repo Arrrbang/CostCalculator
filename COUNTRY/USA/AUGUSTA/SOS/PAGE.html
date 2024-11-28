@@ -977,13 +977,8 @@ containerDropdown.addEventListener("change", function () {
   calculateTotalCost(); // 총 비용 업데이트
 });
 
-// 비용 업데이트 함수 정의
-function updateCosts(categories) {
-  categories.forEach((category) => {
-    updateDiplomatSensitiveResult(category); // 각 카테고리에 대해 diplomat-sensitive 업데이트 실행
-  });
-}
 
+    // CBM 타입 변경 시 실행되는 이벤트 리스너
 dropdown.addEventListener("change", function () {
   const selectedValue = dropdown.value;
   console.log("선택된 CBM 값:", selectedValue);
@@ -1004,7 +999,7 @@ dropdown.addEventListener("change", function () {
   calculateTotalCost(); // 총 비용 업데이트
 });
 
-// 비용 업데이트 함수 정의
+  // 비용 업데이트 함수 정의
 function updateCosts(categories) {
   categories.forEach((category) => {
     updateDiplomatSensitiveResult(category); // 각 카테고리에 대해 diplomat-sensitive 업데이트 실행
