@@ -718,7 +718,9 @@ function updateContainerDropdown() {
 function updateDiplomatSensitiveResult(category) {
   const selectedContainer = containerDropdown.value; // 선택된 컨테이너 타입 (CONSOLE, 20DRY, 40HC)
   const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값 (숫자로 변환)
-  let result = "None";
+  if (result === "None") {
+  console.log(`No value found for Category: ${category}, Container: ${selectedContainer}, CBM: ${selectedCBM}`);
+}
 
     // ▼단가 있을 경우 추가
     const multiplierByCategory = {
@@ -903,6 +905,15 @@ function calculateTotalCost() {
   ];
   let total = 0;
 
+  console.log(`Total Calculation Started`);
+ids.forEach((id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    console.log(`ID: ${id}, Value: ${element.textContent}`);
+  }
+});
+console.log(`Total: ${total}`);
+
   ids.forEach((id) => {
     const element = document.getElementById(id);
     if (element && element.textContent !== "None") {
@@ -910,6 +921,8 @@ function calculateTotalCost() {
       if (!isNaN(value)) {
         total += value;
       }
+    } else {
+  total += 0; // 기본값 추가  
     }
   });
 
