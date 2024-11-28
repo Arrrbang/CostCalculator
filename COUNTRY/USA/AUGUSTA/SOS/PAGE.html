@@ -665,7 +665,6 @@ async function fetchData() {
   try {
     const tableResponse = await fetch("TABLE.json");
     const tableData = await tableResponse.json();
-    console.log("TABLE.json 데이터:", tableData);
 
     dataNonDiplomat = tableData.nonDiplomat || {};
     dataDiplomat = tableData.diplomat || {};
@@ -673,7 +672,6 @@ async function fetchData() {
 
     const extraCostResponse = await fetch("basicextracost.json");
     basicExtraCost = await extraCostResponse.json();
-    console.log("basicextracost.json 데이터:", basicExtraCost);
 
     updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat);
     updateContainerDropdown();
@@ -720,7 +718,7 @@ function updateDiplomatSensitiveResult(category) {
   const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값 (숫자로 변환)
   let result = "None"; // 초기 값 설정
 
-  // ▼단가 있을 경우 추가
+  // 단가 있을 경우 추가★★★★★★★★★★★★
   const multiplierByCategory = {
     POC: 0, // ▼POC cbm당 단가
     THC: 0, // ▼THC cbm당 단가
@@ -731,7 +729,6 @@ function updateDiplomatSensitiveResult(category) {
 
   // result가 "None"일 때 로그 출력
   if (result === "None") {
-    console.log(`No value found for Category: ${category}, Container: ${selectedContainer}, CBM: ${selectedCBM}`);
   }
 
   if (selectedContainer === "CONSOLE") {
@@ -768,7 +765,6 @@ function updateDiplomatSensitiveResult(category) {
     }
   }
 
-  console.log(`Category: ${category}, Selected Container: ${selectedContainer}, Selected CBM: ${selectedCBM}, Result: ${result}`);
   const element = document.getElementById(`${category.toLowerCase().replace(/ /g, "-")}-value`);
   if (element) element.textContent = result; // 결과값 업데이트
 }
@@ -778,7 +774,7 @@ function updateDiplomatSensitiveResult(category) {
 function updateAdditionalCosts() {
   const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값을 숫자로 변환
 
-  // ▼ 단가 확인 되면 추가
+  // 단가 확인 되면 추가★★★★★★★★★★★★
   const multiplierByCategory = {
     "shuttle-charge": 0,
     "long-carry-charge": 0,
@@ -786,7 +782,7 @@ function updateAdditionalCosts() {
     "weekend-charge": 0,
     "uplight-piano": 0
   };
-// ▼추가 비용 더 있을 경우 추가
+// 추가 비용 더 있을 경우 추가★★★★★★★★★★
   ["SHUTTLE CHARGE", "LONG CARRY CHARGE", "FULL SETTING CHARGE", "WEEKEND CHARGE", "UPLIGHT PIANO"].forEach((category) => {
     const id = category.toLowerCase().replace(/ /g, "-");
     let result = "None";
@@ -798,14 +794,11 @@ function updateAdditionalCosts() {
       } else {
         // 2. 범위 키를 처리
         result = Object.keys(basicExtraCost[category]).reduce((acc, key) => {
-          console.log(`Processing key: ${key}`);
           
           if (key.includes("-")) {
             const [start, end] = key.split("-").map(Number);
-            console.log(`Range: ${start} - ${end}, Selected CBM: ${selectedCBM}`);
             
             if (selectedCBM >= start && selectedCBM <= end) {
-              console.log(`Match found: ${basicExtraCost[category][key]}`);
               return basicExtraCost[category][key];
             }
           }
@@ -838,7 +831,7 @@ function updateHeavyItemDropdown() {
   Object.keys(basicExtraCost["HEAVY ITEM"] || {}).forEach((key) => {
     const option = document.createElement("option");
     option.value = key; // JSON 키를 값으로 설정
-    option.textContent = `${key} unit`; // ▼중량 화물 단위 cbm 또는 unit
+    option.textContent = `${key} unit`; // 중량 화물 단위 cbm 또는 unit★★★★★★★★★★
     heavyItemDropdown.appendChild(option);
   });
 }
@@ -870,7 +863,6 @@ function updateStairChargeDropdown() {
       stairCbmDropdown.appendChild(option);
     }
   } else {
-    console.log("CBM 값이 선택되지 않았습니다.");
   }
 
   // STAIR FLOOR 옵션 추가 (2 ~ 10 고정)
@@ -889,14 +881,14 @@ function calculateStairCharge() {
   const floorValue = parseInt(stairFloorDropdown.value, 10);
 
   if (!isNaN(cbmValue) && !isNaN(floorValue)) {
-    const stairCharge = cbmValue * floorValue * 10; // ▼계단 비용 단가
+    const stairCharge = cbmValue * floorValue * 10; // 계단 비용 단가★★★★★★★★★★
     stairChargeResult.textContent = stairCharge;
   } else {
     stairChargeResult.textContent = "None"; // 기본값
   }
 }
     
-// ▼TOTAL COST 계산 기본 배송 비용 추가 있을 경우 추가
+// ★★★★★★★★★★★★TOTAL COST 계산 기본 배송 비용 추가 있을 경우 추가
 function calculateTotalCost() {
   const ids = [
     "thc-value",
@@ -909,31 +901,21 @@ function calculateTotalCost() {
   ];
   let total = 0;
 
-  console.log(`=== Total Cost Calculation Started ===`);
 
   ids.forEach((id) => {
     const element = document.getElementById(id);
     if (element) {
       const rawValue = element.textContent.trim();
-      console.log(`ID: ${id}, Raw Value: ${rawValue}`);
       
       if (rawValue !== "None" && rawValue !== "INCLUDED") {
         const value = parseFloat(rawValue.replace("$", ""));
         if (!isNaN(value)) {
           total += value;
-          console.log(`ID: ${id}, Parsed Value: ${value}, Running Total: ${total}`);
-        } else {
-          console.warn(`ID: ${id}, Value could not be parsed: ${rawValue}`);
         }
-      } else {
-        console.log(`ID: ${id}, Value is ignored: ${rawValue}`);
       }
-    } else {
-      console.warn(`ID: ${id} does not exist in the DOM`);
     }
   });
 
-  console.log(`=== Total Cost Calculation Completed: $${total.toFixed(2)} ===`);
   totalCostElement.textContent = `$${total.toFixed(2)}`;
 }
 
@@ -952,7 +934,7 @@ function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
   resetDropdown(stairCbmDropdown, "이동 CBM 선택");
   resetDropdown(stairFloorDropdown, "이동 층 선택");
 
-  // ▼추가 비용 초기화 추가비용 더 생기면 추가
+  // ★★★★★★★★★★★★★추가 비용 초기화 추가비용 더 생기면 추가
   ["basic-delivery-value", "shuttle-charge", "long-carry-charge", "stair-charge","heavyitem-value","full-setting-charge","uplight-piano","weekend-charge","thc-value", "poc-value", "customer-entry-value" ].forEach((id) => {
     const element = document.getElementById(id);
     if (element) element.textContent = "None";
@@ -1003,7 +985,6 @@ containerDropdown.addEventListener("change", function () {
     // CBM 타입 변경 시 실행되는 이벤트 리스너
 dropdown.addEventListener("change", function () {
   const selectedValue = dropdown.value;
-  console.log("선택된 CBM 값:", selectedValue);
 
    // ▼ 업데이트해야 할 비용 카테고리를 배열로 정의
   const costCategories = ["POC", "THC", "DRAYAGE", "DEVANNING", "INSPECTION", "CUSTOMER ENTRY"];
