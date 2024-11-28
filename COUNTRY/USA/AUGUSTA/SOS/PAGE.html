@@ -895,7 +895,8 @@ function calculateStairCharge() {
     stairChargeResult.textContent = "None"; // 기본값
   }
 }
-  // ▼TOTAL COST 계산 기본 배송 비용 추가 있을 경우 추가
+    
+// ▼TOTAL COST 계산 기본 배송 비용 추가 있을 경우 추가
 function calculateTotalCost() {
   const ids = [
     "thc-value",
@@ -908,29 +909,34 @@ function calculateTotalCost() {
   ];
   let total = 0;
 
-  console.log(`Total Calculation Started`);
-ids.forEach((id) => {
-  const element = document.getElementById(id);
-  if (element) {
-    console.log(`ID: ${id}, Value: ${element.textContent}`);
-  }
-});
-console.log(`Total: ${total}`);
+  console.log(`=== Total Cost Calculation Started ===`);
 
   ids.forEach((id) => {
     const element = document.getElementById(id);
-    if (element && element.textContent !== "None") {
-      const value = parseFloat(element.textContent.replace("$", "").trim());
-      if (!isNaN(value)) {
-        total += value;
+    if (element) {
+      const rawValue = element.textContent.trim();
+      console.log(`ID: ${id}, Raw Value: ${rawValue}`);
+      
+      if (rawValue !== "None" && rawValue !== "INCLUDED") {
+        const value = parseFloat(rawValue.replace("$", ""));
+        if (!isNaN(value)) {
+          total += value;
+          console.log(`ID: ${id}, Parsed Value: ${value}, Running Total: ${total}`);
+        } else {
+          console.warn(`ID: ${id}, Value could not be parsed: ${rawValue}`);
+        }
+      } else {
+        console.log(`ID: ${id}, Value is ignored: ${rawValue}`);
       }
     } else {
-  total += 0; // 기본값 추가  
+      console.warn(`ID: ${id} does not exist in the DOM`);
     }
   });
 
+  console.log(`=== Total Cost Calculation Completed: $${total.toFixed(2)} ===`);
   totalCostElement.textContent = `$${total.toFixed(2)}`;
-}  
+}
+
 
 // 체크박스 상태 관리 및 초기화
 function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
