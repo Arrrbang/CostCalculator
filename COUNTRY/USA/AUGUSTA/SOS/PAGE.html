@@ -106,7 +106,7 @@
     padding: 5px 0; /* 줄 간격 줄임 */
     margin: 0 10px; /* 좌우 여백 */
   }
-   
+
   .result-label {
     display: table-cell;
     font-size: 1rem;
@@ -190,7 +190,7 @@
       font-size: 1rem; /* 폰트 크기 */
       box-sizing: border-box; /* 패딩 포함 크기 계산 */
     }
-    
+
     .charge-info {
       font-size: 0.8rem;
       margin: 0 auto;
@@ -199,7 +199,7 @@
       display:block;
       color: #ff6666; /* 빨간색 경고 텍스트 */
     }
-       
+
        #heavyitem-value {
       text-align: right; /* 텍스트를 오른쪽으로 정렬 */
       margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
@@ -216,7 +216,7 @@
         gap: 20px; /* 컨테이너 간 간격 */
         margin-top: 20px; /* 위쪽 여백 */
       }
-    
+
       /* 링크 박스 스타일 */
       .link-box {
         background-color: #8BC34A; /* 기본 초록색 */
@@ -230,7 +230,7 @@
         cursor: pointer; /* 클릭 가능 표시 */
         transition: background-color 0.3s ease; /* 배경색 전환 효과 */
       }
-    
+
       /* 마우스 오버 효과 */
       .link-box:hover {
         background-color: #4CAF50; /* 마우스 올렸을 때 진한 초록색 */
@@ -399,7 +399,7 @@
         flex-direction: column;
         align-items: flex-start;
       }
-    
+
     #heavyitemrow .result-label {
         margin-bottom: 10px; /* 라벨과 드롭다운 사이 간격 */
       }
@@ -413,7 +413,7 @@
       margin: 0; /* 여백 초기화 */
       margin-bottom: 20px; /* 드롭다운과 설명 텍스트 사이 간격 */
   }
-    
+
       .charge-info {
       text-align: left; /* 텍스트 좌측 정렬 */
       font-size: clamp(0.5rem, 2.5vw, 1.5rem); /* 컨테이너에 맞게 동적 폰트 크기 조정 */
@@ -507,7 +507,7 @@
     </div>
         <div class="result-row">
       <span class="result-label" style="font-size: 1rem; font-weight: normal;">CUSTOMER ENTRY</span>
-      <span class="result-value" id="customer-entry-value">70</span>
+      <span class="result-value" id="customer-entry-value"></span>
     </div>
     <div class="result-row" id="total-cost">
   <span class="result-label" style="font-size: 1.4rem; font-weight: bold;">TOTAL COST</span>
@@ -607,9 +607,9 @@
 
   <script>
 
-    
+
 // -----------------------로그인 검증 및 검증 실패시 로그인 페이지 이동------------------------------
-    
+
 function redirectToLogin(message) {
   alert(message);
   localStorage.removeItem('token'); 
@@ -644,7 +644,7 @@ function verifyToken() {
 
     verifyToken();
 
-    
+
 // json 데이터 로드
 let dataNonDiplomat = {};
 let dataDiplomat = {};
@@ -718,7 +718,7 @@ function updateContainerDropdown() {
 }
 
 // NON-DIPLOMAT/DIPLOMAT 영향을 받는 기본 배송 비용/THC/POC 등 업데이트------------------------------------------
-    
+
 function updateDiplomatSensitiveResult(category) {
   const selectedContainer = containerDropdown.value; // 선택된 컨테이너 타입 (CONSOLE, 20DRY, 40HC)
   const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값 (숫자로 변환)
@@ -730,7 +730,6 @@ function updateDiplomatSensitiveResult(category) {
     THC: 100, // ▼THC는 cbm당 단가
     DRAYAGE : 30, // ▼DRAYAGE는 cbm당 단가
     DEVANNING : 5, // ▼DEVANNING는 cbm당 단가
-    INSPECTION : 3 // ▼INSPECTION은 cbm당 단가
   };
 
   if (selectedContainer === "CONSOLE") {
@@ -765,15 +764,15 @@ function updateAdditionalCosts() {
 
   // ▼ 단가 확인 되면 추가
   const multiplierByCategory = {
-    "shuttle-charge": 0,
-    "long-carry-charge": 0,
+    "shuttle-charge": 10,
+    "long-carry-charge": 15,
     "full-setting-charge": 30,
   };
 // ▼추가 비용 더 있을 경우 추가
   ["SHUTTLE CHARGE", "LONG CARRY CHARGE", "FULL SETTING CHARGE", "WEEKEND CHARGE", "UPLIGHT PIANO"].forEach((category) => {
     const id = category.toLowerCase().replace(/ /g, "-");
     let result = "None";
-    
+
     if (basicExtraCost[category]) {
       // 1. 정확한 값이 JSON에 있는지 확인
       if (basicExtraCost[category][selectedCBM] !== undefined) {
@@ -808,8 +807,8 @@ function updateAdditionalCosts() {
     if (element) element.textContent = result;
   });
 }
-    
-    
+
+
     // ▼ HEAVY ITEM 드롭다운 업데이트
 function updateHeavyItemDropdown() {
   resetDropdown(heavyItemDropdown, "중량 화물 개수 선택");
@@ -840,8 +839,8 @@ function updateStairChargeDropdown() {
 
   const selectedCBM = parseInt(dropdown.value, 10); // 상위 CBM 선택값
   if (!isNaN(selectedCBM)) {
-    // STAIR CBM 옵션 추가 (2 ~ selectedCBM 범위)
-    for (let i = 2; i <= selectedCBM; i++) {
+    // STAIR CBM 옵션 추가 (1 ~ selectedCBM 범위)
+    for (let i = 1; i <= selectedCBM; i++) {
       const option = document.createElement("option");
       option.value = i;
       option.textContent = i;
@@ -851,9 +850,9 @@ function updateStairChargeDropdown() {
     console.log("CBM 값이 선택되지 않았습니다.");
   }
 
-  // STAIR FLOOR 옵션 추가 (2 ~ 10 고정)
+  // STAIR FLOOR 옵션 추가 (1 ~ 10 고정)
   resetDropdown(stairFloorDropdown, "이동 층 선택");
-  for (let i = 2; i <= 10; i++) {
+  for (let i = 1; i <= 10; i++) {
     const option = document.createElement("option");
     option.value = i;
     option.textContent = `${i}층`;
@@ -867,7 +866,7 @@ function calculateStairCharge() {
   const floorValue = parseInt(stairFloorDropdown.value, 10);
 
   if (!isNaN(cbmValue) && !isNaN(floorValue)) {
-    const stairCharge = cbmValue * (floorValue - 1) * 10; // ▼계단 비용 단가
+    const stairCharge = cbmValue * floorValue * 500; // ▼계단 비용 단가
     stairChargeResult.textContent = stairCharge;
   } else {
     stairChargeResult.textContent = "None"; // 기본값
@@ -973,7 +972,7 @@ dropdown.addEventListener("change", function () {
 
    // ▼ 업데이트해야 할 비용 카테고리를 배열로 정의
   const costCategories = ["POC", "THC", "DRAYAGE", "DEVANNING", "INSPECTION", "SHUTTLE CHARGE"];
-  
+
     // 선택된 CBM에 따라 result 값을 업데이트
   result.textContent =
     dataNonDiplomat[selectedValue] || dataDiplomat[selectedValue] || "Value not found";
@@ -1000,7 +999,7 @@ stairFloorDropdown.addEventListener("change", calculateStairCharge);
 
 // 데이터 로드 호출
 fetchData();
-  
+
     </script>
 </body>
 </html>
