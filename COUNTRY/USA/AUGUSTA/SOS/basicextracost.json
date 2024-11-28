@@ -2,14 +2,14 @@
   "POC": {
     "NonDiplomat": {
       "CONSOLE": {
-        "ANY": "INCLUDED"
+        "1-60": "INCLUDED"
       },
       "20DRY": "INCLUDED",
       "40HC": "INCLUDED"
     },
     "Diplomat": {
       "CONSOLE": {
-        "ANY":"INCLUDED"
+        "1-60":"INCLUDED"
       },
       "20DRY": "INCLUDED",
       "40HC": "INCLUDED"
@@ -18,14 +18,14 @@
   "THC": {
     "NonDiplomat": {
       "CONSOLE": {
-        "ANY": "INCLUDED"
+        "1-60": "INCLUDED"
       },
       "20DRY": "INCLUDED",
       "40HC": "INCLUDED"
     },
     "Diplomat": {
       "CONSOLE": {
-        "ANY":"INCLUDED"
+        "1-60":"INCLUDED"
       },
       "20DRY": "INCLUDED",
       "40HC": "INCLUDED"
@@ -71,29 +71,16 @@
     "ANY": "ANY"
   },
   "LONG CARRY CHARGE": {
-    "10": "50",
-    "20": "100",
-    "30": "150"
   },
   "STAIR CHARGE": {
-    "10": "30",
-    "20": "60",
-    "30": "90"
   },
   "HEAVY ITEM": {
-    "10": "30",
-    "20": "60",
-    "30": "90"
   },
   "FULL SETTING CHARGE": {
-    "10": "30",
-    "20": "60",
-    "30": "90"
   },
   "WEEKEND CHARGE": {
-    "10": "30",
-    "20": "60",
-    "30": "90"
+    "1-40": "800",
+    "41-60": "120"
   },
     "UPLIGHT PIANO": {
     "ANY": "100"
