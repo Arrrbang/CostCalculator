@@ -52,6 +52,21 @@
       "40HC": "300"
     }
   },
+
+  "INSPECTION": {
+    "NonDiplomat": {
+      "CONSOLE": {
+      },
+      "20DRY": "200",
+      "40HC": "200"
+    },
+    "Diplomat": {
+      "CONSOLE": {
+      },
+      "20DRY": "200",
+      "40HC": "200"
+    }
+  },
   
   "SHUTTLE CHARGE": {
   },
