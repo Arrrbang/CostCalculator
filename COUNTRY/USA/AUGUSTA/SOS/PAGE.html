@@ -718,18 +718,21 @@ function updateContainerDropdown() {
 function updateDiplomatSensitiveResult(category) {
   const selectedContainer = containerDropdown.value; // 선택된 컨테이너 타입 (CONSOLE, 20DRY, 40HC)
   const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값 (숫자로 변환)
-  if (result === "None") {
-  console.log(`No value found for Category: ${category}, Container: ${selectedContainer}, CBM: ${selectedCBM}`);
-}
+  let result = "None"; // 초기 값 설정
 
-    // ▼단가 있을 경우 추가
-    const multiplierByCategory = {
-    POC: 0,  // ▼POC cbm당 단가
+  // ▼단가 있을 경우 추가
+  const multiplierByCategory = {
+    POC: 0, // ▼POC cbm당 단가
     THC: 0, // ▼THC cbm당 단가
     DRAYAGE: 30, // ▼DRC cbm당 단가
-    DEVANNING : 5, // ▼DVC cbm당 단가
-    INSPECTION : 3, // ▼ISC cbm당 단가
+    DEVANNING: 5, // ▼DVC cbm당 단가
+    INSPECTION: 3, // ▼ISC cbm당 단가
   };
+
+  // result가 "None"일 때 로그 출력
+  if (result === "None") {
+    console.log(`No value found for Category: ${category}, Container: ${selectedContainer}, CBM: ${selectedCBM}`);
+  }
 
   if (selectedContainer === "CONSOLE") {
     // 컨테이너 타입이 'CONSOLE'일 경우 CBM 값을 사용
