@@ -768,9 +768,9 @@ function updateDiplomatSensitiveResult(category) {
     }
   }
 
-  console.log(`Category: ${category}, Selected Container: ${selectedContainer}, Result: ${result}`);
+  console.log(`Category: ${category}, Selected Container: ${selectedContainer}, Selected CBM: ${selectedCBM}, Result: ${result}`);
   const element = document.getElementById(`${category.toLowerCase()}-value`);
-  if (element) element.textContent = `${result}`; // 결과값 업데이트
+  if (element) element.textContent = result; // 결과값 업데이트
 }
 
 
