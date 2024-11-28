@@ -740,6 +740,9 @@ function updateDiplomatSensitiveResult(category) {
     if (result === "None" && !isNaN(selectedCBM)) {
       const multiplier = multiplierByCategory[category] || 0; // 기본값은 0
       result = selectedCBM * multiplier; // 선택된 CBM 값에 카테고리별 곱셈 값 적용
+      
+  if (result === 0) {
+    result = "미확인";
     }
   } else {
     // 컨테이너 타입이 '20DRY' 또는 '40HC'일 경우 CBM 무시하고 단일 값을 사용
@@ -803,6 +806,9 @@ function updateAdditionalCosts() {
         if (result === "None" && !isNaN(selectedCBM)) {
           const multiplier = multiplierByCategory[id] || 1; // 기본값은 1
           result = selectedCBM * multiplier;
+           
+          if (result === 0) {
+          result = "미확인";
         }
       }
     }
