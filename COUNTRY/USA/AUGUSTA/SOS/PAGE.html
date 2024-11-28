@@ -1016,7 +1016,13 @@ stairFloorDropdown.addEventListener("change", calculateStairCharge);
 // 데이터 로드 호출
 fetchData();
 
-    function formatAllNumbersInPage() {
+    // 숫자 포맷팅 함수
+function formatNumberWithCommas(number) {
+  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+// 페이지 내 모든 숫자 포맷팅 함수
+function formatAllNumbersInPage() {
   const elements = document.querySelectorAll("*");
   elements.forEach((element) => {
     element.childNodes.forEach((node) => {
@@ -1037,10 +1043,13 @@ fetchData();
   });
 }
 
-// 숫자 포맷팅 함수
-function formatNumberWithCommas(number) {
-  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
+// MutationObserver로 DOM 변경 감지 및 숫자 포맷팅
+const observer = new MutationObserver(() => {
+  formatAllNumbersInPage(); // 변경이 감지될 때마다 숫자 포맷팅
+});
+
+// body 전체를 감지하도록 설정
+observer.observe(document.body, { childList: true, subtree: true });
 
 
     </script>
