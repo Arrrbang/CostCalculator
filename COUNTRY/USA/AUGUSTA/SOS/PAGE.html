@@ -98,14 +98,12 @@
   }
 
   /* 현지 비용 스타일링 */
-
   .result-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 0; /* 줄 간격 줄임 */
-    margin: 0 10px; /* 좌우 여백 */
-  }
+  display: flex; /* 플렉스 레이아웃으로 설정 */
+  justify-content: space-between; /* 양 끝으로 정렬 */
+  align-items: center; /* 세로 축 가운데 정렬 */
+  padding: 10px 0; /* 상하 간격 */
+}
 
   .result-label {
     display: table-cell;
@@ -146,6 +144,13 @@
     font-size: 1.2rem;
   }
 
+  .result-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0; /* 줄 간격 줄임 */
+    margin: 0 10px; /* 좌우 여백 */
+  }
 
   /* 추가 비용 섹션 */
    #stairchargetitle {
@@ -591,10 +596,9 @@
 
 
   <script>
-
-
+    
 // -----------------------로그인 검증 및 검증 실패시 로그인 페이지 이동------------------------------
-
+    
 function redirectToLogin(message) {
   alert(message);
   localStorage.removeItem('token'); 
@@ -629,7 +633,7 @@ function verifyToken() {
 
     verifyToken();
 
-
+    
 // json 데이터 로드
 let dataNonDiplomat = {};
 let dataDiplomat = {};
@@ -659,12 +663,9 @@ async function fetchData() {
     dataDiplomat = tableData.diplomat || {};
     containerTypes = tableData.containerType || [];
 
-    console.log("컨테이너 타입:", containerTypes);
-
     const extraCostResponse = await fetch("basicextracost.json");
     basicExtraCost = await extraCostResponse.json();
     console.log("basicextracost.json 데이터:", basicExtraCost);
-
 
     updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat);
     updateContainerDropdown();
@@ -695,7 +696,6 @@ function updateDropdown(data) {
 
 // 컨테이너 타입 드롭다운 업데이트
 function updateContainerDropdown() {
-  console.log("컨테이너 타입 데이터:", containerTypes);
   resetDropdown(containerDropdown);
   containerTypes.forEach((type) => {
     const option = document.createElement("option");
@@ -703,11 +703,10 @@ function updateContainerDropdown() {
     option.textContent = type;
     containerDropdown.appendChild(option);
   });
-  console.log("드롭다운 업데이트 완료");
 }
 
 // NON-DIPLOMAT/DIPLOMAT 영향을 받는 기본 배송 비용/THC/POC 등 업데이트------------------------------------------
-
+    
 function updateDiplomatSensitiveResult(category) {
   const selectedContainer = containerDropdown.value; // 선택된 컨테이너 타입 (CONSOLE, 20DRY, 40HC)
   const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값 (숫자로 변환)
@@ -717,7 +716,6 @@ function updateDiplomatSensitiveResult(category) {
     const multiplierByCategory = {
     POC: 10,  // ▼POC는 cbm당 단가
     THC: 100, // ▼THC는 cbm당 단가
-    DRAYAGE : 30.1 // ▼DRAYAGE는 cbm당 단가
   };
 
   if (selectedContainer === "CONSOLE") {
