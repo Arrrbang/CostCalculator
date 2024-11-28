@@ -521,7 +521,7 @@
   </div>
 </div>
 
-  <!-- ●추가된 컨테이너 -->
+  <!-- ●세번째 박스 -->
   <div class="form-container">
     <h2>추가 비용</h2>
     <div class="result-row">
@@ -544,6 +544,17 @@
       <span class="result-label" style="font-size: 1rem; font-weight: normal;">WEEKEND CHARGE</span>
       <span class="result-value" id="weekend-charge">None</span>
     </div>
+    <div class="result-row">
+      <span class="result-label" style="font-size: 1rem; font-weight: normal;">CUSTOMS EXAM FEE</span>
+      <span class="result-value" id="customs-exam-charge">AT COST</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label" style="font-size: 1rem; font-weight: normal;">SPECIAL ASSEMBLING CHARGE</span>
+      <span class="result-value" id="special-assembling-charge">70</span>
+    </div>
+      <p class="charge-info">
+        IKEA등의 조립 가구 1UNIT 가격입니다.
+      </p>
 
               <!-- STAIR CHARGE OPTIONS 추가 -->
     <div class="result-row" id="stairchargetitle">
@@ -586,7 +597,7 @@
       <span class="result-value" id="heavyitem-value">None</span>
     </div>
     <p class="charge-info">
-      해당 업체의 중량 화물 단가는 $100/100KG 입니다.<br>
+      해당 업체의 중량 화물 단가는 $100/UNIT 입니다.<br>
       대략적인 중량을 선택하면 금액이 계산됩니다.
     </p>
   </div>
@@ -759,9 +770,7 @@ function updateAdditionalCosts() {
   const multiplierByCategory = {
     "shuttle-charge": 10,
     "long-carry-charge": 15,
-    "full-setting-charge": 20,
-    "weekend-charge": 25,
-    "uplight-piano": 30
+    "full-setting-charge": 30,
   };
 // ▼추가 비용 더 있을 경우 추가
   ["SHUTTLE CHARGE", "LONG CARRY CHARGE", "FULL SETTING CHARGE", "WEEKEND CHARGE", "UPLIGHT PIANO"].forEach((category) => {
