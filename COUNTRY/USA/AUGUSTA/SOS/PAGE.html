@@ -98,13 +98,16 @@
   }
 
   /* 현지 비용 스타일링 */
-  .result-row {
-  display: flex; /* 플렉스 레이아웃으로 설정 */
-  justify-content: space-between; /* 양 끝으로 정렬 */
-  align-items: center; /* 세로 축 가운데 정렬 */
-  padding: 10px 0; /* 상하 간격 */
-}
 
+  .result-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0; /* 줄 간격 줄임 */
+    margin: 0 10px; /* 좌우 여백 */
+    border-top: 0.5px dashed #A9D8A6; /* 초록색 구분선 */
+  }
+   
   .result-label {
     display: table-cell;
     font-size: 1rem;
@@ -144,13 +147,6 @@
     font-size: 1.2rem;
   }
 
-  .result-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 0; /* 줄 간격 줄임 */
-    margin: 0 10px; /* 좌우 여백 */
-  }
 
   /* 추가 비용 섹션 */
    #stairchargetitle {
