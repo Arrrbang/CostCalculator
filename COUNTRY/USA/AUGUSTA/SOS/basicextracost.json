@@ -2,33 +2,33 @@
   "POC": {
     "NonDiplomat": {
       "CONSOLE": {
-        "10": "150",
-        "20": "300",
-        "30": "450"
+        "ANY": "INCLUDED"
       },
-      "20DRY": "200",
-      "40HC": "400"
+      "20DRY": "INCLUDED",
+      "40HC": "INCLUDED"
     },
     "Diplomat": {
       "CONSOLE": {
-        "10": "120",
-        "20": "240",
-        "30": "360"
+        "ANY":"INCLUDED"
       },
-      "20DRY": "180",
-      "40HC": "350"
+      "20DRY": "INCLUDED",
+      "40HC": "INCLUDED"
     }
   },
   "THC": {
     "NonDiplomat": {
-      "20DRY": "20thc",
-      "40HC": "40hc",
-      "CONSOLE": "미설정"
+      "CONSOLE": {
+        "ANY": "INCLUDED"
+      },
+      "20DRY": "INCLUDED",
+      "40HC": "INCLUDED"
     },
     "Diplomat": {
-      "20DRY": "D-20THC",
-      "40HC": "D-40THC",
-      "CONSOLE": "NONE"
+      "CONSOLE": {
+        "ANY":"INCLUDED"
+      },
+      "20DRY": "INCLUDED",
+      "40HC": "INCLUDED"
     }
   },
   "DRAYAGE": {
