@@ -53,6 +53,17 @@
     }
   },
 
+  "INSPECTION": {
+    "NonDiplomat": {
+      "20DRY": "200",
+      "40HC": "200"
+    },
+    "Diplomat": {
+      "20DRY": "200",
+      "40HC": "200"
+    }
+  },
+
   "SHUTTLE CHARGE": {
     "1-10": "120",
     "20": "240",
