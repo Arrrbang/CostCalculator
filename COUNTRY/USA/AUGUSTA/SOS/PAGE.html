@@ -507,8 +507,12 @@
         DEVANNING CHARGE : $200/20, $300/40
       </p>
     <div class="result-row">
-      <span class="result-label" style="font-size: 1rem; font-weight: normal;">INSPECTION</span>
+      <span class="result-label" style="font-size: 1rem; font-weight: normal;">FULL INSPECTIONED CONTAINER</span>
       <span class="result-value" id="inspection-value">None</span>
+    </div>
+        <div class="result-row">
+      <span class="result-label" style="font-size: 1rem; font-weight: normal;">CUSTOMER ENTRY</span>
+      <span class="result-value" id="customer-entry-value"></span>
     </div>
     <div class="result-row" id="total-cost">
   <span class="result-label" style="font-size: 1.4rem; font-weight: bold;">TOTAL COST</span>
@@ -872,6 +876,7 @@ function calculateTotalCost() {
     "devanning-value",
     "inspection-value",
     "basic-delivery-value",
+    "customer-entry-value",
   ];
   let total = 0;
 
