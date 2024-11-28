@@ -2,36 +2,35 @@
   "POC": {
     "NonDiplomat": {
       "CONSOLE": {
-        "ANY": "INCLUDED"
+        "10": "150",
+        "20": "300",
+        "30": "450"
       },
-      "20DRY": "INCLUDED",
-      "40HC": "INCLUDED"
+      "20DRY": "200",
+      "40HC": "400"
     },
     "Diplomat": {
       "CONSOLE": {
-        "ANY": "INCLUDED"
+        "10": "120",
+        "20": "240",
+        "30": "360"
       },
-      "20DRY": "INCLUDED",
-      "40HC": "INCLUDED"
+      "20DRY": "180",
+      "40HC": "350"
     }
   },
   "THC": {
     "NonDiplomat": {
-      "CONSOLE": {
-        "ANY": "INCLUDED"
-      },
-      "20DRY": "INCLUDED",
-      "40HC": "INCLUDED"
+      "20DRY": "20thc",
+      "40HC": "40hc",
+      "CONSOLE": "미설정"
     },
     "Diplomat": {
-      "CONSOLE": {
-        "ANY": "INCLUDED"
-      },
-      "20DRY": "INCLUDED",
-      "40HC": "INCLUDED"
+      "20DRY": "D-20THC",
+      "40HC": "D-40THC",
+      "CONSOLE": "NONE"
     }
   },
-  
   "DRAYAGE": {
     "NonDiplomat": {
       "20DRY": "1,850",
@@ -42,48 +41,37 @@
       "40HC": "1,850"
     }
   },
-  "DEVANNING": {
-    "NonDiplomat": {
-      "20DRY": "200",
-      "40HC": "300"
-    },
-    "Diplomat": {
-      "20DRY": "200",
-      "40HC": "300"
-    }
-  },
 
-  "INSPECTION": {
-    "NonDiplomat": {
-      "CONSOLE": {
-      },
-      "20DRY": "200",
-      "40HC": "200"
-    },
-    "Diplomat": {
-      "CONSOLE": {
-      },
-      "20DRY": "200",
-      "40HC": "200"
-    }
-  },
-  
   "SHUTTLE CHARGE": {
+    "1-10": "120",
+    "20": "240",
+    "30": "360",
+    "ANY": "ANY"
   },
   "LONG CARRY CHARGE": {
+    "10": "50",
+    "20": "100",
+    "30": "150"
   },
   "STAIR CHARGE": {
+    "10": "30",
+    "20": "60",
+    "30": "90"
   },
   "HEAVY ITEM": {
-    "1" : "100",
-    "2" : "200",
-    "3" : "300"
+    "10": "30",
+    "20": "60",
+    "30": "90"
   },
   "FULL SETTING CHARGE": {
-    "1-40":"800",
-    "41-60":"1200"
+    "10": "30",
+    "20": "60",
+    "30": "90"
   },
   "WEEKEND CHARGE": {
+    "10": "30",
+    "20": "60",
+    "30": "90"
   },
     "UPLIGHT PIANO": {
     "ANY": "100"
