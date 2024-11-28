@@ -507,7 +507,7 @@
     </div>
         <div class="result-row">
       <span class="result-label" style="font-size: 1rem; font-weight: normal;">CUSTOMER ENTRY</span>
-      <span class="result-value" id="customer-entry-value"></span>
+      <span class="result-value" id="customer-entry-value">70</span>
     </div>
     <div class="result-row" id="total-cost">
   <span class="result-label" style="font-size: 1.4rem; font-weight: bold;">TOTAL COST</span>
@@ -730,6 +730,7 @@ function updateDiplomatSensitiveResult(category) {
     THC: 100, // ▼THC는 cbm당 단가
     DRAYAGE : 30, // ▼DRAYAGE는 cbm당 단가
     DEVANNING : 5, // ▼DEVANNING는 cbm당 단가
+    INSPECTION : 3 // ▼INSPECTION은 cbm당 단가
   };
 
   if (selectedContainer === "CONSOLE") {
@@ -839,8 +840,8 @@ function updateStairChargeDropdown() {
 
   const selectedCBM = parseInt(dropdown.value, 10); // 상위 CBM 선택값
   if (!isNaN(selectedCBM)) {
-    // STAIR CBM 옵션 추가 (1 ~ selectedCBM 범위)
-    for (let i = 1; i <= selectedCBM; i++) {
+    // STAIR CBM 옵션 추가 (2 ~ selectedCBM 범위)
+    for (let i = 2; i <= selectedCBM; i++) {
       const option = document.createElement("option");
       option.value = i;
       option.textContent = i;
@@ -850,9 +851,9 @@ function updateStairChargeDropdown() {
     console.log("CBM 값이 선택되지 않았습니다.");
   }
 
-  // STAIR FLOOR 옵션 추가 (1 ~ 10 고정)
+  // STAIR FLOOR 옵션 추가 (2 ~ 10 고정)
   resetDropdown(stairFloorDropdown, "이동 층 선택");
-  for (let i = 1; i <= 10; i++) {
+  for (let i = 2; i <= 10; i++) {
     const option = document.createElement("option");
     option.value = i;
     option.textContent = `${i}층`;
@@ -866,7 +867,7 @@ function calculateStairCharge() {
   const floorValue = parseInt(stairFloorDropdown.value, 10);
 
   if (!isNaN(cbmValue) && !isNaN(floorValue)) {
-    const stairCharge = cbmValue * floorValue * 10; // ▼계단 비용 단가
+    const stairCharge = cbmValue * (floorValue - 1) * 10; // ▼계단 비용 단가
     stairChargeResult.textContent = stairCharge;
   } else {
     stairChargeResult.textContent = "None"; // 기본값
