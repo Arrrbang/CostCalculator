@@ -1016,41 +1016,36 @@ stairFloorDropdown.addEventListener("change", calculateStairCharge);
 // 데이터 로드 호출
 fetchData();
 
-    // 숫자 포맷팅 함수
+    fetchData();
+
+// 숫자 포맷팅 코드 삽입
 function formatNumberWithCommas(number) {
   return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-// 페이지 내 모든 숫자 포맷팅 함수
 function formatAllNumbersInPage() {
-  const elements = document.querySelectorAll("*");
+  const elements = document.querySelectorAll(".result-value, #total-value");
   elements.forEach((element) => {
-    element.childNodes.forEach((node) => {
-      if (node.nodeType === Node.TEXT_NODE) {
-        const text = node.nodeValue;
-
-        // 숫자를 포맷팅
-        const formattedText = text.replace(/\d+/g, (match) => {
-          return formatNumberWithCommas(match);
-        });
-
-        // 포맷팅된 텍스트를 기존 텍스트와 비교
-        if (formattedText !== text) {
-          node.nodeValue = formattedText; // 텍스트만 수정
-        }
+    if (!element.classList.contains("formatted")) {
+      const rawText = element.textContent.trim();
+      const formattedText = rawText.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+      if (formattedText !== rawText) {
+        element.textContent = formattedText;
+        element.classList.add("formatted");
       }
-    });
+    }
   });
 }
 
-// MutationObserver로 DOM 변경 감지 및 숫자 포맷팅
 const observer = new MutationObserver(() => {
-  formatAllNumbersInPage(); // 변경이 감지될 때마다 숫자 포맷팅
+  formatAllNumbersInPage();
 });
 
-// body 전체를 감지하도록 설정
 observer.observe(document.body, { childList: true, subtree: true });
 
+document.addEventListener("DOMContentLoaded", () => {
+  formatAllNumbersInPage();
+});
 
     </script>
 </body>
