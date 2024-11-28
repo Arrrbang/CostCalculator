@@ -767,6 +767,9 @@ function updateDiplomatSensitiveResult(category) {
 
   const element = document.getElementById(`${category.toLowerCase().replace(/ /g, "-")}-value`);
   if (element) element.textContent = result; // 결과값 업데이트
+
+  formatAllNumbersInPage();
+  
 }
 
 
@@ -822,6 +825,7 @@ function updateAdditionalCosts() {
     const element = document.getElementById(id);
     if (element) element.textContent = result;
   });
+    formatAllNumbersInPage();
 }
 
 
@@ -917,6 +921,8 @@ function calculateTotalCost() {
   });
 
   totalCostElement.textContent = `$${total.toFixed(2)}`;
+
+    formatAllNumbersInPage();
 }
 
 
