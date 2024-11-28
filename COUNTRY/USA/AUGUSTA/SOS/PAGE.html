@@ -714,8 +714,10 @@ function updateDiplomatSensitiveResult(category) {
 
     // ▼단가 있을 경우 추가
     const multiplierByCategory = {
-    POC: 10,  // ▼POC는 cbm당 단가
-    THC: 100, // ▼THC는 cbm당 단가
+    POC: 0,  // ▼POC cbm당 단가
+    THC: 0, // ▼THC cbm당 단가
+    DRAYAGE: 30, // ▼DRC cbm당 단가
+    DEVANNING : 5, // ▼DVC cbm당 단가
   };
 
   if (selectedContainer === "CONSOLE") {
