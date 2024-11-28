@@ -659,6 +659,8 @@ async function fetchData() {
     dataDiplomat = tableData.diplomat || {};
     containerTypes = tableData.containerType || [];
 
+    console.log("컨테이너 타입:", containerTypes);
+
     const extraCostResponse = await fetch("basicextracost.json");
     basicExtraCost = await extraCostResponse.json();
     console.log("basicextracost.json 데이터:", basicExtraCost);
@@ -693,6 +695,7 @@ function updateDropdown(data) {
 
 // 컨테이너 타입 드롭다운 업데이트
 function updateContainerDropdown() {
+  console.log("컨테이너 타입 데이터:", containerTypes);
   resetDropdown(containerDropdown);
   containerTypes.forEach((type) => {
     const option = document.createElement("option");
@@ -700,6 +703,7 @@ function updateContainerDropdown() {
     option.textContent = type;
     containerDropdown.appendChild(option);
   });
+  console.log("드롭다운 업데이트 완료");
 }
 
 // NON-DIPLOMAT/DIPLOMAT 영향을 받는 기본 배송 비용/THC/POC 등 업데이트------------------------------------------
