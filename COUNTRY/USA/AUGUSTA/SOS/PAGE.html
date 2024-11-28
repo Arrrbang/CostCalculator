@@ -741,6 +741,7 @@ function updateDiplomatSensitiveResult(category) {
     }
   }
 
+  console.log(`Category: ${category}, Selected Container: ${selectedContainer}, Result: ${result}`);
   const element = document.getElementById(`${category.toLowerCase()}-value`);
   if (element) element.textContent = `$${result}`; // 결과값 업데이트
 }
