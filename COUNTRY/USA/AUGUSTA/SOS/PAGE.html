@@ -738,7 +738,7 @@ function updateDiplomatSensitiveResult(category) {
     }
     // CBM 값을 JSON에서 찾지 못한 경우
     if (result === "None" && !isNaN(selectedCBM)) {
-      const multiplier = multiplierByCategory[category] || 1; // 기본값은 1
+      const multiplier = multiplierByCategory[category] || 0; // 기본값은 0
       result = selectedCBM * multiplier; // 선택된 CBM 값에 카테고리별 곱셈 값 적용
     }
   } else {
@@ -752,7 +752,7 @@ function updateDiplomatSensitiveResult(category) {
 
   console.log(`Category: ${category}, Selected Container: ${selectedContainer}, Result: ${result}`);
   const element = document.getElementById(`${category.toLowerCase()}-value`);
-  if (element) element.textContent = `$${result}`; // 결과값 업데이트
+  if (element) element.textContent = `${result}`; // 결과값 업데이트
 }
 
 
