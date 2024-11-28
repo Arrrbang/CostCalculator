@@ -31,6 +31,16 @@
       "CONSOLE": "NONE"
     }
   },
+  "DRAYAGE": {
+    "NonDiplomat": {
+      "20DRY": "1,850",
+      "40HC": "1,850"
+    },
+    "Diplomat": {
+      "20DRY": "1,850",
+      "40HC": "1,850"
+    }
+  },
   
   "SHUTTLE CHARGE": {
     "1-10": "120",
