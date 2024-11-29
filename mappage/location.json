@@ -1,57 +1,75 @@
 [
   {
-    "lat": 33.749, "lng": -84.388, "name": "Atlanta, GA",
+    "lat": 33.749,
+    "lng": -84.388,
+    "name": "Atlanta, GA",
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/ATLANTA/SOS/", "color": "blue"},
       {"type": "KT", "url": "/frontend/COUNTRY/AMERICA/USA/ATLANTA/KT/", "color": "green"}
     ]
   },
   {
-    "lat": 33.0362, "lng": -85.0319, "name": "LaGrange, GA",
+    "lat": 33.0362,
+    "lng": -85.0319,
+    "name": "LaGrange, GA",
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/LAGRANGE/SOS/", "color": "blue"}
     ]
   },
   {
-    "lat": 33.4700, "lng": -81.9748, "name": "Augusta, GA",
+    "lat": 33.4700,
+    "lng": -81.9748,
+    "name": "Augusta, GA",
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/AUGUSTA/SOS/", "color": "blue"},
       {"type": "KT", "url": "/frontend/COUNTRY/AMERICA/USA/AUGUSTA/KT/", "color": "green"}
     ]
   },
   {
-    "lat": 32.0835, "lng": -81.0998,"name": "Savannah, GA",
+    "lat": 32.0835,
+    "lng": -81.0998,
+    "name": "Savannah, GA",
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/SAVANNAH/SOS/", "color": "blue"},
       {"type": "KT", "url": "/frontend/COUNTRY/AMERICA/USA/SAVANNAH/KT/", "color": "green"}
     ]
   },
   {
-    "lat": 32.59778, "lng": -85.48083,"name": "Auburn, AL",
+    "lat": 32.59778,
+    "lng": -85.48083,
+    "name": "Auburn, AL",
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/AUBURN/SOS/", "color": "blue"}
     ]
   },
   {
-    "lat": 33.5186, "lng": -86.8104,"name": "Birmingham, AL",
+    "lat": 33.5186,
+    "lng": -86.8104,
+    "name": "Birmingham, AL",
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/BIRMINGHAM/SOS/", "color": "blue"}
     ]
   },
   {
-    "lat": 34.7304, "lng": -86.5861,"name": "Huntsville, AL",
+    "lat": 34.7304,
+    "lng": -86.5861,
+    "name": "Huntsville, AL",
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/HUNTSVILLE/SOS/", "color": "blue"}
     ]
   },
   {
-    "lat": 32.3792, "lng": -86.3077,"name": "Montgomery, AL",
+    "lat": 32.3792,
+    "lng": -86.3077,
+    "name": "Montgomery, AL",
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/MONTGOMERY/SOS/", "color": "blue"}
     ]
   },
   {
-    "lat": 30.6954, "lng": -88.1399,"name": "Mobile, AL",
+    "lat": 30.6954,
+    "lng": -88.1399,
+    "name": "Mobile, AL",
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/MOBILE/SOS/", "color": "blue"}
     ]
