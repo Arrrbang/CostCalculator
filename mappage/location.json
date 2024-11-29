@@ -25,7 +25,7 @@
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/SAVANNAH/SOS/", "color": "blue"},
       {"type": "KT", "url": "/frontend/COUNTRY/AMERICA/USA/SAVANNAH/KT/", "color": "green"}
     ]
-  }
+  },
   {
     "lat": 32.59778, "lng": -85.48083,"name": "Auburn, AL",
     "links": [
@@ -37,19 +37,19 @@
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/BIRMINGHAM/SOS/", "color": "blue"}
     ]
-  }
+  },
   {
     "lat": 34.7304, "lng": -86.5861,"name": "Huntsville, AL",
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/HUNTSVILLE/SOS/", "color": "blue"}
     ]
-  }
+  },
   {
     "lat": 32.3792, "lng": -86.3077,"name": "Montgomery, AL",
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/MONTGOMERY/SOS/", "color": "blue"}
     ]
-  }
+  },
   {
     "lat": 30.6954, "lng": -88.1399,"name": "Mobile, AL",
     "links": [
