@@ -195,6 +195,28 @@
       font-size: 1rem; /* 폰트 크기 */
       box-sizing: border-box; /* 패딩 포함 크기 계산 */
     }
+   
+       #heavyitem-value {
+      text-align: right; /* 텍스트를 오른쪽으로 정렬 */
+      margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
+    }
+
+      #storagerow {
+     border-top: 1px dashed #8BC34A; /* 초록색 구분선 */
+     margin-top: 10px; /* 위쪽 간격 */
+     padding-top: 10px; /* 구분선과 텍스트 간격 */
+    }
+     #storageperiod {
+      width: 180px; /* 드롭다운 크기 설정 */
+      padding: 8px; /* 내부 여백 */
+      font-size: 1rem; /* 폰트 크기 */
+      box-sizing: border-box; /* 패딩 포함 크기 계산 */
+    }
+   
+       #storage-value {
+      text-align: right; /* 텍스트를 오른쪽으로 정렬 */
+      margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
+    }
 
     .charge-info {
       font-size: 0.8rem;
@@ -205,10 +227,6 @@
       color: #ff6666; /* 빨간색 경고 텍스트 */
     }
 
-       #heavyitem-value {
-      text-align: right; /* 텍스트를 오른쪽으로 정렬 */
-      margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
-    }
       #total-cost {
      border-top: 1px dashed #8BC34A; /* 초록색 구분선 */
      margin-top: 10px; /* 위쪽 간격 */
@@ -410,14 +428,37 @@
       }
 
     #heavyitemunit {
-      width: 140px; /* 드롭다운 너비 */
+      display: block; /* margin auto를 위해 블록 요소로 변경 */
+      width: 160px; /* 드롭다운 너비 설정 */
       font-size: 0.8rem;
       padding: 6px;
       box-sizing: border-box;
       margin-left: 0;
-      margin: 0; /* 여백 초기화 */
+      margin: 0 auto; /* 수평 가운데 정렬 */
       margin-bottom: 20px; /* 드롭다운과 설명 텍스트 사이 간격 */
   }
+
+    #storagerow {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    #storagerow .result-label {
+        margin-bottom: 10px; /* 라벨과 드롭다운 사이 간격 */
+      }
+
+    #storageperiod {
+      display: block; /* margin auto를 위해 블록 요소로 변경 */
+      width: 160px; /* 드롭다운 너비 설정 */
+      font-size: 0.8rem;
+      padding: 6px;
+      box-sizing: border-box;
+      margin-left: 0;
+      margin: 0 auto; /* 수평 가운데 정렬 */
+      margin-bottom: 20px; /* 드롭다운과 설명 텍스트 사이 간격 */
+  }
+
 
       .charge-info {
       text-align: left; /* 텍스트 좌측 정렬 */
@@ -429,11 +470,7 @@
       max-width: 90%; /* 부모 컨테이너 크기를 초과하지 않도록 제한 */
       display: block; /* margin auto 적용을 위해 블록 요소로 변경 */
     }
-   #heavyitemunit {
-      width: 160px; /* 드롭다운 너비 설정 */
-      margin: 0 auto; /* 수평 가운데 정렬 */
-      display: block; /* margin auto를 위해 블록 요소로 변경 */
-    }
+
 }
 
 
@@ -525,7 +562,7 @@
   </div>
 </div>
 
-  <!-- ●추가된 컨테이너 -->
+  <!-- 추가 비용 관련 컨테이너너 -->
   <div class="form-container">
     <h2>추가 비용</h2>
     <div class="result-row">
@@ -593,6 +630,19 @@
       해당 업체의 중량 화물 단가는 $100/1UNIT 입니다.<br>
       계단으로 이동할 경우 1층당 $100
     </p>
+
+    <div class="result-row" id="storagerow">
+      <span class="result-label" style="font-size: 1rem; font-weight: bold;">STORAGE CHARGE</span>
+      <select id="storageperiod">
+        <option value="">보관 기간 선택</option>
+      </select>
+    </div>
+    <div class="result-row">
+      <span class="result-value" id="storage-value">None</span>
+    </div>
+    <p class="charge-info">
+      SOS 창고 보관 비용 :  $4/CBM/WEEK (MIN:$20/WEEK)
+    </p>
   </div>
 
   <div class="form-container">
@@ -659,6 +709,8 @@ const stairFloorDropdown = document.getElementById("stairfloor");
 const stairChargeResult = document.getElementById("stair-charge");
 const heavyItemDropdown = document.getElementById("heavyitemunit");
 const heavyItemValue = document.getElementById("heavyitem-value");
+const storageperiodDropdown = document.getElementById("storageperiod");
+const storageValue = document.getElementById("storage-value");
 const totalCostElement = document.getElementById("total-value");
 
 async function fetchData() {
@@ -678,6 +730,7 @@ async function fetchData() {
     updateAdditionalCosts();
     updateStairChargeDropdown();
     updateHeavyItemDropdown(); 
+    updatestorageperiodDropdown();
     calculateTotalCost();
   } catch (error) {
     console.error("Failed to fetch data:", error);
@@ -827,29 +880,6 @@ function updateAdditionalCosts() {
 }
 
 
-    // ▼ HEAVY ITEM 드롭다운 업데이트
-function updateHeavyItemDropdown() {
-  resetDropdown(heavyItemDropdown, "중량 화물 개수 선택");
-  Object.keys(basicExtraCost["HEAVY ITEM"] || {}).forEach((key) => {
-    const option = document.createElement("option");
-    option.value = key; // JSON 키를 값으로 설정
-    option.textContent = `${key} unit`; // 중량 화물 단위 cbm 또는 unit★★★★★★★★★★
-    heavyItemDropdown.appendChild(option);
-  });
-}
-
-// HEAVY ITEM 결과 계산
-heavyItemDropdown.addEventListener("change", function () {
-  const selectedValue = heavyItemDropdown.value; // 선택된 드롭다운 값
-  const heavyItemCost = basicExtraCost["HEAVY ITEM"]?.[selectedValue] || "None"; // JSON 데이터에서 값 검색
-
-  if (heavyItemCost !== "None") {
-    heavyItemValue.textContent = `$${heavyItemCost}`; // 결과 표시
-  } else {
-    heavyItemValue.textContent = "None"; // 기본값
-  }
-});
-
 
 // STAIR CHARGE 드롭다운 업데이트
 function updateStairChargeDropdown() {
@@ -889,6 +919,63 @@ function calculateStairCharge() {
     stairChargeResult.textContent = "None"; // 기본값
   }
 }
+
+
+    // ▼ HEAVY ITEM 드롭다운 업데이트
+function updateHeavyItemDropdown() {
+  resetDropdown(heavyItemDropdown, "중량 화물 개수 선택");
+  Object.keys(basicExtraCost["HEAVY ITEM"] || {}).forEach((key) => {
+    const option = document.createElement("option");
+    option.value = key; // JSON 키를 값으로 설정
+    option.textContent = `${key} unit`; // 중량 화물 단위 cbm 또는 unit★★★★★★★★★★
+    heavyItemDropdown.appendChild(option);
+  });
+}
+
+// HEAVY ITEM 결과 계산
+heavyItemDropdown.addEventListener("change", function () {
+  const selectedValue = heavyItemDropdown.value; // 선택된 드롭다운 값
+  const heavyItemCost = basicExtraCost["HEAVY ITEM"]?.[selectedValue] || "None"; // JSON 데이터에서 값 검색
+
+  if (heavyItemCost !== "None") {
+    heavyItemValue.textContent = `$${heavyItemCost}`; // 결과 표시
+  } else {
+    heavyItemValue.textContent = "None"; // 기본값
+  }
+});
+
+
+    // ▼ Storage charge 드롭다운 업데이트
+    function updatestorageperiodDropdown() {
+      resetDropdown(storageperiodDropdown, "화물 보관 기간 선택");
+    
+      // 보관 기간 옵션 추가 (1주 ~ 20주)
+      for (let i = 1; i <= 20; i++) {
+        const option = document.createElement("option");
+        option.value = i; // 주 단위를 값으로 설정
+        option.textContent = `${i} WEEK`; // 보관 기간 텍스트
+        storageperiodDropdown.appendChild(option);
+      }
+    }
+    
+    // Storage charge 결과 계산
+    storageperiodDropdown.addEventListener("change", function () {
+      const selectedPeriod = parseInt(storageperiodDropdown.value, 10); // 선택된 보관 기간 값
+      const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값
+    
+      const costPerWeekPerCBM = 4; // 보관 비용 단가 입력 현재 $4/cbm/week
+    
+      if (!isNaN(selectedPeriod) && !isNaN(selectedCBM)) {
+        // 보관 비용 계산: CBM x 보관 기간 x 단가
+        const storageCost = selectedPeriod * selectedCBM * costPerWeekPerCBM;
+    
+        storageValue.textContent = `$${storageCost}`; // 결과 표시
+      } else {
+        storageValue.textContent = "None"; // 기본값
+      }
+    });
+
+
 
 function formatNumberWithCommas(number) {
   return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -941,7 +1028,7 @@ function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
   resetDropdown(stairFloorDropdown, "이동 층 선택");
 
   // ★★★★★★★★★★★★★추가 비용 초기화 추가비용 더 생기면 추가
-  ["basic-delivery-value", "shuttle-charge", "long-carry-charge", "stair-charge","heavyitem-value","full-setting-charge","uplight-piano","weekend-charge","thc-value", "poc-value", "customer-entry-value" ].forEach((id) => {
+  ["basic-delivery-value", "shuttle-charge", "long-carry-charge", "stair-charge","heavyitem-value","full-setting-charge","uplight-piano","weekend-charge","thc-value", "poc-value", "customer-entry-value", "storage-value" ].forEach((id) => {
     const element = document.getElementById(id);
     if (element) element.textContent = "None";
   });
