@@ -1,29 +1,30 @@
 [
+    "_comment": "미국 마커 표시",
   {
     "lat": 33.749, "lng": -84.388, "name": "Atlanta, GA",
     "links": [
-      {"type": "SOS", "url": "/frontend/COUNTRY/USA/ATLANTA/SOS/PAGE.html", "color": "blue"},
-      {"type": "KT", "url": "/frontend/COUNTRY/USA/ATLANTA/KT/PAGE.html", "color": "green"}
+      {"type": "SOS", "url": "/frontend/COUNTRY/USA/ATLANTA/SOS/", "color": "blue"},
+      {"type": "KT", "url": "/frontend/COUNTRY/USA/ATLANTA/KT/", "color": "green"}
     ]
   },
   {
     "lat": 33.0362, "lng": -85.0319, "name": "LaGrange, GA",
     "links": [
-      {"type": "SOS", "url": "/frontend/COUNTRY/USA/LAGRANGE/SOS/PAGE.html", "color": "blue"}
+      {"type": "SOS", "url": "/frontend/COUNTRY/USA/LAGRANGE/SOS/", "color": "blue"}
     ]
   },
   {
     "lat": 33.4700, "lng": -81.9748, "name": "Augusta, GA",
     "links": [
-      {"type": "SOS", "url": "/frontend/COUNTRY/USA/AUGUSTA/SOS/PAGE.html", "color": "blue"},
-      {"type": "KT", "url": "/frontend/COUNTRY/USA/AUGUSTA/KT/PAGE.html", "color": "green"}
+      {"type": "SOS", "url": "/frontend/COUNTRY/USA/AUGUSTA/SOS/", "color": "blue"},
+      {"type": "KT", "url": "/frontend/COUNTRY/USA/AUGUSTA/KT/", "color": "green"}
     ]
   },
   {
     "lat": 32.0835, "lng": -81.0998,"name": "Savannah, GA",
     "links": [
-      {"type": "SOS", "url": "/frontend/COUNTRY/USA/SAVANNAH/SOS/PAGE.html", "color": "blue"},
-      {"type": "KT", "url": "/frontend/COUNTRY/USA/SAVANNAH/KT/PAGE.html", "color": "green"}
+      {"type": "SOS", "url": "/frontend/COUNTRY/USA/SAVANNAH/SOS/", "color": "blue"},
+      {"type": "KT", "url": "/frontend/COUNTRY/USA/SAVANNAH/KT/", "color": "green"}
     ]
   }
 ]
