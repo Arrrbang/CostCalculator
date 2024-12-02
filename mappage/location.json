@@ -129,5 +129,21 @@
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/WILMINGTON/SOS/", "color": "blue"}
     ]
+  },
+  {
+    "lat": 34.0004,
+    "lng": -81.0348,
+    "name": "Columbia, SC",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/COLUMBIA/SOS/", "color": "blue"}
+    ]
+  },
+  {
+    "lat": 32.7766,
+    "lng": -79.9309,
+    "name": "Charleston, SC",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/CHARLESTON/SOS/", "color": "blue"}
+    ]
   }
 ]
