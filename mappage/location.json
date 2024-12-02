@@ -100,7 +100,7 @@
   },
   {
     "lat": 35.2271,
-    "lng": 80.8431,
+    "lng": -80.8431,
     "name": "Charlotte, NC",
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/CHARLOTTE/SOS/", "color": "blue"}
@@ -108,7 +108,7 @@
   },
   {
     "lat": 36.0726,
-    "lng": 79.7920,
+    "lng": -79.7920,
     "name": "Greensboro, NC",
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/GREENSBORO/SOS/", "color": "blue"}
@@ -116,7 +116,7 @@
   },
   {
     "lat": 35.7796,
-    "lng": 78.6382,
+    "lng": -78.6382,
     "name": "Raleigh/Fayetteville, NC",
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/RALEIGH/SOS/", "color": "blue"}
@@ -124,7 +124,7 @@
   },
   {
     "lat": 34.2257,
-    "lng": 77.9447,
+    "lng": -77.9447,
     "name": "Wilmington, NC",
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/WILMINGTON/SOS/", "color": "blue"}
