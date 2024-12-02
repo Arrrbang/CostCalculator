@@ -145,5 +145,29 @@
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/CHARLESTON/SOS/", "color": "blue"}
     ]
+  },
+  {
+    "lat": 36.174465,
+    "lng": -86.767960,
+    "name": "Nashville, TN",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/NASHVILLE/SOS/", "color": "blue"}
+    ]
+  },
+  {
+    "lat": 35.964668,
+    "lng": -83.926453,
+    "name": "Knoxville, TN",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/KNOXVILLE/SOS/", "color": "blue"}
+    ]
+  },
+  {
+    "lat": 35.117500,
+    "lng": -89.971107,
+    "name": "Memphis, TN",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/MEMPHIS/SOS/", "color": "blue"}
+    ]
   }
 ]
