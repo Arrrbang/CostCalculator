@@ -169,5 +169,29 @@
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/MEMPHIS/SOS/", "color": "blue"}
     ]
+  },
+  {
+    "lat": 29.96667,
+    "lng": -90.05000,
+    "name": "New Orleans, LA",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/NEWORLEANS/SOS/", "color": "blue"}
+    ]
+  },
+  {
+    "lat": 30.3960,
+    "lng": -88.8853,
+    "name": "Biloxi, MS",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/BILOXI/SOS/", "color": "blue"}
+    ]
+  },
+  {
+    "lat": 34.7465,
+    "lng": -92.2896,
+    "name": "Little Rock, AR",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/LITTLEROCK/SOS/", "color": "blue"}
+    ]
   }
 ]
