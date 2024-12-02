@@ -2,5 +2,10 @@
   {"country": "미국 (USA)", "name": "Atlanta, GA", "company": "SOS", "link": "/frontend/COUNTRY/AMERICA/USA/ATLANTA/SOS/"},
   {"country": "미국 (USA)", "name": "LaGrange, GA", "company": "SOS", "link": "/frontend/COUNTRY/AMERICA/USA/LAGRANGE/SOS/"},
   {"country": "미국 (USA)", "name": "Augusta, GA", "company": "SOS", "link": "/frontend/COUNTRY/AMERICA/USA/AUGUSTA/SOS/"},
-  {"country": "미국 (USA)", "name": "Savannah, GA", "company": "SOS", "link": "/frontend/COUNTRY/AMERICA/USA/SAVANNAH/SOS/"}
+  {"country": "미국 (USA)", "name": "Savannah, GA", "company": "SOS", "link": "/frontend/COUNTRY/AMERICA/USA/SAVANNAH/SOS/"},
+  {"country": "미국 (USA)", "name": "Auburn, AL", "company": "SOS", "link": "/frontend/COUNTRY/AMERICA/USA/AUBURN/SOS/"},
+  {"country": "미국 (USA)", "name": "Birmingham, AL", "company": "SOS", "link": "/frontend/COUNTRY/AMERICA/USA/BIRMINGHAM/SOS/"},
+  {"country": "미국 (USA)", "name": "Huntsville, AL", "company": "SOS", "link": "/frontend/COUNTRY/AMERICA/USA/HUNTSVILLE/SOS/"},
+  {"country": "미국 (USA)", "name": "Montgomery, AL", "company": "SOS", "link": "/frontend/COUNTRY/AMERICA/USA/MONTGOMERY/SOS/"},
+  {"country": "미국 (USA)", "name": "Mobile, AL", "company": "SOS", "link": "/frontend/COUNTRY/AMERICA/USA/MOBILE/SOS/"}
 ]
