@@ -731,8 +731,12 @@ async function fetchData() {
     const extraCostResponse = await fetch("basicextracost.json");
     basicExtraCost = await extraCostResponse.json();
 
+    const { updateDate, source } = basicExtraCostData;
+
     const chargeInfoElement = document.getElementById("data-info");
-    chargeInfoElement.textContent = `해당 데이터 업데이트 일자는 ${updateInfoData.updateDate} 에 진행된 ${updateInfoData.source} 입니다.`;
+    if (updateDate && source) {
+      chargeInfoElement.textContent = `해당 데이터 업데이트 일자는 ${updateDate} 에 진행된 ${source} 입니다.`;
+    }
 
     updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat);
     updateContainerDropdown();
