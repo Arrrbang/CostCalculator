@@ -249,5 +249,45 @@
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/DESMOINES/SOS/", "color": "blue"}
     ]
+  },
+  {
+    "lat": 42.2917,
+    "lng": -85.5872,
+    "name": "Kalamazoo, MI",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/KALAMAZOO/SOS/", "color": "blue"}
+    ]
+  },
+  {
+    "lat": 42.2808,
+    "lng": -83.7430,
+    "name": "Ann Arbor/Lansing, MI",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/ANNARBOR/SOS/", "color": "blue"}
+    ]
+  },
+  {
+    "lat": 42.3314,
+    "lng": -83.0458,
+    "name": "Detroit/TROY, MI",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/DETROIT/SOS/", "color": "blue"}
+    ]
+  },
+  {
+    "lat": 42.7875,
+    "lng": -86.1089,
+    "name": "Holland, MI",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/HOLLAND/SOS/", "color": "blue"}
+    ]
+  },
+  {
+    "lat": 43.6156,
+    "lng": -84.2472,
+    "name": "Midland, MI",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/MIDLAND/SOS/", "color": "blue"}
+    ]
   }
 ]
