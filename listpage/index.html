@@ -240,15 +240,10 @@
         dropdown.style.display = dropdown.innerHTML ? "block" : "none";
       };
 
-      input.addEventListener("focus", () => updateDropdown());
-      input.addEventListener("click", () => updateDropdown());
-      input.addEventListener("input", () => updateDropdown(input.value));
-      input.addEventListener("blur", () => setTimeout(() => dropdown.style.display = "none", 150));
-
-      input.addEventListener("click", () => {
-        dropdown.style.display = "block"; // Show dropdown on click
-      });
-    };
+    input.addEventListener("focus", () => updateDropdown());
+    input.addEventListener("input", () => updateDropdown(input.value));
+    input.addEventListener("blur", () => setTimeout(() => dropdown.style.display = "none", 150));
+  };
 
     // Initialize the page
     const initializePage = async () => {
@@ -265,30 +260,44 @@
 
       const navigateButton = document.getElementById("navigate-button");
 
-      // Populate countries
-      const countries = [...new Set(locations.map(loc => loc.country))].map(c => ({ text: c, value: c }));
-      populateSearchableDropdown(countrySearch, countryDropdown, countries, selectedCountry => {
-        const regions = locations
-          .filter(loc => loc.country === selectedCountry)
-          .map(loc => ({ text: loc.name, value: loc.name }));
-        populateSearchableDropdown(regionSearch, regionDropdown, regions, selectedRegion => {
-          const companies = locations
-            .filter(loc => loc.name === selectedRegion)
-            .map(loc => ({ text: loc.company, value: loc.link }));
-          populateSearchableDropdown(companySearch, companyDropdown, companies, selectedLink => {
-            navigateButton.disabled = false;
-            navigateButton.onclick = () => {
-              window.location.href = selectedLink;
-            };
-          });
-          companySearch.disabled = false;
-        });
-        regionSearch.disabled = false;
-      });
-    };
+    // Populate countries
+    const countries = [...new Set(locations.map(loc => loc.country))].map(c => ({ text: c, value: c }));
+    populateSearchableDropdown(countrySearch, countryDropdown, countries, selectedCountry => {
+      // Reset second and third dropdowns
+      regionSearch.value = "";
+      regionSearch.disabled = true;
+      companySearch.value = "";
+      companySearch.disabled = true;
+      navigateButton.disabled = true;
 
-    // Start initialization
-    initializePage();
-  </script>
+      // Populate regions
+      const regions = locations
+        .filter(loc => loc.country === selectedCountry)
+        .map(loc => ({ text: loc.name, value: loc.name }));
+      populateSearchableDropdown(regionSearch, regionDropdown, regions, selectedRegion => {
+        // Reset third dropdown
+        companySearch.value = "";
+        companySearch.disabled = true;
+        navigateButton.disabled = true;
+
+        // Populate companies
+        const companies = locations
+          .filter(loc => loc.name === selectedRegion)
+          .map(loc => ({ text: loc.company, value: loc.link }));
+        populateSearchableDropdown(companySearch, companyDropdown, companies, selectedLink => {
+          navigateButton.disabled = false;
+          navigateButton.onclick = () => {
+            window.location.href = selectedLink;
+          };
+        });
+        companySearch.disabled = false;
+      });
+      regionSearch.disabled = false;
+    });
+  };
+
+  // Start initialization
+  initializePage();
+</script>
 </body>
 </html>
