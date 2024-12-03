@@ -221,29 +221,31 @@
     };
 
     // Populate dropdown with search functionality
-    const populateSearchableDropdown = (input, dropdown, options, onSelect) => {
-      const updateDropdown = (filter = "") => {
-        dropdown.innerHTML = "";
-        options
-          .filter(option => option.text.toLowerCase().includes(filter.toLowerCase()))
-          .forEach(option => {
-            const li = document.createElement("li");
-            li.textContent = option.text;
-            li.dataset.value = option.value;
-            li.addEventListener("click", () => {
-              input.value = li.textContent;
-              dropdown.style.display = "none";
-              onSelect(li.dataset.value);
-            });
-            dropdown.appendChild(li);
-          });
-        dropdown.style.display = dropdown.innerHTML ? "block" : "none";
-      };
-
-    input.addEventListener("focus", () => updateDropdown());
-    input.addEventListener("input", () => updateDropdown(input.value));
-    input.addEventListener("blur", () => setTimeout(() => dropdown.style.display = "none", 150));
+const populateSearchableDropdown = (input, dropdown, options, onSelect) => {
+  const updateDropdown = (filter = "") => {
+    dropdown.innerHTML = "";
+    options
+      .filter(option => option.text.toLowerCase().includes(filter.toLowerCase()))
+      .forEach(option => {
+        const li = document.createElement("li");
+        li.textContent = option.text;
+        li.dataset.value = option.value;
+        li.addEventListener("click", () => {
+          input.value = li.textContent;
+          dropdown.style.display = "none";
+          onSelect(li.dataset.value);
+        });
+        dropdown.appendChild(li);
+      });
+    dropdown.style.display = dropdown.innerHTML ? "block" : "none";
   };
+
+  // 드롭다운 검색 및 동작
+  input.addEventListener("focus", () => updateDropdown());
+  input.addEventListener("click", () => updateDropdown()); // 클릭하면 드롭다운 활성화
+  input.addEventListener("input", () => updateDropdown(input.value));
+  input.addEventListener("blur", () => setTimeout(() => dropdown.style.display = "none", 150));
+};
 
     // Initialize the page
     const initializePage = async () => {
