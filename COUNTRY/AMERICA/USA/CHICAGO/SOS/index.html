@@ -729,9 +729,9 @@ async function fetchData() {
     containerTypes = tableData.containerType || [];
 
     const extraCostResponse = await fetch("basicextracost.json");
-    basicExtraCost = await extraCostResponse.json();
+    const basicExtraCostData = await extraCostResponse.json();
 
-    const { updateDate, source } = basicExtraCostData;
+    const { updateDate, source } = basicExtraCostData.metadata || {};
 
     const chargeInfoElement = document.getElementById("data-info");
     if (updateDate && source) {
