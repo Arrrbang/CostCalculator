@@ -193,5 +193,13 @@
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/LITTLEROCK/SOS/", "color": "blue"}
     ]
+  },
+  {
+    "lat": 41.8781,
+    "lng": -87.6298,
+    "name": "Chicago, IL",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/CHICAGO/SOS/", "color": "blue"}
+    ]
   }
 ]
