@@ -233,5 +233,21 @@
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/BLOOMINGTON/SOS/", "color": "blue"}
     ]
+  },
+  {
+    "lat": 41.66167,
+    "lng": -91.53028,
+    "name": "Iowa City, IA",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/IOWACITY/SOS/", "color": "blue"}
+    ]
+  },
+  {
+    "lat": 41.58667,
+    "lng": -93.625,
+    "name": "Des Moines, IA",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/DESMOINES/SOS/", "color": "blue"}
+    ]
   }
 ]
