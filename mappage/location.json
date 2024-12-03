@@ -209,5 +209,29 @@
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/CHAMPAIGN/SOS/", "color": "blue"}
     ]
+  },
+  {
+    "lat": 40.4172,
+    "lng": -86.8753,
+    "name": "Lafayette, IN",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/LAFAYETTE/SOS/", "color": "blue"}
+    ]
+  },
+  {
+    "lat": 39.7910,
+    "lng": -86.1480,
+    "name": "Indianapolis, IN",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/INDIANAPOLIS/SOS/", "color": "blue"}
+    ]
+  },
+  {
+    "lat": 39.1688,
+    "lng": -86.5367,
+    "name": "Bloomington, IN",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/BLOOMINGTON/SOS/", "color": "blue"}
+    ]
   }
 ]
