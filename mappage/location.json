@@ -201,5 +201,13 @@
     "links": [
       {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/CHICAGO/SOS/", "color": "blue"}
     ]
+  },
+  {
+    "lat": 40.116421,
+    "lng": -88.243385,
+    "name": "Champaign, IL",
+    "links": [
+      {"type": "SOS", "url": "/frontend/COUNTRY/AMERICA/USA/CHAMPAIGN/SOS/", "color": "blue"}
+    ]
   }
 ]
