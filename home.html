@@ -1008,28 +1008,24 @@ function updateContainerDropdown() {
 function updateAdditionalCosts() {
   const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값을 숫자로 변환
 
-// 추가 비용 더 있을 경우 추가★★★★★★★★★★
+  // 추가 비용 더 있을 경우 추가★★★★★★★★★★
   ["SHUTTLE CHARGE", "LONG CARRY CHARGE", "FULL SETTING CHARGE", "WEEKEND CHARGE", "UPLIGHT PIANO"].forEach((category) => {
     const id = category.toLowerCase().replace(/ /g, "-");
     let result = "None";
 
-    if (basicExtraCost[category]) {
-      // `costData`를 정의
+    // `basicExtraCost[category]`가 존재하는지 확인
     const costData = basicExtraCost[category];
-
-    if (basicExtraCost[category]) {
+    if (costData) {
       // 1. 정확한 값이 JSON에 있는지 확인
-      if (basicExtraCost[category][selectedCBM] !== undefined) {
-        result = basicExtraCost[category][selectedCBM];
+      if (costData[selectedCBM] !== undefined) {
+        result = costData[selectedCBM];
       } else {
         // 2. 범위 키를 처리
-        result = Object.keys(basicExtraCost[category]).reduce((acc, key) => {
-          
+        result = Object.keys(costData).reduce((acc, key) => {
           if (key.includes("-")) {
             const [start, end] = key.split("-").map(Number);
-            
             if (selectedCBM >= start && selectedCBM <= end) {
-              return basicExtraCost[category][key];
+              return costData[key];
             }
           }
           return acc;
@@ -1037,7 +1033,7 @@ function updateAdditionalCosts() {
 
         // 3. 범위에도 없는 경우 "ANY" 키 확인
         if (result === "None") {
-          result = basicExtraCost[category]["ANY"] || "None";
+          result = costData["ANY"] || "None";
         }
 
         // 4. "ANY" 키도 없으면 "CBM" 단가로 계산
@@ -1051,7 +1047,7 @@ function updateAdditionalCosts() {
     // 결과를 해당 요소에 업데이트
     const element = document.getElementById(id);
     if (element) element.textContent = result;
-  });
+  }); // forEach 종료
 }
 
 
