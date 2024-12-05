@@ -1008,14 +1008,6 @@ function updateContainerDropdown() {
 function updateAdditionalCosts() {
   const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값을 숫자로 변환
 
-  // 단가 확인 되면 추가★★★★★★★★★★★★
-  const multiplierByCategory = {
-    "shuttle-charge": 0,
-    "long-carry-charge": 0,
-    "full-setting-charge": 30,
-    "weekend-charge": 0,
-    "uplight-piano": 0
-  };
 // 추가 비용 더 있을 경우 추가★★★★★★★★★★
   ["SHUTTLE CHARGE", "LONG CARRY CHARGE", "FULL SETTING CHARGE", "WEEKEND CHARGE", "UPLIGHT PIANO"].forEach((category) => {
     const id = category.toLowerCase().replace(/ /g, "-");
@@ -1044,9 +1036,9 @@ function updateAdditionalCosts() {
           result = basicExtraCost[category]["ANY"] || "None";
         }
 
-        // 4. "ANY" 키도 없으면 특정 값 곱하기
+        // 4. "ANY" 키도 없으면 "CBM" 단가로 계산
         if (result === "None" && !isNaN(selectedCBM)) {
-          const multiplier = multiplierByCategory[id] || 1; // 기본값은 1
+          const multiplier = costData.CBM || 0; // JSON에서 "CBM" 값을 가져옴, 기본값은 0
           result = selectedCBM * multiplier;
         }
       }
@@ -1057,7 +1049,6 @@ function updateAdditionalCosts() {
     if (element) element.textContent = result;
   });
 }
-
 
 
 // STAIR CHARGE 드롭다운 업데이트
