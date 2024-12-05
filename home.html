@@ -1140,7 +1140,9 @@ heavyItemDropdown.addEventListener("change", function () {
       const selectedPeriod = parseInt(storageperiodDropdown.value, 10); // 선택된 보관 기간 값
       const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값
     
-      const costPerWeekPerCBM = 4; // 보관 비용 단가 입력 현재 $4/cbm/week
+   // JSON에서 보관 비용 단가 가져오기
+    const costPerWeekPerCBM = basicExtraCost["STORAGE CHARGE"]?.["보관 비용 단가"] || 0; // 기본값은 0
+
     
       if (!isNaN(selectedPeriod) && !isNaN(selectedCBM)) {
         // 보관 비용 계산: CBM x 보관 기간 x 단가
