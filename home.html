@@ -1082,8 +1082,11 @@ function calculateStairCharge() {
   const cbmValue = parseInt(stairCbmDropdown.value, 10);
   const floorValue = parseInt(stairFloorDropdown.value, 10);
 
+    // JSON에서 "CBM단가" 값을 가져오기
+  const cbmUnitCost = basicExtraCost["STAIR CHARGE"]?.["CBM단가"] || 0; // 기본값은 0
+
   if (!isNaN(cbmValue) && !isNaN(floorValue)) {
-    const stairCharge = cbmValue * floorValue * 10; // 계단 비용 단가★★★★★★★★★★
+    const stairCharge = cbmValue * floorValue * cbmUnitCost; // JSON의 "CBM단가"를 사용
     stairChargeResult.textContent = stairCharge;
   } else {
     stairChargeResult.textContent = "None"; // 기본값
