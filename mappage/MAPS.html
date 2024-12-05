@@ -147,6 +147,8 @@
   </div>
   <div id="results"></div>
   <div id="map"></div>
+
+  
   <script>
     // 인증 확인: 토큰 검증
     function verifyToken() {
@@ -182,7 +184,7 @@
 
     // 페이지 로드 시 토큰 확인
     verifyToken();
-
+    
 // 지도 초기화 (줌 레벨에 따른 마커 표시 설정)
 var map = L.map('map', {
   minZoom: 1,  // 최소 줌은 설정하지 않음
@@ -223,36 +225,39 @@ fetch('./location.json')
     console.log('Loaded locations:', locations); // JSON 데이터 확인
     
     locations.forEach(location => {
-      // Leaflet Awesome Marker 설정
-      var customIcon = L.AwesomeMarkers.icon({
+      if (!location.links || !Array.isArray(location.links)) {
+        console.warn('Links are missing or not an array for location:', location.name);
+        return;
+      }
+      
+      const linksHTML = location.links
+        .map(
+          (link) =>
+            `<a href="home.html?path=${encodeURIComponent(
+              link.path
+            )}" style="color: ${link.color || "blue"};">${link.type || "View Details"}</a>`
+        )
+        .join("<br>");
+      
+      const popupContent = `<strong>${location.name}</strong><br>${linksHTML}`;
+      
+      const customIcon = L.AwesomeMarkers.icon({
         extraClasses: 'fa-rotate-0',
         icon: 'info-sign',
         iconColor: 'white',
         markerColor: 'red',
         prefix: 'glyphicon'
       });
-
-      // 마커 생성
-      var marker = L.marker([location.lat, location.lng], {icon: customIcon});
-
-      // 팝업 내용 생성
-      var popupContent = `<strong>${location.name}</strong><br>`;
-      if (location.links && location.links.length > 0) {
-        location.links.forEach(link => {
-           // JSON에서 동적으로 스타일링
-          popupContent += `<a href="javascript:void(0)" onclick="navigateTo('${link.url}')" 
-                            style="text-decoration: none; color: ${link.color || 'black'};">${link.type}</a><br>`;
-        });
-      }
-
-      // 팝업 연결
+      
+      const marker = L.marker([location.lat, location.lng], { icon: customIcon });
       marker.bindPopup(popupContent);
-      markers.push(marker); // 마커 저장
+      markers.push(marker);
     });
 
-    updateMarkers(); // 초기 상태에서 마커 업데이트
+    updateMarkers();
   })
   .catch(error => console.error('Error loading JSON:', error));
+
 
 // 줌 레벨 변경 시 마커 상태 업데이트
 map.on('zoomend', updateMarkers);
@@ -336,4 +341,3 @@ function navigateTo(link) {
   </script>
 </body>
 </html>
-
