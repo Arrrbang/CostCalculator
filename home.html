@@ -1014,6 +1014,10 @@ function updateAdditionalCosts() {
     let result = "None";
 
     if (basicExtraCost[category]) {
+      // `costData`를 정의
+    const costData = basicExtraCost[category];
+
+    if (basicExtraCost[category]) {
       // 1. 정확한 값이 JSON에 있는지 확인
       if (basicExtraCost[category][selectedCBM] !== undefined) {
         result = basicExtraCost[category][selectedCBM];
