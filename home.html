@@ -1097,22 +1097,20 @@ function calculateStairCharge() {
     // ▼ HEAVY ITEM 드롭다운 업데이트
 function updateHeavyItemDropdown() {
   resetDropdown(heavyItemDropdown, "중량 화물 개수 선택");
-  
-  const heavyItemData = basicExtraCost["HEAVY ITEM"] || {}; // HEAVY ITEM 데이터 접근
+
+  const heavyItemData = basicExtraCost["HEAVY ITEM"]?.values || {}; // HEAVY ITEM의 values 데이터 접근
   Object.keys(heavyItemData).forEach((key) => {
-    if (key !== "description") { // description은 드롭다운 옵션에 포함하지 않음
-      const option = document.createElement("option");
-      option.value = key; // JSON 키를 값으로 설정
-      option.textContent = `${key} unit`; // 드롭다운 항목 텍스트
-      heavyItemDropdown.appendChild(option);
-    }
+    const option = document.createElement("option");
+    option.value = key; // JSON 키를 값으로 설정
+    option.textContent = `${key} unit`; // 드롭다운 항목 텍스트
+    heavyItemDropdown.appendChild(option);
   });
 }
 
 // HEAVY ITEM 결과 계산
 heavyItemDropdown.addEventListener("change", function () {
   const selectedValue = heavyItemDropdown.value; // 선택된 드롭다운 값
-  const heavyItemCost = basicExtraCost["HEAVY ITEM"]?.[selectedValue] || "None"; // JSON 데이터에서 값 검색
+  const heavyItemCost = basicExtraCost["HEAVY ITEM"]?.values?.[selectedValue] || "None"; // values 안의 값 검색
 
   if (heavyItemCost !== "None") {
     heavyItemValue.textContent = `$${heavyItemCost}`; // 결과 표시
