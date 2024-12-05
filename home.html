@@ -955,7 +955,7 @@ function updateContainerDropdown() {
 
 // NON-DIPLOMAT/DIPLOMAT 영향을 받는 기본 배송 비용/THC/POC 등 업데이트------------------------------------------
     
-function updateDiplomatSensitiveResult(category) {
+    function updateDiplomatSensitiveResult(category) {
   const selectedContainer = containerDropdown.value; // 선택된 컨테이너 타입 (CONSOLE, 20DRY, 40HC)
   const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값 (숫자로 변환)
   let result = "None"; // 초기 값 설정
@@ -965,38 +965,38 @@ function updateDiplomatSensitiveResult(category) {
     const costData =
       basicExtraCost[category]?.[nonDiplomat.checked ? "NonDiplomat" : "Diplomat"]?.CONSOLE;
 
-    // JSON에서 multiplier 값 가져오기
-    const multiplier = costData || 0;
-
-    if (!isNaN(selectedCBM)) {
-      result = selectedCBM * multiplier; // CBM 값에 multiplier 곱하기
-    }
-  } else {
-    // 컨테이너 타입이 '20DRY' 또는 '40HC'일 경우 CBM 무시하고 단일 값을 사용
-    if (nonDiplomat.checked) {
-      result = basicExtraCost[category]?.NonDiplomat?.[selectedContainer] || "None";
-    } else if (diplomat.checked) {
-      result = basicExtraCost[category]?.Diplomat?.[selectedContainer] || "None";
-    }
-  }
-    // 범위값을 처리
-    if (result === "None") {
-      const rangeResult = Object.keys(basicExtraCost[category]?.[nonDiplomat.checked ? 'NonDiplomat' : 'Diplomat']?.CONSOLE || {}).find((key) => {
+    // 범위값 처리
+    if (typeof costData === "object") {
+      const rangeResult = Object.keys(costData || {}).find((key) => {
         if (key.includes("-")) {
           const [start, end] = key.split("-").map(Number);
           return selectedCBM >= start && selectedCBM <= end;
         }
         return false;
       });
-      if (rangeResult) {
-        result = basicExtraCost[category]?.[nonDiplomat.checked ? 'NonDiplomat' : 'Diplomat']?.CONSOLE?.[rangeResult] || "None";
-      }
+
+      result = costData[rangeResult] || "None";
+    } else if (typeof costData === "string" && costData === "INCLUDED") {
+      result = "INCLUDED"; // 문자열 처리
+    } else if (!isNaN(costData)) {
+      result = selectedCBM * costData; // 숫자 값 처리
     }
-    // CBM 값을 JSON에서 찾지 못한 경우
+  } else {
+    // 컨테이너 타입이 '20DRY' 또는 '40HC'일 경우 CBM 무시하고 단일 값을 사용
+    const costData =
+      basicExtraCost[category]?.[nonDiplomat.checked ? "NonDiplomat" : "Diplomat"]?.[selectedContainer];
+
+    if (costData === "INCLUDED") {
+      result = "INCLUDED"; // 문자열 처리
+    } else {
+      result = costData || "None";
+    }
+  }
+
+  // CBM 값을 JSON에서 찾지 못한 경우 (Default Multiplier)
   if (result === "None" && !isNaN(selectedCBM)) {
     const defaultMultiplier =
-      basicExtraCost[category]?.[nonDiplomat.checked ? "NonDiplomat" : "Diplomat"]?.unitMultiplier ||
-      0;
+      basicExtraCost[category]?.[nonDiplomat.checked ? "NonDiplomat" : "Diplomat"]?.unitMultiplier || 0;
     result = selectedCBM * defaultMultiplier;
   }
 
