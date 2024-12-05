@@ -233,7 +233,7 @@ fetch('./location.json')
       const linksHTML = location.links
         .map(
           (link) =>
-            `<a href="home.html?path=${encodeURIComponent(
+            `<a href="../home.html?path=${encodeURIComponent(
               link.path
             )}" style="color: ${link.color || "blue"};">${link.type || "View Details"}</a>`
         )
