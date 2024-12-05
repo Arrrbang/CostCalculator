@@ -35,10 +35,12 @@
   "DRAYAGE": {
     "description": "40HC의 전체 비용은 $1,850(사바나), $1,055(아틀란타) 입니다.",
     "NonDiplomat": {
+      "CONSOLE": 30,
       "20DRY": "1850",
       "40HC": "1850"
     },
     "Diplomat": {
+      "CONSOLE": 30,
       "20DRY": "1850",
       "40HC": "1850"
     }
@@ -47,10 +49,12 @@
   "DEVANNING": {
     "description": "DEVANNING CHARGE : $200/20, $300/40",
     "NonDiplomat": {
+      "CONSOLE": 5,
       "20DRY": "200",
       "40HC": "300"
     },
     "Diplomat": {
+      "CONSOLE": 5
       "20DRY": "200",
       "40HC": "300"
     }
@@ -59,10 +63,12 @@
   "INSPECTION": {
     "description": "컨테이너 전체 검사에 걸렸을 경우 발생되는 금액입니다.",
     "NonDiplomat": {
+      "CONSOLE": 3.5
       "20DRY": "200",
       "40HC": "200"
     },
     "Diplomat": {
+      "CONSOLE": 3.5
       "20DRY": "200",
       "40HC": "200"
     }
