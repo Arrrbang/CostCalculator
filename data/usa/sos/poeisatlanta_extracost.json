@@ -54,7 +54,7 @@
       "40HC": "300"
     },
     "Diplomat": {
-      "CONSOLE": 5
+      "CONSOLE": 5,
       "20DRY": "200",
       "40HC": "300"
     }
@@ -63,12 +63,12 @@
   "INSPECTION": {
     "description": "컨테이너 전체 검사에 걸렸을 경우 발생되는 금액입니다.",
     "NonDiplomat": {
-      "CONSOLE": 3.5
+      "CONSOLE": 3.5,
       "20DRY": "200",
       "40HC": "200"
     },
     "Diplomat": {
-      "CONSOLE": 3.5
+      "CONSOLE": 3.5,
       "20DRY": "200",
       "40HC": "200"
     }
