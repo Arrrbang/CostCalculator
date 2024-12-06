@@ -885,35 +885,6 @@ async function fetchData() {
 }
 
 
-
-    basicExtraCost = extraCostData;
-    dataNonDiplomat = tableData.nonDiplomat || {};
-    dataDiplomat = tableData.diplomat || {};
-    containerTypes = tableData.containerType || [];
-
-    updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat);
-    updateContainerDropdown(containerTypes, containerDropdown, selectedContainer);
-    updateContainerDropdown();
-    updateAdditionalCosts();
-    updateStairChargeDropdown();
-    updateHeavyItemDropdown();
-    updatestorageperiodDropdown();
-    calculateTotalCost();
-    updateDescriptions(extraCostData);
-
-    console.log("Extra Cost Links:", extraCostData.links);
-
-    //링크 업데이트
-    if (extraCostData.links) {
-      updateLinks(extraCostData.links);
-    } else {
-      console.warn("Links data missing in JSON.");
-    }
-  } catch (error) {
-    console.error("Error in fetchData:", error);
-  }
-
-
     // 드롭다운 업데이트 함수
 function updateDropdown(data, dropdownElement, selectedValue) {
   resetDropdown(dropdownElement, "-- Select an Option --");
