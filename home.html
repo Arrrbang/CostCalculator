@@ -858,14 +858,12 @@ async function fetchData() {
       extraCostData,
     });
 
-    // 링크 업데이트: tariff.json에서 links 데이터 가져오기
-    if (tableData.links && Array.isArray(tableData.links)) {
-      console.log("Links data from tariff JSON:", tableData.links);
-      updateLinks(tableData.links);
-    } else {
-      console.warn("Links data missing in tariff JSON.");
-      initializeLinks(); // 기본 링크 초기화
-    }
+    console.log("Loaded data:", { tableData, extraCostData });
+
+    // 기존 선택값 저장
+    const selectedCBM = dropdown.value;
+    const selectedContainer = containerDropdown.value;
+
 
     basicExtraCost = extraCostData;
     dataNonDiplomat = tableData.nonDiplomat || {};
@@ -873,6 +871,7 @@ async function fetchData() {
     containerTypes = tableData.containerType || [];
 
     updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat);
+    updateContainerDropdown(containerTypes, containerDropdown, selectedContainer);
     updateContainerDropdown();
     updateAdditionalCosts();
     updateStairChargeDropdown();
@@ -883,6 +882,7 @@ async function fetchData() {
 
     console.log("Extra Cost Links:", extraCostData.links);
 
+    //링크 업데이트
     if (extraCostData.links) {
       updateLinks(extraCostData.links);
     } else {
@@ -893,6 +893,20 @@ async function fetchData() {
   }
 }
 
+    // 드롭다운 업데이트 함수
+function updateDropdown(data, dropdownElement, selectedValue) {
+  resetDropdown(dropdownElement, "-- Select an Option --");
+  Object.keys(data).forEach((key) => {
+    const option = document.createElement("option");
+    option.value = key;
+    option.textContent = key;
+    dropdownElement.appendChild(option);
+  });
+
+  // 기존 선택 값 복원
+  dropdownElement.value = selectedValue || "";
+}
+    
 function resetDropdown(dropdownElement, placeholder = "-- Select an Option --") {
   dropdownElement.innerHTML = `<option value="">${placeholder}</option>`;
 }
@@ -943,14 +957,15 @@ function updateDropdown(data) {
 }
 
 // 컨테이너 타입 드롭다운 업데이트
-function updateContainerDropdown() {
-  resetDropdown(containerDropdown);
+function updateContainerDropdown(containerTypes, containerDropdown, selectedValue) {
+  resetDropdown(containerDropdown, "-- Select a Container --");
   containerTypes.forEach((type) => {
     const option = document.createElement("option");
     option.value = type;
     option.textContent = type;
     containerDropdown.appendChild(option);
   });
+    containerDropdown.value = selectedValue || "";
 }
 
 // NON-DIPLOMAT/DIPLOMAT 영향을 받는 기본 배송 비용/THC/POC 등 업데이트------------------------------------------
@@ -1275,8 +1290,10 @@ dropdown.addEventListener("change", function () {
   // 비용 업데이트 함수 정의
 function updateCosts(categories) {
   categories.forEach((category) => {
-    updateDiplomatSensitiveResult(category); // 각 카테고리에 대해 diplomat-sensitive 업데이트 실행
+    updateDiplomatSensitiveResult(category);
   });
+
+  calculateTotalCost(); // 총 비용 계산
 }
 
 // STAIR CHARGE 드롭다운 이벤트 리스너
