@@ -751,11 +751,11 @@ function updateLinks(links) {
   console.log("Links passed to updateLinks:", links); // 추가
 
   if (!Array.isArray(links) || links.length < 2) {
-    console.warn("Links data does not contain enough entries.");
+    console.warn("Links data does not contain enough entries:", links);
     initializeLinks();
     return;
   }
-
+   // 링크 1 업데이트
   if (links[0]?.url) {
     link1Element.textContent = links[0].label || "Default Link 1";
     link1Element.style.pointerEvents = "auto";
@@ -765,12 +765,13 @@ function updateLinks(links) {
       window.open(links[0].url, "_blank");
     };
   } else {
-    console.warn("Link 1 data missing or invalid.");
+    console.warn("Link 1 is invalid:", links[0]);
     link1Element.textContent = "Default Link 1";
     link1Element.style.pointerEvents = "none";
     link1Element.style.color = "gray";
   }
 
+  // 링크 2 업데이트
   if (links[1]?.url) {
     link2Element.textContent = links[1].label || "Default Link 2";
     link2Element.style.pointerEvents = "auto";
@@ -780,12 +781,13 @@ function updateLinks(links) {
       window.open(links[1].url, "_blank");
     };
   } else {
-    console.warn("Link 2 data missing or invalid.");
+    console.warn("Link 2 is invalid:", links[1]);
     link2Element.textContent = "Default Link 2";
     link2Element.style.pointerEvents = "none";
     link2Element.style.color = "gray";
   }
 }
+
 
 
 async function initializePoeDropdown(path) {
@@ -913,10 +915,11 @@ async function fetchData() {
     updateDescriptions(extraCostData);
 
     // 링크 업데이트
-    if (Array.isArray(extraCostData.links)) {
+    console.log("Loaded extraCostData.links:", extraCostData.links);
+    if (Array.isArray(extraCostData.links) && extraCostData.links.length > 0) {
       updateLinks(extraCostData.links);
     } else {
-      console.warn("Links data missing or invalid.");
+      console.warn("Links data missing or invalid:", extraCostData.links);
       initializeLinks();
     }
   } catch (error) {
