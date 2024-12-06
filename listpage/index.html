@@ -247,7 +247,8 @@
     input.addEventListener("blur", () => setTimeout(() => dropdown.style.display = "none", 150));
   };
 
-  const initializePage = async () => {
+const initializePage = async () => {
+  try {
     const locations = await fetchLocations();
 
     const countrySearch = document.getElementById("country-search");
@@ -270,6 +271,10 @@
     };
 
     const translateCountry = (country) => {
+      if (!country) {
+        console.warn("Undefined country found in locations JSON.");
+        return "알 수 없는 국가";
+      }
       const lowerCaseCountry = country.toLowerCase();
       return countryTranslations[lowerCaseCountry] || country.toUpperCase();
     };
@@ -321,7 +326,10 @@
 
       regionSearch.disabled = false;
     });
-  };
+  } catch (error) {
+    console.error("Error initializing page:", error);
+  }
+};
 
   initializePage();
 </script>
