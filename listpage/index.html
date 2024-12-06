@@ -285,8 +285,20 @@ const initializePage = async () => {
       populateSearchableDropdown(companySearch, companyDropdown, companies, selectedPath => {
         navigateButton.disabled = false;
         navigateButton.onclick = () => {
-          // Redirect to home.html with the selected path
-          window.location.href = `home.html?path=${encodeURIComponent(selectedPath)}`;
+          const selectedOption = companySearch.value; // 회사 선택 드롭다운의 값
+          if (!selectedOption) {
+            alert("회사를 선택해주세요.");
+            return;
+          }
+        
+          // JSON 데이터에서 선택된 회사의 링크를 찾아 경로로 설정
+          const selectedLocation = locations.find(loc => loc.company === selectedOption);
+          if (selectedLocation && selectedLocation.links) {
+            const selectedPath = selectedLocation.links.find(link => link.type === "SOS").path;
+            window.location.href = `/frontend/home.html?path=${encodeURIComponent(selectedPath)}`;
+          } else {
+            alert("경로를 찾을 수 없습니다.");
+          }
         };
       });
       companySearch.disabled = false;
