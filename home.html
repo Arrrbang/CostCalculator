@@ -834,6 +834,7 @@ async function fetchData() {
     console.log("Table JSON Path:", tableJsonPath);
     console.log("Extra Cost JSON Path:", extraCostJsonPath);
 
+    // JSON 데이터 가져오기
     const [tableResponse, extraCostResponse] = await Promise.all([
       fetch(tableJsonPath),
       fetch(extraCostJsonPath),
@@ -852,19 +853,37 @@ async function fetchData() {
       extraCostResponse.json(),
     ]);
 
-    console.log("Loaded data:", {
-      tableData,
-      extraCostData,
-    });
+    console.log("Loaded data:", { tableData, extraCostData });
+
+    // 데이터 업데이트
+    basicExtraCost = extraCostData;
+    dataNonDiplomat = tableData.nonDiplomat || {};
+    dataDiplomat = tableData.diplomat || {};
+    containerTypes = tableData.containerType || [];
 
     const selectedContainer = containerDropdown?.value; // 기존 컨테이너 값
-    updateContainerDropdown(tableData.containerType || [], containerDropdown, selectedContainer);
 
-    console.log("Loaded data:", { tableData, extraCostData });
+    // 드롭다운 및 데이터 업데이트
+    updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat, dropdown, dropdown.value);
+    updateContainerDropdown(containerTypes, containerDropdown, selectedContainer);
+    updateAdditionalCosts();
+    updateStairChargeDropdown();
+    updateHeavyItemDropdown();
+    updatestorageperiodDropdown();
+    calculateTotalCost();
+    updateDescriptions(extraCostData);
+
+    // 링크 업데이트
+    if (extraCostData.links) {
+      updateLinks(extraCostData.links);
+    } else {
+      console.warn("Links data missing in JSON.");
+    }
   } catch (error) {
     console.error("Error in fetchData:", error);
   }
 }
+
 
 
     basicExtraCost = extraCostData;
@@ -893,7 +912,7 @@ async function fetchData() {
   } catch (error) {
     console.error("Error in fetchData:", error);
   }
-}
+
 
     // 드롭다운 업데이트 함수
 function updateDropdown(data, dropdownElement, selectedValue) {
