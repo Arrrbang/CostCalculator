@@ -728,6 +728,15 @@ const poeDropdown = document.getElementById("poe-dropdown");
 const link1Element = document.getElementById("link1");
 const link2Element = document.getElementById("link2");
 
+// resetDropdown 함수 변경
+function resetDropdown(dropdownElement, placeholder = "-- Select an Option --") {
+  if (!dropdownElement) {
+    console.warn("resetDropdown: Provided dropdownElement is not available in the DOM.");
+    return; // 잘못된 호출 무시
+  }
+  dropdownElement.innerHTML = `<option value="">${placeholder}</option>`;
+}
+
 // 링크 초기화
 function initializeLinks() {
   link1Element.textContent = "Default Link 1";
@@ -748,8 +757,8 @@ function updateLinks(links) {
   // 링크 1 업데이트
   if (links[0]?.url) {
     link1Element.textContent = links[0].label || "Default Link 1";
-    link1Element.style.pointerEvents = "auto"; // 클릭 가능하도록 활성화
-    link1Element.style.color = "blue"; // 기본 링크 스타일
+    link1Element.style.pointerEvents = "auto";
+    link1Element.style.color = "blue";
     link1Element.onclick = () => {
       console.log(`Navigating to: ${links[0].url}`);
       window.open(links[0].url, "_blank");
@@ -757,15 +766,15 @@ function updateLinks(links) {
   } else {
     console.warn("Link 1 data missing or invalid.");
     link1Element.textContent = "Default Link 1";
-    link1Element.style.pointerEvents = "none"; // 클릭 비활성화
-    link1Element.style.color = "gray"; // 비활성화 스타일
+    link1Element.style.pointerEvents = "none";
+    link1Element.style.color = "gray";
   }
 
   // 링크 2 업데이트
   if (links[1]?.url) {
     link2Element.textContent = links[1].label || "Default Link 2";
-    link2Element.style.pointerEvents = "auto"; // 클릭 가능하도록 활성화
-    link2Element.style.color = "blue"; // 기본 링크 스타일
+    link2Element.style.pointerEvents = "auto";
+    link2Element.style.color = "blue";
     link2Element.onclick = () => {
       console.log(`Navigating to: ${links[1].url}`);
       window.open(links[1].url, "_blank");
@@ -773,12 +782,10 @@ function updateLinks(links) {
   } else {
     console.warn("Link 2 data missing or invalid.");
     link2Element.textContent = "Default Link 2";
-    link2Element.style.pointerEvents = "none"; // 클릭 비활성화
-    link2Element.style.color = "gray"; // 비활성화 스타일
+    link2Element.style.pointerEvents = "none";
+    link2Element.style.color = "gray";
   }
 }
-
-
 
 async function initializePoeDropdown(path) {
   try {
@@ -886,6 +893,21 @@ async function fetchData() {
     dataDiplomat = tableData.diplomat || {};
     containerTypes = tableData.containerType || [];
 
+        // 드롭다운 초기화 및 업데이트
+    if (dropdown) {
+      resetDropdown(dropdown);
+      updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat, dropdown, currentCbmValue);
+    } else {
+      console.warn("fetchData: Dropdown element is not available in the DOM.");
+    }
+
+    if (containerDropdown) {
+      resetDropdown(containerDropdown);
+      updateContainerDropdown(containerTypes, containerDropdown, currentContainerValue);
+    } else {
+      console.warn("fetchData: Container dropdown is not available in the DOM.");
+    }
+
     // 드롭다운 및 데이터 업데이트
     updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat, dropdown, currentCbmValue);
     updateContainerDropdown(containerTypes, containerDropdown, currentContainerValue);
@@ -897,7 +919,7 @@ async function fetchData() {
     updateDescriptions(extraCostData);
 
     // 링크 업데이트
-    if (Array.isArray(extraCostData.links) && extraCostData.links.length > 0) {
+    if (Array.isArray(extraCostData.links)) {
       updateLinks(extraCostData.links);
     } else {
       console.warn("Links data missing or invalid.");
@@ -940,13 +962,13 @@ function updateDescriptions(extraCostData) {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-  initializeLinks(); // 기본 링크 초기화
+  initializeLinks();
+
   const params = new URLSearchParams(window.location.search);
   const path = params.get("path");
-
   if (path) {
-    await initializePoeDropdown(path); // POE 드롭다운 초기화
-    await fetchData(); // 초기 데이터 로드
+    await initializePoeDropdown(path);
+    await fetchData();
   } else {
     console.error("Path parameter missing in URL.");
   }
@@ -1239,12 +1261,13 @@ function calculateTotalCost() {
 
 // 체크박스 상태 관리 및 초기화
 function handleCheckboxChange(activeCheckbox, inactiveCheckbox, dataToUpdate) {
-  inactiveCheckbox.checked = false; // 다른 체크박스 초기화
+  inactiveCheckbox.checked = false;
 
-  if (activeCheckbox.checked) {
-    updateDropdown(dataToUpdate);
+  if (dropdown) {
+    resetDropdown(dropdown); // 초기화
+    updateDropdown(dataToUpdate, dropdown, dropdown.value); // 값 업데이트
   } else {
-    resetDropdown(dropdown); // CBM 드롭다운 초기화
+    console.warn("handleCheckboxChange: Dropdown element is not available in the DOM.");
   }
 
   // STAIR CBM 및 FLOOR 드롭다운 초기화
