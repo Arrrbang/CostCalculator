@@ -765,6 +765,8 @@ function updateLinks(links) {
 }
 
 
+
+
 async function initializePoeDropdown(path) {
   try {
     const poeDropdownPath = `${path}/poedropdown.json`;
@@ -804,14 +806,15 @@ function handlePoeChange() {
   if (poeValue) {
     console.log("Selected POE value:", poeValue);
     fetchData().then(() => {
-      // 데이터 갱신 후 추가 동기화
-      updateAdditionalCosts();
+      updateCosts(["POC", "THC", "DRAYAGE", "DEVANNING", "INSPECTION", "CUSTOMER ENTRY"]);
       calculateTotalCost();
     });
   } else {
     console.warn("No POE value selected.");
   }
 }
+
+
 
 
 async function fetchData() {
@@ -838,6 +841,10 @@ async function fetchData() {
 
     console.log("Table JSON Path:", tableJsonPath);
     console.log("Extra Cost JSON Path:", extraCostJsonPath);
+
+    // 기존 선택 값 저장
+    const currentCbmValue = dropdown.value;
+    const currentContainerValue = containerDropdown.value;
 
     // JSON 데이터 가져오기
     const [tableResponse, extraCostResponse] = await Promise.all([
@@ -866,11 +873,9 @@ async function fetchData() {
     dataDiplomat = tableData.diplomat || {};
     containerTypes = tableData.containerType || [];
 
-    const selectedContainer = containerDropdown?.value; // 기존 컨테이너 값
-
     // 드롭다운 및 데이터 업데이트
-    updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat, dropdown, dropdown.value);
-    updateContainerDropdown(containerTypes, containerDropdown, selectedContainer);
+    updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat, dropdown, currentCbmValue);
+    updateContainerDropdown(containerTypes, containerDropdown, currentContainerValue);
     updateAdditionalCosts();
     updateStairChargeDropdown();
     updateHeavyItemDropdown();
@@ -879,32 +884,17 @@ async function fetchData() {
     updateDescriptions(extraCostData);
 
     // 링크 업데이트
-    if (Array.isArray(extraCostData.links)) {
-      updateLinks(extraCostData.links); // 링크 활성화
+    if (Array.isArray(extraCostData.links) && extraCostData.links.length > 0) {
+      updateLinks(extraCostData.links);
     } else {
       console.warn("Links data missing or invalid.");
+      initializeLinks();
     }
   } catch (error) {
     console.error("Error in fetchData:", error);
   }
 }
-    // 드롭다운 업데이트 함수
-function updateDropdown(data, dropdownElement, selectedValue) {
-  resetDropdown(dropdownElement, "-- Select an Option --");
-  Object.keys(data).forEach((key) => {
-    const option = document.createElement("option");
-    option.value = key;
-    option.textContent = key;
-    dropdownElement.appendChild(option);
-  });
 
-  // 기존 선택 값 복원
-  if (selectedValue && data[selectedValue]) {
-    dropdownElement.value = selectedValue;
-  } else {
-    dropdownElement.value = ""; // 선택값 초기화
-  }
-}
 
     
 function resetDropdown(dropdownElement, placeholder = "-- Select an Option --") {
