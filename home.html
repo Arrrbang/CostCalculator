@@ -741,36 +741,42 @@ function initializeLinks() {
 function updateLinks(links) {
   if (!Array.isArray(links) || links.length < 2) {
     console.warn("Links data does not contain enough entries.");
-    initializeLinks(); // 기본 링크로 초기화
+    initializeLinks();
     return;
   }
 
   // 링크 1 업데이트
-  if (links[0] && links[0].url) {
+  if (links[0]?.url) {
     link1Element.textContent = links[0].label || "Default Link 1";
-    link1Element.onclick = function () {
+    link1Element.style.pointerEvents = "auto"; // 클릭 가능하도록 활성화
+    link1Element.style.color = "blue"; // 기본 링크 스타일
+    link1Element.onclick = () => {
       console.log(`Navigating to: ${links[0].url}`);
       window.open(links[0].url, "_blank");
     };
   } else {
+    console.warn("Link 1 data missing or invalid.");
     link1Element.textContent = "Default Link 1";
-    link1Element.onclick = () => console.warn("Invalid link 1 data.");
+    link1Element.style.pointerEvents = "none"; // 클릭 비활성화
+    link1Element.style.color = "gray"; // 비활성화 스타일
   }
 
   // 링크 2 업데이트
-  if (links[1] && links[1].url) {
+  if (links[1]?.url) {
     link2Element.textContent = links[1].label || "Default Link 2";
-    link2Element.onclick = function () {
+    link2Element.style.pointerEvents = "auto"; // 클릭 가능하도록 활성화
+    link2Element.style.color = "blue"; // 기본 링크 스타일
+    link2Element.onclick = () => {
       console.log(`Navigating to: ${links[1].url}`);
       window.open(links[1].url, "_blank");
     };
   } else {
+    console.warn("Link 2 data missing or invalid.");
     link2Element.textContent = "Default Link 2";
-    link2Element.onclick = () => console.warn("Invalid link 2 data.");
+    link2Element.style.pointerEvents = "none"; // 클릭 비활성화
+    link2Element.style.color = "gray"; // 비활성화 스타일
   }
 }
-
-
 
 
 
@@ -906,11 +912,12 @@ async function fetchData() {
     
 function resetDropdown(dropdownElement, placeholder = "-- Select an Option --") {
   if (!dropdownElement) {
-    console.error("resetDropdown: Provided dropdownElement is null or undefined.");
-    return;
+    console.warn("resetDropdown: Provided dropdownElement is null or undefined.");
+    return; // 잘못된 호출 무시
   }
   dropdownElement.innerHTML = `<option value="">${placeholder}</option>`;
 }
+
 
 function updateDescriptions(extraCostData) {
   const descriptionMappings = {
@@ -948,6 +955,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 // CBM 드롭다운 업데이트
 function updateDropdown(data, dropdownElement, selectedValue) {
+  if (!dropdownElement) {
+    console.error("updateDropdown: Provided dropdownElement is null or undefined.");
+    return; // 함수 종료
+  }
+
   resetDropdown(dropdownElement, "-- Select an Option --");
   Object.keys(data).forEach((key) => {
     const option = document.createElement("option");
@@ -966,6 +978,7 @@ function updateDropdown(data, dropdownElement, selectedValue) {
   // 강제로 UI 업데이트
   dropdownElement.dispatchEvent(new Event("change")); // 값이 변경되었음을 알림
 }
+
 
 
 // 컨테이너 타입 드롭다운 업데이트
