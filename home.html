@@ -748,13 +748,14 @@ function initializeLinks() {
 
 // 링크 업데이트
 function updateLinks(links) {
+  console.log("Links passed to updateLinks:", links); // 추가
+
   if (!Array.isArray(links) || links.length < 2) {
     console.warn("Links data does not contain enough entries.");
     initializeLinks();
     return;
   }
 
-  // 링크 1 업데이트
   if (links[0]?.url) {
     link1Element.textContent = links[0].label || "Default Link 1";
     link1Element.style.pointerEvents = "auto";
@@ -770,7 +771,6 @@ function updateLinks(links) {
     link1Element.style.color = "gray";
   }
 
-  // 링크 2 업데이트
   if (links[1]?.url) {
     link2Element.textContent = links[1].label || "Default Link 2";
     link2Element.style.pointerEvents = "auto";
@@ -786,6 +786,7 @@ function updateLinks(links) {
     link2Element.style.color = "gray";
   }
 }
+
 
 async function initializePoeDropdown(path) {
   try {
@@ -871,6 +872,10 @@ async function fetchData() {
       fetch(tableJsonPath),
       fetch(extraCostJsonPath),
     ]);
+    
+console.log("Loaded data:", { tableData, extraCostData });
+console.log("Links data from JSON:", extraCostData.links); // 추가
+    
 
     if (!tableResponse.ok || !extraCostResponse.ok) {
       console.error("Failed to fetch JSON files:", {
@@ -919,7 +924,8 @@ async function fetchData() {
     updateDescriptions(extraCostData);
 
     // 링크 업데이트
-    if (Array.isArray(extraCostData.links)) {
+    if (Array.isArray(extraCostData.links) && extraCostData.links.length > 0) {
+      console.log("Updating links with:", extraCostData.links); // 추가
       updateLinks(extraCostData.links);
     } else {
       console.warn("Links data missing or invalid.");
