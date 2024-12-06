@@ -214,39 +214,58 @@
     // 페이지 로드 시 토큰 확인
     verifyToken();
 
-  const fetchLocations = async () => {
-    const response = await fetch('/frontend/mappage/location.json');
-    if (!response.ok) {
-      throw new Error(`Failed to fetch location.json: ${response.status}`);
-    }
-    return await response.json();
-  };
+// Fetch locations from location.json
+const fetchLocations = async () => {
+  const response = await fetch('/frontend/mappage/location.json');
+  if (!response.ok) {
+    throw new Error(`Failed to fetch location.json: ${response.status}`);
+  }
+  return await response.json();
+};
 
-  const populateSearchableDropdown = (input, dropdown, options, onSelect) => {
-    const updateDropdown = (filter = "") => {
-      dropdown.innerHTML = "";
-      options
-        .filter(option => option.text.toLowerCase().includes(filter.toLowerCase()))
-        .forEach(option => {
-          const li = document.createElement("li");
-          li.textContent = option.text;
-          li.dataset.value = option.value;
-          li.addEventListener("click", () => {
-            input.value = li.textContent;
-            dropdown.style.display = "none";
-            onSelect(li.dataset.value);
-          });
-          dropdown.appendChild(li);
+// 국가 번역 매핑 객체
+const countryTranslations = {
+  usa: "미국 (USA)",
+  germany: "독일 (GERMANY)",
+  france: "프랑스 (FRANCE)",
+  china: "중국 (CHINA)",
+  japan: "일본 (JAPAN)"
+  // 필요한 국가 추가
+};
+
+// 국가 이름을 번역하거나 기본값 사용
+const translateCountry = (country) => {
+  const lowerCaseCountry = country.toLowerCase(); // 대소문자 무시
+  return countryTranslations[lowerCaseCountry] || country.toUpperCase(); // 번역이 없으면 영문 대문자
+};
+
+// Populate dropdown with search functionality
+const populateSearchableDropdown = (input, dropdown, options, onSelect) => {
+  const updateDropdown = (filter = "") => {
+    dropdown.innerHTML = "";
+    options
+      .filter(option => option.text.toLowerCase().includes(filter.toLowerCase()))
+      .forEach(option => {
+        const li = document.createElement("li");
+        li.textContent = option.text;
+        li.dataset.value = option.value;
+        li.addEventListener("click", () => {
+          input.value = li.textContent;
+          dropdown.style.display = "none";
+          onSelect(li.dataset.value);
         });
-      dropdown.style.display = dropdown.innerHTML ? "block" : "none";
-    };
-
-    input.addEventListener("focus", () => updateDropdown());
-    input.addEventListener("click", () => updateDropdown());
-    input.addEventListener("input", () => updateDropdown(input.value));
-    input.addEventListener("blur", () => setTimeout(() => dropdown.style.display = "none", 150));
+        dropdown.appendChild(li);
+      });
+    dropdown.style.display = dropdown.innerHTML ? "block" : "none";
   };
 
+  input.addEventListener("focus", () => updateDropdown());
+  input.addEventListener("click", () => updateDropdown());
+  input.addEventListener("input", () => updateDropdown(input.value));
+  input.addEventListener("blur", () => setTimeout(() => (dropdown.style.display = "none"), 150));
+};
+
+// Initialize the page
 const initializePage = async () => {
   try {
     const locations = await fetchLocations();
@@ -262,28 +281,16 @@ const initializePage = async () => {
 
     const navigateButton = document.getElementById("navigate-button");
 
-    const countryTranslations = {
-      usa: "미국 (USA)",
-      germany: "독일 (GERMANY)",
-      france: "프랑스 (FRANCE)",
-      china: "중국 (CHINA)",
-      japan: "일본 (JAPAN)",
-    };
+    // Extract countries from paths in the JSON
+    const countries = [
+      ...new Set(
+        locations
+          .flatMap(loc => loc.links.map(link => link.path.split("/")[1])) // Extract the second folder (country)
+          .map(country => translateCountry(country))
+      )
+    ].map(c => ({ text: c, value: c }));
 
-    const translateCountry = (country) => {
-      if (!country) {
-        console.warn("Undefined country found in locations JSON.");
-        return "알 수 없는 국가";
-      }
-      const lowerCaseCountry = country.toLowerCase();
-      return countryTranslations[lowerCaseCountry] || country.toUpperCase();
-    };
-
-    const countries = [...new Set(locations.map(loc => translateCountry(loc.country)))].map(c => ({
-      text: c,
-      value: c,
-    }));
-
+    // Populate countries dropdown
     populateSearchableDropdown(countrySearch, countryDropdown, countries, selectedCountry => {
       regionSearch.value = "";
       regionSearch.disabled = true;
@@ -291,8 +298,13 @@ const initializePage = async () => {
       companySearch.disabled = true;
       navigateButton.disabled = true;
 
+      // Filter regions by selected country
       const regions = locations
-        .filter(loc => translateCountry(loc.country) === selectedCountry)
+        .filter(loc =>
+          loc.links.some(link =>
+            translateCountry(link.path.split("/")[1]) === selectedCountry
+          )
+        )
         .map(loc => ({ text: loc.name, value: loc.name }));
 
       populateSearchableDropdown(regionSearch, regionDropdown, regions, selectedRegion => {
@@ -300,24 +312,21 @@ const initializePage = async () => {
         companySearch.disabled = true;
         navigateButton.disabled = true;
 
+        // Populate companies based on selected region
         const companies = locations
           .filter(loc => loc.name === selectedRegion)
-          .flatMap(loc => loc.links.map(link => ({ text: link.type, value: link.type })));
+          .flatMap(loc => loc.links.map(link => ({ text: link.type, value: link.path })));
 
-        populateSearchableDropdown(companySearch, companyDropdown, companies, selectedOption => {
+        populateSearchableDropdown(companySearch, companyDropdown, companies, selectedPath => {
           navigateButton.disabled = false;
+
+          // Set navigation button functionality
           navigateButton.onclick = () => {
-            const selectedLocation = locations.find(loc => loc.name === selectedRegion);
-            if (selectedLocation && selectedLocation.links) {
-              const selectedLink = selectedLocation.links.find(link => link.type === selectedOption);
-              if (selectedLink && selectedLink.path) {
-                window.location.href = `/frontend/home.html?path=${encodeURIComponent(selectedLink.path)}`;
-              } else {
-                alert("경로를 찾을 수 없습니다.");
-              }
-            } else {
-              alert("경로를 찾을 수 없습니다.");
+            if (!selectedPath) {
+              alert("회사를 선택해주세요.");
+              return;
             }
+            window.location.href = `/frontend/home.html?path=${encodeURIComponent(selectedPath)}`;
           };
         });
 
@@ -331,7 +340,9 @@ const initializePage = async () => {
   }
 };
 
-  initializePage();
+// Start initialization
+initializePage();
+
 </script>
 </body>
 </html>
