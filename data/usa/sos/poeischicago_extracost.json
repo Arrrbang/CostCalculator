@@ -1,0 +1,129 @@
+{
+  "POC": {
+    "description": "",
+    "NonDiplomat": {
+      "CONSOLE": {
+        "1-60": "INCLUDED"
+      },
+      "20DRY": "INCLUDED",
+      "40HC": "INCLUDED"
+    },
+    "Diplomat": {
+      "CONSOLE": {
+        "1-60":"INCLUDED"
+      },
+      "20DRY": "INCLUDED",
+      "40HC": "INCLUDED"
+    }
+  },
+  "THC": {
+    "NonDiplomat": {
+      "CONSOLE": {
+        "1-60": "INCLUDED"
+      },
+      "20DRY": "INCLUDED",
+      "40HC": "INCLUDED"
+    },
+    "Diplomat": {
+      "CONSOLE": {
+        "1-60":"INCLUDED"
+      },
+      "20DRY": "INCLUDED",
+      "40HC": "INCLUDED"
+    }
+  },
+  "DRAYAGE": {
+    "description": "40HC비용. 20DRY 미확인",
+    "NonDiplomat": {
+      "CONSOLE": 13,
+      "20DRY": 820,
+      "40HC": 820
+    },
+    "Diplomat": {
+      "CONSOLE": 13,
+      "20DRY": 820,
+      "40HC": 820
+    }
+  },
+
+  "DEVANNING": {
+    "description": "DEVANNING CHARGE : $200/20, $300/40",
+    "NonDiplomat": {
+      "CONSOLE": 5,
+      "20DRY": 200,
+      "40HC": 300
+    },
+    "Diplomat": {
+      "CONSOLE": 5,
+      "20DRY": 200,
+      "40HC": 300
+    }
+  },
+
+  "INSPECTION": {
+    "description": "컨테이너 전체 검사에 걸렸을 경우 발생되는 금액입니다.",
+    "NonDiplomat": {
+      "CONSOLE": 3.5,
+      "20DRY": 200,
+      "40HC": 200
+    },
+    "Diplomat": {
+      "CONSOLE": 3.5,
+      "20DRY": 200,
+      "40HC": 200
+    }
+  },
+
+  "CUSTOMER ENTRY": {
+    "NonDiplomat": {
+      "CONSOLE": {
+        "1-60": 170
+      },
+      "20DRY": 170,
+      "40HC": 170
+    },
+    "Diplomat": {
+      "CONSOLE": {
+        "1-60":170
+      },
+      "20DRY": 170,
+      "40HC": "170"
+    }
+  },
+
+  "SHUTTLE CHARGE": {
+    "ANY":"미확인"
+  },
+  "LONG CARRY CHARGE": {
+    "ANY":"미확인"
+  },
+  "STAIR CHARGE": {
+    "description": "해당 업체의 계단 비용 단가는 $10*cbm*floor 입니다.",
+    "CBM단가": 10
+  },
+  "HEAVY ITEM": {
+    "description": "$100/1UNIT, 계단으로 이동할 경우 1층당 $100",
+    "values": {
+      "1": 100,
+      "2": 200,
+      "3": 300
+    }
+  },
+  "FULL SETTING CHARGE": {
+    "CBM":30
+  },
+  "WEEKEND CHARGE": {
+    "1-40": 800,
+    "41-60": 1200
+  },
+    "UPLIGHT PIANO": {
+    "ANY": 100
+  },
+    "STORAGE CHARGE": {
+    "description": "창고 보관 비용 :  $4/CBM/WEEK (MIN:$20/WEEK)",
+    "보관 비용 단가":4
+  },
+    "DATA BASE": {
+    "description": "해당 데이터 업데이트 일자는 2024.10 진행된 이트너스 비딩 조사 입니다."
+  }
+}
