@@ -241,6 +241,7 @@ const translateCountry = (country) => {
 
 // Populate dropdown with search functionality
 const populateSearchableDropdown = (input, dropdown, options, onSelect) => {
+  options.sort((a, b) => a.text.localeCompare(b.text, "en", { sensitivity: "base" }));
   const updateDropdown = (filter = "") => {
     dropdown.innerHTML = "";
     options
