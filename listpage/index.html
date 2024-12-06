@@ -214,122 +214,116 @@
     // 페이지 로드 시 토큰 확인
     verifyToken();
 
-    // Fetch locations from location.json
-const fetchLocations = async () => {
-  const response = await fetch('/frontend/mappage/location.json');
-  if (!response.ok) {
-    throw new Error(`Failed to fetch location.json: ${response.status}`);
-  }
-  return await response.json();
-};
-
-// Populate dropdown with search functionality
-const populateSearchableDropdown = (input, dropdown, options, onSelect) => {
-  const updateDropdown = (filter = "") => {
-    dropdown.innerHTML = "";
-    options
-      .filter(option => option.text.toLowerCase().includes(filter.toLowerCase()))
-      .forEach(option => {
-        const li = document.createElement("li");
-        li.textContent = option.text;
-        li.dataset.value = option.value;
-        li.addEventListener("click", () => {
-          input.value = li.textContent;
-          dropdown.style.display = "none";
-          onSelect(li.dataset.value);
-        });
-        dropdown.appendChild(li);
-      });
-    dropdown.style.display = dropdown.innerHTML ? "block" : "none";
+  const fetchLocations = async () => {
+    const response = await fetch('/frontend/mappage/location.json');
+    if (!response.ok) {
+      throw new Error(`Failed to fetch location.json: ${response.status}`);
+    }
+    return await response.json();
   };
 
-  input.addEventListener("focus", () => updateDropdown());
-  input.addEventListener("click", () => updateDropdown());
-  input.addEventListener("input", () => updateDropdown(input.value));
-  input.addEventListener("blur", () => setTimeout(() => dropdown.style.display = "none", 150));
-};
+  const populateSearchableDropdown = (input, dropdown, options, onSelect) => {
+    const updateDropdown = (filter = "") => {
+      dropdown.innerHTML = "";
+      options
+        .filter(option => option.text.toLowerCase().includes(filter.toLowerCase()))
+        .forEach(option => {
+          const li = document.createElement("li");
+          li.textContent = option.text;
+          li.dataset.value = option.value;
+          li.addEventListener("click", () => {
+            input.value = li.textContent;
+            dropdown.style.display = "none";
+            onSelect(li.dataset.value);
+          });
+          dropdown.appendChild(li);
+        });
+      dropdown.style.display = dropdown.innerHTML ? "block" : "none";
+    };
 
-// Initialize the page
-const initializePage = async () => {
-  const locations = await fetchLocations();
+    input.addEventListener("focus", () => updateDropdown());
+    input.addEventListener("click", () => updateDropdown());
+    input.addEventListener("input", () => updateDropdown(input.value));
+    input.addEventListener("blur", () => setTimeout(() => dropdown.style.display = "none", 150));
+  };
 
-  const countrySearch = document.getElementById("country-search");
-  const countryDropdown = document.getElementById("country-dropdown");
+  const initializePage = async () => {
+    const locations = await fetchLocations();
 
-  const regionSearch = document.getElementById("region-search");
-  const regionDropdown = document.getElementById("region-dropdown");
+    const countrySearch = document.getElementById("country-search");
+    const countryDropdown = document.getElementById("country-dropdown");
 
-  const companySearch = document.getElementById("company-search");
-  const companyDropdown = document.getElementById("company-dropdown");
+    const regionSearch = document.getElementById("region-search");
+    const regionDropdown = document.getElementById("region-dropdown");
 
-  const navigateButton = document.getElementById("navigate-button");
+    const companySearch = document.getElementById("company-search");
+    const companyDropdown = document.getElementById("company-dropdown");
 
-  // Populate countries
-  // 국가 번역 매핑 객체
-const countryTranslations = {
-  usa: "미국 (USA)",
-  germany: "독일 (GERMANY)",
-  france: "프랑스 (FRANCE)",
-  china: "중국 (CHINA)",
-  japan: "일본 (JAPAN)"
-  // 필요한 국가 추가
-};
+    const navigateButton = document.getElementById("navigate-button");
 
-// 국가 이름을 번역하거나 기본값 사용
-const translateCountry = (country) => {
-  const lowerCaseCountry = country.toLowerCase(); // 대소문자 무시
-  return countryTranslations[lowerCaseCountry] || country.toUpperCase(); // 번역이 없으면 영문 대문자
-};
+    const countryTranslations = {
+      usa: "미국 (USA)",
+      germany: "독일 (GERMANY)",
+      france: "프랑스 (FRANCE)",
+      china: "중국 (CHINA)",
+      japan: "일본 (JAPAN)",
+    };
 
-// 국가 목록 생성
-const countries = [...new Set(locations.map(loc => translateCountry(loc.country)))].map(c => ({
-  text: c,
-  value: c
-}));
-  populateSearchableDropdown(countrySearch, countryDropdown, countries, selectedCountry => {
-    regionSearch.value = "";
-    regionSearch.disabled = true;
-    companySearch.value = "";
-    companySearch.disabled = true;
-    navigateButton.disabled = true;
+    const translateCountry = (country) => {
+      const lowerCaseCountry = country.toLowerCase();
+      return countryTranslations[lowerCaseCountry] || country.toUpperCase();
+    };
 
-    const regions = locations.map(loc => ({ text: loc.name, value: loc.name }));
-    populateSearchableDropdown(regionSearch, regionDropdown, regions, selectedRegion => {
+    const countries = [...new Set(locations.map(loc => translateCountry(loc.country)))].map(c => ({
+      text: c,
+      value: c,
+    }));
+
+    populateSearchableDropdown(countrySearch, countryDropdown, countries, selectedCountry => {
+      regionSearch.value = "";
+      regionSearch.disabled = true;
       companySearch.value = "";
       companySearch.disabled = true;
       navigateButton.disabled = true;
 
-      const companies = locations
-        .filter(loc => loc.name === selectedRegion)
-        .flatMap(loc => loc.links.map(link => ({ text: link.type, value: link.path })));
-      populateSearchableDropdown(companySearch, companyDropdown, companies, selectedPath => {
-        navigateButton.disabled = false;
-        navigateButton.onclick = () => {
-          const selectedOption = companySearch.value; // 회사 선택 드롭다운의 값
-          if (!selectedOption) {
-            alert("회사를 선택해주세요.");
-            return;
-          }
-        
-          // JSON 데이터에서 선택된 회사의 링크를 찾아 경로로 설정
-          const selectedLocation = locations.find(loc => loc.company === selectedOption);
-          if (selectedLocation && selectedLocation.links) {
-            const selectedPath = selectedLocation.links.find(link => link.type === "SOS").path;
-            window.location.href = `/frontend/home.html?path=${encodeURIComponent(selectedPath)}`;
-          } else {
-            alert("경로를 찾을 수 없습니다.");
-          }
-        };
+      const regions = locations
+        .filter(loc => translateCountry(loc.country) === selectedCountry)
+        .map(loc => ({ text: loc.name, value: loc.name }));
+
+      populateSearchableDropdown(regionSearch, regionDropdown, regions, selectedRegion => {
+        companySearch.value = "";
+        companySearch.disabled = true;
+        navigateButton.disabled = true;
+
+        const companies = locations
+          .filter(loc => loc.name === selectedRegion)
+          .flatMap(loc => loc.links.map(link => ({ text: link.type, value: link.type })));
+
+        populateSearchableDropdown(companySearch, companyDropdown, companies, selectedOption => {
+          navigateButton.disabled = false;
+          navigateButton.onclick = () => {
+            const selectedLocation = locations.find(loc => loc.name === selectedRegion);
+            if (selectedLocation && selectedLocation.links) {
+              const selectedLink = selectedLocation.links.find(link => link.type === selectedOption);
+              if (selectedLink && selectedLink.path) {
+                window.location.href = `/frontend/home.html?path=${encodeURIComponent(selectedLink.path)}`;
+              } else {
+                alert("경로를 찾을 수 없습니다.");
+              }
+            } else {
+              alert("경로를 찾을 수 없습니다.");
+            }
+          };
+        });
+
+        companySearch.disabled = false;
       });
-      companySearch.disabled = false;
+
+      regionSearch.disabled = false;
     });
-    regionSearch.disabled = false;
-  });
-};
+  };
 
-// Start initialization
-initializePage();
-
+  initializePage();
 </script>
 </body>
 </html>
