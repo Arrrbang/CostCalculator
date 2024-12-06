@@ -265,7 +265,27 @@ const initializePage = async () => {
   const navigateButton = document.getElementById("navigate-button");
 
   // Populate countries
-  const countries = [...new Set(locations.map(loc => "미국 (USA)"))].map(c => ({ text: c, value: c }));
+  // 국가 번역 매핑 객체
+const countryTranslations = {
+  usa: "미국 (USA)",
+  germany: "독일 (GERMANY)",
+  france: "프랑스 (FRANCE)",
+  china: "중국 (CHINA)",
+  japan: "일본 (JAPAN)"
+  // 필요한 국가 추가
+};
+
+// 국가 이름을 번역하거나 기본값 사용
+const translateCountry = (country) => {
+  const lowerCaseCountry = country.toLowerCase(); // 대소문자 무시
+  return countryTranslations[lowerCaseCountry] || country.toUpperCase(); // 번역이 없으면 영문 대문자
+};
+
+// 국가 목록 생성
+const countries = [...new Set(locations.map(loc => translateCountry(loc.country)))].map(c => ({
+  text: c,
+  value: c
+}));
   populateSearchableDropdown(countrySearch, countryDropdown, countries, selectedCountry => {
     regionSearch.value = "";
     regionSearch.disabled = true;
