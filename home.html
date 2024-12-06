@@ -813,7 +813,6 @@ async function fetchData() {
   try {
     const params = new URLSearchParams(window.location.search);
     const path = params.get("path");
-
     if (!path) {
       console.error("Path parameter missing for fetchData");
       return;
@@ -858,11 +857,14 @@ async function fetchData() {
       extraCostData,
     });
 
-    console.log("Loaded data:", { tableData, extraCostData });
+    const selectedContainer = containerDropdown?.value; // 기존 컨테이너 값
+    updateContainerDropdown(tableData.containerType || [], containerDropdown, selectedContainer);
 
-    // 기존 선택값 저장
-    const selectedCBM = dropdown.value;
-    const selectedContainer = containerDropdown.value;
+    console.log("Loaded data:", { tableData, extraCostData });
+  } catch (error) {
+    console.error("Error in fetchData:", error);
+  }
+}
 
 
     basicExtraCost = extraCostData;
@@ -908,6 +910,10 @@ function updateDropdown(data, dropdownElement, selectedValue) {
 }
     
 function resetDropdown(dropdownElement, placeholder = "-- Select an Option --") {
+  if (!dropdownElement) {
+    console.error("resetDropdown: Provided dropdownElement is null or undefined.");
+    return;
+  }
   dropdownElement.innerHTML = `<option value="">${placeholder}</option>`;
 }
 
@@ -958,6 +964,11 @@ function updateDropdown(data) {
 
 // 컨테이너 타입 드롭다운 업데이트
 function updateContainerDropdown(containerTypes, containerDropdown, selectedValue) {
+  if (!containerDropdown) {
+    console.error("updateContainerDropdown: containerDropdown is null or undefined.");
+    return;
+  }
+
   resetDropdown(containerDropdown, "-- Select a Container --");
   containerTypes.forEach((type) => {
     const option = document.createElement("option");
@@ -965,7 +976,8 @@ function updateContainerDropdown(containerTypes, containerDropdown, selectedValu
     option.textContent = type;
     containerDropdown.appendChild(option);
   });
-    containerDropdown.value = selectedValue || "";
+
+  containerDropdown.value = selectedValue || "";
 }
 
 // NON-DIPLOMAT/DIPLOMAT 영향을 받는 기본 배송 비용/THC/POC 등 업데이트------------------------------------------
