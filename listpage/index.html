@@ -214,13 +214,16 @@
     // 페이지 로드 시 토큰 확인
     verifyToken();
 
-    // Fetch locations from listlocation.json
-    const fetchLocations = async () => {
-      const response = await fetch('listlocation.json');
-      return await response.json();
-    };
+    // Fetch locations from location.json
+const fetchLocations = async () => {
+  const response = await fetch('/frontend/mappage/location.json');
+  if (!response.ok) {
+    throw new Error(`Failed to fetch location.json: ${response.status}`);
+  }
+  return await response.json();
+};
 
-    // Populate dropdown with search functionality
+// Populate dropdown with search functionality
 const populateSearchableDropdown = (input, dropdown, options, onSelect) => {
   const updateDropdown = (filter = "") => {
     dropdown.innerHTML = "";
@@ -240,66 +243,61 @@ const populateSearchableDropdown = (input, dropdown, options, onSelect) => {
     dropdown.style.display = dropdown.innerHTML ? "block" : "none";
   };
 
-  // 드롭다운 검색 및 동작
   input.addEventListener("focus", () => updateDropdown());
-  input.addEventListener("click", () => updateDropdown()); // 클릭하면 드롭다운 활성화
+  input.addEventListener("click", () => updateDropdown());
   input.addEventListener("input", () => updateDropdown(input.value));
   input.addEventListener("blur", () => setTimeout(() => dropdown.style.display = "none", 150));
 };
 
-    // Initialize the page
-    const initializePage = async () => {
-      const locations = await fetchLocations();
+// Initialize the page
+const initializePage = async () => {
+  const locations = await fetchLocations();
 
-      const countrySearch = document.getElementById("country-search");
-      const countryDropdown = document.getElementById("country-dropdown");
+  const countrySearch = document.getElementById("country-search");
+  const countryDropdown = document.getElementById("country-dropdown");
 
-      const regionSearch = document.getElementById("region-search");
-      const regionDropdown = document.getElementById("region-dropdown");
+  const regionSearch = document.getElementById("region-search");
+  const regionDropdown = document.getElementById("region-dropdown");
 
-      const companySearch = document.getElementById("company-search");
-      const companyDropdown = document.getElementById("company-dropdown");
+  const companySearch = document.getElementById("company-search");
+  const companyDropdown = document.getElementById("company-dropdown");
 
-      const navigateButton = document.getElementById("navigate-button");
+  const navigateButton = document.getElementById("navigate-button");
 
-    // Populate countries
-    const countries = [...new Set(locations.map(loc => loc.country))].map(c => ({ text: c, value: c }));
-    populateSearchableDropdown(countrySearch, countryDropdown, countries, selectedCountry => {
-      // Reset second and third dropdowns
-      regionSearch.value = "";
-      regionSearch.disabled = true;
+  // Populate countries
+  const countries = [...new Set(locations.map(loc => "미국 (USA)"))].map(c => ({ text: c, value: c }));
+  populateSearchableDropdown(countrySearch, countryDropdown, countries, selectedCountry => {
+    regionSearch.value = "";
+    regionSearch.disabled = true;
+    companySearch.value = "";
+    companySearch.disabled = true;
+    navigateButton.disabled = true;
+
+    const regions = locations.map(loc => ({ text: loc.name, value: loc.name }));
+    populateSearchableDropdown(regionSearch, regionDropdown, regions, selectedRegion => {
       companySearch.value = "";
       companySearch.disabled = true;
       navigateButton.disabled = true;
 
-      // Populate regions
-      const regions = locations
-        .filter(loc => loc.country === selectedCountry)
-        .map(loc => ({ text: loc.name, value: loc.name }));
-      populateSearchableDropdown(regionSearch, regionDropdown, regions, selectedRegion => {
-        // Reset third dropdown
-        companySearch.value = "";
-        companySearch.disabled = true;
-        navigateButton.disabled = true;
-
-        // Populate companies
-        const companies = locations
-          .filter(loc => loc.name === selectedRegion)
-          .map(loc => ({ text: loc.company, value: loc.link }));
-        populateSearchableDropdown(companySearch, companyDropdown, companies, selectedLink => {
-          navigateButton.disabled = false;
-          navigateButton.onclick = () => {
-            window.location.href = selectedLink;
-          };
-        });
-        companySearch.disabled = false;
+      const companies = locations
+        .filter(loc => loc.name === selectedRegion)
+        .flatMap(loc => loc.links.map(link => ({ text: link.type, value: link.path })));
+      populateSearchableDropdown(companySearch, companyDropdown, companies, selectedPath => {
+        navigateButton.disabled = false;
+        navigateButton.onclick = () => {
+          // Redirect to home.html with the selected path
+          window.location.href = `home.html?path=${encodeURIComponent(selectedPath)}`;
+        };
       });
-      regionSearch.disabled = false;
+      companySearch.disabled = false;
     });
-  };
+    regionSearch.disabled = false;
+  });
+};
 
-  // Start initialization
-  initializePage();
+// Start initialization
+initializePage();
+
 </script>
 </body>
 </html>
