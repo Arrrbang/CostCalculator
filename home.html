@@ -836,8 +836,6 @@ function handlePoeChange() {
 }
 
 
-
-
 async function fetchData() {
   try {
     const params = new URLSearchParams(window.location.search);
@@ -863,19 +861,11 @@ async function fetchData() {
     console.log("Table JSON Path:", tableJsonPath);
     console.log("Extra Cost JSON Path:", extraCostJsonPath);
 
-    // 기존 선택 값 저장
-    const currentCbmValue = dropdown.value;
-    const currentContainerValue = containerDropdown.value;
-
     // JSON 데이터 가져오기
     const [tableResponse, extraCostResponse] = await Promise.all([
       fetch(tableJsonPath),
       fetch(extraCostJsonPath),
     ]);
-    
-console.log("Loaded data:", { tableData, extraCostData });
-console.log("Links data from JSON:", extraCostData.links); // 추가
-    
 
     if (!tableResponse.ok || !extraCostResponse.ok) {
       console.error("Failed to fetch JSON files:", {
@@ -885,10 +875,9 @@ console.log("Links data from JSON:", extraCostData.links); // 추가
       return;
     }
 
-    const [tableData, extraCostData] = await Promise.all([
-      tableResponse.json(),
-      extraCostResponse.json(),
-    ]);
+    // JSON 데이터 파싱
+    const tableData = await tableResponse.json(); // 여기서 선언 및 초기화
+    const extraCostData = await extraCostResponse.json();
 
     console.log("Loaded data:", { tableData, extraCostData });
 
@@ -898,7 +887,10 @@ console.log("Links data from JSON:", extraCostData.links); // 추가
     dataDiplomat = tableData.diplomat || {};
     containerTypes = tableData.containerType || [];
 
-        // 드롭다운 초기화 및 업데이트
+    const currentCbmValue = dropdown?.value || null;
+    const currentContainerValue = containerDropdown?.value || null;
+
+    // 드롭다운 및 데이터 업데이트
     if (dropdown) {
       resetDropdown(dropdown);
       updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat, dropdown, currentCbmValue);
@@ -913,9 +905,6 @@ console.log("Links data from JSON:", extraCostData.links); // 추가
       console.warn("fetchData: Container dropdown is not available in the DOM.");
     }
 
-    // 드롭다운 및 데이터 업데이트
-    updateDropdown(nonDiplomat.checked ? dataNonDiplomat : dataDiplomat, dropdown, currentCbmValue);
-    updateContainerDropdown(containerTypes, containerDropdown, currentContainerValue);
     updateAdditionalCosts();
     updateStairChargeDropdown();
     updateHeavyItemDropdown();
@@ -924,8 +913,7 @@ console.log("Links data from JSON:", extraCostData.links); // 추가
     updateDescriptions(extraCostData);
 
     // 링크 업데이트
-    if (Array.isArray(extraCostData.links) && extraCostData.links.length > 0) {
-      console.log("Updating links with:", extraCostData.links); // 추가
+    if (Array.isArray(extraCostData.links)) {
       updateLinks(extraCostData.links);
     } else {
       console.warn("Links data missing or invalid.");
@@ -935,7 +923,6 @@ console.log("Links data from JSON:", extraCostData.links); // 추가
     console.error("Error in fetchData:", error);
   }
 }
-
 
     
 function resetDropdown(dropdownElement, placeholder = "-- Select an Option --") {
