@@ -803,7 +803,11 @@ function handlePoeChange() {
 
   if (poeValue) {
     console.log("Selected POE value:", poeValue);
-    fetchData();
+    fetchData().then(() => {
+      // 데이터 업데이트 이후 필요한 추가 작업
+      updateAdditionalCosts();
+      calculateTotalCost();
+    });
   } else {
     console.warn("No POE value selected.");
   }
@@ -874,17 +878,15 @@ async function fetchData() {
     updateDescriptions(extraCostData);
 
     // 링크 업데이트
-    if (extraCostData.links) {
-      updateLinks(extraCostData.links);
+    if (Array.isArray(extraCostData.links)) {
+      updateLinks(extraCostData.links); // 링크 활성화
     } else {
-      console.warn("Links data missing in JSON.");
+      console.warn("Links data missing or invalid.");
     }
   } catch (error) {
     console.error("Error in fetchData:", error);
   }
 }
-
-
     // 드롭다운 업데이트 함수
 function updateDropdown(data, dropdownElement, selectedValue) {
   resetDropdown(dropdownElement, "-- Select an Option --");
@@ -933,12 +935,12 @@ document.addEventListener("DOMContentLoaded", async () => {
   const path = params.get("path");
 
   if (path) {
-    await initializePoeDropdown(path);
+    await initializePoeDropdown(path); // POE 드롭다운 초기화
+    await fetchData(); // 초기 데이터 로드
   } else {
     console.error("Path parameter missing in URL.");
   }
 });
-
 
 
 // CBM 드롭다운 업데이트
