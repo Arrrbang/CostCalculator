@@ -764,7 +764,7 @@ function updateLinks(links) {
   if (links[0]?.url) {
     link1Element.textContent = links[0].label || "Default Link 1";
     link1Element.style.pointerEvents = "auto";
-    link1Element.style.color = "blue";
+    link1Element.style.color = "white";
     link1Element.onclick = () => {
       console.log(`Navigating to: ${links[0].url}`);
       window.open(links[0].url, "_blank");
@@ -780,7 +780,7 @@ function updateLinks(links) {
   if (links[1]?.url) {
     link2Element.textContent = links[1].label || "Default Link 2";
     link2Element.style.pointerEvents = "auto";
-    link2Element.style.color = "blue";
+    link2Element.style.color = "white";
     link2Element.onclick = () => {
       console.log(`Navigating to: ${links[1].url}`);
       window.open(links[1].url, "_blank");
