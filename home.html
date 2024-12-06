@@ -736,25 +736,32 @@ function resetDropdown(dropdownElement, placeholder = "-- Select an Option --") 
   }
   dropdownElement.innerHTML = `<option value="">${placeholder}</option>`;
 }
-
+    
+console.log("Full extraCostData object:", extraCostData);
+    
 // 링크 초기화
 function initializeLinks() {
   link1Element.textContent = "Default Link 1";
   link1Element.onclick = () => console.log("Default Link 1 clicked");
+  link1Element.style.pointerEvents = "none";
+  link1Element.style.color = "gray";
 
   link2Element.textContent = "Default Link 2";
   link2Element.onclick = () => console.log("Default Link 2 clicked");
+  link2Element.style.pointerEvents = "none";
+  link2Element.style.color = "gray";
 }
 
 // 링크 업데이트
 function updateLinks(links) {
-  console.log("Links passed to updateLinks:", links); // 추가
+  console.log("Links passed to updateLinks:", links);
 
   if (!Array.isArray(links) || links.length < 2) {
     console.warn("Links data does not contain enough entries:", links);
     initializeLinks();
     return;
   }
+  
    // 링크 1 업데이트
   if (links[0]?.url) {
     link1Element.textContent = links[0].label || "Default Link 1";
@@ -828,10 +835,7 @@ function handlePoeChange() {
 
   if (poeValue) {
     console.log("Selected POE value:", poeValue);
-    fetchData().then(() => {
-      updateCosts(["POC", "THC", "DRAYAGE", "DEVANNING", "INSPECTION", "CUSTOMER ENTRY"]);
-      calculateTotalCost();
-    });
+    fetchData();
   } else {
     console.warn("No POE value selected.");
   }
@@ -883,6 +887,18 @@ async function fetchData() {
 
     console.log("Loaded data:", { tableData, extraCostData });
 
+    // 링크 업데이트: tableData.links를 우선 사용
+    if (Array.isArray(tableData.links) && tableData.links.length > 0) {
+      console.log("Links data from tariff JSON:", tableData.links);
+      updateLinks(tableData.links);
+    } else if (Array.isArray(extraCostData.links) && extraCostData.links.length > 0) {
+      console.log("Links data from extraCost JSON:", extraCostData.links);
+      updateLinks(extraCostData.links);
+    } else {
+      console.warn("No valid links found in either JSON.");
+      initializeLinks(); // 기본 링크 초기화
+    }
+    
     // 데이터 업데이트
     basicExtraCost = extraCostData;
     dataNonDiplomat = tableData.nonDiplomat || {};
@@ -903,8 +919,6 @@ async function fetchData() {
     if (containerDropdown) {
       resetDropdown(containerDropdown);
       updateContainerDropdown(containerTypes, containerDropdown, currentContainerValue);
-    } else {
-      console.warn("fetchData: Container dropdown is not available in the DOM.");
     }
 
     updateAdditionalCosts();
@@ -913,20 +927,24 @@ async function fetchData() {
     updatestorageperiodDropdown();
     calculateTotalCost();
     updateDescriptions(extraCostData);
-
-    // 링크 업데이트
-    console.log("Loaded extraCostData.links:", extraCostData.links);
-    if (Array.isArray(extraCostData.links) && extraCostData.links.length > 0) {
-      updateLinks(extraCostData.links);
-    } else {
-      console.warn("Links data missing or invalid:", extraCostData.links);
-      initializeLinks();
-    }
   } catch (error) {
     console.error("Error in fetchData:", error);
   }
 }
+    
+// DOMContentLoaded 이벤트 리스너
+document.addEventListener("DOMContentLoaded", async () => {
+  initializeLinks();
+  const params = new URLSearchParams(window.location.search);
+  const path = params.get("path");
 
+  if (path) {
+    await initializePoeDropdown(path);
+    await fetchData();
+  } else {
+    console.error("Path parameter missing in URL.");
+  }
+});
     
 function resetDropdown(dropdownElement, placeholder = "-- Select an Option --") {
   if (!dropdownElement) {
