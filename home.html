@@ -741,28 +741,35 @@ function initializeLinks() {
 function updateLinks(links) {
   if (!Array.isArray(links) || links.length < 2) {
     console.warn("Links data does not contain enough entries.");
-    initializeLinks();
+    initializeLinks(); // 기본 링크로 초기화
     return;
   }
 
   // 링크 1 업데이트
-  if (links[0]) {
+  if (links[0] && links[0].url) {
     link1Element.textContent = links[0].label || "Default Link 1";
     link1Element.onclick = function () {
       console.log(`Navigating to: ${links[0].url}`);
       window.open(links[0].url, "_blank");
     };
+  } else {
+    link1Element.textContent = "Default Link 1";
+    link1Element.onclick = () => console.warn("Invalid link 1 data.");
   }
 
   // 링크 2 업데이트
-  if (links[1]) {
+  if (links[1] && links[1].url) {
     link2Element.textContent = links[1].label || "Default Link 2";
     link2Element.onclick = function () {
       console.log(`Navigating to: ${links[1].url}`);
       window.open(links[1].url, "_blank");
     };
+  } else {
+    link2Element.textContent = "Default Link 2";
+    link2Element.onclick = () => console.warn("Invalid link 2 data.");
   }
 }
+
 
 
 
@@ -940,15 +947,26 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
 // CBM 드롭다운 업데이트
-function updateDropdown(data) {
-  resetDropdown(dropdown);
+function updateDropdown(data, dropdownElement, selectedValue) {
+  resetDropdown(dropdownElement, "-- Select an Option --");
   Object.keys(data).forEach((key) => {
     const option = document.createElement("option");
     option.value = key;
     option.textContent = key;
-    dropdown.appendChild(option);
+    dropdownElement.appendChild(option);
   });
+
+  // 기존 선택 값 복원
+  if (selectedValue && data[selectedValue]) {
+    dropdownElement.value = selectedValue;
+  } else {
+    dropdownElement.value = ""; // 기본값
+  }
+
+  // 강제로 UI 업데이트
+  dropdownElement.dispatchEvent(new Event("change")); // 값이 변경되었음을 알림
 }
+
 
 // 컨테이너 타입 드롭다운 업데이트
 function updateContainerDropdown(containerTypes, containerDropdown, selectedValue) {
