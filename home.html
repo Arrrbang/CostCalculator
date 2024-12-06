@@ -739,31 +739,31 @@ function initializeLinks() {
 
 // 링크 업데이트
 function updateLinks(links) {
-  if (!links || links.length < 2) {
+  if (!Array.isArray(links) || links.length < 2) {
     console.warn("Links data does not contain enough entries.");
     initializeLinks();
     return;
   }
 
-  console.log("Link 1 URL:", links[0]?.url); // 추가 위치
-  console.log("Link 2 URL:", links[1]?.url); // 추가 위치
-
+  // 링크 1 업데이트
   if (links[0]) {
-    link1Element.textContent = links[0].label;
+    link1Element.textContent = links[0].label || "Default Link 1";
     link1Element.onclick = function () {
       console.log(`Navigating to: ${links[0].url}`);
-      window.location.href = links[0].url;
+      window.open(links[0].url, "_blank");
     };
   }
 
+  // 링크 2 업데이트
   if (links[1]) {
-    link2Element.textContent = links[1].label;
+    link2Element.textContent = links[1].label || "Default Link 2";
     link2Element.onclick = function () {
       console.log(`Navigating to: ${links[1].url}`);
-      window.location.href = links[1].url;
+      window.open(links[1].url, "_blank");
     };
   }
 }
+
 
 async function initializePoeDropdown(path) {
   try {
@@ -804,7 +804,7 @@ function handlePoeChange() {
   if (poeValue) {
     console.log("Selected POE value:", poeValue);
     fetchData().then(() => {
-      // 데이터 업데이트 이후 필요한 추가 작업
+      // 데이터 갱신 후 추가 동기화
       updateAdditionalCosts();
       calculateTotalCost();
     });
@@ -812,6 +812,7 @@ function handlePoeChange() {
     console.warn("No POE value selected.");
   }
 }
+
 
 async function fetchData() {
   try {
@@ -898,8 +899,13 @@ function updateDropdown(data, dropdownElement, selectedValue) {
   });
 
   // 기존 선택 값 복원
-  dropdownElement.value = selectedValue || "";
+  if (selectedValue && data[selectedValue]) {
+    dropdownElement.value = selectedValue;
+  } else {
+    dropdownElement.value = ""; // 선택값 초기화
+  }
 }
+
     
 function resetDropdown(dropdownElement, placeholder = "-- Select an Option --") {
   if (!dropdownElement) {
@@ -956,11 +962,6 @@ function updateDropdown(data) {
 
 // 컨테이너 타입 드롭다운 업데이트
 function updateContainerDropdown(containerTypes, containerDropdown, selectedValue) {
-  if (!containerDropdown) {
-    console.error("updateContainerDropdown: containerDropdown is null or undefined.");
-    return;
-  }
-
   resetDropdown(containerDropdown, "-- Select a Container --");
   containerTypes.forEach((type) => {
     const option = document.createElement("option");
@@ -969,8 +970,14 @@ function updateContainerDropdown(containerTypes, containerDropdown, selectedValu
     containerDropdown.appendChild(option);
   });
 
-  containerDropdown.value = selectedValue || "";
+  // 기존 선택 값 복원
+  if (selectedValue && containerTypes.includes(selectedValue)) {
+    containerDropdown.value = selectedValue;
+  } else {
+    containerDropdown.value = ""; // 선택값 초기화
+  }
 }
+
 
 // NON-DIPLOMAT/DIPLOMAT 영향을 받는 기본 배송 비용/THC/POC 등 업데이트------------------------------------------
     
