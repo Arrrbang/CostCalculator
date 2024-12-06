@@ -737,8 +737,6 @@ function resetDropdown(dropdownElement, placeholder = "-- Select an Option --") 
   dropdownElement.innerHTML = `<option value="">${placeholder}</option>`;
 }
     
-console.log("Full extraCostData object:", extraCostData);
-    
 // 링크 초기화
 function initializeLinks() {
   link1Element.textContent = "Default Link 1";
@@ -884,6 +882,7 @@ async function fetchData() {
     // JSON 데이터 파싱
     const tableData = await tableResponse.json(); // 여기서 선언 및 초기화
     const extraCostData = await extraCostResponse.json();
+    console.log("Full extraCostData object:", extraCostData);
 
     console.log("Loaded data:", { tableData, extraCostData });
 
