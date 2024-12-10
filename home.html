@@ -995,14 +995,14 @@ function updateDropdown(data, dropdownElement, selectedValue) {
     return; // 함수 종료
   }
 
-  resetDropdown(dropdownElement, "-- Select an Option --");
-  Object.keys(data).forEach((key) => {
+  // 1부터 60까지의 숫자 드롭다운 옵션 추가
+  for (let i = 1; i <= 60; i++) {
     const option = document.createElement("option");
-    option.value = key;
-    option.textContent = key;
+    option.value = i;
+    option.textContent = i;
     dropdownElement.appendChild(option);
-  });
-
+  }
+  
   // 기존 선택 값 복원
   if (selectedValue && data[selectedValue]) {
     dropdownElement.value = selectedValue;
