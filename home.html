@@ -719,7 +719,7 @@ function verifyToken() {
 
 
     verifyToken();
-    
+//-------------------------------------------------------------------------------------------------    
 let currencySymbol = ""; // 화폐 단위를 저장할 변수
 let dataNonDiplomat = {};
 let dataDiplomat = {};
@@ -853,7 +853,7 @@ function handlePoeChange() {
       // 기본값 설정 후 업데이트 호출
   console.log("basicExtraCost 데이터 확인:", basicExtraCost);
   updateAllDiplomatSensitiveResults(); // 추가 비용 업데이트
-        const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "No description available.";
+        const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "";
       const stairDescriptionElement = document.getElementById("stair-description");
       if (stairDescriptionElement) {
         stairDescriptionElement.textContent = stairDescription; // 설명 업데이트
@@ -882,7 +882,7 @@ async function fetchData() {
 
     console.log("Fetching data for path:", path);
 
-    const basePath = "https://arrrbang.github.io/frontend";
+    const basePath = "https://arrrbang.github.io/TEST";
     const tableJsonPath = `${basePath}/${path}/poeis${poeValue}_tariff.json`;
     const modifiedPath = path.replace(/\/[^/]+\/?$/, "");
     const extraCostJsonPath = `${basePath}/${modifiedPath}/poeis${poeValue}_extracost.json`;
@@ -911,7 +911,7 @@ async function fetchData() {
     console.log("Currency Symbol:", currencySymbol);
 
     // "DATA BASE"의 description 값 가져오기
-    const dataBaseDescription = extraCostData["DATA BASE"]?.description || "No description available."; // 기본값 설정
+    const dataBaseDescription = extraCostData["DATA BASE"]?.description || ""; // 기본값 설정
     const dataDescriptionElement = document.getElementById("data-description");
     if (dataDescriptionElement) {
       dataDescriptionElement.textContent = dataBaseDescription;  // description을 업데이트
@@ -951,7 +951,7 @@ async function fetchData() {
     calculateTotalCost();
     console.log("basicExtraCost 데이터 확인:", basicExtraCost);
         // 추가: stair-description 업데이트
-    const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "No description available.";
+    const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "";
     const stairDescriptionElement = document.getElementById("stair-description");
     if (stairDescriptionElement) {
       stairDescriptionElement.textContent = stairDescription; // 설명 업데이트
@@ -989,6 +989,23 @@ document.addEventListener("DOMContentLoaded", async () => {
       fetchData(); // POE 변경 시 데이터를 다시 불러옵니다.
     }
   });
+
+  // 체크박스 동작 상호 배제
+    nonDiplomat.addEventListener("change", () => {
+      if (nonDiplomat.checked) {
+        diplomat.checked = false; // diplomat 체크 해제
+      }
+      updateBasicDeliveryCost(); // 기본 배송 비용 업데이트
+      updateAllCosts(); // 모든 비용 업데이트
+    });
+    
+    diplomat.addEventListener("change", () => {
+      if (diplomat.checked) {
+        nonDiplomat.checked = false; // nonDiplomat 체크 해제
+      }
+      updateBasicDeliveryCost(); // 기본 배송 비용 업데이트
+      updateAllCosts(); // 모든 비용 업데이트
+    });
 });
 
 
@@ -1060,37 +1077,47 @@ function updateBasicDeliveryCost() {
     return;
   }
 
-  // Non-Diplomat 또는 Diplomat에 해당하는 데이터 가져오기
-  const category = isNonDiplomat ? "NonDiplomat" : "Diplomat";
-  const containerData = dataNonDiplomat[selectedContainer] || dataDiplomat[selectedContainer];
-  let costValue = "None"; // 기본 값 설정
+  // NonDiplomat 또는 Diplomat 데이터 선택
+  const dataCategory = isNonDiplomat ? dataNonDiplomat : dataDiplomat;
+  let costValue = "None"; // 기본값 설정
 
-  // 컨테이너 타입이 없을 경우, 기본적으로 CONSOLE 타입을 사용하여 값을 가져옵니다.
-  if (!containerData) {
-    console.warn(`선택한 컨테이너 타입 ${selectedContainer}의 데이터가 없습니다. 기본 CONSOLE 타입을 사용합니다.`);
-    containerData = dataNonDiplomat["CONSOLE"] || dataDiplomat["CONSOLE"];
-  }
+  if (typeof dataCategory[selectedContainer] === "object") {
+    // 컨테이너 타입이 있는 경우
+    const containerData = dataCategory[selectedContainer];
+    
+    // CBM 값에 해당하는 범위 또는 개별 값 찾기
+    const rangeKey = Object.keys(containerData).find(key => {
+      if (key.includes("-")) {
+        const [start, end] = key.split("-").map(Number);
+        return selectedCBM >= start && selectedCBM <= end;
+      }
+      return selectedCBM == key;
+    });
 
-  // CBM 값에 해당하는 범위 처리
-  const rangeKey = Object.keys(containerData).find(key => {
-    if (key.includes("-")) {
-      const [start, end] = key.split("-").map(Number);
-      return selectedCBM >= start && selectedCBM <= end;
-    }
-    return false;
-  });
-
-  // CBM 값이 범위 안에 있을 경우 해당 범위 값을 사용
-  if (rangeKey) {
-    costValue = containerData[rangeKey];
+    // 범위 또는 개별값에 해당하는 비용 가져오기
+    costValue = rangeKey ? containerData[rangeKey] : containerData["ANY"];
   } else {
-    // CBM 값이 개별값에 해당하거나 ANY를 사용하는 경우
-    costValue = containerData[selectedCBM] || containerData["ANY"];
+    // 컨테이너 타입이 없는 경우
+    const cbmData = dataCategory;
+
+    // CBM 값에 해당하는 범위 또는 개별 값 찾기
+    const rangeKey = Object.keys(cbmData).find(key => {
+      if (key.includes("-")) {
+        const [start, end] = key.split("-").map(Number);
+        return selectedCBM >= start && selectedCBM <= end;
+      }
+      return selectedCBM == key;
+    });
+
+    // 범위 또는 개별값에 해당하는 비용 가져오기
+    costValue = rangeKey ? cbmData[rangeKey] : "None";
   }
+
   // 값이 숫자인 경우 화폐 단위를 추가
   if (!isNaN(costValue)) {
     costValue = `${currencySymbol}${parseFloat(costValue).toLocaleString()}`; // 화폐 단위 추가 및 형식화
   }
+
   // 결과 업데이트
   result.textContent = costValue;
   console.log("기본 배송 비용 업데이트 완료:", costValue);
@@ -1105,7 +1132,7 @@ diplomat.addEventListener("change", updateBasicDeliveryCost);
 
 // 컨테이너 드롭다운 값 변경 시 기본 배송 비용 업데이트
 containerDropdown.addEventListener("change", updateBasicDeliveryCost);
-
+    
 //--------------------basic cost 처리---------------------------
 function updateDiplomatSensitiveResult(categoryKey) {
   const selectedContainer = containerDropdown.value; // 선택된 컨테이너 타입
@@ -1303,7 +1330,7 @@ function updateExtraCostResult(categoryKey) {
 
   if (labelElement) labelElement.textContent = categoryData.name || "NONE";
   if (valueElement) valueElement.textContent = result;
-  if (descriptionElement) descriptionElement.textContent = categoryData.description || "No description available.";
+  if (descriptionElement) descriptionElement.textContent = categoryData.description || "";
 
   console.log(`${categoryKey} 업데이트 완료:`, result, "Description:", categoryData.description);
 }
@@ -1313,7 +1340,7 @@ function updateExtraCostResult(categoryKey) {
 // POE 드롭다운 선택 시 설명 업데이트 및 계단 비용 계산
 poeDropdown.addEventListener("change", () => {
   // POE 드롭다운이 선택된 후에 바로 description 업데이트
-  const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "No description available.";
+  const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "";
   const stairDescriptionElement = document.getElementById("stair-description");
   if (stairDescriptionElement) {
     stairDescriptionElement.textContent = stairDescription;
@@ -1387,7 +1414,7 @@ function updateHeavyItemDropdown() {
   // 1. heavyitem-description 업데이트
   const descriptionElement = document.getElementById("heavyitem-description");
   if (descriptionElement) {
-    descriptionElement.textContent = heavyItemData.description || "No description available.";
+    descriptionElement.textContent = heavyItemData.description || "";
   }
 
   // 2. heavyitemunit 드롭다운 옵션 생성
@@ -1449,7 +1476,7 @@ function updatestorageperiodDropdown() {
   // 3. 설명 업데이트
   const descriptionElement = document.getElementById("storage-description");
   if (descriptionElement) {
-    descriptionElement.textContent = storageData.description || "No description available.";
+    descriptionElement.textContent = storageData.description || "";
   }
 
   // 4. 드롭다운 변경 시 값 계산
