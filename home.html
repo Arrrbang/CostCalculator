@@ -503,7 +503,7 @@
         <td>CBM</td>
         <td>
           <select id="cbm-dropdown" style="width: 100%;">
-            <option value="">-- Select an Option --</option>
+            <option value="">-- CBM 선택 --</option>
           </select>
         </td>
       </tr>
@@ -511,7 +511,7 @@
         <td>CONTAINER TYPE</td>
         <td>
           <select id="container-dropdown" style="width: 100%;">
-            <option value="">-- Select an Option --</option>
+            <option value="">-- CONTAINER TYPE 선택 --</option>
           </select>
         </td>
       </tr>
@@ -751,7 +751,7 @@ const link1Element = document.getElementById("link1");
 const link2Element = document.getElementById("link2");
 
 // resetDropdown 함수 변경
-function resetDropdown(dropdownElement, placeholder = "-- Select an Option --") {
+function resetDropdown(dropdownElement, placeholder = "-- CBM 선택 --") {
   if (!dropdownElement) {
     console.warn("resetDropdown: Provided dropdownElement is not available in the DOM.");
     return; // 잘못된 호출 무시
@@ -1015,7 +1015,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 
-function resetDropdown(dropdownElement, placeholder = "-- Select an Option --") {
+function resetDropdown(dropdownElement, placeholder = "-- CBM 선택2 --") {
   if (!dropdownElement) {
     console.warn("resetDropdown: Provided dropdownElement is null or undefined.");
     return; // 잘못된 호출 무시
@@ -1424,7 +1424,7 @@ function updateHeavyItemDropdown() {
   }
 
   // 2. heavyitemunit 드롭다운 옵션 생성
-  resetDropdown(heavyItemDropdown, "중량 화물 개수 선택");
+  resetDropdown(heavyItemDropdown, "중량 화물 단위 선택");
 
   const unit = heavyItemData["단위"] || ""; // 단위 가져오기
   for (let i = 1; i <= 5; i++) {
