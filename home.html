@@ -488,7 +488,7 @@
       <td>Port of Entry</td>
       <td>
           <select id="poe-dropdown" style="width: 100%;">
-            <option value="">-- Select a Port --</option>
+            <option value="">-- POE 선택 --</option>
           </select>
       </td>
     </tr> 
@@ -835,7 +835,7 @@ async function initializePoeDropdown(path) {
       throw new TypeError("POE dropdown data is not an array. Check JSON format.");
     }
 
-    resetDropdown(poeDropdown, "-- Select a Port --");
+    resetDropdown(poeDropdown, "-- POE 선택 --");
 
     poeOptions.forEach((option) => {
       const opt = document.createElement("option");
@@ -1025,7 +1025,7 @@ function resetDropdown(dropdownElement, placeholder = "-- CBM 선택2 --") {
 
 // CBM 드롭다운 업데이트
 function updateCbmDropdown(dropdownElement, selectedValue) {
-  resetDropdown(dropdownElement, "-- Select a CBM --");
+  resetDropdown(dropdownElement, "-- CBM 선택 --");
 
   // 1부터 60까지의 숫자 추가
   for (let i = 1; i <= 60; i++) {
@@ -1047,7 +1047,7 @@ function updateCbmDropdown(dropdownElement, selectedValue) {
 
 // 컨테이너 타입 드롭다운 업데이트
 function updateContainerDropdown(containerTypes, containerDropdown, selectedValue) {
-  resetDropdown(containerDropdown, "-- Select a Container --");
+  resetDropdown(containerDropdown, "-- CONTANIER TYPE 선택 --");
   containerTypes.forEach((type) => {
     const option = document.createElement("option");
     option.value = type;
