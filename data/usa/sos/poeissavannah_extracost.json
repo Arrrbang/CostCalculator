@@ -35,14 +35,14 @@
   "DRAYAGE": {
     "description": "40HC의 전체 비용은 $1,850(사바나), $1,055(아틀란타) 입니다.",
     "NonDiplomat": {
-      "CONSOLE": 17,
-      "20DRY": 1055,
-      "40HC": 1055
+      "CONSOLE": 30.83,
+      "20DRY": 1850,
+      "40HC": 1850
     },
     "Diplomat": {
-      "CONSOLE": 17,
-      "20DRY": 1055,
-      "40HC": 1055
+      "CONSOLE": 30.83,
+      "20DRY": 1850,
+      "40HC": 1850
     }
   },
 
