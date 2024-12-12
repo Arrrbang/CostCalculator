@@ -135,6 +135,13 @@
     "20DRY": 100,
     "40HC": 100
   },
+  "extra-cost-7": {
+    "name": "IKEA 조립 비용",
+    "description": "단가 : $70/EACH",
+    "CONSOLE": 70,
+    "20DRY": 70,
+    "40HC": 70
+  },
   "STAIR CHARGE": {
     "description": "해당 업체의 계단 비용 단가는 $10*cbm*floor 입니다.",
     "CBM단가": 10
