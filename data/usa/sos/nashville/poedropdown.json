@@ -6,5 +6,9 @@
   {
     "value": "savannah",
     "label": "Savannah, GA"
+  },
+  {
+    "value": "chicago",
+    "label": "Chicago, IL"
   }
 ]
