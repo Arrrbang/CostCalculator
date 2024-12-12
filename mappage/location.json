@@ -213,7 +213,7 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/columbia",
+        "path": "data/usa/sos/sccolumbia",
         "color": "blue"
       }
     ]
