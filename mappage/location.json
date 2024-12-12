@@ -325,5 +325,365 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Lafayette, IN",
+    "lat": 40.4138,
+    "lng": -86.8753,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/lafayette",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Indianapolis, IN",
+    "lat": 39.7684,
+    "lng": -86.1580,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/indianapolis",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bloomington, IN",
+    "lat": 39.1653,
+    "lng": -86.5264,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/bloomington",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Iowa City, IA",
+    "lat": 41.6611,
+    "lng": -91.5302,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/iowacity",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Des Moines, IA",
+    "lat": 41.5868,
+    "lng": -93.6250,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/desmoines",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kalamazoo, MI",
+    "lat": 42.2917,
+    "lng": -85.5872,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/kalamazoo",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ann Arbor, MI",
+    "lat": 42.2808,
+    "lng": -83.7430,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/annarbor",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lansing, MI",
+    "lat": 42.7325,
+    "lng": -84.5555,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/lansing",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Detroit, MI",
+    "lat": 42.3314,
+    "lng": -83.0458,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/detroit",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Troy, MI",
+    "lat": 42.6064,
+    "lng": -83.1496,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/troy",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Holland, MI",
+    "lat": 42.7899,
+    "lng": -86.1086,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/holland",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Midland, MI",
+    "lat": 43.6156,
+    "lng": -84.2473,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/midland",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "St. Louis, MO",
+    "lat": 38.6270,
+    "lng": -90.1994,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/stlouis",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Columbia, MO",
+    "lat": 38.9517,
+    "lng": -92.3341,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/mocolumbia",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Cincinnati, OH",
+    "lat": 39.1031,
+    "lng": -84.5120,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/cincinnati",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Dayton, OH",
+    "lat": 39.7589,
+    "lng": -84.1916,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/dayton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Cleveland, OH",
+    "lat": 41.4993,
+    "lng": -81.6944,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/cleveland",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Akron, OH",
+    "lat": 41.0814,
+    "lng": -81.5190,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/akron",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Columbus, OH",
+    "lat": 39.9612,
+    "lng": -82.9988,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/columbus",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Milwaukee, WI",
+    "lat": 43.0389,
+    "lng": -87.9065,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/milwaukee",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Madison, WI",
+    "lat": 43.0731,
+    "lng": -89.4012,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/madison",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Minneapolis, MN",
+    "lat": 44.9778,
+    "lng": -93.2650,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/minneapolis",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "St. Paul, MN",
+    "lat": 44.9537,
+    "lng": -93.0900,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/stpaul",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rochester, MN",
+    "lat": 44.0121,
+    "lng": -92.4802,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/rochester",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kansas City, KS",
+    "lat": 39.1141,
+    "lng": -94.6275,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/kansascity",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Louisville, KY",
+    "lat": 38.2527,
+    "lng": -85.7585,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/louisville",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lexington, KY",
+    "lat": 38.0406,
+    "lng": -84.5037,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/lexington",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Pittsburgh, PA",
+    "lat": 40.4406,
+    "lng": -79.9959,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/pittsburgh",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lincoln, NE",
+    "lat": 40.8136,
+    "lng": -96.7026,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/lincoln",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Omaha, NE",
+    "lat": 41.2565,
+    "lng": -95.9345,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/omaha",
+        "color": "blue"
+      }
+    ]
   }
 ]
