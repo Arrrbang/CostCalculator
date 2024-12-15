@@ -414,18 +414,18 @@ function updateBasicDeliveryCost() {
 
   // 유효성 검사: CBM 값과 체크박스 상태 확인
   if (isNaN(selectedCBM) || selectedCBM < 1 || selectedCBM > 60) {
-    result.textContent = "None";
+    result.textContent = "";
     return;
   }
 
   if (!isNonDiplomat && !isDiplomat) {
-    result.textContent = "None"; // 기본값
+    result.textContent = ""; // 기본값
     return;
   }
 
   // NonDiplomat 또는 Diplomat 데이터 선택
   const dataCategory = isNonDiplomat ? dataNonDiplomat : dataDiplomat;
-  let costValue = "None"; // 기본값 설정
+  let costValue = ""; // 기본값 설정
 
   if (typeof dataCategory[selectedContainer] === "object") {
     // 컨테이너 타입이 있는 경우
@@ -456,7 +456,7 @@ function updateBasicDeliveryCost() {
     });
 
     // 범위 또는 개별값에 해당하는 비용 가져오기
-    costValue = rangeKey ? cbmData[rangeKey] : "None";
+    costValue = rangeKey ? cbmData[rangeKey] : "";
   }
 
   // 값이 숫자인 경우 화폐 단위를 추가
@@ -482,7 +482,7 @@ containerDropdown.addEventListener("change", updateBasicDeliveryCost);
 function updateDiplomatSensitiveResult(categoryKey) {
   const selectedContainer = containerDropdown.value; // 선택된 컨테이너 타입
   const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값 (숫자로 변환)
-  let result = "None"; // 초기 값 설정
+  let result = ""; // 초기 값 설정
 
   const categoryData = basicExtraCost[categoryKey];
 
@@ -512,7 +512,7 @@ function updateDiplomatSensitiveResult(categoryKey) {
       return false;
     });
     // 범위에 맞는 값을 출력
-    result = costData[rangeKey] || "None";
+    result = costData[rangeKey] || "";
   } 
   // 3. "단가" 항목도 없고, 값 그대로 출력
   else if (typeof costData === "number") {
@@ -524,13 +524,13 @@ function updateDiplomatSensitiveResult(categoryKey) {
   }
 
   // 5. 기본값이 없을 경우 단위 비용 처리
-  if (result === "None" && !isNaN(selectedCBM)) {
+  if (result === "" && !isNaN(selectedCBM)) {
     const defaultMultiplier = categoryData[role]?.unitMultiplier || 0;
     result = selectedCBM * defaultMultiplier;
   }
 
   // 6. 화폐 단위 추가
-  if (!isNaN(result) && result !== "None") {
+  if (!isNaN(result) && result !== "") {
     result = `${currencySymbol}${parseFloat(result).toLocaleString()}`; // 화폐 단위와 숫자 형식화
   }
 
@@ -539,7 +539,7 @@ function updateDiplomatSensitiveResult(categoryKey) {
   const valueElement = document.getElementById(`${categoryKey}-value`);
   const descriptionElement = document.getElementById(`${categoryKey}-description`);
 
-  if (labelElement) labelElement.textContent = categoryData.name || "NONE";
+  if (labelElement) labelElement.textContent = categoryData.name || "";
   if (valueElement) valueElement.textContent = result;
   if (descriptionElement) descriptionElement.textContent = categoryData.description || "";
 }
@@ -555,7 +555,7 @@ function calculateTotalCost() {
   const costValueElements = document.querySelectorAll('[id^="basic-cost-"][id$="-value"]');
 
   costValueElements.forEach(costValueElement => {
-    const costValueText = costValueElement.textContent || "None";
+    const costValueText = costValueElement.textContent || "";
 
     // 화폐 단위 및 숫자만 추출
     const costValue = parseFloat(costValueText.replace(/[\$€₩]/g, "").replace(/[^0-9.-]+/g, ""));
@@ -566,7 +566,7 @@ function calculateTotalCost() {
 
   // basic-delivery-value 값도 추가
   const basicDeliveryValueElement = document.getElementById("basic-delivery-value");
-  const basicDeliveryValueText = basicDeliveryValueElement ? basicDeliveryValueElement.textContent : "None";
+  const basicDeliveryValueText = basicDeliveryValueElement ? basicDeliveryValueElement.textContent : "";
 
   const basicDeliveryValue = parseFloat(basicDeliveryValueText.replace(/[\$€₩]/g, "").replace(/[^0-9.-]+/g, ""));
   if (!isNaN(basicDeliveryValue)) {
@@ -574,7 +574,7 @@ function calculateTotalCost() {
   }
 
   const ofcValueElement = document.getElementById("average-ofc-value");
-  const ofcValueText = ofcValueElement ? ofcValueElement.textContent : "None";
+  const ofcValueText = ofcValueElement ? ofcValueElement.textContent : "";
 
   const ofcValue = parseFloat(ofcValueText.replace(/[\$€₩]/g, "").replace(/[^0-9.-]+/g, ""));
   if (!isNaN(ofcValue)) {
@@ -615,7 +615,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function updateExtraCostResult(categoryKey) {
   const selectedContainer = containerDropdown.value; // 선택된 컨테이너 타입
   const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값 (숫자로 변환)
-  let result = "None"; // 초기 값 설정
+  let result = ""; // 초기 값 설정
 
   const categoryData = basicExtraCost[categoryKey];
 
@@ -642,7 +642,7 @@ function updateExtraCostResult(categoryKey) {
       return false;
     });
     // 범위에 맞는 값을 출력
-    result = costData[rangeKey] || "None";
+    result = costData[rangeKey] || "";
   } 
   // 3. "단가" 항목이 없고, 값 그대로 출력
   else if (typeof costData === "number") {
@@ -654,13 +654,13 @@ function updateExtraCostResult(categoryKey) {
   }
 
   // 5. 기본값이 없을 경우 단위 비용 처리
-  if (result === "None" && !isNaN(selectedCBM)) {
+  if (result === "" && !isNaN(selectedCBM)) {
     const defaultMultiplier = categoryData?.unitMultiplier || 0;
     result = selectedCBM * defaultMultiplier;
   }
 
   // 6. 화폐 단위 추가
-  if (!isNaN(result) && result !== "None") {
+  if (!isNaN(result) && result !== "") {
     result = `${currencySymbol}${parseFloat(result).toLocaleString()}`; // 화폐 단위와 숫자 형식화
   }
 
@@ -669,7 +669,7 @@ function updateExtraCostResult(categoryKey) {
   const valueElement = document.getElementById(`${categoryKey}-value`);
   const descriptionElement = document.getElementById(`${categoryKey}-description`);
 
-  if (labelElement) labelElement.textContent = categoryData.name || "NONE";
+  if (labelElement) labelElement.textContent = categoryData.name || "";
   if (valueElement) valueElement.textContent = result;
   if (descriptionElement) descriptionElement.textContent = categoryData.description || "";
 
@@ -737,7 +737,7 @@ function calculateStairCharge() {
     const stairCharge = cbmValue * (floorValue - 1) * cbmUnitCost; // floor-1로 계산
     stairChargeResult.textContent = `${currencySymbol}${stairCharge.toFixed(2)}`; // 소수점 2자리까지 표시
   } else {
-    stairChargeResult.textContent = "None"; // 기본값
+    stairChargeResult.textContent = ""; // 기본값
   }
 }
 
@@ -778,7 +778,7 @@ function updateHeavyItemDropdown() {
     // heavyitem-value 업데이트
     const valueElement = document.getElementById("heavyitem-value");
     if (valueElement) {
-      valueElement.textContent = calculatedValue !== "None" ? calculatedValue.toLocaleString() : "None";
+      valueElement.textContent = calculatedValue !== "" ? calculatedValue.toLocaleString() : "";
     }
   });
 }
@@ -836,7 +836,7 @@ function updatestorageperiodDropdown() {
       // 선택되지 않은 경우 기본값
       const valueElement = document.getElementById("storage-value");
       if (valueElement) {
-        valueElement.textContent = "None";
+        valueElement.textContent = "";
       }
     }
   });
