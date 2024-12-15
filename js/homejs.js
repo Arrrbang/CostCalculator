@@ -649,7 +649,7 @@ async function updateKrwValueWithAPI() {
         const krwValue = foreignValue * rate;
 
         // 결과 업데이트
-        krwValueElement.textContent = `${krwValue.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} KRW`;
+        krwValueElement.textContent = `${Math.floor(krwValue).toLocaleString()} KRW`;
     } catch (error) {
         console.error("환율 계산 중 오류 발생:", error);
         krwValueElement.textContent = "환율 데이터를 가져오는 중 오류 발생";
