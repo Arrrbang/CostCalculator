@@ -582,7 +582,12 @@ function calculateTotalCost() {
   }
 
   // 결과 출력: 화폐 단위를 포함한 형식
-  totalCostElement.textContent = `${currencySymbol || ""}${totalCost.toFixed(2).toLocaleString()}`;
+  const totalCostElement = document.getElementById("total-value"); // totalCostElement를 정의
+  if (totalCostElement) {
+    totalCostElement.textContent = `${currencySymbol || ""}${totalCost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  } else {
+    console.error("totalCostElement가 정의되지 않았습니다.");
+  }
 }
 
 // MutationObserver 설정
