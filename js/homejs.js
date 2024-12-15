@@ -182,7 +182,7 @@ async function fetchData() {
     }
 
 
-    const basePath = "https://arrrbang.github.io/frontend";
+    const basePath = "https://arrrbang.github.io/CostCalculator";
     const tableJsonPath = `${basePath}/${path}/poeis${poeValue}_tariff.json`;
     const modifiedPath = path.replace(/\/[^/]+\/?$/, "");
     const extraCostJsonPath = `${basePath}/${modifiedPath}/poeis${poeValue}_extracost.json`;
