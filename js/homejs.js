@@ -351,7 +351,7 @@ async function updateOfcValue() {
 
   // POE, 컨테이너 타입 값, 또는 CBM 값이 없을 경우 처리
   if (!poeValue || !containerType || isNaN(selectedCbm)) {
-    ofcValueElement.textContent = "값 없음";
+    ofcValueElement.textContent = "";
     return;
   }
 
@@ -371,7 +371,7 @@ async function updateOfcValue() {
 
     // 매칭 데이터가 없을 경우
     if (!matchingData) {
-      ofcValueElement.textContent = "값 없음";
+      ofcValueElement.textContent = "";
       return;
     }
 
@@ -383,7 +383,7 @@ async function updateOfcValue() {
         const consoleValue = (value40HC / 60) * selectedCbm;
         ofcValueElement.textContent = `${currencySymbol}${consoleValue.toFixed(2).toLocaleString()}`;
       } else {
-        ofcValueElement.textContent = "값 없음";
+        ofcValueElement.textContent = "";
       }
       return; // CONSOLE 값 처리 완료 후 함수 종료
     }
@@ -398,7 +398,7 @@ async function updateOfcValue() {
 
 
     // 값 업데이트
-    ofcValueElement.textContent = value !== null ? value : "값 없음";
+    ofcValueElement.textContent = value !== null ? value : "";
   } catch (error) {
     console.error("Error fetching OFC value:", error);
     ofcValueElement.textContent = "오류 발생";
