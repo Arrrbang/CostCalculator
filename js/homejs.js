@@ -376,17 +376,17 @@ async function updateOfcValue() {
     }
 
     // 컨테이너 타입이 CONSOLE인 경우 40HC 값 사용
-    if (containerType === "CONSOLE") {
-      const value40HC = matchingData[`value40HC`];
-      if (!isNaN(value40HC)) {
+if (containerType === "CONSOLE") {
+    const value40HC = matchingData[`value40HC`];
+    if (!isNaN(value40HC)) {
         // 40HC 값을 60으로 나누고 CBM 값을 곱한 결과 계산
         const consoleValue = (value40HC / 60) * selectedCbm;
-        ofcValueElement.textContent = `${currencySymbol}${consoleValue.toFixed(2).toLocaleString()}`;
-      } else {
+        ofcValueElement.textContent = `${currencySymbol}${Number(consoleValue).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+    } else {
         ofcValueElement.textContent = "";
-      }
-      return; // CONSOLE 값 처리 완료 후 함수 종료
     }
+    return; // CONSOLE 값 처리 완료 후 함수 종료
+}
 
     // 일반 컨테이너 타입 처리
     let value = matchingData[`value${containerType}`];
