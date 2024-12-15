@@ -18,7 +18,7 @@
       height: 100%; 
       background: 
         linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), /* 반투명 흰색 오버레이 */
-        url('https://arrrbang.github.io/frontend/image/background.jpg') no-repeat center center/cover;
+        url('https://arrrbang.github.io/CostCalculator/image/background.jpg') no-repeat center center/cover;
       filter: blur(10px); /* 블러 효과 */
       z-index: -1; /* 콘텐츠 뒤로 이동 */
     }
@@ -167,7 +167,7 @@
 <body>
 
   <div class="container">
-    <img src="https://arrrbang.github.io/frontend/image/pumexlogonew.png" alt="Login Icon">
+    <img src="https://arrrbang.github.io/CostCalculator/image/pumexlogonew.png" alt="Login Icon">
     <p>검색 방법을 선택해주세요.</p>
     <div class="button-container">
       <button class="button" onclick="window.location.href='listpage/';">리스트에서 검색</button>
@@ -181,7 +181,7 @@
       const token = localStorage.getItem('token'); // 로컬 스토리지에서 토큰 가져오기
       if (!token) {
         alert('로그인이 해제되었습니다. 다시 로그인해주세요.');
-        window.location.href = '/frontend/index.html'; // 로그인 페이지로 리다이렉션
+        window.location.href = '/CostCalculator/index.html'; // 로그인 페이지로 리다이렉션
         return;
       }
 
