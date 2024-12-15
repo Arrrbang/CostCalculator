@@ -608,6 +608,52 @@ document.addEventListener("DOMContentLoaded", () => {
   observeCostChanges(); // MutationObserver 활성화
 });
 
+//-------------------KRW 변환 부분---------------------------
+// 최신 환율 데이터를 가져와서 KRW 환산 값 업데이트
+async function updateKrwValueWithAPI() {
+    const totalValueElement = document.getElementById("total-value");
+    const krwValueElement = document.getElementById("krw-value");
+
+    if (!totalValueElement || !krwValueElement) {
+        console.error("필요한 DOM 요소를 찾을 수 없습니다.");
+        return;
+    }
+
+    // total-value에서 금액 추출
+    const totalValueText = totalValueElement.textContent || "";
+    const foreignValue = parseFloat(totalValueText.replace(/[\$€₩]/g, "").replace(/[^0-9.-]+/g, ""));
+
+    if (isNaN(foreignValue)) {
+        krwValueElement.textContent = "금액을 계산할 수 없습니다.";
+        return;
+    }
+
+    try {
+        // 환율 API 호출 (ExchangeRate-API 사용)
+        const response = await fetch("https://api.exchangerate-api.com/v4/latest/USD");
+        if (!response.ok) {
+            throw new Error("환율 데이터를 가져올 수 없습니다.");
+        }
+
+        const data = await response.json();
+
+        // currencySymbol에 맞는 환율 확인
+        const rate = data.rates["KRW"];
+        if (!rate) {
+            throw new Error("KRW 환율 데이터를 찾을 수 없습니다.");
+        }
+
+        // 원화로 변환
+        const krwValue = foreignValue * rate;
+
+        // 결과 업데이트
+        krwValueElement.textContent = `${krwValue.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} KRW`;
+    } catch (error) {
+        console.error("환율 계산 중 오류 발생:", error);
+        krwValueElement.textContent = "환율 데이터를 가져오는 중 오류 발생";
+    }
+}
+
 //-------------------extra cost 계산-------------------------
 function updateExtraCostResult(categoryKey) {
   const selectedContainer = containerDropdown.value; // 선택된 컨테이너 타입
@@ -849,6 +895,12 @@ document.addEventListener("DOMContentLoaded", () => {
   calculateStairCharge(); // 초기값 계산
   updateOfcValue(); // OFC 값 초기화
   calculateTotalCost();
+  updateKrwValueWithAPI(); // 초기값 업데이트
+    const observer = new MutationObserver(updateKrwValueWithAPI);
+    const totalCostElement = document.getElementById("total-value");
+    if (totalCostElement) {
+        observer.observe(totalCostElement, { childList: true });
+    }
 });
     
 
