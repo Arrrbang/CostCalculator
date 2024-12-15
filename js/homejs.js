@@ -57,6 +57,8 @@ const totalCostElement = document.getElementById("total-value");
 const poeDropdown = document.getElementById("poe-dropdown");
 const link1Element = document.getElementById("link1");
 const link2Element = document.getElementById("link2");
+const notionBackendURL = 'https://notion-backend-liard.vercel.app/notion';
+const ofcValueElement = document.getElementById('average-ofc-value');
 
 // resetDropdown 함수 변경
 function resetDropdown(dropdownElement, placeholder = "-- CBM 선택 --") {
@@ -340,6 +342,68 @@ function updateContainerDropdown(containerTypes, containerDropdown, selectedValu
     containerDropdown.value = ""; // 선택값 초기화
   }
 }
+
+//------------------OFC 백앤드 처리----------------------------
+async function updateOfcValue() {
+  const poeValue = poeDropdown.value; // POE 드롭다운의 VALUE 값
+  const containerType = containerDropdown.value; // Container Type 값
+  const selectedCbm = parseInt(dropdown.value, 10); // 선택된 CBM 값
+
+  // POE, 컨테이너 타입 값, 또는 CBM 값이 없을 경우 처리
+  if (!poeValue || !containerType || isNaN(selectedCbm)) {
+    ofcValueElement.textContent = "값 없음";
+    return;
+  }
+
+  try {
+    // 백엔드 데이터 가져오기
+    const response = await fetch(notionBackendURL);
+    if (!response.ok) {
+      throw new Error(`백엔드 호출 실패: ${response.status}`);
+    }
+
+    const notionData = await response.json();
+
+    // 백엔드 데이터에서 POE 및 컨테이너 값에 맞는 데이터 찾기
+    const matchingData = notionData.data.find(
+      (item) => item.name.toLowerCase() === poeValue.toLowerCase() // 대소문자 무시 비교
+    );
+
+    // 매칭 데이터가 없을 경우
+    if (!matchingData) {
+      ofcValueElement.textContent = "값 없음";
+      return;
+    }
+
+    // 컨테이너 타입이 CONSOLE인 경우 40HC 값 사용
+    if (containerType === "CONSOLE") {
+      const value40HC = matchingData[`value40HC`];
+      if (!isNaN(value40HC)) {
+        // 40HC 값을 60으로 나누고 CBM 값을 곱한 결과 계산
+        const consoleValue = (value40HC / 60) * selectedCbm;
+        ofcValueElement.textContent = `${currencySymbol}${consoleValue.toFixed(2).toLocaleString()}`;
+      } else {
+        ofcValueElement.textContent = "값 없음";
+      }
+      return; // CONSOLE 값 처리 완료 후 함수 종료
+    }
+
+    // 일반 컨테이너 타입 처리
+    let value = matchingData[`value${containerType}`];
+
+    // 값이 숫자라면 화폐 단위를 포함해 형식화 (소수점 두 번째 자리까지)
+    if (!isNaN(value)) {
+      value = `${currencySymbol}${parseFloat(value).toFixed(2).toLocaleString()}`;
+    }
+
+
+    // 값 업데이트
+    ofcValueElement.textContent = value !== null ? value : "값 없음";
+  } catch (error) {
+    console.error("Error fetching OFC value:", error);
+    ofcValueElement.textContent = "오류 발생";
+  }
+}
     
 //------------------basic delivery 처리------------------------
 function updateBasicDeliveryCost() {
@@ -509,8 +573,16 @@ function calculateTotalCost() {
     totalCost += basicDeliveryValue;
   }
 
+  const ofcValueElement = document.getElementById("average-ofc-value");
+  const ofcValueText = ofcValueElement ? ofcValueElement.textContent : "None";
+
+  const ofcValue = parseFloat(ofcValueText.replace(/[\$€₩]/g, "").replace(/[^0-9.-]+/g, ""));
+  if (!isNaN(ofcValue)) {
+    totalCost += ofcValue;
+  }
+
   // 결과 출력: 화폐 단위를 포함한 형식
-  totalCostElement.textContent = `${currencySymbol || ""}${totalCost.toLocaleString()}`;
+  totalCostElement.textContent = `${currencySymbol || ""}${totalCost.toFixed(2).toLocaleString()}`;
 }
 
 // MutationObserver 설정
@@ -521,7 +593,8 @@ function observeCostChanges() {
   // basic-cost-?와 basic-delivery-value를 관찰
   const observedElements = [
     ...document.querySelectorAll('[id^="basic-cost-"][id$="-value"]'),
-    document.getElementById("basic-delivery-value")
+    document.getElementById("basic-delivery-value"),
+    document.getElementById("average-ofc-value")
   ];
 
   observedElements.forEach(element => {
@@ -777,12 +850,14 @@ function updatestorageperiodDropdown() {
 document.addEventListener("DOMContentLoaded", () => {
   updateStairChargeDropdown(); // 페이지 로드 후 초기화
   calculateStairCharge(); // 초기값 계산
+  updateOfcValue(); // OFC 값 초기화
   calculateTotalCost();
 });
     
 
 // 모든 카테고리를 동적으로 업데이트
 function updateAllCosts() {
+  updateOfcValue(); 
   // basic 비용 업데이트
   Object.keys(basicExtraCost).forEach((categoryKey) => {
     if (categoryKey.startsWith("basic-cost-")) {
