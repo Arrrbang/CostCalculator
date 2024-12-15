@@ -393,7 +393,7 @@ async function updateOfcValue() {
 
     // 값이 숫자라면 화폐 단위를 포함해 형식화 (소수점 두 번째 자리까지)
     if (!isNaN(value)) {
-      value = `${currencySymbol}${parseFloat(value).toFixed(2).toLocaleString()}`;
+        value = `${currencySymbol}${Number(value).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`;
     }
 
 
@@ -460,9 +460,10 @@ function updateBasicDeliveryCost() {
   }
 
   // 값이 숫자인 경우 화폐 단위를 추가
-  if (!isNaN(costValue)) {
-    costValue = `${currencySymbol}${parseFloat(costValue).toLocaleString()}`; // 화폐 단위 추가 및 형식화
-  }
+    if (!isNaN(costValue)) {
+        costValue = `${currencySymbol}${Number(costValue).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+    }
+
 
   // 결과 업데이트
   result.textContent = costValue;
@@ -531,8 +532,9 @@ function updateDiplomatSensitiveResult(categoryKey) {
 
   // 6. 화폐 단위 추가
   if (!isNaN(result) && result !== "") {
-    result = `${currencySymbol}${parseFloat(result).toLocaleString()}`; // 화폐 단위와 숫자 형식화
+      result = `${currencySymbol}${Number(result).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
   }
+
 
   // 7. 업데이트
   const labelElement = document.getElementById(`${categoryKey}-label`);
@@ -703,9 +705,10 @@ function updateExtraCostResult(categoryKey) {
   }
 
   // 6. 화폐 단위 추가
-  if (!isNaN(result) && result !== "") {
-    result = `${currencySymbol}${parseFloat(result).toLocaleString()}`; // 화폐 단위와 숫자 형식화
-  }
+if (!isNaN(result) && result !== "") {
+    result = `${currencySymbol}${Number(result).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+}
+
 
   // 7. 업데이트
   const labelElement = document.getElementById(`${categoryKey}-label`);
