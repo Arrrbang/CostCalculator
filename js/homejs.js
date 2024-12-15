@@ -573,14 +573,6 @@ function calculateTotalCost() {
     totalCost += basicDeliveryValue;
   }
 
-  const ofcValueElement = document.getElementById("average-ofc-value");
-  const ofcValueText = ofcValueElement ? ofcValueElement.textContent : "";
-
-  const ofcValue = parseFloat(ofcValueText.replace(/[\$€₩]/g, "").replace(/[^0-9.-]+/g, ""));
-  if (!isNaN(ofcValue)) {
-    totalCost += ofcValue;
-  }
-
   // 결과 출력: 화폐 단위를 포함한 형식
   const totalCostElement = document.getElementById("total-value"); // totalCostElement를 정의
   if (totalCostElement) {
