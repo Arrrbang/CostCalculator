@@ -125,6 +125,21 @@
   display: block; /* 블록 스타일 */
 }
 
+#average-ofc-label {
+  font-size: 1.2rem; /* 폰트 크기 */
+  font-weight: bold; /* 굵기 추가 */
+  text-align: left;
+  padding-left: 10px; /* 라벨 왼쪽 간격 */
+}
+
+#average-ofc-value {
+  font-size: 1.2rem; /* 폰트 크기 */
+  font-weight: bold; /* 굵기 추가 */
+  text-align: right; /* 오른쪽 정렬 */
+  padding-right: 10px; /* 값 오른쪽 간격 */
+  display: block; /* 블록 스타일 */
+}
+
    .form-container h2 {
     background-color: #8BC34A;
     color: white;
