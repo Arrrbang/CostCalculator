@@ -184,7 +184,7 @@
       const token = localStorage.getItem('token'); // 로컬 스토리지에서 토큰 가져오기
       if (!token) {
         alert('로그인이 해제되었습니다. 다시 로그인해주세요.');
-        window.location.href = '/frontend/index.html'; // 로그인 페이지로 리다이렉션
+        window.location.href = '/CostCalculator/index.html'; // 로그인 페이지로 리다이렉션
         return;
       }
 
@@ -216,7 +216,7 @@
 
 // Fetch locations from location.json
 const fetchLocations = async () => {
-  const response = await fetch('/frontend/mappage/location.json');
+  const response = await fetch('/CostCalculator/mappage/location.json');
   if (!response.ok) {
     throw new Error(`Failed to fetch location.json: ${response.status}`);
   }
@@ -327,7 +327,7 @@ const initializePage = async () => {
               alert("회사를 선택해주세요.");
               return;
             }
-            window.location.href = `/frontend/home.html?path=${encodeURIComponent(selectedPath)}`;
+            window.location.href = `/CostCalculator/home.html?path=${encodeURIComponent(selectedPath)}`;
           };
         });
 
