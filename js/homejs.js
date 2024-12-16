@@ -611,7 +611,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //-------------------KRW 변환 부분---------------------------
-// 최신 환율 데이터를 가져와서 KRW 환산 값 업데이트
 async function updateKrwValueWithAPI() {
     const totalValueElement = document.getElementById("total-value");
     const krwValueElement = document.getElementById("krw-value");
@@ -623,29 +622,55 @@ async function updateKrwValueWithAPI() {
 
     // total-value에서 금액 추출
     const totalValueText = totalValueElement.textContent || "";
-    const foreignValue = parseFloat(totalValueText.replace(/[\$€₩]/g, "").replace(/[^0-9.-]+/g, ""));
+    const foreignValue = parseFloat(totalValueText.replace(/[\$€₩£]/g, "").replace(/[^0-9.-]+/g, ""));
 
     if (isNaN(foreignValue)) {
         krwValueElement.textContent = "금액을 계산할 수 없습니다.";
         return;
     }
 
+    // 통화 기호 추출 (USD, GBP 등)
+    const currencySymbol = totalValueText.match(/[\$€₩£]/);
+
+    if (!currencySymbol) {
+        krwValueElement.textContent = "통화 기호를 찾을 수 없습니다.";
+        return;
+    }
+
     try {
         // 환율 API 호출 (ExchangeRate-API 사용)
-        const response = await fetch("https://api.exchangerate-api.com/v4/latest/USD");
+        const response = await fetch("https://api.exchangerate-api.com/v4/latest/KRW");
         if (!response.ok) {
             throw new Error("환율 데이터를 가져올 수 없습니다.");
         }
 
         const data = await response.json();
 
-        // currencySymbol에 맞는 환율 확인
-        const rate = data.rates["KRW"];
-        if (!rate) {
-            throw new Error("KRW 환율 데이터를 찾을 수 없습니다.");
+        // 선택된 통화에 맞는 환율 확인
+        let rate;
+
+        switch (currencySymbol[0]) {
+            case '$': // USD
+                rate = data.rates["USD"];
+                break;
+            case '€': // EUR
+                rate = data.rates["EUR"];
+                break;
+            case '₩': // KRW
+                rate = 1;
+                break;
+            case '£': // GBP
+                rate = data.rates["GBP"];
+                break;
+            default:
+                throw new Error("지원되지 않는 통화 기호입니다.");
         }
 
-        // 원화로 변환
+        if (!rate) {
+            throw new Error(`${currencySymbol[0]} 환율 데이터를 찾을 수 없습니다.`);
+        }
+
+        // KRW로 변환
         const krwValue = foreignValue * rate;
 
         // 결과 업데이트
