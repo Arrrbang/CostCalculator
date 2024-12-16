@@ -685,5 +685,3053 @@
         "color": "blue"
       }
     ]
-  }
+  },
+  {
+    "name": "Bristol, CT",
+    "lat": 41.6780,
+    "lng": -72.9390,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/bristol",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bridgeport, CT",
+    "lat": 41.1792,
+    "lng": -73.1890,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/bridgeport",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Danbury, CT",
+    "lat": 41.3948,
+    "lng": -73.4540,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/danbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Greenwich, CT",
+    "lat": 41.0290,
+    "lng": -73.6282,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/greenwich",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hartford, CT",
+    "lat": 41.7637,
+    "lng": -72.6851,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/hartford",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Manchester, CT",
+    "lat": 41.7637,
+    "lng": -72.5507,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/manchester",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "New Britain, CT",
+    "lat": 41.6612,
+    "lng": -72.7794,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/new_britain",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "New Haven, CT",
+    "lat": 41.3083,
+    "lng": -72.9279,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/new_haven",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "New London, CT",
+    "lat": 41.3540,
+    "lng": -72.0986,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/new_london",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Norwalk, CT",
+    "lat": 41.1176,
+    "lng": -73.4082,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/norwalk",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Norwich, CT",
+    "lat": 41.5430,
+    "lng": -72.0850,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/norwich",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Stamford, CT",
+    "lat": 41.0534,
+    "lng": -73.5387,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/stamford",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Waterbury, CT",
+    "lat": 41.5582,
+    "lng": -73.0515,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/waterbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "West Hartford, CT",
+    "lat": 41.7627,
+    "lng": -72.7484,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/west_hartford",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Windsor, CT",
+    "lat": 41.8520,
+    "lng": -72.6540,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/windsor",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Washington, DC",
+    "lat": 38.8954,
+    "lng": -77.0365,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/washington",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Newark, DE",
+    "lat": 39.6837,
+    "lng": -75.7491,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/newark",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Millsboro, DE",
+    "lat": 38.5709,
+    "lng": -75.2860,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/millsboro",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Amherst, MA",
+    "lat": 42.3736,
+    "lng": -72.5199,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/amherst",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Arlington, MA",
+    "lat": 42.4158,
+    "lng": -71.1562,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/arlington",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Boston, MA",
+    "lat": 42.3601,
+    "lng": -71.0589,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/boston",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Brockton, MA",
+    "lat": 42.0834,
+    "lng": -71.0184,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/brockton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Cambridge, MA",
+    "lat": 42.3736,
+    "lng": -71.1097,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/cambridge",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Everett, MA",
+    "lat": 42.4082,
+    "lng": -71.0361,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/everett",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Fall River, MA",
+    "lat": 41.7015,
+    "lng": -71.1552,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/fall_river",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lawrence, MA",
+    "lat": 42.7070,
+    "lng": -71.1630,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/lawrence",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Leominster, MA",
+    "lat": 42.5251,
+    "lng": -71.7594,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/leominster",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lexington, MA",
+    "lat": 42.4478,
+    "lng": -71.2256,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/lexington",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lowell, MA",
+    "lat": 42.6334,
+    "lng": -71.3162,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/lowell",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lynn, MA",
+    "lat": 42.4668,
+    "lng": -70.9495,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/lynn",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Medford, MA",
+    "lat": 42.4192,
+    "lng": -71.1062,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/medford",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "New Bedford, MA",
+    "lat": 41.6362,
+    "lng": -70.9340,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/new_bedford",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Newton, MA",
+    "lat": 42.3370,
+    "lng": -71.2092,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/newton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Northampton, MA",
+    "lat": 42.3250,
+    "lng": -72.6395,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/northampton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Quincy, MA",
+    "lat": 42.2529,
+    "lng": -71.0023,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/quincy",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Salem, MA",
+    "lat": 42.5195,
+    "lng": -70.8967,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/salem",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Springfield, MA",
+    "lat": 42.1015,
+    "lng": -72.5898,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/springfield",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Taunton, MA",
+    "lat": 41.9003,
+    "lng": -71.0892,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/taunton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Worcester, MA",
+    "lat": 42.2626,
+    "lng": -71.8023,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/worcester",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Annapolis, MD",
+    "lat": 38.9784,
+    "lng": -76.4922,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/annapolis",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Baltimore, MD",
+    "lat": 39.2904,
+    "lng": -76.6122,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/baltimore",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Berlin, MD",
+    "lat": 38.3189,
+    "lng": -75.2113,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/berlin",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Brunswick, MD",
+    "lat": 39.2904,
+    "lng": -77.6260,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/brunswick",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Clarksburg, MD",
+    "lat": 39.2074,
+    "lng": -77.2710,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/clarksburg",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "College Park, MD",
+    "lat": 38.9794,
+    "lng": -76.9378,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/college_park",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Columbia, MD",
+    "lat": 39.2041,
+    "lng": -76.8600,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/columbia",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Edgewood, MD",
+    "lat": 39.4145,
+    "lng": -76.3072,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/edgewood",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ellicott City, MD",
+    "lat": 39.2673,
+    "lng": -76.8005,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/ellicott_city",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Frederick, MD",
+    "lat": 39.4148,
+    "lng": -77.4105,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/frederick",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Gaithersburg, MD",
+    "lat": 39.1434,
+    "lng": -77.2014,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/gaithersburg",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lexington Park, MD",
+    "lat": 38.2410,
+    "lng": -76.4477,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/lexington_park",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Potomac, MD",
+    "lat": 39.0247,
+    "lng": -77.2056,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/potomac",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rockville, MD",
+    "lat": 39.0841,
+    "lng": -77.1528,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/rockville",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Salisbury, MD",
+    "lat": 38.3663,
+    "lng": -75.5992,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/salisbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Silver Spring, MD",
+    "lat": 38.9907,
+    "lng": -77.0261,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/silver_spring",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Westminster, MD",
+    "lat": 39.5742,
+    "lng": -77.0333,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/westminster",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Augusta, ME",
+    "lat": 44.3106,
+    "lng": -69.7795,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allmelocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bangor, ME",
+    "lat": 44.8012,
+    "lng": -68.7782,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allmelocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bath, ME",
+    "lat": 43.9144,
+    "lng": -69.0822,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allmelocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Biddeford, ME",
+    "lat": 43.4900,
+    "lng": -70.4540,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allmelocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Brunswick, ME",
+    "lat": 43.9147,
+    "lng": -69.9659,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allmelocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lewiston, ME",
+    "lat": 44.1005,
+    "lng": -70.2148,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allmelocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Portland, ME",
+    "lat": 43.6615,
+    "lng": -70.2553,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allmelocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Sanford, ME",
+    "lat": 43.4133,
+    "lng": -70.7765,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allmelocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Waterville, ME",
+    "lat": 44.5520,
+    "lng": -69.6313,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allmelocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Westbrook, ME",
+    "lat": 43.6695,
+    "lng": -70.3624,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allmelocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Claremont, NH",
+    "lat": 43.3722,
+    "lng": -72.3376,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/claremont",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Concord, NH",
+    "lat": 43.2081,
+    "lng": -71.5375,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/concord",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Dover, NH",
+    "lat": 43.1986,
+    "lng": -70.8747,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/dover",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Keene, NH",
+    "lat": 42.9334,
+    "lng": -72.2787,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/keene",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Laconia, NH",
+    "lat": 43.5246,
+    "lng": -71.4631,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/laconia",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lebanon, NH",
+    "lat": 43.6416,
+    "lng": -72.2558,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/lebanon",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Manchester, NH",
+    "lat": 42.9956,
+    "lng": -71.4548,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/manchester",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Nashua, NH",
+    "lat": 42.7655,
+    "lng": -71.4676,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/nashua",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rochester, NH",
+    "lat": 43.2965,
+    "lng": -70.9743,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/rochester",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Asbury Park, NJ",
+    "lat": 40.2214,
+    "lng": -74.0270,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/asbury_park",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Atlantic City, NJ",
+    "lat": 39.3643,
+    "lng": -74.4229,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/atlantic_city",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bloomfield, NJ",
+    "lat": 40.8584,
+    "lng": -74.1746,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/bloomfield",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Camden, NJ",
+    "lat": 39.9259,
+    "lng": -75.1195,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/camden",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Cliffside Park, NJ",
+    "lat": 40.8584,
+    "lng": -73.9935,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/cliffside_park",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Clinton, NJ",
+    "lat": 40.6228,
+    "lng": -74.9116,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/clinton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Closter, NJ",
+    "lat": 40.9512,
+    "lng": -73.9706,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/closter",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Cranbury, NJ",
+    "lat": 40.3075,
+    "lng": -74.5327,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/cranbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Cranford, NJ",
+    "lat": 40.6582,
+    "lng": -74.2951,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/cranford",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Dover, NJ",
+    "lat": 40.8840,
+    "lng": -74.5547,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/dover",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Edgewater, NJ",
+    "lat": 40.8250,
+    "lng": -73.9773,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/edgewater",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Elizabeth, NJ",
+    "lat": 40.6638,
+    "lng": -74.2107,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/elizabeth",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Englewood, NJ",
+    "lat": 40.8904,
+    "lng": -73.9711,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/englewood",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Fort Lee, NJ",
+    "lat": 40.8517,
+    "lng": -73.9717,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/fort_lee",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hackensack, NJ",
+    "lat": 40.8859,
+    "lng": -74.0435,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/hackensack",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Jersey City, NJ",
+    "lat": 40.7178,
+    "lng": -74.0431,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/jersey_city",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kearny, NJ",
+    "lat": 40.7684,
+    "lng": -74.1143,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/kearny",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Keyport, NJ",
+    "lat": 40.4481,
+    "lng": -74.1981,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/keyport",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lakewood, NJ",
+    "lat": 40.0984,
+    "lng": -74.2208,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/lakewood",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lawrenceville, NJ",
+    "lat": 40.2850,
+    "lng": -74.7561,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/lawrenceville",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Linden, NJ",
+    "lat": 40.6222,
+    "lng": -74.2407,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/linden",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Livingston, NJ",
+    "lat": 40.7903,
+    "lng": -74.3557,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/livingston",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lyndhurst, NJ",
+    "lat": 40.8580,
+    "lng": -74.0974,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/lyndhurst",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Madison, NJ",
+    "lat": 40.7589,
+    "lng": -74.4204,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/madison",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Morristown, NJ",
+    "lat": 40.7982,
+    "lng": -74.4775,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/morristown",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "New Brunswick, NJ",
+    "lat": 40.4862,
+    "lng": -74.4518,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/new_brunswick",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Newark, NJ",
+    "lat": 40.7357,
+    "lng": -74.1724,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/newark",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Orange, NJ",
+    "lat": 40.7673,
+    "lng": -74.2202,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/orange",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Palisades Park, NJ",
+    "lat": 40.8583,
+    "lng": -73.9966,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/palisades_park",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Paramus, NJ",
+    "lat": 40.9263,
+    "lng": -74.0703,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/paramus",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Paterson, NJ",
+    "lat": 40.9168,
+    "lng": -74.1718,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/paterson",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Plainfield, NJ",
+    "lat": 40.6334,
+    "lng": -74.4074,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/plainfield",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Point Pleasant, NJ",
+    "lat": 40.0905,
+    "lng": -74.0704,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/point_pleasant",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Princeton, NJ",
+    "lat": 40.3505,
+    "lng": -74.6514,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/princeton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ridgefield, NJ",
+    "lat": 40.8800,
+    "lng": -73.9962,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/ridgefield",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ridgewood, NJ",
+    "lat": 40.9800,
+    "lng": -74.1245,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/ridgewood",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Secaucus, NJ",
+    "lat": 40.7841,
+    "lng": -74.0622,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/secaucus",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Succasunna, NJ",
+    "lat": 40.8699,
+    "lng": -74.6831,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/succasunna",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tenafly, NJ",
+    "lat": 40.9339,
+    "lng": -73.9617,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/tenafly",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Trenton, NJ",
+    "lat": 40.2170,
+    "lng": -74.7429,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/trenton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Vineland, NJ",
+    "lat": 39.4860,
+    "lng": -75.0254,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/vineland",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Waterford, NJ",
+    "lat": 39.7923,
+    "lng": -74.8967,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/waterford",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Wayne, NJ",
+    "lat": 40.9527,
+    "lng": -74.2587,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Albany, NY",
+    "lat": 42.6526,
+    "lng": -73.7562,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/albany",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Albertson, NY",
+    "lat": 40.7831,
+    "lng": -73.6544,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/albertson",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Auburn, NY",
+    "lat": 42.9310,
+    "lng": -76.5643,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/auburn",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bay Shore, NY",
+    "lat": 40.7341,
+    "lng": -73.2216,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/bay_shore",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bayside, NY",
+    "lat": 40.7660,
+    "lng": -73.7787,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/bayside",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bedford, NY",
+    "lat": 41.2383,
+    "lng": -73.7029,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/bedford",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Belmont, NY",
+    "lat": 42.1265,
+    "lng": -77.4971,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/belmont",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Binghamton, NY",
+    "lat": 42.0987,
+    "lng": -75.9179,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/binghamton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Brentwood, NY",
+    "lat": 40.7899,
+    "lng": -73.2423,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/brentwood",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Brighton, NY",
+    "lat": 43.1548,
+    "lng": -77.6245,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/brighton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bronx, NY",
+    "lat": 40.8448,
+    "lng": -73.8648,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/bronx",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Brookhaven, NY",
+    "lat": 40.7893,
+    "lng": -72.9564,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/brookhaven",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Brooklyn, NY",
+    "lat": 40.6782,
+    "lng": -73.9442,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/brooklyn",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Buffalo, NY",
+    "lat": 42.8864,
+    "lng": -78.8784,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/buffalo",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Carmel, NY",
+    "lat": 41.4083,
+    "lng": -73.7810,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/carmel",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Centereach, NY",
+    "lat": 40.8656,
+    "lng": -73.1132,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/centereach",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Deer Park, NY",
+    "lat": 40.7597,
+    "lng": -73.3532,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/deer_park",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Dobbs Ferry, NY",
+    "lat": 41.0023,
+    "lng": -73.8660,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/dobbs_ferry",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Douglaston, NY",
+    "lat": 40.7719,
+    "lng": -73.7494,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/douglaston",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Elmira, NY",
+    "lat": 42.0899,
+    "lng": -76.8083,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/elmira",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Elmont, NY",
+    "lat": 40.6692,
+    "lng": -73.7196,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/elmont",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Fishers Island, NY",
+    "lat": 41.2322,
+    "lng": -71.9511,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/fishers_island",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Floral Park, NY",
+    "lat": 40.7421,
+    "lng": -73.7022,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/floral_park",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Flushing, NY",
+    "lat": 40.7769,
+    "lng": -73.8293,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/flushing",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Franklin Square, NY",
+    "lat": 40.7231,
+    "lng": -73.6540,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/franklin_square",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Fresh Meadows, NY",
+    "lat": 40.7405,
+    "lng": -73.7927,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/fresh_meadows",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Garden City, NY",
+    "lat": 40.7265,
+    "lng": -73.6452,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/garden_city",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Glens Falls, NY",
+    "lat": 43.3095,
+    "lng": -73.6441,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/glens_falls",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Great Neck, NY",
+    "lat": 40.7903,
+    "lng": -73.7295,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/great_neck",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Harrison, NY",
+    "lat": 40.9740,
+    "lng": -73.7156,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/harrison",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hauppauge, NY",
+    "lat": 40.8283,
+    "lng": -73.2847,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/hauppauge",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Huntington, NY",
+    "lat": 40.8681,
+    "lng": -73.4248,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/huntington",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ithaca, NY",
+    "lat": 42.4411,
+    "lng": -76.5019,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/ithaca",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Jamaica, NY",
+    "lat": 40.7056,
+    "lng": -73.7883,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/jamaica",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kingston, NY",
+    "lat": 41.9270,
+    "lng": -73.9977,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/kingston",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lancaster, NY",
+    "lat": 42.8973,
+    "lng": -78.6557,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/lancaster",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lindenhurst, NY",
+    "lat": 40.6856,
+    "lng": -73.3774,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/lindenhurst",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Little Falls, NY",
+    "lat": 43.0814,
+    "lng": -74.1866,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/little_falls",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lockport, NY",
+    "lat": 43.1558,
+    "lng": -78.6944,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/lockport",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Long Island City, NY",
+    "lat": 40.7447,
+    "lng": -73.9483,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/long_island_city",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Manhattan, NY",
+    "lat": 40.7831,
+    "lng": -73.9712,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/manhattan",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Middletown, NY",
+    "lat": 41.4405,
+    "lng": -74.6903,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/middletown",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Niagara Falls, NY",
+    "lat": 43.0962,
+    "lng": -79.0377,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/niagara_falls",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Oceanside, NY",
+    "lat": 40.6546,
+    "lng": -73.6449,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/oceanside",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Oyster Bay, NY",
+    "lat": 40.8612,
+    "lng": -73.4991,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/oyster_bay",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Plainview, NY",
+    "lat": 40.7704,
+    "lng": -73.4810,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/plainview",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Port Jefferson, NY",
+    "lat": 40.9521,
+    "lng": -73.0665,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/port_jefferson",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Port Washington, NY",
+    "lat": 40.8237,
+    "lng": -73.7012,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/port_washington",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Poughkeepsie, NY",
+    "lat": 41.7004,
+    "lng": -73.9206,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/poughkeepsie",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Queens, NY",
+    "lat": 40.7282,
+    "lng": -73.7949,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/queens",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rochester, NY",
+    "lat": 43.1566,
+    "lng": -77.6088,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/rochester",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rome, NY",
+    "lat": 43.2113,
+    "lng": -75.4550,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/rome",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Salamanca, NY",
+    "lat": 42.1789,
+    "lng": -78.7644,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/salamanca",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Staten Island, NY",
+    "lat": 40.5795,
+    "lng": -74.1502,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/staten_island",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Stony Brook, NY",
+    "lat": 40.9115,
+    "lng": -73.1232,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/stony_brook",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Syracuse, NY",
+    "lat": 43.0481,
+    "lng": -76.1474,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/syracuse",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tappan, NY",
+    "lat": 41.0317,
+    "lng": -73.9435,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/tappan",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tarrytown, NY",
+    "lat": 41.0853,
+    "lng": -73.8512,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/tarrytown",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tonawanda, NY",
+    "lat": 43.0225,
+    "lng": -78.8815,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/tonawanda",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Troy, NY",
+    "lat": 42.7312,
+    "lng": -73.6918,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/troy",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Utica, NY",
+    "lat": 43.1009,
+    "lng": -75.2327,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/utica",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Watertown, NY",
+    "lat": 43.9701,
+    "lng": -75.9100,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/watertown",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "White Plains, NY",
+    "lat": 41.0334,
+    "lng": -73.7629,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/white_plains",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Yonkers, NY",
+    "lat": 40.9312,
+    "lng": -73.8988,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/yonkers",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Allentown, PA",
+    "lat": 40.6084,
+    "lng": -75.4902,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allentown",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Altoona, PA",
+    "lat": 40.5187,
+    "lng": -78.3947,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/altoona",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bedford, PA",
+    "lat": 40.0117,
+    "lng": -78.5030,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/bedford",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bellefonte, PA",
+    "lat": 40.9340,
+    "lng": -77.7834,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/bellefonte",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bethlehem, PA",
+    "lat": 40.6250,
+    "lng": -75.3705,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/bethlehem",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bloomsburg, PA",
+    "lat": 41.0042,
+    "lng": -76.4589,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/bloomsburg",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bristol, PA",
+    "lat": 40.0850,
+    "lng": -74.8581,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/bristol",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Camp Hill, PA",
+    "lat": 40.2397,
+    "lng": -76.9241,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/camp_hill",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Churchville, PA",
+    "lat": 40.1630,
+    "lng": -75.0295,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/churchville",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Erie, PA",
+    "lat": 42.1292,
+    "lng": -80.0851,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/erie",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Harrisburg, PA",
+    "lat": 40.2737,
+    "lng": -76.8844,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/harrisburg",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Johnstown, PA",
+    "lat": 40.3206,
+    "lng": -78.9225,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/johnstown",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lancaster, PA",
+    "lat": 40.0379,
+    "lng": -76.3055,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/lancaster",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "New Castle, PA",
+    "lat": 41.0047,
+    "lng": -80.3452,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/new_castle",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "New Hope, PA",
+    "lat": 40.3623,
+    "lng": -74.9482,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/new_hope",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Norristown, PA",
+    "lat": 40.1213,
+    "lng": -75.3397,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/norristown",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Philadelphia, PA",
+    "lat": 39.9526,
+    "lng": -75.1652,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/philadelphia",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Pittsburgh, PA",
+    "lat": 40.4406,
+    "lng": -79.9959,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/pittsburgh",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Pittston, PA",
+    "lat": 41.3207,
+    "lng": -75.8070,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/pittston",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Reading, PA",
+    "lat": 40.3357,
+    "lng": -75.9269,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/reading",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Scranton, PA",
+    "lat": 41.4089,
+    "lng": -75.6624,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/scranton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "State College, PA",
+    "lat": 40.7934,
+    "lng": -77.8600,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/state_college",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Sunbury, PA",
+    "lat": 40.8612,
+    "lng": -76.7915,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/sunbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Warren, PA",
+    "lat": 41.8449,
+    "lng": -79.1451,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/warren",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Warrington, PA",
+    "lat": 40.2372,
+    "lng": -75.1504,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/warrington",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Wilkes-Barre, PA",
+    "lat": 41.2459,
+    "lng": -75.8813,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/wilkes_barre",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Wilkinsburg, PA",
+    "lat": 40.4414,
+    "lng": -79.8744,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/wilkinsburg",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "York, PA",
+    "lat": 39.9626,
+    "lng": -76.7288,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/york",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Providence, RI",
+    "lat": 41.8236,
+    "lng": -71.4222,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/providence",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Alberta, VA",
+    "lat": 36.6708,
+    "lng": -77.9297,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/alberta",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Alexandria, VA",
+    "lat": 38.8048,
+    "lng": -77.0469,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/alexandria",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Amherst, VA",
+    "lat": 37.5585,
+    "lng": -79.0331,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/amherst",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Annandale, VA",
+    "lat": 38.8343,
+    "lng": -77.1945,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/annandale",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Arlington, VA",
+    "lat": 38.8808,
+    "lng": -77.0910,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/arlington",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Austinvillle, VA",
+    "lat": 37.5044,
+    "lng": -80.5672,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/austinvillle",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Blackridge, VA",
+    "lat": 37.4246,
+    "lng": -77.9273,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/blackridge",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bowling Green, VA",
+    "lat": 38.0486,
+    "lng": -77.2782,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/bowling_green",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bristol, VA",
+    "lat": 36.5951,
+    "lng": -82.1888,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/bristol",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Callao, VA",
+    "lat": 37.9444,
+    "lng": -76.6667,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/callao",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Centreville, VA",
+    "lat": 38.8287,
+    "lng": -77.4311,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/centreville",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Charlottesville, VA",
+    "lat": 38.0293,
+    "lng": -78.4767,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/charlottesville",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Fairfax, VA",
+    "lat": 38.8462,
+    "lng": -77.3064,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/fairfax",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Fredericksburg, VA",
+    "lat": 38.3032,
+    "lng": -77.4605,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/fredericksburg",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hanover, VA",
+    "lat": 37.7217,
+    "lng": -77.3804,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/hanover",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Harrisonburg, VA",
+    "lat": 38.4484,
+    "lng": -78.8689,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/harrisonburg",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "La Crosse, VA",
+    "lat": 36.9984,
+    "lng": -78.1482,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/la_crosse",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lawrenceville, VA",
+    "lat": 36.7347,
+    "lng": -77.5886,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/lawrenceville",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Leesburg, VA",
+    "lat": 39.1157,
+    "lng": -77.5636,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/leesburg",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lynchburg, VA",
+    "lat": 37.4138,
+    "lng": -79.1422,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/lynchburg",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "McLean, VA",
+    "lat": 38.9296,
+    "lng": -77.1793,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/mclean",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Manassas, VA",
+    "lat": 38.7509,
+    "lng": -77.4753,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/manassas",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Martinsville, VA",
+    "lat": 36.6850,
+    "lng": -79.8666,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/martinsville",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Norfolk, VA",
+    "lat": 36.8508,
+    "lng": -76.2859,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/norfolk",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Petersburg, VA",
+    "lat": 37.2279,
+    "lng": -77.4005,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/petersburg",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Portsmouth, VA",
+    "lat": 36.8354,
+    "lng": -76.2983,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/portsmouth",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Richmond, VA",
+    "lat": 37.5407,
+    "lng": -77.4360,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/richmond",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rockville, VA",
+    "lat": 37.6544,
+    "lng": -77.5382,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/rockville",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Springfield, VA",
+    "lat": 38.7910,
+    "lng": -77.1889,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/springfield",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Stafford, VA",
+    "lat": 38.3729,
+    "lng": -77.4105,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/stafford",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Victoria, VA",
+    "lat": 36.9819,
+    "lng": -77.9969,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/victoria",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Vienna, VA",
+    "lat": 38.9017,
+    "lng": -77.2654,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/vienna",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Virginia Beach, VA",
+    "lat": 36.8529,
+    "lng": -75.9783,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/virginia_beach",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Burlington, VT",
+    "lat": 44.4759,
+    "lng": -73.2121,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allvtlocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Montpelier, VT",
+    "lat": 44.2601,
+    "lng": -72.5754,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allvtlocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Stowe, VT",
+    "lat": 44.4671,
+    "lng": -72.6878,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allvtlocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Middlebury, VT",
+    "lat": 44.0165,
+    "lng": -73.1577,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allvtlocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Barre, VT",
+    "lat": 44.1982,
+    "lng": -72.4992,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allvtlocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rutland, VT",
+    "lat": 43.6098,
+    "lng": -72.9740,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allvtlocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Brattleboro, VT",
+    "lat": 42.8527,
+    "lng": -72.5563,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allvtlocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Essex Junction, VT",
+    "lat": 44.4955,
+    "lng": -73.1063,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allvtlocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "South Burlington, VT",
+    "lat": 44.4609,
+    "lng": -73.1502,
+    "links": [
+      {
+        "type": "KEY WORD",
+        "path": "data/usa/keyword/allvtlocation",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+  "name": "Morgantown, WV",
+  "lat": 39.6295,
+  "lng": -79.9559,
+  "links": [
+    {
+      "type": "KEY WORD",
+      "path": "data/usa/keyword/morgantown",
+      "color": "blue"
+    }
+  ]
+}
 ]
