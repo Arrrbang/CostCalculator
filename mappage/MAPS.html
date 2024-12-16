@@ -173,13 +173,13 @@
           if (!data.success) {
             alert('Session expired. Please log in again.');
             localStorage.removeItem('token'); // 유효하지 않은 토큰 삭제
-            window.location.href = '/frontend/index.html';
+            window.location.href = '/CostCalculator/index.html';
           }
         })
         .catch(() => {
           alert('Error verifying token. Redirecting to login page.');
           localStorage.removeItem('token');
-          window.location.href = '/frontend/index.html';
+          window.location.href = '/CostCalculator/index.html';
         });
     }
 
