@@ -671,7 +671,7 @@ async function updateKrwValueWithAPI() {
         }
 
         // KRW로 변환
-        const krwValue = foreignValue * rate;
+        const krwValue = foreignValue / rate;
 
         // 결과 업데이트
         krwValueElement.textContent = `${Math.floor(krwValue).toLocaleString()} KRW`;
