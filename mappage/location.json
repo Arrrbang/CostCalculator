@@ -933,7 +933,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/boston",
+        "path": "data/usa/keyword/arlington",
         "color": "blue"
       }
     ]
@@ -945,7 +945,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/brockton",
+        "path": "data/usa/keyword/arlington",
         "color": "blue"
       }
     ]
@@ -957,7 +957,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/cambridge",
+        "path": "data/usa/keyword/arlington",
         "color": "blue"
       }
     ]
@@ -969,7 +969,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/everett",
+        "path": "data/usa/keyword/arlington",
         "color": "blue"
       }
     ]
@@ -1017,7 +1017,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/lexington",
+        "path": "data/usa/keyword/arlington",
         "color": "blue"
       }
     ]
@@ -1029,7 +1029,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/lowell",
+        "path": "data/usa/keyword/arlington",
         "color": "blue"
       }
     ]
@@ -1041,7 +1041,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/lynn",
+        "path": "data/usa/keyword/arlington",
         "color": "blue"
       }
     ]
@@ -1053,7 +1053,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/medford",
+        "path": "data/usa/keyword/arlington",
         "color": "blue"
       }
     ]
@@ -1065,7 +1065,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/new_bedford",
+        "path": "data/usa/keyword/arlington",
         "color": "blue"
       }
     ]
@@ -1077,7 +1077,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/newton",
+        "path": "data/usa/keyword/arlington",
         "color": "blue"
       }
     ]
