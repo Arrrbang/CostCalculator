@@ -34,127 +34,88 @@
     "description": "콘솔 단가는 40HC 60CBM 콘솔 기준, 20/40동일",
     "NonDiplomat": {
       "CONSOLE": {
-        "단가": 17.58
+        "단가": 15.83
       },
-      "20DRY": 1055,
-      "40HC": 1055
+      "20DRY": 950,
+      "40HC": 950
     },
     "Diplomat": {
       "CONSOLE": {
-        "단가": 17.58
+        "단가": 15.83
       },
-      "20DRY": 1055,
-      "40HC": 1055
-    }
-  },
-  "basic-cost-4": {
-    "name": "DEVANNING",
-    "description": "콘솔 단가는 40HC 60CBM 콘솔 기준",
-    "NonDiplomat": {
-      "CONSOLE": {
-        "단가": 5
-      },
-      "20DRY": 200,
-      "40HC": 300
-    },
-    "Diplomat": {
-      "CONSOLE": {
-        "단가": 5
-      },
-      "20DRY": 200,
-      "40HC": 300
-    }
-  },
-  "basic-cost-5": {
-    "name": "CUSTOMER ENTRY",
-    "description": "BL당 $170 발생",
-    "NonDiplomat": {
-      "CONSOLE": 170,
-      "20DRY": 170,
-      "40HC": 170
-    },
-    "Diplomat": {
-      "CONSOLE": 170,
-      "20DRY": 170,
-      "40HC": 170
+      "20DRY": 950,
+      "40HC": 950
     }
   },
   "extra-cost-1": {
-    "name": "INSPECTION",
-    "description": "컨테이너 전체 검사에 걸렸을 경우 발생되는 금액",
-    "CONSOLE": {
-      "단가": 3.5
-    },
-    "20DRY": 200,
-    "40HC": 200
-  },
-  "extra-cost-2": {
     "name": "FULL SETTING",
     "description": "",
     "CONSOLE": {
-      "단가": 30
+      "단가": 25
     },
     "20DRY": {
-      "단가": 30
+      "단가": 25
     },
     "40HC": {
-      "단가": 30
+      "단가": 25
     }
   },
-  "extra-cost-3": {
-    "name": "SHUTTLE CHARGE",
-    "description": "",
-    "CONSOLE": "미확인",
-    "20DRY": "미확인",
-    "40HC": "미확인"
-  },
-  "extra-cost-4": {
-    "name": "LONG CARRY CHARGE",
-    "description": "",
-    "CONSOLE": "미확인",
-    "20DRY": "미확인",
-    "40HC": "미확인"
-  },
-  "extra-cost-5": {
-    "name": "WEEKEND CHARGE",
-    "description": "",
-    "CONSOLE": {
-      "1-40": 800,
-      "41-60": 1200
-    },
-    "20DRY": 800,
-    "40HC": {
-      "1-40": 800,
-      "41-60": 1200
-    }
-  },
-  "extra-cost-6": {
+  "extra-cost-2": {
     "name": "UPLIGHT PIANO",
     "description": "",
-    "CONSOLE": 100,
-    "20DRY": 100,
-    "40HC": 100
+    "CONSOLE": 200,
+    "20DRY": 200,
+    "40HC": 200
   },
-  "extra-cost-7": {
-    "name": "IKEA 조립 비용",
-    "description": "단가 : $70/EACH",
-    "CONSOLE": 70,
-    "20DRY": 70,
-    "40HC": 70
+    "extra-cost-3": {
+    "name": "추가 쓰레기 수거",
+    "description": "배송일 이후 쓰레기 수거 진행 추가 비용",
+    "CONSOLE": {
+      "단가": 10,
+      1-20: 150
+    },
+    "20DRY": {
+      "단가": 10,
+      1-20: 150
+    },
+    "40HC": {
+      "단가": 10,
+      1-20: 150
+    }
+  },
+    "extra-cost-4": {
+    "name": "NORMAL 쓰레기 수거 비용",
+    "description": "NORMAL 셋팅 진행, 쓰레기 수거할 때 비용",
+    "CONSOLE": {
+      "단가": 5
+    },
+    "20DRY": {
+      "단가": 5
+    },
+    "40HC": {
+      "단가": 5
+    }
+  },
+    "extra-cost-5": {
+    "name": "우든 박스 처리 비용",
+    "description": "1UNIT에 $50",
+    "CONSOLE": 50,
+    "20DRY": 50,
+    "40HC": 50
   },
   "STAIR CHARGE": {
-    "description": "해당 업체의 계단 비용 단가는 $10*cbm*floor 입니다.",
-    "CBM단가": 10
+    "description": "3층: $15/CBM, 4층: $20/CBM",
+    "CBM단가": 20
   },
   "HEAVY ITEM": {
-    "description": "$100/1UNIT, 계단으로 이동할 경우 1층당 $100",
+    "description": "",
     "단위": "UNIT",
     "단가": 100
   },
   "STORAGE CHARGE": {
-    "description": "창고 보관 비용 :  $4/CBM/WEEK (MIN:$20/WEEK)",
+    "description": "창고 보관 비용 :  $10/CBM/MONTH (2~4주 무료 보관)",
     "무료 보관 기간 일자": 14,
-    "보관 비용 단가": 4
+    "보관 비용 단가": 10
   },
   "DATA BASE": {
     "description": "해당 데이터 업데이트 일자는 2024.10 진행된 이트너스 비딩 조사 입니다."
