@@ -497,14 +497,8 @@ function updateDiplomatSensitiveResult(categoryKey) {
   // 해당 컨테이너 타입의 데이터 가져오기
   const costData = categoryData[role]?.[selectedContainer];
 
-  // 1. "단가"가 있는지 확인
-  if (typeof costData === "object" && costData["단가"]) {
-    const unitCost = parseFloat(costData["단가"]);
-    result = (selectedCBM * unitCost).toFixed(2); // CBM 값과 곱하기
-  } 
-  // 2. "단가"가 없고, CBM 범위가 있는지 확인
-  else if (typeof costData === "object") {
-    // 범위 처리: "1-30", "31-60" 같은 범위 체크
+  // 1. CBM 범위가 있는지 확인
+  if (typeof costData === "object") {
     const rangeKey = Object.keys(costData).find((key) => {
       if (key.includes("-")) {
         const [start, end] = key.split("-").map(Number);
@@ -512,31 +506,37 @@ function updateDiplomatSensitiveResult(categoryKey) {
       }
       return false;
     });
-    // 범위에 맞는 값을 출력
-    result = costData[rangeKey] || "";
+    
+    if (rangeKey) {
+      // 범위에 맞는 값을 출력
+      result = costData[rangeKey] || "";
+    } else if (costData["단가"]) {
+      // 범위가 없으면 "단가" 항목을 사용하여 계산
+      const unitCost = parseFloat(costData["단가"]);
+      result = (selectedCBM * unitCost).toFixed(2); // CBM 값과 곱하기
+    }
   } 
-  // 3. "단가" 항목도 없고, 값 그대로 출력
+  // 2. "단가" 항목이 없고, 값 그대로 출력
   else if (typeof costData === "number") {
     result = costData; // 값 그대로 출력
   } 
-  // 4. "단가" 항목도 없고, 문자 그대로 출력
+  // 3. "단가" 항목도 없고, 문자 그대로 출력
   else if (typeof costData === "string") {
     result = costData; // 문자 그대로 출력
   }
 
-  // 5. 기본값이 없을 경우 단위 비용 처리
+  // 4. 기본값이 없을 경우 단위 비용 처리
   if (result === "" && !isNaN(selectedCBM)) {
     const defaultMultiplier = categoryData[role]?.unitMultiplier || 0;
     result = selectedCBM * defaultMultiplier;
   }
 
-  // 6. 화폐 단위 추가
+  // 5. 화폐 단위 추가
   if (!isNaN(result) && result !== "") {
       result = `${currencySymbol}${Number(result).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
   }
 
-
-  // 7. 업데이트
+  // 6. 업데이트
   const labelElement = document.getElementById(`${categoryKey}-label`);
   const valueElement = document.getElementById(`${categoryKey}-value`);
   const descriptionElement = document.getElementById(`${categoryKey}-description`);
@@ -545,8 +545,6 @@ function updateDiplomatSensitiveResult(categoryKey) {
   if (valueElement) valueElement.textContent = result;
   if (descriptionElement) descriptionElement.textContent = categoryData.description || "";
 }
-
-
 
 //------------------------------basic cost total 계산------------------------------
 // total-value 계산 함수
