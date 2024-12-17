@@ -705,7 +705,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/bridgeport",
+        "path": "data/usa/keyword/bristol",
         "color": "blue"
       }
     ]
@@ -717,7 +717,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/danbury",
+        "path": "data/usa/keyword/bristol",
         "color": "blue"
       }
     ]
@@ -777,7 +777,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/new_haven",
+        "path": "data/usa/keyword/bristol",
         "color": "blue"
       }
     ]
@@ -801,7 +801,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/norwalk",
+        "path": "data/usa/keyword/bristol",
         "color": "blue"
       }
     ]
@@ -813,7 +813,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/norwich",
+        "path": "data/usa/keyword/bristol",
         "color": "blue"
       }
     ]
@@ -837,7 +837,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/waterbury",
+        "path": "data/usa/keyword/bristol",
         "color": "blue"
       }
     ]
