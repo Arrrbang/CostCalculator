@@ -696,12 +696,26 @@ function updateExtraCostResult(categoryKey) {
   // 해당 컨테이너 타입의 데이터 가져오기
   const costData = categoryData[selectedContainer];
 
-  // 1. "단가"가 있는지 확인
+  // 1. "단가"가 있는지 확인하고, CBM 범위가 있는지 확인
   if (typeof costData === "object" && costData["단가"]) {
-    const unitCost = parseFloat(costData["단가"]);
-    result = (selectedCBM * unitCost).toFixed(2); // CBM 값과 곱하기
-  }
-  // 2. "단가"가 없고, CBM 범위가 있는지 확인
+    // CBM 범위가 있는 경우 범위 적용
+    const rangeKey = Object.keys(costData).find((key) => {
+      if (key.includes("-")) {
+        const [start, end] = key.split("-").map(Number);
+        return selectedCBM >= start && selectedCBM <= end;
+      }
+      return false;
+    });
+
+    if (rangeKey) {
+      result = costData[rangeKey] || "";
+    } else {
+      // 범위가 없으면 단가를 사용
+      const unitCost = parseFloat(costData["단가"]);
+      result = (selectedCBM * unitCost).toFixed(2); // CBM 값과 곱하기
+    }
+  } 
+  // 2. "단가" 항목이 없고, CBM 범위가 있는지 확인
   else if (typeof costData === "object") {
     // 범위 처리: "1-30", "31-60" 같은 범위 체크
     const rangeKey = Object.keys(costData).find((key) => {
@@ -730,10 +744,9 @@ function updateExtraCostResult(categoryKey) {
   }
 
   // 6. 화폐 단위 추가
-if (!isNaN(result) && result !== "") {
+  if (!isNaN(result) && result !== "") {
     result = `${currencySymbol}${Number(result).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-}
-
+  }
 
   // 7. 업데이트
   const labelElement = document.getElementById(`${categoryKey}-label`);
@@ -743,9 +756,7 @@ if (!isNaN(result) && result !== "") {
   if (labelElement) labelElement.textContent = categoryData.name || "";
   if (valueElement) valueElement.textContent = result;
   if (descriptionElement) descriptionElement.textContent = categoryData.description || "";
-
 }
-
 
 //-------------------stair carry charge 업데이트---------------
 // POE 드롭다운 선택 시 설명 업데이트 및 계단 비용 계산
