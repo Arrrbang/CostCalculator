@@ -753,7 +753,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/manchester",
+        "path": "data/usa/keyword/hartford",
         "color": "blue"
       }
     ]
@@ -789,7 +789,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/new_london",
+        "path": "data/usa/keyword/hartford",
         "color": "blue"
       }
     ]
@@ -849,7 +849,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/west_hartford",
+        "path": "data/usa/keyword/hartford",
         "color": "blue"
       }
     ]
@@ -861,7 +861,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/windsor",
+        "path": "data/usa/keyword/hartford",
         "color": "blue"
       }
     ]
