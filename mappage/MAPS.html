@@ -2,10 +2,15 @@
 <html>
 <head>
   <title>퓨멕스 현지비용 계산기 beta</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css" />
+  <!-- Leaflet Awesome Markers CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+  <!-- Bootstrap CSS for Glyphicons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Leaflet JS -->
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+  <!-- Leaflet Awesome Markers JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -27,7 +32,7 @@
       width: 150px; /* 이미지 너비 */
       margin-bottom: 30px; 
     }
-    
+
     #map {
       flex: 1;
       height: auto;
@@ -68,14 +73,14 @@
     #results div:hover {
       background: #f0f0f0;
     }
-    
+
      input[type="text"], input[type="search"] {
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
       font-size: 16px;
     }
-    
+
     .leaflet-popup-content {
       white-space: nowrap; /* 텍스트 줄바꿈 방지 */
       text-align: center;
@@ -86,16 +91,6 @@
         font-size: 1.2em; /* 볼드 텍스트 크기 조정 (선택 사항) */
       }
 
-      .awesome-marker {
-        background-color: transparent !important; /* 배경 투명화 */
-        border: none !important; /* 불필요한 테두리 제거 */
-      }
-    
-
-
-
-
-        
 @media (max-width: 480px) {
   #map {
     height: calc(100vh - 10%); /* 지도를 전체 화면에 가깝게 확장 */
@@ -141,7 +136,7 @@
     padding: 10px 15px; /* 버튼 내부 여백 증가 */
   }
 }
-        
+
   </style>
 </head>
 <body>
@@ -154,7 +149,7 @@
   </div>
   <div id="results"></div>
   <div id="map"></div>
-  
+
   <script>
     // 인증 확인: 토큰 검증
     function verifyToken() {
@@ -190,7 +185,7 @@
 
     // 페이지 로드 시 토큰 확인
     verifyToken();
-    
+
 // 지도 초기화 (줌 레벨에 따른 마커 표시 설정)
 var map = L.map('map', {
   minZoom: 1,  // 최소 줌은 설정하지 않음
@@ -340,15 +335,14 @@ function handleSearchResults(data) {
     resultsContainer.appendChild(resultElement);
 
     // 노란색 마커 아이콘 생성
-    const yellowCustomIcon = L.divIcon({
-      className: 'custom-yellow-marker',
-      html: '<div style="background: #FFD700; border-radius: 50%; width: 30px; height: 30px; text-align: center; color: white; line-height: 30px;">🔍</div>',
-      iconSize: [30, 30],
-      iconAnchor: [15, 30],
-      popupAnchor: [0, -30]
+    const yellowIcon = L.AwesomeMarkers.icon({
+      icon: 'search', // 사용할 아이콘 (Font Awesome 아이콘)
+      iconColor: 'white', // 아이콘의 색상
+      markerColor: 'yellow', // 마커의 배경 색상
+      prefix: 'fa', // Font Awesome 아이콘을 사용하기 위한 설정
+      iconSize: [30, 30], // 아이콘 크기 확대 (기본 크기의 1.5배)
+      iconAnchor: [15, 15] // 아이콘의 앵커 위치 설정
     });
-
-    const marker = L.marker([result.lat, result.lon], { icon: yellowCustomIcon  });
 
     const marker = L.marker([result.lat, result.lon], { icon: yellowIcon });
     // 마커 z-index를 조정하여 기존 마커 뒤로 배치
