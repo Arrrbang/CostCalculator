@@ -2,15 +2,10 @@
 <html>
 <head>
   <title>퓨멕스 현지비용 계산기 beta</title>
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css" />
-  <!-- Leaflet Awesome Markers CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
-  <!-- Bootstrap CSS for Glyphicons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- Leaflet JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
-  <!-- Leaflet Awesome Markers JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -336,19 +331,20 @@ function handleSearchResults(data) {
 
     // 노란색 마커 아이콘 생성
     const yellowIcon = L.AwesomeMarkers.icon({
-        icon: 'search',
-        iconColor: 'white',
-        markerColor: 'yellow',
-        prefix: 'fa',
-        iconSize: [45, 45], // 아이콘 전체 크기
-        iconAnchor: [22, 45], // 중앙 하단 기준점 (x=22, y=45)
-        popupAnchor: [0, -45] // 팝업 위치 위로 이동
-      });
+      icon: 'search',          // 돋보기 아이콘
+      iconColor: 'white',      // 아이콘 내부 색상
+      markerColor: 'yellow',   // 마커 배경 색상
+      prefix: 'fa',            // Font Awesome 사용
+      iconSize: [35, 45],      // 아이콘 크기 조정
+      iconAnchor: [17, 42],    // 아이콘 기준점: 중앙 하단
+      popupAnchor: [0, -45]    // 팝업 기준점
+    });
 
     const marker = L.marker([result.lat, result.lon], { icon: yellowIcon });
 
     // 마커 z-index를 조정하여 기존 마커 뒤로 배치
     marker.setZIndexOffset(-1); // z-index를 -1로 설정하여 기존 마커 뒤에 배치
+    
 
     marker.addTo(map); // 지도에 마커 추가
   });
