@@ -1509,7 +1509,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/dover",
+        "path": "data/usa/keyword/concord",
         "color": "blue"
       }
     ]
@@ -1569,7 +1569,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/nashua",
+        "path": "data/usa/keyword/manchester",
         "color": "blue"
       }
     ]
@@ -1581,7 +1581,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/rochester",
+        "path": "data/usa/keyword/laconia",
         "color": "blue"
       }
     ]
