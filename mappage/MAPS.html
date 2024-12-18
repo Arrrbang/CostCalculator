@@ -91,15 +91,6 @@
         border: none !important; /* 불필요한 테두리 제거 */
       }
     
-      .awesome-marker-icon-yellow {
-        background-color: #FFD700 !important; /* 노란색 배경 */
-        border-color: #FFD700 !important; /* 테두리 색상 */
-      }
-    
-      /* 아이콘 색상도 강제 적용 */
-      .awesome-marker-icon-yellow i {
-        color: white !important; /* 돋보기 아이콘 색상을 흰색으로 */
-      }
 
 
 
@@ -351,17 +342,15 @@ function handleSearchResults(data) {
     resultsContainer.appendChild(resultElement);
 
     // 노란색 마커 아이콘 생성
-    const yellowIcon = L.AwesomeMarkers.icon({
-      icon: 'search',          // 돋보기 아이콘
-      iconColor: 'white',      // 아이콘 내부 색상
-      markerColor: 'yellow',   // 마커 배경 색상
-      prefix: 'fa',            // Font Awesome 사용
-      iconSize: [35, 45],      // 아이콘 크기 조정
-      iconAnchor: [17, 42],    // 아이콘 기준점: 중앙 하단
-      popupAnchor: [0, -45]    // 팝업 기준점
+    const yellowCustomIcon = L.divIcon({
+      className: 'custom-yellow-marker',
+      html: '<div style="background: #FFD700; border-radius: 50%; width: 30px; height: 30px; text-align: center; color: white; line-height: 30px;">🔍</div>',
+      iconSize: [30, 30],
+      iconAnchor: [15, 30],
+      popupAnchor: [0, -30]
     });
 
-    const marker = L.marker([result.lat, result.lon], { icon: yellowIcon });
+    const marker = L.marker([result.lat, result.lon], { icon: yellowCustomIcon  });
 
     // 마커 z-index를 조정하여 기존 마커 뒤로 배치
     marker.setZIndexOffset(-1); // z-index를 -1로 설정하여 기존 마커 뒤에 배치
