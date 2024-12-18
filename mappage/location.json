@@ -1221,7 +1221,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/college_park",
+        "path": "data/usa/keyword/annapolis",
         "color": "blue"
       }
     ]
@@ -1233,7 +1233,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/columbia",
+        "path": "data/usa/keyword/annapolis",
         "color": "blue"
       }
     ]
@@ -1257,7 +1257,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/ellicott_city",
+        "path": "data/usa/keyword/baltimore",
         "color": "blue"
       }
     ]
@@ -1269,7 +1269,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/frederick",
+        "path": "data/usa/keyword/berlin",
         "color": "blue"
       }
     ]
@@ -1281,7 +1281,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/gaithersburg",
+        "path": "data/usa/keyword/berlin",
         "color": "blue"
       }
     ]
@@ -1293,7 +1293,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/lexington_park",
+        "path": "data/usa/keyword/clarksburg",
         "color": "blue"
       }
     ]
@@ -1305,7 +1305,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/potomac",
+        "path": "data/usa/keyword/berlin",
         "color": "blue"
       }
     ]
@@ -1317,7 +1317,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/rockville",
+        "path": "data/usa/keyword/berlin",
         "color": "blue"
       }
     ]
@@ -1329,7 +1329,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/salisbury",
+        "path": "data/usa/keyword/berlin",
         "color": "blue"
       }
     ]
@@ -1341,7 +1341,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/silver_spring",
+        "path": "data/usa/keyword/annapolis",
         "color": "blue"
       }
     ]
@@ -1353,7 +1353,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/westminster",
+        "path": "data/usa/keyword/annapolis",
         "color": "blue"
       }
     ]
