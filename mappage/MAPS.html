@@ -336,12 +336,13 @@ function handleSearchResults(data) {
 
     // 노란색 마커 아이콘 생성
     const yellowIcon = L.AwesomeMarkers.icon({
-      icon: 'search', // 사용할 아이콘 (Font Awesome 아이콘)
-      iconColor: 'white', // 아이콘의 색상
-      markerColor: 'yellow', // 마커의 배경 색상
-      prefix: 'fa', // Font Awesome 아이콘을 사용하기 위한 설정
-      iconSize: [30, 30], // 아이콘 크기 확대 (기본 크기의 1.5배)
-      iconAnchor: [15, 15] // 아이콘의 앵커 위치 설정
+      icon: 'search',
+      iconColor: 'white',
+      markerColor: 'yellow',
+      prefix: 'fa',
+      iconSize: [45, 45], // 아이콘 크기를 명확히 지정
+      iconAnchor: [22, 45], // 아이콘 기준점 설정
+      popupAnchor: [0, -45] // 팝업 위치 조정
     });
 
     const marker = L.marker([result.lat, result.lon], { icon: yellowIcon });
