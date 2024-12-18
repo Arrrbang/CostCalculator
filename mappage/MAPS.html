@@ -219,6 +219,8 @@ function updateMarkers() {
 }
 
 // JSON 데이터 로드 후 마커 생성 및 초기화
+var jsonLayer = L.layerGroup().addTo(map);   // JSON 마커용 레이어
+    
 fetch('./location.json')
   .then(response => {
     if (!response.ok) {
@@ -254,12 +256,11 @@ fetch('./location.json')
         prefix: 'glyphicon'
       });
       
+      // 마커를 생성하고 jsonLayer에 추가
       const marker = L.marker([location.lat, location.lng], { icon: customIcon });
       marker.bindPopup(popupContent);
-      markers.push(marker);
+      jsonLayer.addLayer(marker); // 마커를 jsonLayer에 추가
     });
-
-    updateMarkers();
   })
   .catch(error => console.error('Error loading JSON:', error));
 
@@ -328,6 +329,7 @@ function navigateTo(link) {
     }
 
     // 검색 결과 표시 함수
+var searchLayer = L.layerGroup().addTo(map); // 검색 결과 마커용 레이어
 function handleSearchResults(data) {
   const resultsContainer = document.getElementById('results');
   resultsContainer.innerHTML = '';
@@ -355,7 +357,7 @@ function handleSearchResults(data) {
     marker.setZIndexOffset(-1); // z-index를 -1로 설정하여 기존 마커 뒤에 배치
     
 
-    marker.addTo(map); // 지도에 마커 추가
+    searchLayer.addLayer(marker); // 검색 마커를 searchLayer에 추가
   });
 }
 
