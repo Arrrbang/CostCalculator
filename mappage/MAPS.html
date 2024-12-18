@@ -336,14 +336,14 @@ function handleSearchResults(data) {
 
     // 노란색 마커 아이콘 생성
     const yellowIcon = L.AwesomeMarkers.icon({
-      icon: 'search',
-      iconColor: 'white',
-      markerColor: 'yellow',
-      prefix: 'fa',
-      iconSize: [45, 45], // 아이콘 크기를 명확히 지정
-      iconAnchor: [22, 45], // 아이콘 기준점 설정
-      popupAnchor: [0, -45] // 팝업 위치 조정
-    });
+        icon: 'search',
+        iconColor: 'white',
+        markerColor: 'yellow',
+        prefix: 'fa',
+        iconSize: [45, 45], // 아이콘 전체 크기
+        iconAnchor: [22, 45], // 중앙 하단 기준점 (x=22, y=45)
+        popupAnchor: [0, -45] // 팝업 위치 위로 이동
+      });
 
     const marker = L.marker([result.lat, result.lon], { icon: yellowIcon });
 
