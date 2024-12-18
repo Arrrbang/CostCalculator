@@ -333,6 +333,18 @@ function navigateTo(link) {
         resultElement.textContent = result.display_name;
         resultElement.onclick = () => moveToLocation(result.lat, result.lon);
         resultsContainer.appendChild(resultElement);
+
+    const yellowIcon = L.AwesomeMarkers.icon({
+      extraClasses: 'fa-rotate-0',
+      icon: 'search',
+      iconColor: 'white',
+      markerColor: 'yellow', // 노란색 마커
+      prefix: 'fa'
+    });
+
+    const marker = L.marker([result.lat, result.lon], { icon: yellowIcon });
+    marker.addTo(map); // 지도에 마커 추가
+        
       });
     }
 
