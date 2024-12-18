@@ -335,16 +335,14 @@ function handleSearchResults(data) {
     resultsContainer.appendChild(resultElement);
 
     // 노란색 마커 아이콘 생성
-    const yellowIcon = L.AwesomeMarkers.icon({
-      icon: 'search', // 사용할 아이콘 (Font Awesome 아이콘)
-      iconColor: 'white', // 아이콘의 색상
-      markerColor: 'yellow', // 마커의 배경 색상
-      prefix: 'fa', // Font Awesome 아이콘을 사용하기 위한 설정
-      iconSize: [30, 30], // 아이콘 크기 확대 (기본 크기의 1.5배)
-      iconAnchor: [15, 15] // 아이콘의 앵커 위치 설정
+    const yellowCustomIcon = L.divIcon({
+      html: '<div style="background: #FFD700; border-radius: 50%; width: 30px; height: 30px; text-align: center; color: white; line-height: 30px;">🔍</div>',
+      iconSize: [30, 30],
+      iconAnchor: [15, 30],
+      popupAnchor: [0, -30]
     });
 
-    const marker = L.marker([result.lat, result.lon], { icon: yellowIcon });
+    const marker = L.marker([result.lat, result.lon], { icon: yellowCustomIcon });
     // 마커 z-index를 조정하여 기존 마커 뒤로 배치
     marker.setZIndexOffset(-1); // z-index를 -1로 설정하여 기존 마커 뒤에 배치
     marker.addTo(map); // 지도에 마커 추가
