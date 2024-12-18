@@ -324,29 +324,34 @@ function navigateTo(link) {
     }
 
     // 검색 결과 표시 함수
-    function handleSearchResults(data) {
-      const resultsContainer = document.getElementById('results');
-      resultsContainer.innerHTML = '';
+function handleSearchResults(data) {
+  const resultsContainer = document.getElementById('results');
+  resultsContainer.innerHTML = '';
 
-      data.forEach(result => {
-        const resultElement = document.createElement('div');
-        resultElement.textContent = result.display_name;
-        resultElement.onclick = () => moveToLocation(result.lat, result.lon);
-        resultsContainer.appendChild(resultElement);
+  data.forEach(result => {
+    const resultElement = document.createElement('div');
+    resultElement.textContent = result.display_name;
+    resultElement.onclick = () => moveToLocation(result.lat, result.lon);
+    resultsContainer.appendChild(resultElement);
 
+    // 노란색 마커 아이콘 생성
     const yellowIcon = L.AwesomeMarkers.icon({
-      extraClasses: 'fa-rotate-0',
-      icon: 'search',
-      iconColor: 'white',
-      markerColor: 'yellow', // 노란색 마커
-      prefix: 'fa'
+      icon: 'search', // 사용할 아이콘 (Font Awesome 아이콘)
+      iconColor: 'white', // 아이콘의 색상
+      markerColor: 'yellow', // 마커의 배경 색상
+      prefix: 'fa', // Font Awesome 아이콘을 사용하기 위한 설정
+      iconSize: [30, 30], // 아이콘 크기 확대 (기본 크기의 1.5배)
+      iconAnchor: [15, 15] // 아이콘의 앵커 위치 설정
     });
 
     const marker = L.marker([result.lat, result.lon], { icon: yellowIcon });
+
+    // 마커 z-index를 조정하여 기존 마커 뒤로 배치
+    marker.setZIndexOffset(-1); // z-index를 -1로 설정하여 기존 마커 뒤에 배치
+
     marker.addTo(map); // 지도에 마커 추가
-        
-      });
-    }
+  });
+}
 
     function moveToLocation(lat, lon) {
       map.setView([lat, lon], 12); // 줌 레벨 12
