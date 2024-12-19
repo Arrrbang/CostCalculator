@@ -2601,7 +2601,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/middletown",
+        "path": "data/usa/keyword/carmel",
         "color": "blue"
       }
     ]
@@ -2661,7 +2661,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/port_jefferson",
+        "path": "data/usa/keyword/carmel",
         "color": "blue"
       }
     ]
@@ -2685,7 +2685,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/poughkeepsie",
+        "path": "data/usa/keyword/carmel",
         "color": "blue"
       }
     ]
