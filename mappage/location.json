@@ -2229,7 +2229,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/bronx",
+        "path": "data/usa/keyword/bedford",
         "color": "blue"
       }
     ]
@@ -2253,7 +2253,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/brooklyn",
+        "path": "data/usa/keyword/bedford",
         "color": "blue"
       }
     ]
@@ -2325,7 +2325,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/douglaston",
+        "path": "data/usa/keyword/bedford",
         "color": "blue"
       }
     ]
@@ -2385,7 +2385,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/flushing",
+        "path": "data/usa/keyword/bedford",
         "color": "blue"
       }
     ]
@@ -2409,7 +2409,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/fresh_meadows",
+        "path": "data/usa/keyword/bedford",
         "color": "blue"
       }
     ]
@@ -2505,7 +2505,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/jamaica",
+        "path": "data/usa/keyword/bedford",
         "color": "blue"
       }
     ]
@@ -2637,7 +2637,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/oyster_bay",
+        "path": "data/usa/keyword/bedford",
         "color": "blue"
       }
     ]
@@ -2697,7 +2697,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/queens",
+        "path": "data/usa/keyword/bedford",
         "color": "blue"
       }
     ]
