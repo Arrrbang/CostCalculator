@@ -2265,7 +2265,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/buffalo",
+        "path": "data/usa/keyword/brighton",
         "color": "blue"
       }
     ]
@@ -2529,7 +2529,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/lancaster",
+        "path": "data/usa/keyword/brighton",
         "color": "blue"
       }
     ]
@@ -2565,7 +2565,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/lockport",
+        "path": "data/usa/keyword/brighton",
         "color": "blue"
       }
     ]
@@ -2613,7 +2613,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/niagara_falls",
+        "path": "data/usa/keyword/brighton",
         "color": "blue"
       }
     ]
@@ -2805,7 +2805,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/tonawanda",
+        "path": "data/usa/keyword/brighton",
         "color": "blue"
       }
     ]
