@@ -127,35 +127,15 @@
     "CONSOLE": 75,
     "20DRY": 75,
     "40HC": 75
-  },
+  }
     "extra-cost-4": {
-    "name": "NORMAL 쓰레기 수거 비용",
-    "description": "NORMAL 셋팅 진행, 쓰레기 수거할 때 비용",
-    "CONSOLE": {
-      "단가": 5
-    },
-    "20DRY": {
-      "단가": 5
-    },
-    "40HC": {
-      "단가": 5
-    }
-  },
-    "extra-cost-5": {
-    "name": "우든 박스 처리 비용",
-    "description": "1UNIT에 $50",
-    "CONSOLE": 50,
-    "20DRY": 50,
-    "40HC": 50
-  },
-    "extra-cost-6": {
     "name": "COI HANDLING CHG",
     "description": "큰 건물, 고층 APT 인 경우 보험 증서를 요청 할 경우 ( COI 발급 )",
     "CONSOLE": 100,
     "20DRY": 100,
     "40HC": 100
   },
-    "extra-cost-7": {
+    "extra-cost-5": {
     "name": "완전 분해 가구 조립 비용",
     "description": "당일 조립 불가, 별도 방문. 2명 X $200/HOUR / MIN.3HOURS",
     "CONSOLE": 200,
