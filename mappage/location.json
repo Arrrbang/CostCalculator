@@ -3733,5 +3733,17 @@
       "color": "blue"
     }
   ]
+},
+{
+  "name": "San Diego, CA",
+  "lat": 32.7157,
+  "lng": -117.1611,
+  "links": [
+    {
+      "type": "HI-TEK",
+      "path": "data/usa/hitek/sandiego",
+      "color": "blue"
+    }
+  ]
 }
 ]
