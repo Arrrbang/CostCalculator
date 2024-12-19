@@ -2925,7 +2925,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/bethlehem",
+        "path": "data/usa/keyword/allentown",
         "color": "blue"
       }
     ]
@@ -2949,7 +2949,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/bristol",
+        "path": "data/usa/keyword/allentown",
         "color": "blue"
       }
     ]
@@ -2973,7 +2973,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/churchville",
+        "path": "data/usa/keyword/allentown",
         "color": "blue"
       }
     ]
@@ -3069,7 +3069,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/philadelphia",
+        "path": "data/usa/keyword/allentown",
         "color": "blue"
       }
     ]
@@ -3165,7 +3165,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/warrington",
+        "path": "data/usa/keyword/allentown",
         "color": "blue"
       }
     ]
@@ -3321,7 +3321,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/bristol",
+        "path": "data/usa/keyword/bristolVA",
         "color": "blue"
       }
     ]
