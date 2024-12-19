@@ -2157,7 +2157,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/bayside",
+        "path": "data/usa/keyword/albertson",
         "color": "blue"
       }
     ]
@@ -2313,7 +2313,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/dobbs_ferry",
+        "path": "data/usa/keyword/albertson",
         "color": "blue"
       }
     ]
@@ -2349,7 +2349,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/elmont",
+        "path": "data/usa/keyword/albertson",
         "color": "blue"
       }
     ]
@@ -2373,7 +2373,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/floral_park",
+        "path": "data/usa/keyword/albertson",
         "color": "blue"
       }
     ]
@@ -2397,7 +2397,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/franklin_square",
+        "path": "data/usa/keyword/albertson",
         "color": "blue"
       }
     ]
@@ -2421,7 +2421,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/garden_city",
+        "path": "data/usa/keyword/albertson",
         "color": "blue"
       }
     ]
@@ -2445,7 +2445,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/great_neck",
+        "path": "data/usa/keyword/albertson",
         "color": "blue"
       }
     ]
@@ -2457,7 +2457,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/harrison",
+        "path": "data/usa/keyword/albertson",
         "color": "blue"
       }
     ]
@@ -2625,7 +2625,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/oceanside",
+        "path": "data/usa/keyword/albertson",
         "color": "blue"
       }
     ]
@@ -2649,7 +2649,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/plainview",
+        "path": "data/usa/keyword/albertson",
         "color": "blue"
       }
     ]
@@ -2673,7 +2673,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/port_washington",
+        "path": "data/usa/keyword/albertson",
         "color": "blue"
       }
     ]
@@ -2745,7 +2745,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/staten_island",
+        "path": "data/usa/keyword/albertson",
         "color": "blue"
       }
     ]
@@ -2793,7 +2793,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/tarrytown",
+        "path": "data/usa/keyword/albertson",
         "color": "blue"
       }
     ]
@@ -2853,7 +2853,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/white_plains",
+        "path": "data/usa/keyword/albertson",
         "color": "blue"
       }
     ]
@@ -2865,7 +2865,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/yonkers",
+        "path": "data/usa/keyword/albertson",
         "color": "blue"
       }
     ]
