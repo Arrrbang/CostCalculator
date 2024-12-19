@@ -2289,7 +2289,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/centereach",
+        "path": "data/usa/keyword/brookhaven",
         "color": "blue"
       }
     ]
@@ -2301,7 +2301,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/deer_park",
+        "path": "data/usa/keyword/brookhaven",
         "color": "blue"
       }
     ]
@@ -2469,7 +2469,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/hauppauge",
+        "path": "data/usa/keyword/brookhaven",
         "color": "blue"
       }
     ]
@@ -2481,7 +2481,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/huntington",
+        "path": "data/usa/keyword/brookhaven",
         "color": "blue"
       }
     ]
@@ -2757,7 +2757,7 @@
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/stony_brook",
+        "path": "data/usa/keyword/brookhaven",
         "color": "blue"
       }
     ]
