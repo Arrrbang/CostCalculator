@@ -1,0 +1,182 @@
+{
+  "화폐단위": "$",
+  
+  "basic-cost-1": {
+    "name": "THC/POC",
+    "description": "",
+    "NonDiplomat": {
+      "CONSOLE": "INCLUDED",
+      "20DRY": "INCLUDED",
+      "40HC": "INCLUDED"
+    },
+    "Diplomat": {
+      "CONSOLE": "INCLUDED",
+      "20DRY": "INCLUDED",
+      "40HC": "INCLUDED"
+    }
+  },
+  "basic-cost-2": {
+    "name": "ISF Filing Fee",
+    "description": "",
+    "NonDiplomat": {
+      "CONSOLE": 75,
+      "20DRY": 75,
+      "40HC": 75
+    },
+    "Diplomat": {
+      "CONSOLE": 75,
+      "20DRY": 75,
+      "40HC": 75
+    }
+  },
+  "basic-cost-3": {
+    "name": "Pier Pass",
+    "description": "콘솔 단가는 40HC 60CBM 콘솔 기준",
+    "NonDiplomat": {
+      "CONSOLE": {
+        "단가": 1.18
+      },
+      "20DRY": 35.57,
+      "40HC": 71.14
+    },
+    "Diplomat": {
+      "CONSOLE": {
+        "단가": 1.18
+      },
+      "20DRY": 35.57,
+      "40HC": 71.14
+    }
+  },
+    "basic-cost-4": {
+    "name": "Clean Truck Fee",
+    "description": "콘솔 단가는 40HC 60CBM 콘솔 기준",
+    "NonDiplomat": {
+      "CONSOLE": {
+        "단가": 0.33
+      },
+      "20DRY": 10,
+      "40HC": 20
+    },
+    "Diplomat": {
+      "CONSOLE": {
+        "단가": 0.33
+      },
+      "20DRY": 10,
+      "40HC": 20
+    }
+  },
+    "basic-cost-5": {
+    "name": "Chassis Rental Charge",
+    "description": "$45/Day 보통 1~3일 발생. 3일로 계산함.",
+    "NonDiplomat": {
+      "CONSOLE": {
+        "단가": 2.25
+      },
+      "20DRY": 135,
+      "40HC": 135
+    },
+    "Diplomat": {
+      "CONSOLE": {
+        "단가": 2.25
+      },
+      "20DRY": 135,
+      "40HC": 135
+    }
+  },
+    "basic-cost-6": {
+    "name": "Port Congestion Charge",
+    "description": "",
+    "NonDiplomat": {
+      "CONSOLE": {
+        "단가": 1.66
+      },
+      "20DRY": 100,
+      "40HC": 100
+    },
+    "Diplomat": {
+      "CONSOLE": {
+        "단가": 1.66
+      },
+      "20DRY": 100,
+      "40HC": 100
+    }
+  },
+  "extra-cost-1": {
+    "name": "FULL SETTING",
+    "description": "기본 $20/CBM, SAN DIEGO: $22/CBM, SAN JOSE: $25/CBM, OTHER: $30/CBM 최소 10CBM 이상. ",
+    "CONSOLE": {
+      "단가": 20
+    },
+    "20DRY": {
+      "단가": 20
+    },
+    "40HC": {
+      "단가": 20
+    }
+  },
+  "extra-cost-2": {
+    "name": "UPLIGHT PIANO",
+    "description": "1층 운송 기본 비용, 계단 2층은 $300 추가",
+    "CONSOLE": 200,
+    "20DRY": 200,
+    "40HC": 200
+  },
+    "extra-cost-3": {
+    "name": "WOODEN BOX DISPOSAL CHG",
+    "description": "우든 박스 1개당 비용용",
+    "CONSOLE": 75,
+    "20DRY": 75,
+    "40HC": 75
+  },
+    "extra-cost-4": {
+    "name": "NORMAL 쓰레기 수거 비용",
+    "description": "NORMAL 셋팅 진행, 쓰레기 수거할 때 비용",
+    "CONSOLE": {
+      "단가": 5
+    },
+    "20DRY": {
+      "단가": 5
+    },
+    "40HC": {
+      "단가": 5
+    }
+  },
+    "extra-cost-5": {
+    "name": "우든 박스 처리 비용",
+    "description": "1UNIT에 $50",
+    "CONSOLE": 50,
+    "20DRY": 50,
+    "40HC": 50
+  },
+    "extra-cost-6": {
+    "name": "COI HANDLING CHG",
+    "description": "큰 건물, 고층 APT 인 경우 보험 증서를 요청 할 경우 ( COI 발급 )",
+    "CONSOLE": 100,
+    "20DRY": 100,
+    "40HC": 100
+  },
+    "extra-cost-7": {
+    "name": "완전 분해 가구 조립 비용",
+    "description": "당일 조립 불가, 별도 방문. 2명 X $200/HOUR / MIN.3HOURS",
+    "CONSOLE": 200,
+    "20DRY": 200,
+    "40HC": 200
+  },
+  "STAIR CHARGE": {
+    "description": "업체 문의 필요",
+    "CBM단가": 0
+  },
+  "HEAVY ITEM": {
+    "description": "돌침대 등",
+    "단위": "SET",
+    "단가": 300
+  },
+  "STORAGE CHARGE": {
+    "description": "2주 무료 보관. 30CBM 기준 $120.00/ WEEK",
+    "무료 보관 기간 일자": 14,
+    "보관 비용 단가": 0.57
+  },
+  "DATA BASE": {
+    "description": "해당 데이터 업데이트 일자는 2024.10 진행된 이트너스 비딩 조사 입니다."
+  }
+}
