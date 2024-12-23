@@ -4021,5 +4021,109 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Dallas, TX",
+    "lat": 32.779167,
+    "lng": -96.808891,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/dallas",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/dallas",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "name": "Austin, TX",
+    "lat": 30.266666,
+    "lng": -97.733330,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/austin",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/austin",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "name": "Houston, TX",
+    "lat": 29.7604,
+    "lng": -95.3698,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/houston",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/houston",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "name": "College Station, TX",
+    "lat": 30.601389,
+    "lng": -96.314445,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/college_station",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/college_station",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "name": "San Antonio, TX",
+    "lat": 29.4241,
+    "lng": -98.4936,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/san_antonio",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Corpus Christi, TX",
+    "lat": 27.8006,
+    "lng": -97.3964,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/corpus_christi",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Mission, TX",
+    "lat": 26.2159,
+    "lng": -98.3253,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/mission",
+        "color": "blue"
+      }
+    ]
   }
 ]
