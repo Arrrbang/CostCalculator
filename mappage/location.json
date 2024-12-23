@@ -3865,5 +3865,53 @@
       "color": "blue"
     }
   ]
-}
+},
+  {
+    "name": "Phoenix, AZ",
+    "lat": 33.4484,
+    "lng": -112.0740,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/phoenix",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tucson, AZ",
+    "lat": 32.2226,
+    "lng": -110.9747,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/tucson",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Portland, OR",
+    "lat": 45.5152,
+    "lng": -122.6784,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/portland",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Seattle, WA",
+    "lat": 47.6062,
+    "lng": -122.3321,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/seattle",
+        "color": "blue"
+      }
+    ]
+  }
 ]
