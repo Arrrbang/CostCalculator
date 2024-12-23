@@ -3913,5 +3913,113 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Boise, ID",
+    "lat": 43.6150,
+    "lng": -116.2023,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/boise",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Cheyenne, WY",
+    "lat": 41.1400,
+        "lng": -104.8202,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/cheyenne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Helena, MT",
+    "lat": 46.5884,
+    "lng": -112.0245,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/helena",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bismarck, ND",
+    "lat": 46.8083,
+    "lng": -100.7837,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/bismarck",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Pierre, SD",
+    "lat": 44.3683,
+    "lng": -100.3500,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/pierre",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lincoln, NE",
+    "lat": 40.8136,
+    "lng": -96.7026,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/lincoln",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Salt Lake City, UT",
+    "lat": 40.7608,
+    "lng": -111.8910,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/salt_lake_city",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Denver, CO",
+    "lat": 39.7392,
+    "lng": -104.9903,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/denver",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Albuquerque, NM",
+    "lat": 35.0844,
+    "lng": -106.6504,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/albuquerque",
+        "color": "blue"
+      }
+    ]
   }
 ]
