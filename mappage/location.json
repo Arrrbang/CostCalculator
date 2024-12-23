@@ -3841,5 +3841,29 @@
         "color": "blue"
       }
     ]
-  }
+  },
+{
+  "name": "Las Vegas, NV",
+  "lat": 36.1699,
+  "lng": -115.1398,
+  "links": [
+    {
+      "type": "HI-TEK",
+      "path": "data/usa/hitek/las_vegas",
+      "color": "blue"
+    }
+  ]
+},
+{
+  "name": "Reno, NV",
+  "lat": 39.5296,
+  "lng": -119.8138,
+  "links": [
+    {
+      "type": "HI-TEK",
+      "path": "data/usa/hitek/reno",
+      "color": "blue"
+    }
+  ]
+}
 ]
