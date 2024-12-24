@@ -4029,7 +4029,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/dallas",
+        "path": "data/usa/hitek/alltxlocation",
         "color": "blue"
       },
       {
@@ -4046,7 +4046,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/austin",
+        "path": "data/usa/hitek/alltxlocation",
         "color": "blue"
       },
       {
@@ -4063,7 +4063,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/houston",
+        "path": "data/usa/hitek/alltxlocation",
         "color": "blue"
       },
       {
@@ -4080,7 +4080,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/college_station",
+        "path": "data/usa/hitek/alltxlocation",
         "color": "blue"
       },
       {
@@ -4097,7 +4097,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/san_antonio",
+        "path": "data/usa/hitek/alltxlocation",
         "color": "blue"
       }
     ]
@@ -4109,7 +4109,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/corpus_christi",
+        "path": "data/usa/hitek/alltxlocation",
         "color": "blue"
       }
     ]
@@ -4121,7 +4121,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/mission",
+        "path": "data/usa/hitek/alltxlocation",
         "color": "blue"
       }
     ]
