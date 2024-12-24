@@ -129,8 +129,7 @@
     "40HC": 75
   },
     "extra-cost-4": {
-    "name": "COI HANDLING CHG",ㄹ"STAIR CHARGE": {
-      
+    "name": "STAIR CHARGE": 
     "description": "큰 건물, 고층 APT 인 경우 보험 증서를 요청 할 경우 ( COI 발급 )",
     "CONSOLE": 100,
     "20DRY": 100,
