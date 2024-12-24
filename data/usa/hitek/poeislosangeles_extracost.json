@@ -123,7 +123,7 @@
   },
     "extra-cost-3": {
     "name": "WOODEN BOX DISPOSAL CHG",
-    "description": "우든 박스 1개당 비용용",
+    "description": "우든 박스 1개당 비용",
     "CONSOLE": 75,
     "20DRY": 75,
     "40HC": 75
