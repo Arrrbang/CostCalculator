@@ -12,7 +12,7 @@
       {
         "type": "KT",
         "path": "data/usa/kt/atlanta",
-        "color": "green"
+        "color": "blue"
       },
       {
         "type": "HI-TEK",
@@ -30,8 +30,25 @@
         "type": "SOS",
         "path": "data/usa/sos/lagrange",
         "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/lagrange",
+        "color": "blue"
       }
     ]
+  },
+  {
+  "name": "Cartersville, GA",
+  "lat": 34.166080,
+  "lng": -84.800613,
+  "links": [
+    {
+      "type": "KT",
+      "path": "data/usa/kt/cartersville",
+      "color": "blue"
+    }
+  ]
   },
   {
     "name": "Augusta, GA",
@@ -46,7 +63,7 @@
       {
         "type": "KT",
         "path": "data/usa/kt/augusta",
-        "color": "green"
+        "color": "blue"
       }
     ]
   },
@@ -63,7 +80,7 @@
       {
         "type": "KT",
         "path": "data/usa/kt/savannah",
-        "color": "green"
+        "color": "blue"
       }
     ]
   },
@@ -81,6 +98,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/auburn",
         "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/auburn",
+        "color": "blue"
       }
     ]
   },
@@ -92,6 +114,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/birmingham",
+        "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/birmingham",
         "color": "blue"
       }
     ]
@@ -105,6 +132,11 @@
         "type": "SOS",
         "path": "data/usa/sos/huntsville",
         "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/huntsville",
+        "color": "blue"
       }
     ]
   },
@@ -116,6 +148,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/montgomery",
+        "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/montgomery",
         "color": "blue"
       },
       {
@@ -168,6 +205,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/orlando",
         "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/orlando",
+        "color": "blue"
       }
     ]
   },
@@ -179,6 +221,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/miami",
+        "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/miami",
         "color": "blue"
       },
       {
@@ -199,6 +246,11 @@
         "color": "blue"
       },
       {
+        "type": "KT",
+        "path": "data/usa/kt/charlotte",
+        "color": "blue"
+      },
+      {
         "type": "HI-TEK",
         "path": "data/usa/hitek/charlotte",
         "color": "blue"
@@ -206,17 +258,29 @@
     ]
   },
   {
-    "name": "Greensboro, NC",
+    "name": "bluesboro, NC",
     "lat": 36.0726,
     "lng": -79.792,
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/greensboro",
+        "path": "data/usa/sos/bluesboro",
         "color": "blue"
       }
     ]
   },
+  {
+  "name": "Greensboro, NC",
+  "lat": 36.044659,
+  "lng": -79.766235,
+  "links": [
+    {
+      "type": "KT",
+      "path": "data/usa/kt/greensboro",
+      "color": "blue"
+    }
+  ]
+},
   {
     "name": "Raleigh/Fayetteville, NC",
     "lat": 35.7796,
@@ -225,6 +289,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/raleigh",
+        "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/raleigh",
         "color": "blue"
       }
     ]
@@ -238,9 +307,26 @@
         "type": "SOS",
         "path": "data/usa/sos/wilmington",
         "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/wilmington",
+        "color": "blue"
       }
     ]
   },
+  {
+  "name": "Greenville, SC",
+  "lat": 34.852619,
+  "lng": -82.394012,
+  "links": [
+    {
+      "type": "KT",
+      "path": "data/usa/kt/greenville",
+      "color": "blue"
+    }
+  ]
+},
   {
     "name": "Columbia, SC",
     "lat": 34.0004,
@@ -249,6 +335,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/sccolumbia",
+        "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/sccolumbia",
         "color": "blue"
       },
       {
@@ -267,6 +358,11 @@
         "type": "SOS",
         "path": "data/usa/sos/charleston",
         "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/charleston",
+        "color": "blue"
       }
     ]
   },
@@ -278,6 +374,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/nashville",
+        "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/nashville",
         "color": "blue"
       },
       {
@@ -298,12 +399,29 @@
         "color": "blue"
       },
       {
+        "type": "KT",
+        "path": "data/usa/kt/knoxville",
+        "color": "blue"
+      },
+      {
         "type": "HI-TEK",
         "path": "data/usa/hitek/knoxville",
         "color": "blue"
       }
     ]
   },
+  {
+  "name": "Clarksville, TN",
+  "lat": 36.529770,
+  "lng": -87.359450,
+  "links": [
+    {
+      "type": "KT",
+      "path": "data/usa/kt/clarksville",
+      "color": "blue"
+    }
+  ]
+},
   {
     "name": "Memphis, TN",
     "lat": 35.1175,
@@ -312,6 +430,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/memphis",
+        "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/memphis",
         "color": "blue"
       },
       {
@@ -330,9 +453,31 @@
         "type": "SOS",
         "path": "data/usa/sos/neworleans",
         "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/neworleans",
+        "color": "blue"
+      },
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/new_orleans",
+        "color": "blue"
       }
     ]
   },
+  {
+  "name": "Lafayette, LA",
+  "lat": 30.216667,
+  "lng": -92.033333,
+  "links": [
+    {
+      "type": "KT",
+      "path": "data/usa/kt/lafayette",
+      "color": "blue"
+    }
+  ]
+},
   {
     "name": "Biloxi, MS",
     "lat": 30.396,
@@ -341,6 +486,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/biloxi",
+        "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/biloxi",
         "color": "blue"
       }
     ]
@@ -353,6 +503,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/littlerock",
+        "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/littlerock",
         "color": "blue"
       },
       {
@@ -620,6 +775,11 @@
         "color": "blue"
       },
       {
+        "type": "KT",
+        "path": "data/usa/kt/cincinnati",
+        "color": "blue"
+      },
+      {
         "type": "HI-TEK",
         "path": "data/usa/hitek/cincinnati",
         "color": "blue"
@@ -670,6 +830,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/columbus",
+        "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/columbus",
         "color": "blue"
       },
       {
@@ -782,6 +947,11 @@
         "color": "blue"
       },
       {
+        "type": "KT",
+        "path": "data/usa/kt/louisville",
+        "color": "blue"
+      },
+      {
         "type": "HI-TEK",
         "path": "data/usa/hitek/louisville",
         "color": "blue"
@@ -796,6 +966,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/lexington",
+        "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/lexington",
         "color": "blue"
       },
       {
@@ -878,13 +1053,13 @@
     ]
   },
   {
-    "name": "Greenwich, CT",
+    "name": "bluewich, CT",
     "lat": 41.0290,
     "lng": -73.6282,
     "links": [
       {
         "type": "KEY WORD",
-        "path": "data/usa/keyword/greenwich",
+        "path": "data/usa/keyword/bluewich",
         "color": "blue"
       }
     ]
@@ -3440,6 +3615,11 @@
         "type": "KEY WORD",
         "path": "data/usa/keyword/alexandria",
         "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/alexandria",
+        "color": "blue"
       }
     ]
   },
@@ -3468,7 +3648,7 @@
     ]
   },
   {
-    "name": "Bowling Green, VA",
+    "name": "Bowling blue, VA",
     "lat": 38.0486,
     "lng": -77.2782,
     "links": [
@@ -3708,6 +3888,11 @@
       {
         "type": "KEY WORD",
         "path": "data/usa/keyword/alberta",
+        "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/alberta",
         "color": "blue"
       }
     ]
@@ -4205,7 +4390,7 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/dallas",
-        "color": "green"
+        "color": "blue"
       }
     ]
   },
@@ -4222,7 +4407,7 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/austin",
-        "color": "green"
+        "color": "blue"
       }
     ]
   },
@@ -4239,7 +4424,7 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/houston",
-        "color": "green"
+        "color": "blue"
       }
     ]
   },
@@ -4256,7 +4441,7 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/college_station",
-        "color": "green"
+        "color": "blue"
       }
     ]
   },
@@ -4321,18 +4506,6 @@
     ]
   },
     {
-    "name": "New Orleans, LA",
-    "lat": 29.9511,
-    "lng": -90.0715,
-    "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/usa/hitek/new_orleans",
-        "color": "blue"
-      }
-    ]
-  },
-    {
     "name": "Baton Rouge, LA",
     "lat": 30.4515,
     "lng": -91.1871,
@@ -4352,6 +4525,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/jackson",
+        "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/jackson",
         "color": "blue"
       }
     ]
@@ -4380,6 +4558,18 @@
       }
     ]
   },
+  {
+  "name": "Jacksonville, FL",
+  "lat": 30.332184,
+  "lng": -81.655647,
+  "links": [
+    {
+      "type": "KT",
+      "path": "data/usa/kt/jacksonville",
+      "color": "blue"
+    }
+  ]
+},
     {
     "name": "Tallahassee, FL",
     "lat": 30.4383,
@@ -4412,6 +4602,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/tampa",
+        "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/tampa",
         "color": "blue"
       }
     ]
