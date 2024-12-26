@@ -147,6 +147,11 @@
   display: block; /* 블록 스타일 */
 }
 
+    #krw-label {
+      font-size: 1rem; /* 폰트 크기 */
+      text-align: right;
+    }
+
    .form-container h2 {
     background-color: #8BC34A;
     color: white;
@@ -388,6 +393,13 @@
       font-weight: bold; /* 굵기 추가 */
       text-align: right;
     }
+
+    #average-ofc-value {
+      font-size: 1.1rem; /* 폰트 크기 */
+      font-weight: bold; /* 굵기 추가 */
+      text-align: right;
+    }
+    
 
 /* "외교화물 유무" 글씨 크기 키우기 */
   td:first-child {
