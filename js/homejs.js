@@ -631,7 +631,7 @@ async function updateKrwValueWithAPI() {
     const currencySymbol = totalValueText.match(/[\$€₩£]/);
 
     if (!currencySymbol) {
-        krwValueElement.textContent = "통화 기호를 찾을 수 없습니다.";
+        krwValueElement.textContent = "-";
         return;
     }
 
