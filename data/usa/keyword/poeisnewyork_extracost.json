@@ -113,8 +113,9 @@
     "단가": 100
   },
   "STORAGE CHARGE": {
-    "description": "창고 보관 비용 :  $10/CBM/MONTH (2~4주 무료 보관)",
-    "무료 보관 기간 일자": 14,
+    "description": "5CBM 이하 $50 기본 + $10/CBM/MONTH",
+    "단위": "달",
+    "무료 보관 기간": 1,
     "보관 비용 단가": 10
   },
   "DATA BASE": {
