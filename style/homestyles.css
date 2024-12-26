@@ -397,6 +397,7 @@
       font-size: 1.1rem; /* 폰트 크기 */
       font-weight: bold; /* 굵기 추가 */
       text-align: right;
+      flex: 1;
     }
     
 
@@ -493,11 +494,5 @@
       max-width: 90%; /* 부모 컨테이너 크기를 초과하지 않도록 제한 */
       display: block; /* margin auto 적용을 위해 블록 요소로 변경 */
     }
-
-  #average-ofc-value{
-    font-size: 0.8rem; /* 결과 텍스트 크기 */
-    text-align: right; /* 결과 텍스트 오른쪽 정렬 */
-    flex: 1;
-  }
     
 }
