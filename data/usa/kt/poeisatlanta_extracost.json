@@ -20,14 +20,14 @@
     "description": "$400.00 + At Cost : Chassis, Fuel Surcharge, Congestion Charge, etc.",
     "NonDiplomat": {
       "CONSOLE": {
-        "단가": 6.66,
+        "단가": 6.66
       },
       "20DRY": 400,
       "40HC": 400
     },
     "Diplomat": {
       "CONSOLE": {
-        "단가": 6.66,
+        "단가": 6.66
       },
       "20DRY": 400,
       "40HC": 400
