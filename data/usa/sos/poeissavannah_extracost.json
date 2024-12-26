@@ -153,7 +153,8 @@
   },
   "STORAGE CHARGE": {
     "description": "창고 보관 비용 :  $4/CBM/WEEK (MIN:$20/WEEK)",
-    "무료 보관 기간 일자": 14,
+    "단위": "주"
+    "무료 보관 기간": 4,
     "보관 비용 단가": 4
   },
   "DATA BASE": {
