@@ -870,21 +870,24 @@ function updatestorageperiodDropdown() {
     return;
   }
 
-  // 1. 무료 보관 기간과 보관 비용 단가 설정
-  const freeStorageDays = parseInt(storageData["무료 보관 기간 일자"], 10) || 0; // 기본값은 0
+  // 1. 무료 보관 기간과 보관 비용 단가, 단위 설정
+  const freeStorageDays = parseInt(storageData["무료 보관 기간"], 10) || 0; // 기본값은 0
   const storageUnitCost = parseFloat(storageData["보관 비용 단가"]) || 0; // 기본 보관 단가
+  const unit = storageData["단위"] || "일"; // 단위 값 (기본값은 '일')
 
   if (isNaN(freeStorageDays) || isNaN(storageUnitCost)) {
     return;
   }
 
-  // 2. storageperiod 드롭다운 옵션 생성 (무료 보관 일수 이후부터 시작)
-  resetDropdown(storageperiodDropdown, "보관 기간 선택");
+  // 2. storageperiod 드롭다운 옵션 생성 (1일부터 시작)
+  resetDropdown(storageperiodDropdown, `보관 기간 선택 (${unit})`);
 
-  for (let i = freeStorageDays + 1; i <= freeStorageDays + 90; i++) { // 무료 보관 이후부터 90일까지 옵션 생성
+  const maxPeriod = 90; // 최대 기간 설정
+
+  for (let i = 1; i <= maxPeriod; i++) { 
     const option = document.createElement("option");
     option.value = i;
-    option.textContent = `${i}일`;
+    option.textContent = `${i}${unit}`; // 단위를 포함하여 옵션 표시
     storageperiodDropdown.appendChild(option);
   }
 
@@ -899,22 +902,30 @@ function updatestorageperiodDropdown() {
     const selectedDays = parseInt(storageperiodDropdown.value, 10); // 선택된 보관 기간
     const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값
 
+    const valueElement = document.getElementById("storage-value");
+
     if (!isNaN(selectedDays) && !isNaN(selectedCBM)) {
       // 선택된 일수에서 무료 보관 일수를 제외
-      const chargeableDays = selectedDays - freeStorageDays;
+      let chargeableDays = selectedDays - freeStorageDays;
+
+      // 무료 보관 기간 이내일 경우
+      if (chargeableDays < 0) {
+        if (valueElement) {
+          valueElement.textContent = "무료 보관"; // 무료 기간 이내 메시지 표시
+        }
+        return; // 비용 계산을 하지 않고 종료
+      }
 
       // 비용 계산: (유료 보관 일수 * 단가 * CBM)
       const calculatedValue = chargeableDays * storageUnitCost * selectedCBM;
       const formattedValue = `${currencySymbol}${calculatedValue.toLocaleString()}`; // 형식화된 결과
 
       // id="storage-value" 업데이트
-      const valueElement = document.getElementById("storage-value");
       if (valueElement) {
         valueElement.textContent = formattedValue;
       }
     } else {
       // 선택되지 않은 경우 기본값
-      const valueElement = document.getElementById("storage-value");
       if (valueElement) {
         valueElement.textContent = "";
       }
