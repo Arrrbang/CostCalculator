@@ -606,6 +606,7 @@ function observeCostChanges() {
 document.addEventListener("DOMContentLoaded", () => {
   calculateTotalCost(); // 초기 계산
   observeCostChanges(); // MutationObserver 활성화
+  updateAdditionalInfo(); // 페이지 로드 후 추가 정보 업데이트
 });
 
 //-------------------KRW 변환 부분---------------------------
