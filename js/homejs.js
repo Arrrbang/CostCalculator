@@ -204,11 +204,20 @@ async function fetchData() {
     // 화폐 단위 저장
     currencySymbol = extraCostData["화폐단위"] || "";
 
+    // 각 항목의 description을 <br>로 변환하여 업데이트
+    const updateDescription = (elementId, description) => {
+      const formattedDescription = description.replace(/\n/g, "<br>");
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.innerHTML = formattedDescription; // <br>로 처리된 description을 업데이트
+      }
+    };
+
     // "DATA BASE"의 description 값 가져오기
     const dataBaseDescription = extraCostData["DATA BASE"]?.description || ""; // 기본값 설정
     const dataDescriptionElement = document.getElementById("data-description");
     if (dataDescriptionElement) {
-      dataDescriptionElement.textContent = dataBaseDescription;  // description을 업데이트
+      dataDescriptionElement.innerHTML = dataBaseDescription.replace(/\n/g, "<br>"); // <br>로 줄바꿈 처리
     }
 
     //additional info 가져오기
@@ -223,13 +232,29 @@ async function fetchData() {
         }
       
         // description을 추가
-        const descriptionElement = document.getElementById(`additional-info-${additionalInfoIndex}-description`);
-        if (descriptionElement) {
-          descriptionElement.textContent = additionalInfo.description || "";  // description을 업데이트
-        }
+      const descriptionElement = document.getElementById(`additional-info-${additionalInfoIndex}-description`);
+      if (descriptionElement) {
+        descriptionElement.innerHTML = additionalInfo.description?.replace(/\n/g, "<br>") || "";  // <br>로 줄바꿈 처리
+      }
       
         additionalInfoIndex++;  // 다음 항목으로 넘어감
       }
+
+    // tableData에 있는 모든 항목의 description을 <br>로 처리
+    Object.keys(tableData).forEach((key) => {
+      const item = tableData[key];
+      if (item.description) {
+        updateDescription(`${key}-description`, item.description);
+      }
+    });
+
+    // extraCostData에 있는 모든 항목의 description을 <br>로 처리
+    Object.keys(extraCostData).forEach((key) => {
+      const item = extraCostData[key];
+      if (item.description) {
+        updateDescription(`${key}-description`, item.description);
+      }
+    });
 
     // 링크 업데이트
     if (Array.isArray(tableData.links) && tableData.links.length > 0) {
