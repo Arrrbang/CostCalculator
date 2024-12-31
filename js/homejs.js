@@ -265,7 +265,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     fetchData().then(() => {
       updateAllDiplomatSensitiveResults(); // 추가 비용 업데이트
       updateHeavyItemDropdown(); // HEAVY ITEM 드롭다운 업데이트
-      updateAdditionalInfo(); // 추가 정보 업데이트 (여기서 호출)
     });
   } else {
     console.error("Path parameter missing in URL.");
@@ -607,7 +606,6 @@ function observeCostChanges() {
 document.addEventListener("DOMContentLoaded", () => {
   calculateTotalCost(); // 초기 계산
   observeCostChanges(); // MutationObserver 활성화
-  updateAdditionalInfo(); // 페이지 로드 후 추가 정보 업데이트
 });
 
 //-------------------KRW 변환 부분---------------------------
@@ -758,52 +756,6 @@ function updateExtraCostResult(categoryKey) {
   if (descriptionElement) descriptionElement.textContent = categoryData.description || "";
 }
 
-//-------------------additional info 업데이트------------------
-async function updateAdditionalInfo() {
-  try {
-    // URL에서 poeValue와 path를 가져오는 예시
-    const params = new URLSearchParams(window.location.search);
-    const path = params.get("path");
-    const poeValue = poeDropdown.value; // POE 드롭다운 값
-    
-    if (!path || !poeValue) {
-      console.error("path 또는 poeValue가 없습니다.");
-      return;
-    }
-
-    // JSON 경로 생성
-    const basePath = "https://arrrbang.github.io/CostCalculator"; // 기본 경로
-    const modifiedPath = path.replace(/\/[^/]+\/?$/, ""); // 경로 수정
-    const extraCostJsonPath = `${basePath}/${modifiedPath}/poeis${poeValue}_extracost.json`;
-
-    // JSON 데이터 가져오기
-    const response = await fetch(extraCostJsonPath);
-    if (!response.ok) {
-      throw new Error('Failed to fetch extra cost JSON data');
-    }
-
-    const data = await response.json();
-
-    // 순차적으로 additional-info-n 항목을 처리
-    let index = 1; // 시작 인덱스
-    while (data[`additional-info-${index}`]) {
-      const info = data[`additional-info-${index}`];
-
-      // 각 항목에 해당하는 요소 가져오기
-      const labelElement = document.getElementById(`additional-info-${index}-label`);
-      const descriptionElement = document.getElementById(`additional-info-${index}-description`);
-
-      if (labelElement && descriptionElement) {
-        labelElement.textContent = info.name || ""; // name을 label에 삽입
-        descriptionElement.textContent = info.description || ""; // description을 description에 삽입
-      }
-
-      index++; // 다음 항목으로 이동
-    }
-  } catch (error) {
-    console.error('Error updating additional info:', error);
-  }
-}
 
 //-------------------stair carry charge 업데이트---------------
 // POE 드롭다운 선택 시 설명 업데이트 및 계단 비용 계산
@@ -993,7 +945,6 @@ document.addEventListener("DOMContentLoaded", () => {
   updateOfcValue(); // OFC 값 초기화
   calculateTotalCost();
   updateKrwValueWithAPI(); // 초기값 업데이트
-  updateAdditionalInfo(); // 추가 정보 업데이트
     const observer = new MutationObserver(updateKrwValueWithAPI);
     const totalCostElement = document.getElementById("total-value");
     if (totalCostElement) {
@@ -1026,7 +977,6 @@ fetchData().then(() => {
   updateAllDiplomatSensitiveResults(); // 추가 비용 업데이트
   updateHeavyItemDropdown(); // HEAVY ITEM 드롭다운 업데이트
   updatestorageperiodDropdown(); // STORAGE CHARGE 드롭다운 업데이트
-  updateAdditionalInfo(); // 추가 정보 업데이트
 });
 
 
