@@ -195,11 +195,11 @@
   
   "additional-info-1": {
     "name": "test1",
-    "description": "내용 입력"
+    "description": "내용 입력\n두번째줄\n세번째줄"
   },
   "additional-info-2": {
     "name": "test2",
-    "description": "또 다른 내용"
+    "description": "또 다른 내용\n두번째줄\n세번째줄"
   },
   
   "DATA BASE": {
