@@ -265,6 +265,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     fetchData().then(() => {
       updateAllDiplomatSensitiveResults(); // 추가 비용 업데이트
       updateHeavyItemDropdown(); // HEAVY ITEM 드롭다운 업데이트
+      updateAdditionalInfo(); // 추가 정보 업데이트 (여기서 호출)
     });
   } else {
     console.error("Path parameter missing in URL.");
