@@ -580,14 +580,17 @@ function updateDiplomatSensitiveResult(categoryKey) {
   if (!isNaN(result) && result !== "") {
       result = `${currencySymbol}${Number(result).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
   }
+  
+  // 6. 줄바꿈을 <br>로 변경
+  result = result.replace(/\n/g, '<br>');
 
-  // 6. 업데이트
+  // 7. 업데이트
   const labelElement = document.getElementById(`${categoryKey}-label`);
   const valueElement = document.getElementById(`${categoryKey}-value`);
   const descriptionElement = document.getElementById(`${categoryKey}-description`);
 
   if (labelElement) labelElement.textContent = categoryData.name || "";
-  if (valueElement) valueElement.textContent = result;
+  if (valueElement) valueElement.innerHTML = result; // innerHTML로 수정하여 <br> 태그를 반영
   if (descriptionElement) descriptionElement.textContent = categoryData.description || "";
 }
 
@@ -785,7 +788,9 @@ function updateExtraCostResult(categoryKey) {
     const defaultMultiplier = categoryData?.unitMultiplier || 0;
     result = selectedCBM * defaultMultiplier;
   }
-
+  // 7. 줄바꿈을 <br>로 변경
+  result = result.replace(/\n/g, '<br>');
+  
   // 6. 화폐 단위 추가
   if (!isNaN(result) && result !== "") {
     result = `${currencySymbol}${Number(result).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
@@ -797,7 +802,7 @@ function updateExtraCostResult(categoryKey) {
   const descriptionElement = document.getElementById(`${categoryKey}-description`);
 
   if (labelElement) labelElement.textContent = categoryData.name || "";
-  if (valueElement) valueElement.textContent = result;
+  if (valueElement) valueElement.innerHTML = result; // innerHTML로 수정하여 <br> 태그를 반영
   if (descriptionElement) descriptionElement.textContent = categoryData.description || "";
 }
 
