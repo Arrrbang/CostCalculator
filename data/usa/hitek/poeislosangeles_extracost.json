@@ -129,18 +129,53 @@
     "40HC": 75
   },
     "extra-cost-4": {
+    "name": "완전 분해 가구 조립 비용",
+    "description": "당일 조립 불가, 별도 방문. 2명 X $200/HOUR / MIN.3HOURS",
+    "CONSOLE": 200,
+    "20DRY": 200,
+    "40HC": 200
+  },
+    "extra-cost-5": {
     "name": "COI HANDLING CHG",
     "description": "큰 건물, 고층 APT 인 경우 보험 증서를 요청 할 경우 ( COI 발급 )",
     "CONSOLE": 100,
     "20DRY": 100,
     "40HC": 100
   },
-    "extra-cost-5": {
-    "name": "완전 분해 가구 조립 비용",
-    "description": "당일 조립 불가, 별도 방문. 2명 X $200/HOUR / MIN.3HOURS",
-    "CONSOLE": 200,
-    "20DRY": 200,
-    "40HC": 200
+    "extra-cost-6": {
+    "name": "Stopover Charge",
+    "description": "컨테이너 Return시 Appointment가 없어 Storage에 보관하는 비용",
+    "CONSOLE": {"단가": 1.66},
+    "20DRY": 100,
+    "40HC": 100
+  },
+    "extra-cost-7": {
+    "name": "Prepull Charge",
+    "description": "컨테이너 P.up시 Appointment가 없어 Storage에 보관하는 비용",
+    "CONSOLE": {"단가": 1.66},
+    "20DRY": 100,
+    "40HC": 100
+  },
+    "extra-cost-8": {
+    "name": "Split Chassis Charge",
+    "description": "$70/ONE WAY",
+    "CONSOLE": {"단가": 1.16},
+    "20DRY": 70,
+    "40HC": 70
+  },
+    "extra-cost-9": {
+    "name": "Terminal Waiting Charge",
+    "description": "FREE 2hr/터미널 혼잡으로 컨테이너 픽업 지연",
+    "CONSOLE": "$65.00/hr",
+    "20DRY": "$65.00/hr",
+    "40HC": "$65.00/hr"
+  },
+    "extra-cost-9": {
+    "name": "Dry-Run Charge",
+    "description": "선사 사정으로 컨테이너 픽업 일자가 변경되는 경우",
+    "CONSOLE": {"단가" : 1.66},
+    "20DRY": 100,
+    "40HC": 100
   },
   "STAIR CHARGE": {
     "description": "업체 문의 필요",
