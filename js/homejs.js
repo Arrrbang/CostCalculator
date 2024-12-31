@@ -211,6 +211,26 @@ async function fetchData() {
       dataDescriptionElement.textContent = dataBaseDescription;  // description을 업데이트
     }
 
+    //additional info 가져오기
+    let additionalInfoIndex = 1;  // 추가 정보 항목의 번호 (예: 1, 2, 3 ...)
+      while (extraCostData[`additional-info-${additionalInfoIndex}`]) {
+        const additionalInfo = extraCostData[`additional-info-${additionalInfoIndex}`];
+      
+        // name을 추가
+        const labelElement = document.getElementById(`additional-info-${additionalInfoIndex}-label`);
+        if (labelElement) {
+          labelElement.textContent = additionalInfo.name || "";  // name을 업데이트
+        }
+      
+        // description을 추가
+        const descriptionElement = document.getElementById(`additional-info-${additionalInfoIndex}-description`);
+        if (descriptionElement) {
+          descriptionElement.textContent = additionalInfo.description || "";  // description을 업데이트
+        }
+      
+        additionalInfoIndex++;  // 다음 항목으로 넘어감
+      }
+
     // 링크 업데이트
     if (Array.isArray(tableData.links) && tableData.links.length > 0) {
       updateLinks(tableData.links);
