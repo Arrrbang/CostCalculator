@@ -243,6 +243,14 @@
       color: #ff6666; /* 빨간색 경고 텍스트 */
     }
 
+    .add-info {
+      font-size: 0.8rem;
+      margin: 0 auto;
+      text-align: left;
+      max-width: 90%; /* 부모 컨테이너 크기를 초과하지 않도록 제한 */
+      display:block;
+    }
+
       #total-cost {
      border-top: 1px dashed #8BC34A; /* 초록색 구분선 */
      margin-top: 10px; /* 위쪽 간격 */
