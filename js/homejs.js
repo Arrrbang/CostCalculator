@@ -803,7 +803,7 @@ function updateExtraCostResult(categoryKey) {
 
   if (labelElement) labelElement.textContent = categoryData.name || "";
   if (valueElement) valueElement.innerHTML = result; // innerHTML로 수정하여 <br> 태그를 반영
-  if (descriptionElement) descriptionElement.textContent = categoryData.description || "";
+  if (descriptionElement) descriptionElement.innerHTML = (categoryData.description || "").replace(/\n/g, '<br>'); // <br>로 줄바꿈 처리
 }
 
 
