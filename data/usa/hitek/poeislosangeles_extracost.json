@@ -103,7 +103,7 @@
   },
   "extra-cost-1": {
     "name": "FULL SETTING",
-    "description": "기본 $20/CBM, SAN DIEGO: $22/CBM, SAN JOSE: $25/CBM, OTHER: $30/CBM 최소 10CBM 이상. ",
+    "description": "기본 $20/CBM, SAN DIEGO: $22/CBM, SAN JOSE: $25/CBM,\nOTHER: $30/CBM 최소 10CBM 이상. ",
     "CONSOLE": {
       "단가": 20
     },
@@ -194,12 +194,12 @@
   },
   
   "additional-info-1": {
-    "name": "test1",
-    "description": "내용 입력\n두번째줄\n세번째줄"
+    "name": "Exam에 걸릴 시 발생되는 비용",
+    "description": "X-Ray: $400.00~$500.00 (5% 미만)\nTail Gate Exam: $400.00~$500.00 (2% 미만)\nCET Exam(Intensive Exam): $2000.00~$4,000.00 (2% 미만)"
   },
   "additional-info-2": {
-    "name": "test2",
-    "description": "또 다른 내용\n두번째줄\n세번째줄"
+    "name": "Free Time 이후에 발생되는 비용",
+    "description": "Demurrage: $150.00~$350.00/Day (4 Days Free)\nPer Diem: $100.00~$250.00/Day (4 Days Free)"
   },
   
   "DATA BASE": {
