@@ -1026,6 +1026,7 @@ fetchData().then(() => {
   updateAllDiplomatSensitiveResults(); // 추가 비용 업데이트
   updateHeavyItemDropdown(); // HEAVY ITEM 드롭다운 업데이트
   updatestorageperiodDropdown(); // STORAGE CHARGE 드롭다운 업데이트
+  updateAdditionalInfo(); // 추가 정보 업데이트
 });
 
 
