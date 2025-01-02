@@ -773,7 +773,10 @@ function updateExtraCostResult(categoryKey) {
 
   if (labelElement) labelElement.textContent = categoryData.name || "";
   if (valueElement) valueElement.textContent = result;
-  if (descriptionElement) descriptionElement.textContent = categoryData.description || "";
+  if (descriptionElement) {
+    const descriptionText = categoryData.description || "";
+    descriptionElement.innerHTML = descriptionText.replace(/\n/g, "<br>");
+  }
 }
 
 
