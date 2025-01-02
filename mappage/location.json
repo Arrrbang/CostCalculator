@@ -4106,6 +4106,159 @@
       }
     ]
   },
+  {
+    "name": "Garden Grove, CA",
+    "lat": 33.774174,
+    "lng": -117.937981,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/los_angeles",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/los_angeles",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Fullerton, CA",
+    "lat": 33.87029,
+    "lng": -117.92534,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/los_angeles",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/los_angeles",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Anaheim, CA",
+    "lat": 33.83611,
+    "lng": -117.88972,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/los_angeles",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/los_angeles",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Irvine, CA",
+    "lat": 33.669445,
+    "lng": -117.823059,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/irvine",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/irvine",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Santa Monica, CA",
+    "lat": 34.024212,
+        "lng": -118.496475,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/irvine",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/irvine",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Beverly Hills, CA",
+    "lat": 34.073620,
+    "lng": -118.400352,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/irvine",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/irvine",
+        "color": "blue"
+      }
+    ]
+  },
+{
+  "name": "Anaheim, CA",
+  "lat": 33.835293,
+  "lng": -117.914505,
+  "links": [
+    {
+      "type": "HI-TEK",
+      "path": "data/usa/hitek/anaheim",
+      "color": "blue"
+    },
+    {
+      "type": "PLS(YESG2M)",
+      "path": "data/usa/pls/anaheim",
+      "color": "blue"
+    }
+  ]
+},
+  {
+    "name": "Ontario, CA",
+    "lat": 34.063344,
+    "lng": -117.650888,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/ontario",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/ontario",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Riverside, CA",
+    "lat": 33.953350,
+    "lng": -117.396156,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/ontario",
+        "color": "blue"
+      },
+        {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/ontario",
+        "color": "blue"
+      }
+    ]
+  },
 {
   "name": "San Diego, CA",
   "lat": 32.7157,
