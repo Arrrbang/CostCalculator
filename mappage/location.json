@@ -4089,6 +4089,23 @@
     }
   ]
 },
+  {
+    "name": "Los Angeles, CA",
+    "lat": 34.05222,
+    "lng": -118.24361,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/los_angeles",
+        "color": "blue"
+      },
+            {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/los_angeles",
+        "color": "blue"
+      }
+    ]
+  },
 {
   "name": "San Diego, CA",
   "lat": 32.7157,
