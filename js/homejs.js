@@ -1030,12 +1030,14 @@ fetchData().then(() => {
 });
 
 
+dropdown.addEventListener("change", () => {
+  updateAllCosts(); // 모든 비용 업데이트
+  updateStairChargeDropdown(); // 계단 이동 CBM 드롭다운 업데이트
+});
 poeDropdown.addEventListener("change", updateAllCosts);
-dropdown.addEventListener("change", updateAllCosts);
 containerDropdown.addEventListener("change", updateAllCosts);
 nonDiplomat.addEventListener("change", updateAllCosts);
 diplomat.addEventListener("change", updateAllCosts);
 
 stairCbmDropdown.addEventListener("change", calculateStairCharge);
 stairFloorDropdown.addEventListener("change", calculateStairCharge);
-dropdown.addEventListener("change", updateStairChargeDropdown);
