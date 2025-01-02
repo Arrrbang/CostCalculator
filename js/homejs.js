@@ -224,9 +224,10 @@ async function fetchData() {
 
         // description을 추가
         const descriptionElement = document.getElementById(`additional-info-${additionalInfoIndex}-description`);
-        if (descriptionElement) {
-          descriptionElement.textContent = additionalInfo.description || "";  // description을 업데이트
-        }
+      if (descriptionElement) {
+        const descriptionText = additionalInfo.description || "";
+        descriptionElement.innerHTML = descriptionText.replace(/\n/g, "<br>");  // \n을 <br>로 변경하여 HTML로 삽입
+      }
 
         additionalInfoIndex++;  // 다음 항목으로 넘어감
       }
