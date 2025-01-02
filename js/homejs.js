@@ -934,7 +934,7 @@ function updatestorageperiodDropdown() {
       let chargeableDays = selectedDays - freeStorageDays;
 
       // 무료 보관 기간 이내일 경우
-      if (chargeableDays < =0) {
+      if (chargeableDays <=0) {
         if (valueElement) {
           valueElement.textContent = "무료 보관"; // 무료 기간 이내 메시지 표시
         }
