@@ -19,14 +19,10 @@
     "name": "ISF Filing Fee",
     "description": "",
     "NonDiplomat": {
-      "CONSOLE": 75,
-      "20DRY": 75,
-      "40HC": 75
+      "CONSOLE": 75
     },
     "Diplomat": {
-      "CONSOLE": 75,
-      "20DRY": 75,
-      "40HC": 75
+      "CONSOLE": 75
     }
   },
   "basic-cost-3": {
@@ -35,16 +31,12 @@
     "NonDiplomat": {
       "CONSOLE": {
         "단가": 1.14
-      },
-      "20DRY": 34.21,
-      "40HC": 68.42
+      }
     },
     "Diplomat": {
       "CONSOLE": {
         "단가": 1.14
-      },
-      "20DRY": 34.21,
-      "40HC": 68.42
+      }
     }
   },
     "basic-cost-4": {
@@ -53,16 +45,12 @@
     "NonDiplomat": {
       "CONSOLE": {
         "단가": 0.33
-      },
-      "20DRY": 10,
-      "40HC": 20
+      }
     },
     "Diplomat": {
       "CONSOLE": {
         "단가": 0.33
-      },
-      "20DRY": 10,
-      "40HC": 20
+      }
     }
   },
     "basic-cost-5": {
@@ -71,16 +59,12 @@
     "NonDiplomat": {
       "CONSOLE": {
         "단가": 2.25
-      },
-      "20DRY": 135,
-      "40HC": 135
+      }
     },
     "Diplomat": {
       "CONSOLE": {
         "단가": 2.25
-      },
-      "20DRY": 135,
-      "40HC": 135
+      }
     }
   },
     "basic-cost-6": {
@@ -89,25 +73,19 @@
     "NonDiplomat": {
       "CONSOLE": {
         "단가": 1.66
-      },
-      "20DRY": 100,
-      "40HC": 100
+      }
     },
     "Diplomat": {
       "CONSOLE": {
         "단가": 1.66
-      },
-      "20DRY": 100,
-      "40HC": 100
+      }
     }
   },
   
   "extra-cost-1": {
     "name": "LONG DISTANCE CHARGE",
     "description": "",
-    "CONSOLE": 150,
-    "20DRY": 150,
-    "40HC": 150
+    "CONSOLE": 150
   },
   
   "extra-cost-2": {
@@ -115,76 +93,52 @@
     "description": "100마일 이내 기본 $20/CBM, \nSAN DIEGO: $22/CBM, SAN JOSE: $25/CBM,\nOTHER: $30/CBM 최소 10CBM 이상. ",
     "CONSOLE": {
       "단가": 20
-    },
-    "20DRY": {
-      "단가": 20
-    },
-    "40HC": {
-      "단가": 20
     }
   },
   "extra-cost-3": {
     "name": "UPLIGHT PIANO",
     "description": "1층 운송 기본 비용, 계단 2층은 $300 추가",
-    "CONSOLE": 200,
-    "20DRY": 200,
-    "40HC": 200
+    "CONSOLE": 200
   },
     "extra-cost-4": {
     "name": "WOODEN BOX DISPOSAL CHG",
     "description": "우든 박스 1개당 비용",
-    "CONSOLE": 75,
-    "20DRY": 75,
-    "40HC": 75
+    "CONSOLE": 75
   },
     "extra-cost-5": {
     "name": "완전 분해 가구 조립 비용",
     "description": "당일 조립 불가, 별도 방문. 2명 X $200/HOUR / MIN.3HOURS",
-    "CONSOLE": 200,
-    "20DRY": 200,
-    "40HC": 200
+    "CONSOLE": 200
   },
     "extra-cost-6": {
     "name": "COI HANDLING CHG",
     "description": "큰 건물, 고층 APT 인 경우 보험 증서를 요청 할 경우 ( COI 발급 )",
-    "CONSOLE": 100,
-    "20DRY": 100,
-    "40HC": 100
+    "CONSOLE": 100
   },
     "extra-cost-7": {
     "name": "Stopover Charge",
     "description": "컨테이너 Return시 Appointment가 없어 Storage에 보관하는 비용",
-    "CONSOLE": {"단가": 1.66},
-    "20DRY": 100,
-    "40HC": 100
+    "CONSOLE": {"단가": 1.66}
   },
     "extra-cost-8": {
     "name": "Prepull Charge",
     "description": "컨테이너 P.up시 Appointment가 없어 Storage에 보관하는 비용",
-    "CONSOLE": {"단가": 1.66},
-    "20DRY": 100,
-    "40HC": 100
+    "CONSOLE": {"단가": 1.66}
   },
     "extra-cost-9": {
     "name": "Split Chassis Charge",
     "description": "$70/ONE WAY",
-    "CONSOLE": {"단가": 1.16},
-    "20DRY": 70,
-    "40HC": 70
+    "CONSOLE": {"단가": 1.16}
   },
     "extra-cost-10": {
     "name": "Terminal Waiting Charge",
     "description": "FREE 2hr/터미널 혼잡으로 컨테이너 픽업 지연",
-    "CONSOLE": "$65.00/hr",
-    "20DRY": "$65.00/hr",
-    "40HC": "$65.00/hr"
+    "CONSOLE": "$65.00/hr"
   },
     "extra-cost-11": {
     "name": "Dry-Run Charge",
     "description": "선사 사정으로 컨테이너 픽업 일자가 변경되는 경우",
-    "CONSOLE": {"단가" : 1.66},
-    "20DRY": 100,
-    "40HC": 100
+    "CONSOLE": {"단가" : 1.66}
   },
   "STAIR CHARGE": {
     "description": "업체 문의 필요",
@@ -210,7 +164,7 @@
     "name": "Free Time 이후에 발생되는 비용",
     "description": "Demurrage: $150.00~$350.00/Day (4 Days Free)\nPer Diem: $100.00~$250.00/Day (4 Days Free)"
   },
-  "additional-info-2": {
+  "additional-info-3": {
     "name": "CDS외 비용 관련",
     "description": "배송료 외 전체적인 비용이 HI-TEK과 비슷합니다."
   },
