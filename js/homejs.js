@@ -204,57 +204,32 @@ async function fetchData() {
     // 화폐 단위 저장
     currencySymbol = extraCostData["화폐단위"] || "";
 
-    // 각 항목의 description을 <br>로 변환하여 업데이트
-    const updateDescription = (elementId, description) => {
-      const formattedDescription = description.replace(/\n/g, "<br>");
-      const element = document.getElementById(elementId);
-      if (element) {
-        element.innerHTML = formattedDescription; // <br>로 처리된 description을 업데이트
-      }
-    };
-
     // "DATA BASE"의 description 값 가져오기
     const dataBaseDescription = extraCostData["DATA BASE"]?.description || ""; // 기본값 설정
     const dataDescriptionElement = document.getElementById("data-description");
     if (dataDescriptionElement) {
-      dataDescriptionElement.innerHTML = dataBaseDescription.replace(/\n/g, "<br>"); // <br>로 줄바꿈 처리
+      dataDescriptionElement.textContent = dataBaseDescription;  // description을 업데이트
     }
 
     //additional info 가져오기
     let additionalInfoIndex = 1;  // 추가 정보 항목의 번호 (예: 1, 2, 3 ...)
       while (extraCostData[`additional-info-${additionalInfoIndex}`]) {
         const additionalInfo = extraCostData[`additional-info-${additionalInfoIndex}`];
-      
+
         // name을 추가
         const labelElement = document.getElementById(`additional-info-${additionalInfoIndex}-label`);
         if (labelElement) {
           labelElement.textContent = additionalInfo.name || "";  // name을 업데이트
         }
-      
+
         // description을 추가
-      const descriptionElement = document.getElementById(`additional-info-${additionalInfoIndex}-description`);
-      if (descriptionElement) {
-        descriptionElement.innerHTML = additionalInfo.description?.replace(/\n/g, "<br>") || "";  // <br>로 줄바꿈 처리
-      }
-      
+        const descriptionElement = document.getElementById(`additional-info-${additionalInfoIndex}-description`);
+        if (descriptionElement) {
+          descriptionElement.textContent = additionalInfo.description || "";  // description을 업데이트
+        }
+
         additionalInfoIndex++;  // 다음 항목으로 넘어감
       }
-
-    // tableData에 있는 모든 항목의 description을 <br>로 처리
-    Object.keys(tableData).forEach((key) => {
-      const item = tableData[key];
-      if (item.description) {
-        updateDescription(`${key}-description`, item.description);
-      }
-    });
-
-    // extraCostData에 있는 모든 항목의 description을 <br>로 처리
-    Object.keys(extraCostData).forEach((key) => {
-      const item = extraCostData[key];
-      if (item.description) {
-        updateDescription(`${key}-description`, item.description);
-      }
-    });
 
     // 링크 업데이트
     if (Array.isArray(tableData.links) && tableData.links.length > 0) {
@@ -286,7 +261,7 @@ async function fetchData() {
     updateHeavyItemDropdown();
     updatestorageperiodDropdown();
     calculateTotalCost();
-    
+
     const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "";
     const stairDescriptionElement = document.getElementById("stair-description");
     if (stairDescriptionElement) {
@@ -330,7 +305,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       updateBasicDeliveryCost(); // 기본 배송 비용 업데이트
       updateAllCosts(); // 모든 비용 업데이트
     });
-    
+
     diplomat.addEventListener("change", () => {
       if (diplomat.checked) {
         nonDiplomat.checked = false; // nonDiplomat 체크 해제
@@ -449,7 +424,7 @@ if (containerType === "CONSOLE") {
     ofcValueElement.textContent = "오류 발생";
   }
 }
-    
+
 //------------------basic delivery 처리------------------------
 function updateBasicDeliveryCost() {
   const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값
@@ -475,7 +450,7 @@ function updateBasicDeliveryCost() {
   if (typeof dataCategory[selectedContainer] === "object") {
     // 컨테이너 타입이 있는 경우
     const containerData = dataCategory[selectedContainer];
-    
+
     // CBM 값에 해당하는 범위 또는 개별 값 찾기
     const rangeKey = Object.keys(containerData).find(key => {
       if (key.includes("-")) {
@@ -523,7 +498,7 @@ diplomat.addEventListener("change", updateBasicDeliveryCost);
 
 // 컨테이너 드롭다운 값 변경 시 기본 배송 비용 업데이트
 containerDropdown.addEventListener("change", updateBasicDeliveryCost);
-    
+
 //--------------------basic cost 처리---------------------------
 function updateDiplomatSensitiveResult(categoryKey) {
   const selectedContainer = containerDropdown.value; // 선택된 컨테이너 타입
@@ -538,7 +513,7 @@ function updateDiplomatSensitiveResult(categoryKey) {
 
   // NonDiplomat 또는 Diplomat 구분
   const role = nonDiplomat.checked ? "NonDiplomat" : "Diplomat";
-  
+
   // 해당 컨테이너 타입의 데이터 가져오기
   const costData = categoryData[role]?.[selectedContainer];
 
@@ -551,7 +526,7 @@ function updateDiplomatSensitiveResult(categoryKey) {
       }
       return false;
     });
-    
+
     if (rangeKey) {
       // 범위에 맞는 값을 출력
       result = costData[rangeKey] || "";
@@ -580,17 +555,14 @@ function updateDiplomatSensitiveResult(categoryKey) {
   if (!isNaN(result) && result !== "") {
       result = `${currencySymbol}${Number(result).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
   }
-  
-  // 6. 줄바꿈을 <br>로 변경
-  result = result.replace(/\n/g, '<br>');
 
-  // 7. 업데이트
+  // 6. 업데이트
   const labelElement = document.getElementById(`${categoryKey}-label`);
   const valueElement = document.getElementById(`${categoryKey}-value`);
   const descriptionElement = document.getElementById(`${categoryKey}-description`);
 
   if (labelElement) labelElement.textContent = categoryData.name || "";
-  if (valueElement) valueElement.innerHTML = result; // innerHTML로 수정하여 <br> 태그를 반영
+  if (valueElement) valueElement.textContent = result;
   if (descriptionElement) descriptionElement.textContent = categoryData.description || "";
 }
 
@@ -788,9 +760,7 @@ function updateExtraCostResult(categoryKey) {
     const defaultMultiplier = categoryData?.unitMultiplier || 0;
     result = selectedCBM * defaultMultiplier;
   }
-  // 7. 줄바꿈을 <br>로 변경
-  result = result.replace(/\n/g, '<br>');
-  
+
   // 6. 화폐 단위 추가
   if (!isNaN(result) && result !== "") {
     result = `${currencySymbol}${Number(result).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
@@ -802,8 +772,8 @@ function updateExtraCostResult(categoryKey) {
   const descriptionElement = document.getElementById(`${categoryKey}-description`);
 
   if (labelElement) labelElement.textContent = categoryData.name || "";
-  if (valueElement) valueElement.innerHTML = result; // innerHTML로 수정하여 <br> 태그를 반영
-  if (descriptionElement) descriptionElement.innerHTML = (categoryData.description || "").replace(/\n/g, '<br>'); // <br>로 줄바꿈 처리
+  if (valueElement) valueElement.textContent = result;
+  if (descriptionElement) descriptionElement.textContent = categoryData.description || "";
 }
 
 
@@ -987,7 +957,7 @@ function updatestorageperiodDropdown() {
 
 //--------------------------------------------------------------------------------
 
-    
+
 // DOMContentLoaded 후에 호출
 document.addEventListener("DOMContentLoaded", () => {
   updateStairChargeDropdown(); // 페이지 로드 후 초기화
@@ -1001,7 +971,7 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(totalCostElement, { childList: true });
     }
 });
-    
+
 
 // 모든 카테고리를 동적으로 업데이트
 function updateAllCosts() {
@@ -1030,14 +1000,12 @@ fetchData().then(() => {
 });
 
 
-dropdown.addEventListener("change", () => {
-  updateAllCosts(); // 모든 비용 업데이트
-  updateStairChargeDropdown(); // 계단 이동 CBM 드롭다운 업데이트
-});
 poeDropdown.addEventListener("change", updateAllCosts);
+dropdown.addEventListener("change", updateAllCosts);
 containerDropdown.addEventListener("change", updateAllCosts);
 nonDiplomat.addEventListener("change", updateAllCosts);
 diplomat.addEventListener("change", updateAllCosts);
 
 stairCbmDropdown.addEventListener("change", calculateStairCharge);
 stairFloorDropdown.addEventListener("change", calculateStairCharge);
+dropdown.addEventListener("change", updateStairChargeDropdown);
