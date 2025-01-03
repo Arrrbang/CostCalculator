@@ -105,27 +105,27 @@
     "extra-cost-6": {
     "name": "Stopover Charge",
     "description": "컨테이너 Return시 Appointment가 없어 Storage에 보관하는 비용",
-    "CONSOLE": {"단가": 1.66}
+    "CONSOLE": "미확인"
   },
     "extra-cost-7": {
     "name": "Prepull Charge",
     "description": "컨테이너 P.up시 Appointment가 없어 Storage에 보관하는 비용",
-    "CONSOLE": {"단가": 1.66}
+    "CONSOLE": "미확인"
   },
     "extra-cost-8": {
     "name": "Split Chassis Charge",
     "description": "$70/ONE WAY",
-    "CONSOLE": {"단가": 1.16}
+    "CONSOLE": "미확인"
   },
     "extra-cost-9": {
     "name": "Terminal Waiting Charge",
     "description": "FREE 2hr/터미널 혼잡으로 컨테이너 픽업 지연",
-    "CONSOLE": "$65.00/hr"
+    "CONSOLE": "미확인"
   },
     "extra-cost-10": {
     "name": "Dry-Run Charge",
     "description": "선사 사정으로 컨테이너 픽업 일자가 변경되는 경우",
-    "CONSOLE": {"단가" : 1.66}
+    "CONSOLE": "미확인"
   },
   "STAIR CHARGE": {
     "description": "업체 문의 필요",
@@ -137,23 +137,19 @@
     "단가": 300
   },
   "STORAGE CHARGE": {
-    "description": "2주 무료 보관 \n정확한 보관 비용은 notion확인 요",
+    "description": "2주 무료 보관 \n정확한 보관 비용은 notion확인",
     "단위": "주",
     "무료 보관 기간": 2,
     "보관 비용 단가": 5
   },
   
   "additional-info-1": {
-    "name": "Exam에 걸릴 시 발생되는 비용",
-    "description": "X-Ray: $200.00~$300.00 (5% 미만)\nTail Gate Exam: $200.00~$300.00 (2% 미만)\nCET Exam(Intensive Exam): case by case"
-  },
+    "name": "추가적으로 발생될 수 있는 비용",
+    "description": "검사 진행시 검사 비용 실비 \n free time 이후 발생되는 dem&det 실비 청구  },
+
   "additional-info-2": {
-    "name": "Free Time 이후에 발생되는 비용",
-    "description": "Demurrage: $150.00~$350.00/Day (4 Days Free)\nPer Diem: $100.00~$250.00/Day (4 Days Free)"
-  },
-  "additional-info-3": {
-    "name": "CDS외 비용 관련",
-    "description": "전체적인 비용이 HI-TEK과 비슷합니다."
+    "name": "추가 비용",
+    "description": "추가적인 비용은 hi-tek이 가장 자세하게 기재되어 있음."
   },
   "DATA BASE": {
     "description": "업데이트 : 2025.1.1 YESG2M 전달"
