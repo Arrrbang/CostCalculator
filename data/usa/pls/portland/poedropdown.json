@@ -2,5 +2,9 @@
   {
     "value": "oakland",
     "label": "Oakland, CA"
+  },
+  {
+    "value": "seattle",
+    "label": "Seattle, WA"
   }
 ]
