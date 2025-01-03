@@ -4266,7 +4266,12 @@
   "links": [
     {
       "type": "HI-TEK",
-      "path": "data/usa/hitek/sandiego",
+      "path": "data/usa/hitek/san_diego",
+      "color": "blue"
+    },
+    {
+      "type": "PLS(YESG2M)",
+      "path": "data/usa/pl/san_diego",
       "color": "blue"
     }
   ]
@@ -4280,6 +4285,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/chulavista",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/chulavista",
+        "color": "blue"
       }
     ]
   },
@@ -4291,6 +4301,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/elcentro",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/elcentro",
         "color": "blue"
       }
     ]
@@ -4304,6 +4319,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/bakersfield",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/bakersfield",
+        "color": "blue"
       }
     ]
   },
@@ -4315,6 +4335,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/bakersfield",
+        "color": "blue"
+      },
+          {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/bakersfield",
         "color": "blue"
       }
     ]
@@ -4376,6 +4401,11 @@
       "type": "HI-TEK",
       "path": "data/usa/hitek/las_vegas",
       "color": "blue"
+    },
+      {
+      "type": "PLS(YESG2M)",
+      "path": "data/usa/pls/las_vegas",
+      "color": "blue"
     }
   ]
 },
@@ -4400,6 +4430,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/phoenix",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/phoenix",
+        "color": "blue"
       }
     ]
   },
@@ -4411,6 +4446,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/tucson",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/tucson",
         "color": "blue"
       }
     ]
@@ -4520,6 +4560,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/salt_lake_city",
         "color": "blue"
+      },
+          {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/salt_lake_city",
+        "color": "blue"
       }
     ]
   },
@@ -4532,6 +4577,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/denver",
         "color": "blue"
+      },
+          {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/denver",
+        "color": "blue"
       }
     ]
   },
@@ -4543,6 +4593,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/albuquerque",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/albuquerque",
         "color": "blue"
       }
     ]
@@ -4561,6 +4616,11 @@
         "type": "SOS",
         "path": "data/usa/sos/dallas",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/alltxlocation",
+        "color": "blue"
       }
     ]
   },
@@ -4577,6 +4637,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/austin",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/alltxlocation",
         "color": "blue"
       }
     ]
@@ -4595,6 +4660,11 @@
         "type": "SOS",
         "path": "data/usa/sos/houston",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/alltxlocation",
+        "color": "blue"
       }
     ]
   },
@@ -4612,6 +4682,11 @@
         "type": "SOS",
         "path": "data/usa/sos/college_station",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/alltxlocation",
+        "color": "blue"
       }
     ]
   },
@@ -4624,6 +4699,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/alltxlocation",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/alltxlocation",
+        "color": "blue"
       }
     ]
   },
@@ -4635,6 +4715,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/alltxlocation",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/alltxlocation",
         "color": "blue"
       }
     ]
