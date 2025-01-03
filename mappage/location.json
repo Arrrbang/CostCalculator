@@ -2015,6 +2015,11 @@
         "type": "KEY WORD",
         "path": "data/usa/keyword/asbury_park",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/asbury_park",
+        "color": "blue"
       }
     ]
   },
@@ -2026,6 +2031,11 @@
       {
         "type": "KEY WORD",
         "path": "data/usa/keyword/asbury_park",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/atlantic_city",
         "color": "blue"
       }
     ]
@@ -2039,6 +2049,11 @@
         "type": "KEY WORD",
         "path": "data/usa/keyword/bloomfield",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/bloomfield",
+        "color": "blue"
       }
     ]
   },
@@ -2050,6 +2065,11 @@
       {
         "type": "KEY WORD",
         "path": "data/usa/keyword/camden",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/camden",
         "color": "blue"
       }
     ]
@@ -2063,6 +2083,11 @@
         "type": "KEY WORD",
         "path": "data/usa/keyword/cliffside_park",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/cliffside_park",
+        "color": "blue"
       }
     ]
   },
@@ -2074,6 +2099,11 @@
       {
         "type": "KEY WORD",
         "path": "data/usa/keyword/clinton",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/clinton",
         "color": "blue"
       }
     ]
@@ -2087,6 +2117,11 @@
         "type": "KEY WORD",
         "path": "data/usa/keyword/cliffside_park",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/closter",
+        "color": "blue"
       }
     ]
   },
@@ -2098,6 +2133,11 @@
       {
         "type": "KEY WORD",
         "path": "data/usa/keyword/clinton",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/cranbury",
         "color": "blue"
       }
     ]
@@ -2111,6 +2151,11 @@
         "type": "KEY WORD",
         "path": "data/usa/keyword/cliffside_park",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/cranford",
+        "color": "blue"
       }
     ]
   },
@@ -2122,6 +2167,11 @@
       {
         "type": "KEY WORD",
         "path": "data/usa/keyword/cliffside_park",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/dover",
         "color": "blue"
       }
     ]
@@ -2135,6 +2185,11 @@
         "type": "KEY WORD",
         "path": "data/usa/keyword/cliffside_park",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/edgewater",
+        "color": "blue"
       }
     ]
   },
@@ -2146,6 +2201,11 @@
       {
         "type": "KEY WORD",
         "path": "data/usa/keyword/cliffside_park",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/elizabeth",
         "color": "blue"
       }
     ]
@@ -2163,13 +2223,18 @@
     ]
   },
   {
-    "name": "Fort Lee, NJ",
+    "name": "Fortlee, NJ",
     "lat": 40.8517,
     "lng": -73.9717,
     "links": [
       {
         "type": "KEY WORD",
         "path": "data/usa/keyword/cliffside_park",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/fortlee",
         "color": "blue"
       }
     ]
@@ -2183,6 +2248,11 @@
         "type": "KEY WORD",
         "path": "data/usa/keyword/cliffside_park",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/hackensack",
+        "color": "blue"
       }
     ]
   },
@@ -2194,6 +2264,11 @@
       {
         "type": "KEY WORD",
         "path": "data/usa/keyword/cliffside_park",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/jersey_city",
         "color": "blue"
       }
     ]
@@ -2207,6 +2282,11 @@
         "type": "KEY WORD",
         "path": "data/usa/keyword/cliffside_park",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/kearny",
+        "color": "blue"
       }
     ]
   },
@@ -2218,6 +2298,11 @@
       {
         "type": "KEY WORD",
         "path": "data/usa/keyword/clinton",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/keyport",
         "color": "blue"
       }
     ]
@@ -2231,6 +2316,11 @@
         "type": "KEY WORD",
         "path": "data/usa/keyword/asbury_park",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/lakewood",
+        "color": "blue"
       }
     ]
   },
@@ -2243,6 +2333,11 @@
         "type": "KEY WORD",
         "path": "data/usa/keyword/asbury_park",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/lawrenceville",
+        "color": "blue"
       }
     ]
   },
@@ -2254,6 +2349,11 @@
       {
         "type": "KEY WORD",
         "path": "data/usa/keyword/cliffside_park",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/linden",
         "color": "blue"
       }
     ]
