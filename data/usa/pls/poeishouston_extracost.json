@@ -145,7 +145,8 @@
   
   "additional-info-1": {
     "name": "추가적으로 발생될 수 있는 비용",
-    "description": "검사 진행시 검사 비용 실비 \n free time 이후 발생되는 dem&det 실비 청구  },
+    "description": "검사 진행시 검사 비용 실비 \n free time 이후 발생되는 dem&det 실비 청구"
+  },
 
   "additional-info-2": {
     "name": "추가 비용",
