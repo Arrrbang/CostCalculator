@@ -18,6 +18,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/atlanta",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/atlanta",
+        "color": "blue"
       }
     ]
   },
@@ -4353,6 +4358,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/fresno",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/fresno",
+        "color": "blue"
       }
     ]
   },
@@ -4365,6 +4375,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/sanjose",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/san_francisco",
+        "color": "blue"
       }
     ]
   },
@@ -4375,7 +4390,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/sanfrancisco",
+        "path": "data/usa/hitek/san_francisco",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/san_francisco",
         "color": "blue"
       }
     ]
@@ -4388,6 +4408,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/sacramento",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/sacramento",
         "color": "blue"
       }
     ]
@@ -4417,6 +4442,11 @@
     {
       "type": "HI-TEK",
       "path": "data/usa/hitek/reno",
+      "color": "blue"
+    },
+    {
+      "type": "PLS(YESG2M)",
+      "path": "data/usa/pls/reno",
       "color": "blue"
     }
   ]
@@ -4464,6 +4494,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/portland",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/portland",
+        "color": "blue"
       }
     ]
   },
@@ -4475,6 +4510,35 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/seattle",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/seattle",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Yakima, WA",
+    "lat": 46.602070,
+    "lng": -120.505898,
+    "links": [
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/yakima",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Spokane, WA",
+    "lat": 47.658779,
+    "lng": -117.426048,
+    "links": [
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/usa/pls/spokane",
         "color": "blue"
       }
     ]
@@ -4619,7 +4683,7 @@
       },
       {
         "type": "PLS(YESG2M)",
-        "path": "data/usa/pls/alltxlocation",
+        "path": "data/usa/pls/dallas",
         "color": "blue"
       }
     ]
@@ -4641,7 +4705,7 @@
       },
       {
         "type": "PLS(YESG2M)",
-        "path": "data/usa/pls/alltxlocation",
+        "path": "data/usa/pls/austin",
         "color": "blue"
       }
     ]
@@ -4663,7 +4727,7 @@
       },
       {
         "type": "PLS(YESG2M)",
-        "path": "data/usa/pls/alltxlocation",
+        "path": "data/usa/pls/houston",
         "color": "blue"
       }
     ]
