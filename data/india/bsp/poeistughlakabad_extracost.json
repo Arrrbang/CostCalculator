@@ -1,0 +1,105 @@
+{
+  "화폐단위": "$",
+  
+  "basic-cost-1": {
+    "name": "THC",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY": 250,
+      "40HC": 350
+    },
+    "Diplomat": {
+      "20DRY": 250,
+      "40HC": 350
+    }
+  },
+  "basic-cost-2": {
+    "name": "POC",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY": 300,
+      "40HC": 400
+    },
+    "Diplomat": {
+      "20DRY": 300,
+      "40HC": 400
+    }
+  },
+  "basic-cost-3": {
+    "name": "DRAYAGE CHARGE",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY": 50,
+      "40HC": 100
+    },
+    "Diplomat": {
+      "20DRY": 50,
+      "40HC": 100
+    }
+  },
+  "extra-cost-1": {
+    "name": "FULL SETTING",
+    "description": "",
+    "20DRY": "INCLUDED",
+    "40HC": "INCLUDED"
+  },
+  "extra-cost-2": {
+    "name": "WEEKEND CHARGE",
+    "description": "비딩자료에 $60/PER CNTR로 옴. 확인 필요",
+    "20DRY": 0,
+    "40HC": 0
+  },
+  "extra-cost-3": {
+    "name": "SHUTTLE",
+    "description": "$4/PER CBM",
+    "20DRY": {"단가":4},
+    "40HC": {"단가":4}
+  },
+  "extra-cost-4": {
+    "name": "PIANO",
+    "description": "",
+    "20DRY": 55,
+    "40HC": 55
+  },
+  "extra-cost-5": {
+    "name": "LONG CARRY",
+    "description": "$2/PER CBM",
+    "20DRY": {"단가":2},
+    "40HC": {"단가":2}
+  },
+  "extra-cost-6": {
+    "name": "PARKING PERMIT",
+    "description": "$10/TRUCK",
+    "20DRY": 10,
+    "40HC": 10
+  },
+
+  "STAIR CHARGE": {
+    "description": "",
+    "CBM단가": 5
+  },
+  "HEAVY ITEM": {
+    "description": "CBM단위로 계산",
+    "단위": "CBM",
+    "단가": 5
+  },
+  "STORAGE CHARGE": {
+    "description": "보관 비용 확인 필요",
+    "단위": "주",
+    "무료 보관 기간": 0,
+    "보관 비용 단가": 0
+  },
+  
+  "additional-info-1": {
+    "name": "추가 비용",
+    "description": "추가 비용이 많이 나오는 업체 \nMATHADI CHARGE(대략 $30)"
+  },
+  "additional-info-2": {
+    "name": "세금 증빙 확인 필수",
+    "description": "이전에 세금으로 장난친 적 있어서 확인 필수"
+  },
+  
+  "DATA BASE": {
+    "description": "업데이트 : 2024.10 이트너스 비딩 조사"
+  }
+}
