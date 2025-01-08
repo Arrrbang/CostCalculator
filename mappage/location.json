@@ -5124,5 +5124,17 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Bangalore, India",
+    "lat": 12.971599,
+    "lng": 77.594566,
+    "links": [
+      {
+        "type": "KNJ",
+        "path": "data/india/knj/bangalore",
+        "color": "blue"
+      }
+    ]
   }
 ]
