@@ -1,0 +1,122 @@
+{
+  "화폐단위": "$",
+  
+  "basic-cost-1": {
+    "name": "THC",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY": "450",
+      "40HC": "750"
+    },
+    "Diplomat": {
+      "20DRY": "450",
+      "40HC": "750"
+    }
+  },
+  "basic-cost-2": {
+    "name": "POC",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY": 700,
+      "40HC": 1000
+    },
+    "Diplomat": {
+      "20DRY": 700,
+      "40HC": 1000
+    }
+  },
+  "basic-cost-3": {
+    "name": "컨테이너상태 자택 배송",
+    "description": "DIPLOMAT화물일 경우 발생",
+    "NonDiplomat": {
+      "20DRY": 0,
+      "40HC": 0
+    },
+    "Diplomat": {
+      "20DRY": 250,
+      "40HC": 750
+    }
+  },
+  "extra-cost-1": {
+    "name": "FULL SETTING",
+    "description": "",
+    "20DRY": 200,
+    "40HC": 300
+  },
+  "extra-cost-2": {
+    "name": "UPLIGHT PIANO",
+    "description": "",
+    "20DRY": 150,
+    "40HC": 150
+  },
+    "extra-cost-3": {
+    "name": "WEEKEND CHARGE",
+    "description": "",
+    "20DRY": 150,
+    "40HC": 250
+  },
+    "extra-cost-4": {
+    "name": "SHUTTLE",
+    "description": "",
+    "20DRY": 120,
+    "40HC": 160
+  },
+    "extra-cost-5": {
+    "name": "LONG CARRY",
+    "description": "거리에 따라 다름",
+    "20DRY": "$150~$200",
+    "40HC": "$150~$200"
+  },
+    "extra-cost-6": {
+    "name": "UNION CHARGES",
+    "description": "MUMBAI & CALCUTTA 진행시 발생",
+    "20DRY": "약 $200, 실비 청구",
+    "40HC": "약 $200, 실비 청구"
+  },
+    "extra-cost-7": {
+    "name": "서류 픽업 비용",
+    "description": "배송지가 25KM이상 떨어진 경우 발생",
+    "20DRY": "약 $50, 거리에 따라 다름",
+    "40HC": "약 $50, 거리에 따라 다름"
+  },
+    "extra-cost-8": {
+    "name": "2차 배송 비용",
+    "description": "최소 $100, 거리에 따라 차등",
+    "20DRY": 100,
+    "40HC": 100
+  },
+    "extra-cost-9": {
+    "name": "추가 폐지 수거",
+    "description": "최소 $60, 거리에 따라 차등",
+    "20DRY": 60,
+    "40HC": 60
+  },
+  "STAIR CHARGE": {
+    "description": "기본 $100 / 12층 이상 $150",
+    "CBM단가": 0
+  },
+  "HEAVY ITEM": {
+    "description": "PIANO, MASSAGER ETC",
+    "단위": "ITEM",
+    "단가": 150
+  },
+  "STORAGE CHARGE": {
+    "description": "보관 비용 확인 필요",
+    "단위": "주",
+    "무료 보관 기간": 0,
+    "보관 비용 단가": 0
+  },
+  
+  "additional-info-1": {
+    "name": "추가 비용",
+    "description": "추가 비용이 많이 나오는 업체 \nMATHADI CHARGE(대략 $30)"
+  },
+  "additional-info-2": {
+    "name": "PORT 별 추가 운송료",
+    "description": "Transportation Nhava Sheva to Chennai : $450(40HC) \nTransportation to Chennai : $300(40HC)"
+  },
+  
+  "DATA BASE": {
+    "description": "업데이트 : 2024.10 이트너스 비딩 조사"
+  }
+}
