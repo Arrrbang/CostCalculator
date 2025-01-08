@@ -5134,6 +5134,11 @@
         "type": "KNJ",
         "path": "data/india/knj/bangalore",
         "color": "blue"
+      },
+      {
+        "type": "BSP",
+        "path": "data/india/bsp/bangalore",
+        "color": "blue"
       }
     ]
   },
@@ -5144,7 +5149,12 @@
   "links": [
     {
       "type": "KNJ",
-      "path": "data/india/hitek/kolkata",
+      "path": "data/india/knj/kolkata",
+      "color": "blue"
+    },
+    {
+      "type": "BSP",
+      "path": "data/india/bsp/kolkata",
       "color": "blue"
     }
   ]
@@ -5158,6 +5168,11 @@
       "type": "KNJ",
       "path": "data/india/knj/chennai",
       "color": "blue"
+    },
+    {
+      "type": "BSP",
+      "path": "data/india/bsp/chennai",
+      "color": "blue"
     }
   ]
 },
@@ -5169,6 +5184,11 @@
     {
       "type": "KNJ",
       "path": "data/india/knj/gurgaon",
+      "color": "blue"
+    },
+    {
+      "type": "BSP",
+      "path": "data/india/bsp/gurgaon",
       "color": "blue"
     }
   ]
@@ -5182,6 +5202,11 @@
       "type": "KNJ",
       "path": "data/india/knj/mumbai",
       "color": "blue"
+    },
+    {
+      "type": "BSP",
+      "path": "data/india/bsp/mumbai",
+      "color": "blue"
     }
   ]
 },
@@ -5194,6 +5219,11 @@
       "type": "KNJ",
       "path": "data/india/knj/new_delhi",
       "color": "blue"
+    },
+    {
+      "type": "BSP",
+      "path": "data/india/bsp/new_delhi",
+      "color": "blue"
     }
   ]
 },
@@ -5205,6 +5235,11 @@
     {
       "type": "KNJ",
       "path": "data/india/knj/noida",
+      "color": "blue"
+    },
+    {
+      "type": "BSP",
+      "path": "data/india/bsp/noida",
       "color": "blue"
     }
   ]
