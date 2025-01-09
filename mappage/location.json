@@ -5337,6 +5337,11 @@
         "type": "유니월드 북경",
         "path": "data/china/UWTbeijing/beijing",
         "color": "blue"
+      },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/beijing",
+        "color": "blue"
       }
     ]
   },
@@ -5349,6 +5354,11 @@
         "type": "유니월드 남경",
         "path": "data/china/UWTnanjing/chengdu",
         "color": "blue"
+      },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/chengdu",
+        "color": "blue"
       }
     ]
   },
@@ -5360,6 +5370,11 @@
       {
         "type": "유니월드 심천",
         "path": "data/china/UWTshenzhen/guangzhou",
+        "color": "blue"
+      },
+        {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/guangzhou",
         "color": "blue"
       }
     ]
@@ -5378,6 +5393,11 @@
         "type": "유니월드 상해",
         "path": "data/china/UWTshanghai/hangzhou",
         "color": "blue"
+      },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/hangzhou",
+        "color": "blue"
       }
     ]
   },
@@ -5389,6 +5409,11 @@
       {
         "type": "유니월드 심천",
         "path": "data/china/UWTshenzhen/huizhou",
+        "color": "blue"
+      },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/huizhou",
         "color": "blue"
       }
     ]
@@ -5402,6 +5427,11 @@
         "type": "유니월드 남경",
         "path": "data/china/UWTnanjing/nanjing",
         "color": "blue"
+      },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/nanjing",
+        "color": "blue"
       }
     ]
   },
@@ -5413,6 +5443,11 @@
       {
         "type": "유니월드 상해",
         "path": "data/china/UWTshanghai/shanghai",
+        "color": "blue"
+      },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/shanghai",
         "color": "blue"
       }
     ]
@@ -5426,7 +5461,12 @@
       "type": "유니월드 심천",
       "path": "data/china/UWTshenzhen/shenzhen",
       "color": "blue"
-    }
+    },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/shenzhen",
+        "color": "blue"
+      }
   ]
 },
   {
@@ -5443,6 +5483,11 @@
         "type": "유니월드 상해",
         "path": "data/china/UWTshanghai/suzhou",
         "color": "blue"
+      },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/suzhou",
+        "color": "blue"
       }
     ]
   },
@@ -5454,6 +5499,11 @@
       {
         "type": "유니월드 천진",
         "path": "data/china/UWTtianjin/tianjin",
+        "color": "blue"
+      },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/tianjin",
         "color": "blue"
       }
     ]
@@ -5467,6 +5517,11 @@
         "type": "대성물류",
         "path": "data/china/daesung/weihai",
         "color": "blue"
+      },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/weihai",
+        "color": "blue"
       }
     ]
   },
@@ -5478,6 +5533,11 @@
       {
         "type": "유니월드 남경",
         "path": "data/china/UWTnanjing/wuhan",
+        "color": "blue"
+      },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/wuhan",
         "color": "blue"
       }
     ]
@@ -5491,6 +5551,11 @@
         "type": "유니월드 남경",
         "path": "data/china/UWTnanjing/xian",
         "color": "blue"
+      },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/xian",
+        "color": "blue"
       }
     ]
   },
@@ -5502,6 +5567,11 @@
       {
         "type": "유니월드 심천",
         "path": "data/china/UWTshenzhen/zhongshan",
+        "color": "blue"
+      },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/zhongshan",
         "color": "blue"
       }
     ]
@@ -5515,6 +5585,11 @@
         "type": "유니월드 심천",
         "path": "data/china/UWTshenzhen/dongguan",
         "color": "blue"
+      },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/dongguan",
+        "color": "blue"
       }
     ]
   },
@@ -5526,6 +5601,11 @@
       {
         "type": "유니월드 심천",
         "path": "data/china/UWTshenzhen/xiamen",
+        "color": "blue"
+      },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/xiamen",
         "color": "blue"
       }
     ]
@@ -5539,6 +5619,11 @@
         "type": "유니월드 남경",
         "path": "data/china/UWTnanjing/zhengzhou",
         "color": "blue"
+      },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/zhengzhou",
+        "color": "blue"
       }
     ]
   },
@@ -5550,6 +5635,11 @@
       {
         "type": "대성물류",
         "path": "data/china/daesung/qingdao",
+        "color": "blue"
+      },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/qingdao",
         "color": "blue"
       }
     ]
@@ -5586,6 +5676,11 @@
       {
         "type": "유니월드 남경",
         "path": "data/china/UWTnanjing/chongqing",
+        "color": "blue"
+      },
+      {
+        "type": "월드브릿지",
+        "path": "data/china/worldbridge/chongqing",
         "color": "blue"
       }
     ]
