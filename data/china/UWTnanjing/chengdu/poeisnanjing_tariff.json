@@ -96,17 +96,6 @@
         "56-60" : 6300
       }
   },
-  "diplomat": {
-      "CONSOLE": {
-        "ANY": "단독 컨테이너 지원"
-      },
-      "20DRY": {
-        "ANY": "40HC 확인"
-      },
-      "40HC": {
-        "ANY": "40HC 확인"
-      }
-  },
   "containerType": [
     "CONSOLE",
     "20DRY",
