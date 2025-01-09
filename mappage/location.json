@@ -5327,5 +5327,269 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Beijing, China",
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/beijing",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Chengdu, China",
+    "lat": 30.5728,
+    "lng": 104.0668,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/UWTnanjing/chengdu",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Guangzhou, China",
+    "lat": 23.1291,
+    "lng": 113.2644,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/guangzhou",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hainan, China",
+    "lat": 19.5664,
+    "lng": 109.9497,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/hainan",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hangzhou, China",
+    "lat": 30.2741,
+    "lng": 120.1551,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/hangzhou",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Huizhou, China",
+    "lat": 23.1115,
+    "lng": 114.4152,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/huizhou",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Nanjing, China",
+    "lat": 32.0603,
+    "lng": 118.7969,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/nanjing",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Shanghai, China",
+    "lat": 31.2304,
+    "lng": 121.4737,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/shanghai",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Shenyang, China",
+    "lat": 41.8057,
+    "lng": 123.4315,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/shenyang",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Suzhou, China",
+    "lat": 31.2983,
+    "lng": 120.5832,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/suzhou",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tianjin, China",
+    "lat": 39.3434,
+    "lng": 117.3616,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/tianjin",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Weihai, China",
+    "lat": 37.5131,
+    "lng": 122.1204,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/weihai",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Wuhan, China",
+    "lat": 30.5928,
+    "lng": 114.3055,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/wuhan",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Xi'an, China",
+    "lat": 34.3416,
+    "lng": 108.9398,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/xian",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Zhongshan, China",
+    "lat": 22.5176,
+    "lng": 113.3926,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/zhongshan",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Dongguan, China",
+    "lat": 23.0205,
+    "lng": 113.7518,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/dongguan",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Xiamen, China",
+    "lat": 24.4798,
+    "lng": 118.0894,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/xiamen",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Zhengzhou, China",
+    "lat": 34.7466,
+    "lng": 113.6254,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/zhengzhou",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Harbin, China",
+    "lat": 45.8038,
+    "lng": 126.5349,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/harbin",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Dalian, China",
+    "lat": 38.9140,
+    "lng": 121.6147,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/dalian",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Qingdao, China",
+    "lat": 36.0662,
+    "lng": 120.3826,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/qingdao",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Chongqing, China",
+    "lat": 29.5630,
+    "lng": 106.5516,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/china/hitek/chongqing",
+        "color": "blue"
+      }
+    ]
   }
 ]
