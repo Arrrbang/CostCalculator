@@ -195,6 +195,11 @@
 // 지도 초기화 (줌 레벨에 따른 마커 표시 설정)
 var map = L.map('map', {
   minZoom: 1,  // 최소 줌은 설정하지 않음
+  maxBounds: [
+    [-90, -180], // 남쪽과 서쪽 경계
+    [90, 180]    // 북쪽과 동쪽 경계
+  ], // 지도 이동 범위를 지구 전체로 제한
+  worldCopyJump: true // 세계 전역을 넘지 않도록 설정
 }).setView([33.0, -83.5], 6);  // 기본 줌 레벨은 7로 설정
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -203,7 +208,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var markers = []; // 마커를 저장할 배열
 var minZoomForMarkersWeb = 6; // 웹에서는 6 이상에서만 마커 표시
-var minZoomForMarkersMobile = 4; // 모바일에서는 4 이상에서만 마커 표시
+var minZoomForMarkersMobile = 5; // 모바일에서는 5 이상에서만 마커 표시
 
 // 마커 표시 여부를 제어하는 함수
 function updateMarkers() {
