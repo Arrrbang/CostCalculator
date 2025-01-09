@@ -6,7 +6,7 @@
     "description": "",
     "NonDiplomat": {
       "CONSOLE":"INCLUDED",
-      "20DRY": INCLUED,
+      "20DRY": "INCLUED",
       "40HC": "INCLUDED"
     },
     "Diplomat": {
