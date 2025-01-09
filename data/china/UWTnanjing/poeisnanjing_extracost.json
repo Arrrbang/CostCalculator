@@ -1,0 +1,85 @@
+{
+  "화폐단위": "$",
+  
+  "basic-cost-1": {
+    "name": "THC",
+    "description": "",
+    "NonDiplomat": {
+      "CONSOLE":"INCLUDED",
+      "20DRY": "INCLUED",
+      "40HC": "INCLUDED"
+    }
+  },
+  "basic-cost-2": {
+    "name": "ISC(검사비용)",
+    "description": "",
+    "NonDiplomat": {
+      "CONSOLE":{"단가":10.28},
+      "20DRY": 393,
+      "40HC": 617
+    }
+  },
+  "basic-cost-3": {
+    "name": "하역료",
+    "description": "",
+    "NonDiplomat": {
+      "CONSOLE":{"단가":3.28},
+      "20DRY": 99,
+      "40HC": 197
+    }
+  },
+  "basic-cost-4": {
+    "name": "LSS",
+    "description": "",
+    "NonDiplomat": {
+      "CONSOLE":{"단가":2.5},
+      "20DRY": 100,
+      "40HC": 150
+    }
+  },
+  "extra-cost-1": {
+    "name": "FULL SETTING",
+    "description": "기본 제공",
+    "CONSOLE":"INCLUDED",
+    "20DRY": "INCLUDED",
+    "40HC": "INCLUDED"
+  },
+  "extra-cost-2": {
+    "name": "WEEKEND CHARGE",
+    "description": "필요시 서비스로 제공",
+    "CONSOLE":"INCLUDED",
+    "20DRY": "INCLUDED",
+    "40HC": "INCLUDED"
+  },
+  "extra-cost-3": {
+    "name": "UPLIGHT PIANO",
+    "description": "필요시 서비스로 제공",
+    "CONSOLE":"INCLUDED",
+    "20DRY": "INCLUDED",
+    "40HC": "INCLUDED"
+  },
+  "STAIR CHARGE": {
+    "description": "미확인",
+    "CBM단가": 0
+  },
+  "HEAVY ITEM": {
+    "description": "미확인",
+    "단위": "ITEM",
+    "단가": 0
+  },
+  "STORAGE CHARGE": {
+    "description": "미확인",
+    "단위": "주",
+    "무료 보관 기간": 0,
+    "보관 비용 단가": 0
+  },
+  
+  "additional-info-1": {
+    "name": "미확인 추가 비용",
+    "description": "SHUTTLE, LONG CARRY.. ETC."
+  },
+  
+  "DATA BASE": {
+    "description": "업데이트 : 2024.10 이트너스 비딩 조사"
+  }
+}
