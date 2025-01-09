@@ -675,6 +675,9 @@ async function updateKrwValueWithAPI() {
             case '$': // USD
                 rate = data.rates["USD"];
                 break;
+            case 'CAD': // CAD
+                rate = data.rates["CAD"];
+                break;
             case '€': // EUR
                 rate = data.rates["EUR"];
                 break;
