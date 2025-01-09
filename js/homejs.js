@@ -651,8 +651,8 @@ async function updateKrwValueWithAPI() {
         return;
     }
 
-    // 통화 기호 추출 (USD, GBP 등)
-    const currencySymbol = totalValueText.match(/[\$€₩£]/);
+    // 통화 기호 또는 코드 추출 (USD, GBP 등)
+    const currencySymbol = totalValueText.match(/[\$€₩£]|[A-Za-z]{3}/);  // 기호 또는 3자리 코드 추출
 
     if (!currencySymbol) {
         krwValueElement.textContent = "-";
@@ -671,24 +671,19 @@ async function updateKrwValueWithAPI() {
         // 선택된 통화에 맞는 환율 확인
         let rate;
 
-        switch (currencySymbol[0]) {
-            case '$': // USD
-                rate = data.rates["USD"];
-                break;
-            case 'CAD': // CAD
-                rate = data.rates["CAD"];
-                break;
-            case '€': // EUR
-                rate = data.rates["EUR"];
-                break;
-            case '₩': // KRW
-                rate = 1;
-                break;
-            case '£': // GBP
-                rate = data.rates["GBP"];
-                break;
-            default:
-                throw new Error("지원되지 않는 통화 기호입니다.");
+        // 기호 또는 코드에 따른 환율 처리
+        if (currencySymbol[0] === '$') { // USD
+            rate = data.rates["USD"];
+        } else if (currencySymbol[0] === '€') { // EUR
+            rate = data.rates["EUR"];
+        } else if (currencySymbol[0] === '₩') { // KRW
+            rate = 1;
+        } else if (currencySymbol[0] === '£') { // GBP
+            rate = data.rates["GBP"];
+        } else if (currencySymbol[0] === 'CAD') { // CAD
+            rate = data.rates["CAD"];
+        } else {
+            throw new Error("지원되지 않는 통화 기호입니다.");
         }
 
         if (!rate) {
