@@ -5,12 +5,12 @@
     "name": "ISC 검역비",
     "description": "20FT:RMB500($71) / 40FT:RMB 1,000($142)",
     "NonDiplomat": {
-      "CONSOLE": 16.66,
+      "CONSOLE": {"단가":16.66},
       "20DRY": 71,
       "40HC": 142
     },
     "Diplomat": {
-      "CONSOLE":16.66,
+      "CONSOLE":{"단가":16.66},
       "20DRY": 71,
       "40HC": 142
     }
@@ -19,12 +19,12 @@
     "name": "POC 부두사용료",
     "description": "20FT:RMB375($55) / 40FT:RMB 750($105)",
     "NonDiplomat": {
-      "CONSOLE":1.75,
+      "CONSOLE":{"단가":1.75},
       "20DRY": 55,
       "40HC": 105
     },
     "Diplomat": {
-      "CONSOLE":1.75,
+      "CONSOLE":{"단가":1.75},
       "20DRY": 55,
       "40HC": 105
     }
@@ -33,12 +33,12 @@
     "name": "Port Storage Charge 화물분류비",
     "description": "ABOUT 20FT:RMB969($135) / 40FT:RMB 1,900($260)",
     "NonDiplomat": {
-      "CONSOLE":4.33,
+      "CONSOLE":{"단가":4.33},
       "20DRY": 135,
       "40HC": 260
     },
     "Diplomat": {
-      "CONSOLE": 4.33,
+      "CONSOLE": {"단가":4.33},
       "20DRY": 135,
       "40HC": 260
     }
@@ -47,12 +47,12 @@
     "name": "LSS",
     "description": "",
     "NonDiplomat": {
-      "CONSOLE": 3.66,
+      "CONSOLE": {"단가":3.66},
       "20DRY": 110,
       "40HC": 220
     },
     "Diplomat": {
-      "CONSOLE": 3.66,
+      "CONSOLE": {"단가":3.66},
       "20DRY": 110,
       "40HC": 220
     }
@@ -61,12 +61,12 @@
     "name": "CIC",
     "description": "Container Imbalance Charge \n 20ft:RMB 163 / 40hc:RMB350",
     "NonDiplomat": {
-      "CONSOLE": 0.83,
+      "CONSOLE": {"단가":0.83},
       "20DRY": 25,
       "40HC": 50
     },
     "Diplomat": {
-      "CONSOLE": 0.83,
+      "CONSOLE": {"단가":0.83},
       "20DRY": 25,
       "40HC": 50
     }
@@ -75,12 +75,12 @@
     "name": "Storage CHG",
     "description": "창고 출입고 비용",
     "NonDiplomat": {
-      "CONSOLE": 6.66,
+      "CONSOLE": {"단가":6.66},
       "20DRY": 200,
       "40HC": 400
     },
     "Diplomat": {
-      "CONSOLE": 6.66,
+      "CONSOLE": {"단가":6.66},
       "20DRY": 200,
       "40HC": 400
     }
