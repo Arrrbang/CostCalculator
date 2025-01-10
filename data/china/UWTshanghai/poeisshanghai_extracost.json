@@ -1,0 +1,74 @@
+{
+  "화폐단위": "$",
+
+  "basic-cost-1": {
+    "name": "ISC",
+    "description": "20FT:RMB 3,700($505) / 40FT:RMB 4,600($630)",
+    "NonDiplomat": {
+      "CONSOLE":{"단가":10.5},
+      "20DRY": 505,
+      "40HC": 630
+    },
+    "Diplomat": {
+      "CONSOLE":{"단가":10.5},
+      "20DRY": 505,
+      "40HC": 630
+    }
+  },
+  "basic-cost-2": {
+    "name": "ISC",
+    "description": "20FT:RMB 650 / 40FT:RMB 1,300($630)",
+    "NonDiplomat": {
+      "CONSOLE":{"단가":3.66},
+      "20DRY": 110,
+      "40HC": 220
+    },
+    "Diplomat": {
+      "CONSOLE":{"단가":3.66},
+      "20DRY": 110,
+      "40HC": 220
+    }
+  },
+  "extra-cost-1": {
+    "name": "FULL SETTING",
+    "description": "비용 미확인 20FT $100 청구 이력 있음",
+    "CONSOLE":0,
+    "20DRY": 0,
+    "40HC": 0
+  },
+  "extra-cost-2": {
+    "name": "PIANO HANDLING",
+    "description": "UPLIGHT",
+    "CONSOLE":100,
+    "20DRY": 100,
+    "40HC": 100
+  },
+  "STAIR CHARGE": {
+    "description": "미확인",
+    "CBM단가": 0
+  },
+  "HEAVY ITEM": {
+    "description": "",
+    "단위": "ITEM",
+    "단가": 100
+  },
+  "STORAGE CHARGE": {
+    "description": "미확인",
+    "단위": "일",
+    "무료 보관 기간": 0,
+    "보관 비용 단가": 0
+  },
+  
+  "additional-info-1": {
+    "name": "포함 비용",
+    "description": "통관료,THC,항잡비,배송서비스"
+  },
+  "additional-info-2": {
+    "name": "불포함 비용",
+    "description": "관세(발생시), 검사비(무조건 발생), 통관지체료, BAF/CAF \nLSS,2차 D/O비용,피아노핸드링차지($100불) \n풀세팅,컨테이너 훼손비용,컨테이너 반납비용 \n계단 작업비 (ELEVATOR 없을 경우) 별도"
+  },
+  
+  "DATA BASE": {
+    "description": "업데이트 : 2024.10 이트너스 비딩 조사"
+  }
+}
