@@ -1,0 +1,92 @@
+{
+  "화폐단위": "$",
+  
+  "basic-cost-1": {
+    "name": "ISC 검역비",
+    "description": "20FT:RMB500($71) / 40FT:RMB 1,000($142)",
+    "NonDiplomat": {
+      "CONSOLE":"16.66",
+      "20DRY": "71",
+      "40HC": "142"
+    },
+    "Diplomat": {
+      "CONSOLE":"16.66",
+      "20DRY": "71",
+      "40HC": "142"
+    }
+  },
+  "basic-cost-2": {
+    "name": "POC 부두사용료",
+    "description": "20FT:RMB375($55) / 40FT:RMB 750($105)",
+    "NonDiplomat": {
+      "CONSOLE":"1.75",
+      "20DRY": "55",
+      "40HC": "105"
+    }
+    "Diplomat": {
+      "CONSOLE":"1.75",
+      "20DRY": "55",
+      "40HC": "105"
+    }
+  },
+  "basic-cost-3": {
+    "name": "P.S.C. 화물 적재비",
+    "description": "ABOUT 20FT:RMB969($135) / 40FT:RMB 1,900($260)",
+    "NonDiplomat": {
+      "CONSOLE":"4.33",
+      "20DRY": "135",
+      "40HC": "260"
+    }
+    "Diplomat": {
+      "CONSOLE":"4.33",
+      "20DRY": "135",
+      "40HC": "260"
+    }
+  },
+  "extra-cost-1": {
+    "name": "대리통관비용",
+    "description": "여권/취업증 수배후 대리통관시",
+    "CONSOLE":1000,
+    "20DRY": 1000,
+    "40HC": 1000
+  },
+  "extra-cost-2": {
+    "name": "주말 배송 비용",
+    "description": "일요일 및 중국 국가공휴일 배송 요청시",
+    "CONSOLE":{"1-10":200, "11-25":250},
+    "20DRY": {"1-10":200, "11-25":250},
+    "40HC": {"1-10":200, "11-25":250}
+  },
+  "STAIR CHARGE": {
+    "description": "EV없이 3층 이상 운반 \n 층당 $50추가. 4층이면 $100..",
+    "CBM단가": 0
+  },
+  "HEAVY ITEM": {
+    "description": "미확인",
+    "단위": "ITEM",
+    "단가": 0
+  },
+  "STORAGE CHARGE": {
+    "description": "$0.5/CBM/일(입고후 5일간 무료)",
+    "단위": "일",
+    "무료 보관 기간": 5,
+    "보관 비용 단가": 0.5
+  },
+  
+  "additional-info-1": {
+    "name": "DOOR CHARGE 포함 비용",
+    "description": "통관료,보세운송료,THC등 항잡비,배송비\nFST, SHC, PHC"
+  },
+  "additional-info-2": {
+    "name": "Exclude charge 불포함 비용",
+    "description": "정밀검사비/통관세금/BAF,CAF/통관지체료/컨테이너 세척비/2차 D/O Charge\n화물입출고 비용(컨테이너 통관마감과 배송일자가 다를경우 발생)"
+  },
+  "additional-info-2": {
+    "name": "기타 협조사항 안내",
+    "description": "포장시 책800권이내만 통관안내, 골프채1세트만 면세, 전자제품리스트 작성후 전달요망. \n북경시내 4환이내와 외곽 지역은 사전에 문의.(해관기준 20KM이상 추가 운송료 발생)\n기타 LCL화물 통관은 건건별로 문의요망.\n돌침대운반,런닝머신 조립등 특수공구 준비시 사전안내 당부."
+  },
+  
+  "DATA BASE": {
+    "description": "업데이트 : 2024.10 이트너스 비딩 조사"
+  }
+}
