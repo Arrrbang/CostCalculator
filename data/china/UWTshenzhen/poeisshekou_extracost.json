@@ -1,0 +1,60 @@
+{
+  "화폐단위": "$",
+  
+  "extra-cost-1": {
+    "name": "UPLIGHT PIANO",
+    "description": "",
+    "CONSOLE":100,
+    "20DRY": 100,
+    "40HC": 100
+  },
+  "extra-cost-2": {
+    "name": "LG디오스냉장고 760L이상",
+    "description": "",
+    "CONSOLE":100,
+    "20DRY": 100,
+    "40HC": 100
+  },
+  "extra-cost-3": {
+    "name": "주말 배송비",
+    "description": "",
+    "CONSOLE":300,
+    "20DRY": 300,
+    "40HC": 300
+  },
+  "extra-cost-4": {
+    "name": "FULL SETTING",
+    "description": "",
+    "CONSOLE":300,
+    "20DRY": 300,
+    "40HC": 300
+  },
+  "STAIR CHARGE": {
+    "description": "미확인",
+    "CBM단가": 0
+  },
+  "HEAVY ITEM": {
+    "description": "",
+    "단위": "ITEM",
+    "단가": 100
+  },
+  "STORAGE CHARGE": {
+    "description": "미확인",
+    "단위": "일",
+    "무료 보관 기간": 0,
+    "보관 비용 단가": 0
+  },
+  
+  "additional-info-1": {
+    "name": "Exclude charge 불포함 비용",
+    "description": "세금,BAF/CAF, 컨테이너 지체료, 항구 지체료, 20'검사비(~$155)"
+  },
+  "additional-info-2": {
+    "name": "외교관 화물",
+    "description": "영사관 이주화물 PORT NANSHA 진행(일반 비용에 $500추가)"
+  },
+  
+  "DATA BASE": {
+    "description": "업데이트 : 2024.10 이트너스 비딩 조사"
+  }
+}
