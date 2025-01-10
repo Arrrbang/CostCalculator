@@ -1,0 +1,32 @@
+{
+  "화폐단위": "$",
+
+  "STAIR CHARGE": {
+    "description": "미확인",
+    "CBM단가": 0
+  },
+  "HEAVY ITEM": {
+    "description": "",
+    "단위": "ITEM",
+    "단가": 0
+  },
+  "STORAGE CHARGE": {
+    "description": "미확인",
+    "단위": "일",
+    "무료 보관 기간": 0,
+    "보관 비용 단가": 0
+  },
+  
+  "additional-info-1": {
+    "name": "포함 비용",
+    "description": "통관료,보세운송료,THC등 항잡비,배송비"
+  },
+  "additional-info-2": {
+    "name": "불포함 비용",
+    "description": "검역비/화물검사비/통관세금/BAF,CAF\n통관지체료/부두사용료/화물적재비"
+  },
+  
+  "DATA BASE": {
+    "description": "업데이트 : 2024.10 이트너스 비딩 조사"
+  }
+}
