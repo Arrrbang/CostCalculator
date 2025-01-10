@@ -11,7 +11,7 @@
     }
   },
   "basic-cost-2": {
-    "name": "ISC(검사비용)",
+    "name": "Inspection Fee 검역비",
     "description": "",
     "NonDiplomat": {
       "CONSOLE":{"단가":10.28},
@@ -20,21 +20,39 @@
     }
   },
   "basic-cost-3": {
-    "name": "하역료",
-    "description": "",
+    "name": "Devanning CHG 하역료(卸货费)",
+    "description": "20FT: CNY690 / 40HC: CNY ?",
     "NonDiplomat": {
       "CONSOLE":{"단가":3.28},
-      "20DRY": 99,
-      "40HC": 197
+      "20DRY": 100,
+      "40HC": 200
     }
   },
   "basic-cost-4": {
     "name": "LSS",
-    "description": "",
+    "description": "20FT: CNY700 / 40HC: CNY1400",
     "NonDiplomat": {
       "CONSOLE":{"단가":2.5},
       "20DRY": 100,
       "40HC": 150
+    }
+  },
+  "basic-cost-5": {
+    "name": "셔틀 비용(倒车费)",
+    "description": "20FT: CNY800 / 40HC: CNY?",
+    "NonDiplomat": {
+      "CONSOLE":{"단가":3.28},
+      "20DRY": 100,
+      "40HC": 200
+    }
+  },
+  "basic-cost-6": {
+    "name": "Inland Import Permit 관봉비(关封费)",
+    "description": "20FT: CNY800 / 40HC: CNY?",
+    "NonDiplomat": {
+      "CONSOLE":{"단가":3.28},
+      "20DRY": 100,
+      "40HC": 200
     }
   },
   "extra-cost-1": {
