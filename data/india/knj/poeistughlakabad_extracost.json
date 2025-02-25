@@ -2,8 +2,8 @@
   "화폐단위": "$",
   
   "basic-cost-1": {
-    "name": "THC",
-    "description": "",
+    "name": "DO/THC",
+    "description": "타리프 상에는 $450/$750으로 기재되어 있으나, \n실제 청구되는 금액은 $330/$470 \n KMTC증빙 있음",
     "NonDiplomat": {
       "20DRY": "450",
       "40HC": "750"
@@ -15,7 +15,7 @@
   },
   "basic-cost-2": {
     "name": "POC",
-    "description": "",
+    "description": "적체 시간에 비례하여 증가 \n통상적으로 $700~$1,000 정도 발생 \nPOC증빙을 자주 누락시키니 확인 필요",
     "NonDiplomat": {
       "20DRY": 700,
       "40HC": 1000
@@ -39,25 +39,25 @@
   },
   "extra-cost-1": {
     "name": "FULL SETTING",
-    "description": "",
+    "description": "실제로는 대부분 $200만 청구됨",
     "20DRY": 200,
     "40HC": 300
   },
   "extra-cost-2": {
     "name": "UPLIGHT PIANO",
-    "description": "",
+    "description": "피아노 비용이 청구된 적 없어 확인 필요",
     "20DRY": 150,
     "40HC": 150
   },
     "extra-cost-3": {
     "name": "WEEKEND CHARGE",
-    "description": "",
+    "description": "비용 발생 이력이 없어 확인 필요",
     "20DRY": 150,
     "40HC": 250
   },
     "extra-cost-4": {
     "name": "SHUTTLE",
-    "description": "",
+    "description": "$120~$200까지 발생됨됨",
     "20DRY": 120,
     "40HC": 160
   },
@@ -68,24 +68,18 @@
     "40HC": "$150~$200"
   },
     "extra-cost-6": {
-    "name": "UNION CHARGES",
-    "description": "MUMBAI & CALCUTTA 진행시 발생",
-    "20DRY": "약 $200, 실비 청구",
-    "40HC": "약 $200, 실비 청구"
-  },
-    "extra-cost-7": {
     "name": "서류 픽업 비용",
     "description": "배송지가 25KM이상 떨어진 경우 발생",
     "20DRY": "약 $50, 거리에 따라 다름",
     "40HC": "약 $50, 거리에 따라 다름"
   },
-    "extra-cost-8": {
+    "extra-cost-7": {
     "name": "2차 배송 비용",
     "description": "최소 $100, 거리에 따라 차등",
     "20DRY": 100,
     "40HC": 100
   },
-    "extra-cost-9": {
+    "extra-cost-8": {
     "name": "추가 폐지 수거",
     "description": "최소 $60, 거리에 따라 차등",
     "20DRY": 60,
@@ -109,14 +103,10 @@
   
   "additional-info-1": {
     "name": "추가 비용",
-    "description": "추가 비용이 많이 나오는 업체 \nMATHADI CHARGE(대략 $30)"
+    "description": "추가 비용이 많이 나오는 업체 \n반드시 세금이 발생되기 때문에 \n세금 청구처 확인 필수"
   },
-  "additional-info-2": {
-    "name": "PORT 별 추가 운송료",
-    "description": "Transportation Nhava Sheva to Chennai : $450(40HC) \nTransportation to Chennai : $300(40HC)"
-  },
-  
+
   "DATA BASE": {
-    "description": "업데이트 : 2024.10 이트너스 비딩 조사"
+    "description": "업데이트 : 2025.01 KNJ 비용 문의"
   }
 }
