@@ -123,6 +123,10 @@
     "name": "추가 비용",
     "description": "추가 비용이 많이 나오는 업체 \n반드시 세금이 발생되기 때문에 세금 청구처 확인 필수"
   },
+  "additional-info-2": {
+    "name": "GST 관련",
+    "description": "THC, POC, DUTY 외의 비용에는 18%의 GST가 발생됨"
+  },
 
   "DATA BASE": {
     "description": "업데이트 : 2025.01 KNJ 비용 문의"
