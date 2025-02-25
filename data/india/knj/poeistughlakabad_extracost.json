@@ -56,42 +56,48 @@
     "40HC": 300
   },
   "extra-cost-2": {
+    "name": "Truck Halting",
+    "description": "전날 통과 후 다음날 배송(트럭 홀딩)",
+    "20DRY": "보통 $100~$200정도 발생",
+    "40HC": "보통 $100~$200정도 발생"
+  },
+  "extra-cost-3": {
     "name": "UPLIGHT PIANO",
     "description": "피아노 비용이 청구된 적 없어 확인 필요",
     "20DRY": 150,
     "40HC": 150
   },
-    "extra-cost-3": {
+    "extra-cost-4": {
     "name": "WEEKEND CHARGE",
     "description": "비용 발생 이력이 없어 확인 필요",
     "20DRY": 150,
     "40HC": 250
   },
-    "extra-cost-4": {
+    "extra-cost-5": {
     "name": "SHUTTLE",
     "description": "$120~$200까지 발생됨됨",
     "20DRY": 120,
     "40HC": 160
   },
-    "extra-cost-5": {
+    "extra-cost-6": {
     "name": "LONG CARRY",
     "description": "거리에 따라 다름",
     "20DRY": "$150~$200",
     "40HC": "$150~$200"
   },
-    "extra-cost-6": {
+    "extra-cost-7": {
     "name": "서류 픽업 비용",
     "description": "배송지가 25KM이상 떨어진 경우 발생",
     "20DRY": "약 $50, 거리에 따라 다름",
     "40HC": "약 $50, 거리에 따라 다름"
   },
-    "extra-cost-7": {
+    "extra-cost-8": {
     "name": "2차 배송 비용",
     "description": "최소 $100, 거리에 따라 차등",
     "20DRY": 100,
     "40HC": 100
   },
-    "extra-cost-8": {
+    "extra-cost-9": {
     "name": "추가 폐지 수거",
     "description": "최소 $60, 거리에 따라 차등",
     "20DRY": 60,
@@ -115,7 +121,7 @@
   
   "additional-info-1": {
     "name": "추가 비용",
-    "description": "추가 비용이 많이 나오는 업체 \n반드시 세금이 발생되기 때문에 \n세금 청구처 확인 필수"
+    "description": "추가 비용이 많이 나오는 업체 \n반드시 세금이 발생되기 때문에 세금 청구처 확인 필수"
   },
 
   "DATA BASE": {
