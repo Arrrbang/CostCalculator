@@ -15,7 +15,7 @@
   },
   "basic-cost-2": {
     "name": "POC",
-    "description": "적체 시간에 비례하여 증가 \n통상적으로 $700~$1,000 정도 발생 \nPOC증빙을 자주 누락시키니 확인 필요",
+    "description": "적체 시간에 비례하여 증가 \n통상적으로 $700~$1,000 정도 발생 \nPOC증빙 파일명은 'CONCOR INVOICE'",
     "NonDiplomat": {
       "20DRY": 700,
       "40HC": 1000
