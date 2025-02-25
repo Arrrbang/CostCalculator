@@ -581,6 +581,11 @@ function calculateTotalCost() {
   costValueElements.forEach(costValueElement => {
     const costValueText = costValueElement.textContent || "";
 
+        // 숫자만 있는지 확인 (소수점, 음수 기호 포함 허용)
+    if (!/^[0-9.-]+$/.test(costValueText.replace(/[\$€₩]/g, "").trim())) {
+      return; // 숫자가 아닌 값이 포함되어 있으면 제외
+    }
+
     // 화폐 단위 및 숫자만 추출
     const costValue = parseFloat(costValueText.replace(/[\$€₩]/g, "").replace(/[^0-9.-]+/g, ""));
     if (!isNaN(costValue)) {
