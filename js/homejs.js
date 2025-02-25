@@ -581,9 +581,11 @@ function calculateTotalCost() {
   costValueElements.forEach(costValueElement => {
     const costValueText = costValueElement.textContent || "";
 
-    // 숫자만 포함된 경우에만 처리 (범위(~) 포함 시 제외)
-    if (!/^[0-9.-]+$/.test(costValueText.replace(/[\$€₩]/g, "").trim()) || costValueText.includes("~")) {
-      return; // 문자가 포함되어 있거나 "~"가 있으면 제외
+    // 숫자만 포함된 경우에만 처리 (쉼표 제거 후 범위(~) 포함 시 제외)
+    const cleanedText = costValueText.replace(/[\$€₩,]/g, "").trim();
+    
+    if (!/^[0-9.-]+$/.test(cleanedText) || costValueText.includes("~")) {
+      return; // 숫자가 아닌 문자가 포함되었거나 "~"가 있으면 제외
     }
 
     // 화폐 단위 및 숫자만 추출
