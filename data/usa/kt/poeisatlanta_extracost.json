@@ -125,12 +125,8 @@
   },
     
   "additional-info-1": {
-    "name": "test1",
-    "description": "내용 입력"
-  },
-  "additional-info-2": {
-    "name": "test2",
-    "description": "또 다른 내용"
+    "name": "",
+    "description": ""
   },
   
   "DATA BASE": {
