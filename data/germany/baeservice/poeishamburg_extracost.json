@@ -1,0 +1,72 @@
+{
+  "화폐단위": "€",
+  
+  "basic-cost-1": {
+    "name": "THC/POC/DRC",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY": "INCLUDED",
+      "40HC": "INCLUDED"
+    },
+    "Diplomat": {
+      "20DRY": 450,
+      "40HC": 750
+    }
+  },
+  "extra-cost-1": {
+    "name": "FULL SETTING",
+    "description": "",
+    "20DRY": 300,
+    "40HC": 500
+  },
+  "extra-cost-2": {
+    "name": "UPLIGHT PIANO",
+    "description": "",
+    "20DRY": "€300~500",
+    "40HC": "€300~500"
+  },
+  "extra-cost-3": {
+    "name": "LONG CARRY",
+    "description": "",
+    "20DRY": "€150~500",
+    "40HC": "€150~500"
+  },
+  "extra-cost-4": {
+    "name": "PARKING PERMIT",
+    "description": "",
+    "20DRY": 300,
+    "40HC": 300
+  },
+  "extra-cost-5": {
+    "name": "LIFT CHARGE",
+    "description": "",
+    "20DRY": "€300~500",
+    "40HC": "€150~500"
+  },
+
+  "STAIR CHARGE": {
+    "description": "1층당 비용 발생, €200/400",
+    "CBM단가": 0
+  },
+  "HEAVY ITEM": {
+    "description": "",
+    "단위": "ITEM",
+    "단가": "€300~500"
+  },
+  "STORAGE CHARGE": {
+    "description": "보관 비용 확인 필요",
+    "단위": "주",
+    "무료 보관 기간": 0,
+    "보관 비용 단가": 0
+  },
+  
+  "additional-info-1": {
+    "name": "",
+    "description": ""
+  },
+
+
+  "DATA BASE": {
+    "description": "업데이트 : 2024.10 이트너스 비딩문의"
+  }
+}
