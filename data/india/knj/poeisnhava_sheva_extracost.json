@@ -2,20 +2,20 @@
   "화폐단위": "$",
   
   "basic-cost-1": {
-    "name": "THC",
-    "description": "",
+    "name": "DO/THC",
+    "description": "타리프 상에는 $450/$750으로 기재되어 있으나, \n실제 청구되는 금액은 $330/$660 정도 \n KMTC증빙 있음",
     "NonDiplomat": {
       "20DRY": "450",
-      "40HC": "750"
+      "40HC": "700"
     },
     "Diplomat": {
       "20DRY": "450",
-      "40HC": "750"
+      "40HC": "700"
     }
   },
   "basic-cost-2": {
     "name": "POC",
-    "description": "",
+    "description": "적체 시간에 비례하여 증가 \n통상적으로 $600~$900 정도 발생 \nPOC증빙 파일명은 'CONCOR INVOICE'",
     "NonDiplomat": {
       "20DRY": 700,
       "40HC": 1000
@@ -26,6 +26,38 @@
     }
   },
   "basic-cost-3": {
+    "name": "Stamp Duty",
+    "description": "DUTY랑 같이 발생됨. \n보통 $15",
+    "NonDiplomat": {
+      "20DRY": 15,
+      "40HC": 15
+    },
+    "Diplomat": {
+      "20DRY": 0,
+      "40HC": 0
+    }
+  },
+  "basic-cost-4": {
+    "name": "Mathadi Charges",
+    "description": "PUNE배송 약 $150 \nHYDERABAD/MUMBAI(NHAVA SHEVA)배송 약 $25",
+    "NonDiplomat": {
+      "20DRY": 0,
+      "40HC": 0
+    },
+    "Diplomat": {
+      "20DRY": 0,
+      "40HC": 0
+    }
+  },
+  "basic-cost-5": {
+    "name": "Transportation Mumbai to Hyderabad",
+    "description": "HYDERABAD 배송시에만 발생됨",
+    "NonDiplomat": {
+      "20DRY": "미확인",
+      "40HC": 746
+    },
+  },
+  "basic-cost-6": {
     "name": "컨테이너상태 자택 배송",
     "description": "DIPLOMAT화물일 경우 발생",
     "NonDiplomat": {
@@ -39,13 +71,13 @@
   },
   "extra-cost-1": {
     "name": "FULL SETTING",
-    "description": "",
+    "description": "타리프에는 $200/$300인데 실제 청구는 대부분 $200",
     "20DRY": 200,
-    "40HC": 300
+    "40HC": 200
   },
   "extra-cost-2": {
     "name": "UPLIGHT PIANO",
-    "description": "",
+    "description": "타리프에는 $150인데 실제 청구는 $100",
     "20DRY": 150,
     "40HC": 150
   },
@@ -59,7 +91,7 @@
     "name": "SHUTTLE",
     "description": "",
     "20DRY": 120,
-    "40HC": 160
+    "40HC": "160~200"
   },
     "extra-cost-5": {
     "name": "LONG CARRY",
@@ -68,28 +100,40 @@
     "40HC": "$150~$200"
   },
     "extra-cost-6": {
-    "name": "UNION CHARGES",
-    "description": "MUMBAI & CALCUTTA 진행시 발생",
-    "20DRY": "약 $200, 실비 청구",
-    "40HC": "약 $200, 실비 청구"
+    "name": "Business Trip",
+    "description": "한국어 가능 직원 출장비용",
+    "20DRY": "PUNE:$200 \nHYDERABAD:$350",
+    "40HC": "PUNE:$200 \nHYDERABAD:$350"
   },
     "extra-cost-7": {
-    "name": "서류 픽업 비용",
-    "description": "배송지가 25KM이상 떨어진 경우 발생",
-    "20DRY": "약 $50, 거리에 따라 다름",
-    "40HC": "약 $50, 거리에 따라 다름"
+    "name": "Passport Return",
+    "description": "",
+    "20DRY": 25,
+    "40HC": 25
   },
     "extra-cost-8": {
-    "name": "2차 배송 비용",
-    "description": "최소 $100, 거리에 따라 차등",
+    "name": "Refrigerator Handling",
+    "description": "",
+    "20DRY": 80,
+    "40HC": 80
+  },
+    "extra-cost-9": {
+    "name": "Late Night",
+    "description": "PUNE/HYDERABAD 배송 40CBM 이상이면 발생 확률 높음",
     "20DRY": 100,
     "40HC": 100
   },
-    "extra-cost-9": {
-    "name": "추가 폐지 수거",
-    "description": "최소 $60, 거리에 따라 차등",
-    "20DRY": 60,
-    "40HC": 60
+  "extra-cost-10": {
+    "name": "Handling Charges/Storage Charge",
+    "description": "창고 보관 비용 별도. \n보관 진행하면 handling&transportation발생",
+    "20DRY": 250,
+    "40HC": 250
+  },
+  "extra-cost-11": {
+    "name": "Document Pick up from Hyderabad",
+    "description": "Hyderabad배송지인 경우 서류 픽업 비용",
+    "20DRY": 85,
+    "40HC": 85
   },
   "STAIR CHARGE": {
     "description": "기본 $100 / 12층 이상 $150",
@@ -109,14 +153,14 @@
   
   "additional-info-1": {
     "name": "추가 비용",
-    "description": "추가 비용이 많이 나오는 업체 \nMATHADI CHARGE(대략 $30)"
+    "description": "추가 비용이 많이 나오는 업체 \n반드시 세금이 발생되기 때문에 세금 청구처 확인 필수"
   },
   "additional-info-2": {
-    "name": "PORT 별 추가 운송료",
-    "description": "Transportation Nhava Sheva to Chennai : $450(40HC) \nTransportation to Chennai : $300(40HC)"
+    "name": "GST 관련",
+    "description": "THC, POC, DUTY 외의 비용에는 18%의 GST가 발생됨"
   },
-  
+
   "DATA BASE": {
-    "description": "업데이트 : 2024.10 이트너스 비딩 조사"
+    "description": "업데이트 : 2025.01 KNJ 비용 문의"
   }
 }
