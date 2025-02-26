@@ -5211,6 +5211,23 @@
   ]
 },
 {
+  "name": "Nhava Sheva, India",
+  "lat": 18.95,
+  "lng": 72.9666667,
+  "links": [
+    {
+      "type": "KNJ",
+      "path": "data/india/knj/mumbai",
+      "color": "blue"
+    },
+    {
+      "type": "BSP",
+      "path": "data/india/bsp/mumbai",
+      "color": "blue"
+    }
+  ]
+},
+{
   "name": "New Delhi, India",
   "lat": 28.644800,
   "lng": 77.216721,
