@@ -27,7 +27,7 @@
   },
   "basic-cost-3": {
     "name": "Stamp Duty",
-    "description": "DUTY랑 같이 발생됨. \n보통 $15",
+    "description": "DUTY랑 같이 발생됨. 보통 $15",
     "NonDiplomat": {
       "20DRY": 15,
       "40HC": 15
