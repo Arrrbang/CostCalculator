@@ -2,20 +2,20 @@
   "화폐단위": "$",
   
   "basic-cost-1": {
-    "name": "THC",
-    "description": "",
+    "name": "DO/THC",
+    "description": "실제 청구 금액 : 40HC $350선",
     "NonDiplomat": {
-      "20DRY": "450",
-      "40HC": "750"
+      "20DRY": 450,
+      "40HC": 750
     },
     "Diplomat": {
-      "20DRY": "450",
-      "40HC": "750"
+      "20DRY": 450,
+      "40HC": 750
     }
   },
   "basic-cost-2": {
     "name": "POC",
-    "description": "",
+    "description": "적체 시간에 비례하여 증가 \n통상적으로 40HC $400~$600 정도 발생 \nPOC증빙 파일명은 'CONCOR INVOICE'",
     "NonDiplomat": {
       "20DRY": 700,
       "40HC": 1000
@@ -37,15 +37,27 @@
       "40HC": 750
     }
   },
+  "basic-cost-3": {
+    "name": "Additional Transportation",
+    "description": "bangalore입항하여 chennai 배송건들만 발생 \n따로 증빙 없음",
+    "NonDiplomat": {
+      "20DRY": 0,
+      "40HC": 700
+    },
+    "Diplomat": {
+      "20DRY": 0,
+      "40HC": 0
+    }
+  },
   "extra-cost-1": {
     "name": "FULL SETTING",
-    "description": "",
+    "description": "40HC 보통 $200 청구",
     "20DRY": 200,
     "40HC": 300
   },
   "extra-cost-2": {
     "name": "UPLIGHT PIANO",
-    "description": "",
+    "description": "통상적으로 $100 청구",
     "20DRY": 150,
     "40HC": 150
   },
@@ -57,39 +69,51 @@
   },
     "extra-cost-4": {
     "name": "SHUTTLE",
-    "description": "",
+    "description": "청구이력 없어서 미확인",
     "20DRY": 120,
     "40HC": 160
   },
     "extra-cost-5": {
     "name": "LONG CARRY",
-    "description": "거리에 따라 다름",
-    "20DRY": "$150~$200",
-    "40HC": "$150~$200"
+    "description": "거리에 따라 다름 ",
+    "20DRY": "$30~$200",
+    "40HC": "$30~$200"
   },
-    "extra-cost-6": {
-    "name": "UNION CHARGES",
-    "description": "MUMBAI & CALCUTTA 진행시 발생",
-    "20DRY": "약 $200, 실비 청구",
-    "40HC": "약 $200, 실비 청구"
-  },
-    "extra-cost-7": {
-    "name": "서류 픽업 비용",
-    "description": "배송지가 25KM이상 떨어진 경우 발생",
+  "extra-cost-6": {
+    "name": "Passport Re-Pick",
+    "description": "거리별로 다름, 통상적으로 $150 청구",
     "20DRY": "약 $50, 거리에 따라 다름",
     "40HC": "약 $50, 거리에 따라 다름"
   },
-    "extra-cost-8": {
+    "extra-cost-7": {
     "name": "2차 배송 비용",
     "description": "최소 $100, 거리에 따라 차등",
     "20DRY": 100,
     "40HC": 100
   },
-    "extra-cost-9": {
+    "extra-cost-8": {
     "name": "추가 폐지 수거",
     "description": "최소 $60, 거리에 따라 차등",
     "20DRY": 60,
     "40HC": 60
+  },
+  "extra-cost-9": {
+    "name": "Truck Halting",
+    "description": "통관 후 익일 배송시 트럭 대기료",
+    "20DRY": 100,
+    "40HC": 100
+  },
+  "extra-cost-10": {
+    "name": "Refrigerator Handling",
+    "description": "",
+    "20DRY": 80,
+    "40HC": 80
+  },
+  "extra-cost-11": {
+    "name": "Business Trip",
+    "description": "한국인 통역 출장 비용",
+    "20DRY": 350,
+    "40HC": 350
   },
   "STAIR CHARGE": {
     "description": "기본 $100 / 12층 이상 $150",
@@ -109,14 +133,14 @@
   
   "additional-info-1": {
     "name": "추가 비용",
-    "description": "추가 비용이 많이 나오는 업체 \nMATHADI CHARGE(대략 $30)"
+    "description": "추가 비용이 많이 나오는 업체 \n반드시 세금이 발생되기 때문에 세금 청구처 확인 필수"
   },
   "additional-info-2": {
-    "name": "PORT 별 추가 운송료",
-    "description": "Transportation Nhava Sheva to Chennai : $450(40HC) \nTransportation to Chennai : $300(40HC)"
+    "name": "GST 관련",
+    "description": "THC, POC, DUTY 외의 비용에는 18%의 GST가 발생됨"
   },
-  
+
   "DATA BASE": {
-    "description": "업데이트 : 2024.10 이트너스 비딩 조사"
+    "description": "업데이트 : 2025.01 KNJ 비용 문의"
   }
 }
