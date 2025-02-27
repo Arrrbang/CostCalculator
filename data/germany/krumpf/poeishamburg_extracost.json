@@ -28,8 +28,8 @@
   "extra-cost-1": {
     "name": "FULL SETTING",
     "description": "",
-    "20DRY": {"단가":15"},
-    "40HC": {"단가":15"}
+    "20DRY": {"단가":15},
+    "40HC": {"단가":15}
   },
   "extra-cost-2": {
     "name": "WEEKEND CHARGE",
@@ -73,7 +73,7 @@
     "20DRY": {"단가": 7.50},
     "40HC": {"단가": 7.50}
   },
-  "extra-cost-8": {
+  "extra-cost-9": {
     "name": "BANK FEE",
     "description": "송금 건당 €30 ",
     "20DRY": 30,
