@@ -1,0 +1,108 @@
+{
+  "화폐단위": "€",
+  
+  "basic-cost-1": {
+    "name": "THC",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY": 375,
+      "40HC": 375
+    },
+    "Diplomat": {
+      "20DRY": 375,
+      "40HC": 375
+    }
+  },
+  "basic-cost-2": {
+    "name": "INSPECTION FEE",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY": 200,
+      "40HC": 200
+    },
+    "Diplomat": {
+      "20DRY": 0,
+      "40HC": 0
+    }
+  },
+  "extra-cost-1": {
+    "name": "FULL SETTING",
+    "description": "",
+    "20DRY": {"단가":15"},
+    "40HC": {"단가":15"}
+  },
+  "extra-cost-2": {
+    "name": "WEEKEND CHARGE",
+    "description": "15,00 € / cbm	",
+    "20DRY": {"단가": 15},
+    "40HC": {"단가": 15}
+  },
+  "extra-cost-3": {
+    "name": "UPLIGHT PIANO",
+    "description": "",
+    "20DRY": 200,
+    "40HC": 200
+  },
+  "extra-cost-4": {
+    "name": "GRAND PIANO",
+    "description": "",
+    "20DRY": 550,
+    "40HC": 550
+  },
+  "extra-cost-5": {
+    "name": "SHUTTLE",
+    "description": "12,50 € / cbm",
+    "20DRY": {"단가": 12.50},
+    "40HC": {"단가": 12.50}
+  },
+  "extra-cost-6": {
+    "name": "LONG CARRY",
+    "description": "7,00 € / cbm / 25m",
+    "20DRY": 0,
+    "40HC": 0
+  },
+  "extra-cost-7": {
+    "name": "PARKING PERMIT",
+    "description": "",
+    "20DRY": 225,
+    "40HC": 225
+  },
+  "extra-cost-8": {
+    "name": "LIFT CHARGE",
+    "description": "7,50 € / cbm",
+    "20DRY": {"단가": 7.50},
+    "40HC": {"단가": 7.50}
+  },
+  "extra-cost-8": {
+    "name": "BANK FEE",
+    "description": "송금 건당 €30 ",
+    "20DRY": 30,
+    "40HC": 30
+  },
+
+  "STAIR CHARGE": {
+    "description": "7,00 € / cbm / floor",
+    "CBM단가": 7
+  },
+  "HEAVY ITEM": {
+    "description": "",
+    "단위": "ITEM",
+    "단가": 150
+  },
+  "STORAGE CHARGE": {
+    "description": "보관 비용 확인 필요",
+    "단위": "주",
+    "무료 보관 기간": 0,
+    "보관 비용 단가": 0
+  },
+  
+  "additional-info-1": {
+    "name": "",
+    "description": ""
+  },
+
+
+  "DATA BASE": {
+    "description": "업데이트 : 2024.10 이트너스 비딩문의"
+  }
+}
