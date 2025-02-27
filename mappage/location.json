@@ -5819,6 +5819,11 @@
         "type": "BAE SERVICE",
         "path": "data/germany/baeservice/eschborn",
         "color": "blue"
+      },
+      {
+        "type": "KRUMPF",
+        "path": "data/germany/krumpf/eschborn",
+        "color": "blue"
       }
     ]
   },
@@ -5830,6 +5835,11 @@
       {
         "type": "BAE SERVICE",
         "path": "data/germany/baeservice/frankfurt",
+        "color": "blue"
+      },
+      {
+        "type": "KRUMPF",
+        "path": "data/germany/krumpf/frankfurt",
         "color": "blue"
       }
     ]
@@ -5843,6 +5853,11 @@
         "type": "BAE SERVICE",
         "path": "data/germany/baeservice/muenchen",
         "color": "blue"
+      },
+      {
+        "type": "KRUMPF",
+        "path": "data/germany/krumpf/muenchen",
+        "color": "blue"
       }
     ]
   },
@@ -5854,6 +5869,11 @@
       {
         "type": "BAE SERVICE",
         "path": "data/germany/baeservice/schwalbach",
+        "color": "blue"
+      },
+      {
+        "type": "KRUMPF",
+        "path": "data/germany/krumpf/schwalbach",
         "color": "blue"
       }
     ]
@@ -5867,6 +5887,11 @@
         "type": "BAE SERVICE",
         "path": "data/germany/baeservice/hamburg",
         "color": "blue"
+      },
+      {
+        "type": "KRUMPF",
+        "path": "data/germany/krumpf/hamburg",
+        "color": "blue"
       }
     ]
   },
@@ -5878,6 +5903,11 @@
       {
         "type": "BAE SERVICE",
         "path": "data/germany/baeservice/bonn",
+        "color": "blue"
+      },
+      {
+        "type": "KRUMPF",
+        "path": "data/germany/krumpf/bonn",
         "color": "blue"
       }
     ]
