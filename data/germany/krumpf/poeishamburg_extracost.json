@@ -28,14 +28,14 @@
   "extra-cost-1": {
     "name": "FULL SETTING",
     "description": "",
-    "20DRY": {"단가":15},
-    "40HC": {"단가":15}
+    "20DRY": { "단가": 15 },
+    "40HC": { "단가": 15 }
   },
   "extra-cost-2": {
     "name": "WEEKEND CHARGE",
-    "description": "15,00 € / cbm	",
-    "20DRY": {"단가": 15},
-    "40HC": {"단가": 15}
+    "description": "15,00 € / cbm",
+    "20DRY": { "단가": 15 },
+    "40HC": { "단가": 15 }
   },
   "extra-cost-3": {
     "name": "UPLIGHT PIANO",
@@ -52,8 +52,8 @@
   "extra-cost-5": {
     "name": "SHUTTLE",
     "description": "12,50 € / cbm",
-    "20DRY": {"단가": 12.50},
-    "40HC": {"단가": 12.50}
+    "20DRY": { "단가": 12.50 },
+    "40HC": { "단가": 12.50 }
   },
   "extra-cost-6": {
     "name": "LONG CARRY",
@@ -70,12 +70,12 @@
   "extra-cost-8": {
     "name": "LIFT CHARGE",
     "description": "7,50 € / cbm",
-    "20DRY": {"단가": 7.50},
-    "40HC": {"단가": 7.50}
+    "20DRY": { "단가": 7.50 },
+    "40HC": { "단가": 7.50 }
   },
   "extra-cost-9": {
     "name": "BANK FEE",
-    "description": "송금 건당 €30 ",
+    "description": "송금 건당 €30",
     "20DRY": 30,
     "40HC": 30
   },
@@ -100,7 +100,6 @@
     "name": "",
     "description": ""
   },
-
 
   "DATA BASE": {
     "description": "업데이트 : 2024.10 이트너스 비딩문의"
