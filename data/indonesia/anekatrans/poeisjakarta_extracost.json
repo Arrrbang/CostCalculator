@@ -1,0 +1,77 @@
+{
+  "화폐단위": "$",
+  
+  "basic-cost-1": {
+    "name": "THC/POC/DRC",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY": "Included",
+      "40HC": "Included"
+    },
+    "Diplomat": {
+      "20DRY": "Included",
+      "40HC": "Included"
+    }
+  },
+  
+  "basic-cost-2": {
+    "name": "DUTY",
+    "description": "실비 청구, 증빙 있음",
+    "NonDiplomat": {
+      "20DRY": "Actual",
+      "40HC": "Actual"
+    },
+    "Diplomat": {
+      "20DRY": "Actual",
+      "40HC": "Actual"
+    }
+  },
+  "extra-cost-1": {
+    "name": "FULL SETTING",
+    "description": "",
+    "20DRY": 150,
+    "40HC": 250
+  },
+  "extra-cost-2": {
+    "name": "Shuttle charge",
+    "description": "",
+    "20DRY": 150,
+    "40HC": 250
+  },
+  "extra-cost-3": {
+    "name": "Piano handling",
+    "description": "grand piano $350",
+    "20DRY": 150,
+    "40HC": 150
+  },
+  "extra-cost-4": {
+    "name": "SURABAYA 지역 한국인 출장비",
+    "description": "",
+    "20DRY": 200,
+    "40HC": 200
+  },
+  "STAIR CHARGE": {
+    "description": "비용 미확인",
+    "CBM단가": "미확인"
+  },
+  "HEAVY ITEM": {
+    "description": "비용 미확인",
+    "단위": "ITEM",
+    "단가": 0
+  },
+  "STORAGE CHARGE": {
+    "description": "IN/OUT HANDLING CHARGE $150/20', $300/40' \n해당 비용에 +VAT 11% 추가됨 \n Receipt 증빙을 따로 만들어줌. ",
+    "단위": "일",
+    "무료 보관 기간": 10,
+    "보관 비용 단가": 0.5
+  },
+  
+  "additional-info-1": {
+    "name": "",
+    "description": ""
+  },
+
+  "DATA BASE": {
+    "description": "업데이트 : 2024.10 이트너스 비딩문의"
+  }
+}
