@@ -5971,5 +5971,149 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Osaka, Japan",
+    "lat": 34.6937,
+    "lng": 135.5023,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/oskaka",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tokyo, Japan",
+    "lat": 35.682839,
+    "lng": 139.759455,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/tokyo",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Yokohama, Japan",
+    "lat": 35.4437,
+    "lng": 139.6380,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/yokohama",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kobe, Japan",
+    "lat": 34.6901,
+    "lng": 135.1955,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/kobe",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Nagoya, Japan",
+    "lat": 35.1815,
+    "lng": 136.9066,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/nagoya",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Niigata, Japan",
+    "lat": 37.9162,
+    "lng": 139.0364,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/niigata",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Nagano, Japan",
+    "lat": 36.6513,
+    "lng": 138.1809,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/nagano",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Sapporo, Japan",
+    "lat": 43.0621,
+    "lng": 141.3544,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/sapporo",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Sendai, Japan",
+    "lat": 38.2682,
+    "lng": 140.8694,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/sendai",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Okinawa, Japan",
+    "lat": 26.2124,
+    "lng": 127.6809,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/okinawa",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Fukuoka, Japan",
+    "lat": 33.5904,
+    "lng": 130.4017,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/fukuoka",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hiroshima, Japan",
+    "lat": 34.3853,
+    "lng": 132.4553,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/hirosima",
+        "color": "blue"
+      }
+    ]
   }
 ]
