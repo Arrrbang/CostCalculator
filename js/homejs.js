@@ -582,14 +582,14 @@ function calculateTotalCost() {
     const costValueText = costValueElement.textContent || "";
 
     // 숫자만 포함된 경우에만 처리 (쉼표 제거 후 범위(~) 포함 시 제외)
-    const cleanedText = costValueText.replace(/[\$€₩,]/g, "").trim();
+    const cleanedText = costValueText.replace(/[\¥$€₩,]/g, "").trim();
     
     if (!/^[0-9.-]+$/.test(cleanedText) || costValueText.includes("~")) {
       return; // 숫자가 아닌 문자가 포함되었거나 "~"가 있으면 제외
     }
 
     // 화폐 단위 및 숫자만 추출
-    const costValue = parseFloat(costValueText.replace(/[\$€₩]/g, "").replace(/[^0-9.-]+/g, ""));
+    const costValue = parseFloat(costValueText.replace(/[\¥$€₩]/g, "").replace(/[^0-9.-]+/g, ""));
     if (!isNaN(costValue)) {
       totalCost += costValue;
     }
@@ -599,7 +599,7 @@ function calculateTotalCost() {
   const basicDeliveryValueElement = document.getElementById("basic-delivery-value");
   const basicDeliveryValueText = basicDeliveryValueElement ? basicDeliveryValueElement.textContent : "";
 
-  const basicDeliveryValue = parseFloat(basicDeliveryValueText.replace(/[\$€₩]/g, "").replace(/[^0-9.-]+/g, ""));
+  const basicDeliveryValue = parseFloat(basicDeliveryValueText.replace(/[\¥$€₩]/g, "").replace(/[^0-9.-]+/g, ""));
   if (!isNaN(basicDeliveryValue)) {
     totalCost += basicDeliveryValue;
   }
@@ -651,7 +651,7 @@ async function updateKrwValueWithAPI() {
 
     // total-value에서 금액 추출
     const totalValueText = totalValueElement.textContent || "";
-    const foreignValue = parseFloat(totalValueText.replace(/[\$€₩£]/g, "").replace(/[^0-9.-]+/g, ""));
+    const foreignValue = parseFloat(totalValueText.replace(/[\¥$€₩£]/g, "").replace(/[^0-9.-]+/g, ""));
 
     if (isNaN(foreignValue)) {
         krwValueElement.textContent = "금액을 계산할 수 없습니다.";
@@ -659,7 +659,7 @@ async function updateKrwValueWithAPI() {
     }
 
     // 통화 기호 또는 코드 추출 (USD, GBP 등)
-    const currencySymbol = totalValueText.match(/[\$€₩£]|[A-Za-z]{3}/);  // 기호 또는 3자리 코드 추출
+    const currencySymbol = totalValueText.match(/[\¥$€₩£]|[A-Za-z]{3}/);  // 기호 또는 3자리 코드 추출
 
     if (!currencySymbol) {
         krwValueElement.textContent = "-";
@@ -689,6 +689,8 @@ async function updateKrwValueWithAPI() {
             rate = data.rates["GBP"];
         } else if (currencySymbol[0] === 'CAD') { // CAD
             rate = data.rates["CAD"];
+        } else if (currencySymbol[0] === '¥') { // JPY
+            rate = data.rates["JPY"];
         } else {
             throw new Error("지원되지 않는 통화 기호입니다.");
         }
