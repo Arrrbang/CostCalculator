@@ -3,30 +3,26 @@
   
   "basic-cost-1": {
     "name": "THC/POC",
-    "description": "콘솔 단가는 20FT콘솔 전체 25CBM 적입 기준",
+    "description": "콘솔 단가는 20FT콘솔 전체 25CBM 적입 기준\n¥70,000~73,000발생. 실비 청구",
     "NonDiplomat": {
-      "CONSOLE": {"단가": 292},
-      "20DRY": 7300,
-      "40HC": 130000
+      "CONSOLE": {"단가": 2920},
+      "20DRY": 73000
     },
     "Diplomat": {
-      "CONSOLE": {"단가": 292},
-      "20DRY": 7300,
-      "40HC": 130000
+      "CONSOLE": {"단가": 2920},
+      "20DRY": 73000
     }
   },
   "basic-cost-2": {
     "name": "CLC,DRC",
     "description": "CUSTOM CLEARANCE FEE,DRAYAGE CHARGE",
     "NonDiplomat": {
-      "CONSOLE": {"단가": 3440},
-      "20DRY": 86000,
-      "40HC": 96000
+      "CONSOLE": {"단가": 3412},
+      "20DRY": 85300
     },
     "Diplomat": {
-      "CONSOLE": {"단가": 3440},
-      "20DRY": 86000,
-      "40HC": 96000
+      "CONSOLE": {"단가": 3412},
+      "20DRY": 85300
     }
   },
   "extra-cost-1": {
@@ -38,14 +34,19 @@
   },
   "extra-cost-2": {
     "name": "UPLIGHT PIANO HANDLING",
-    "description": "1층, 엘리베이터 이용은 ¥10,000\n1,2층 계단 이용은 ¥15,000 \n 3층 이상은 전문 업체 이용",
-    "CONSOLE": 10000,
-    "20DRY": 10000,
-    "40HC": 10000
+    "description": "1층, 엘리베이터 이용은 ¥20,000\n1,2층 계단 이용은 ¥35,000 \n 3층 이상은 전문 업체 이용",
+    "CONSOLE": 20000,
+    "20DRY": 20000
+  },
+  "extra-cost-3": {
+    "name": "LONG CARRY",
+    "description": "노상주차 작업 추가비용. 150M 이상인 경우 발생",
+    "CONSOLE": "인건비 ¥15,000+LOC ¥15,000",
+    "20DRY": "인건비 ¥15,000+LOC ¥15,000"
   },
 
   "STAIR CHARGE": {
-    "description": "*2층은 무료, 3층 부터 비용 발생\n1-3cbm: ¥5,000\n 4-9cbm:¥10,000\n10-19cbm:¥20,000\n 20cbm:30,000 \n*4층이상3층 금액 +4층부터 각층당 ¥5,000",
+    "description": "*2층은 무료, 3층 부터 비용 발생\n1-3cbm: ¥10,000\n 4-9cbm:¥20,000\n10-19cbm:¥30,000\n 20cbm:45,000 \n*4층이상3층 금액 +4층부터 각층당 ¥10,000",
     "CBM단가": 0
   },
   "HEAVY ITEM": {
