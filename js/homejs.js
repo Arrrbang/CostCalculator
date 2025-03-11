@@ -257,6 +257,7 @@ async function fetchData() {
     updatestorageperiodDropdown();
     calculateTotalCost();
     updateHeavyItemDropdown(); // HEAVY ITEM 드롭다운 업데이트
+    updateStairDescription();
   } catch (error) {
   }
 }
@@ -789,12 +790,13 @@ function updateExtraCostResult(categoryKey) {
 //-------------------stair carry charge 업데이트---------------
 // POE 드롭다운 선택 시 설명 업데이트 및 계단 비용 계산
 poeDropdown.addEventListener("change", () => {
-  // POE 드롭다운이 선택된 후에 바로 description 업데이트
+  // POE 드롭다운이 선택된 후 stair-description 업데이트
   const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "";
   const stairDescriptionElement = document.getElementById("stair-description");
   if (stairDescriptionElement) {
-    stairDescriptionElement.textContent = stairDescription;
+    stairDescriptionElement.innerHTML = stairDescription.replace(/\n/g, "<br>");
   }
+});
 
   // POE 선택 후 계단 비용 계산도 바로 실행
   calculateStairCharge();
