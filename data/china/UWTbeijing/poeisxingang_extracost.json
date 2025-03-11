@@ -123,9 +123,13 @@
     "name": "Exclude charge 불포함 비용",
     "description": "정밀검사비/통관세금/BAF,CAF/통관지체료/컨테이너 세척비/2차 D/O Charge\n화물입출고 비용(컨테이너 통관마감과 배송일자가 다를경우 발생)"
   },
-  "additional-info-2": {
+  "additional-info-3": {
     "name": "기타 협조사항 안내",
     "description": "포장시 책800권이내만 통관안내, 골프채1세트만 면세, 전자제품리스트 전달요망. \n북경시내 4환이내와 외곽 지역은 사전에 문의.(해관기준 20KM이상 추가 운송료 발생)\n기타 LCL화물 통관은 건건별로 문의요망.\n돌침대운반,런닝머신 조립등 특수공구 준비시 사전안내 당부."
+  },
+  "additional-info-4": {
+    "name": "사용 가능 선사 및 T/T",
+    "description": "부산발\nKMTC : T/T 2 days\nNAMSUNG : T/T 6 days\n\n인천발\nKMTC : T/T 10 days *부산에서 t/s해서 가는 거라서 손해\nNAMSUNG : T/T 3 days"
   },
   
   "DATA BASE": {
