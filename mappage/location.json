@@ -5973,18 +5973,18 @@
     ]
   },
   {
-    "name": "Osaka, Japan",
-    "lat": 34.6937,
-    "lng": 135.5023,
+    "name": "Kobe, Japan",
+    "lat": 34.6901,
+    "lng": 135.1955,
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/osaka",
+        "path": "data/japan/trelocation/kobe",
         "color": "blue"
       }
     ]
   },
-  {
+ {
     "name": "Tokyo, Japan",
     "lat": 35.682839,
     "lng": 139.759455,
@@ -6003,19 +6003,103 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/yokohama",
+        "path": "data/japan/trelocation/tokyo",
         "color": "blue"
       }
     ]
   },
   {
-    "name": "Kobe, Japan",
-    "lat": 34.6901,
-    "lng": 135.1955,
+    "name": "Kanagawa, Japan",
+    "lat": 35.4478,
+    "lng": 139.6425,
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/kobe",
+        "path": "data/japan/trelocation/kanagawa",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Saitama, Japan",
+    "lat": 35.8617,
+    "lng": 139.6455,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/kanagawa",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Chiba, Japan",
+    "lat": 35.6073,
+    "lng": 140.1063,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/kanagawa",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Yamanashi, Japan",
+    "lat": 35.6639,
+    "lng": 138.5684,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/yamanashi",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tochigi, Japan",
+    "lat": 36.5658,
+    "lng": 139.8836,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/yamanashi",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ibaraki, Japan",
+    "lat": 36.3418,
+    "lng": 140.4468,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/yamanashi",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Shizuoka, Japan",
+    "lat": 34.9756,
+    "lng": 138.3828,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/yamanashi",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Gunma, Japan",
+    "lat": 36.3912,
+    "lng": 139.0609,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/yamanashi",
         "color": "blue"
       }
     ]
@@ -6033,25 +6117,109 @@
     ]
   },
   {
-    "name": "Niigata, Japan",
-    "lat": 37.9162,
-    "lng": 139.0364,
-    "links": [
-      {
-        "type": "T RELOCATION",
-        "path": "data/japan/trelocation/niigata",
-        "color": "blue"
-      }
-    ]
-  },
-  {
     "name": "Nagano, Japan",
     "lat": 36.6513,
     "lng": 138.1809,
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/nagano",
+        "path": "data/japan/trelocation/nagoya",
+        "color": "blue"
+      }
+    ]
+  },
+{
+  "name": "Fukushima, Japan",
+  "lat": 37.7608,
+  "lng": 140.4747,
+  "links": [
+    {
+      "type": "T RELOCATION",
+      "path": "data/japan/trelocation/nagoya",
+      "color": "blue"
+    }
+  ]
+},
+  {
+    "name": "Hamamatsu, Japan",
+    "lat": 34.7108,
+    "lng": 137.7266,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/nagoya",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Osaka, Japan",
+    "lat": 34.6937,
+    "lng": 135.5023,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/osaka",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kyoto, Japan",
+    "lat": 35.0116,
+    "lng": 135.7681,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/osaka",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Shiga, Japan",
+    "lat": 35.0045,
+    "lng": 135.8686,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/osaka",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Nara, Japan",
+    "lat": 34.6851,
+    "lng": 135.8048,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/osaka",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Mie, Japan",
+    "lat": 34.7303,
+    "lng": 136.5086,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/osaka",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Gifu, Japan",
+    "lat": 35.4233,
+    "lng": 136.7607,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/osaka",
         "color": "blue"
       }
     ]
@@ -6069,13 +6237,37 @@
     ]
   },
   {
-    "name": "Fukuoka, Japan",
-    "lat": 33.5904,
-    "lng": 130.4017,
+    "name": "Nigata, Japan",
+    "lat": 37.9162,
+    "lng": 139.0364,
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/fukuoka",
+        "path": "data/japan/trelocation/sendai",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Yamagata, Japan",
+    "lat": 38.2404,
+    "lng": 140.3633,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/sendai",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hyogo, Japan",
+    "lat": 34.6913,
+    "lng": 135.1830,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/sendai",
         "color": "blue"
       }
     ]
@@ -6088,6 +6280,90 @@
       {
         "type": "T RELOCATION",
         "path": "data/japan/trelocation/hirosima",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Okayama, Japan",
+    "lat": 34.6551,
+    "lng": 133.9195,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/hirosima",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kagawa, Japan",
+    "lat": 34.3401,
+    "lng": 134.0434,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/hirosima",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ehime, Japan",
+    "lat": 33.8417,
+    "lng": 132.7657,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/hirosima",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Fukuoka, Japan",
+    "lat": 33.5904,
+    "lng": 130.4017,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/fukuoka",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Yamaguchi, Japan",
+    "lat": 34.1861,
+    "lng": 131.4703,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/fukuoka",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Oita, Japan",
+    "lat": 33.2396,
+    "lng": 131.6093,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/oita",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kumamoto, Japan",
+    "lat": 32.8031,
+    "lng": 130.7079,
+    "links": [
+      {
+        "type": "T RELOCATION",
+        "path": "data/japan/trelocation/oita",
         "color": "blue"
       }
     ]
