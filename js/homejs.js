@@ -274,6 +274,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     fetchData().then(() => {
       updateAllDiplomatSensitiveResults(); // 추가 비용 업데이트
       updateHeavyItemDropdown(); // HEAVY ITEM 드롭다운 업데이트
+      
+      // ✅ stair-description을 처음 가져올 때도 \n을 <br>로 변환
+      const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "";
+      const stairDescriptionElement = document.getElementById("stair-description");
+      if (stairDescriptionElement) {
+        stairDescriptionElement.innerHTML = stairDescription.replace(/\n/g, "<br>");
+      }
     });
   } else {
     console.error("Path parameter missing in URL.");
