@@ -50,9 +50,9 @@
     "CBM단가": 0
   },
   "HEAVY ITEM": {
-    "description": "",
+    "description": "돌침대, 대리석 등",
     "단위": "ITEM",
-    "단가": 150
+    "단가": "업체 별도 문의"
   },
   "STORAGE CHARGE": {
     "description": "30일 무료 보관 진행",
