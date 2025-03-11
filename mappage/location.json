@@ -6057,18 +6057,6 @@
     ]
   },
   {
-    "name": "Sapporo, Japan",
-    "lat": 43.0621,
-    "lng": 141.3544,
-    "links": [
-      {
-        "type": "T RELOCATION",
-        "path": "data/japan/trelocation/sapporo",
-        "color": "blue"
-      }
-    ]
-  },
-  {
     "name": "Sendai, Japan",
     "lat": 38.2682,
     "lng": 140.8694,
@@ -6076,18 +6064,6 @@
       {
         "type": "T RELOCATION",
         "path": "data/japan/trelocation/sendai",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "name": "Okinawa, Japan",
-    "lat": 26.2124,
-    "lng": 127.6809,
-    "links": [
-      {
-        "type": "T RELOCATION",
-        "path": "data/japan/trelocation/okinawa",
         "color": "blue"
       }
     ]
