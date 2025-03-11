@@ -157,13 +157,7 @@ function handlePoeChange() {
     fetchData().then(() => {
       // 기본값 설정 후 업데이트 호출
   updateAllDiplomatSensitiveResults(); // 추가 비용 업데이트
-        const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "";
-      const stairDescriptionElement = document.getElementById("stair-description");
-      if (stairDescriptionElement) {
-        stairDescriptionElement.textContent = stairDescription; // 설명 업데이트
-      }
     });
-  } else {
   }
 }
 
@@ -262,12 +256,6 @@ async function fetchData() {
     updateHeavyItemDropdown();
     updatestorageperiodDropdown();
     calculateTotalCost();
-
-    const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "";
-    const stairDescriptionElement = document.getElementById("stair-description");
-    if (stairDescriptionElement) {
-      stairDescriptionElement.textContent = stairDescription; // 설명 업데이트
-    }
     updateHeavyItemDropdown(); // HEAVY ITEM 드롭다운 업데이트
   } catch (error) {
   }
