@@ -1,5 +1,5 @@
   // -----------------------로그인 검증 및 검증 실패시 로그인 페이지 이동------------------------------
-    
+
 function redirectToLogin(message) {
   alert(message);
   localStorage.removeItem('token'); 
@@ -156,7 +156,14 @@ function handlePoeChange() {
   if (poeValue) {
     fetchData().then(() => {
       // 기본값 설정 후 업데이트 호출
-  updateAllDiplomatSensitiveResults(); // 추가 비용 업데이트
+      updateAllDiplomatSensitiveResults(); // 추가 비용 업데이트
+
+      const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "";
+      const stairDescriptionElement = document.getElementById("stair-description");
+
+      if (stairDescriptionElement) {
+        stairDescriptionElement.innerHTML = stairDescription.replace(/\n/g, "<br>"); // \n을 <br>로 변환
+      }
     });
   }
 }
@@ -256,8 +263,13 @@ async function fetchData() {
     updateHeavyItemDropdown();
     updatestorageperiodDropdown();
     calculateTotalCost();
+
+    const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "";
+    const stairDescriptionElement = document.getElementById("stair-description");
+    if (stairDescriptionElement) {
+      stairDescriptionElement.innerHTML = stairDescription.replace(/\n/g, "<br>"); // \n을 <br>로 변환하여 HTML 적용
+    }
     updateHeavyItemDropdown(); // HEAVY ITEM 드롭다운 업데이트
-    updateStairDescription();
   } catch (error) {
   }
 }
@@ -275,13 +287,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     fetchData().then(() => {
       updateAllDiplomatSensitiveResults(); // 추가 비용 업데이트
       updateHeavyItemDropdown(); // HEAVY ITEM 드롭다운 업데이트
-      
-      // ✅ stair-description을 처음 가져올 때도 \n을 <br>로 변환
-      const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "";
-      const stairDescriptionElement = document.getElementById("stair-description");
-      if (stairDescriptionElement) {
-        stairDescriptionElement.innerHTML = stairDescription.replace(/\n/g, "<br>");
-      }
     });
   } else {
     console.error("Path parameter missing in URL.");
@@ -579,7 +584,7 @@ function calculateTotalCost() {
 
     // 숫자만 포함된 경우에만 처리 (쉼표 제거 후 범위(~) 포함 시 제외)
     const cleanedText = costValueText.replace(/[\¥$€₩,]/g, "").trim();
-    
+
     if (!/^[0-9.-]+$/.test(cleanedText) || costValueText.includes("~")) {
       return; // 숫자가 아닌 문자가 포함되었거나 "~"가 있으면 제외
     }
@@ -790,13 +795,12 @@ function updateExtraCostResult(categoryKey) {
 //-------------------stair carry charge 업데이트---------------
 // POE 드롭다운 선택 시 설명 업데이트 및 계단 비용 계산
 poeDropdown.addEventListener("change", () => {
-  // POE 드롭다운이 선택된 후 stair-description 업데이트
+  // POE 드롭다운이 선택된 후에 바로 description 업데이트
   const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "";
   const stairDescriptionElement = document.getElementById("stair-description");
   if (stairDescriptionElement) {
-    stairDescriptionElement.innerHTML = stairDescription.replace(/\n/g, "<br>");
+    stairDescriptionElement.innerHTML = stairDescription.replace(/\n/g, "<br>"); // \n을 <br>로 변환하여 HTML 적용
   }
-});
 
   // POE 선택 후 계단 비용 계산도 바로 실행
   calculateStairCharge();
@@ -842,7 +846,7 @@ function calculateStairCharge() {
   const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "";
   const stairDescriptionElement = document.getElementById("stair-description");
   if (stairDescriptionElement) {
-    stairDescriptionElement.innerHTML = stairDescription.replace(/\n/g, "<br>"); // \n을 <br>로 변환
+    stairDescriptionElement.innerHTML = stairDescription.replace(/\n/g, "<br>"); // \n을 <br>로 변환하여 HTML 적용
   }
 
 
