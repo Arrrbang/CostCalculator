@@ -845,8 +845,9 @@ function calculateStairCharge() {
   const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "";
   const stairDescriptionElement = document.getElementById("stair-description");
   if (stairDescriptionElement) {
-    stairDescriptionElement.textContent = stairDescription; // description 업데이트
+    stairDescriptionElement.innerHTML = stairDescription.replace(/\n/g, "<br>"); // \n을 <br>로 변환
   }
+
 
   if (!isNaN(cbmValue) && !isNaN(floorValue)) {
     const stairCharge = cbmValue * (floorValue - 1) * cbmUnitCost; // floor-1로 계산
