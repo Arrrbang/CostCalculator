@@ -23,57 +23,101 @@
         }
     },
     "extra-cost-1": {
-        "name": "test2",
+        "name": "FULL SETTING",
         "description": "",
         "20DRY": {
-            "단가": 100
+            "1-20": 250,
+            "21-25": 300,
+            "26-30": 350
         },
-        "40HC": 2
+        "40HC": {
+            "1-40": 450,
+            "41-55": 550,
+            "56-60": 600
+        }
     },
     "extra-cost-2": {
-        "name": "UPLIGHT PIANO",
-        "description": "",
-        "20DRY": "€300~500",
-        "40HC": "€300~500"
+        "name": "SHUTTLE",
+        "description": "Container 하역지로 부터 배송지까지 30km 기준, \n거리가 다를 경우 비용 상이",
+        "20DRY": {
+            "1-20": 150,
+            "21-25": 200,
+            "26-30": 300
+        },
+        "40HC": {
+            "1-40": 450,
+            "41-55": 550,
+            "56-60": 600
+        }
     },
     "extra-cost-3": {
-        "name": "LONG CARRY",
-        "description": "",
-        "20DRY": "€150~500",
-        "40HC": "€150~500"
-    },
-    "extra-cost-4": {
         "name": "PARKING PERMIT",
         "description": "",
-        "20DRY": 300,
-        "40HC": 300
+        "20DRY": "€150-350",
+        "40HC": "€150-350"
+    },
+    "extra-cost-4": {
+        "name": "STAIRS PER FLOOR",
+        "description": "한 층마다 해당 비용 부과. ",
+        "20DRY": {
+            "1-20": 200,
+            "21-25": 250,
+            "26-30": 300
+        },
+        "40HC": {
+            "1-40": 400,
+            "41-55": 500,
+            "56-60": 600
+        }
     },
     "extra-cost-5": {
-        "name": "LIFT CHARGE",
+        "name": "LONG CARRY",
         "description": "",
-        "20DRY": "€300~500",
-        "40HC": "€150~500"
+        "20DRY": {
+            "1-20": 100,
+            "21-25": 200,
+            "26-30": 300
+        },
+        "40HC": {
+            "1-40": 200,
+            "41-55": 300,
+            "56-60": 400
+        }
+    },
+    "extra-cost-6": {
+        "name": "UPLIGHT PIANO",
+        "description": "",
+        "20DRY": "€300-500",
+        "40HC": "€300-500"
     },
     "STAIR CHARGE": {
-        "description": "1층당 비용 발생, €200/400",
+        "description": "",
         "CBM단가": 0
     },
     "HEAVY ITEM": {
-        "description": "",
+        "description": "계단 층수 및 사이즈 별 비용 상이함",
         "단위": "ITEM",
         "단가": "€300~500"
     },
     "STORAGE CHARGE": {
-        "description": "보관 비용 확인 필요",
-        "단위": "주",
-        "무료 보관 기간": 0,
-        "보관 비용 단가": 0
+        "description": "한 달 무료 보관. €300/TEU*MONTH",
+        "단위": "월",
+        "무료 보관 기간": 1,
+        "보관 비용 단가": 
     },
     "additional-info-1": {
+        "name": "기타 추가 비용",
+        "description": "사다리차 이용 : 300~500 EUR(3층부터 이후 층 당 100 EUR 추가)\n완전분해 가구 : 300-500 EUR(사이즈 별 비용 상이함 / 사진 필요)\n전등 설치: 50-300 EUR(사이즈 별 비용 상이함 / 사진 필요)\n벽 걸이 TV 설치: 300-500 EUR(사이즈 별 비용 상이함 / 사진 필요)"
+    },
+    "additional-info-1": {
+        "name": "실비 청구 비용",
+        "description": "Port Charge, Container Return Charge \nStorage Charge\nDemurrage & Detention Charge"
+    },
+    "additional-info-3": {
         "name": "사용 가능 선사 및 T/T",
         "description": "부산발 \nHMM/YML/ONE : T/T 50 DAYS (공동배선이라 T/T 모두 동일)"
     },
     "DATA BASE": {
-        "description": "업데이트 : 2024.10 이트너스 비딩문의"
+        "description": "업데이트 : 2025.01 // 2025년 배송건부터 적용"
     }
 }
