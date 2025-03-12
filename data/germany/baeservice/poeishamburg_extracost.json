@@ -1,4 +1,14 @@
 {
+    "links": [
+    {
+      "label": "OFC",
+      "url": "https://www.notion.so/ANTWERP-HAMBURG-SOUTHAMPTON-ROTTERDAM-LE-HAVRE-1970b10191ce802cb9e4f179c5c2dd0a?pvs=4"
+    },
+    {
+      "label": "NOTION",
+      "url": "https://www.notion.so/BAE-SERVICE-GMBH-CO-KG-1b40b10191ce806ca657c6e10a6928a3"
+    }
+  ],
   "화폐단위": "€",
   
   "basic-cost-1": {
@@ -61,8 +71,8 @@
   },
   
   "additional-info-1": {
-    "name": "",
-    "description": ""
+    "name": "사용 가능 선사 및 T/T",
+    "description": "부산발 \nHMM/YML/ONE : T/T 50 DAYS (공동배선이라 T/T 모두 동일)"
   },
 
 
