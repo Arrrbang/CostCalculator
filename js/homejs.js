@@ -713,9 +713,9 @@ async function updateKrwValueWithAPI() {
 
 //-------------------extra cost 계산-------------------------
 function updateExtraCostResult(categoryKey) {
-  const selectedContainer = containerDropdown.value; // 선택된 컨테이너 타입
-  const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값 (숫자로 변환)
-  let result = ""; // 초기 값 설정
+  const selectedContainer = containerDropdown.value;
+  const selectedCBM = parseInt(dropdown.value, 10);
+  let result = "";
 
   const categoryData = basicExtraCost[categoryKey];
 
@@ -723,12 +723,10 @@ function updateExtraCostResult(categoryKey) {
     return;
   }
 
-  // 해당 컨테이너 타입의 데이터 가져오기
   const costData = categoryData[selectedContainer];
 
-  // 1. "단가"가 있는지 확인하고, CBM 범위가 있는지 확인
-  if (typeof costData === "object" && costData["단가"]) {
-    // CBM 범위가 있는 경우 범위 적용
+  // 1. CBM 범위를 먼저 체크
+  if (typeof costData === "object") {
     const rangeKey = Object.keys(costData).find((key) => {
       if (key.includes("-")) {
         const [start, end] = key.split("-").map(Number);
@@ -739,46 +737,32 @@ function updateExtraCostResult(categoryKey) {
 
     if (rangeKey) {
       result = costData[rangeKey] || "";
-    } else {
-      // 범위가 없으면 단가를 사용
+    } else if (costData["단가"]) {
+      // 범위가 없으면 "단가" 사용
       const unitCost = parseFloat(costData["단가"]);
-      result = (selectedCBM * unitCost).toFixed(2); // CBM 값과 곱하기
+      result = (selectedCBM * unitCost).toFixed(2);
     }
   } 
-  // 2. "단가" 항목이 없고, CBM 범위가 있는지 확인
-  else if (typeof costData === "object") {
-    // 범위 처리: "1-30", "31-60" 같은 범위 체크
-    const rangeKey = Object.keys(costData).find((key) => {
-      if (key.includes("-")) {
-        const [start, end] = key.split("-").map(Number);
-        return selectedCBM >= start && selectedCBM <= end;
-      }
-      return false;
-    });
-    // 범위에 맞는 값을 출력
-    result = costData[rangeKey] || "";
-  } 
-  // 3. "단가" 항목이 없고, 값 그대로 출력
+  // 2. "단가" 항목이 없는 경우, 값 그대로 출력
   else if (typeof costData === "number") {
-    result = costData; // 값 그대로 출력
+    result = costData;
   } 
-  // 4. "단가" 항목도 없고, 문자 그대로 출력
   else if (typeof costData === "string") {
-    result = costData; // 문자 그대로 출력
+    result = costData;
   }
 
-  // 5. 기본값이 없을 경우 단위 비용 처리
+  // 3. 기본값이 없을 경우 단위 비용 처리
   if (result === "" && !isNaN(selectedCBM)) {
     const defaultMultiplier = categoryData?.unitMultiplier || 0;
     result = selectedCBM * defaultMultiplier;
   }
 
-  // 6. 화폐 단위 추가
+  // 4. 화폐 단위 추가
   if (!isNaN(result) && result !== "") {
     result = `${currencySymbol}${Number(result).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
   }
 
-  // 7. 업데이트
+  // 5. UI 업데이트
   const labelElement = document.getElementById(`${categoryKey}-label`);
   const valueElement = document.getElementById(`${categoryKey}-value`);
   const descriptionElement = document.getElementById(`${categoryKey}-description`);
@@ -790,6 +774,7 @@ function updateExtraCostResult(categoryKey) {
     descriptionElement.innerHTML = descriptionText.replace(/\n/g, "<br>");
   }
 }
+
 
 
 //-------------------stair carry charge 업데이트---------------
