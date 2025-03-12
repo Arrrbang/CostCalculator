@@ -103,13 +103,13 @@
         "description": "한 달 무료 보관. €300/TEU*MONTH",
         "단위": "월",
         "무료 보관 기간": 1,
-        "보관 비용 단가": 
+        "보관 비용 단가": 0
     },
     "additional-info-1": {
         "name": "기타 추가 비용",
         "description": "사다리차 이용 : 300~500 EUR(3층부터 이후 층 당 100 EUR 추가)\n완전분해 가구 : 300-500 EUR(사이즈 별 비용 상이함 / 사진 필요)\n전등 설치: 50-300 EUR(사이즈 별 비용 상이함 / 사진 필요)\n벽 걸이 TV 설치: 300-500 EUR(사이즈 별 비용 상이함 / 사진 필요)"
     },
-    "additional-info-1": {
+    "additional-info-2": {
         "name": "실비 청구 비용",
         "description": "Port Charge, Container Return Charge \nStorage Charge\nDemurrage & Detention Charge"
     },
