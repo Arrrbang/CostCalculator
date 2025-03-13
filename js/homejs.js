@@ -596,22 +596,24 @@ function calculateTotalCost() {
     }
   });
 
-  // basic-delivery-value 값도 추가
+  // basic-delivery-value 값도 추가 (basic-cost- 처리 방식과 동일하게 변경)
   const basicDeliveryValueElement = document.getElementById("basic-delivery-value");
-  const basicDeliveryValueText = basicDeliveryValueElement ? basicDeliveryValueElement.textContent : "";
+  if (basicDeliveryValueElement) {
+    const basicDeliveryValueText = basicDeliveryValueElement.textContent || "";
 
-  const basicDeliveryValue = parseFloat(basicDeliveryValueText.replace(/[\¥$€₩]/g, "").replace(/[^0-9.-]+/g, ""));
-  if (!isNaN(basicDeliveryValue)) {
-    totalCost += basicDeliveryValue;
+    // 숫자만 포함된 경우에만 처리 (쉼표 제거 후 범위(~) 포함 시 제외)
+    const cleanedDeliveryText = basicDeliveryValueText.replace(/[\¥$€₩,]/g, "").trim();
+
+    if (/^[0-9.-]+$/.test(cleanedDeliveryText) && !basicDeliveryValueText.includes("~")) {
+      const basicDeliveryValue = parseFloat(cleanedDeliveryText);
+      if (!isNaN(basicDeliveryValue)) {
+        totalCost += basicDeliveryValue;
+      }
+    }
   }
 
-  // 결과 출력: 화폐 단위를 포함한 형식
-  const totalCostElement = document.getElementById("total-value"); // totalCostElement를 정의
-  if (totalCostElement) {
-    totalCostElement.textContent = `${currencySymbol || ""}${totalCost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-  } else {
-    console.error("totalCostElement가 정의되지 않았습니다.");
-  }
+  console.log("Total Cost:", totalCost);
+  return totalCost;
 }
 
 // MutationObserver 설정
