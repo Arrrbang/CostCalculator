@@ -214,17 +214,5 @@
         "color": "blue"
       }
     ]
-  },
-  {
-    "name": "Hoàn Kiếm, Vietnam",
-    "lat": 21.0285,
-    "lng": 105.8544,
-    "links": [
-      {
-        "type": "JEX",
-        "path": "data/vietnam/jex/hoankiem",
-        "color": "blue"
-      }
-    ]
   }
 ]
