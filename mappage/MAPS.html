@@ -276,7 +276,28 @@ function fetchLocations() {
     .catch(error => console.error('Error loading JSON files:', error));
 }
 
-// 마커 추가 로직을 별도 함수로 분리
+document.addEventListener("DOMContentLoaded", () => {
+  fetchLocations(); // HTML이 로드되면 JSON 데이터 불러오기
+});
+
+// JSON 데이터가 정상적으로 불러와지는지 확인하는 로그 추가
+.then(results => {
+  const successfulResults = results
+    .filter(result => result.status === 'fulfilled')
+    .map(result => result.value);
+
+  if (successfulResults.length === 0) {
+    console.error("🚨 No valid JSON files were loaded.");
+    return;
+  }
+
+  const combinedLocations = successfulResults.flat();
+  console.log("✅ Loaded combined locations:", combinedLocations); // 데이터 확인
+
+  displayLocations(combinedLocations);
+})
+
+// 마커 추가 함수 수정
 function displayLocations(locations) {
   locations.forEach(location => {
     if (!location.links || !Array.isArray(location.links)) {
@@ -284,32 +305,31 @@ function displayLocations(locations) {
       return;
     }
 
-      const linksHTML = location.links
-        .map(
-          (link) =>
-            `<a href="../home.html?path=${encodeURIComponent(
-              link.path
-            )}" style="color: ${link.color || "blue"};">${link.type || "View Details"}</a>`
-        )
-        .join("<br>");
+    const linksHTML = location.links
+      .map(link => `<a href="../home.html?path=${encodeURIComponent(link.path)}" style="color: ${link.color || "blue"};">
+        ${link.type || "View Details"}
+      </a>`)
+      .join("<br>");
 
-      const popupContent = `<strong>${location.name}</strong><br>${linksHTML}`;
+    const popupContent = `<strong>${location.name}</strong><br>${linksHTML}`;
 
-      const customIcon = L.AwesomeMarkers.icon({
-        extraClasses: 'fa-rotate-0',
-        icon: 'info-sign',
-        iconColor: 'white',
-        markerColor: 'red',
-        prefix: 'glyphicon'
-      });
-
-      const marker = L.marker([location.lat, location.lng], { icon: customIcon });
-      marker.bindPopup(popupContent);
-      markers.push(marker);
+    const customIcon = L.AwesomeMarkers.icon({
+      extraClasses: 'fa-rotate-0',
+      icon: 'info-sign',
+      iconColor: 'white',
+      markerColor: 'red',
+      prefix: 'glyphicon'
     });
 
-    updateMarkers();
-  }
+    // 마커 생성 및 지도에 추가
+    const marker = L.marker([location.lat, location.lng], { icon: customIcon }).addTo(map);
+    marker.bindPopup(popupContent);
+    markers.push(marker);
+  });
+
+  console.log("✅ Markers added:", markers); // 마커 배열을 확인
+  updateMarkers(); // 마커 업데이트
+}
 
 
 // 줌 레벨 변경 시 마커 상태 업데이트
