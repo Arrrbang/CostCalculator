@@ -1,0 +1,44 @@
+{
+  "links": [
+    {
+      "label": "OFC",
+      "url": "https://www.notion.so/ANTWERP-HAMBURG-SOUTHAMPTON-ROTTERDAM-LE-HAVRE-1970b10191ce802cb9e4f179c5c2dd0a?pvs=4"
+    },
+    {
+      "label": "NOTION",
+      "url": "https://www.notion.so/STB-TRANS-GMBH-1b50b10191ce80e6a845df3d41c29bcb"
+    }
+  ],
+  "nonDiplomat": {
+      "20DRY": {
+        "1-10" : 2900,
+        "11-17" : 2100,
+        "18-30" : 3150,
+        "ANY": "40HC 확인"
+      },
+      "40HC": {
+        "1-40" : 3800,
+        "41-50" : 4150,
+        "51-60" : 3800,
+        "41-45" : 4300
+      }
+  },
+  "diplomat": {
+      "20DRY": {
+        "1-10" : 2900,
+        "11-17" : 2100,
+        "18-30" : 3150,
+        "ANY": "40HC 확인"
+      },
+      "40HC": {
+        "1-40" : 3800,
+        "41-50" : 4150,
+        "51-60" : 3800,
+        "41-45" : 4300
+      }
+  },
+  "containerType": [
+    "20DRY",
+    "40HC"
+  ]
+}
