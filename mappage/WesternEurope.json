@@ -1,0 +1,223 @@
+[
+  {
+    "name": "Eschborn, Germany",
+    "lat": 50.1430,
+    "lng": 8.5711,
+    "links": [
+      {
+        "type": "BAE SERVICE",
+        "path": "data/germany/baeservice/frankfurt",
+        "color": "blue"
+      },
+      {
+        "type": "KRUMPF",
+        "path": "data/germany/krumpf/eschborn",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Frankfurt, Germany",
+    "lat": 50.1109,
+    "lng": 8.6821,
+    "links": [
+      {
+        "type": "BAE SERVICE",
+        "path": "data/germany/baeservice/frankfurt",
+        "color": "blue"
+      },
+      {
+        "type": "KRUMPF",
+        "path": "data/germany/krumpf/frankfurt",
+        "color": "blue"
+      },
+      {
+        "type": "STB",
+        "path": "data/germany/stb/frankfurt",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Muenchen, Germany",
+    "lat": 48.1351,
+    "lng": 11.5820,
+    "links": [
+      {
+        "type": "BAE SERVICE",
+        "path": "data/germany/baeservice/muenchen",
+        "color": "blue"
+      },
+      {
+        "type": "KRUMPF",
+        "path": "data/germany/krumpf/muenchen",
+        "color": "blue"
+      },
+      {
+        "type": "STB",
+        "path": "data/germany/stb/muenchen",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Schwalbach, Germany",
+    "lat": 50.1469,
+    "lng": 8.5287,
+    "links": [
+      {
+        "type": "BAE SERVICE",
+        "path": "data/germany/baeservice/frankfurt",
+        "color": "blue"
+      },
+      {
+        "type": "KRUMPF",
+        "path": "data/germany/krumpf/schwalbach",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hamburg, Germany",
+    "lat": 53.5511,
+    "lng": 9.9937,
+    "links": [
+      {
+        "type": "BAE SERVICE",
+        "path": "data/germany/baeservice/hamburg",
+        "color": "blue"
+      },
+      {
+        "type": "KRUMPF",
+        "path": "data/germany/krumpf/hamburg",
+        "color": "blue"
+      },
+      {
+        "type": "STB",
+        "path": "data/germany/stb/hamburg",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bonn, Germany",
+    "lat": 50.7374,
+    "lng": 7.0982,
+    "links": [
+      {
+        "type": "BAE SERVICE",
+        "path": "data/germany/baeservice/bonn",
+        "color": "blue"
+      },
+      {
+        "type": "KRUMPF",
+        "path": "data/germany/krumpf/bonn",
+        "color": "blue"
+      },
+      {
+        "type": "STB",
+        "path": "data/germany/stb/bonn",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Düsseldorf, Germany",
+    "lat": 51.2277,
+    "lng": 6.7735,
+    "links": [
+      {
+        "type": "BAE SERVICE",
+        "path": "data/germany/baeservice/duesseldorf",
+        "color": "blue"
+      },
+      {
+        "type": "STB",
+        "path": "data/germany/stb/duesseldorf",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Berlin, Germany",
+    "lat": 52.5200,
+    "lng": 13.4050,
+    "links": [
+      {
+        "type": "BAE SERVICE",
+        "path": "data/germany/baeservice/berlin",
+        "color": "blue"
+      },
+      {
+        "type": "STB",
+        "path": "data/germany/stb/berlin",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Stuttgart, Germany",
+    "lat": 48.7758,
+    "lng": 9.1829,
+    "links": [
+      {
+        "type": "BAE SERVICE",
+        "path": "data/germany/baeservice/stuttgart",
+        "color": "blue"
+      },
+      {
+        "type": "STB",
+        "path": "data/germany/stb/stuttgart",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Leipzig, Germany",
+    "lat": 51.3397,
+    "lng": 12.3731,
+    "links": [
+      {
+        "type": "STB",
+        "path": "data/germany/stb/leipzig",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Dresden, Germany",
+    "lat": 51.0504,
+    "lng": 13.7373,
+    "links": [
+      {
+        "type": "STB",
+        "path": "data/germany/stb/dresden",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Köln, Germany",
+    "lat": 50.9375,
+    "lng": 6.9603,
+    "links": [
+      {
+        "type": "STB",
+        "path": "data/germany/stb/koeln",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hannover, Germany",
+    "lat": 52.3759,
+    "lng": 9.7320,
+    "links": [
+      {
+        "type": "STB",
+        "path": "data/germany/stb/hannover",
+        "color": "blue"
+      }
+    ]
+  }
+]
