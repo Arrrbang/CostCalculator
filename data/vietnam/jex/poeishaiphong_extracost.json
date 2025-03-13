@@ -1,0 +1,77 @@
+{
+    "links": [
+        {
+            "label": "INCHEON OFC",
+            "url": "https://www.notion.so/HAIPHONG-1990b10191ce80208077ec5abf381f47?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/JUSTICE-INTERNATIONAL-TRANSPORT-LOGISTICS-CO-LTD-JEX-1b50b10191ce8037be5eeb168e44af8c"
+        }
+    ],
+    "화폐단위": "$",
+    "basic-cost-1": {
+        "name": "THC/POC/DRC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        },
+        "Diplomat": {
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        }
+    },
+    "extra-cost-1": {
+        "name": "LONG CARRY CHARGE",
+        "description": "",
+        "20DRY": {"단가": 8},
+        "40HC": {"단가": 8}
+    },
+    "extra-cost-2": {
+        "name": "SHUTTLE CHARGE",
+        "description": "",
+        "20DRY": {"단가":8},
+        "40HC": {"단가":8}
+    },
+    "extra-cost-3": {
+        "name": "DIPLOMAT CAR HANDLING",
+        "description": "",
+        "20DRY": 300,
+        "40HC": 300
+    },
+    "extra-cost-4": {
+        "name": "ARRIVAL CARD",
+        "description": "ARRIVAL CARD 관련 안내 확인 필수",
+        "20DRY": 200,
+        "40HC": 200
+    },
+    "extra-cost-5": {
+        "name": "SUNDAY CHARGE",
+        "description": "$10/PER CBM (MIN $200/20')",
+        "20DRY": {"단가":10},
+        "40HC": {"단가":10}
+    },
+    "STAIR CHARGE": {
+        "description": "$8 /PER CBM * FLOOR",
+        "CBM단가": 8
+    },
+    "HEAVY ITEM": {
+        "description": "중량화물과 피아노 핸들링 가격 동일",
+        "단위": "ITEM",
+        "단가": 100
+    },
+    "STORAGE CHARGE": {
+        "description": "보관 비용 확인 필요",
+        "단위": "월",
+        "무료 보관 기간": 1,
+        "보관 비용 단가": 0
+    },
+    "additional-info-1": {
+        "name": "추가 정보",
+        "description": "FULL SETTING기본 제공"
+    },
+    "DATA BASE": {
+        "description": "업데이트 : 2025.01"
+    }
+}
