@@ -15,8 +15,14 @@
   "basic-cost-1": {
     "name": "THC/POC/CLC/TRC",
     "description": "",
-      "20DRY": "INCLUDED",
-      "40HC": "INCLUDED"
+        "NonDiplomat": {
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        },
+        "Diplomat": {
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        }
     },
   "extra-cost-1": {
     "name": "FULL SETTING",
