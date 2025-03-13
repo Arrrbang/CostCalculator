@@ -1,9 +1,19 @@
 {
     "nonDiplomat":{
-      "ANY" : "비용 확인 필요"
+    "20DRY": {
+        "ANY": "비용미확인"
+      },
+    "40HC": {
+        "ANY": "비용미확인"
+      }
     },
     "diplomat":{
-      "ANY" : "비용 확인 필요"
+    "20DRY": {
+        "ANY": "비용미확인"
+      },
+    "40HC": {
+        "ANY": "비용미확인"
+      }
     },
     "containerType": [
       "20DRY",
