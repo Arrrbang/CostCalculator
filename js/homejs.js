@@ -589,8 +589,8 @@ function calculateTotalCost() {
       return; // 숫자가 아닌 문자가 포함되었거나 "~"가 있으면 제외
     }
 
-    // 화폐 단위 및 숫자만 추출
-    const costValue = parseFloat(costValueText.replace(/[\¥$€₩]/g, "").replace(/[^0-9.-]+/g, ""));
+    // 숫자만 추출
+    const costValue = parseFloat(cleanedText);
     if (!isNaN(costValue)) {
       totalCost += costValue;
     }
@@ -618,10 +618,10 @@ function calculateTotalCost() {
 
 // MutationObserver 설정
 function observeCostChanges() {
-  // 기본 배송비와 추가 비용의 변화를 감지할 observer 설정
-  const config = { childList: true, subtree: true };
+  // 감지할 변경 사항 설정 (text 변경도 감지)
+  const config = { childList: true, subtree: true, characterData: true };
 
-  // basic-cost-?와 basic-delivery-value를 관찰
+  // 감지할 요소 리스트
   const observedElements = [
     ...document.querySelectorAll('[id^="basic-cost-"][id$="-value"]'),
     document.getElementById("basic-delivery-value"),
@@ -630,7 +630,10 @@ function observeCostChanges() {
 
   observedElements.forEach(element => {
     if (element) {
-      const observer = new MutationObserver(calculateTotalCost);
+      const observer = new MutationObserver(() => {
+        console.log("Detected change, recalculating total cost...");
+        calculateTotalCost();
+      });
       observer.observe(element, config);
     }
   });
@@ -641,6 +644,7 @@ document.addEventListener("DOMContentLoaded", () => {
   calculateTotalCost(); // 초기 계산
   observeCostChanges(); // MutationObserver 활성화
 });
+
 
 //-------------------KRW 변환 부분---------------------------
 async function updateKrwValueWithAPI() {
