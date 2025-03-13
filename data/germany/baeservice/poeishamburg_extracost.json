@@ -18,8 +18,8 @@
             "40HC": "INCLUDED"
         },
         "Diplomat": {
-            "20DRY": 450,
-            "40HC": 750
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
         }
     },
     "extra-cost-1": {
