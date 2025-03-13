@@ -612,7 +612,19 @@ function calculateTotalCost() {
     }
   }
 
+  // 🔹 total-cost 요소 업데이트 (HTML에 반영)
+  const totalCostElement = document.getElementById("total-cost");
+  if (totalCostElement) {
+    totalCostElement.textContent = totalCost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  } else {
+    console.warn("total-cost 요소를 찾을 수 없습니다.");
+  }
+
   console.log("Total Cost:", totalCost);
+
+  // 🔹 KRW 변환 업데이트 실행
+  updateKrwValueWithAPI();
+
   return totalCost;
 }
 
@@ -625,14 +637,15 @@ function observeCostChanges() {
   const observedElements = [
     ...document.querySelectorAll('[id^="basic-cost-"][id$="-value"]'),
     document.getElementById("basic-delivery-value"),
-    document.getElementById("average-ofc-value")
+    document.getElementById("average-ofc-value"),
+    document.getElementById("total-cost") // 🔹 total-cost 요소 변경도 감지
   ];
 
   observedElements.forEach(element => {
     if (element) {
       const observer = new MutationObserver(() => {
         console.log("Detected change, recalculating total cost...");
-        calculateTotalCost();
+        calculateTotalCost(); // 변경 감지 시 총 비용 다시 계산
       });
       observer.observe(element, config);
     }
