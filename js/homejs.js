@@ -582,28 +582,29 @@ function calculateTotalCost() {
   costValueElements.forEach(costValueElement => {
     const costValueText = costValueElement.textContent || "";
 
-    // 숫자만 포함된 경우에만 처리 (쉼표 제거 후 범위(~) 포함 시 제외)
+    // 화폐 단위 및 쉼표 제거 후 정리
     const cleanedText = costValueText.replace(/[\¥$€₩,]/g, "").trim();
 
+    // 유효한 숫자만 처리 (문자 포함 시 제외, "~" 포함 시 제외)
     if (!/^[0-9.-]+$/.test(cleanedText) || costValueText.includes("~")) {
-      return; // 숫자가 아닌 문자가 포함되었거나 "~"가 있으면 제외
+      return;
     }
 
-    // 숫자만 추출
     const costValue = parseFloat(cleanedText);
     if (!isNaN(costValue)) {
       totalCost += costValue;
     }
   });
 
-  // basic-delivery-value 값도 추가 (basic-cost- 처리 방식과 동일하게 변경)
+  // basic-delivery-value 값도 추가 (동일한 처리 방식 적용)
   const basicDeliveryValueElement = document.getElementById("basic-delivery-value");
   if (basicDeliveryValueElement) {
     const basicDeliveryValueText = basicDeliveryValueElement.textContent || "";
 
-    // 숫자만 포함된 경우에만 처리 (쉼표 제거 후 범위(~) 포함 시 제외)
+    // 화폐 단위 및 쉼표 제거 후 정리
     const cleanedDeliveryText = basicDeliveryValueText.replace(/[\¥$€₩,]/g, "").trim();
 
+    // 유효한 숫자만 처리 (문자 포함 시 제외, "~" 포함 시 제외)
     if (/^[0-9.-]+$/.test(cleanedDeliveryText) && !basicDeliveryValueText.includes("~")) {
       const basicDeliveryValue = parseFloat(cleanedDeliveryText);
       if (!isNaN(basicDeliveryValue)) {
@@ -612,40 +613,35 @@ function calculateTotalCost() {
     }
   }
 
-  // 🔹 total-cost 요소 업데이트 (HTML에 반영)
-  const totalCostElement = document.getElementById("total-cost");
+  // 결과 출력: 화폐 단위를 포함한 형식
+  const totalCostElement = document.getElementById("total-value");
   if (totalCostElement) {
-    totalCostElement.textContent = totalCost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    totalCostElement.textContent = `${currencySymbol || ""}${totalCost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
   } else {
-    console.warn("total-cost 요소를 찾을 수 없습니다.");
+    console.error("totalCostElement를 찾을 수 없습니다.");
   }
 
   console.log("Total Cost:", totalCost);
-
-  // 🔹 KRW 변환 업데이트 실행
-  updateKrwValueWithAPI();
-
   return totalCost;
 }
 
 // MutationObserver 설정
 function observeCostChanges() {
-  // 감지할 변경 사항 설정 (text 변경도 감지)
+  // 기본 배송비와 추가 비용의 변화를 감지할 observer 설정
   const config = { childList: true, subtree: true, characterData: true };
 
-  // 감지할 요소 리스트
+  // basic-cost-?와 basic-delivery-value를 관찰
   const observedElements = [
     ...document.querySelectorAll('[id^="basic-cost-"][id$="-value"]'),
     document.getElementById("basic-delivery-value"),
-    document.getElementById("average-ofc-value"),
-    document.getElementById("total-cost") // 🔹 total-cost 요소 변경도 감지
+    document.getElementById("average-ofc-value")
   ];
 
   observedElements.forEach(element => {
     if (element) {
       const observer = new MutationObserver(() => {
-        console.log("Detected change, recalculating total cost...");
-        calculateTotalCost(); // 변경 감지 시 총 비용 다시 계산
+        console.log("값 변경 감지됨, total cost 재계산");
+        calculateTotalCost();
       });
       observer.observe(element, config);
     }
