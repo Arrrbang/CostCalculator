@@ -224,23 +224,65 @@ function updateMarkers() {
     }
   });
 }
+    
+// 여러 JSON 파일을 로드하는 함수
+function fetchLocations() {
+  const jsonFiles = [
+    './EastAsia.json', //동아시아
+    './SoutheastAsia.json', //동남아시아
+    './SouthAsia.json', //남아시아
+    './CentralAsia.json', //중앙아시아
+    './WestAsia.json', //서아시아
+    
+    './EastAfrica.json', //동아프리카
+    './WestAfrica.json', //서아프리카
+    './NorthAfrica.json', //북아프리카
+    './SouthAfrica.json', //남아프리카
+    
+    './NorthernEurope.json', //북유럽
+    './SouthernEurope.json', //남유럽
+    './EasternEurope.json', //동유럽
+    './WesternEurope.json', //서유럽
+    
+    './NorthAmerica.json', //북아메리카
+    './CentralAmerica.json', //중앙아메리카
+    './SouthAmerica.json', //남아메리카
+    
+    './Oceania.json', //오세아니아
+  ];
 
-// JSON 데이터 로드 후 마커 생성 및 초기화
-fetch('./location.json')
-  .then(response => {
+  // Promise.allSettled()을 사용하여 모든 요청을 개별적으로 처리
+  Promise.allSettled(jsonFiles.map(file => fetch(file).then(response => {
     if (!response.ok) {
-      throw new Error('Failed to fetch JSON');
+      throw new Error(`Failed to load ${file}`);
     }
     return response.json();
-  })
-  .then(locations => {
-    console.log('Loaded locations:', locations); // JSON 데이터 확인
+  })))
+    .then(results => {
+      // 성공한 JSON 파일만 필터링
+      const successfulResults = results
+        .filter(result => result.status === 'fulfilled') // 성공한 요청만 남김
+        .map(result => result.value); // 성공한 값만 추출
 
-    locations.forEach(location => {
-      if (!location.links || !Array.isArray(location.links)) {
-        console.warn('Links are missing or not an array for location:', location.name);
+      if (successfulResults.length === 0) {
+        console.error("No valid JSON files were loaded.");
         return;
       }
+
+      const combinedLocations = successfulResults.flat(); // 여러 JSON 배열을 하나로 합침
+      console.log("Loaded combined locations:", combinedLocations);
+      displayLocations(combinedLocations);
+    })
+    .catch(error => console.error('Error loading JSON files:', error));
+}
+
+// 마커 추가 로직을 별도 함수로 분리
+function displayLocations(locations) {
+  locations.forEach(location => {
+    if (!location.links || !Array.isArray(location.links)) {
+      console.warn('Links are missing or not an array for location:', location.name);
+      return;
+    }
 
       const linksHTML = location.links
         .map(
