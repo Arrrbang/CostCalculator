@@ -225,7 +225,7 @@ function updateMarkers() {
   });
 }
     
-// 여러 JSON 파일을 로드하는 함수
+// 여러 JSON 파일을 로드하는 함수 (Promise 반환)
 function fetchLocations() {
   const jsonFiles = [
     './EastAsia.json', //동아시아
@@ -251,53 +251,54 @@ function fetchLocations() {
     './Oceania.json', //오세아니아
   ];
 
-  // Promise.allSettled()을 사용하여 모든 요청을 개별적으로 처리
-  Promise.allSettled(jsonFiles.map(file => fetch(file).then(response => {
-    if (!response.ok) {
-      throw new Error(`Failed to load ${file}`);
-    }
-    return response.json();
-  })))
+  return Promise.allSettled(
+    jsonFiles.map(file =>
+      fetch(file)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Failed to load ${file}`);
+          }
+          return response.json();
+        })
+    )
+  )
     .then(results => {
       // 성공한 JSON 파일만 필터링
       const successfulResults = results
-        .filter(result => result.status === 'fulfilled') // 성공한 요청만 남김
-        .map(result => result.value); // 성공한 값만 추출
+        .filter(result => result.status === 'fulfilled')
+        .map(result => result.value);
 
       if (successfulResults.length === 0) {
-        console.error("No valid JSON files were loaded.");
+        console.error("🚨 No valid JSON files were loaded.");
+        return [];
+      }
+
+      const combinedLocations = successfulResults.flat();
+      console.log("✅ Loaded combined locations:", combinedLocations);
+      return combinedLocations;
+    })
+    .catch(error => {
+      console.error("🚨 Error loading JSON files:", error);
+      return [];
+    });
+}
+
+// DOMContentLoaded 시 JSON 데이터를 불러와 마커 추가
+document.addEventListener("DOMContentLoaded", () => {
+  fetchLocations()
+    .then(results => {
+      if (results.length === 0) {
+        console.error("🚨 No valid JSON files were loaded.");
         return;
       }
 
-      const combinedLocations = successfulResults.flat(); // 여러 JSON 배열을 하나로 합침
-      console.log("Loaded combined locations:", combinedLocations);
-      displayLocations(combinedLocations);
+      console.log("✅ Loaded combined locations:", results);
+      displayLocations(results);
     })
-    .catch(error => console.error('Error loading JSON files:', error));
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  fetchLocations(); // HTML이 로드되면 JSON 데이터 불러오기
+    .catch(error => console.error("🚨 Error in fetchLocations:", error));
 });
 
-// JSON 데이터가 정상적으로 불러와지는지 확인하는 로그 추가
-.then(results => {
-  const successfulResults = results
-    .filter(result => result.status === 'fulfilled')
-    .map(result => result.value);
-
-  if (successfulResults.length === 0) {
-    console.error("🚨 No valid JSON files were loaded.");
-    return;
-  }
-
-  const combinedLocations = successfulResults.flat();
-  console.log("✅ Loaded combined locations:", combinedLocations); // 데이터 확인
-
-  displayLocations(combinedLocations);
-})
-
-// 마커 추가 함수 수정
+// 마커를 지도에 추가하는 함수
 function displayLocations(locations) {
   locations.forEach(location => {
     if (!location.links || !Array.isArray(location.links)) {
@@ -330,6 +331,7 @@ function displayLocations(locations) {
   console.log("✅ Markers added:", markers); // 마커 배열을 확인
   updateMarkers(); // 마커 업데이트
 }
+
 
 
 // 줌 레벨 변경 시 마커 상태 업데이트
