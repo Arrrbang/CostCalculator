@@ -1,0 +1,69 @@
+{
+    "links": [
+    {
+      "label": "OFC",
+      "url": "https://www.notion.so/ANTWERP-HAMBURG-SOUTHAMPTON-ROTTERDAM-LE-HAVRE-1970b10191ce802cb9e4f179c5c2dd0a?pvs=4"
+    },
+    {
+      "label": "NOTION",
+      "url": "https://www.notion.so/STB-TRANS-GMBH-1b50b10191ce80e6a845df3d41c29bcb"
+    }
+  ],
+  
+  "화폐단위": "€",
+  
+  "basic-cost-1": {
+    "name": "THC/POC/CLC/TRC",
+    "description": "",
+      "20DRY": "INCLUDED",
+      "40HC": "INCLUDED"
+    },
+  "extra-cost-1": {
+    "name": "FULL SETTING",
+    "description": "",
+    "20DRY": 330,
+    "40HC": 550
+  },
+  "extra-cost-2": {
+    "name": "PIANO HANDLING",
+    "description": "",
+    "20DRY": 150,
+    "40HC": 150
+  },
+  "extra-cost-3": {
+    "name": "SHUTTLE FEE",
+    "description": "",
+    "20DRY": 330,
+    "40HC": 550
+  },
+  "extra-cost-4": {
+    "name": "PARKING PERMIT",
+    "description": "40HC 2일 작업일 경우 €450",
+    "20DRY": 250,
+    "40HC": 250
+  },
+  "STAIR CHARGE": {
+    "description": "AT COST",
+    "CBM단가": 0
+  },
+  "HEAVY ITEM": {
+    "description": "100KG 이상일 경우 발생",
+    "단위": "ITEM",
+    "단가": "€100~150"
+  },
+  "STORAGE CHARGE": {
+    "description": "무료 보관 기간 2주. \nWarehouse handling: €500/20ft, €800/40ft\n€350/20ft/month\n€600/40hc/month",
+    "단위": "월",
+    "무료 보관 기간": 0,
+    "보관 비용 단가": 0
+  },
+  
+  "additional-info-1": {
+    "name": "불포함 비용",
+    "description": "Customs Duties and VAT, DEM/DET, long carry, empty return, drop-off, \nhandyman services, maid service fee, extra delivery, additional debris pick-up, \ndisposal, custom inspection fee, container waiting fee(2hours free)"
+  },
+
+  "DATA BASE": {
+    "description": "업데이트 : 2024.10 이트너스 비딩문의"
+  }
+}
