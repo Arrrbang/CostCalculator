@@ -69,9 +69,9 @@
     },
     "additional-info-1": {
         "name": "추가 정보",
-        "description": "FULL SETTING기본 제공"
+        "description": "FULL SETTING기본 제공 \nDA NANG 도착에 외교차량 있는 경우 HOCHIMINH으로 부킹\n차량혼적은 현지 비용 변동될 수 있으니 사전 문의 필요"
     },
     "DATA BASE": {
-        "description": "업데이트 : 2025.01"
+        "description": "업데이트 : 2025.01 \n베트남 통관 언더머니 인상분 반영.\n20FT:$200 / 40HC:$350 인상"
     }
 }
