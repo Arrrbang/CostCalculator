@@ -66,6 +66,11 @@
     "name": "별송품 신고서 작성 요망",
     "description": "수입 신고 서류는 아래 노션 버튼 클릭하여 확인 필요."
   },
+  
+  "additional-info-2": {
+    "name": "20FT 단독 컨테이너의 경우 고정비용",
+    "description": "20ft 단독인데 사이즈가 작을 경우 별도 문의 필요.\n10cbm 이상은 모두 고정값. "
+  },
 
   "DATA BASE": {
     "description": "업데이트 : 2025.03.11 업데이트"
