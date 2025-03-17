@@ -4038,6 +4038,11 @@
         "type": "KEY WORD",
         "path": "data/usa/keyword/alberta",
         "color": "blue"
+      },
+      {
+        "type": "KT",
+        "path": "data/usa/kt/norfolk",
+        "color": "blue"
       }
     ]
   },
@@ -4050,6 +4055,19 @@
         "type": "KEY WORD",
         "path": "data/usa/keyword/alberta",
         "color": "blue"
+      }
+    ]
+  },
+  {
+      "name":"Richmond, VA",
+      "lat": 37.5407,
+      "lng": -77.4360,
+      "name": "Richmond, VA"
+      "links": [
+        {
+          "type": "KT",
+          "path": "data/usa/kt/richmond",
+          "color": "blue"
       }
     ]
   },
