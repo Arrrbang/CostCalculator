@@ -4059,14 +4059,14 @@
     ]
   },
   {
-      "name":"Richmond, VA",
+      "name":"Richimond, VA",
       "lat": 37.5407,
       "lng": -77.4360,
-      "name": "Richmond, VA"
+      "name": "Richimond, VA"
       "links": [
         {
           "type": "KT",
-          "path": "data/usa/kt/richmond",
+          "path": "data/usa/kt/richimond",
           "color": "blue"
       }
     ]
