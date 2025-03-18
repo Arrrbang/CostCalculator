@@ -1,0 +1,69 @@
+{
+    "links": [
+    {
+      "label": "OFC",
+      "url": "https://www.notion.so/MANZANILLO-1ac0b10191ce809885cdf0100884a10b?pvs=4"
+    },
+    {
+      "label": "NOTION",
+      "url": "https://www.notion.so/PANTRANS-S-A-DE-C-V-1ba0b10191ce80cb9fb3f4f1f0eb96d9"
+    }
+  ],
+  
+  "화폐단위": "$",
+
+  "extra-cost-1": {
+    "name": "FULL SETTING",
+    "description": "분실 위험 때문에 FULL SETTING 안 함",
+    "20DRY": 300,
+    "40HC": 300
+  },
+  "extra-cost-2": {
+    "name": "SHUTTLE CHARGE",
+    "description": "",
+    "CONSOLE": 300,
+    "20DRY": 300
+  },
+  "extra-cost-3": {
+    "name": "PIANO HANDLING",
+    "description": "그랜드 피아노: $500",
+    "20DRY": 150,
+    "40HC": 150
+  },
+  "extra-cost-4": {
+    "name": "WOODEN BOX CHARGE",
+    "description": "규격 및 수량에 따라 다름",
+    "20DRY": 150,
+    "40HC": 150
+  },
+
+  "STAIR CHARGE": {
+    "description": "고정가 $200",
+    "CBM단가": 0
+  },
+  "HEAVY ITEM": {
+    "description": "돌침대, 대리석 등",
+    "단위": "ITEM",
+    "단가": "업체 별도 문의"
+  },
+  "STORAGE CHARGE": {
+    "description": "30일 무료 보관 진행",
+    "단위": "일",
+    "무료 보관 기간": 30,
+    "보관 비용 단가": 200
+  },
+  
+  "additional-info-1": {
+    "name": "오더 접수 관련 주의",
+    "description": "여권 및 VISA, 자택 주소 전달 필수"
+  },
+  
+  "additional-info-2": {
+    "name": "사용 가능 선사",
+    "description": "HMM위주로 진행. 타선사 사용시 DEPOSIT 있음. \n부산발 : HMM T/T 18 DAYS"
+  },
+
+  "DATA BASE": {
+    "description": "업데이트 : 2025.10 업데이트"
+  }
+}
