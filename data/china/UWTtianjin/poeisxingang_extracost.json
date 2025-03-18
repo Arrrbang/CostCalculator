@@ -14,9 +14,9 @@
     "extra-cost-1": {
     "name": "대리통관비용",
     "description": "여권/취업증 수배후 대리통관시",
-    "CONSOLE":1000,
-    "20DRY": 1000,
-    "40HC": 1000
+    "CONSOLE":500,
+    "20DRY": 500,
+    "40HC": 500
   },
   
   "STAIR CHARGE": {
