@@ -5227,5 +5227,77 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Mexico City, Mexico",
+    "lat": 19.4333,
+    "lng": -99.1333,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/mexicocity",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Queretaro, Mexico",
+    "lat": 20.5888,
+    "lng": -100.3899,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/queretaro",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tijuana City, Mexico",
+    "lat": 32.5149,
+    "lng": -117.0382,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/tijuanacity",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Paraiso City, Mexico",
+    "lat": 18.4037,
+    "lng": -93.2140,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/paraisocity",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tampico City, Mexico",
+    "lat": 22.2553,
+    "lng": -97.8686,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/tampicocity",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Altamira City, Mexico",
+    "lat": 22.4037,
+    "lng": -97.9236,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/altamiracity",
+        "color": "blue"
+      }
+    ]
   }
 ]
