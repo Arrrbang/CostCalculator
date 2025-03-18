@@ -1,6 +1,24 @@
 {
+    "links": [
+    {
+      "label": "INCHEON OFC",
+      "url": "https://www.notion.so/UNI-WORLD-BEIJING-1af0b10191ce804dabe1d251d5b1a34c"
+    },
+    {
+      "label": "NOTION",
+      "url": "https://www.notion.so/XINGANG-f0e0241542844e1da734e0f66027a704?pvs=4"
+    }
+  ],
   "화폐단위": "$",
 
+    "extra-cost-1": {
+    "name": "대리통관비용",
+    "description": "여권/취업증 수배후 대리통관시",
+    "CONSOLE":1000,
+    "20DRY": 1000,
+    "40HC": 1000
+  },
+  
   "STAIR CHARGE": {
     "description": "미확인",
     "CBM단가": 0
@@ -18,15 +36,18 @@
   },
   
   "additional-info-1": {
-    "name": "포함 비용",
-    "description": "통관료,보세운송료,THC등 항잡비,배송비"
+    "name": "20FT 최소 비용",
+    "description": "20피트 총CBM이 15CBM이하일경우는, Door 비용합계 1350불 기준 적용."
   },
   "additional-info-2": {
-    "name": "불포함 비용",
-    "description": "검역비/화물검사비/통관세금/BAF,CAF\n통관지체료/부두사용료/화물적재비"
+    "name": "비용 관련",
+    "description": "포함 비용\n통관료,보세운송료,THC등 항잡비,배송비\n\n불포함 비용\n검역비/화물검사비/통관세금/BAF,CAF\n통관지체료/부두사용료/화물적재비\n연번처리하지 않고 화주본인명의 통관시 통관비 $250/인 추가"
   },
-  
+  "additional-info-3": {
+    "name": "사용 가능 선사 및 T/T",
+    "description": "부산발\nKMTC : T/T 2 days\nNAMSUNG : T/T 6 days\n\n인천발\nKMTC : T/T 10 days *부산에서 t/s해서 가는 거라서 손해\nNAMSUNG : T/T 3 days"
+  },
   "DATA BASE": {
-    "description": "업데이트 : 2024.10 이트너스 비딩 조사"
+    "description": "업데이트 : 2024.10 이트너스 비딩 조사\n2023년 6월 이후 작업 없어 상세 비용 확인 불가"
   }
 }
