@@ -1,0 +1,66 @@
+{
+    "links": [
+    {
+      "label": "OFC",
+      "url": "https://www.notion.so/ANTWERP-HAMBURG-SOUTHAMPTON-ROTTERDAM-LE-HAVRE-1970b10191ce802cb9e4f179c5c2dd0a?pvs=4"
+    },
+    {
+      "label": "NOTION",
+      "url": "https://www.notion.so/UKO-SHIPPING-LTD-1ba0b10191ce80dba1afd21e2ffe0aef"
+    }
+  ],
+  
+  "화폐단위": "£",
+
+  "basic-cost-1": {
+    "name": "THC/POC/CLC",
+    "description": "도착지 비용에 모두 포함됨.",
+      "CONSOLE": "INCLUDED",
+      "20DRY": "INCLUDED",
+      "40HC": "INCLUDED"
+  },
+
+  "extra-cost-1": {
+    "name": "FULL SETTING",
+    "description": "",
+    "CONCOLE":{"단가": 15},
+    "20DRY": {"단가": 15},
+    "40HC": {"단가": 15}
+  },
+  "extra-cost-2": {
+    "name": "UPLIGHT PIANO",
+    "description": "",
+    "CONSOLE": 150,
+    "20DRY": 150,
+    "40HC": 150
+  },
+  "STAIR CHARGE": {
+    "description": "2층 이상 비용 발생, 비용 미확인",
+    "CBM단가": 0
+  },
+  "HEAVY ITEM": {
+    "description": "",
+    "단위": "ITEM",
+    "단가": "업체 별도 문의"
+  },
+  "STORAGE CHARGE": {
+    "description": "미확인",
+    "단위": "일",
+    "무료 보관 기간": 0,
+    "보관 비용 단가": 0
+  },
+  
+  "additional-info-1": {
+    "name": "불포함 비용",
+    "description": "DEMURRAGE, 2층 이상 계단, SHUTTLE CHG "
+  },
+  
+  "additional-info-2": {
+    "name": "사용 가능 선사",
+    "description": "부산발 : HMM(ONE/YML 공동배선) T/T 55 DAYS"
+  },
+
+  "DATA BASE": {
+    "description": "업데이트 : 2025.10 업데이트"
+  }
+}
