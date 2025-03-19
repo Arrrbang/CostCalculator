@@ -207,8 +207,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var markers = []; // 마커를 저장할 배열
-var minZoomForMarkersWeb = 6; // 웹에서는 6 이상에서만 마커 표시
-var minZoomForMarkersMobile = 5; // 모바일에서는 5 이상에서만 마커 표시
+var minZoomForMarkersWeb = 5; // 웹에서는 5 이상에서만 마커 표시
+var minZoomForMarkersMobile = 4; // 모바일에서는 4 이상에서만 마커 표시
 
 // 마커 표시 여부를 제어하는 함수
 function updateMarkers() {
