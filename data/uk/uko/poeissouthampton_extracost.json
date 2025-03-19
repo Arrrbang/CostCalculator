@@ -52,10 +52,15 @@
   
   "additional-info-1": {
     "name": "불포함 비용",
-    "description": "DEMURRAGE, 2층 이상 계단, SHUTTLE CHG "
+    "description": "DEMURRAGE, 2층 이상 계단, SHUTTLE CHG"
+  },
+    
+  "additional-info-2": {
+    "name": "콘솔 비용",
+    "description": "도착지 재확인 필요함"
   },
   
-  "additional-info-2": {
+  "additional-info-3": {
     "name": "사용 가능 선사",
     "description": "부산발 : HMM(ONE/YML 공동배선) T/T 55 DAYS"
   },
