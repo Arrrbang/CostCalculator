@@ -194,161 +194,87 @@
 
 // 지도 초기화 (줌 레벨에 따른 마커 표시 설정)
 var map = L.map('map', {
-  minZoom: 1,
-  maxBounds: [[-90, -180], [90, 180]], // 지도 이동 범위를 지구 전체로 제한
-  worldCopyJump: true
-}).setView([33.0, -83.5], 6); // 기본 줌 레벨 설정
+  minZoom: 1,  // 최소 줌은 설정하지 않음
+  maxBounds: [
+    [-90, -180], // 남쪽과 서쪽 경계
+    [90, 180]    // 북쪽과 동쪽 경계
+  ], // 지도 이동 범위를 지구 전체로 제한
+  worldCopyJump: true // 세계 전역을 넘지 않도록 설정
+}).setView([33.0, -83.5], 6);  // 기본 줌 레벨은 7로 설정
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
 var markers = []; // 마커를 저장할 배열
-var minZoomForMarkersWeb = 6;
-var minZoomForMarkersMobile = 5;
+var minZoomForMarkersWeb = 6; // 웹에서는 6 이상에서만 마커 표시
+var minZoomForMarkersMobile = 5; // 모바일에서는 5 이상에서만 마커 표시
 
-// ✅ 마커 표시 여부를 제어하는 함수 (디버깅 추가)
+// 마커 표시 여부를 제어하는 함수
 function updateMarkers() {
-  var currentZoom = map.getZoom();
-  var isMobile = window.innerWidth <= 480;
+  var currentZoom = map.getZoom(); // 현재 줌 레벨
+  var isMobile = window.innerWidth <= 480; // 모바일 화면 여부 확인
   var minZoomForMarkers = isMobile ? minZoomForMarkersMobile : minZoomForMarkersWeb;
 
-  console.log(`📡 Current Zoom: ${currentZoom}, Required: ${minZoomForMarkers}`);
-  
   markers.forEach(marker => {
     if (currentZoom >= minZoomForMarkers) {
-      if (!map.hasLayer(marker)) {
-        map.addLayer(marker);
-        console.log("✅ Marker added to map:", marker);
-      }
+      if (!map.hasLayer(marker)) map.addLayer(marker); // 마커 추가
     } else {
-      if (map.hasLayer(marker)) {
-        map.removeLayer(marker);
-        console.log("❌ Marker removed from map:", marker);
-      }
+      if (map.hasLayer(marker)) map.removeLayer(marker); // 마커 제거
     }
   });
 }
-    
-// ✅ JSON 파일 로드 함수 (디버깅 추가)
-function fetchLocations() {
-  const jsonFiles = [
-    './EastAsia.json', './SoutheastAsia.json', './SouthAsia.json', './CentralAsia.json', './WestAsia.json',
-    './EastAfrica.json', './WestAfrica.json', './NorthAfrica.json', './SouthAfrica.json',
-    './NorthernEurope.json', './SouthernEurope.json', './EasternEurope.json', './WesternEurope.json',
-    './NorthAmerica.json', './CentralAmerica.json', './SouthAmerica.json', './Oceania.json'
-  ];
 
-  return Promise.allSettled(
-    jsonFiles.map(file =>
-      fetch(file, { cache: "no-store" }) // 🚨 캐시 문제 방지
-        .then(response => {
-          if (!response.ok) {
-            throw new Error(`❌ Failed to load ${file} (HTTP ${response.status})`);
-          }
-          return response.json();
-        })
-        .then(data => {
-          console.log(`✅ Loaded ${file}:`, data);
-          return data;
-        })
-        .catch(error => {
-          console.error(`🚨 Error loading ${file}:`, error);
-          return null;
-        })
-    )
-  )
-  .then(results => {
-    results.forEach((result, index) => {
-      if (result.status === "rejected" || result.value === null) {
-        console.warn(`⚠️ ${jsonFiles[index]} was not loaded correctly.`);
-      }
-    });
+// JSON 데이터 로드 후 마커 생성 및 초기화
+fetch('./location.json')
+  .then(response => {
 
-    const successfulResults = results
-      .filter(result => result.status === "fulfilled" && result.value !== null)
-      .map(result => result.value);
-
-    if (successfulResults.length === 0) {
-      console.error("🚨 No valid JSON files were loaded.");
-      return [];
+    if (!response.ok) {
+      throw new Error('Failed to fetch JSON');
     }
-
-    const combinedLocations = successfulResults.flat();
-    console.log("✅ Loaded combined locations:", combinedLocations);
-    return combinedLocations;
+    return response.json();
   })
-  .catch(error => {
-    console.error("🚨 Error in fetchLocations:", error);
-    return [];
-  });
-}
+  .then(locations => {
+    console.log('Loaded locations:', locations); // JSON 데이터 확인
 
-// ✅ 마커를 지도에 추가하는 함수 (디버깅 추가)
-function displayLocations(locations) {
-  locations.forEach(location => {
-    console.log("🔍 Checking location:", location);
-
-    if (!location.lat || !location.lng) {
-      console.warn("⚠️ Missing lat/lng for location:", location);
-      return;
-    }
-
-    if (!location.links || !Array.isArray(location.links)) {
-      console.warn("⚠️ Links are missing or not an array for location:", location);
-      return;
-    }
-
-    const linksHTML = location.links
-      .map(link => `<a href="../home.html?path=${encodeURIComponent(link.path)}" style="color: ${link.color || "blue"};">
-        ${link.type || "View Details"}
-      </a>`)
-      .join("<br>");
-
-    const popupContent = `<strong>${location.name}</strong><br>${linksHTML}`;
-
-    const customIcon = L.AwesomeMarkers.icon({
-      extraClasses: 'fa-rotate-0',
-      icon: 'info-sign',
-      iconColor: 'white',
-      markerColor: 'red',
-      prefix: 'glyphicon'
-    });
+    locations.forEach(location => {
+      if (!location.links || !Array.isArray(location.links)) {
+        console.warn('Links are missing or not an array for location:', location.name);
 
 
-    // ✅ 마커 생성 및 지도에 추가
-    const marker = L.marker([location.lat, location.lng], { icon: customIcon }).addTo(map);
-    marker.bindPopup(popupContent);
-    markers.push(marker);
-
-    console.log("📌 Marker created at:", location.lat, location.lng);
-  });
-
-  console.log("✅ Markers added:", markers);
-  updateMarkers();
-}
-
-// ✅ 페이지 로드 시 JSON 데이터를 불러와 마커 추가 (마커 강제 업데이트 포함)
-document.addEventListener("DOMContentLoaded", () => {
-  fetchLocations()
-    .then(results => {
-      if (results.length === 0) {
-        console.error("🚨 No valid JSON files were loaded.");
         return;
       }
 
-      console.log("✅ Loaded combined locations:", results);
-      displayLocations(results);
+      const linksHTML = location.links
+        .map(
+          (link) =>
+            `<a href="../home.html?path=${encodeURIComponent(
+              link.path
+            )}" style="color: ${link.color || "blue"};">${link.type || "View Details"}</a>`
+        )
+        .join("<br>");
 
-      // ✅ 강제로 마커 업데이트 실행
-      setTimeout(() => {
-        updateMarkers();
-      }, 500);
-    })
-    .catch(error => console.error("🚨 Error in fetchLocations:", error));
-});
+      const popupContent = `<strong>${location.name}</strong><br>${linksHTML}`;
 
-// ✅ 줌 레벨 변경 시 마커 업데이트
+      const customIcon = L.AwesomeMarkers.icon({
+        extraClasses: 'fa-rotate-0',
+        icon: 'info-sign',
+        iconColor: 'white',
+        markerColor: 'red',
+        prefix: 'glyphicon'
+      });
+
+      const marker = L.marker([location.lat, location.lng], { icon: customIcon });
+      marker.bindPopup(popupContent);
+      markers.push(marker);
+    });
+
+    updateMarkers();
+  })
+  .catch(error => console.error('Error loading JSON:', error));
+
+
+// 줌 레벨 변경 시 마커 상태 업데이트
 map.on('zoomend', updateMarkers);
 
 // 지도 클릭 시 검색 결과 숨김
