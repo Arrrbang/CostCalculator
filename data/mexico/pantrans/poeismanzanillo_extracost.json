@@ -21,8 +21,8 @@
   "extra-cost-2": {
     "name": "SHUTTLE CHARGE",
     "description": "",
-    "CONSOLE": 300,
-    "20DRY": 300
+    "20DRY": 300,
+    "40HC": 300
   },
   "extra-cost-3": {
     "name": "PIANO HANDLING",
