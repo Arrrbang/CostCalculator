@@ -225,53 +225,123 @@ function updateMarkers() {
   });
 }
 
-// JSON 데이터 로드 후 마커 생성 및 초기화
-fetch('./location.json')
-  .then(response => {
+// 여러 JSON 파일을 로드하는 함수 (Promise 반환)
+function fetchLocations() {
+  const jsonFiles = [
+    './EastAsia.json', //동아시아
+    './SoutheastAsia.json', //동남아시아
+    './SouthAsia.json', //남아시아
+    './CentralAsia.json', //중앙아시아
+    './WestAsia.json', //서아시아
 
-    if (!response.ok) {
-      throw new Error('Failed to fetch JSON');
-    }
-    return response.json();
-  })
-  .then(locations => {
-    console.log('Loaded locations:', locations); // JSON 데이터 확인
+    './EastAfrica.json', //동아프리카
+    './WestAfrica.json', //서아프리카
+    './NorthAfrica.json', //북아프리카
+    './SouthAfrica.json', //남아프리카
 
-    locations.forEach(location => {
-      if (!location.links || !Array.isArray(location.links)) {
-        console.warn('Links are missing or not an array for location:', location.name);
+    './NorthernEurope.json', //북유럽
+    './SouthernEurope.json', //남유럽
+    './EasternEurope.json', //동유럽
+    './WesternEurope.json', //서유럽
 
+    './NorthAmerica.json', //북아메리카
+    './CentralAmerica.json', //중앙아메리카
+    './SouthAmerica.json', //남아메리카
 
+    './Oceania.json', //오세아니아
+  ];
+
+  return Promise.allSettled(
+    jsonFiles.map(file =>
+      fetch(file)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Failed to load ${file}`);
+          }
+          return response.json();
+        })
+    )
+  )
+    .then(results => {
+      // 성공한 JSON 파일만 필터링
+      const successfulResults = results
+        .filter(result => result.status === 'fulfilled')
+        .map(result => result.value);
+
+      if (successfulResults.length === 0) {
+        console.error("🚨 No valid JSON files were loaded.");
+        return [];
+      }
+
+      const combinedLocations = successfulResults.flat();
+      console.log("✅ Loaded combined locations:", combinedLocations);
+      return combinedLocations;
+    })
+    .catch(error => {
+      console.error("🚨 Error loading JSON files:", error);
+      return [];
+    });
+}
+
+// DOMContentLoaded 시 JSON 데이터를 불러와 마커 추가
+document.addEventListener("DOMContentLoaded", () => {
+  fetchLocations()
+    .then(results => {
+      if (results.length === 0) {
+        console.error("🚨 No valid JSON files were loaded.");
         return;
       }
 
-      const linksHTML = location.links
-        .map(
-          (link) =>
-            `<a href="../home.html?path=${encodeURIComponent(
-              link.path
-            )}" style="color: ${link.color || "blue"};">${link.type || "View Details"}</a>`
-        )
-        .join("<br>");
 
-      const popupContent = `<strong>${location.name}</strong><br>${linksHTML}`;
 
-      const customIcon = L.AwesomeMarkers.icon({
-        extraClasses: 'fa-rotate-0',
-        icon: 'info-sign',
-        iconColor: 'white',
-        markerColor: 'red',
-        prefix: 'glyphicon'
-      });
 
-      const marker = L.marker([location.lat, location.lng], { icon: customIcon });
-      marker.bindPopup(popupContent);
-      markers.push(marker);
+
+
+
+
+
+
+
+      console.log("✅ Loaded combined locations:", results);
+      displayLocations(results);
+    })
+    .catch(error => console.error("🚨 Error in fetchLocations:", error));
+});
+
+// 마커를 지도에 추가하는 함수
+function displayLocations(locations) {
+  locations.forEach(location => {
+    if (!location.links || !Array.isArray(location.links)) {
+      console.warn('Links are missing or not an array for location:', location.name);
+      return;
+    }
+
+    const linksHTML = location.links
+      .map(link => `<a href="../home.html?path=${encodeURIComponent(link.path)}" style="color: ${link.color || "blue"};">
+        ${link.type || "View Details"}
+      </a>`)
+      .join("<br>");
+
+    const popupContent = `<strong>${location.name}</strong><br>${linksHTML}`;
+
+    const customIcon = L.AwesomeMarkers.icon({
+      extraClasses: 'fa-rotate-0',
+      icon: 'info-sign',
+      iconColor: 'white',
+      markerColor: 'red',
+      prefix: 'glyphicon'
     });
 
-    updateMarkers();
-  })
-  .catch(error => console.error('Error loading JSON:', error));
+    // 마커 생성 및 지도에 추가
+    const marker = L.marker([location.lat, location.lng], { icon: customIcon }).addTo(map);
+    marker.bindPopup(popupContent);
+    markers.push(marker);
+  });
+
+  console.log("✅ Markers added:", markers); // 마커 배열을 확인
+  updateMarkers(); // 마커 업데이트
+}
+
 
 
 // 줌 레벨 변경 시 마커 상태 업데이트
