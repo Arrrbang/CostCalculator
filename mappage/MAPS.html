@@ -194,115 +194,108 @@
 
 // 지도 초기화 (줌 레벨에 따른 마커 표시 설정)
 var map = L.map('map', {
-  minZoom: 1,  // 최소 줌은 설정하지 않음
-  maxBounds: [
-    [-90, -180], // 남쪽과 서쪽 경계
-    [90, 180]    // 북쪽과 동쪽 경계
-  ], // 지도 이동 범위를 지구 전체로 제한
-  worldCopyJump: true // 세계 전역을 넘지 않도록 설정
-}).setView([33.0, -83.5], 6);  // 기본 줌 레벨은 7로 설정
+  minZoom: 1,
+  maxBounds: [[-90, -180], [90, 180]], // 지도 이동 범위를 지구 전체로 제한
+  worldCopyJump: true
+}).setView([33.0, -83.5], 6); // 기본 줌 레벨 설정
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
 var markers = []; // 마커를 저장할 배열
-var minZoomForMarkersWeb = 6; // 웹에서는 6 이상에서만 마커 표시
-var minZoomForMarkersMobile = 5; // 모바일에서는 5 이상에서만 마커 표시
+var minZoomForMarkersWeb = 6;
+var minZoomForMarkersMobile = 5;
 
-// 마커 표시 여부를 제어하는 함수
+// ✅ 마커 표시 여부를 제어하는 함수 (디버깅 추가)
 function updateMarkers() {
-  var currentZoom = map.getZoom(); // 현재 줌 레벨
-  var isMobile = window.innerWidth <= 480; // 모바일 화면 여부 확인
+  var currentZoom = map.getZoom();
+  var isMobile = window.innerWidth <= 480;
   var minZoomForMarkers = isMobile ? minZoomForMarkersMobile : minZoomForMarkersWeb;
 
+  console.log(`📡 Current Zoom: ${currentZoom}, Required: ${minZoomForMarkers}`);
+  
   markers.forEach(marker => {
     if (currentZoom >= minZoomForMarkers) {
-      if (!map.hasLayer(marker)) map.addLayer(marker); // 마커 추가
+      if (!map.hasLayer(marker)) {
+        map.addLayer(marker);
+        console.log("✅ Marker added to map:", marker);
+      }
     } else {
-      if (map.hasLayer(marker)) map.removeLayer(marker); // 마커 제거
+      if (map.hasLayer(marker)) {
+        map.removeLayer(marker);
+        console.log("❌ Marker removed from map:", marker);
+      }
     }
   });
 }
     
-// 여러 JSON 파일을 로드하는 함수 (Promise 반환)
+// ✅ JSON 파일 로드 함수 (디버깅 추가)
 function fetchLocations() {
   const jsonFiles = [
-    './EastAsia.json', //동아시아
-    './SoutheastAsia.json', //동남아시아
-    './SouthAsia.json', //남아시아
-    './CentralAsia.json', //중앙아시아
-    './WestAsia.json', //서아시아
-    
-    './EastAfrica.json', //동아프리카
-    './WestAfrica.json', //서아프리카
-    './NorthAfrica.json', //북아프리카
-    './SouthAfrica.json', //남아프리카
-    
-    './NorthernEurope.json', //북유럽
-    './SouthernEurope.json', //남유럽
-    './EasternEurope.json', //동유럽
-    './WesternEurope.json', //서유럽
-    
-    './NorthAmerica.json', //북아메리카
-    './CentralAmerica.json', //중앙아메리카
-    './SouthAmerica.json', //남아메리카
-    
-    './Oceania.json', //오세아니아
+    './EastAsia.json', './SoutheastAsia.json', './SouthAsia.json', './CentralAsia.json', './WestAsia.json',
+    './EastAfrica.json', './WestAfrica.json', './NorthAfrica.json', './SouthAfrica.json',
+    './NorthernEurope.json', './SouthernEurope.json', './EasternEurope.json', './WesternEurope.json',
+    './NorthAmerica.json', './CentralAmerica.json', './SouthAmerica.json', './Oceania.json'
   ];
 
   return Promise.allSettled(
     jsonFiles.map(file =>
-      fetch(file)
+      fetch(file, { cache: "no-store" }) // 🚨 캐시 문제 방지
         .then(response => {
           if (!response.ok) {
-            throw new Error(`Failed to load ${file}`);
+            throw new Error(`❌ Failed to load ${file} (HTTP ${response.status})`);
           }
           return response.json();
         })
+        .then(data => {
+          console.log(`✅ Loaded ${file}:`, data);
+          return data;
+        })
+        .catch(error => {
+          console.error(`🚨 Error loading ${file}:`, error);
+          return null;
+        })
     )
   )
-    .then(results => {
-      // 성공한 JSON 파일만 필터링
-      const successfulResults = results
-        .filter(result => result.status === 'fulfilled')
-        .map(result => result.value);
-
-      if (successfulResults.length === 0) {
-        console.error("🚨 No valid JSON files were loaded.");
-        return [];
+  .then(results => {
+    results.forEach((result, index) => {
+      if (result.status === "rejected" || result.value === null) {
+        console.warn(`⚠️ ${jsonFiles[index]} was not loaded correctly.`);
       }
-
-      const combinedLocations = successfulResults.flat();
-      console.log("✅ Loaded combined locations:", combinedLocations);
-      return combinedLocations;
-    })
-    .catch(error => {
-      console.error("🚨 Error loading JSON files:", error);
-      return [];
     });
+
+    const successfulResults = results
+      .filter(result => result.status === "fulfilled" && result.value !== null)
+      .map(result => result.value);
+
+    if (successfulResults.length === 0) {
+      console.error("🚨 No valid JSON files were loaded.");
+      return [];
+    }
+
+    const combinedLocations = successfulResults.flat();
+    console.log("✅ Loaded combined locations:", combinedLocations);
+    return combinedLocations;
+  })
+  .catch(error => {
+    console.error("🚨 Error in fetchLocations:", error);
+    return [];
+  });
 }
 
-// DOMContentLoaded 시 JSON 데이터를 불러와 마커 추가
-document.addEventListener("DOMContentLoaded", () => {
-  fetchLocations()
-    .then(results => {
-      if (results.length === 0) {
-        console.error("🚨 No valid JSON files were loaded.");
-        return;
-      }
-
-      console.log("✅ Loaded combined locations:", results);
-      displayLocations(results);
-    })
-    .catch(error => console.error("🚨 Error in fetchLocations:", error));
-});
-
-// 마커를 지도에 추가하는 함수
+// ✅ 마커를 지도에 추가하는 함수 (디버깅 추가)
 function displayLocations(locations) {
   locations.forEach(location => {
+    console.log("🔍 Checking location:", location);
+
+    if (!location.lat || !location.lng) {
+      console.warn("⚠️ Missing lat/lng for location:", location);
+      return;
+    }
+
     if (!location.links || !Array.isArray(location.links)) {
-      console.warn('Links are missing or not an array for location:', location.name);
+      console.warn("⚠️ Links are missing or not an array for location:", location);
       return;
     }
 
@@ -322,19 +315,40 @@ function displayLocations(locations) {
       prefix: 'glyphicon'
     });
 
-    // 마커 생성 및 지도에 추가
+
+    // ✅ 마커 생성 및 지도에 추가
     const marker = L.marker([location.lat, location.lng], { icon: customIcon }).addTo(map);
     marker.bindPopup(popupContent);
     markers.push(marker);
+
+    console.log("📌 Marker created at:", location.lat, location.lng);
   });
 
-  console.log("✅ Markers added:", markers); // 마커 배열을 확인
-  updateMarkers(); // 마커 업데이트
+  console.log("✅ Markers added:", markers);
+  updateMarkers();
 }
 
+// ✅ 페이지 로드 시 JSON 데이터를 불러와 마커 추가 (마커 강제 업데이트 포함)
+document.addEventListener("DOMContentLoaded", () => {
+  fetchLocations()
+    .then(results => {
+      if (results.length === 0) {
+        console.error("🚨 No valid JSON files were loaded.");
+        return;
+      }
 
+      console.log("✅ Loaded combined locations:", results);
+      displayLocations(results);
 
-// 줌 레벨 변경 시 마커 상태 업데이트
+      // ✅ 강제로 마커 업데이트 실행
+      setTimeout(() => {
+        updateMarkers();
+      }, 500);
+    })
+    .catch(error => console.error("🚨 Error in fetchLocations:", error));
+});
+
+// ✅ 줌 레벨 변경 시 마커 업데이트
 map.on('zoomend', updateMarkers);
 
 // 지도 클릭 시 검색 결과 숨김
