@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Billingham, U.K.",
+    "lat": 54.6000,
+    "lng": -1.2833,
+    "links": [
+      {
+        "type": "UKO",
+        "path": "data/uk/uko/billingham",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Cambridge, U.K.",
+    "lat": 52.2053,
+    "lng": 0.1218,
+    "links": [
+      {
+        "type": "UKO",
+        "path": "data/uk/uko/cambridge",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Glasgow, U.K.",
+    "lat": 55.8642,
+    "lng": -4.2518,
+    "links": [
+      {
+        "type": "UKO",
+        "path": "data/uk/uko/glasgow",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "London, U.K.",
+    "lat": 51.5074,
+    "lng": -0.1278,
+    "links": [
+      {
+        "type": "UKO",
+        "path": "data/uk/uko/london",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Manchester, U.K.",
+    "lat": 53.4808,
+    "lng": -2.2426,
+    "links": [
+      {
+        "type": "UKO",
+        "path": "data/uk/uko/manchester",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Stockport, U.K.",
+    "lat": 53.4084,
+    "lng": -2.1496,
+    "links": [
+      {
+        "type": "UKO",
+        "path": "data/uk/uko/stockport",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Telford, U.K.",
+    "lat": 52.6784,
+    "lng": -2.4453,
+    "links": [
+      {
+        "type": "UKO",
+        "path": "data/uk/uko/telford",
+        "color": "blue"
+      }
+    ]
+  }
+]
