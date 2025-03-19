@@ -554,8 +554,11 @@ function updateDiplomatSensitiveResult(categoryKey) {
   }
 
   // 5. 화폐 단위 추가
-  if (!isNaN(result) && result !== "") {
-      result = `${currencySymbol}${Number(result).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  if (typeof result === "number" && !isNaN(result)) {
+    result = `${currencySymbol}${Number(result).toLocaleString(undefined, { 
+      minimumFractionDigits: 2, 
+      maximumFractionDigits: 2 
+    })}`;
   }
 
   // 6. 업데이트
@@ -581,21 +584,21 @@ function calculateTotalCost() {
 
   costValueElements.forEach(costValueElement => {
     const costValueText = costValueElement.textContent || "";
-
+  
     // 화폐 단위 및 쉼표 제거 후 정리
     const cleanedText = costValueText.replace(/[\¥$€₩,]/g, "").trim();
-
-    // 유효한 숫자만 처리 (문자 포함 시 제외, "~" 포함 시 제외)
-    if (!/^[0-9.-]+$/.test(cleanedText) || costValueText.includes("~")) {
+  
+    // 숫자만 포함된 경우만 처리 (문자 포함 시 제외, "~" 포함 시 제외)
+    if (!/^\d+(\.\d+)?$/.test(cleanedText) || costValueText.includes("~")) {
       return;
     }
-
+  
     const costValue = parseFloat(cleanedText);
     if (!isNaN(costValue)) {
       totalCost += costValue;
     }
   });
-
+  
   // basic-delivery-value 값도 추가 (동일한 처리 방식 적용)
   const basicDeliveryValueElement = document.getElementById("basic-delivery-value");
   if (basicDeliveryValueElement) {
