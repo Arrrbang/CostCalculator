@@ -70,7 +70,7 @@ function resetDropdown(dropdownElement, placeholder = "-- CBM 선택 --") {
 
 // 링크 초기화
 function initializeLinks() {
-  link1Element.textContent = "Default Link 1";
+  link1Element.textContent = "문의 필요";
   link1Element.onclick = () => console.log("Default Link 1 clicked");
   link1Element.style.pointerEvents = "none";
   link1Element.style.color = "gray";
@@ -91,14 +91,14 @@ function updateLinks(links) {
 
    // 링크 1 업데이트
   if (links[0]?.url) {
-    link1Element.textContent = links[0].label || "Default Link 1";
+    link1Element.textContent = links[0].label || "문의 필요";
     link1Element.style.pointerEvents = "auto";
     link1Element.style.color = "white";
     link1Element.onclick = () => {
       window.open(links[0].url, "_blank");
     };
   } else {
-    link1Element.textContent = "Default Link 1";
+    link1Element.textContent = "문의 필요";
     link1Element.style.pointerEvents = "none";
     link1Element.style.color = "gray";
   }
