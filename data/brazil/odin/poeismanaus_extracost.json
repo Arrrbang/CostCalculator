@@ -1,0 +1,120 @@
+{
+  "links": [
+    {
+      "label": "운임문의필요",
+      "url": ""
+    },
+    {
+      "label": "NOTION",
+      "url": "https://www.notion.so/ODIN-CARGO-LOGISTICS-LTDA-1bb0b10191ce80559f11ef26ef446417"
+    }
+  ],
+  "화폐단위": "$",
+  
+  "basic-cost-1": {
+    "name": "THC",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY": 510,
+      "40HC": 510
+    },
+    "Diplomat": {
+      "20DRY": 510,
+      "40HC": 510
+    }
+  },
+  "basic-cost-2": {
+    "name": "CLC",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY": 650,
+      "40HC": 650
+    },
+    "Diplomat": {
+      "20DRY": 650,
+      "40HC": 650
+    }
+  },
+  "basic-cost-3": {
+    "name": "TERMINAL STORAGE/INSPECTION",
+    "description": "$1600~1800 정도 발생됨.\n외교부 화물은 INSPECTION이 없어서 $550 제외.",
+    "NonDiplomat": {
+      "20DRY": 1650,
+      "40HC": 1650
+    },
+    "Diplomat": {
+      "20DRY": 1100,
+      "40HC": 1100
+    }
+  },
+  "basic-cost-4": {
+    "name": "SHUTTLE, UNSTUFFING, STUFFING",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY": 500,
+      "40HC": 800
+    },
+    "Diplomat": {
+      "20DRY": 500,
+      "40HC": 800
+    }
+  },
+  "basic-cost-4": {
+    "name": "BL EMISSION",
+    "description": "40HC 컨테이너에만 발생됨",
+    "NonDiplomat": {
+      "20DRY": 0,
+      "40HC": 110
+    },
+    "Diplomat": {
+      "20DRY": 0,
+      "40HC": 110
+    }
+  },
+  "extra-cost-1": {
+    "name": "FULL SETTING",
+    "description": "기본진행",
+    "20DRY": 0,
+    "40HC": 0
+  },
+  "extra-cost-2": {
+    "name": "UPLIGHT PIANO",
+    "description": "엘리베이터에 안 들어가면 비용 발생\nHoisting으로 진행",
+    "20DRY": 200,
+    "40HC": 200
+  },
+    "extra-cost-3": {
+    "name": "HOISTING+DOCS(LIFT CHARGE)",
+    "description": "",
+    "20DRY": 250,
+    "40HC": 250
+  },
+  "STAIR CHARGE": {
+    "description": "",
+    "CBM단가": 0
+  },
+  "HEAVY ITEM": {
+    "description": "",
+    "단위": "ITEM",
+    "단가": 200
+  },
+  "STORAGE CHARGE": {
+    "description": "보관 비용 확인 필요",
+    "단위": "주",
+    "무료 보관 기간": 0,
+    "보관 비용 단가": 0
+  },
+  
+  "additional-info-1": {
+    "name": "정부장님 인보이스 OTHER CHARGE $150",
+    "description": "원래 TERMINAL SCANNER 사용 비용 $125이 발생되는데, 이건 증빙이 없음\n그래서 other로 $150 별도 청구.\n다른건들은 TERMINAL STORAGE/INSPECTION에 포함되어 있습니다. "
+  },
+  "additional-info-2": {
+    "name": "사용 가능 선사",
+    "description": "HMM : T/T 40 DAYS"
+  },
+
+  "DATA BASE": {
+    "description": "업데이트 필요. 현재 마나우스 통관 불가."
+  }
+}
