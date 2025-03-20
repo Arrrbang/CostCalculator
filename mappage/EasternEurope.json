@@ -1,1 +1,63 @@
+[
+  {
+    "name": "Krakow, Poland",
+    "lat": 50.0647,
+    "lng": 19.9450,
+    "links": [
+      {
+        "type": "arres",
+        "path": "data/poland/arres/krakow",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Poznan, Poland",
+    "lat": 52.4064,
+    "lng": 16.9252,
+    "links": [
+      {
+        "type": "arres",
+        "path": "data/poland/arres/poznan",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Warsaw, Poland",
+    "lat": 52.2298,
+    "lng": 21.0122,
+    "links": [
+      {
+        "type": "arres",
+        "path": "data/poland/arres/warsaw",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Wronki, Poland",
+    "lat": 52.7106,
+    "lng": 16.3771,
+    "links": [
+      {
+        "type": "arres",
+        "path": "data/poland/arres/wronki",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Katowice, Poland",
+    "lat": 50.2649,
+    "lng": 19.0238,
+    "links": [
+      {
+        "type": "arres",
+        "path": "data/poland/arres/katowice",
+        "color": "blue"
+      }
+    ]
+  }
+]
 
