@@ -904,74 +904,69 @@ function updateHeavyItemDropdown() {
 }
 //----------------------storage charge 계산-----------------
 function updatestorageperiodDropdown() {
-  const storageData = basicExtraCost["STORAGE CHARGE"]; // JSON에서 STORAGE CHARGE 가져오기
-
-  if (!storageData) {
+  const storageData = basicExtraCost["STORAGE CHARGE"];
+  if (!storageData || !storageData["보관 비용"]) {
     return;
   }
 
-  // 1. 무료 보관 기간과 보관 비용 단가, 단위 설정
-  const freeStorageDays = parseInt(storageData["무료 보관 기간"], 10) || 0; // 기본값은 0
-  const storageUnitCost = parseFloat(storageData["보관 비용 단가"]) || 0; // 기본 보관 단가
-  const unit = storageData["단위"] || "일"; // 단위 값 (기본값은 '일')
+  const freeStorageDays = parseInt(storageData["무료 보관 기간"], 10) || 0;
+  const storageCostData = storageData["보관 비용"];
+  const defaultUnitCost = parseFloat(storageCostData["단가"]) || 0;
+  const unit = storageData["단위"] || "일";
 
-  if (isNaN(freeStorageDays) || isNaN(storageUnitCost)) {
+  if (isNaN(freeStorageDays) || isNaN(defaultUnitCost)) {
     return;
   }
 
-  // 2. storageperiod 드롭다운 옵션 생성 (1일부터 시작)
   resetDropdown(storageperiodDropdown, `보관 기간 선택 (${unit})`);
+  const maxPeriod = 90;
 
-  const maxPeriod = 90; // 최대 기간 설정
-
-  for (let i = 1; i <= maxPeriod; i++) { 
+  for (let i = 1; i <= maxPeriod; i++) {
     const option = document.createElement("option");
     option.value = i;
-    option.textContent = `${i}${unit}`; // 단위를 포함하여 옵션 표시
+    option.textContent = `${i}${unit}`;
     storageperiodDropdown.appendChild(option);
   }
 
-  // 3. 설명 업데이트
   const descriptionElement = document.getElementById("storage-description");
   if (descriptionElement) {
     descriptionElement.textContent = storageData.description || "";
   }
 
-  // 4. 드롭다운 변경 시 값 계산
   storageperiodDropdown.addEventListener("change", () => {
-    const selectedDays = parseInt(storageperiodDropdown.value, 10); // 선택된 보관 기간
-    const selectedCBM = parseInt(dropdown.value, 10); // 선택된 CBM 값
-
+    const selectedDays = parseInt(storageperiodDropdown.value, 10);
+    const selectedCBM = parseInt(dropdown.value, 10);
+    const selectedContainer = containerDropdown.value; // 선택된 컨테이너 타입
     const valueElement = document.getElementById("storage-value");
 
     if (!isNaN(selectedDays) && !isNaN(selectedCBM)) {
-      // 선택된 일수에서 무료 보관 일수를 제외
       let chargeableDays = selectedDays - freeStorageDays;
-
-      // 무료 보관 기간 이내일 경우
-      if (chargeableDays <=0) {
+      if (chargeableDays <= 0) {
         if (valueElement) {
-          valueElement.textContent = "무료 보관"; // 무료 기간 이내 메시지 표시
+          valueElement.textContent = "무료 보관";
         }
-        return; // 비용 계산을 하지 않고 종료
+        return;
       }
 
-      // 비용 계산: (유료 보관 일수 * 단가 * CBM)
-      const calculatedValue = chargeableDays * storageUnitCost * selectedCBM;
-      const formattedValue = `${currencySymbol}${calculatedValue.toLocaleString()}`; // 형식화된 결과
+      let costPerUnit = defaultUnitCost; // 기본 단가 사용
+      if (storageCostData[selectedContainer] && storageCostData[selectedContainer] > 0) {
+        costPerUnit = storageCostData[selectedContainer]; // 컨테이너별 비용 적용
+      }
 
-      // id="storage-value" 업데이트
+      const calculatedValue = chargeableDays * costPerUnit * (storageCostData[selectedContainer] ? 1 : selectedCBM);
+      const formattedValue = `${currencySymbol}${calculatedValue.toLocaleString()}`;
+
       if (valueElement) {
         valueElement.textContent = formattedValue;
       }
     } else {
-      // 선택되지 않은 경우 기본값
       if (valueElement) {
         valueElement.textContent = "";
       }
     }
   });
 }
+
 
 
 //--------------------------------------------------------------------------------
