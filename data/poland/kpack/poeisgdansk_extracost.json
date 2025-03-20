@@ -1,0 +1,86 @@
+{
+    "links": [
+        {
+            "label": "문의 필요",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/K-PACK-Sp-z-o-o-1bc0b10191ce80f18162fd3dc442257c"
+        }
+    ],
+    "화폐단위": "€",
+  
+    "basic-cost-1": {
+        "name": "THE/CLC/INLAND TRUCKING",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        },
+        "Diplomat": {
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        }
+    },
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "",
+            "20DRY": 300,
+            "40HC": 500
+        },
+    "extra-cost-2": {
+        "name": "SHUTTLE",
+        "description": "",
+            "20DRY": 300,
+            "40HC": 500
+    },
+    "extra-cost-3": {
+        "name": "WAREHOUSE IN&OUT",
+        "description": "창고 보관하면 발생됨",
+            "20DRY": 500,
+            "40HC": 700
+    },
+    "extra-cost-4": {
+        "name": "PIANO H/C",
+        "description": "",
+            "20DRY": 150,
+            "40HC": 150
+    },
+    "extra-cost-5": {
+        "name": "WEEKEND DELIVERY",
+        "description": "",
+            "20DRY": 800,
+            "40HC": 800
+    },
+    "STAIR CHARGE": {
+        "description": "INCLUDED",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "MORE THAN 100KG",
+        "단위": "ITEM",
+        "단가": 100
+    },
+    "STORAGE CHARGE": {
+        "description": "",
+        "단위": "월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20dry": 300,
+          "40hc": 500,
+          "단가": 0
+        }
+    },
+    "additional-info-1": {
+        "name": "불포함 비용",
+        "description": "DUTY & TAX,INSPECTION, DEM&DET, SHUTTLE, \nSTORAGE, WAREHOUSE IN&OUT,STAIR OR LONG CARRY ETC"
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "광양발\nMAERSK : T/T 55 DAYS"
+    },
+    "DATA BASE": {
+        "description": "2025/3/20"
+    }
+}
