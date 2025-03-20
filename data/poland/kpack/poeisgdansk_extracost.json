@@ -64,7 +64,7 @@
     },
     "STORAGE CHARGE": {
         "description": "",
-        "단위": "월",
+        "단위": "개월",
         "무료 보관 기간": 0,
         "보관 비용": {
           "20DRY": 300,
@@ -81,6 +81,6 @@
         "description": "광양발\nMAERSK : T/T 55 DAYS"
     },
     "DATA BASE": {
-        "description": "2025/3/20"
+        "description": "2025/3/20 업데이트"
     }
 }
