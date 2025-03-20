@@ -1,0 +1,67 @@
+{
+    "links": [
+        {
+            "label": "문의 필요",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/ARRES-NET-SP-Z-O-O-1bc0b10191ce804285a4c999c1259668"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC/POC/DRC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        },
+        "Diplomat": {
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        }
+    },
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "",
+        "단가":12
+        },
+    "extra-cost-2": {
+        "name": "WEEKEND CHARGE",
+        "description": "",
+        "단가": 20
+    },
+    "extra-cost-3": {
+        "name": "SHUTTLE",
+        "description": "",
+        "단가": 12
+    },
+    "STAIR CHARGE": {
+        "description": "INCLUDED",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "INCLUDED",
+        "단위": "ITEM",
+        "단가": "€300~500"
+    },
+    "STORAGE CHARGE": {
+        "description": "",
+        "단위": "월",
+        "무료 보관 기간": 1,
+        "보관 비용 단가": 0
+    },
+    "additional-info-1": {
+        "name": "FULL SETTING 관련",
+        "description": "별도 요청 없이 NORMAL SETTING으로 요청해도, \nFULL SETTING으로 진행하고 비용을 청구해버림. "
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "광양발\nMAERSK : T/T 55 DAYS"
+    },
+    "DATA BASE": {
+        "description": "2025/3/20 현지 타리프 요청중"
+    }
+}
