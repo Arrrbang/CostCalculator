@@ -5,8 +5,13 @@
     "lng": 19.9450,
     "links": [
       {
-        "type": "arres",
+        "type": "Arres",
         "path": "data/poland/arres/krakow",
+        "color": "blue"
+      },
+      {
+        "type": "K-PACK",
+        "path": "data/poland/kpack/krakow",
         "color": "blue"
       }
     ]
@@ -17,8 +22,13 @@
     "lng": 16.9252,
     "links": [
       {
-        "type": "arres",
+        "type": "Arres",
         "path": "data/poland/arres/poznan",
+        "color": "blue"
+      },
+      {
+        "type": "K-PACK",
+        "path": "data/poland/kpack/poznan",
         "color": "blue"
       }
     ]
@@ -29,8 +39,13 @@
     "lng": 21.0122,
     "links": [
       {
-        "type": "arres",
+        "type": "Arres",
         "path": "data/poland/arres/warsaw",
+        "color": "blue"
+      },
+        {
+        "type": "K-PACK",
+        "path": "data/poland/kpack/warsaw",
         "color": "blue"
       }
     ]
@@ -41,8 +56,13 @@
     "lng": 16.3771,
     "links": [
       {
-        "type": "arres",
+        "type": "Arres",
         "path": "data/poland/arres/wronki",
+        "color": "blue"
+      },
+      {
+        "type": "K-PACK",
+        "path": "data/poland/kpack/wronki",
         "color": "blue"
       }
     ]
@@ -53,8 +73,49 @@
     "lng": 19.0238,
     "links": [
       {
-        "type": "arres",
+        "type": "Arres",
         "path": "data/poland/arres/katowice",
+        "color": "blue"
+      },
+      {
+        "type": "K-PACK",
+        "path": "data/poland/kpack/katowice",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Wroclaw, Poland",
+    "lat": 51.1079,
+    "lng": 17.0385,
+    "links": [
+      {
+        "type": "K-PACK",
+        "path": "data/poland/kpack/wroclaw",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Stalowa Wola, Poland",
+    "lat": 50.5820,
+    "lng": 22.0552,
+    "links": [
+      {
+        "type": "K-PACK",
+        "path": "data/poland/kpack/stalowawola",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Szczecin, Poland",
+    "lat": 53.4285,
+    "lng": 14.5528,
+    "links": [
+      {
+        "type": "K-PACK",
+        "path": "data/poland/kpack/szczecin",
         "color": "blue"
       }
     ]
