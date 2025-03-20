@@ -906,15 +906,17 @@ function updateHeavyItemDropdown() {
 function updatestorageperiodDropdown() {
   const storageData = basicExtraCost["STORAGE CHARGE"];
   if (!storageData || !storageData["보관 비용"]) {
+    console.error("STORAGE CHARGE 데이터가 없음", basicExtraCost);
     return;
   }
 
   const freeStorageDays = parseInt(storageData["무료 보관 기간"], 10) || 0;
   const storageCostData = storageData["보관 비용"];
-  const defaultUnitCost = parseFloat(storageCostData["단가"]) || 0;
+  const defaultUnitCost = parseFloat(storageCostData["단가"] ?? 0);
   const unit = storageData["단위"] || "일";
 
   if (isNaN(freeStorageDays) || isNaN(defaultUnitCost)) {
+    console.error("무료 보관 기간 또는 단가가 숫자가 아님");
     return;
   }
 
@@ -939,30 +941,37 @@ function updatestorageperiodDropdown() {
     const selectedContainer = containerDropdown.value; // 선택된 컨테이너 타입
     const valueElement = document.getElementById("storage-value");
 
-    if (!isNaN(selectedDays) && !isNaN(selectedCBM)) {
-      let chargeableDays = selectedDays - freeStorageDays;
-      chargeableDays = Math.max(chargeableDays, 0); // 0 이하가 되지 않도록 보정
+    console.log("선택된 컨테이너:", selectedContainer);
+    console.log("STORAGE CHARGE 데이터:", storageData);
 
-      let costPerUnit = storageCostData[selectedContainer] || defaultUnitCost;
+    if (!selectedContainer || !storageCostData) {
+      console.error("컨테이너 선택이 안 됨 또는 STORAGE CHARGE 데이터가 없음");
+      return;
+    }
 
-      let calculatedValue;
-      if (storageCostData[selectedContainer] && storageCostData[selectedContainer] > 0) {
-        // 컨테이너 기준 비용 적용 (CBM 사용 X)
-        calculatedValue = chargeableDays * costPerUnit;
-      } else {
-        // CBM 단가 기준 계산
-        calculatedValue = chargeableDays * costPerUnit * selectedCBM;
-      }
+    let chargeableDays = selectedDays - freeStorageDays;
+    chargeableDays = Math.max(chargeableDays, 0); // 0 이하가 되지 않도록 보정
 
-      const formattedValue = `${currencySymbol}${calculatedValue.toLocaleString()}`;
+    let costPerUnit = storageCostData[selectedContainer] ?? defaultUnitCost;
 
-      if (valueElement) {
-        valueElement.textContent = formattedValue;
-      }
+    console.log("costPerUnit 값:", costPerUnit);
+
+    if (costPerUnit === undefined || costPerUnit === null) {
+      console.error(`컨테이너 ${selectedContainer}에 대한 보관 비용이 없음.`);
+      return;
+    }
+
+    let calculatedValue;
+    if (storageCostData[selectedContainer] && storageCostData[selectedContainer] > 0) {
+      calculatedValue = chargeableDays * costPerUnit;
     } else {
-      if (valueElement) {
-        valueElement.textContent = "";
-      }
+      calculatedValue = chargeableDays * costPerUnit * selectedCBM;
+    }
+
+    const formattedValue = `${currencySymbol}${calculatedValue.toLocaleString()}`;
+
+    if (valueElement) {
+      valueElement.textContent = formattedValue;
     }
   });
 }
