@@ -935,25 +935,25 @@ function updatestorageperiodDropdown() {
 
   storageperiodDropdown.addEventListener("change", () => {
     const selectedDays = parseInt(storageperiodDropdown.value, 10);
-    const selectedCBM = parseInt(dropdown.value, 10);
+    const selectedCBM = parseInt(dropdown?.value || 0, 10);
     const selectedContainer = containerDropdown.value; // 선택된 컨테이너 타입
     const valueElement = document.getElementById("storage-value");
 
     if (!isNaN(selectedDays) && !isNaN(selectedCBM)) {
       let chargeableDays = selectedDays - freeStorageDays;
-      if (chargeableDays <= 0) {
-        if (valueElement) {
-          valueElement.textContent = "무료 보관";
-        }
-        return;
-      }
+      chargeableDays = Math.max(chargeableDays, 0); // 0 이하가 되지 않도록 보정
 
-      let costPerUnit = defaultUnitCost; // 기본 단가 사용
+      let costPerUnit = storageCostData[selectedContainer] || defaultUnitCost;
+
+      let calculatedValue;
       if (storageCostData[selectedContainer] && storageCostData[selectedContainer] > 0) {
-        costPerUnit = storageCostData[selectedContainer]; // 컨테이너별 비용 적용
+        // 컨테이너 기준 비용 적용 (CBM 사용 X)
+        calculatedValue = chargeableDays * costPerUnit;
+      } else {
+        // CBM 단가 기준 계산
+        calculatedValue = chargeableDays * costPerUnit * selectedCBM;
       }
 
-      const calculatedValue = chargeableDays * costPerUnit * (storageCostData[selectedContainer] ? 1 : selectedCBM);
       const formattedValue = `${currencySymbol}${calculatedValue.toLocaleString()}`;
 
       if (valueElement) {
@@ -966,8 +966,6 @@ function updatestorageperiodDropdown() {
     }
   });
 }
-
-
 
 //--------------------------------------------------------------------------------
 
