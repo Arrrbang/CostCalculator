@@ -6,7 +6,7 @@
     "links": [
       {
         "type": "ODIN",
-        "path": "data/brazil/odin/brasilia",
+        "path": "data/brazil/odin/allofpoesantos",
         "color": "blue"
       }
     ]
@@ -42,7 +42,7 @@
     "links": [
       {
         "type": "ODIN",
-        "path": "data/brazil/odin/riodejaneiro",
+        "path": "data/brazil/odin/allofpoesantos",
         "color": "blue"
       }
     ]
@@ -54,7 +54,7 @@
     "links": [
       {
         "type": "ODIN",
-        "path": "data/brazil/odin/santos",
+        "path": "data/brazil/odin/allofpoesantos",
         "color": "blue"
       }
     ]
@@ -66,7 +66,7 @@
     "links": [
       {
         "type": "ODIN",
-        "path": "data/brazil/odin/saopaulo",
+        "path": "data/brazil/odin/allofpoesantos",
         "color": "blue"
       }
     ]
@@ -78,9 +78,21 @@
     "links": [
       {
         "type": "ODIN",
-        "path": "data/brazil/odin/santacruz",
+        "path": "data/brazil/odin/allofpoesantos",
         "color": "blue"
       }
     ]
-  }
+  },
+{
+  "name": "Piracicaba, Brazil",
+  "lat": -22.7338,
+  "lng": -47.6492,
+  "links": [
+    {
+      "type": "ODIN",
+      "path": "data/brazil/odin/piracicaba",
+      "color": "blue"
+    }
+  ]
+}
 ]
