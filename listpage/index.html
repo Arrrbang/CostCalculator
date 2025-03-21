@@ -277,7 +277,7 @@ let countryTranslations = {};
 
 const loadCountryTranslations = async () => {
   try {
-    const response = await fetch('/CostCalculator/mappage/countryname.json');
+    const response = await fetch('/CostCalculator/listpage/countryname.json');
     if (!response.ok) throw new Error("국가 이름 데이터를 불러오지 못했습니다.");
     countryTranslations = await response.json();
   } catch (error) {
