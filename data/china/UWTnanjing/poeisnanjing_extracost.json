@@ -49,8 +49,8 @@
     }
   },
   "basic-cost-5": {
-    "name": "Inland import Permit 관봉비(倒车费)\n콘솔 비용은 40HC비용 $200/60CBM",
-    "description": "20FT: CNY800 / 40HC: CNY1600",
+    "name": "Inland import Permit 관봉비(倒车费)",
+    "description": "20FT: CNY800 / 40HC: CNY1600\n콘솔 비용은 40HC비용 $200/60CBM",
     "NonDiplomat": {
       "CONSOLE":{"단가":3.28},
       "20DRY": 100,
