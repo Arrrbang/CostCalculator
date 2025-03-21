@@ -464,6 +464,114 @@
       }
     ]
   },
+  {
+    "name": "Hefei, China",
+    "lat": 31.8206,
+    "lng": 117.2290,
+    "links": [
+      {
+        "type": "유니월드 남경",
+        "path": "data/china/UWTnanjing/hefei",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Yancheng, China",
+    "lat": 33.3945,
+    "lng": 120.1390,
+    "links": [
+      {
+        "type": "유니월드 남경",
+        "path": "data/china/UWTnanjing/yancheng",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Huangshan, China",
+    "lat": 29.7152,
+    "lng": 118.3386,
+    "links": [
+      {
+        "type": "유니월드 남경",
+        "path": "data/china/UWTnanjing/huangshan",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Taizhou, China",
+    "lat": 32.4558,
+    "lng": 119.9231,
+    "links": [
+      {
+        "type": "유니월드 남경",
+        "path": "data/china/UWTnanjing/taizhou",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Nanchang, China",
+    "lat": 28.6820,
+    "lng": 115.8579,
+    "links": [
+      {
+        "type": "유니월드 남경",
+        "path": "data/china/UWTnanjing/nanchang",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Changsha, China",
+    "lat": 28.2282,
+    "lng": 112.9388,
+    "links": [
+      {
+        "type": "유니월드 남경",
+        "path": "data/china/UWTnanjing/changsha",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Mianyang, China",
+    "lat": 31.4675,
+    "lng": 104.6796,
+    "links": [
+      {
+        "type": "유니월드 남경",
+        "path": "data/china/UWTnanjing/mianyang",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kunming, China",
+    "lat": 25.0389,
+    "lng": 102.7180,
+    "links": [
+      {
+        "type": "유니월드 남경",
+        "path": "data/china/UWTnanjing/kunming",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Yanji, China",
+    "lat": 42.9075,
+    "lng": 129.5077,
+    "links": [
+      {
+        "type": "유니월드 남경",
+        "path": "data/china/UWTnanjing/yanji",
+        "color": "blue"
+      }
+    ]
+  },
 {
     "name": "Kobe, Japan",
     "lat": 34.6901,
