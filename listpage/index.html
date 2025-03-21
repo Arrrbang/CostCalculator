@@ -273,28 +273,21 @@ const fetchLocations = async () => {
 
 
 // 국가 번역 매핑 객체
-const countryTranslations = {
-  usa: "미국 (USA)",
-  india: "인도 (INDIA)",
-  canada: "캐나다 (CANADA)",
-  china: "중국 (CHINA)",
-  germany: "독일 (GERMANY)",
-  france: "프랑스 (FRANCE)",
-  china: "중국 (CHINA)",
-  japan: "일본 (JAPAN)",
-  indonesia: "인도네시아 (INDONESIA)",
-  vietnam: "베트남 (VIET NAM)",
-  mexico: "멕시코 (MEXICO)",
-  uk: "영국 (U.K.)",
-  brazil: "브라질 (BRAZIL)",
-  poland: "폴란드 (POLAND)"
-  // 필요한 국가 추가
+let countryTranslations = {};
+
+const loadCountryTranslations = async () => {
+  try {
+    const response = await fetch('/CostCalculator/mappage/countryname.json');
+    if (!response.ok) throw new Error("국가 이름 데이터를 불러오지 못했습니다.");
+    countryTranslations = await response.json();
+  } catch (error) {
+    console.error("국가 번역 로딩 오류:", error);
+  }
 };
 
-// 국가 이름을 번역하거나 기본값 사용
 const translateCountry = (country) => {
-  const lowerCaseCountry = country.toLowerCase(); // 대소문자 무시
-  return countryTranslations[lowerCaseCountry] || country.toUpperCase(); // 번역이 없으면 영문 대문자
+  const lowerCaseCountry = country.toLowerCase();
+  return countryTranslations[lowerCaseCountry] || country.toUpperCase();
 };
 
 // Populate dropdown with search functionality
@@ -400,7 +393,12 @@ const initializePage = async () => {
 };
 
 // Start initialization
-initializePage();
+const startApp = async () => {
+  await loadCountryTranslations(); // 국가 번역 먼저 로딩
+  initializePage(); // 그다음 실제 페이지 초기화
+};
+
+startApp();
 
 </script>
 </body>
