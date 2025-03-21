@@ -38,8 +38,7 @@
             "CONSOLE": "확인 필요",
             "20DRY": 300,
             "40HC": 500
-    },
-    },
+        },
     "STAIR CHARGE": {
         "description": "INCLUDED",
         "CBM단가": 0
