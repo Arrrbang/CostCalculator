@@ -9,6 +9,11 @@
         "path": "data/china/UWTbeijing/beijing",
         "color": "blue"
       },
+     {
+        "type": "유니월드 남경",
+        "path": "data/china/UWTnanjing/beijing",
+        "color": "blue"
+      },
       {
         "type": "월드브릿지",
         "path": "data/china/worldbridge/beijing",
@@ -89,6 +94,18 @@
       }
     ]
   },
+{
+  "name": "Huian, China",
+  "lat": 25.0047,
+  "lng": 118.7989,
+  "links": [
+    {
+      "type": "유니월드 남경",
+      "path": "data/china/UWTnanjing/huian",
+      "color": "blue"
+    }
+  ]
+},
   {
     "name": "Nanjing, China",
     "lat": 32.0603,
@@ -117,12 +134,29 @@
         "color": "blue"
       },
       {
+        "type": "유니월드 남경",
+        "path": "data/china/UWTnanjing/shanghai",
+        "color": "blue"
+      },
+      {
         "type": "월드브릿지",
         "path": "data/china/worldbridge/shanghai",
         "color": "blue"
       }
     ]
   },
+{
+  "name": "Huangshan, China",
+  "lat": 29.7152,
+  "lng": 118.3386,
+  "links": [
+    {
+      "type": "유니월드 남경",
+      "path": "data/china/UWTnanjing/huangshan",
+      "color": "blue"
+    }
+  ]
+},
 {
   "name": "Shenzhen, China",
   "lat": 22.542883,
@@ -131,6 +165,11 @@
     {
       "type": "유니월드 심천",
       "path": "data/china/UWTshenzhen/shenzhen",
+      "color": "blue"
+    },
+    {
+      "type": "유니월드 남성",
+      "path": "data/china/UWTnanjing/shenzhen",
       "color": "blue"
     },
       {
@@ -175,6 +214,11 @@
       {
         "type": "월드브릿지",
         "path": "data/china/worldbridge/tianjin",
+        "color": "blue"
+      },
+      {
+        "type": "유니월드 남경",
+        "path": "data/china/UWTnanjing/tianjin",
         "color": "blue"
       }
     ]
@@ -377,6 +421,11 @@
         "type": "유니월드 상해",
         "path": "data/china/UWTshanghai/nantong",
         "color": "blue"
+      },
+      {
+        "type": "유니월드 남경",
+        "path": "data/china/UWTnanjing/nantong",
+        "color": "blue"
       }
     ]
   },
@@ -417,6 +466,11 @@
       {
         "type": "유니월드 상해",
         "path": "data/china/UWTshanghai/wuxi",
+        "color": "blue"
+      },
+      {
+        "type": "유니월드 남경",
+        "path": "data/china/UWTnanjing/wuxi",
         "color": "blue"
       }
     ]
@@ -465,6 +519,11 @@
       {
         "type": "유니월드 상해",
         "path": "data/china/UWTshanghai/ningbo",
+        "color": "blue"
+      },
+      {
+        "type": "유니월드 남경",
+        "path": "data/china/UWTnanjing/ningbo",
         "color": "blue"
       }
     ]
