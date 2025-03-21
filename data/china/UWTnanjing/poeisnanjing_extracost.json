@@ -1,4 +1,15 @@
 {
+     "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/NANJING-1990b10191ce8086ac87d793a9e026c3?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/UNI-WORLD-TRANS-MOVERS-NANJING-1bd0b10191ce800ca860f60bc421b551"
+        }
+    ],
+  
   "화폐단위": "$",
   
   "basic-cost-1": {
@@ -12,7 +23,7 @@
   },
   "basic-cost-2": {
     "name": "Inspection Fee 검역비",
-    "description": "",
+    "description": "20FT: CNY 2,790 / 40HC: CNY5,580 \n콘솔 비용은 40HC비용 $617/60CBM",
     "NonDiplomat": {
       "CONSOLE":{"단가":10.28},
       "20DRY": 393,
@@ -21,7 +32,7 @@
   },
   "basic-cost-3": {
     "name": "Devanning CHG 하역료(卸货费)",
-    "description": "20FT: CNY690 / 40HC: CNY ?",
+    "description": "20FT: CNY690 / 40HC: CNY1380 \n콘솔 비용은 40HC비용 $200/60CBM",
     "NonDiplomat": {
       "CONSOLE":{"단가":3.28},
       "20DRY": 100,
@@ -29,8 +40,8 @@
     }
   },
   "basic-cost-4": {
-    "name": "LSS",
-    "description": "20FT: CNY700 / 40HC: CNY1400",
+    "name": "LSS 저유황할증료",
+    "description": "20FT: CNY700 / 40HC: CNY1400\n콘솔 비용은 40HC비용 $150/60CBM",
     "NonDiplomat": {
       "CONSOLE":{"단가":2.5},
       "20DRY": 100,
@@ -38,17 +49,8 @@
     }
   },
   "basic-cost-5": {
-    "name": "셔틀 비용(倒车费)",
-    "description": "20FT: CNY800 / 40HC: CNY?",
-    "NonDiplomat": {
-      "CONSOLE":{"단가":3.28},
-      "20DRY": 100,
-      "40HC": 200
-    }
-  },
-  "basic-cost-6": {
-    "name": "Inland Import Permit 관봉비(关封费)",
-    "description": "20FT: CNY800 / 40HC: CNY?",
+    "name": "Inland import Permit 관봉비(倒车费)\n콘솔 비용은 40HC비용 $200/60CBM",
+    "description": "20FT: CNY800 / 40HC: CNY1600",
     "NonDiplomat": {
       "CONSOLE":{"단가":3.28},
       "20DRY": 100,
@@ -93,11 +95,15 @@
   },
   
   "additional-info-1": {
-    "name": "미확인 추가 비용",
-    "description": "SHUTTLE, LONG CARRY.. ETC."
+    "name": "비용 관련",
+    "description": "포함 비용 : FST, WEEKEND CHARGE, UPLIGHT PIANO, PARKING PERMIT \n불포함 비용(실비청구) : STAIR CHARGE, HEAVY ITEM, SHUTTLE, LONG CARRY"
+  },
+  "additional-info-2": {
+    "name": "사용 가능 선사",
+    "description": "\n대부분 남성해운 부산발로 진행\n\n부산발\nKMTC : T/T 8 DAYS *SHANGHAI T/S로 진행\nNAMSUNG : T/T 2 DAYS\n인천발\nNAMSUNG : T/T 10 DAYS *SHANGHAI T/S로 진행"
   },
   
   "DATA BASE": {
-    "description": "업데이트 : 2024.10 이트너스 비딩 조사"
+    "description": "업데이트 : 2025.1.1"
   }
 }
