@@ -401,6 +401,11 @@
         "type": "유니월드 상해",
         "path": "data/china/UWTshanghai/changzhou",
         "color": "blue"
+      },
+      {
+        "type": "유니월드 남경",
+        "path": "data/china/UWTnanjing/changzhou",
+        "color": "blue"
       }
     ]
   },
