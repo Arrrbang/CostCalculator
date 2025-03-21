@@ -214,5 +214,89 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Bangkok, Thailand",
+    "lat": 13.7563,
+    "lng": 100.5018,
+    "links": [
+      {
+        "type": "SHON MOVING",
+        "path": "data/thailand/shon/bangkok",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Pattaya, Thailand",
+    "lat": 12.9236,
+    "lng": 100.8825,
+    "links": [
+      {
+        "type": "SHON MOVING",
+        "path": "data/thailand/shon/pattaya",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rayong, Thailand",
+    "lat": 12.6814,
+    "lng": 101.2770,
+    "links": [
+      {
+        "type": "SHON MOVING",
+        "path": "data/thailand/shon/rayong",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Khon Kaen, Thailand",
+    "lat": 16.4419,
+    "lng": 102.8350,
+    "links": [
+      {
+        "type": "SHON MOVING",
+        "path": "data/thailand/shon/khonkaen",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Chiang Mai, Thailand",
+    "lat": 18.7883,
+    "lng": 98.9853,
+    "links": [
+      {
+        "type": "SHON MOVING",
+        "path": "data/thailand/shon/chiangmai",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Phuket, Thailand",
+    "lat": 7.8804,
+    "lng": 98.3923,
+    "links": [
+      {
+        "type": "SHON MOVING",
+        "path": "data/thailand/shon/phuket",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Koh Samui, Thailand",
+    "lat": 9.5120,
+    "lng": 100.0136,
+    "links": [
+      {
+        "type": "SHON MOVING",
+        "path": "data/thailand/shon/kohsamui",
+        "color": "blue"
+      }
+    ]
   }
 ]
