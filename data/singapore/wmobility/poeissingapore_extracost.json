@@ -1,0 +1,97 @@
+{
+    "links": [
+        {
+            "label": "BUSAN OFC",
+            "url": "https://www.notion.so/SINGAPORE-1990b10191ce8097836bc5caac272e76?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/WAC-LOGISTICS-S-PTE-LIMITED-W-MOBILITY-LIMITED-REPS-1bc0b10191ce801dab3fe6d79088ddf6"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THE/CLC/POC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        },
+        "Diplomat": {
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        }
+    },
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "",
+            "CONSOLE": {
+              "1-20": 200,
+              "21-28": 300,
+              "29-60": 600
+            }
+            "20DRY": {
+              "1-20": 200,
+              "21-28": 300
+            },
+            "40HC": 600
+        },
+    "extra-cost-2": {
+        "name": "SHUTTLE",
+        "description": "",
+            "CONSOLE": {
+              "1-3": "FREE",
+              "4-15": 100,
+              "16-30": 200,
+              "31-40": 300,
+              "41-60": 400
+            },
+            "20DRY": {
+              "1-3": "FREE",
+              "4-15": 100,
+              "16-30": 200,
+              "31-40": 300,
+              "41-60": 400
+            }
+            "40HC": {
+              "1-3": "FREE",
+              "4-15": 100,
+              "16-30": 200,
+              "31-40": 300,
+              "41-60": 400
+            }
+      },
+    "STAIR CHARGE": {
+        "description": "INCLUDED",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "MORE THAN 100KG",
+        "단위": "ITEM",
+        "단가": 100
+    },
+    "STORAGE CHARGE": {
+        "description": "Storage and IN/OUT charge : USD 30 per cbm per month",
+        "단위": "개월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "단가": 50
+        }
+    },
+    "additional-info-1": {
+        "name": "불포함 비용",
+        "description": "Heavy Item(Piano, Treadmill)/Stair carry/Long carry/Handyman"
+    },
+    "additional-info-2": {
+        "name": "For devanning and storage charge",
+        "description": "FCL의 경우 7일 무료보관. GROUPAGE의 경우 1달 무료 보관."
+    },
+    "additional-info-3": {
+        "name": "사용 가능 선사",
+        "description": "부산발\nKMTC : T/T 7 DAYS\nNAMSUNG : T/T 12 DAYS \n\n인천발\nKMTC : T/T 9 DAYS\nNAMSUNG : T/T 10DAYS\n인천발은 주에 1항차 진행 "
+    },
+    "DATA BASE": {
+        "description": "2025/3/20 업데이트"
+    }
+}
