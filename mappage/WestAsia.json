@@ -1,1 +1,26 @@
-
+[
+  {
+    "name": "Dubai, UAE",
+    "lat": 25.276987,
+    "lng": 55.296249,
+    "links": [
+      {
+        "type": "GSI",
+        "path": "data/uae/gsi/dubai",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Abu Dhabi, UAE",
+    "lat": 24.453884,
+    "lng": 54.3773438,
+    "links": [
+      {
+        "type": "GSI",
+        "path": "data/uae/gsi/abudhabi",
+        "color": "blue"
+      }
+    ]
+  }
+]
