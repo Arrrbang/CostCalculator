@@ -5,11 +5,6 @@
     "lng": 19.9450,
     "links": [
       {
-        "type": "Arres",
-        "path": "data/poland/arres/krakow",
-        "color": "blue"
-      },
-      {
         "type": "K-PACK",
         "path": "data/poland/kpack/krakow",
         "color": "blue"
@@ -56,11 +51,6 @@
     "lng": 16.3771,
     "links": [
       {
-        "type": "Arres",
-        "path": "data/poland/arres/wronki",
-        "color": "blue"
-      },
-      {
         "type": "K-PACK",
         "path": "data/poland/kpack/wronki",
         "color": "blue"
@@ -73,11 +63,6 @@
     "lng": 19.0238,
     "links": [
       {
-        "type": "Arres",
-        "path": "data/poland/arres/katowice",
-        "color": "blue"
-      },
-      {
         "type": "K-PACK",
         "path": "data/poland/kpack/katowice",
         "color": "blue"
@@ -89,6 +74,11 @@
     "lat": 51.1079,
     "lng": 17.0385,
     "links": [
+      {
+        "type": "Arres",
+        "path": "data/poland/arres/wroclaw",
+        "color": "blue"
+      },
       {
         "type": "K-PACK",
         "path": "data/poland/kpack/wroclaw",
