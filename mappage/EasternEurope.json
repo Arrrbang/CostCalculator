@@ -177,6 +177,11 @@
         "type": "K-PACK",
         "path": "data/slovakia/kpack/bratislava",
         "color": "blue"
+      },
+      {
+        "type": "FALCON",
+        "path": "data/slovakia/falcon/bratislava",
+        "color": "blue"
       }
     ]
   },
@@ -191,6 +196,18 @@
         "color": "blue"
       }
     ]
-  }
+  },
+{
+  "name": "Galanta, Slovakia",
+  "lat": 48.1903,
+  "lng": 17.7276,
+  "links": [
+    {
+      "type": "FALCON",
+      "path": "data/slovakia/falcon/galanta",
+      "color": "blue"
+    }
+  ]
+}
 ]
 
