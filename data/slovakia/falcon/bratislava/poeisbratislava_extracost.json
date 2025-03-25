@@ -1,0 +1,101 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/BRATISLAVA-1980b10191ce80d4bd60e0f9b4ab278d?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/FALCON-INTL-S-R-O-1c10b10191ce80ffb1b1fb1c321ca595"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC",
+        "description": "선사별로 다름",
+        "NonDiplomat": {
+            "20DRY": 265,
+            "40HC": 265
+    },
+      "basic-cost-2": {
+        "name": "POC",
+        "description": "선사별로 다름",
+        "NonDiplomat": {
+            "20DRY": 125,
+            "40HC": 125
+    },
+    "extra-cost-1": {
+        "name": "INSPECTION FEE",
+        "description": "검사 확률은 정말 낮음",
+            "20DRY": "350-500",
+            "40HC": "350-500"
+        },
+    "extra-cost-2": {
+        "name": "FULL SETTING",
+        "description": "",
+            "20DRY": {"단가": 8},
+            "40HC": {"단가": 8}
+    },
+    "extra-cost-3": {
+        "name": "WEEKEND CHARGE",
+        "description": "",
+            "20DRY": 400,
+            "40HC": 400
+    },
+    "extra-cost-4": {
+        "name": "SHUTTLE",
+        "description": "",
+            "20DRY": {"단가": 6},
+            "40HC": {"단가": 6}
+    },
+    "extra-cost-5": {
+        "name": "UPLIGHT",
+        "description": "",
+            "20DRY": 150,
+            "40HC": 150
+    },
+    "extra-cost-6": {
+        "name": "LONG CARRY",
+        "description": "",
+            "20DRY": {"단가": 6},
+            "40HC": {"단가": 6}
+    },
+    "extra-cost-7": {
+        "name": "PARKING PERMIT",
+        "description": "",
+            "20DRY": 200,
+            "40HC": 200
+    },
+    "STAIR CHARGE": {
+        "description": "",
+        "CBM단가": 6
+    },
+    "HEAVY ITEM": {
+        "description": "",
+        "단위": "ITEM",
+        "단가": 100
+    },
+    "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "개월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+    },
+    "additional-info-1": {
+        "name": "불포함 비용",
+        "description": "DUTY & TAX,INSPECTION, DEM&DET, SHUTTLE, \nSTORAGE, WAREHOUSE IN&OUT,STAIR OR LONG CARRY ETC"
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": ""
+    },
+    "DATA BASE": {
+        "description": "2025/3/20 업데이트"
+    }
+}
+
