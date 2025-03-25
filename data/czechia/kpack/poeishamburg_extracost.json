@@ -1,0 +1,86 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/ANTWERP-HAMBURG-SOUTHAMPTON-ROTTERDAM-LE-HAVRE-1970b10191ce802cb9e4f179c5c2dd0a?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/K-PACK-SP-Z-O-O-1c10b10191ce80c89648f6c9c19fbf6a"
+        }
+    ],
+    "화폐단위": "€",
+  
+    "basic-cost-1": {
+        "name": "THC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        },
+        "Diplomat": {
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        }
+    },
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "",
+            "20DRY": 300,
+            "40HC": 500
+        },
+    "extra-cost-2": {
+        "name": "SHUTTLE",
+        "description": "",
+            "20DRY": 300,
+            "40HC": 500
+    },
+    "extra-cost-3": {
+        "name": "WAREHOUSE IN&OUT",
+        "description": "창고 보관하면 발생됨",
+            "20DRY": 700,
+            "40HC": 1000
+    },
+    "extra-cost-4": {
+        "name": "PIANO H/C",
+        "description": "",
+            "20DRY": 150,
+            "40HC": 150
+    },
+    "extra-cost-5": {
+        "name": "WEEKEND DELIVERY",
+        "description": "",
+            "20DRY": 800,
+            "40HC": 800
+    },
+    "STAIR CHARGE": {
+        "description": "INCLUDED",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "MORE THAN 100KG",
+        "단위": "ITEM",
+        "단가": 100
+    },
+    "STORAGE CHARGE": {
+        "description": "",
+        "단위": "개월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 400,
+          "40HC": 700,
+          "단가": 0
+        }
+    },
+    "additional-info-1": {
+        "name": "불포함 비용",
+        "description": "DUTY & TAX,INSPECTION, DEM&DET, SHUTTLE, \nSTORAGE, WAREHOUSE IN&OUT,STAIR OR LONG CARRY ETC"
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "부산발\nHMM/YML/ONE : T/T 50 DAYS"
+    },
+    "DATA BASE": {
+        "description": "2025/3/20 업데이트"
+    }
+}
