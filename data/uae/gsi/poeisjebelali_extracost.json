@@ -1,0 +1,108 @@
+{
+    "links": [
+        {
+            "label": "BUSAN OFC",
+            "url": "https://www.notion.so/JEBEL-ALI-1990b10191ce807caca4dc810ffa02f0?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/GSI-LOGISTICS-L-L-C-1bc0b10191ce8090b04dc552f37b8297"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "D/O",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 155,
+            "40HC": 155
+        }
+    },
+    "basic-cost-2": {
+        "name": "THC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 570,
+            "40HC": 760
+        }
+    },
+    "basic-cost-3": {
+        "name": "CUSTOMS",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 175,
+            "40HC": 175
+        }
+    },
+    "basic-cost-4": {
+        "name": "DPC+GATEPASS",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 400,
+            "40HC": 510
+        }
+    },
+    "basic-cost-5": {
+        "name": "DPC+GATEPASS",
+        "description": "UNSTUFFING",
+        "NonDiplomat": {
+            "20DRY": 400,
+            "40HC": 510
+        }
+    },
+    "basic-cost-6": {
+        "name": "VAT(CDS * 5%)",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 0,
+            "40HC": 0
+        }
+    },
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "Basically, including curtain fixing & Home appliances set up",
+        "20DRY": "INCLUDED",
+        "40HC": "INCLUDED"
+    },
+    "extra-cost-2": {
+        "name": "CAR HANDLING",
+        "description": "",
+        "20DRY": 200,
+        "40HC": 200
+    },
+    "extra-cost-3": {
+        "name": "2ND DELIVERY",
+        "description": "DUBAI: $150, ABU DHABI: $250 \nSame day delivery only",
+        "20DRY": "",
+        "40HC": ""
+    },
+    "STAIR CHARGE": {
+        "description": "미확인",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "UPLIGHT PAINO : $120",
+        "단위": "ITEM",
+        "단가": 100
+    },
+    "STORAGE CHARGE": {
+        "description": "+warehouse handling",
+        "단위": "개월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+            "단가": 14
+        }
+    },
+    "additional-info-1": {
+        "name": "불포함 비용",
+        "description": "Excludes customs duty, port storage, demurrage, detention, \nNOC from traffic dept., Govt taxes, customs examination, x-ray scanning, \nwarehouse handling, heavy eqpt/safe, special parking permit, auxiliary services, \nshuttle service, delivery above 01st floor by stairs, split/multiple delivery, piano, \nextensive/flat packed furniture assembly, abnormal access, wall fixtures, \ninsurance"
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "부산발\nKMTC : T/T 20 DAYS\n\n인천발\nKMTC : T/T 32 DAYS *DIRECT 없음. NINGBO T/S"
+    },
+    "DATA BASE": {
+        "description": "2025/06 까지 적용. 이후 재확인 필요"
+    }
+}
