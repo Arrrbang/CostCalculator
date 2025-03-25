@@ -119,7 +119,12 @@
         "type": "AGS",
         "path": "data/czechia/ags/prague",
         "color": "blue"
-      }
+      },
+      {
+        "type": "K-PACK",
+        "path": "data/czechia/kpack/prague",
+        "color": "blue"
+      },
     ]
   },
   {
@@ -130,6 +135,35 @@
       {
         "type": "AGS",
         "path": "data/czechia/ags/ostrava",
+        "color": "blue"
+      },
+      {
+        "type": "K-PACK",
+        "path": "data/czechia/kpack/ostrava",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Brno, Czechia",
+    "lat": 49.1951,
+    "lng": 16.6068,
+    "links": [
+      {
+        "type": "K-PACK",
+        "path": "data/czechia/kpack/brno",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Dobris, Czechia",
+    "lat": 49.7811,
+    "lng": 14.1813,
+    "links": [
+      {
+        "type": "K-PACK",
+        "path": "data/czechia/kpack/dobris",
         "color": "blue"
       }
     ]
