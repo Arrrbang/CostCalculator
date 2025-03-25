@@ -167,6 +167,30 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Bratislava, Slovakia",
+    "lat": 48.1486,
+    "lng": 17.1077,
+    "links": [
+      {
+        "type": "K-PACK",
+        "path": "data/slovakia/kpack/bratislava",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Zilina, Slovakia",
+    "lat": 49.2231,
+    "lng": 18.7394,
+    "links": [
+      {
+        "type": "K-PACK",
+        "path": "data/slovakia/kpack/zilina",
+        "color": "blue"
+      }
+    ]
   }
 ]
 
