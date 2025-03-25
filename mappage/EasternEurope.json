@@ -109,6 +109,30 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Prague, Czechia",
+    "lat": 50.0755,
+    "lng": 14.4378,
+    "links": [
+      {
+        "type": "AGS",
+        "path": "data/czechia/ags/prague",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ostrava, Czechia",
+    "lat": 49.8209,
+    "lng": 18.2625,
+    "links": [
+      {
+        "type": "AGS",
+        "path": "data/czechia/ags/ostrava",
+        "color": "blue"
+      }
+    ]
   }
 ]
 
