@@ -26,31 +26,34 @@
     "extra-cost-1": {
         "name": "FULL SETTING",
         "description": "",
-        "단가":12
+        "20DRY": 230,
+        "40HC": 230
         },
     "extra-cost-2": {
-        "name": "WEEKEND CHARGE",
-        "description": "",
-        "단가": 20
-    },
-    "extra-cost-3": {
         "name": "SHUTTLE",
         "description": "",
-        "단가": 12
+        "20DRY": 290,
+        "40HC": 290
+    },
+    "extra-cost-3": {
+        "name": "PIANO HANDLING",
+        "description": "",
+        "20DRY": 150,
+        "40HC": 150
     },
     "STAIR CHARGE": {
-        "description": "INCLUDED",
+        "description": "미확인",
         "CBM단가": 0
     },
     "HEAVY ITEM": {
-        "description": "INCLUDED",
+        "description": "미확인",
         "단위": "ITEM",
-        "단가": "€300~500"
+        "단가": "0"
     },
     "STORAGE CHARGE": {
-        "description": "",
+        "description": "미확인",
         "단위": "월",
-        "무료 보관 기간": 1,
+        "무료 보관 기간": 0,
         "보관 비용 단가": 0
     },
     "additional-info-1": {
@@ -62,6 +65,6 @@
         "description": "광양발\nMAERSK : T/T 55 DAYS"
     },
     "DATA BASE": {
-        "description": "2025/3/20 현지 타리프 요청중"
+        "description": "2025/3/20"
     }
 }
