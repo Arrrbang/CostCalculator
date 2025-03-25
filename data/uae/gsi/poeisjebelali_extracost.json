@@ -96,7 +96,7 @@
     },
     "additional-info-1": {
         "name": "불포함 비용",
-        "description": "Excludes customs duty, port storage, demurrage, detention, \nNOC from traffic dept., Govt taxes, customs examination, x-ray scanning, \nwarehouse handling, heavy eqpt/safe, special parking permit, auxiliary services, \nshuttle service, delivery above 01st floor by stairs, split/multiple delivery, piano, \nextensive/flat packed furniture assembly, abnormal access, wall fixtures, \ninsurance"
+        "description": "Excludes customs duty, port storage, demurrage, detention, \nNOC from traffic dept., Govt taxes, customs examination, x-ray scanning, \nwarehouse handling, heavy eqpt/safe, special parking permit, \nauxiliary services, shuttle service, delivery above 01st floor by stairs, \nsplit/multiple delivery, piano, extensive/flat packed furniture assembly, \nabnormal access, wall fixtures, insurance"
     },
     "additional-info-2": {
         "name": "사용 가능 선사",
