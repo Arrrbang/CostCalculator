@@ -63,6 +63,51 @@ const ofcValueElement = document.getElementById('average-ofc-value');
 
 
 //---------------------------------------------------------------------------------
+async function updateDeliveryAddressAndPartnerOnPoeChange() {
+  const path = getPathFromURL();
+  const poeValue = poeDropdown.value;
+
+  if (!path || !poeValue) {
+    console.error('No path or POE value found');
+    return;
+  }
+
+  const basePath = "https://arrrbang.github.io/CostCalculator";
+  const jsonPath = `${basePath}/${path}/poeis${poeValue}_tariff.json`;  // POE 값에 맞는 JSON 파일 경로
+
+  try {
+    // JSON 데이터 가져오기
+    const response = await fetch(jsonPath);
+
+    if (!response.ok) {
+      throw new Error(`Failed to load JSON from ${jsonPath}`);
+    }
+
+    const data = await response.json();
+    console.log("Fetched POE JSON data:", data);  // 데이터 출력 (확인용)
+
+    // JSON에서 delivery와 partner 추출
+    const deliveryAddress = data.delivery;  // 예: "Santos, Brazil"
+    const partner = data.partner;  // 예: "Odin"
+
+    // 값을 span 요소에 삽입
+    const deliveryAddressElement = document.getElementById('delivery-address-result');
+    const partnerElement = document.getElementById('partner-result');
+
+    if (deliveryAddressElement && partnerElement) {
+      deliveryAddressElement.innerText = deliveryAddress;
+      partnerElement.innerText = partner;
+      console.log("✅ Delivery address and partner updated");
+    } else {
+      console.error("❌ Missing DOM elements: delivery-address-result or partner-result");
+    }
+  } catch (error) {
+    console.error("🚨 Error fetching or parsing POE JSON:", error);
+  }
+}
+
+// POE 드롭다운 값이 변경될 때마다 실행
+poeDropdown.addEventListener("change", updateDeliveryAddressAndPartnerOnPoeChange);
 
 // resetDropdown 함수 변경
 function resetDropdown(dropdownElement, placeholder = "-- CBM 선택 --") {
