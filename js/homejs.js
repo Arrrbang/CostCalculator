@@ -63,8 +63,14 @@ const ofcValueElement = document.getElementById('average-ofc-value');
 
 
 //---------------------------------------------------------------------------------
+function getPathFromURL() {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get('path'); // 'path' 파라미터의 값을 반환
+}
+
+// updateDeliveryAddressAndPartnerOnPoeChange 함수
 async function updateDeliveryAddressAndPartnerOnPoeChange() {
-  const path = getPathFromURL();
+  const path = getPathFromURL();  // path를 추출
   const poeValue = poeDropdown.value;
 
   if (!path || !poeValue) {
@@ -76,7 +82,6 @@ async function updateDeliveryAddressAndPartnerOnPoeChange() {
   const jsonPath = `${basePath}/${path}/poeis${poeValue}_tariff.json`;  // POE 값에 맞는 JSON 파일 경로
 
   try {
-    // JSON 데이터 가져오기
     const response = await fetch(jsonPath);
 
     if (!response.ok) {
@@ -84,13 +89,11 @@ async function updateDeliveryAddressAndPartnerOnPoeChange() {
     }
 
     const data = await response.json();
-    console.log("Fetched POE JSON data:", data);  // 데이터 출력 (확인용)
+    console.log("Fetched POE JSON data:", data);
 
-    // JSON에서 delivery와 partner 추출
-    const deliveryAddress = data.delivery;  // 예: "Santos, Brazil"
-    const partner = data.partner;  // 예: "Odin"
+    const deliveryAddress = data.delivery;
+    const partner = data.partner;
 
-    // 값을 span 요소에 삽입
     const deliveryAddressElement = document.getElementById('delivery-address-result');
     const partnerElement = document.getElementById('partner-result');
 
@@ -109,6 +112,7 @@ async function updateDeliveryAddressAndPartnerOnPoeChange() {
 // POE 드롭다운 값이 변경될 때마다 실행
 poeDropdown.addEventListener("change", updateDeliveryAddressAndPartnerOnPoeChange);
 
+//-----------------------------------------------------------------------------------------
 // resetDropdown 함수 변경
 function resetDropdown(dropdownElement, placeholder = "-- CBM 선택 --") {
   if (!dropdownElement) {
