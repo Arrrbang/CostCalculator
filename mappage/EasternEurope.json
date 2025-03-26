@@ -124,6 +124,11 @@
         "type": "K-PACK",
         "path": "data/czechia/kpack/prague",
         "color": "blue"
+      },
+      {
+        "type": "MOVE ONE FZE",
+        "path": "data/czechia/moveone/prague",
+        "color": "blue"
       }
     ]
   },
@@ -140,6 +145,11 @@
       {
         "type": "K-PACK",
         "path": "data/czechia/kpack/ostrava",
+        "color": "blue"
+      },
+      {
+        "type": "MOVE ONE FZE",
+        "path": "data/czechia/moveone/ostrava",
         "color": "blue"
       }
     ]
