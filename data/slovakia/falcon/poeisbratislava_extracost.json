@@ -17,6 +17,7 @@
         "NonDiplomat": {
             "20DRY": 265,
             "40HC": 265
+        }
     },
       "basic-cost-2": {
         "name": "POC",
@@ -24,6 +25,7 @@
         "NonDiplomat": {
             "20DRY": 125,
             "40HC": 125
+        }
     },
     "extra-cost-1": {
         "name": "INSPECTION FEE",
