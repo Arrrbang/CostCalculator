@@ -22,6 +22,30 @@
     ]
   },
   {
+  "name": "Dalian, China",
+  "lat": 38.9140,
+  "lng": 121.6147,
+  "links": [
+    {
+      "type": "World Bridge",
+      "path": "data/china/worldbridge/dalian",
+      "color": "blue"
+    }
+  ]
+},
+{
+  "name": "Changxingdao, China",
+  "lat": 39.2669,
+  "lng": 122.0013,
+  "links": [
+    {
+      "type": "World Bridge",
+      "path": "data/china/worldbridge/changxingdao",
+      "color": "blue"
+    }
+  ]
+},
+  {
     "name": "Chengdu, China",
     "lat": 30.5728,
     "lng": 104.0668,
@@ -268,7 +292,7 @@
         "color": "blue"
       },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/xian",
         "color": "blue"
       }
@@ -368,6 +392,11 @@
         "type": "대성물류",
         "path": "data/china/daesung/yantai",
         "color": "blue"
+      },
+      {
+        "type": "World Bridge",
+        "path": "data/china/daesung/yantai",
+        "color": "blue"
       }
     ]
   },
@@ -378,6 +407,11 @@
     "links": [
       {
         "type": "대성물류",
+        "path": "data/china/daesung/jinan",
+        "color": "blue"
+      },
+        {
+        "type": "World Bridge",
         "path": "data/china/daesung/jinan",
         "color": "blue"
       }
@@ -409,6 +443,11 @@
         "type": "유니월드 상해",
         "path": "data/china/UWTshanghai/jiaxing",
         "color": "blue"
+      },
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/jiaxing",
+        "color": "blue"
       }
     ]
   },
@@ -425,6 +464,11 @@
       {
         "type": "유니월드 남경",
         "path": "data/china/UWTnanjing/nantong",
+        "color": "blue"
+      },
+        {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/nantong",
         "color": "blue"
       }
     ]
@@ -455,6 +499,11 @@
         "type": "유니월드 남경",
         "path": "data/china/UWTnanjing/changzhou",
         "color": "blue"
+      },
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/changzhou",
+        "color": "blue"
       }
     ]
   },
@@ -471,6 +520,11 @@
       {
         "type": "유니월드 남경",
         "path": "data/china/UWTnanjing/wuxi",
+        "color": "blue"
+      },
+        {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/wuxi",
         "color": "blue"
       }
     ]
@@ -495,6 +549,11 @@
       {
         "type": "유니월드 상해",
         "path": "data/china/UWTshanghai/kunshan",
+        "color": "blue"
+      },
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/kunshan",
         "color": "blue"
       }
     ]
@@ -525,6 +584,11 @@
         "type": "유니월드 남경",
         "path": "data/china/UWTnanjing/ningbo",
         "color": "blue"
+      },
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/ningbo",
+        "color": "blue"
       }
     ]
   },
@@ -548,6 +612,11 @@
       {
         "type": "유니월드 남경",
         "path": "data/china/UWTnanjing/yancheng",
+        "color": "blue"
+      },
+        {
+        "type": "World bridge",
+        "path": "data/china/worldbridge/yancheng",
         "color": "blue"
       }
     ]
@@ -597,6 +666,11 @@
         "type": "유니월드 남경",
         "path": "data/china/UWTnanjing/changsha",
         "color": "blue"
+      },
+        {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/changsha",
+        "color": "blue"
       }
     ]
   },
@@ -632,6 +706,215 @@
       {
         "type": "유니월드 남경",
         "path": "data/china/UWTnanjing/yanji",
+        "color": "blue"
+      },
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/yanji",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Changchun, China",
+    "lat": 43.8171,
+    "lng": 125.3235,
+    "links": [
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/changchun",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Dandong, China",
+    "lat": 40.0000,
+    "lng": 124.3833,
+    "links": [
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/dandong",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hunchun, China",
+    "lat": 42.8667,
+    "lng": 130.3667,
+    "links": [
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/hunchun",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ha'erbin, China",
+    "lat": 45.8038,
+    "lng": 126.5349,
+    "links": [
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/ha'erbin",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Jilin, China",
+    "lat": 43.8500,
+    "lng": 126.5500,
+    "links": [
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/jilin",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Shenyang, China",
+    "lat": 41.8057,
+    "lng": 123.4315,
+    "links": [
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/shenyang",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Beijing, China",
+    "lat": 39.9042,
+    "lng": 116.4074,
+    "links": [
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/beijing",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Langfang, China",
+    "lat": 39.5090,
+    "lng": 116.6945,
+    "links": [
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/langfang",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Baoding, China",
+    "lat": 38.8739,
+    "lng": 115.4646,
+    "links": [
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/baoding",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rizhao, China",
+    "lat": 35.4164,
+    "lng": 119.5272,
+    "links": [
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/rizhao",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Taian, China",
+    "lat": 36.2002,
+    "lng": 117.0876,
+    "links": [
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/taian",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Huangdao, China",
+    "lat": 35.9608,
+    "lng": 120.1909,
+    "links": [
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/huangdao",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Jiaonan, China",
+    "lat": 35.8833,
+    "lng": 119.9667,
+    "links": [
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/jiaonan",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Jiaozhou, China",
+    "lat": 36.2831,
+    "lng": 120.0033,
+    "links": [
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/jiaozhou",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "XuZhou, China",
+    "lat": 34.2044,
+    "lng": 117.2841,
+    "links": [
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/xuzhou",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Zangjiagang, China",
+    "lat": 31.8656,
+    "lng": 120.5380,
+    "links": [
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/zangjiagang",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Zhuhai, China",
+    "lat": 22.2707,
+    "lng": 113.5767,
+    "links": [
+      {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/zhuhai",
         "color": "blue"
       }
     ]
