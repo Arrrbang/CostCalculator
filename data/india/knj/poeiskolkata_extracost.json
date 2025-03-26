@@ -1,4 +1,14 @@
 {
+  "links": [
+        {
+            "label": "문의 필요",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/KNJ-LOGISTICS-PVT-LTD-1b20b10191ce80538fefc3c3beda9955"
+        }
+    ],
   "화폐단위": "$",
   
   "basic-cost-1": {
