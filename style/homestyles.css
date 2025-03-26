@@ -51,7 +51,7 @@
     font-size: 1.2rem; /* 테이블 주요 텍스트 크기 */
   }
 
-  tr:nth-child(1) {
+  tr:nth-child(2) {
     border-bottom: 1px dashed #8BC34A;
   }
 
