@@ -60,6 +60,53 @@ const link2Element = document.getElementById("link2");
 const notionBackendURL = 'https://notion-backend-liard.vercel.app/notion';
 const ofcValueElement = document.getElementById('average-ofc-value');
 
+// URL에서 path 파라미터를 가져오는 함수
+function getPathFromURL() {
+  const currentUrl = window.location.href;
+  const urlParams = new URLSearchParams(new URL(currentUrl).search);
+  return urlParams.get('path');
+}
+
+// path 값을 기반으로 JSON 파일 로드하고 delivery address와 partner 추출
+async function updateDeliveryAddressAndPartner() {
+  const path = getPathFromURL();
+  
+  if (!path) {
+    console.error('No path parameter found in the URL');
+    return;
+  }
+
+  // path에서 해당 JSON 파일 경로 생성
+  const basePath = "https://arrrbang.github.io/CostCalculator";
+  const jsonPath = `${basePath}/${path}.json`;  // 해당 경로에서 JSON 파일 찾기
+
+  try {
+    // JSON 데이터 가져오기
+    const response = await fetch(jsonPath);
+    
+    if (!response.ok) {
+      throw new Error(`Failed to load JSON from ${jsonPath}`);
+    }
+
+    const data = await response.json();
+    
+    // 데이터에서 name과 type 추출
+    const deliveryAddress = data.name;  // 예: "Beijing, China"
+    const partner = data.links[0].type;  // 예: "유니월드 북경"
+    
+    // 값을 span 요소에 삽입
+    document.getElementById('delivery-address-result').innerText = deliveryAddress;
+    document.getElementById('partner-result').innerText = partner;
+
+    console.log("✅ Delivery address and partner updated");
+  } catch (error) {
+    console.error("🚨 Error fetching or parsing JSON:", error);
+  }
+}
+
+// DOMContentLoaded 시 호출
+document.addEventListener('DOMContentLoaded', updateDeliveryAddressAndPartner);
+
 // resetDropdown 함수 변경
 function resetDropdown(dropdownElement, placeholder = "-- CBM 선택 --") {
   if (!dropdownElement) {
