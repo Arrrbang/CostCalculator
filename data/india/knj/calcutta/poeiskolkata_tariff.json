@@ -1,14 +1,4 @@
 {
-  "links": [
-    {
-      "label": "업무 문의",
-      "url": "-"
-    },
-    {
-      "label": "NOTION",
-      "url": "https://www.notion.so/KNJ-LOGISTICS-PVT-LTD-1b20b10191ce80538fefc3c3beda9955"
-    }
-  ],
   "nonDiplomat": {
       "20DRY": {
           "1-5": 830,
@@ -62,5 +52,7 @@
   "containerType": [
     "20DRY",
     "40HC"
-  ]
+  ],
+  "delivery": "Calcutta, India",
+  "partner": "KNJ"
 }
