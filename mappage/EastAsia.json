@@ -15,7 +15,7 @@
         "color": "blue"
       },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/beijing",
         "color": "blue"
       }
@@ -56,7 +56,7 @@
         "color": "blue"
       },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/chengdu",
         "color": "blue"
       }
@@ -73,7 +73,7 @@
         "color": "blue"
       },
         {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/guangzhou",
         "color": "blue"
       }
@@ -95,7 +95,7 @@
         "color": "blue"
       },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/hangzhou",
         "color": "blue"
       }
@@ -112,7 +112,7 @@
         "color": "blue"
       },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/huizhou",
         "color": "blue"
       }
@@ -141,7 +141,7 @@
         "color": "blue"
       },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/nanjing",
         "color": "blue"
       }
@@ -163,7 +163,7 @@
         "color": "blue"
       },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/shanghai",
         "color": "blue"
       }
@@ -197,7 +197,7 @@
       "color": "blue"
     },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/shenzhen",
         "color": "blue"
       }
@@ -219,7 +219,7 @@
         "color": "blue"
       },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/suzhou",
         "color": "blue"
       }
@@ -236,7 +236,7 @@
         "color": "blue"
       },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/tianjin",
         "color": "blue"
       },
@@ -258,7 +258,7 @@
         "color": "blue"
       },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/weihai",
         "color": "blue"
       }
@@ -275,7 +275,7 @@
         "color": "blue"
       },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/wuhan",
         "color": "blue"
       }
@@ -309,7 +309,7 @@
         "color": "blue"
       },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/zhongshan",
         "color": "blue"
       }
@@ -326,7 +326,7 @@
         "color": "blue"
       },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/dongguan",
         "color": "blue"
       }
@@ -343,7 +343,7 @@
         "color": "blue"
       },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/xiamen",
         "color": "blue"
       }
@@ -360,7 +360,7 @@
         "color": "blue"
       },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/zhengzhou",
         "color": "blue"
       }
@@ -377,7 +377,7 @@
         "color": "blue"
       },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/qingdao",
         "color": "blue"
       }
@@ -428,7 +428,7 @@
         "color": "blue"
       },
       {
-        "type": "월드브릿지",
+        "type": "World Bridge",
         "path": "data/china/worldbridge/chongqing",
         "color": "blue"
       }
