@@ -61,6 +61,11 @@ const notionBackendURL = 'https://notion-backend-liard.vercel.app/notion';
 const ofcValueElement = document.getElementById('average-ofc-value');
 
 // URL에서 path 파라미터를 가져오는 함수
+function getPathFromURL() {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get('path'); // 'path' 파라미터의 값을 반환
+}
+
 async function updateDeliveryAddressAndPartner() {
   const path = getPathFromURL();
 
