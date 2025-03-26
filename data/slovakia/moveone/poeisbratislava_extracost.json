@@ -21,30 +21,36 @@
     },
     "extra-cost-1": {
         "name": "PIANO HANDLING",
-        "description": "계단 이동시 $55/FLOOR 추가",
-            "20DRY": 255,
-            "40HC": 255
+        "description": "",
+            "20DRY": 130,
+            "40HC": 130
         },
     "extra-cost-2": {
-        "name": "LONG CARRY",
-        "description": "MIN $70",
+        "name": "SHUTTLE",
+        "description": "",
             "20DRY": {"단가": 6.5},
             "40HC": {"단가": 6.5}
     },
     "extra-cost-3": {
+        "name": "LONG CARRY",
+        "description": "",
+            "20DRY": {"단가": 3},
+            "40HC": {"단가": 3}
+    },
+    "extra-cost-4": {
         "name": "PARKING PERMIT",
         "description": "",
-            "20DRY": 340,
-            "40HC": 340
+            "20DRY": 130,
+            "40HC": 130
     },
     "STAIR CHARGE": {
-        "description": "MIN $70",
-        "CBM단가": 6.5
+        "description": "",
+        "CBM단가": 3
     },
     "HEAVY ITEM": {
-        "description": "+$40/FLOOR 추가",
+        "description": "",
         "단위": "ITEM",
-        "단가": 155
+        "단가": 130
     },
     "STORAGE CHARGE": {
         "description": "미확인",
