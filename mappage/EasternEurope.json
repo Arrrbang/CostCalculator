@@ -192,6 +192,11 @@
         "type": "FALCON",
         "path": "data/slovakia/falcon/bratislava",
         "color": "blue"
+      },
+        {
+        "type": "Move One FZE",
+        "path": "data/slovakia/moveone/bratislava",
+        "color": "blue"
       }
     ]
   },
@@ -215,6 +220,11 @@
     {
       "type": "FALCON",
       "path": "data/slovakia/falcon/galanta",
+      "color": "blue"
+    },
+    {
+      "type": "Move One FZE",
+      "path": "data/slovakia/moveone/galanta",
       "color": "blue"
     }
   ]
