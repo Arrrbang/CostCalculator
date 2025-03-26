@@ -37,21 +37,13 @@
     },
     "basic-cost-4": {
         "name": "DPC+GATEPASS",
-        "description": "",
-        "NonDiplomat": {
-            "20DRY": 400,
-            "40HC": 510
-        }
-    },
-    "basic-cost-5": {
-        "name": "DPC+GATEPASS",
         "description": "UNSTUFFING",
         "NonDiplomat": {
             "20DRY": 400,
             "40HC": 510
         }
     },
-    "basic-cost-6": {
+    "basic-cost-5": {
         "name": "VAT(CDS * 5%)",
         "description": "",
         "NonDiplomat": {
