@@ -90,17 +90,27 @@ async function updateDeliveryAddressAndPartner() {
     const partner = data.links[0].type;  // 예: "유니월드 북경"
 
     // 값을 span 요소에 삽입
-    document.getElementById('delivery-address-result').innerText = deliveryAddress;
-    document.getElementById('partner-result').innerText = partner;
+    const deliveryAddressElement = document.getElementById('delivery-address-result');
+    const partnerElement = document.getElementById('partner-result');
 
-    console.log("✅ Delivery address and partner updated");
+    if (deliveryAddressElement && partnerElement) {
+      deliveryAddressElement.innerText = deliveryAddress;
+      partnerElement.innerText = partner;
+      console.log("✅ Delivery address and partner updated");
+    } else {
+      console.error("❌ Missing DOM elements: delivery-address-result or partner-result");
+    }
   } catch (error) {
     console.error("🚨 Error fetching or parsing JSON:", error);
   }
 }
 
 // DOMContentLoaded 시 호출
-document.addEventListener('DOMContentLoaded', updateDeliveryAddressAndPartner);
+document.addEventListener('DOMContentLoaded', async () => {
+  // path 값 추출 후 updateDeliveryAddressAndPartner 호출
+  await updateDeliveryAddressAndPartner(); // updateDeliveryAddressAndPartner 호출
+});
+
 
 //---------------------------------------------------------------------------------
 
