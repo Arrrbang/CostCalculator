@@ -1,0 +1,76 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/PRAHA-1980b10191ce80e69dd3cd5bfc74990a?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/MOVE-ONE-FZE-1c20b10191ce8034bb56fb1ccd32725a"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 450,
+            "40HC": 630
+        }
+    },
+    "extra-cost-1": {
+        "name": "SHUTTLE",
+        "description": "MIN $40",
+            "20DRY": {"단가": 7.5},
+            "40HC": {"단가": 7.5}
+        },
+    "extra-cost-2": {
+        "name": "LONG CARRY",
+        "description": "70M 이상 이동할 경우",
+            "20DRY": {"단가": 6.5},
+            "40HC": {"단가": 6.5}
+        },
+    "extra-cost-3": {
+        "name": "UPLIGHT PIANO",
+        "description": "",
+            "20DRY": 170,
+            "40HC": 170
+    },
+    "extra-cost-4": {
+        "name": "PARKING PERMIT",
+        "description": "",
+            "20DRY": 100,
+            "40HC": 100
+    },
+    "STAIR CHARGE": {
+        "description": "",
+        "CBM단가": 10
+    },
+    "HEAVY ITEM": {
+        "description": "MORE THAN 100KG",
+        "단위": "ITEM",
+        "단가": 150
+    },
+    "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "개월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+    },
+    "additional-info-1": {
+        "name": "불포함 비용",
+        "description": "POC, DRC, ISC, DUTY, FST"
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "부산발\nHMM/YML : T/T 60 DAYS *HAMBURG T/S"
+    },
+    "DATA BASE": {
+        "description": "2024/10 업데이트"
+    }
+}
