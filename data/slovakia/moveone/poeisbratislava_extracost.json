@@ -1,0 +1,70 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/BRATISLAVA-1980b10191ce80d4bd60e0f9b4ab278d?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/MOVE-ONE-FZE-1c20b10191ce80bfb91ff8f744f32cfc"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        }
+    },
+    "extra-cost-1": {
+        "name": "PIANO HANDLING",
+        "description": "계단 이동시 $55/FLOOR 추가",
+            "20DRY": 255,
+            "40HC": 255
+        },
+    "extra-cost-2": {
+        "name": "LONG CARRY",
+        "description": "MIN $70",
+            "20DRY": {"단가": 6.5},
+            "40HC": {"단가": 6.5}
+    },
+    "extra-cost-3": {
+        "name": "PARKING PERMIT",
+        "description": "",
+            "20DRY": 340,
+            "40HC": 340
+    },
+    "STAIR CHARGE": {
+        "description": "MIN $70",
+        "CBM단가": 6.5
+    },
+    "HEAVY ITEM": {
+        "description": "+$40/FLOOR 추가",
+        "단위": "ITEM",
+        "단가": 155
+    },
+    "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "개월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+    },
+    "additional-info-1": {
+        "name": "불포함 비용",
+        "description": "DUTY & TAX,INSPECTION, DEM&DET, POC, \nSTORAGE, WAREHOUSE IN&OUT ETC"
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "부산발\nHMM/ONE/YML : T/T 70 DAYS *HAMBURG T/S"
+    },
+    "DATA BASE": {
+        "description": "2024/10 업데이트"
+    }
+}
