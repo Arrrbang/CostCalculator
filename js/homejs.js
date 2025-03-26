@@ -60,61 +60,6 @@ const link2Element = document.getElementById("link2");
 const notionBackendURL = 'https://notion-backend-liard.vercel.app/notion';
 const ofcValueElement = document.getElementById('average-ofc-value');
 
-// URL에서 path 파라미터를 가져오는 함수
-function getPathFromURL() {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get('path'); // 'path' 파라미터의 값을 반환
-}
-
-async function updateDeliveryAddressAndPartner() {
-  const path = getPathFromURL();
-
-  if (!path) {
-    console.error('No path parameter found in the URL');
-    return;
-  }
-
-  // path에서 해당 JSON 파일 경로 생성
-  const basePath = "https://arrrbang.github.io/CostCalculator";
-  const jsonPath = `${basePath}/${path}.json`;  // 해당 경로에서 JSON 파일 찾기
-  console.log("Generated JSON Path:", jsonPath);  // 경로 출력 (확인용)
-
-  try {
-    // JSON 데이터 가져오기
-    const response = await fetch(jsonPath);
-
-    if (!response.ok) {
-      throw new Error(`Failed to load JSON from ${jsonPath}`);
-    }
-
-    const data = await response.json();
-    console.log("Fetched JSON data:", data);  // 데이터 출력 (확인용)
-
-    // 데이터에서 name과 type 추출
-    const deliveryAddress = data.name;  // 예: "Beijing, China"
-    const partner = data.links[0].type;  // 예: "유니월드 북경"
-
-    // 값을 span 요소에 삽입
-    const deliveryAddressElement = document.getElementById('delivery-address-result');
-    const partnerElement = document.getElementById('partner-result');
-
-    if (deliveryAddressElement && partnerElement) {
-      deliveryAddressElement.innerText = deliveryAddress;
-      partnerElement.innerText = partner;
-      console.log("✅ Delivery address and partner updated");
-    } else {
-      console.error("❌ Missing DOM elements: delivery-address-result or partner-result");
-    }
-  } catch (error) {
-    console.error("🚨 Error fetching or parsing JSON:", error);
-  }
-}
-
-// DOMContentLoaded 시 호출
-document.addEventListener('DOMContentLoaded', async () => {
-  // path 값 추출 후 updateDeliveryAddressAndPartner 호출
-  await updateDeliveryAddressAndPartner(); // updateDeliveryAddressAndPartner 호출
-});
 
 
 //---------------------------------------------------------------------------------
