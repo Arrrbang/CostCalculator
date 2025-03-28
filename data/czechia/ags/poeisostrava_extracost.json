@@ -82,6 +82,10 @@
         "name": "사용 가능 선사",
         "description": "부산발\nHMM/YML : T/T 60 DAYS"
     },
+    "additional-info-3": {
+        "name": "Ostrava Door 부킹으로 진행",
+        "description": "현지 업체 요청으로 Ostrava로 부킹을 진행. \n(이전에는 Hamburg/Praha로 부킹 진행함)\n자세한 내용은 노션 항목 참조."
+    },
     "DATA BASE": {
         "description": "2025/3/20 업데이트"
     }
