@@ -19,14 +19,6 @@
             "40HC": 425
         }
     },
-    "basic-cost-2": {
-        "name": "Inland Hauling",
-        "description": "Hamburg에서 Praha/Ostrava까지 파트너 운송요금",
-        "NonDiplomat": {
-            "20DRY": 400,
-            "40HC": 550
-        }
-    },
     "extra-cost-1": {
         "name": "WEEKEND CHARGE",
         "description": "",
