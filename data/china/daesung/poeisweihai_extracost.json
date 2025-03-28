@@ -1,0 +1,63 @@
+{
+    "links": [
+        {
+            "label": "문의 필요",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/DAESUNG-LOGISTICS-CO-LTD-1c40b10191ce80ea8899fdfff03dc8b7"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC/CLC/INLAND TRUCKING",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        },
+        "Diplomat": {
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        }
+    },
+    "extra-cost-1": {
+        "name": "대리통관비용",
+        "description": "",
+            "20DRY": 700,
+            "40HC": 700
+        },
+
+    "STAIR CHARGE": {
+        "description": "INCLUDED",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "MORE THAN 100KG",
+        "단위": "ITEM",
+        "단가": 100
+    },
+    "STORAGE CHARGE": {
+        "description": "",
+        "단위": "개월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 300,
+          "40HC": 500,
+          "단가": 0
+        }
+    },
+    "additional-info-1": {
+        "name": "불포함 비용",
+        "description": ""
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "광양발\nMAERSK : T/T 55 DAYS"
+    },
+    "DATA BASE": {
+        "description": "2025/3/20 업데이트"
+    }
+}
