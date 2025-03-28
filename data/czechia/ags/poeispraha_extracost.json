@@ -1,0 +1,88 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/PRAHA-1980b10191ce80e69dd3cd5bfc74990a?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/AGS-1c10b10191ce80879f87d8fd716287d0"
+        }
+    ],
+    "화폐단위": "€",
+  
+    "basic-cost-1": {
+        "name": "THC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 425,
+            "40HC": 425
+        }
+    },
+    "extra-cost-1": {
+        "name": "WEEKEND CHARGE",
+        "description": "",
+            "20DRY": {"단가": 60},
+            "40HC": {"단가": 60}
+        },
+    "extra-cost-2": {
+        "name": "SHUTTLE",
+        "description": "",
+            "20DRY": 176,
+            "40HC": 176
+    },
+    "extra-cost-3": {
+        "name": "LONG CARRY",
+        "description": "EUR 6 /PER CBM /20m",
+            "20DRY": {"단가": 6},
+            "40HC": {"단가": 6}
+        },
+    "extra-cost-4": {
+        "name": "UPLIGHT PIANO",
+        "description": "",
+            "20DRY": 150,
+            "40HC": 150
+    },
+    "extra-cost-5": {
+        "name": "PARKING PERMIT",
+        "description": "",
+            "20DRY": 150,
+            "40HC": 150
+    },
+    "extra-cost-6": {
+        "name": "LIFT CHARGE",
+        "description": "",
+            "20DRY": {"단가": 6},
+            "40HC": {"단가": 6}
+    },
+    "STAIR CHARGE": {
+        "description": "EUR 6 /PER CBM * FLOOR	",
+        "CBM단가": 6
+    },
+    "HEAVY ITEM": {
+        "description": "MORE THAN 100KG",
+        "단위": "CBM",
+        "단가": 50
+    },
+    "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "개월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+    },
+    "additional-info-1": {
+        "name": "도착지 비용 오차",
+        "description": "계산기 비용에서 €100 정도 차이가 발생될 수 있음. \n같은 도시 내에서도 거리에 차이가 발생되는 것 같음."
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "부산발\nHMM/YML : T/T 60 DAYS *HAMBURG T/S"
+    },
+    "DATA BASE": {
+        "description": "2025/3/20 업데이트"
+    }
+}
