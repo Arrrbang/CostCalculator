@@ -22,41 +22,41 @@
     "extra-cost-1": {
         "name": "WEEKEND CHARGE",
         "description": "",
-            "20DRY": {"단가": 60},
-            "40HC": {"단가": 60}
-        },
+        "20DRY": {"단가": 60},
+        "40HC": {"단가": 60}
+    },
     "extra-cost-2": {
         "name": "SHUTTLE",
         "description": "",
-            "20DRY": 176,
-            "40HC": 176
+        "20DRY": 176,
+        "40HC": 176
     },
     "extra-cost-3": {
         "name": "LONG CARRY",
         "description": "EUR 6 /PER CBM /20m",
-            "20DRY": {"단가": 6},
-            "40HC": {"단가": 6}
-        },
+        "20DRY": {"단가": 6},
+        "40HC": {"단가": 6}
+    },
     "extra-cost-4": {
         "name": "UPLIGHT PIANO",
         "description": "",
-            "20DRY": 150,
-            "40HC": 150
+        "20DRY": 150,
+        "40HC": 150
     },
     "extra-cost-5": {
         "name": "PARKING PERMIT",
         "description": "",
-            "20DRY": 150,
-            "40HC": 150
+        "20DRY": 150,
+        "40HC": 150
     },
     "extra-cost-6": {
         "name": "LIFT CHARGE",
         "description": "",
-            "20DRY": {"단가": 6},
-            "40HC": {"단가": 6}
+        "20DRY": {"단가": 6},
+        "40HC": {"단가": 6}
     },
     "STAIR CHARGE": {
-        "description": "EUR 6 /PER CBM * FLOOR	",
+        "description": "EUR 6 /PER CBM * FLOOR",
         "CBM단가": 6
     },
     "HEAVY ITEM": {
@@ -69,9 +69,9 @@
         "단위": "개월",
         "무료 보관 기간": 0,
         "보관 비용": {
-          "20DRY": 0,
-          "40HC": 0,
-          "단가": 0
+            "20DRY": 0,
+            "40HC": 0,
+            "단가": 0
         }
     },
     "additional-info-1": {
@@ -86,3 +86,4 @@
         "description": "2025/3/20 업데이트"
     }
 }
+
