@@ -28,7 +28,7 @@
         }
     },
     "basic-cost-3": {
-        "name": LSS,
+        "name": "LSS",
         "description": "",
         "NonDiplomat": {
             "20DRY": 140,
