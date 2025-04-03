@@ -612,7 +612,14 @@ function updateDiplomatSensitiveResult(categoryKey) {
       minimumFractionDigits: 2, 
       maximumFractionDigits: 2 
     })}`;
+  } else if (typeof result === "string" && !isNaN(parseFloat(result))) {
+    // "단가" 계산 후 문자열로 나온 값에도 화폐 단위 추가
+    result = `${currencySymbol}${Number(result).toLocaleString(undefined, { 
+      minimumFractionDigits: 2, 
+      maximumFractionDigits: 2 
+    })}`;
   }
+}
 
   // 6. 업데이트
   const labelElement = document.getElementById(`${categoryKey}-label`);
