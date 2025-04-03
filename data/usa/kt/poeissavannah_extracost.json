@@ -27,35 +27,35 @@
   },
   "basic-cost-2": {
     "name": "Container Drayage",
-    "description": "$400.00 + At Cost : Chassis, Fuel Surcharge, Congestion Charge, etc.",
+    "description": "$1,350 + At Cost : Chassis, Fuel Surcharge, Congestion Charge, etc.\nAt cost 금액이 거의 40%정도 추가됨.",
     "NonDiplomat": {
       "CONSOLE": {
-        "단가": 22.5
+        "단가": 27
       },
       "20DRY": 1350,
       "40HC": 1350
     },
     "Diplomat": {
       "CONSOLE": {
-        "단가": 22.5
+        "단가": 27
       },
       "20DRY": 1350,
       "40HC": 1350
     }
   },
   "basic-cost-3": {
-    "name": "Container Un-Loading Charge",
+    "name": "Container Un-Loading Charge(DEVANNING CHARGE)",
     "description": "",
     "NonDiplomat": {
       "CONSOLE": {
-        "단가": 3.33
+        "단가": 6
       },
       "20DRY": 200,
       "40HC": 300
     },
     "Diplomat": {
       "CONSOLE": {
-        "단가": 3.33
+        "단가": 6
       },
       "20DRY": 200,
       "40HC": 300
@@ -135,8 +135,8 @@
   },
     
   "additional-info-1": {
-    "name": "",
-    "description": ""
+    "name": "콘솔 관련",
+    "description": "40HC에 50cbm 적재 기준."
   },
 
   
