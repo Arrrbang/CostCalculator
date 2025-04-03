@@ -608,11 +608,12 @@ function updateDiplomatSensitiveResult(categoryKey) {
 
   // 5. 화폐 단위 추가
   if (typeof result === "number" && !isNaN(result)) {
-    result = ${currencySymbol}${Number(result).toLocaleString(undefined, { 
+    result = `${currencySymbol}${Number(result).toLocaleString(undefined, { 
       minimumFractionDigits: 2, 
       maximumFractionDigits: 2 
-    })};
+    })}`;
   }
+  
   // 6. 업데이트
   const labelElement = document.getElementById(`${categoryKey}-label`);
   const valueElement = document.getElementById(`${categoryKey}-value`);
