@@ -788,18 +788,6 @@
     ]
   },
   {
-    "name": "Beijing, China",
-    "lat": 39.9042,
-    "lng": 116.4074,
-    "links": [
-      {
-        "type": "World Bridge",
-        "path": "data/china/worldbridge/beijing",
-        "color": "blue"
-      }
-    ]
-  },
-  {
     "name": "Langfang, China",
     "lat": 39.5090,
     "lng": 116.6945,
