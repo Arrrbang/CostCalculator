@@ -4,6 +4,11 @@
     "lat": 39.9042,
     "lng": 116.4074,
     "links": [
+        {
+        "type": "World Bridge",
+        "path": "data/china/worldbridge/beijing",
+        "color": "blue"
+      },
       {
         "type": "유니월드 북경",
         "path": "data/china/UWTbeijing/beijing",
@@ -12,11 +17,6 @@
      {
         "type": "유니월드 남경",
         "path": "data/china/UWTnanjing/beijing",
-        "color": "blue"
-      },
-      {
-        "type": "World Bridge",
-        "path": "data/china/worldbridge/beijing",
         "color": "blue"
       }
     ]
