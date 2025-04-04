@@ -1,6 +1,6 @@
 [  
   {
-    "name": "Beijing, China",
+    "name": "Beijing(북경), China",
     "lat": 39.9042,
     "lng": 116.4074,
     "links": [
@@ -22,7 +22,7 @@
     ]
   },
   {
-  "name": "Dalian, China",
+  "name": "Dalian(대련), China",
   "lat": 38.9140,
   "lng": 121.6147,
   "links": [
@@ -34,7 +34,7 @@
   ]
 },
 {
-  "name": "Changxingdao, China",
+  "name": "Changxingdao(장흥도), China",
   "lat": 39.2669,
   "lng": 122.0013,
   "links": [
@@ -46,7 +46,7 @@
   ]
 },
   {
-    "name": "Chengdu, China",
+    "name": "Chengdu(성도), China",
     "lat": 30.5728,
     "lng": 104.0668,
     "links": [
@@ -63,7 +63,7 @@
     ]
   },
   {
-    "name": "Guangzhou, China",
+    "name": "Guangzhou(광주), China",
     "lat": 23.1291,
     "lng": 113.2644,
     "links": [
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "name": "Hangzhou, China",
+    "name": "Hangzhou(항항주), China",
     "lat": 30.2741,
     "lng": 120.1551,
     "links": [
@@ -102,7 +102,7 @@
     ]
   },
   {
-    "name": "Huizhou, China",
+    "name": "Huizhou(혜주), China",
     "lat": 23.1115,
     "lng": 114.4152,
     "links": [
@@ -131,7 +131,7 @@
   ]
 },
   {
-    "name": "Nanjing, China",
+    "name": "Nanjing(남경), China",
     "lat": 32.0603,
     "lng": 118.7969,
     "links": [
@@ -148,7 +148,7 @@
     ]
   },
   {
-    "name": "Shanghai, China",
+    "name": "Shanghai(상해), China",
     "lat": 31.2304,
     "lng": 121.4737,
     "links": [
@@ -182,7 +182,7 @@
   ]
 },
 {
-  "name": "Shenzhen, China",
+  "name": "Shenzhen(심천), China",
   "lat": 22.542883,
   "lng": 114.062996,
   "links": [
@@ -204,7 +204,7 @@
   ]
 },
   {
-    "name": "Suzhou, China",
+    "name": "Suzhou(소주), China",
     "lat": 31.2983,
     "lng": 120.5832,
     "links": [
@@ -226,7 +226,7 @@
     ]
   },
   {
-    "name": "Tianjin, China",
+    "name": "Tianjin(천진), China",
     "lat": 39.3434,
     "lng": 117.3616,
     "links": [
@@ -248,7 +248,7 @@
     ]
   },
   {
-    "name": "Weihai, China",
+    "name": "Weihai(위해), China",
     "lat": 37.5131,
     "lng": 122.1204,
     "links": [
@@ -265,7 +265,7 @@
     ]
   },
   {
-    "name": "Wuhan, China",
+    "name": "Wuhan(무한), China",
     "lat": 30.5928,
     "lng": 114.3055,
     "links": [
@@ -282,7 +282,7 @@
     ]
   },
   {
-    "name": "Xi'an, China",
+    "name": "Xi'an(시안), China",
     "lat": 34.3416,
     "lng": 108.9398,
     "links": [
@@ -299,7 +299,7 @@
     ]
   },
   {
-    "name": "Zhongshan, China",
+    "name": "Zhongshan(중산), China",
     "lat": 22.5176,
     "lng": 113.3926,
     "links": [
@@ -316,7 +316,7 @@
     ]
   },
   {
-    "name": "Dongguan, China",
+    "name": "Dongguan(동관), China",
     "lat": 23.0205,
     "lng": 113.7518,
     "links": [
@@ -333,7 +333,7 @@
     ]
   },
   {
-    "name": "Xiamen, China",
+    "name": "Xiamen(하문), China",
     "lat": 24.4798,
     "lng": 118.0894,
     "links": [
@@ -367,7 +367,7 @@
     ]
   },
   {
-    "name": "Qingdao, China",
+    "name": "Qingdao(청도), China",
     "lat": 36.0662,
     "lng": 120.3826,
     "links": [
@@ -384,7 +384,7 @@
     ]
   },
   {
-    "name": "Yantai, China",
+    "name": "Yantai(연태), China",
     "lat": 37.4765,
     "lng": 121.4408,
     "links": [
@@ -401,7 +401,7 @@
     ]
   },
   {
-    "name": "Jinan, China",
+    "name": "Jinan(제남), China",
     "lat": 36.6683,
     "lng": 116.9972,
     "links": [
@@ -418,7 +418,7 @@
     ]
   },
   {
-    "name": "Chongqing, China",
+    "name": "Chongqing(중경), China",
     "lat": 29.5630,
     "lng": 106.5516,
     "links": [
@@ -435,7 +435,7 @@
     ]
   },
   {
-    "name": "Jiaxing, China",
+    "name": "Jiaxing(가흥), China",
     "lat": 30.7522,
     "lng": 120.7500,
     "links": [
@@ -452,7 +452,7 @@
     ]
   },
   {
-    "name": "Nantong, China",
+    "name": "Nantong(남통), China",
     "lat": 32.0303,
     "lng": 120.8747,
     "links": [
