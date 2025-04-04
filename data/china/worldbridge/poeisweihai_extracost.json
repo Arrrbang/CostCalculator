@@ -20,17 +20,17 @@
         },
       "basic-cost-2": {
         "name": "ISC",
-        "description": "비용 확인 중",
+        "description": "CNY 1660/2900",
         "NonDiplomat": {
-            "20DRY": 232,
-            "40HC": "확인중"
+            "20DRY": 230,
+            "40HC": 400
         },
       "basic-cost-3": {
         "name": "STORAGE CHARGE",
-        "description": "비용 확인 중",
+        "description": "정확한 비용 확인 불가, 통상적인 금액",
         "NonDiplomat": {
             "20DRY": 28,
-            "40HC": "확인중"
+            "40HC": 50
         },
       "basic-cost-4": {
         "name": "LSS",
@@ -41,10 +41,10 @@
         },
       "basic-cost-5": {
         "name": "SHC",
-        "description": "비용 확인 중",
+        "description": "대략적인 금",
         "NonDiplomat": {
             "20DRY": 70,
-            "40HC": "확인중"
+            "40HC": 100
         },
     "extra-cost-1": {
         "name": "FULL SETTING",
