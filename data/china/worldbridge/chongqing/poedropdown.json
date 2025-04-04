@@ -2,5 +2,9 @@
   {
     "value": "weihai",
     "label": "Weihai, china"
+  },
+  {
+    "value": "nanjing",
+    "label": "Nanjing, China"
   }
 ]
