@@ -1,14 +1,4 @@
 {
-  "links": [
-    {
-      "label": "문의 필요",
-      "url": ""
-    },
-    {
-      "label": "NOTION",
-      "url": "https://www.notion.so/WORLD-BRIDGE-CO-LTD-1c20b10191ce800a93dff2f569dbe954"
-    }
-  ],
   "nonDiplomat": {
       "CONSOLE": {
           "1-3": 1600,
