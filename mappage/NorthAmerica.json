@@ -225,11 +225,6 @@
         "color": "blue"
       },
       {
-        "type": "HI-TEK",
-        "path": "data/usa/hitek/gainesville",
-        "color": "blue"
-      },
-      {
         "type": "PLS(YESG2M)",
         "path": "data/usa/pls/gainesville",
         "color": "blue"
@@ -244,11 +239,6 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/orlando",
-        "color": "blue"
-      },
-      {
-        "type": "HI-TEK",
-        "path": "data/usa/hitek/orlando",
         "color": "blue"
       },
       {
@@ -597,7 +587,7 @@
       },
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/little_rock",
+        "path": "data/usa/hitek/littlerock",
         "color": "blue"
       }
     ]
@@ -643,7 +633,7 @@
       },
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/lafayette",
+        "path": "data/usa/hitek/lafayetteIN",
         "color": "blue"
       }
     ]
@@ -850,6 +840,18 @@
     ]
   },
   {
+    "name": "Lafayette, OH",
+    "lat": 40.75889,
+    "lng": -83.95000,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/lafayetteOH",
+        "color": "blue"
+      }
+    ]
+  },
+  {
     "name": "Cincinnati, OH",
     "lat": 39.1031,
     "lng": -84.5120,
@@ -924,7 +926,7 @@
       },
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/columbus",
+        "path": "data/usa/hitek/columbusOH",
         "color": "blue"
       }
     ]
@@ -1086,6 +1088,11 @@
         "type": "SOS",
         "path": "data/usa/sos/lincoln",
         "color": "blue"
+      },
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/allnearea",
+        "color": "blue"
       }
     ]
   },
@@ -1097,6 +1104,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/omaha",
+        "color": "blue"
+      },
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/allnearea",
         "color": "blue"
       }
     ]
@@ -4298,11 +4310,6 @@
     "lng": -118.24361,
     "links": [
       {
-        "type": "HI-TEK",
-        "path": "data/usa/hitek/los_angeles",
-        "color": "blue"
-      },
-            {
         "type": "PLS(YESG2M)",
         "path": "data/usa/pls/los_angeles",
         "color": "blue"
@@ -4314,11 +4321,6 @@
     "lat": 33.774174,
     "lng": -117.937981,
     "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/usa/hitek/los_angeles",
-        "color": "blue"
-      },
       {
         "type": "PLS(YESG2M)",
         "path": "data/usa/pls/los_angeles",
@@ -4332,11 +4334,6 @@
     "lng": -117.92534,
     "links": [
       {
-        "type": "HI-TEK",
-        "path": "data/usa/hitek/los_angeles",
-        "color": "blue"
-      },
-      {
         "type": "PLS(YESG2M)",
         "path": "data/usa/pls/los_angeles",
         "color": "blue"
@@ -4345,14 +4342,9 @@
   },
   {
     "name": "Anaheim, CA",
-    "lat": 33.83611,
-    "lng": -117.88972,
+    "lat": 33.835293,
+    "lng": -117.914505,
     "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/usa/hitek/los_angeles",
-        "color": "blue"
-      },
       {
         "type": "PLS(YESG2M)",
         "path": "data/usa/pls/los_angeles",
@@ -4366,11 +4358,6 @@
     "lng": -117.823059,
     "links": [
       {
-        "type": "HI-TEK",
-        "path": "data/usa/hitek/irvine",
-        "color": "blue"
-      },
-      {
         "type": "PLS(YESG2M)",
         "path": "data/usa/pls/irvine",
         "color": "blue"
@@ -4382,11 +4369,6 @@
     "lat": 34.024212,
         "lng": -118.496475,
     "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/usa/hitek/irvine",
-        "color": "blue"
-      },
       {
         "type": "PLS(YESG2M)",
         "path": "data/usa/pls/irvine",
@@ -4400,44 +4382,17 @@
     "lng": -118.400352,
     "links": [
       {
-        "type": "HI-TEK",
-        "path": "data/usa/hitek/irvine",
-        "color": "blue"
-      },
-      {
         "type": "PLS(YESG2M)",
         "path": "data/usa/pls/irvine",
         "color": "blue"
       }
     ]
   },
-{
-  "name": "Anaheim, CA",
-  "lat": 33.835293,
-  "lng": -117.914505,
-  "links": [
-    {
-      "type": "HI-TEK",
-      "path": "data/usa/hitek/anaheim",
-      "color": "blue"
-    },
-    {
-      "type": "PLS(YESG2M)",
-      "path": "data/usa/pls/anaheim",
-      "color": "blue"
-    }
-  ]
-},
   {
     "name": "Ontario, CA",
     "lat": 34.063344,
     "lng": -117.650888,
     "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/usa/hitek/ontario",
-        "color": "blue"
-      },
       {
         "type": "PLS(YESG2M)",
         "path": "data/usa/pls/ontario",
@@ -4450,11 +4405,6 @@
     "lat": 33.953350,
     "lng": -117.396156,
     "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/usa/hitek/ontario",
-        "color": "blue"
-      },
         {
         "type": "PLS(YESG2M)",
         "path": "data/usa/pls/ontario",
@@ -4701,6 +4651,18 @@
     ]
   },
   {
+    "name": "La pine, OR",
+    "lat": 43.67917,
+    "lng": -121.49583,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/la_pine",
+        "color": "blue"
+      }
+    ]
+  },
+  {
     "name": "Seattle, WA",
     "lat": 47.6062,
     "lng": -122.3321,
@@ -4726,6 +4688,11 @@
         "type": "PLS(YESG2M)",
         "path": "data/usa/pls/yakima",
         "color": "blue"
+      },
+      {
+        "type": "HI_TEK",
+        "path": "data/usa/hitek/yakima",
+        "color": "blue"
       }
     ]
   },
@@ -4738,77 +4705,10 @@
         "type": "PLS(YESG2M)",
         "path": "data/usa/pls/spokane",
         "color": "blue"
-      }
-    ]
-  },
-  {
-    "name": "Boise, ID",
-    "lat": 43.6150,
-    "lng": -116.2023,
-    "links": [
+      },
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/boise",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "name": "Cheyenne, WY",
-    "lat": 41.1400,
-        "lng": -104.8202,
-    "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/usa/hitek/cheyenne",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "name": "Helena, MT",
-    "lat": 46.5884,
-    "lng": -112.0245,
-    "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/usa/hitek/helena",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "name": "Bismarck, ND",
-    "lat": 46.8083,
-    "lng": -100.7837,
-    "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/usa/hitek/bismarck",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "name": "Pierre, SD",
-    "lat": 44.3683,
-    "lng": -100.3500,
-    "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/usa/hitek/pierre",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "name": "Lincoln, NE",
-    "lat": 40.8136,
-    "lng": -96.7026,
-    "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/usa/hitek/lincoln",
+        "path": "data/usa/hitek/spokane",
         "color": "blue"
       }
     ]
@@ -5048,6 +4948,11 @@
         "type": "KT",
         "path": "data/usa/kt/jackson",
         "color": "blue"
+      },
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/jackson",
+        "color": "blue"
       }
     ]
   },
@@ -5143,7 +5048,6 @@
       }
     ]
   },
-
   {
     "name": "Mississauga, Canada",
     "lat": 43.595310,
