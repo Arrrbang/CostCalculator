@@ -262,7 +262,8 @@ async function fetchData() {
     const dataBaseDescription = extraCostData["DATA BASE"]?.description || ""; // 기본값 설정
     const dataDescriptionElement = document.getElementById("data-description");
     if (dataDescriptionElement) {
-      dataDescriptionElement.textContent = dataBaseDescription;  // description을 업데이트
+      // \n을 <br>로 변경하여 HTML로 삽입
+      dataDescriptionElement.innerHTML = dataBaseDescription.replace(/\n/g, "<br>");
     }
 
     //additional info 가져오기
