@@ -4359,12 +4359,17 @@
   },
   {
     "name": "Irvine, CA",
-    "lat": 33.669445,
-    "lng": -117.823059,
+    "lat": 33.6856969,
+    "lng": -117.8259819,
     "links": [
       {
         "type": "PLS(YESG2M)",
         "path": "data/usa/pls/irvine",
+        "color": "blue"
+      },
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/irvine",
         "color": "blue"
       }
     ]
