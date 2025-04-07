@@ -4774,6 +4774,17 @@
       }
     ]
   },
+    "name": "El Paso, TX",
+    "lat": 31.75917,
+    "lng": -106.48861,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/el_paso",
+        "color": "blue"
+      }
+    ]
+  },
   {
     "name": "Dallas, TX",
     "lat": 32.779167,
@@ -4781,7 +4792,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/alltxlocation",
+        "path": "data/usa/hitek/dallas",
         "color": "blue"
       },
       {
@@ -4803,7 +4814,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/alltxlocation",
+        "path": "data/usa/hitek/austin",
         "color": "blue"
       },
       {
@@ -4825,7 +4836,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/alltxlocation",
+        "path": "data/usa/hitek/houston",
         "color": "blue"
       },
       {
@@ -4847,7 +4858,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/alltxlocation",
+        "path": "data/usa/hitek/college_station",
         "color": "blue"
       },
       {
@@ -4869,7 +4880,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/alltxlocation",
+        "path": "data/usa/hitek/san_antonio",
         "color": "blue"
       },
       {
@@ -4886,7 +4897,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/alltxlocation",
+        "path": "data/usa/hitek/corpus_christi",
         "color": "blue"
       },
       {
@@ -4903,7 +4914,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/alltxlocation",
+        "path": "data/usa/hitek/mission",
         "color": "blue"
       }
     ]
