@@ -246,9 +246,14 @@
         "path": "data/usa/kt/orlando",
         "color": "blue"
       },
-        {
+      {
         "type": "PLS(YESG2M)",
         "path": "data/usa/pls/orlando",
+        "color": "blue"
+      },
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/orlando",
         "color": "blue"
       }
     ]
