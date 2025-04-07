@@ -1,0 +1,218 @@
+[
+{
+  "name": "San Diego, CA",
+  "lat": 32.7157,
+  "lng": -117.1611,
+  "links": [
+    {
+      "type": "HI-TEK",
+      "path": "data/usa/hitek/san_diego",
+      "color": "blue"
+    }
+  ]
+},
+  {
+    "name": "Chula Vista, CA",
+    "lat": 32.6401,
+    "lng": -117.0841,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/chula_vista",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "El Centro, CA",
+    "lat": 32.7920,
+    "lng": -115.5634,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/el_centro",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bakersfield, CA",
+    "lat": 35.3733,
+    "lng": -119.0187,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/bakersfield",
+        "color": "blue"
+      }
+    ]
+  },
+    {
+    "name": "Santa Barbara, CA",
+    "lat": 34.4208,
+    "lng": -119.6982,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/santa_barbara",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Fresno, CA",
+    "lat": 36.7378,
+    "lng": -119.7871,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/fresno",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Albuquerque, NM",
+    "lat": 35.0844,
+    "lng": -106.6504,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/albuquerque",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "El Paso, TX",
+    "lat": 31.75917,
+    "lng": -106.48861,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/el_paso",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Dallas, TX",
+    "lat": 32.776236,
+    "lng": -96.796838,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/dallas",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Houston, TX",
+    "lat": 29.7604,
+    "lng": -95.3698,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/houston",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Austin, TX",
+    "lat": 30.266666,
+    "lng": -97.733330,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/austin",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "College Station, TX",
+    "lat": 30.601389,
+    "lng": -96.314445,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/college_station",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "San Antonio, TX",
+    "lat": 29.4241,
+    "lng": -98.4936,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/san_antonio",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Corpus Christi, TX",
+    "lat": 27.8006,
+    "lng": -97.3964,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/corpus_christi",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Mission, TX",
+    "lat": 26.2159,
+    "lng": -98.3253,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/mission",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Troy, MI",
+    "lat": 42.6064,
+    "lng": -83.1496,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/troy",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Detroit, MI",
+    "lat": 42.3314,
+    "lng": -83.0458,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/detroit",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ann Arbor, MI",
+    "lat": 42.2808,
+    "lng": -83.7430,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/ann_arbor",
+        "color": "blue"
+      }
+    ]
+  }
+]
