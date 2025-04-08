@@ -640,7 +640,7 @@ function calculateTotalCost() {
     const costValueText = costValueElement.textContent || "";
   
     // 화폐 단위 및 쉼표 제거 후 정리
-    const cleanedText = costValueText.replace(/[\¥$€₩,]/g, "").trim();
+    const cleanedText = costValueText.replace(/[\¥$€₩,]|C\$/g, "").trim();
   
     // 숫자만 포함된 경우만 처리 (문자 포함 시 제외, "~" 포함 시 제외)
     if (!/^\d+(\.\d+)?$/.test(cleanedText) || costValueText.includes("~")) {
@@ -659,7 +659,7 @@ function calculateTotalCost() {
     const basicDeliveryValueText = basicDeliveryValueElement.textContent || "";
 
     // 화폐 단위 및 쉼표 제거 후 정리
-    const cleanedDeliveryText = basicDeliveryValueText.replace(/[\¥$€₩,]/g, "").trim();
+    const cleanedDeliveryText = basicDeliveryValueText.replace(/[\¥$€₩,]|C\$/g, "").trim();
 
     // 유효한 숫자만 처리 (문자 포함 시 제외, "~" 포함 시 제외)
     if (/^[0-9.-]+$/.test(cleanedDeliveryText) && !basicDeliveryValueText.includes("~")) {
@@ -724,7 +724,7 @@ async function updateKrwValueWithAPI() {
 
     // total-value에서 금액 추출
     const totalValueText = totalValueElement.textContent || "";
-    const foreignValue = parseFloat(totalValueText.replace(/[\¥$€₩£]/g, "").replace(/[^0-9.-]+/g, ""));
+    const foreignValue = parseFloat(totalValueText.replace(/[\¥$€₩,]|C\$/g, "").replace(/[^0-9.-]+/g, ""));
 
     if (isNaN(foreignValue)) {
         krwValueElement.textContent = "금액을 계산할 수 없습니다.";
@@ -760,7 +760,7 @@ async function updateKrwValueWithAPI() {
             rate = 1;
         } else if (currencySymbol[0] === '£') { // GBP
             rate = data.rates["GBP"];
-        } else if (currencySymbol[0] === 'CAD') { // CAD
+        } else if (currencySymbol[0] === 'C$') { // CAD
             rate = data.rates["CAD"];
         } else if (currencySymbol[0] === '¥') { // JPY
             rate = data.rates["JPY"];
