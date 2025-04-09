@@ -516,6 +516,18 @@
     ]
   },
   {
+    "name": "Columbus, OH",
+    "lat": 39.9612,
+    "lng": -82.9988,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/columbusOH",
+        "color": "blue"
+      }
+    ]
+  },
+  {
     "name": "Troy, MI",
     "lat": 42.6064,
     "lng": -83.1496,
@@ -550,5 +562,113 @@
         "color": "blue"
       }
     ]
-  }
+  },
+  {
+    "name": "Des Moines, IA",
+    "lat": 41.5868,
+    "lng": -93.6250,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/des_moines",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Iowa City, IA",
+    "lat": 41.6611,
+    "lng": -91.5302,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/iowa_city",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Milwaukee, WI",
+    "lat": 43.0389,
+    "lng": -87.9065,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/milwaukee",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Madison, WI",
+    "lat": 43.0731,
+    "lng": -89.4012,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/madison",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "St. Paul, MN",
+    "lat": 44.9537,
+    "lng": -93.0900,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/st_paul",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Minneapolis, MN",
+    "lat": 44.9778,
+    "lng": -93.2650,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/minneapolis",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Atlanta, GA",
+    "lat": 33.749,
+    "lng": -84.388,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/atlanta",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Montgomery, AL",
+    "lat": 32.3792,
+    "lng": -86.3077,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/montgomery",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Auburn, AL",
+    "lat": 32.59778,
+    "lng": -85.48083,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/auburn",
+        "color": "blue"
+      }
+    ]
+  },
 ]
