@@ -72,6 +72,174 @@
     ]
   },
   {
+    "name": "San Jose, CA",
+    "lat": 37.3382,
+    "lng": -121.8863,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/san_jose",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "San Francisco, CA",
+    "lat": 37.7749,
+    "lng": -122.4194,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/san_francisco",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Sacramento, CA",
+    "lat": 38.5816,
+    "lng": -121.4944,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/sacramento",
+        "color": "blue"
+      }
+    ]
+  },
+{
+  "name": "Las Vegas, NV",
+  "lat": 36.1699,
+  "lng": -115.1398,
+  "links": [
+    {
+      "type": "HI-TEK",
+      "path": "data/usa/hitek/las_vegas",
+      "color": "blue"
+    }
+  ]
+},
+{
+  "name": "Reno, NV",
+  "lat": 39.5296,
+  "lng": -119.8138,
+  "links": [
+    {
+      "type": "HI-TEK",
+      "path": "data/usa/hitek/reno",
+      "color": "blue"
+    }
+  ]
+},
+  {
+    "name": "Phoenix, AZ",
+    "lat": 33.4484,
+    "lng": -112.0740,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/phoenix",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tucson, AZ",
+    "lat": 32.2226,
+    "lng": -110.9747,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/tucson",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Portland, OR",
+    "lat": 45.5152,
+    "lng": -122.6784,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/portland",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "La pine, OR",
+    "lat": 43.67917,
+    "lng": -121.49583,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/la_pine",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Seattle, WA",
+    "lat": 47.6062,
+    "lng": -122.3321,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/seattle",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Omaha, NE",
+      "lat": 41.2565,
+      "lng": -95.9345,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/omaha",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lincoln, NE",
+    "lat": 40.8136,
+    "lng": -96.7075,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/lincoln",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Salt Lake City, UT",
+    "lat": 40.7608,
+    "lng": -111.8910,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/salt_lake_city",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Denver, CO",
+    "lat": 39.7392,
+    "lng": -104.9903,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/denver",
+        "color": "blue"
+      }
+    ]
+  },
+  {
     "name": "Albuquerque, NM",
     "lat": 35.0844,
     "lng": -106.6504,
@@ -175,6 +343,174 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/mission",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Oklahoma City, OK",
+    "lat": 35.4676,
+    "lng": -97.5164,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/oklahoma_city",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kansas City, KS",
+    "lat": 39.1142,
+    "lng": -94.6275,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/kansas_city",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "New Orleans, LA",
+    "lat": 29.96667,
+    "lng": -90.05,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/new_orleans",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Baton Rouge, LA",
+    "lat": 30.4515,
+    "lng": -91.1871,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/baton_rouge",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Chicago, IL",
+    "lat": 41.8781,
+    "lng": -87.6298,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/chicago",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Louisville, KY",
+    "lat": 38.2527,
+    "lng": -85.7585,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/louisville",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lexington, KY",
+    "lat": 38.0406,
+    "lng": -84.5037,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/lexington",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "St. Louis, MO",
+    "lat": 38.6270,
+    "lng": -90.1994,
+    "links": [
+     {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/st_louis",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Columbia, MO",
+    "lat": 39.9511,
+    "lng": -92.3341,
+    "links": [
+     {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/columbiaMO",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lafayette, IN",
+    "lat": 40.4138,
+    "lng": -86.8753,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/lafayetteIN",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Indianapolis, IN",
+    "lat": 39.7684,
+    "lng": -86.1580,
+    "links": [
+     {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/indianapolis",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bloomington, IN",
+    "lat": 39.1653,
+    "lng": -86.5264,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/bloomington",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Cincinnati, OH",
+    "lat": 39.1031,
+    "lng": -84.5120,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/cincinnati",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lafayette, OH",
+    "lat": 40.75889,
+    "lng": -83.95000,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/lafayetteOH",
         "color": "blue"
       }
     ]
