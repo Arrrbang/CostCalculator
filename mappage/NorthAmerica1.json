@@ -671,4 +671,220 @@
       }
     ]
   },
+  {
+    "name": "Nashville, TN",
+    "lat": 36.174465,
+    "lng": -86.76796,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/nashville",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Knoxville, TN",
+    "lat": 35.964668,
+    "lng": -83.926453,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/knoxville",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Memphis, TN",
+    "lat": 35.1175,
+    "lng": -89.971107,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/memphis",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Jackson, MS",
+    "lat": 32.2988,
+    "lng": -90.1848,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/jackson",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Little Rock, AR",
+    "lat": 34.7465,
+    "lng": -92.2896,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/littlerock",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Columbia, SC",
+    "lat": 34.0004,
+    "lng": -81.0348,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/columbia",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Charlotte, NC",
+    "lat": 35.2271,
+    "lng": -80.8431,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/charlotte",
+        "color": "blue"
+      }
+    ]
+  },
+    {
+    "name": "Durham, NC",
+    "lat": 35.9940,
+    "lng": -78.8986,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/durham",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Fairfax, VA",
+    "lat": 38.8462,
+    "lng": -77.3064,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/fairfax",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Newark, NJ",
+    "lat": 40.7357,
+    "lng": -74.1724,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/newark",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "New York, NY",
+    "lat": 40.7128,
+    "lng": -74.0060,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/new_york",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hartford, CT",
+    "lat": 41.7637,
+    "lng": -72.6851,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/hartford",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tallahassee, FL",
+    "lat": 30.4383,
+    "lng": -84.2807,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/tallahassee",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Pensacola, FL",
+    "lat": 30.4213,
+    "lng": -87.2169,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/pensacola",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Gainesville, FL",
+    "lat": 29.6526,
+    "lng": -82.3437,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/gainesville",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tampa, FL",
+    "lat": 27.9506,
+    "lng": -82.4572,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/tampa",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Orlando, FL",
+    "lat": 28.60468,
+    "lng": -81.20483,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/orlando",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Miami, FL",
+    "lat": 25.761681,
+    "lng": -80.191788,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/miami",
+        "color": "blue"
+      }
+    ]
+  }
 ]
