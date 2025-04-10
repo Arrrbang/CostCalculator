@@ -1,5 +1,173 @@
 [
 {
+  "name": "Gardena, CA",
+  "lat": 33.89361,
+  "lng": -118.30778,
+  "links": [
+    {
+      "type": "HI-TEK",
+      "path": "data/usa/hitek/gardena",
+      "color": "blue"
+    }
+  ]
+},
+  {
+    "name": "Los Angeles, CA",
+    "lat": 34.0536,
+    "lng": -118.2430,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/los_angeles",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Long Beach, CA",
+    "lat": 33.7705,
+    "lng": -118.1937,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/long_beach",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Torrance, CA",
+    "lat": 33.8408,
+    "lng": -118.3454,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/torrance",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Paramount, CA",
+    "lat": 33.8895,
+    "lng": -118.1598,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/paramount",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Monterey Park, CA",
+    "lat": 34.0625,
+    "lng": -118.1228,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/monterey_park",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Alhambra, CA",
+    "lat": 34.0953,
+    "lng": -118.1270,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/alhambra",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Garden Grove, CA",
+    "lat": 33.7743,
+    "lng": -117.9370,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/garden_grove",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Irvine, CA",
+    "lat": 33.6846,
+    "lng": -117.8265,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/irvine",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Burbank, CA",
+    "lat": 34.1808,
+    "lng": -118.3089,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/burbank",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Glendale, CA",
+    "lat": 34.1425,
+    "lng": -118.2551,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/glendale",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Santa Clarita, CA",
+    "lat": 34.3917,
+    "lng": -118.5426,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/santa_clarita",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rancho Cucamonga, CA",
+    "lat": 34.1064,
+    "lng": -117.5931,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/rancho_cucamonga",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Thousand Oaks, CA",
+    "lat": 34.1706,
+    "lng": -118.8376,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/usa/hitek/thousand_oaks",
+        "color": "blue"
+      }
+    ]
+  },
+{
   "name": "San Diego, CA",
   "lat": 32.7157,
   "lng": -117.1611,
