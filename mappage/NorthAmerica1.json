@@ -368,6 +368,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/omaha",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/omaha",
+        "color": "blue"
       }
     ]
   },
@@ -379,6 +384,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/lincoln",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/lincoln",
         "color": "blue"
       }
     ]
