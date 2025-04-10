@@ -129,7 +129,7 @@
         "60": 6100
       },
       "20DRY": {
-        "ANY": 3650
+        "ANY": 3850
       },
       "40HC": {
         "ANY": "별도 문의"
@@ -140,6 +140,6 @@
     "20DRY",
     "40HC"
   ],
-  "delivery": "Sacramento, USA",
+  "delivery": "San Francisco, USA",
   "partner": "HI-TEK"
 }
