@@ -536,6 +536,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/kansas_city",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/kansas_city",
+        "color": "blue"
       }
     ]
   },
@@ -547,6 +552,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/new_orleans",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/new_orleans",
         "color": "blue"
       }
     ]
@@ -572,6 +582,23 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/chicago",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/chicago",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Champaign, IL",
+    "lat": 40.116421,
+    "lng": -88.243385,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/champaign",
+        "color": "blue"
       }
     ]
   },
@@ -583,6 +610,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/louisville",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/louisville",
         "color": "blue"
       }
     ]
@@ -596,6 +628,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/lexington",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/lexington",
+        "color": "blue"
       }
     ]
   },
@@ -607,6 +644,11 @@
      {
         "type": "HI-TEK",
         "path": "data/usa/hitek/st_louis",
+        "color": "blue"
+      },
+     {
+        "type": "SOS",
+        "path": "data/usa/sos/st_louis",
         "color": "blue"
       }
     ]
@@ -620,6 +662,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/columbiaMO",
         "color": "blue"
+      },
+     {
+        "type": "SOS",
+        "path": "data/usa/sos/columbiaMO",
+        "color": "blue"
       }
     ]
   },
@@ -631,6 +678,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/lafayetteIN",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/lafayetteIN",
         "color": "blue"
       }
     ]
@@ -644,6 +696,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/indianapolis",
         "color": "blue"
+      },
+     {
+        "type": "SOS",
+        "path": "data/usa/sos/indianapolis",
+        "color": "blue"
       }
     ]
   },
@@ -656,6 +713,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/bloomington",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/bloomington",
+        "color": "blue"
       }
     ]
   },
@@ -667,6 +729,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/cincinnati",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/cincinnati",
         "color": "blue"
       }
     ]
@@ -692,6 +759,47 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/columbusOH",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/columbusOH",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Dayton, OH",
+    "lat": 39.758949,
+    "lng": -84.191605,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/dayton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Cleveland, OH",
+    "lat": 41.505493,
+    "lng": -81.681290,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/cleveland",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Akron, OH",
+    "lat": 41.081445,
+    "lng": -81.519005,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/akron",
+        "color": "blue"
       }
     ]
   },
@@ -703,6 +811,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/troy",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/troy",
         "color": "blue"
       }
     ]
@@ -716,6 +829,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/detroit",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/detroit",
+        "color": "blue"
       }
     ]
   },
@@ -727,6 +845,59 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/ann_arbor",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/ann_arbor",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kalamazoo, MI",
+    "lat": 42.299152,
+    "lng": -85.591736,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/kalamazoo",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lansing, MI",
+    "lat": 42.732536,
+    "lng": -84.555534,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/lansing",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Holland, MI",
+    "lat": 42.7875235,
+    "lng": -86.1089301,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/holland",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Midland, MI",
+    "lat": 43.618183,
+    "lng": -84.234238,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/midland",
         "color": "blue"
       }
     ]
@@ -740,6 +911,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/des_moines",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/des_moines",
+        "color": "blue"
       }
     ]
   },
@@ -751,6 +927,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/iowa_city",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/iowa_city",
         "color": "blue"
       }
     ]
@@ -764,6 +945,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/milwaukee",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/milwaukee",
+        "color": "blue"
       }
     ]
   },
@@ -775,6 +961,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/madison",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/madison",
         "color": "blue"
       }
     ]
@@ -788,6 +979,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/st_paul",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/st_paul",
+        "color": "blue"
       }
     ]
   },
@@ -799,6 +995,23 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/minneapolis",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/minneapolis",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rochester, MN",
+    "lat": 44.012122,
+    "lng": -92.480198,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/rochester",
         "color": "blue"
       }
     ]
@@ -812,6 +1025,59 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/atlanta",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/atlanta",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "LaGrange, GA",
+    "lat": 33.0362,
+    "lng": -85.0319,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/lagrange",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Cartersville, GA",
+    "lat": 34.166080,
+    "lng": -84.800613,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/cartersville",
+        "color": "blue"
+      }
+    ]
+  },
+{
+  "name": "Newnan, GA",
+  "lat": 33.3807,
+  "lng": -84.7997,
+  "links": [
+    {
+      "type": "SOS",
+      "path": "data/usa/sos/newnan",
+      "color": "blue"
+    }
+  ]
+},
+  {
+    "name": "Savannah, GA",
+    "lat": 32.0835,
+    "lng": -81.0998,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/savannah",
+        "color": "blue"
       }
     ]
   },
@@ -823,6 +1089,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/montgomery",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/montgomery",
         "color": "blue"
       }
     ]
@@ -836,6 +1107,47 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/auburn",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/auburn",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Birmingham, AL",
+    "lat": 33.5186,
+    "lng": -86.8104,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/birmingham",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Huntsville, AL",
+    "lat": 34.7304,
+    "lng": -86.5861,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/huntsville",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Mobile, AL",
+    "lat": 30.6954,
+    "lng": -88.1399,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/mobile",
+        "color": "blue"
       }
     ]
   },
@@ -847,6 +1159,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/nashville",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/nashville",
         "color": "blue"
       }
     ]
@@ -860,6 +1177,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/knoxville",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/knoxville",
+        "color": "blue"
       }
     ]
   },
@@ -871,6 +1193,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/memphis",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/memphis",
         "color": "blue"
       }
     ]
@@ -884,6 +1211,23 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/jackson",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/jackson",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Biloxi, MS",
+    "lat": 30.3953972,
+    "lng": -88.8869194,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/biloxi",
+        "color": "blue"
       }
     ]
   },
@@ -895,6 +1239,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/littlerock",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/littlerock",
         "color": "blue"
       }
     ]
@@ -908,6 +1257,23 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/columbiaSC",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/columbiaSC",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Charleston, SC",
+    "lat": 32.776750,
+    "lng": -79.930800,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/charleston",
+        "color": "blue"
       }
     ]
   },
@@ -920,9 +1286,38 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/charlotte",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/charlotte",
+        "color": "blue"
       }
     ]
   },
+    {
+    "name": "Greensboro, NC",
+    "lat": 36.044659,
+    "lng": -79.766235,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/greensboro",
+        "color": "blue"
+      }
+    ]
+  },
+{
+  "name": "Raleigh, NC",
+  "lat": 35.7796,
+  "lng": -78.6382,
+  "links": [
+    {
+      "type": "SOS",
+      "path": "data/usa/sos/raleigh",
+      "color": "blue"
+    }
+  ]
+},
     {
     "name": "Durham, NC",
     "lat": 35.9940,
@@ -931,6 +1326,30 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/durham",
+        "color": "blue"
+      }
+    ]
+  },
+{
+  "name": "Fayetteville, NC",
+  "lat": 35.0527,
+  "lng": -78.8784,
+  "links": [
+    {
+      "type": "SOS",
+      "path": "data/usa/sos/fayetteville",
+      "color": "blue"
+    }
+  ]
+},
+  {
+    "name": "Wilmington, NC",
+    "lat": 34.23722,
+    "lng": -77.94667,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/wilmington",
         "color": "blue"
       }
     ]
@@ -1016,6 +1435,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/gainesville",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/gainesville",
+        "color": "blue"
       }
     ]
   },
@@ -1027,6 +1451,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/tampa",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/tampa",
         "color": "blue"
       }
     ]
@@ -1040,6 +1469,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/orlando",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/orlando",
+        "color": "blue"
       }
     ]
   },
@@ -1051,6 +1485,23 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/miami",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/miami",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Jacksonville, FL",
+    "lat": 30.332184,
+    "lng": -81.655647,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/jacksonville",
         "color": "blue"
       }
     ]
