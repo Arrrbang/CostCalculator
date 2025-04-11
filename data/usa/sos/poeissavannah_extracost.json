@@ -45,11 +45,11 @@
   },
   "basic-cost-3": {
     "name": "CUSTOMER ENTRY CHARGE(CLC)",
-    "description": "BL당 $170 발생",
+    "description": "BL당 $180 발생",
     "NonDiplomat": {
-      "CONSOLE": 170,
-      "20DRY": 170,
-      "40HC": 170
+      "CONSOLE": 180,
+      "20DRY": 180,
+      "40HC": 180
     },
     "Diplomat": {
       "CONSOLE": "외교관 비용 미확인"
