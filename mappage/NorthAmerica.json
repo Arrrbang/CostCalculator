@@ -450,6 +450,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/dallas",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/dallas",
+        "color": "blue"
       }
     ]
   },
@@ -461,6 +466,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/houston",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/houston",
         "color": "blue"
       }
     ]
@@ -474,6 +484,11 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/austin",
         "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/austin",
+        "color": "blue"
       }
     ]
   },
@@ -485,6 +500,11 @@
       {
         "type": "HI-TEK",
         "path": "data/usa/hitek/college_station",
+        "color": "blue"
+      },
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/college_station",
         "color": "blue"
       }
     ]
@@ -1515,5 +1535,17 @@
         "color": "blue"
       }
     ]
-  }
+  },
+{
+  "name": "Pittsburgh, PA",
+  "lat": 40.4406,
+  "lng": -79.9959,
+  "links": [
+    {
+      "type": "SOS",
+      "path": "data/usa/sos/pittsburgh",
+      "color": "blue"
+    }
+  ]
+}
 ]
