@@ -1,6 +1,7 @@
 {
   "nonDiplomat": {
       "CONSOLE": {
+        "description": "", 
         "1-3": 1100,
         "4": 1310,
         "5": 1520,
@@ -61,14 +62,17 @@
         "60": 13070
       },
       "20DRY": {
+        "description": "28CBM 적입 기준.\nCBM에 따라 변경될 수 있음.", 
         "ANY": 6750
       },
       "40HC": {
+        "description": "", 
         "ANY": "별도 문의"
       }
   },
   "diplomat": {
       "CONSOLE": {
+        "description": "기업 주재원 비용 추가됨\n10cbm 이하 : +$150\n10cbm 이상 : +$200", 
         "1-3": 1150,
         "4": 1340,
         "5": 1530,
@@ -129,9 +133,11 @@
         "60": 11980
       },
       "20DRY": {
+        "description": "28CBM 적입 기준.\nCBM에 따라 변경될 수 있음.\n기업 주재원 비용 추가됨\n10cbm 이하 : +$150\n10cbm 이상 : +$200",
         "ANY": 6550
       },
       "40HC": {
+        "description": "", 
         "ANY": "별도 문의"
       }
   },
