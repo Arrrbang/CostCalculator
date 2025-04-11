@@ -77,14 +77,14 @@
       "41-60": 1200
     }
   },
-  "extra-cost-6": {
+  "extra-cost-3": {
     "name": "UPLIGHT PIANO",
     "description": "",
     "CONSOLE": 100,
     "20DRY": 100,
     "40HC": 100
   },
-  "extra-cost-7": {
+  "extra-cost-4": {
     "name": "IKEA 조립 비용",
     "description": "단가 : $70/EACH",
     "CONSOLE": 70,
