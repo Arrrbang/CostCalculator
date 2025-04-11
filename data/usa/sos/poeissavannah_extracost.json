@@ -12,71 +12,39 @@
   "화폐단위": "$",
   
   "basic-cost-1": {
-    "name": "POC",
-    "description": "",
+    "name": "DRAYAGE",
+    "description": "콘솔 단가는 40HC 55CBM 콘솔 기준, 20/40동일",
     "NonDiplomat": {
-      "CONSOLE": "INCLUDED",
-      "20DRY": "INCLUDED",
-      "40HC": "INCLUDED"
+      "CONSOLE": {
+        "단가": 33
+      },
+      "20DRY": 1800,
+      "40HC": 1800
     },
     "Diplomat": {
-      "CONSOLE": "INCLUDED",
-      "20DRY": "INCLUDED",
-      "40HC": "INCLUDED"
+      "CONSOLE": "외교관 비용 미확인"
+      "20DRY": "외교관 비용 미확인",
+      "40HC": "외교관 비용 미확인"
     }
   },
   "basic-cost-2": {
-    "name": "THC",
-    "description": "",
+    "name": "DEVANNING",
+    "description": "콘솔 단가는 40HC 55CBM 콘솔 기준",
     "NonDiplomat": {
-      "CONSOLE": "INCLUDED",
-      "20DRY": "INCLUDED",
-      "40HC": "INCLUDED"
+      "CONSOLE": {
+        "단가": 5.5
+      },
+      "20DRY": 200,
+      "40HC": 300
     },
     "Diplomat": {
-      "CONSOLE": "INCLUDED",
-      "20DRY": "INCLUDED",
-      "40HC": "INCLUDED"
+      "CONSOLE": "외교관 비용 미확인"
+      "20DRY": "외교관 비용 미확인",
+      "40HC": "외교관 비용 미확인"
     }
   },
   "basic-cost-3": {
-    "name": "DRAYAGE",
-    "description": "콘솔 단가는 40HC 60CBM 콘솔 기준, 20/40동일",
-    "NonDiplomat": {
-      "CONSOLE": {
-        "단가": 30.83
-      },
-      "20DRY": 1850,
-      "40HC": 1850
-    },
-    "Diplomat": {
-      "CONSOLE": {
-        "단가": 30.83
-      },
-      "20DRY": 1850,
-      "40HC": 1850
-    }
-  },
-  "basic-cost-4": {
-    "name": "DEVANNING",
-    "description": "콘솔 단가는 40HC 60CBM 콘솔 기준",
-    "NonDiplomat": {
-      "CONSOLE": {
-        "단가": 5
-      },
-      "20DRY": 200,
-      "40HC": 300
-    },
-    "Diplomat": {
-      "CONSOLE": {
-        "단가": 5
-      },
-      "20DRY": 200,
-      "40HC": 300
-    }
-  },
-  "basic-cost-5": {
-    "name": "CUSTOMER ENTRY",
+    "name": "CUSTOMER ENTRY CHARGE(CLC)",
     "description": "BL당 $170 발생",
     "NonDiplomat": {
       "CONSOLE": 170,
@@ -84,50 +52,21 @@
       "40HC": 170
     },
     "Diplomat": {
-      "CONSOLE": 170,
-      "20DRY": 170,
-      "40HC": 170
+      "CONSOLE": "외교관 비용 미확인"
+      "20DRY": "외교관 비용 미확인",
+      "40HC": "외교관 비용 미확인"
     }
   },
   "extra-cost-1": {
-    "name": "INSPECTION",
-    "description": "컨테이너 전체 검사에 걸렸을 경우 발생되는 금액",
-    "CONSOLE": {
-      "단가": 3.5
-    },
-    "20DRY": 200,
-    "40HC": 200
+    "name": "FULL SETTING",
+    "description": "$30.00/CBM (REGULAR), $45.00/CBM (DETAIL W/PICTURE)",
+    "CONSOLE": {"단가": 30},
+    "20DRY": {"단가": 30},
+    "40HC": {"단가": 30}
   },
   "extra-cost-2": {
-    "name": "FULL SETTING",
-    "description": "",
-    "CONSOLE": {
-      "단가": 30
-    },
-    "20DRY": {
-      "단가": 30
-    },
-    "40HC": {
-      "단가": 30
-    }
-  },
-  "extra-cost-3": {
-    "name": "SHUTTLE CHARGE",
-    "description": "",
-    "CONSOLE": "미확인",
-    "20DRY": "미확인",
-    "40HC": "미확인"
-  },
-  "extra-cost-4": {
-    "name": "LONG CARRY CHARGE",
-    "description": "",
-    "CONSOLE": "미확인",
-    "20DRY": "미확인",
-    "40HC": "미확인"
-  },
-  "extra-cost-5": {
     "name": "WEEKEND CHARGE",
-    "description": "",
+    "description": "SATURDAY, SUNDAY, HOLIDAY DELIVERY",
     "CONSOLE": {
       "1-40": 800,
       "41-60": 1200
@@ -162,22 +101,22 @@
     "단가": 100
   },
   "STORAGE CHARGE": {
-    "description": "창고 보관 비용 :  $4/CBM/WEEK (MIN:$20/WEEK)",
+    "description": "창고 보관 비용 :  $5/CBM/WEEK (MIN:$20/WEEK)",
     "단위": "주",
-    "무료 보관 기간": 4,
-    "보관 비용 단가": 4
-  },
+    "무료 보관 기간": 0,
+    "보관 비용": {
+      "20DRY": 0,
+      "40HC": 0,
+      "단가": 5
+    }
+},
     
   "additional-info-1": {
-    "name": "test1",
-    "description": "내용 입력"
-  },
-  "additional-info-2": {
-    "name": "test2",
-    "description": "또 다른 내용"
+    "name": "불포함 비용",
+    "description": "FULL INSPECTIONED CONTAINER: $200\nCUSTOMS EXAM FEE: AT COST\nDEMURRAGE, DETENTION, DECONSOLIDATION CHARGE: AT COST\nRELEASE CHARGE: CAR ($200.00), $10.00 /CBM ($65.00 UP TO 10 CBM)"
   },
   
   "DATA BASE": {
-    "description": "업데이트 : 2024.10 진행 이트너스 비딩 조사"
+    "description": "업데이트 : 2025.04.11\n기초자료 : 2025.05.15 Boarding 기준 신규 타리프"
   }
 }
