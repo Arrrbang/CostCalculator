@@ -502,10 +502,14 @@ function updateBasicDeliveryCost() {
   // NonDiplomat 또는 Diplomat 데이터 선택
   const dataCategory = isNonDiplomat ? dataNonDiplomat : dataDiplomat;
   let costValue = ""; // 기본값 설정
+  let descriptionValue = ""; // 설명 기본값 설정
 
   if (typeof dataCategory[selectedContainer] === "object") {
     // 컨테이너 타입이 있는 경우
     const containerData = dataCategory[selectedContainer];
+
+    // description 값 가져오기
+    descriptionValue = containerData["description"] || ""; // description을 가져옴
 
     // CBM 값에 해당하는 범위 또는 개별 값 찾기
     const rangeKey = Object.keys(containerData).find(key => {
@@ -540,9 +544,16 @@ function updateBasicDeliveryCost() {
         costValue = `${currencySymbol}${Number(costValue).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
     }
 
-
   // 결과 업데이트
   result.textContent = costValue;
+}
+
+  // description 값이 있으면 p 태그에 추가
+  const descriptionElement = document.getElementById("basic-delivery-description");
+  if (descriptionElement && descriptionValue) {
+    // \n을 <br>로 변환하여 description을 HTML로 삽입
+    descriptionElement.innerHTML = descriptionValue.replace(/\n/g, "<br>");
+  }
 }
 
 // CBM 드롭다운 값 변경 시 기본 배송 비용 업데이트
