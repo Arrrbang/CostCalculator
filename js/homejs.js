@@ -540,13 +540,12 @@ function updateBasicDeliveryCost() {
   }
 
   // 값이 숫자인 경우 화폐 단위를 추가
-    if (!isNaN(costValue)) {
-        costValue = `${currencySymbol}${Number(costValue).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-    }
+  if (!isNaN(costValue)) {
+    costValue = `${currencySymbol}${Number(costValue).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  }
 
   // 결과 업데이트
   result.textContent = costValue;
-}
 
   // description 값이 있으면 p 태그에 추가
   const descriptionElement = document.getElementById("basic-delivery-description");
