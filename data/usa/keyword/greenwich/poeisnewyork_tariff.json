@@ -60,6 +60,9 @@
         "58": 5610,
         "59": 5700,
         "60": 5790
+        },
+    "diplomat": {
+        "ANY": "별도 문의"
     },
     "containerType": [
         "CONSOLE",
