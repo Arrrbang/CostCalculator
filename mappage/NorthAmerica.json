@@ -1409,6 +1409,318 @@
     ]
   },
   {
+    "name": "Cliffside Park, NJ",
+    "lat": 40.8210,
+    "lng": -73.9879,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Closter, NJ",
+    "lat": 40.9732,
+    "lng": -73.9615,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Cranford, NJ",
+    "lat": 40.6584,
+    "lng": -74.2999,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Dover, NJ",
+    "lat": 40.8834,
+    "lng": -74.5621,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Edgewater, NJ",
+    "lat": 40.8270,
+    "lng": -73.9754,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Elizabeth, NJ",
+    "lat": 40.6639,
+    "lng": -74.2107,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Englewood, NJ",
+    "lat": 40.8929,
+    "lng": -73.9726,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Fort Lee, NJ",
+    "lat": 40.8509,
+    "lng": -73.9701,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hackensack, NJ",
+    "lat": 40.8859,
+    "lng": -74.0435,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Jersey City, NJ",
+    "lat": 40.7178,
+    "lng": -74.0431,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kearny, NJ",
+    "lat": 40.7684,
+    "lng": -74.1454,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Linden, NJ",
+    "lat": 40.6220,
+    "lng": -74.2446,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Livingston, NJ",
+    "lat": 40.7854,
+    "lng": -74.3299,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lyndhurst, NJ",
+    "lat": 40.8123,
+    "lng": -74.1242,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Madison, NJ",
+    "lat": 40.7598,
+    "lng": -74.4171,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Newark, NJ",
+    "lat": 40.7357,
+    "lng": -74.1724,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Orange, NJ",
+    "lat": 40.7707,
+    "lng": -74.2327,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Palisades Park, NJ",
+    "lat": 40.8487,
+    "lng": -73.9976,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Paramus, NJ",
+    "lat": 40.9445,
+    "lng": -74.0754,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Paterson, NJ",
+    "lat": 40.9168,
+    "lng": -74.1718,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Plainfield, NJ",
+    "lat": 40.6337,
+    "lng": -74.4074,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ridgefield, NJ",
+    "lat": 40.8343,
+    "lng": -74.0082,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ridgewood, NJ",
+    "lat": 40.9793,
+    "lng": -74.1165,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Secaucus, NJ",
+    "lat": 40.7895,
+    "lng": -74.0565,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tenafly, NJ",
+    "lat": 40.9234,
+    "lng": -73.9626,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Wayne, NJ",
+    "lat": 40.9489,
+    "lng": -74.2450,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "color": "blue"
+      }
+    ]
+  },
+  {
     "name": "New York, NY",
     "lat": 40.7128,
     "lng": -74.0060,
