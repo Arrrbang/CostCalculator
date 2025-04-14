@@ -61,11 +61,15 @@
         "59": 5900,
         "60": 5990
     },
+    "diplomat": {
+        "ANY": "별도 문의"
+    },
     "containerType": [
         "CONSOLE",
         "20DRY",
         "40HC"
     ],
-  "delivery": "Hartford, USA",
+  "delivery": "Hartford, Manchester,New Britain, \nNew London, West Hartford, Windsor",
   "partner": "Keyword"
 }
+
