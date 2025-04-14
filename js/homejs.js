@@ -91,15 +91,16 @@ async function updateDeliveryAddressAndPartnerOnPoeChange() {
     const data = await response.json();
     console.log("Fetched POE JSON data:", data);
 
-    const deliveryAddress = data.delivery.replace(/\n/g, "<br>");
-    const partner = data.partner.replace(/\n/g, "<br>");
+    const deliveryAddress = data.delivery;
+    const partner = data.partner;
 
     const deliveryAddressElement = document.getElementById('delivery-address-result');
     const partnerElement = document.getElementById('partner-result');
 
     if (deliveryAddressElement && partnerElement) {
-      deliveryAddressElement.innerHTML = deliveryAddress;
-      partnerElement.innerHTML = partner;
+      // \n을 <br>로 변환하여 HTML로 삽입
+      deliveryAddressElement.innerHTML = deliveryAddress.replace(/\n/g, "<br>");
+      partnerElement.innerHTML = partner.replace(/\n/g, "<br>");
       console.log("✅ Delivery address and partner updated");
     } else {
       console.error("❌ Missing DOM elements: delivery-address-result or partner-result");
