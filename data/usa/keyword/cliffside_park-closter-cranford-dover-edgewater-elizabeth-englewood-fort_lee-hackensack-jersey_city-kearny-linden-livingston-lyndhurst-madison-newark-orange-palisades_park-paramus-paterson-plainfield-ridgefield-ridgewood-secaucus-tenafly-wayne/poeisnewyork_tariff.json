@@ -1,14 +1,4 @@
 {
-  "links": [
-    {
-      "label": "OFC",
-      "url": "https://www.notion.so/NEW-YORK-SAVANNAH-1980b10191ce80719b3ad015a22dd847?pvs=4"
-    },
-    {
-      "label": "NOTION",
-      "url": "https://www.notion.so/KEYWORD-EXPRESS-INC-1b40b10191ce80f38bc5ec72b1a07f93"
-    }
-  ],
   "nonDiplomat": {
     "1": 415,
     "2": 480,
@@ -133,9 +123,14 @@
     "59": 4185,
     "60": 4250
   },
-  "containerType": [
-    "CONSOLE",
-    "20DRY",
-    "40HC"
-  ]
+    "diplomat": {
+        "ANY": "별도 문의"
+    },
+    "containerType": [
+        "CONSOLE",
+        "20DRY",
+        "40HC"
+    ],
+  "delivery": "Cliffside Park 외 25개 지역, USA",
+  "partner": "Keyword"
 }
