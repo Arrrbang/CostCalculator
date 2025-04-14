@@ -63,11 +63,6 @@ const ofcValueElement = document.getElementById('average-ofc-value');
 
 
 //---------------------------------------------------------------------------------
-function getPathFromURL() {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get('path'); // 'path' 파라미터의 값을 반환
-}
-
 // updateDeliveryAddressAndPartnerOnPoeChange 함수
 async function updateDeliveryAddressAndPartnerOnPoeChange() {
   const path = getPathFromURL();  // path를 추출
@@ -91,24 +86,15 @@ async function updateDeliveryAddressAndPartnerOnPoeChange() {
     const data = await response.json();
     console.log("Fetched POE JSON data:", data);
 
-    let deliveryAddress = data.delivery;  // let으로 변경
-    let partner = data.partner;  // let으로 변경
-
-    // \n을 <br>로 변환
-    if (deliveryAddress) {
-      deliveryAddress = deliveryAddress.replace(/\n/g, "<br>");
-    }
-
-    if (partner) {
-      partner = partner.replace(/\n/g, "<br>");
-    }
+    const deliveryAddress = data.delivery.replace(/\n/g, "<br>");
+    const partner = data.partner.replace(/\n/g, "<br>");
 
     const deliveryAddressElement = document.getElementById('delivery-address-result');
     const partnerElement = document.getElementById('partner-result');
 
     if (deliveryAddressElement && partnerElement) {
-      deliveryAddressElement.innerHTML = deliveryAddress;  // innerHTML로 변경
-      partnerElement.innerHTML = partner;  // innerHTML로 변경
+      deliveryAddressElement.innerHTML = deliveryAddress;
+      partnerElement.innerHTML = partner;
       console.log("✅ Delivery address and partner updated");
     } else {
       console.error("❌ Missing DOM elements: delivery-address-result or partner-result");
@@ -117,6 +103,7 @@ async function updateDeliveryAddressAndPartnerOnPoeChange() {
     console.error("🚨 Error fetching or parsing POE JSON:", error);
   }
 }
+
 // POE 드롭다운 값이 변경될 때마다 실행
 poeDropdown.addEventListener("change", updateDeliveryAddressAndPartnerOnPoeChange);
 
