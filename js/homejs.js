@@ -63,6 +63,11 @@ const ofcValueElement = document.getElementById('average-ofc-value');
 
 
 //---------------------------------------------------------------------------------
+function getPathFromURL() {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get('path'); // 'path' 파라미터의 값을 반환
+}
+
 // updateDeliveryAddressAndPartnerOnPoeChange 함수
 async function updateDeliveryAddressAndPartnerOnPoeChange() {
   const path = getPathFromURL();  // path를 추출
