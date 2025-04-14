@@ -1429,6 +1429,59 @@
         "type": "HI-TEK",
         "path": "data/usa/hitek/hartford",
         "color": "blue"
+      },
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Greenwich, CT",
+    "lat": 41.0262,
+    "lng": -73.6282,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/greenwich",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Stamford, CT",
+    "lat": 41.0534,
+    "lng": -73.5387,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/stamford",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bristol, CT",
+    "lat": 41.6718,
+    "lng": -72.9493,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Norwich, CT",
+    "lat": 41.5243,
+    "lng": -72.0759,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/norwich",
+        "color": "blue"
       }
     ]
   },
