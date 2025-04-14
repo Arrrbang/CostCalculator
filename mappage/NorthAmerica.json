@@ -1474,6 +1474,126 @@
     ]
   },
   {
+    "name": "Bridgeport, CT",
+    "lat": 41.1792,
+    "lng": -73.1894,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Danbury, CT",
+    "lat": 41.3948,
+    "lng": -73.4540,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "New Haven, CT",
+    "lat": 41.3083,
+    "lng": -72.9279,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Norwalk, CT",
+    "lat": 41.1176,
+    "lng": -73.4082,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Waterbury, CT",
+    "lat": 41.5582,
+    "lng": -73.0515,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Manchester, CT",
+    "lat": 41.7759,
+    "lng": -72.5215,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "New Britain, CT",
+    "lat": 41.6612,
+    "lng": -72.7795,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "New London, CT",
+    "lat": 41.3557,
+    "lng": -72.0995,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "West Hartford, CT",
+    "lat": 41.7621,
+    "lng": -72.7420,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Windsor, CT",
+    "lat": 41.8526,
+    "lng": -72.6438,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
+        "color": "blue"
+      }
+    ]
+  },
+  {
     "name": "Norwich, CT",
     "lat": 41.5243,
     "lng": -72.0759,
