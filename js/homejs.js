@@ -91,8 +91,8 @@ async function updateDeliveryAddressAndPartnerOnPoeChange() {
     const data = await response.json();
     console.log("Fetched POE JSON data:", data);
 
-    const deliveryAddress = data.delivery;
-    const partner = data.partner;
+    let deliveryAddress = data.delivery;  // let으로 변경
+    let partner = data.partner;  // let으로 변경
 
     // \n을 <br>로 변환
     if (deliveryAddress) {
@@ -117,7 +117,6 @@ async function updateDeliveryAddressAndPartnerOnPoeChange() {
     console.error("🚨 Error fetching or parsing POE JSON:", error);
   }
 }
-
 // POE 드롭다운 값이 변경될 때마다 실행
 poeDropdown.addEventListener("change", updateDeliveryAddressAndPartnerOnPoeChange);
 
