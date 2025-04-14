@@ -69,6 +69,6 @@
         "20DRY",
         "40HC"
     ],
-  "delivery": "Bristol, Bridgeport, Danbury, New Haven, /nNorwalk, Waterbury, USA",
+  "delivery": "Bristol, Bridgeport, Danbury, \nNew Haven, Norwalk, Waterbury",
   "partner": "Keyword"
 }
