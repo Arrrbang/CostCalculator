@@ -94,12 +94,21 @@ async function updateDeliveryAddressAndPartnerOnPoeChange() {
     const deliveryAddress = data.delivery;
     const partner = data.partner;
 
+    // \n을 <br>로 변환
+    if (deliveryAddress) {
+      deliveryAddress = deliveryAddress.replace(/\n/g, "<br>");
+    }
+
+    if (partner) {
+      partner = partner.replace(/\n/g, "<br>");
+    }
+
     const deliveryAddressElement = document.getElementById('delivery-address-result');
     const partnerElement = document.getElementById('partner-result');
 
     if (deliveryAddressElement && partnerElement) {
-      deliveryAddressElement.innerText = deliveryAddress;
-      partnerElement.innerText = partner;
+      deliveryAddressElement.innerHTML = deliveryAddress;  // innerHTML로 변경
+      partnerElement.innerHTML = partner;  // innerHTML로 변경
       console.log("✅ Delivery address and partner updated");
     } else {
       console.error("❌ Missing DOM elements: delivery-address-result or partner-result");
