@@ -1605,6 +1605,631 @@
       }
     ]
   },
+{
+  "name": "Washington, DC",
+  "lat": 38.89528,
+  "lng": -77.01778,
+  "links": [
+    {
+      "type": "keyword",
+      "path": "data/usa/keyword/washington",
+      "color": "blue"
+    }
+  ]
+},
+  {
+    "name": "Newark, DE",
+    "lat": 39.683723,
+    "lng": -75.749657,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/newark",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Millsboro, DE",
+    "lat": 38.5888,
+    "lng": -75.2913,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/millsboro",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Springfield, MA",
+    "lat": 42.1015,
+    "lng": -72.5898,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/springfield",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Amherst, MA",
+    "lat": 42.3732,
+    "lng": -72.5199,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/amherst-northampton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Northampton, MA",
+    "lat": 42.3251,
+    "lng": -72.6412,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/amherst-northampton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Fall River, MA",
+    "lat": 41.7015,
+    "lng": -71.1550,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/fall_river-leominster-taunton-worcester",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Leominster, MA",
+    "lat": 42.5251,
+    "lng": -71.7598,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/fall_river-leominster-taunton-worcester",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Taunton, MA",
+    "lat": 41.9001,
+    "lng": -71.0898,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/fall_river-leominster-taunton-worcester",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Worcester, MA",
+    "lat": 42.2626,
+    "lng": -71.8023,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/fall_river-leominster-taunton-worcester",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Arlington, MA",
+    "lat": 42.4154,
+    "lng": -71.1565,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Boston, MA",
+    "lat": 42.3601,
+    "lng": -71.0589,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Brockton, MA",
+    "lat": 42.0834,
+    "lng": -71.0184,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Cambridge, MA",
+    "lat": 42.3736,
+    "lng": -71.1097,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Everett, MA",
+    "lat": 42.4084,
+    "lng": -71.0537,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lexington, MA",
+    "lat": 42.4473,
+    "lng": -71.2245,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lowell, MA",
+    "lat": 42.6334,
+    "lng": -71.3162,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lynn, MA",
+    "lat": 42.4668,
+    "lng": -70.9495,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Medford, MA",
+    "lat": 42.4184,
+    "lng": -71.1062,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "New Bedford, MA",
+    "lat": 41.6362,
+    "lng": -70.9342,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Newton, MA",
+    "lat": 42.3370,
+    "lng": -71.2092,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lawrence, MA",
+    "lat": 42.7070,
+    "lng": -71.1631,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/lawrence-quincy-salem",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Quincy, MA",
+    "lat": 42.2529,
+    "lng": -71.0023,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/lawrence-quincy-salem",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Salem, MA",
+    "lat": 42.5195,
+    "lng": -70.8967,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/lawrence-quincy-salem",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Edgewood, MD",
+    "lat": 39.4187,
+    "lng": -76.2944,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/edgewood",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Baltimore, MD",
+    "lat": 39.2904,
+    "lng": -76.6122,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/baltimore-ellicott_city",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ellicott City, MD",
+    "lat": 39.2673,
+    "lng": -76.7983,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/baltimore-ellicott_city",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Annapolis, MD",
+    "lat": 38.9784,
+    "lng": -76.4922,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/annapolis-college_park-columbia-silver_spring-westminster",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "College Park, MD",
+    "lat": 38.9807,
+    "lng": -76.9369,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/annapolis-college_park-columbia-silver_spring-westminster",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Columbia, MD",
+    "lat": 39.2037,
+    "lng": -76.8610,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/annapolis-college_park-columbia-silver_spring-westminster",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Silver Spring, MD",
+    "lat": 38.9907,
+    "lng": -77.0261,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/annapolis-college_park-columbia-silver_spring-westminster",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Westminster, MD",
+    "lat": 39.5754,
+    "lng": -76.9958,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/annapolis-college_park-columbia-silver_spring-westminster",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Berlin, MD",
+    "lat": 38.3300,
+    "lng": -75.2167,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Frederick, MD",
+    "lat": 39.4333,
+    "lng": -77.4167,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Gaithersburg, MD",
+    "lat": 39.1439,
+    "lng": -77.2016,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Potomac, MD",
+    "lat": 39.0182,
+    "lng": -77.2086,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rockville, MD",
+    "lat": 39.0839,
+    "lng": -77.1528,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Salisbury, MD",
+    "lat": 38.3607,
+    "lng": -75.5994,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Brunswick, MD",
+    "lat": 39.3143,
+    "lng": -77.6275,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/brunswick",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Clarksburg, MD",
+    "lat": 39.2194,
+    "lng": -77.2881,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/clarksburg-lexington_park",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lexington Park, MD",
+    "lat": 38.2668,
+    "lng": -76.4538,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/clarksburg-lexington_park",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Portland, ME",
+    "lat": 43.6591,
+    "lng": -70.2568,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/portland-auburn",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Auburn, ME",
+    "lat": 44.0979,
+    "lng": -70.2312,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/portland-auburn",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Keene, NH",
+    "lat": 42.9337,
+    "lng": -72.2781,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/keene",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Claremont, NH",
+    "lat": 43.3706,
+    "lng": -72.3376,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/claremont",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Manchester, NH",
+    "lat": 42.9956,
+    "lng": -71.4548,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/manchester-nashua",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Nashua, NH",
+    "lat": 42.7654,
+    "lng": -71.4676,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/manchester-nashua",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Concord, NH",
+    "lat": 43.2081,
+    "lng": -71.5376,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/concord-dover-lebanon",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Dover, NH",
+    "lat": 43.1979,
+    "lng": -70.8744,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/concord-dover-lebanon",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lebanon, NH",
+    "lat": 43.6423,
+    "lng": -72.2518,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/concord-dover-lebanon",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Laconia, NH",
+    "lat": 43.5276,
+    "lng": -71.4703,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/laconia-rochester",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rochester, NH",
+    "lat": 43.3045,
+    "lng": -70.9756,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/laconia-rochester",
+        "color": "blue"
+      }
+    ]
+  },
+
   {
     "name": "Tallahassee, FL",
     "lat": 30.4383,
