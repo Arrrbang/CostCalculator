@@ -1,50 +1,33 @@
 {
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/NEW-YORK-SAVANNAH-1980b10191ce80719b3ad015a22dd847?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/KEYWORD-EXPRESS-INC-1b40b10191ce80f38bc5ec72b1a07f93"
+        }
+    ],
+  
   "화폐단위": "$",
   
   "basic-cost-1": {
-    "name": "POC",
-    "description": "",
-    "NonDiplomat": {
-      "CONSOLE": "INCLUDED",
-      "20DRY": "INCLUDED",
-      "40HC": "INCLUDED"
-    },
-    "Diplomat": {
-      "CONSOLE": "INCLUDED",
-      "20DRY": "INCLUDED",
-      "40HC": "INCLUDED"
-    }
-  },
-  "basic-cost-2": {
-    "name": "THC",
-    "description": "",
-    "NonDiplomat": {
-      "CONSOLE": "INCLUDED",
-      "20DRY": "INCLUDED",
-      "40HC": "INCLUDED"
-    },
-    "Diplomat": {
-      "CONSOLE": "INCLUDED",
-      "20DRY": "INCLUDED",
-      "40HC": "INCLUDED"
-    }
-  },
-  "basic-cost-3": {
     "name": "DRAYAGE",
-    "description": "콘솔 단가는 40HC 60CBM 콘솔 기준, 20/40동일",
+    "description": "20DR/40HC : $950, CONSOLE : $15/CBM",
     "NonDiplomat": {
       "CONSOLE": {
-        "단가": 15.83
+        "단가": 15
       },
       "20DRY": 950,
       "40HC": 950
     },
     "Diplomat": {
       "CONSOLE": {
-        "단가": 15.83
+        "단가": 0
       },
-      "20DRY": 950,
-      "40HC": 950
+      "20DRY": 0,
+      "40HC": 0
     }
   },
   "extra-cost-1": {
@@ -69,32 +52,17 @@
   },
     "extra-cost-3": {
     "name": "추가 쓰레기 수거",
-    "description": "배송일 이후 쓰레기 수거 진행 추가 비용",
-    "CONSOLE": {
-      "단가": 10,
-      "1-20": 150
-    },
-    "20DRY": {
-      "단가": 10,
-      "1-20": 150
-    },
-    "40HC": {
-      "단가": 10,
-      "1-20": 150
-    }
+    "description": "배송일 이후 쓰레기 수거 진행 추가 비용\n20CBM초과시 $10 per CBM",
+    "CONSOLE": "1-20": 150,
+    "20DRY": "1-20": 150,
+    "40HC": "1-20": 150
   },
     "extra-cost-4": {
     "name": "NORMAL 쓰레기 수거 비용",
     "description": "NORMAL 셋팅 진행, 쓰레기 수거할 때 비용",
-    "CONSOLE": {
-      "단가": 5
-    },
-    "20DRY": {
-      "단가": 5
-    },
-    "40HC": {
-      "단가": 5
-    }
+    "CONSOLE": {"단가": 5},
+    "20DRY": {"단가": 5},
+    "40HC": {"단가": 5}
   },
     "extra-cost-5": {
     "name": "우든 박스 처리 비용",
@@ -102,6 +70,13 @@
     "CONSOLE": 50,
     "20DRY": 50,
     "40HC": 50
+  },
+    "extra-cost-6": {
+    "name": "umbrella coi",
+    "description": "건물 보험 $1,000,000가입시",
+    "CONSOLE": 100,
+    "20DRY": 100,
+    "40HC": 100
   },
   "STAIR CHARGE": {
     "description": "3층: $15/CBM, 4층: $20/CBM",
@@ -113,19 +88,22 @@
     "단가": 100
   },
   "STORAGE CHARGE": {
-    "description": "5CBM 이하 $50 기본 + $10/CBM/MONTH",
+    "description": "시즌별 입고후 2주~4주 무료\n5CBM 이하 $50 기본 + $10/CBM/MONTH \n우측 금액에 $50추가",
     "단위": "달",
     "무료 보관 기간": 1,
-    "보관 비용 단가": 10
+    "보관 비용":{
+        "20DRY": 0,
+        "40HC": 0,
+        "단가": 10
+      }
   },
     
   "additional-info-1": {
-    "name": "",
-    "description": ""
+    "name": "장거리 비용",
+    "description": "편도 350마일 이상 - 1박2일 이상 작업 필요시 \nREGULAR DOOR CHARGE + LD CHARGE[EXTRA LABOR +LODGE/MEAL 추가]"
   },
 
-  
   "DATA BASE": {
-    "description": "해당 데이터 업데이트 일자는 2024.10 진행된 이트너스 비딩 조사 입니다."
+    "description": "업데이트 : 2025.01 ~ \n기초자료 : 2025년 타리프"
   }
 }
