@@ -14,10 +14,10 @@
   
   "basic-cost-1": {
     "name": "DRAYAGE",
-    "description": "20DR/40HC : $950, CONSOLE : $15/CBM",
+    "description": "20DR/40HC : $950, CONSOLE : $15/CBM(포함) \n싱글 컨테이너 계산 방법 확인 중..",
     "NonDiplomat": {
       "CONSOLE": {
-        "단가": 15
+        "단가": 0
       },
       "20DRY": 950,
       "40HC": 950
