@@ -1060,6 +1060,11 @@
         "type": "SOS",
         "path": "data/usa/sos/atlanta",
         "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/atlanta",
+        "color": "blue"
       }
     ]
   },
@@ -1072,6 +1077,23 @@
         "type": "SOS",
         "path": "data/usa/sos/lagrange",
         "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/lagrange-cartersville",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Augusta, GA",
+    "lat": 33.4735,
+    "lng": -82.0105,
+    "links": [
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/augusta",
+        "color": "blue"
       }
     ]
   },
@@ -1083,6 +1105,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/cartersville",
+        "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/lagrange-cartersville",
         "color": "blue"
       }
     ]
@@ -1108,6 +1135,11 @@
         "type": "SOS",
         "path": "data/usa/sos/savannah",
         "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/savannah",
+        "color": "blue"
       }
     ]
   },
@@ -1124,6 +1156,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/montgomery",
+        "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/montgomery",
         "color": "blue"
       }
     ]
@@ -1142,6 +1179,11 @@
         "type": "SOS",
         "path": "data/usa/sos/auburn",
         "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/auburn",
+        "color": "blue"
       }
     ]
   },
@@ -1154,6 +1196,11 @@
         "type": "SOS",
         "path": "data/usa/sos/birmingham",
         "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/birmingham",
+        "color": "blue"
       }
     ]
   },
@@ -1165,6 +1212,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/huntsville",
+        "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/huntsville",
         "color": "blue"
       }
     ]
