@@ -3618,16 +3618,333 @@
       }
     ]
   },
-{
-  "name": "Pittsburgh, PA",
-  "lat": 40.4406,
-  "lng": -79.9959,
-  "links": [
-    {
-      "type": "SOS",
-      "path": "data/usa/sos/pittsburgh",
-      "color": "blue"
-    }
-  ]
-}
+  {
+    "name": "Pittsburgh, PA",
+    "lat": 40.4406,
+    "lng": -79.9959,
+    "links": [
+      {
+        "type": "SOS",
+        "path": "data/usa/sos/pittsburgh",
+        "color": "blue"
+      },
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/pittsburgh-wilkinsburg",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Wilkinsburg, PA",
+    "lat": 40.4418,
+    "lng": -79.8737,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/pittsburgh-wilkinsburg",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "New Hope, PA",
+    "lat": 40.3643,
+    "lng": -74.9513,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/new_hope",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Allentown, PA",
+    "lat": 40.6084,
+    "lng": -75.4902,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bethlehem, PA",
+    "lat": 40.6259,
+    "lng": -75.3705,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bristol, PA",
+    "lat": 40.1001,
+    "lng": -74.8516,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Churchville, PA",
+    "lat": 40.1957,
+    "lng": -75.0127,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Philadelphia, PA",
+    "lat": 39.9526,
+    "lng": -75.1652,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Warrington, PA",
+    "lat": 40.2490,
+    "lng": -75.1374,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Norristown, PA",
+    "lat": 40.1215,
+    "lng": -75.3399,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/norristown",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Scranton, PA",
+    "lat": 41.4089,
+    "lng": -75.6624,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/scranton",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bloomsburg, PA",
+    "lat": 41.0037,
+    "lng": -76.4541,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/bloomsburg-pittston",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Pittston, PA",
+    "lat": 41.3256,
+    "lng": -75.7897,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/bloomsburg-pittston",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Reading, PA",
+    "lat": 40.3356,
+    "lng": -75.9269,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/reading",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Wilkes-Barre, PA",
+    "lat": 41.2459,
+    "lng": -75.8813,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/wilkes_barre",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lancaster, PA",
+    "lat": 40.0379,
+    "lng": -76.3055,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/lancaster",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Camp Hill, PA",
+    "lat": 40.2393,
+    "lng": -76.9194,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/camp_hill-harrisburg-york",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Harrisburg, PA",
+    "lat": 40.2732,
+    "lng": -76.8867,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/camp_hill-harrisburg-york",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "York, PA",
+    "lat": 39.9626,
+    "lng": -76.7277,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/camp_hill-harrisburg-york",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Sunbury, PA",
+    "lat": 40.8615,
+    "lng": -76.7897,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/sunbury",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bellefonte, PA",
+    "lat": 40.9126,
+    "lng": -77.7783,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/bellefonte-state_college",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "State College, PA",
+    "lat": 40.7934,
+    "lng": -77.8600,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/bellefonte-state_college",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Altoona, PA",
+    "lat": 40.5187,
+    "lng": -78.3947,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/altoona",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Johnstown, PA",
+    "lat": 40.3267,
+    "lng": -78.9219,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/johnstown",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Warren, PA",
+    "lat": 41.8437,
+    "lng": -79.1456,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/warren",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bedford, PA",
+    "lat": 40.0184,
+    "lng": -78.5039,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/bedford",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "New Castle, PA",
+    "lat": 40.9970,
+    "lng": -80.3470,
+    "links": [
+      {
+        "type": "keyword",
+        "path": "data/usa/keyword/new_castle",
+        "color": "blue"
+      }
+    ]
+  }
 ]
