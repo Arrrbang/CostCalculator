@@ -1,0 +1,15 @@
+{
+  "nonDiplomat": {
+        "ANY": "별도 문의"
+  },
+    "diplomat": {
+        "ANY": "별도 문의"
+    },
+    "containerType": [
+        "CONSOLE",
+        "20DRY",
+        "40HC"
+    ],
+  "delivery": "Austinville, Blackridge, Bristol, Martinsville",
+  "partner": "Keyword"
+}
