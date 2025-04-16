@@ -456,7 +456,7 @@ if (containerType === "CONSOLE") {
     const value40HC = matchingData[`value40HC`];
     if (!isNaN(value40HC)) {
         // 40HC 값을 60으로 나누고 CBM 값을 곱한 결과 계산
-        const consoleValue = (value40HC / 60) * selectedCbm;
+        const consoleValue = (value40HC / 50) * selectedCbm;
         ofcValueElement.textContent = `${currencySymbol}${Number(consoleValue).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
     } else {
         ofcValueElement.textContent = "";
