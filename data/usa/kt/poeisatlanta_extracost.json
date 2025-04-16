@@ -41,7 +41,7 @@
   },
   "basic-cost-3": {
     "name": "Container Un-Loading Charge",
-    "description": "DEVANNING CHARGE으로 청구됨\콘솔 컨테이너는 50CBM/40HC 기준",
+    "description": "DEVANNING CHARGE으로 청구됨\n콘솔 컨테이너는 50CBM/40HC 기준",
     "NonDiplomat": {
       "CONSOLE": {"단가": 6},
       "20DRY": 200,
