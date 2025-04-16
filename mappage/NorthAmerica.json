@@ -646,6 +646,11 @@
         "type": "SOS",
         "path": "data/usa/sos/louisville",
         "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/louisville-lexington",
+        "color": "blue"
       }
     ]
   },
@@ -662,6 +667,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/lexington",
+        "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/louisville-lexington",
         "color": "blue"
       }
     ]
@@ -765,6 +775,11 @@
         "type": "SOS",
         "path": "data/usa/sos/cincinnati",
         "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/cincinnati",
+        "color": "blue"
       }
     ]
   },
@@ -793,6 +808,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/columbusOH",
+        "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/columbusOH",
         "color": "blue"
       }
     ]
@@ -1247,6 +1267,11 @@
         "type": "SOS",
         "path": "data/usa/sos/nashville",
         "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/nashville-knoxville",
+        "color": "blue"
       }
     ]
   },
@@ -1263,6 +1288,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/knoxville",
+        "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/nashville-knoxville",
         "color": "blue"
       }
     ]
@@ -1281,6 +1311,23 @@
         "type": "SOS",
         "path": "data/usa/sos/memphis",
         "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/memphis",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Clarksville, TN",
+    "lat": 36.5298,
+    "lng": -87.3595,
+    "links": [
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/clarksville",
+        "color": "blue"
       }
     ]
   },
@@ -1298,6 +1345,11 @@
         "type": "SOS",
         "path": "data/usa/sos/jackson",
         "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/jackson",
+        "color": "blue"
       }
     ]
   },
@@ -1309,6 +1361,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/biloxi",
+        "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/biloxi",
         "color": "blue"
       }
     ]
@@ -1327,6 +1384,11 @@
         "type": "SOS",
         "path": "data/usa/sos/littlerock",
         "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/littlerock",
+        "color": "blue"
       }
     ]
   },
@@ -1344,6 +1406,11 @@
         "type": "SOS",
         "path": "data/usa/sos/columbiaSC",
         "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/columbiaSC",
+        "color": "blue"
       }
     ]
   },
@@ -1355,6 +1422,23 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/charleston",
+        "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/charleston",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Greenville, SC",
+    "lat": 34.8526,
+    "lng": -82.3940,
+    "links": [
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/greenville",
         "color": "blue"
       }
     ]
@@ -1373,6 +1457,11 @@
         "type": "SOS",
         "path": "data/usa/sos/charlotte",
         "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/charlotte",
+        "color": "blue"
       }
     ]
   },
@@ -1385,6 +1474,11 @@
         "type": "SOS",
         "path": "data/usa/sos/greensboro",
         "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/greensboro",
+        "color": "blue"
       }
     ]
   },
@@ -1396,6 +1490,11 @@
     {
       "type": "SOS",
       "path": "data/usa/sos/raleigh",
+      "color": "blue"
+    },
+    {
+      "type": "KT EXPRESS",
+      "path": "data/usa/kt/raleigh",
       "color": "blue"
     }
   ]
@@ -1432,6 +1531,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/wilmington",
+        "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/wilmington",
         "color": "blue"
       }
     ]
@@ -1485,6 +1589,11 @@
       {
         "type": "keyword",
         "path": "data/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
+        "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/norfolk-arlington",
         "color": "blue"
       }
     ]
@@ -1702,6 +1811,11 @@
         "type": "keyword",
         "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/norfolk-arlington",
+        "color": "blue"
       }
     ]
   },
@@ -1737,6 +1851,11 @@
       {
         "type": "keyword",
         "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/richmond",
         "color": "blue"
       }
     ]
@@ -4010,6 +4129,11 @@
         "type": "SOS",
         "path": "data/usa/sos/tampa",
         "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/tampa-orlando",
+        "color": "blue"
       }
     ]
   },
@@ -4026,6 +4150,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/orlando",
+        "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/tampa-orlando",
         "color": "blue"
       }
     ]
@@ -4044,6 +4173,11 @@
         "type": "SOS",
         "path": "data/usa/sos/miami",
         "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/miami",
+        "color": "blue"
       }
     ]
   },
@@ -4055,6 +4189,11 @@
       {
         "type": "SOS",
         "path": "data/usa/sos/jacksonville",
+        "color": "blue"
+      },
+      {
+        "type": "KT EXPRESS",
+        "path": "data/usa/kt/jacksonville",
         "color": "blue"
       }
     ]
