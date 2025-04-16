@@ -1,17 +1,19 @@
 {
   "nonDiplomat": {
       "20DRY": {
-        "1-30": 6600
+        "ANY": 5700
       },
       "40HC": {
-        "1-60": 7600
+        "ANY": 6900
       }
   },
   "diplomat": {
-    "1-60": "외교 화물 미확인"
+      "ANY": "별도 문의"
   },
   "containerType": [
-    "20DRY",
-    "40HC"
-  ]
+      "20DRY",
+      "40HC"
+  ],
+  "delivery": "Tampico City, Mexico",
+  "partner": "Pantrans"
 }
