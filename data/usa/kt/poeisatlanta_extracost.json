@@ -27,7 +27,7 @@
   },
   "basic-cost-2": {
     "name": "Container Drayage",
-    "description": "$400.00 + At Cost\n(Chassis, Fuel Surcharge, Congestion Charge, etc.)\n콘솔 컨테이너는 50CBM/40HC 기준",
+    "description": "$400.00 + At Cost\n(Chassis, Fuel Surcharge, Congestion Charge, etc.)\n콘솔 컨테이너는 50CBM/40HC 기준\n전체 금액은 거의 20% 증가됨.",
     "NonDiplomat": {
       "CONSOLE": {"단가": 8},
       "20DRY": 400,
