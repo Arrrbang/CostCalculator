@@ -2,19 +2,48 @@
   "화폐단위": "CAD",
   
   "basic-cost-1": {
-    "name": "THC/POC/DRAYAGE",
-    "description": "",
+    "name": "ACI",
+    "description": "세관 신고 비용",
     "NonDiplomat": {
-      "CONSOLE":"INCLUDED",
-      "20DRY": "INCLUED",
-      "40HC": "INCLUDED"
+      "CONSOLE":40,
+      "20DRY": 40,
+      "40HC": 40
     },
     "Diplomat": {
-      "CONSOLE": "INCLUDED",
-      "20DRY": "INCLUDED",
-      "40HC": "INCLUDED"
+      "CONSOLE": "별도 문의",
+      "20DRY": "별도 문의",
+      "40HC": "별도 문의"
     }
   },
+  "basic-cost-2": {
+    "name": "Inbond Warehouse Fee",
+    "description": "",
+    "NonDiplomat": {
+      "CONSOLE":"확인중",
+      "20DRY": 250,
+      "40HC": 550
+    },
+    "Diplomat": {
+      "CONSOLE": "별도 문의",
+      "20DRY": "별도 문의",
+      "40HC": "별도 문의"
+    }
+  },
+  "basic-cost-3": {
+    "name": "Port Charge",
+    "description": "",
+    "NonDiplomat": {
+      "CONSOLE":"확인중",
+      "20DRY": 300,
+      "40HC": 850
+    },
+    "Diplomat": {
+      "CONSOLE": "별도 문의",
+      "20DRY": "별도 문의",
+      "40HC": "별도 문의"
+    }
+  },
+
   "extra-cost-1": {
     "name": "FULL SETTING",
     "description": "$200 /PER 5 CBM",
@@ -32,10 +61,14 @@
     "단가": 0
   },
   "STORAGE CHARGE": {
-    "description": "미확인",
-    "단위": "주",
-    "무료 보관 기간": 0,
-    "보관 비용 단가": 0
+      "description": "미확인",
+      "단위": "개월",
+      "무료 보관 기간": 0,
+      "보관 비용": {
+        "20DRY": 0,
+        "40HC": 0,
+        "단가": 0
+      }
   },
   
   "additional-info-1": {
