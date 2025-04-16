@@ -4447,5 +4447,149 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Mexico City, Mexico",
+    "lat": 19.4333,
+    "lng": -99.1333,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/mexicocity",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Puebla, Mexico",
+    "lat": 19.0414,
+    "lng": -98.2063,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/puebla",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Queretaro, Mexico",
+    "lat": 20.5888,
+    "lng": -100.3899,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/queretaro",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tampico City, Mexico",
+    "lat": 22.2553,
+    "lng": -97.8686,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/tampicocity",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Altamira City, Mexico",
+    "lat": 22.4037,
+    "lng": -97.9236,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/altamiracity",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Saltillo, Mexico",
+    "lat": 25.4383,
+    "lng": -100.9737,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/saltillo",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Monterrey, Mexico",
+    "lat": 25.6866,
+    "lng": -100.3161,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/monterrey",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "San Luis Potosí, Mexico",
+    "lat": 22.1565,
+    "lng": -100.9855,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/san_luis_potosi",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Guadalajara, Mexico",
+    "lat": 20.6597,
+    "lng": -103.3496,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/guadalajara",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Faja de Oro, Mexico",
+    "lat": 18.1531,
+    "lng": -94.4203,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/faja_de_oro",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Valle Oriente(Sonoma Club)",
+    "lat": 25.6168,
+    "lng": -100.30446,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/valle_oriente(sonoma)",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Monterrey Centro",
+    "lat": 25.6757,
+    "lng": -100.3185,
+    "links": [
+      {
+        "type": "PANTRANS",
+        "path": "data/mexico/pantrans/monterrey_centro",
+        "color": "blue"
+      }
+    ]
   }
 ]
