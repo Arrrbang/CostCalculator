@@ -4730,5 +4730,89 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Mississauga, Canada",
+    "lat": 43.595310,
+    "lng": -79.640579,
+    "links": [
+      {
+        "type": "캐나다쉬핑",
+        "path": "data/canada/canadashipping/mississauga",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Toronto, Canada",
+    "lat": 43.651070,
+    "lng": -79.347015,
+    "links": [
+      {
+        "type": "캐나다쉬핑",
+        "path": "data/canada/canadashipping/toronto",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ontario, Canada",
+    "lat": 50.000000,
+    "lng": -85.000000,
+    "links": [
+      {
+        "type": "캐나다쉬핑",
+        "path": "data/canada/canadashipping/ontario",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Quebec, Canada",
+    "lat": 52.000000,
+    "lng": -71.000000,
+    "links": [
+      {
+        "type": "캐나다쉬핑",
+        "path": "data/canada/canadashipping/quebec",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Vancouver, Canada",
+    "lat": 49.282729,
+    "lng": -123.120738,
+    "links": [
+      {
+        "type": "캐나다쉬핑",
+        "path": "data/canada/canadashipping/vancouver",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Montreal, Canada",
+    "lat": 45.501690,
+    "lng": -73.567253,
+    "links": [
+      {
+        "type": "캐나다쉬핑",
+        "path": "data/canada/canadashipping/montreal",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ottawa, Canada",
+    "lat": 45.424721,
+    "lng": -75.695000,
+    "links": [
+      {
+        "type": "캐나다쉬핑",
+        "path": "data/canada/canadashipping/ottawa",
+        "color": "blue"
+      }
+    ]
   }
 ]
