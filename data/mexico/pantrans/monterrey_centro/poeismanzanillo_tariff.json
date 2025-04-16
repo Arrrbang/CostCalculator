@@ -1,0 +1,21 @@
+{
+  "nonDiplomat": {
+      "20DRY": {
+        "description": "Tampico City 비용 + $800 \nPantrans 차량 운송 불고 지역으로\nShuttle 및 Special Permit 필요.", 
+        "ANY": 6500
+      },
+      "40HC": {
+        "description": "Tampico City 비용 + $800 \nPantrans 차량 운송 불고 지역으로\nShuttle 및 Special Permit 필요.", 
+        "ANY": 7900
+      }
+  },
+  "diplomat": {
+      "ANY": "별도 문의"
+  },
+  "containerType": [
+      "20DRY",
+      "40HC"
+  ],
+  "delivery": "Monterrey Centro, Mexico",
+  "partner": "Pantrans"
+}
