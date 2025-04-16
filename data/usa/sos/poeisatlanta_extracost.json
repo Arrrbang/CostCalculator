@@ -13,10 +13,10 @@
   
   "basic-cost-1": {
     "name": "DRAYAGE",
-    "description": "콘솔 단가는 40HC 55CBM 콘솔 기준, 20/40동일\n+ ADDITIONAL CHARGE (DETENTION, STORAGE)\n40HC 컨 한대에 거의 $5,000 발생",
+    "description": "콘솔 단가는 40HC 50CBM 콘솔 기준, 20/40동일\n+ ADDITIONAL CHARGE (DETENTION, STORAGE)\n40HC 컨 한대에 거의 $5,000 발생",
     "NonDiplomat": {
       "CONSOLE": {
-        "단가": 19
+        "단가": 21
       },
       "20DRY": 1055,
       "40HC": 1055
@@ -29,10 +29,10 @@
   },
   "basic-cost-2": {
     "name": "DEVANNING",
-    "description": "콘솔 단가는 40HC 55CBM 콘솔 기준",
+    "description": "콘솔 단가는 50CBM/40HC 콘솔 기준",
     "NonDiplomat": {
       "CONSOLE": {
-        "단가": 5.5
+        "단가": 6
       },
       "20DRY": 200,
       "40HC": 300
