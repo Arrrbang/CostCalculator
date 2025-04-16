@@ -1,0 +1,19 @@
+{
+  "nonDiplomat": {
+      "20DRY": {
+        "ANY": 6500
+      },
+      "40HC": {
+        "ANY": 7900
+      }
+  },
+  "diplomat": {
+      "ANY": "별도 문의"
+  },
+  "containerType": [
+      "20DRY",
+      "40HC"
+  ],
+  "delivery": "Faja de Oro, Mexico",
+  "partner": "Pantrans"
+}
