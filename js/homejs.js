@@ -526,6 +526,9 @@ function updateBasicDeliveryCost() {
     // 컨테이너 타입이 없는 경우
     const cbmData = dataCategory;
 
+    // description 값 바로 가져오기 (컨테이너 타입이 없으면 dataCategory에서 바로 가져옴)
+    descriptionValue = cbmData["description"] || ""; // description을 가져옴
+    
     // CBM 값에 해당하는 범위 또는 개별 값 찾기
     const rangeKey = Object.keys(cbmData).find(key => {
       if (key.includes("-")) {
