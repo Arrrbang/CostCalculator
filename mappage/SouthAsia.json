@@ -6,12 +6,12 @@
     "links": [
       {
         "type": "KNJ",
-        "path": "data/india/knj/bangalore",
+        "path": "data/SouthAsia/india/knj/bangalore",
         "color": "blue"
       },
       {
         "type": "BSP",
-        "path": "data/india/bsp/bangalore",
+        "path": "data/SouthAsia/india/bsp/bangalore",
         "color": "blue"
       }
     ]
@@ -23,12 +23,12 @@
   "links": [
     {
       "type": "KNJ",
-      "path": "data/india/knj/kolkata",
+      "path": "data/SouthAsia/india/knj/kolkata",
       "color": "blue"
     },
     {
       "type": "BSP",
-      "path": "data/india/bsp/kolkata",
+      "path": "data/SouthAsia/india/bsp/kolkata",
       "color": "blue"
     }
   ]
@@ -40,12 +40,12 @@
   "links": [
     {
       "type": "KNJ",
-      "path": "data/india/knj/chennai",
+      "path": "data/SouthAsia/india/knj/chennai",
       "color": "blue"
     },
     {
       "type": "BSP",
-      "path": "data/india/bsp/chennai",
+      "path": "data/SouthAsia/india/bsp/chennai",
       "color": "blue"
     }
   ]
@@ -57,12 +57,12 @@
   "links": [
     {
       "type": "KNJ",
-      "path": "data/india/knj/gurgaon",
+      "path": "data/SouthAsia/india/knj/gurgaon",
       "color": "blue"
     },
     {
       "type": "BSP",
-      "path": "data/india/bsp/gurgaon",
+      "path": "data/SouthAsia/india/bsp/gurgaon",
       "color": "blue"
     }
   ]
@@ -74,12 +74,12 @@
   "links": [
     {
       "type": "KNJ",
-      "path": "data/india/knj/mumbai",
+      "path": "data/SouthAsia/india/knj/mumbai",
       "color": "blue"
     },
     {
       "type": "BSP",
-      "path": "data/india/bsp/mumbai",
+      "path": "data/SouthAsia/india/bsp/mumbai",
       "color": "blue"
     }
   ]
@@ -91,12 +91,12 @@
   "links": [
     {
       "type": "KNJ",
-      "path": "data/india/knj/mumbai",
+      "path": "data/SouthAsia/india/knj/mumbai",
       "color": "blue"
     },
     {
       "type": "BSP",
-      "path": "data/india/bsp/mumbai",
+      "path": "data/SouthAsia/india/bsp/mumbai",
       "color": "blue"
     }
   ]
@@ -108,12 +108,12 @@
   "links": [
     {
       "type": "KNJ",
-      "path": "data/india/knj/new_delhi",
+      "path": "data/SouthAsia/india/knj/new_delhi",
       "color": "blue"
     },
     {
       "type": "BSP",
-      "path": "data/india/bsp/new_delhi",
+      "path": "data/SouthAsia/india/bsp/new_delhi",
       "color": "blue"
     }
   ]
@@ -125,12 +125,12 @@
   "links": [
     {
       "type": "KNJ",
-      "path": "data/india/knj/noida",
+      "path": "data/SouthAsia/india/knj/noida",
       "color": "blue"
     },
     {
       "type": "BSP",
-      "path": "data/india/bsp/noida",
+      "path": "data/SouthAsia/india/bsp/noida",
       "color": "blue"
     }
   ]
