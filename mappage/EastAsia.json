@@ -6,17 +6,17 @@
     "links": [
         {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/beijing",
+        "path": "data/EastAsia/china/worldbridge/beijing",
         "color": "blue"
       },
       {
         "type": "유니월드 북경",
-        "path": "data/china/UWTbeijing/beijing",
+        "path": "data/EastAsia/china/UWTbeijing/beijing",
         "color": "blue"
       },
      {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/beijing",
+        "path": "data/EastAsia/china/UWTnanjing/beijing",
         "color": "blue"
       }
     ]
@@ -28,7 +28,7 @@
   "links": [
     {
       "type": "World Bridge",
-      "path": "data/china/worldbridge/dalian",
+      "path": "data/EastAsia/china/worldbridge/dalian",
       "color": "blue"
     }
   ]
@@ -40,7 +40,7 @@
   "links": [
     {
       "type": "World Bridge",
-      "path": "data/china/worldbridge/changxingdao",
+      "path": "data/EastAsia/china/worldbridge/changxingdao",
       "color": "blue"
     }
   ]
@@ -52,12 +52,12 @@
     "links": [
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/chengdu",
+        "path": "data/EastAsia/china/UWTnanjing/chengdu",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/chengdu",
+        "path": "data/EastAsia/china/worldbridge/chengdu",
         "color": "blue"
       }
     ]
@@ -69,12 +69,12 @@
     "links": [
       {
         "type": "유니월드 심천",
-        "path": "data/china/UWTshenzhen/guangzhou",
+        "path": "data/EastAsia/china/UWTshenzhen/guangzhou",
         "color": "blue"
       },
         {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/guangzhou",
+        "path": "data/EastAsia/china/worldbridge/guangzhou",
         "color": "blue"
       }
     ]
@@ -86,17 +86,17 @@
     "links": [
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/hangzhou",
+        "path": "data/EastAsia/china/UWTnanjing/hangzhou",
         "color": "blue"
       },
       {
         "type": "유니월드 상해",
-        "path": "data/china/UWTshanghai/hangzhou",
+        "path": "data/EastAsia/china/UWTshanghai/hangzhou",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/hangzhou",
+        "path": "data/EastAsia/china/worldbridge/hangzhou",
         "color": "blue"
       }
     ]
@@ -108,12 +108,12 @@
     "links": [
       {
         "type": "유니월드 심천",
-        "path": "data/china/UWTshenzhen/huizhou",
+        "path": "data/EastAsia/china/UWTshenzhen/huizhou",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/huizhou",
+        "path": "data/EastAsia/china/worldbridge/huizhou",
         "color": "blue"
       }
     ]
@@ -125,7 +125,7 @@
   "links": [
     {
       "type": "유니월드 남경",
-      "path": "data/china/UWTnanjing/huian",
+      "path": "data/EastAsia/china/UWTnanjing/huian",
       "color": "blue"
     }
   ]
@@ -137,12 +137,12 @@
     "links": [
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/nanjing",
+        "path": "data/EastAsia/china/UWTnanjing/nanjing",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/nanjing",
+        "path": "data/EastAsia/china/worldbridge/nanjing",
         "color": "blue"
       }
     ]
@@ -154,17 +154,17 @@
     "links": [
       {
         "type": "유니월드 상해",
-        "path": "data/china/UWTshanghai/shanghai",
+        "path": "data/EastAsia/china/UWTshanghai/shanghai",
         "color": "blue"
       },
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/shanghai",
+        "path": "data/EastAsia/china/UWTnanjing/shanghai",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/shanghai",
+        "path": "data/EastAsia/china/worldbridge/shanghai",
         "color": "blue"
       }
     ]
@@ -176,7 +176,7 @@
   "links": [
     {
       "type": "유니월드 남경",
-      "path": "data/china/UWTnanjing/huangshan",
+      "path": "data/EastAsia/china/UWTnanjing/huangshan",
       "color": "blue"
     }
   ]
@@ -188,17 +188,17 @@
   "links": [
     {
       "type": "유니월드 심천",
-      "path": "data/china/UWTshenzhen/shenzhen",
+      "path": "data/EastAsia/china/UWTshenzhen/shenzhen",
       "color": "blue"
     },
     {
       "type": "유니월드 남성",
-      "path": "data/china/UWTnanjing/shenzhen",
+      "path": "data/EastAsia/china/UWTnanjing/shenzhen",
       "color": "blue"
     },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/shenzhen",
+        "path": "data/EastAsia/china/worldbridge/shenzhen",
         "color": "blue"
       }
   ]
@@ -210,17 +210,17 @@
     "links": [
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/suzhou",
+        "path": "data/EastAsia/china/UWTnanjing/suzhou",
         "color": "blue"
       },
       {
         "type": "유니월드 상해",
-        "path": "data/china/UWTshanghai/suzhou",
+        "path": "data/EastAsia/china/UWTshanghai/suzhou",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/suzhou",
+        "path": "data/EastAsia/china/worldbridge/suzhou",
         "color": "blue"
       }
     ]
@@ -232,17 +232,17 @@
     "links": [
       {
         "type": "유니월드 천진",
-        "path": "data/china/UWTtianjin/tianjin",
+        "path": "data/EastAsia/china/UWTtianjin/tianjin",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/tianjin",
+        "path": "data/EastAsia/china/worldbridge/tianjin",
         "color": "blue"
       },
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/tianjin",
+        "path": "data/EastAsia/china/UWTnanjing/tianjin",
         "color": "blue"
       }
     ]
@@ -254,12 +254,12 @@
     "links": [
       {
         "type": "대성물류",
-        "path": "data/china/daesung/weihai",
+        "path": "data/EastAsia/china/daesung/weihai",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/weihai",
+        "path": "data/EastAsia/china/worldbridge/weihai",
         "color": "blue"
       }
     ]
@@ -271,12 +271,12 @@
     "links": [
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/wuhan",
+        "path": "data/EastAsia/china/UWTnanjing/wuhan",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/wuhan",
+        "path": "data/EastAsia/china/worldbridge/wuhan",
         "color": "blue"
       }
     ]
@@ -288,12 +288,12 @@
     "links": [
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/xian",
+        "path": "data/EastAsia/china/UWTnanjing/xian",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/xian",
+        "path": "data/EastAsia/china/worldbridge/xian",
         "color": "blue"
       }
     ]
@@ -305,12 +305,12 @@
     "links": [
       {
         "type": "유니월드 심천",
-        "path": "data/china/UWTshenzhen/zhongshan",
+        "path": "data/EastAsia/china/UWTshenzhen/zhongshan",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/zhongshan",
+        "path": "data/EastAsia/china/worldbridge/zhongshan",
         "color": "blue"
       }
     ]
@@ -322,12 +322,12 @@
     "links": [
       {
         "type": "유니월드 심천",
-        "path": "data/china/UWTshenzhen/dongguan",
+        "path": "data/EastAsia/china/UWTshenzhen/dongguan",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/dongguan",
+        "path": "data/EastAsia/china/worldbridge/dongguan",
         "color": "blue"
       }
     ]
@@ -339,12 +339,12 @@
     "links": [
       {
         "type": "유니월드 심천",
-        "path": "data/china/UWTshenzhen/xiamen",
+        "path": "data/EastAsia/china/UWTshenzhen/xiamen",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/xiamen",
+        "path": "data/EastAsia/china/worldbridge/xiamen",
         "color": "blue"
       }
     ]
@@ -356,12 +356,12 @@
     "links": [
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/zhengzhou",
+        "path": "data/EastAsia/china/UWTnanjing/zhengzhou",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/zhengzhou",
+        "path": "data/EastAsia/china/worldbridge/zhengzhou",
         "color": "blue"
       }
     ]
@@ -373,12 +373,12 @@
     "links": [
       {
         "type": "대성물류",
-        "path": "data/china/daesung/qingdao",
+        "path": "data/EastAsia/china/daesung/qingdao",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/qingdao",
+        "path": "data/EastAsia/china/worldbridge/qingdao",
         "color": "blue"
       }
     ]
@@ -390,12 +390,12 @@
     "links": [
       {
         "type": "대성물류",
-        "path": "data/china/daesung/yantai",
+        "path": "data/EastAsia/china/daesung/yantai",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/daesung/yantai",
+        "path": "data/EastAsia/china/daesung/yantai",
         "color": "blue"
       }
     ]
@@ -407,12 +407,12 @@
     "links": [
       {
         "type": "대성물류",
-        "path": "data/china/daesung/jinan",
+        "path": "data/EastAsia/china/daesung/jinan",
         "color": "blue"
       },
         {
         "type": "World Bridge",
-        "path": "data/china/daesung/jinan",
+        "path": "data/EastAsia/china/daesung/jinan",
         "color": "blue"
       }
     ]
@@ -424,12 +424,12 @@
     "links": [
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/chongqing",
+        "path": "data/EastAsia/china/UWTnanjing/chongqing",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/chongqing",
+        "path": "data/EastAsia/china/worldbridge/chongqing",
         "color": "blue"
       }
     ]
@@ -441,12 +441,12 @@
     "links": [
       {
         "type": "유니월드 상해",
-        "path": "data/china/UWTshanghai/jiaxing",
+        "path": "data/EastAsia/china/UWTshanghai/jiaxing",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/jiaxing",
+        "path": "data/EastAsia/china/worldbridge/jiaxing",
         "color": "blue"
       }
     ]
@@ -458,17 +458,17 @@
     "links": [
       {
         "type": "유니월드 상해",
-        "path": "data/china/UWTshanghai/nantong",
+        "path": "data/EastAsia/china/UWTshanghai/nantong",
         "color": "blue"
       },
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/nantong",
+        "path": "data/EastAsia/china/UWTnanjing/nantong",
         "color": "blue"
       },
         {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/nantong",
+        "path": "data/EastAsia/china/worldbridge/nantong",
         "color": "blue"
       }
     ]
@@ -480,7 +480,7 @@
     "links": [
       {
         "type": "유니월드 상해",
-        "path": "data/china/UWTshanghai/changshu",
+        "path": "data/EastAsia/china/UWTshanghai/changshu",
         "color": "blue"
       }
     ]
@@ -492,17 +492,17 @@
     "links": [
       {
         "type": "유니월드 상해",
-        "path": "data/china/UWTshanghai/changzhou",
+        "path": "data/EastAsia/china/UWTshanghai/changzhou",
         "color": "blue"
       },
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/changzhou",
+        "path": "data/EastAsia/china/UWTnanjing/changzhou",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/changzhou",
+        "path": "data/EastAsia/china/worldbridge/changzhou",
         "color": "blue"
       }
     ]
@@ -514,17 +514,17 @@
     "links": [
       {
         "type": "유니월드 상해",
-        "path": "data/china/UWTshanghai/wuxi",
+        "path": "data/EastAsia/china/UWTshanghai/wuxi",
         "color": "blue"
       },
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/wuxi",
+        "path": "data/EastAsia/china/UWTnanjing/wuxi",
         "color": "blue"
       },
         {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/wuxi",
+        "path": "data/EastAsia/china/worldbridge/wuxi",
         "color": "blue"
       }
     ]
@@ -536,7 +536,7 @@
     "links": [
       {
         "type": "유니월드 상해",
-        "path": "data/china/UWTshanghai/huaian",
+        "path": "data/EastAsia/china/UWTshanghai/huaian",
         "color": "blue"
       }
     ]
@@ -548,12 +548,12 @@
     "links": [
       {
         "type": "유니월드 상해",
-        "path": "data/china/UWTshanghai/kunshan",
+        "path": "data/EastAsia/china/UWTshanghai/kunshan",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/kunshan",
+        "path": "data/EastAsia/china/worldbridge/kunshan",
         "color": "blue"
       }
     ]
@@ -565,7 +565,7 @@
     "links": [
       {
         "type": "유니월드 상해",
-        "path": "data/china/UWTshanghai/zhangjiagang",
+        "path": "data/EastAsia/china/UWTshanghai/zhangjiagang",
         "color": "blue"
       }
     ]
@@ -577,17 +577,17 @@
     "links": [
       {
         "type": "유니월드 상해",
-        "path": "data/china/UWTshanghai/ningbo",
+        "path": "data/EastAsia/china/UWTshanghai/ningbo",
         "color": "blue"
       },
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/ningbo",
+        "path": "data/EastAsia/china/UWTnanjing/ningbo",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/ningbo",
+        "path": "data/EastAsia/china/worldbridge/ningbo",
         "color": "blue"
       }
     ]
@@ -599,7 +599,7 @@
     "links": [
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/hefei",
+        "path": "data/EastAsia/china/UWTnanjing/hefei",
         "color": "blue"
       }
     ]
@@ -611,12 +611,12 @@
     "links": [
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/yancheng",
+        "path": "data/EastAsia/china/UWTnanjing/yancheng",
         "color": "blue"
       },
         {
         "type": "World bridge",
-        "path": "data/china/worldbridge/yancheng",
+        "path": "data/EastAsia/china/worldbridge/yancheng",
         "color": "blue"
       }
     ]
@@ -628,7 +628,7 @@
     "links": [
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/huangshan",
+        "path": "data/EastAsia/china/UWTnanjing/huangshan",
         "color": "blue"
       }
     ]
@@ -640,7 +640,7 @@
     "links": [
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/taizhou",
+        "path": "data/EastAsia/china/UWTnanjing/taizhou",
         "color": "blue"
       }
     ]
@@ -652,7 +652,7 @@
     "links": [
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/nanchang",
+        "path": "data/EastAsia/china/UWTnanjing/nanchang",
         "color": "blue"
       }
     ]
@@ -664,12 +664,12 @@
     "links": [
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/changsha",
+        "path": "data/EastAsia/china/UWTnanjing/changsha",
         "color": "blue"
       },
         {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/changsha",
+        "path": "data/EastAsia/china/worldbridge/changsha",
         "color": "blue"
       }
     ]
@@ -681,7 +681,7 @@
     "links": [
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/mianyang",
+        "path": "data/EastAsia/china/UWTnanjing/mianyang",
         "color": "blue"
       }
     ]
@@ -693,7 +693,7 @@
     "links": [
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/kunming",
+        "path": "data/EastAsia/china/UWTnanjing/kunming",
         "color": "blue"
       }
     ]
@@ -705,12 +705,12 @@
     "links": [
       {
         "type": "유니월드 남경",
-        "path": "data/china/UWTnanjing/yanji",
+        "path": "data/EastAsia/china/UWTnanjing/yanji",
         "color": "blue"
       },
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/yanji",
+        "path": "data/EastAsia/china/worldbridge/yanji",
         "color": "blue"
       }
     ]
@@ -722,7 +722,7 @@
     "links": [
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/changchun",
+        "path": "data/EastAsia/china/worldbridge/changchun",
         "color": "blue"
       }
     ]
@@ -734,7 +734,7 @@
     "links": [
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/dandong",
+        "path": "data/EastAsia/china/worldbridge/dandong",
         "color": "blue"
       }
     ]
@@ -746,7 +746,7 @@
     "links": [
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/hunchun",
+        "path": "data/EastAsia/china/worldbridge/hunchun",
         "color": "blue"
       }
     ]
@@ -758,7 +758,7 @@
     "links": [
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/ha'erbin",
+        "path": "data/EastAsia/china/worldbridge/ha'erbin",
         "color": "blue"
       }
     ]
@@ -770,7 +770,7 @@
     "links": [
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/jilin",
+        "path": "data/EastAsia/china/worldbridge/jilin",
         "color": "blue"
       }
     ]
@@ -782,7 +782,7 @@
     "links": [
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/shenyang",
+        "path": "data/EastAsia/china/worldbridge/shenyang",
         "color": "blue"
       }
     ]
@@ -794,7 +794,7 @@
     "links": [
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/langfang",
+        "path": "data/EastAsia/china/worldbridge/langfang",
         "color": "blue"
       }
     ]
@@ -806,7 +806,7 @@
     "links": [
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/baoding",
+        "path": "data/EastAsia/china/worldbridge/baoding",
         "color": "blue"
       }
     ]
@@ -818,7 +818,7 @@
     "links": [
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/rizhao",
+        "path": "data/EastAsia/china/worldbridge/rizhao",
         "color": "blue"
       }
     ]
@@ -830,7 +830,7 @@
     "links": [
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/taian",
+        "path": "data/EastAsia/china/worldbridge/taian",
         "color": "blue"
       }
     ]
@@ -842,7 +842,7 @@
     "links": [
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/huangdao",
+        "path": "data/EastAsia/china/worldbridge/huangdao",
         "color": "blue"
       }
     ]
@@ -854,7 +854,7 @@
     "links": [
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/jiaonan",
+        "path": "data/EastAsia/china/worldbridge/jiaonan",
         "color": "blue"
       }
     ]
@@ -866,7 +866,7 @@
     "links": [
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/jiaozhou",
+        "path": "data/EastAsia/china/worldbridge/jiaozhou",
         "color": "blue"
       }
     ]
@@ -878,7 +878,7 @@
     "links": [
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/xuzhou",
+        "path": "data/EastAsia/china/worldbridge/xuzhou",
         "color": "blue"
       }
     ]
@@ -890,7 +890,7 @@
     "links": [
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/zangjiagang",
+        "path": "data/EastAsia/china/worldbridge/zangjiagang",
         "color": "blue"
       }
     ]
@@ -902,7 +902,7 @@
     "links": [
       {
         "type": "World Bridge",
-        "path": "data/china/worldbridge/zhuhai",
+        "path": "data/EastAsia/china/worldbridge/zhuhai",
         "color": "blue"
       }
     ]
@@ -914,7 +914,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/kobe",
+        "path": "data/EastAsia/japan/trelocation/kobe",
         "color": "blue"
       }
     ]
@@ -926,7 +926,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/tokyo",
+        "path": "data/EastAsia/japan/trelocation/tokyo",
         "color": "blue"
       }
     ]
@@ -938,7 +938,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/tokyo",
+        "path": "data/EastAsia/japan/trelocation/tokyo",
         "color": "blue"
       }
     ]
@@ -950,7 +950,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/kanagawa",
+        "path": "data/EastAsia/japan/trelocation/kanagawa",
         "color": "blue"
       }
     ]
@@ -962,7 +962,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/kanagawa",
+        "path": "data/EastAsia/japan/trelocation/kanagawa",
         "color": "blue"
       }
     ]
@@ -974,7 +974,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/kanagawa",
+        "path": "data/EastAsia/japan/trelocation/kanagawa",
         "color": "blue"
       }
     ]
@@ -986,7 +986,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/yamanashi",
+        "path": "data/EastAsia/japan/trelocation/yamanashi",
         "color": "blue"
       }
     ]
@@ -998,7 +998,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/yamanashi",
+        "path": "data/EastAsia/japan/trelocation/yamanashi",
         "color": "blue"
       }
     ]
@@ -1010,7 +1010,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/yamanashi",
+        "path": "data/EastAsia/japan/trelocation/yamanashi",
         "color": "blue"
       }
     ]
@@ -1022,7 +1022,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/yamanashi",
+        "path": "data/EastAsia/japan/trelocation/yamanashi",
         "color": "blue"
       }
     ]
@@ -1034,7 +1034,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/yamanashi",
+        "path": "data/EastAsia/japan/trelocation/yamanashi",
         "color": "blue"
       }
     ]
@@ -1046,7 +1046,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/nagoya",
+        "path": "data/EastAsia/japan/trelocation/nagoya",
         "color": "blue"
       }
     ]
@@ -1058,7 +1058,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/nagoya",
+        "path": "data/EastAsia/japan/trelocation/nagoya",
         "color": "blue"
       }
     ]
@@ -1070,7 +1070,7 @@
   "links": [
     {
       "type": "T RELOCATION",
-      "path": "data/japan/trelocation/nagoya",
+      "path": "data/EastAsia/japan/trelocation/nagoya",
       "color": "blue"
     }
   ]
@@ -1082,7 +1082,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/nagoya",
+        "path": "data/EastAsia/japan/trelocation/nagoya",
         "color": "blue"
       }
     ]
@@ -1094,7 +1094,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/osaka",
+        "path": "data/EastAsia/japan/trelocation/osaka",
         "color": "blue"
       }
     ]
@@ -1106,7 +1106,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/osaka",
+        "path": "data/EastAsia/japan/trelocation/osaka",
         "color": "blue"
       }
     ]
@@ -1118,7 +1118,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/osaka",
+        "path": "data/EastAsia/japan/trelocation/osaka",
         "color": "blue"
       }
     ]
@@ -1130,7 +1130,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/osaka",
+        "path": "data/EastAsia/japan/trelocation/osaka",
         "color": "blue"
       }
     ]
@@ -1142,7 +1142,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/osaka",
+        "path": "data/EastAsia/japan/trelocation/osaka",
         "color": "blue"
       }
     ]
@@ -1154,7 +1154,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/osaka",
+        "path": "data/EastAsia/japan/trelocation/osaka",
         "color": "blue"
       }
     ]
@@ -1166,7 +1166,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/sendai",
+        "path": "data/EastAsia/japan/trelocation/sendai",
         "color": "blue"
       }
     ]
@@ -1178,7 +1178,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/sendai",
+        "path": "data/EastAsia/japan/trelocation/sendai",
         "color": "blue"
       }
     ]
@@ -1190,7 +1190,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/sendai",
+        "path": "data/EastAsia/japan/trelocation/sendai",
         "color": "blue"
       }
     ]
@@ -1202,7 +1202,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/sendai",
+        "path": "data/EastAsia/japan/trelocation/sendai",
         "color": "blue"
       }
     ]
@@ -1214,7 +1214,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/hirosima",
+        "path": "data/EastAsia/japan/trelocation/hirosima",
         "color": "blue"
       }
     ]
@@ -1226,7 +1226,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/hirosima",
+        "path": "data/EastAsia/japan/trelocation/hirosima",
         "color": "blue"
       }
     ]
@@ -1238,7 +1238,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/hirosima",
+        "path": "data/EastAsia/japan/trelocation/hirosima",
         "color": "blue"
       }
     ]
@@ -1250,7 +1250,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/hirosima",
+        "path": "data/EastAsia/japan/trelocation/hirosima",
         "color": "blue"
       }
     ]
@@ -1262,7 +1262,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/fukuoka",
+        "path": "data/EastAsia/japan/trelocation/fukuoka",
         "color": "blue"
       }
     ]
@@ -1274,7 +1274,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/fukuoka",
+        "path": "data/EastAsia/japan/trelocation/fukuoka",
         "color": "blue"
       }
     ]
@@ -1286,7 +1286,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/oita",
+        "path": "data/EastAsia/japan/trelocation/oita",
         "color": "blue"
       }
     ]
@@ -1298,7 +1298,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/japan/trelocation/oita",
+        "path": "data/EastAsia/japan/trelocation/oita",
         "color": "blue"
       }
     ]
