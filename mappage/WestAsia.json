@@ -6,7 +6,7 @@
     "links": [
       {
         "type": "GSI",
-        "path": "data/uae/gsi/dubai",
+        "path": "data/WestAsia/uae/gsi/dubai",
         "color": "blue"
       }
     ]
@@ -18,7 +18,7 @@
     "links": [
       {
         "type": "GSI",
-        "path": "data/uae/gsi/abudhabi",
+        "path": "data/WestAsia/uae/gsi/abudhabi",
         "color": "blue"
       }
     ]
@@ -30,7 +30,7 @@
     "links": [
       {
         "type": "DTN",
-        "path": "data/turkey/dtn/istanbul",
+        "path": "data/WestAsia/turkey/dtn/istanbul",
         "color": "blue"
       }
     ]
@@ -42,7 +42,7 @@
     "links": [
       {
         "type": "DTN",
-        "path": "data/turkey/dtn/izmir",
+        "path": "data/WestAsia/turkey/dtn/izmir",
         "color": "blue"
       }
     ]
@@ -54,7 +54,7 @@
     "links": [
       {
         "type": "DTN",
-        "path": "data/turkey/dtn/ankara",
+        "path": "data/WestAsia/turkey/dtn/ankara",
         "color": "blue"
       }
     ]
