@@ -13,7 +13,7 @@
   
     "basic-cost-1": {
         "name": "THC",
-        "description": "",
+        "description": "적게 나와도 환급 안 되고 한국에서 선납도 가능함.",
         "NonDiplomat": {
             "20DRY": 425,
             "40HC": 425
