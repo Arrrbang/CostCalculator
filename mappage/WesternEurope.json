@@ -231,5 +231,17 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Brussels(벨기에 전지역), Belgium",
+    "lat": 50.8503,
+    "lng": 4.3517,
+    "links": [
+      {
+        "type": "FARMAX",
+        "path": "data/WesternEurope/belgium/farmax/brussels",
+        "color": "blue"
+      }
+    ]
   }
 ]
