@@ -6,7 +6,7 @@
     "links": [
       {
         "type": "UKO",
-        "path": "data/uk/uko/billingham",
+        "path": "data/NorthernEurope/uk/uko/billingham",
         "color": "blue"
       }
     ]
@@ -18,7 +18,7 @@
     "links": [
       {
         "type": "UKO",
-        "path": "data/uk/uko/cambridge",
+        "path": "data/NorthernEurope/uk/uko/cambridge",
         "color": "blue"
       }
     ]
@@ -30,7 +30,7 @@
     "links": [
       {
         "type": "UKO",
-        "path": "data/uk/uko/glasgow",
+        "path": "data/NorthernEurope/uk/uko/glasgow",
         "color": "blue"
       }
     ]
@@ -42,7 +42,7 @@
     "links": [
       {
         "type": "UKO",
-        "path": "data/uk/uko/london",
+        "path": "data/NorthernEurope/uk/uko/london",
         "color": "blue"
       }
     ]
@@ -54,7 +54,7 @@
     "links": [
       {
         "type": "UKO",
-        "path": "data/uk/uko/manchester",
+        "path": "data/NorthernEurope/uk/uko/manchester",
         "color": "blue"
       }
     ]
@@ -66,7 +66,7 @@
     "links": [
       {
         "type": "UKO",
-        "path": "data/uk/uko/stockport",
+        "path": "data/NorthernEurope/uk/uko/stockport",
         "color": "blue"
       }
     ]
@@ -78,7 +78,7 @@
     "links": [
       {
         "type": "UKO",
-        "path": "data/uk/uko/telford",
+        "path": "data/NorthernEurope/uk/uko/telford",
         "color": "blue"
       }
     ]
