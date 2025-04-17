@@ -56,8 +56,8 @@
     "extra-cost-2": {
         "name": "UPLIGHT PIANO",
         "description": "",
-            "20DRY": 200,
-            "40HC": 200
+            "20DRY": 300,
+            "40HC": 300
         },
     "extra-cost-3": {
         "name": "LONG DISTANCE WALKWAY-DIFFICULT ACCESS",
@@ -83,14 +83,20 @@
             "20DRY": 200,
             "40HC": 300
         },
+    "extra-cost-7": {
+        "name": "WEEKEND CHARGE",
+        "description": "",
+            "20DRY": 200,
+            "40HC": 300
+        },
     "STAIR CHARGE": {
         "description": "고정가격 \n $150/20DR, $250/40HC",
         "CBM단가": 
     },
     "HEAVY ITEM": {
-        "description": "MORE THAN 100KG",
+        "description": "",
         "단위": "ITEM",
-        "단가": 100
+        "단가": 150
     },
     "STORAGE CHARGE": {
         "description": "WAREHOUSE HANDLING IN&OUT : $300/20DR, $500/40HC",
