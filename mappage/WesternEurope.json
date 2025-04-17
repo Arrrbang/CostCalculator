@@ -219,5 +219,17 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Paris, France",
+    "lat": 48.8566,
+    "lng": 2.3522,
+    "links": [
+      {
+        "type": "SITCO",
+        "path": "data/WesternEurope/france/sitco/paris",
+        "color": "blue"
+      }
+    ]
   }
 ]
