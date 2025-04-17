@@ -6,7 +6,7 @@
   "links": [
     {
       "type": "HI-TEK",
-      "path": "data/usa/hitek/gardena",
+      "path": "data/NorthAmerica/usa/hitek/gardena",
       "color": "blue"
     }
   ]
@@ -18,7 +18,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/los_angeles",
+        "path": "data/NorthAmerica/usa/hitek/los_angeles",
         "color": "blue"
       }
     ]
@@ -30,7 +30,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/long_beach",
+        "path": "data/NorthAmerica/usa/hitek/long_beach",
         "color": "blue"
       }
     ]
@@ -42,7 +42,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/torrance",
+        "path": "data/NorthAmerica/usa/hitek/torrance",
         "color": "blue"
       }
     ]
@@ -54,7 +54,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/paramount",
+        "path": "data/NorthAmerica/usa/hitek/paramount",
         "color": "blue"
       }
     ]
@@ -66,7 +66,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/monterey_park",
+        "path": "data/NorthAmerica/usa/hitek/monterey_park",
         "color": "blue"
       }
     ]
@@ -78,7 +78,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/alhambra",
+        "path": "data/NorthAmerica/usa/hitek/alhambra",
         "color": "blue"
       }
     ]
@@ -90,7 +90,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/garden_grove",
+        "path": "data/NorthAmerica/usa/hitek/garden_grove",
         "color": "blue"
       }
     ]
@@ -102,7 +102,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/irvine",
+        "path": "data/NorthAmerica/usa/hitek/irvine",
         "color": "blue"
       }
     ]
@@ -114,7 +114,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/burbank",
+        "path": "data/NorthAmerica/usa/hitek/burbank",
         "color": "blue"
       }
     ]
@@ -126,7 +126,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/glendale",
+        "path": "data/NorthAmerica/usa/hitek/glendale",
         "color": "blue"
       }
     ]
@@ -138,7 +138,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/santa_clarita",
+        "path": "data/NorthAmerica/usa/hitek/santa_clarita",
         "color": "blue"
       }
     ]
@@ -150,7 +150,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/rancho_cucamonga",
+        "path": "data/NorthAmerica/usa/hitek/rancho_cucamonga",
         "color": "blue"
       }
     ]
@@ -162,7 +162,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/thousand_oaks",
+        "path": "data/NorthAmerica/usa/hitek/thousand_oaks",
         "color": "blue"
       }
     ]
@@ -174,7 +174,7 @@
   "links": [
     {
       "type": "HI-TEK",
-      "path": "data/usa/hitek/san_diego",
+      "path": "data/NorthAmerica/usa/hitek/san_diego",
       "color": "blue"
     }
   ]
@@ -186,7 +186,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/chula_vista",
+        "path": "data/NorthAmerica/usa/hitek/chula_vista",
         "color": "blue"
       }
     ]
@@ -198,7 +198,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/el_centro",
+        "path": "data/NorthAmerica/usa/hitek/el_centro",
         "color": "blue"
       }
     ]
@@ -210,7 +210,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/bakersfield",
+        "path": "data/NorthAmerica/usa/hitek/bakersfield",
         "color": "blue"
       }
     ]
@@ -222,7 +222,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/santa_barbara",
+        "path": "data/NorthAmerica/usa/hitek/santa_barbara",
         "color": "blue"
       }
     ]
@@ -234,7 +234,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/fresno",
+        "path": "data/NorthAmerica/usa/hitek/fresno",
         "color": "blue"
       }
     ]
@@ -246,7 +246,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/san_jose",
+        "path": "data/NorthAmerica/usa/hitek/san_jose",
         "color": "blue"
       }
     ]
@@ -258,7 +258,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/san_francisco",
+        "path": "data/NorthAmerica/usa/hitek/san_francisco",
         "color": "blue"
       }
     ]
@@ -270,7 +270,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/sacramento",
+        "path": "data/NorthAmerica/usa/hitek/sacramento",
         "color": "blue"
       }
     ]
@@ -282,7 +282,7 @@
   "links": [
     {
       "type": "HI-TEK",
-      "path": "data/usa/hitek/las_vegas",
+      "path": "data/NorthAmerica/usa/hitek/las_vegas",
       "color": "blue"
     }
   ]
@@ -294,7 +294,7 @@
   "links": [
     {
       "type": "HI-TEK",
-      "path": "data/usa/hitek/reno",
+      "path": "data/NorthAmerica/usa/hitek/reno",
       "color": "blue"
     }
   ]
@@ -306,7 +306,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/phoenix",
+        "path": "data/NorthAmerica/usa/hitek/phoenix",
         "color": "blue"
       }
     ]
@@ -318,7 +318,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/tucson",
+        "path": "data/NorthAmerica/usa/hitek/tucson",
         "color": "blue"
       }
     ]
@@ -330,7 +330,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/portland",
+        "path": "data/NorthAmerica/usa/hitek/portland",
         "color": "blue"
       }
     ]
@@ -342,7 +342,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/la_pine",
+        "path": "data/NorthAmerica/usa/hitek/la_pine",
         "color": "blue"
       }
     ]
@@ -354,7 +354,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/seattle",
+        "path": "data/NorthAmerica/usa/hitek/seattle",
         "color": "blue"
       }
     ]
@@ -366,12 +366,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/omaha",
+        "path": "data/NorthAmerica/usa/hitek/omaha",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/omaha",
+        "path": "data/NorthAmerica/usa/sos/omaha",
         "color": "blue"
       }
     ]
@@ -383,12 +383,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/lincoln",
+        "path": "data/NorthAmerica/usa/hitek/lincoln",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/lincoln",
+        "path": "data/NorthAmerica/usa/sos/lincoln",
         "color": "blue"
       }
     ]
@@ -400,7 +400,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/salt_lake_city",
+        "path": "data/NorthAmerica/usa/hitek/salt_lake_city",
         "color": "blue"
       }
     ]
@@ -412,7 +412,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/denver",
+        "path": "data/NorthAmerica/usa/hitek/denver",
         "color": "blue"
       }
     ]
@@ -424,7 +424,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/albuquerque",
+        "path": "data/NorthAmerica/usa/hitek/albuquerque",
         "color": "blue"
       }
     ]
@@ -436,7 +436,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/el_paso",
+        "path": "data/NorthAmerica/usa/hitek/el_paso",
         "color": "blue"
       }
     ]
@@ -448,12 +448,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/dallas",
+        "path": "data/NorthAmerica/usa/hitek/dallas",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/dallas",
+        "path": "data/NorthAmerica/usa/sos/dallas",
         "color": "blue"
       }
     ]
@@ -465,12 +465,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/houston",
+        "path": "data/NorthAmerica/usa/hitek/houston",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/houston",
+        "path": "data/NorthAmerica/usa/sos/houston",
         "color": "blue"
       }
     ]
@@ -482,12 +482,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/austin",
+        "path": "data/NorthAmerica/usa/hitek/austin",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/austin",
+        "path": "data/NorthAmerica/usa/sos/austin",
         "color": "blue"
       }
     ]
@@ -499,12 +499,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/college_station",
+        "path": "data/NorthAmerica/usa/hitek/college_station",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/college_station",
+        "path": "data/NorthAmerica/usa/sos/college_station",
         "color": "blue"
       }
     ]
@@ -516,7 +516,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/san_antonio",
+        "path": "data/NorthAmerica/usa/hitek/san_antonio",
         "color": "blue"
       }
     ]
@@ -528,7 +528,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/corpus_christi",
+        "path": "data/NorthAmerica/usa/hitek/corpus_christi",
         "color": "blue"
       }
     ]
@@ -540,7 +540,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/mission",
+        "path": "data/NorthAmerica/usa/hitek/mission",
         "color": "blue"
       }
     ]
@@ -552,7 +552,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/oklahoma_city",
+        "path": "data/NorthAmerica/usa/hitek/oklahoma_city",
         "color": "blue"
       }
     ]
@@ -564,12 +564,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/kansas_city",
+        "path": "data/NorthAmerica/usa/hitek/kansas_city",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/kansas_city",
+        "path": "data/NorthAmerica/usa/sos/kansas_city",
         "color": "blue"
       }
     ]
@@ -581,12 +581,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/new_orleans",
+        "path": "data/NorthAmerica/usa/hitek/new_orleans",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/new_orleans",
+        "path": "data/NorthAmerica/usa/sos/new_orleans",
         "color": "blue"
       }
     ]
@@ -598,7 +598,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/baton_rouge",
+        "path": "data/NorthAmerica/usa/hitek/baton_rouge",
         "color": "blue"
       }
     ]
@@ -610,12 +610,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/chicago",
+        "path": "data/NorthAmerica/usa/hitek/chicago",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/chicago",
+        "path": "data/NorthAmerica/usa/sos/chicago",
         "color": "blue"
       }
     ]
@@ -627,7 +627,7 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/champaign",
+        "path": "data/NorthAmerica/usa/sos/champaign",
         "color": "blue"
       }
     ]
@@ -639,17 +639,17 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/louisville",
+        "path": "data/NorthAmerica/usa/hitek/louisville",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/louisville",
+        "path": "data/NorthAmerica/usa/sos/louisville",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/louisville-lexington",
+        "path": "data/NorthAmerica/usa/kt/louisville-lexington",
         "color": "blue"
       }
     ]
@@ -661,17 +661,17 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/lexington",
+        "path": "data/NorthAmerica/usa/hitek/lexington",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/lexington",
+        "path": "data/NorthAmerica/usa/sos/lexington",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/louisville-lexington",
+        "path": "data/NorthAmerica/usa/kt/louisville-lexington",
         "color": "blue"
       }
     ]
@@ -683,12 +683,12 @@
     "links": [
      {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/st_louis",
+        "path": "data/NorthAmerica/usa/hitek/st_louis",
         "color": "blue"
       },
      {
         "type": "SOS",
-        "path": "data/usa/sos/st_louis",
+        "path": "data/NorthAmerica/usa/sos/st_louis",
         "color": "blue"
       }
     ]
@@ -700,12 +700,12 @@
     "links": [
      {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/columbiaMO",
+        "path": "data/NorthAmerica/usa/hitek/columbiaMO",
         "color": "blue"
       },
      {
         "type": "SOS",
-        "path": "data/usa/sos/columbiaMO",
+        "path": "data/NorthAmerica/usa/sos/columbiaMO",
         "color": "blue"
       }
     ]
@@ -717,12 +717,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/lafayetteIN",
+        "path": "data/NorthAmerica/usa/hitek/lafayetteIN",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/lafayetteIN",
+        "path": "data/NorthAmerica/usa/sos/lafayetteIN",
         "color": "blue"
       }
     ]
@@ -734,12 +734,12 @@
     "links": [
      {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/indianapolis",
+        "path": "data/NorthAmerica/usa/hitek/indianapolis",
         "color": "blue"
       },
      {
         "type": "SOS",
-        "path": "data/usa/sos/indianapolis",
+        "path": "data/NorthAmerica/usa/sos/indianapolis",
         "color": "blue"
       }
     ]
@@ -751,12 +751,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/bloomington",
+        "path": "data/NorthAmerica/usa/hitek/bloomington",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/bloomington",
+        "path": "data/NorthAmerica/usa/sos/bloomington",
         "color": "blue"
       }
     ]
@@ -768,17 +768,17 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/cincinnati",
+        "path": "data/NorthAmerica/usa/hitek/cincinnati",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/cincinnati",
+        "path": "data/NorthAmerica/usa/sos/cincinnati",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/cincinnati",
+        "path": "data/NorthAmerica/usa/kt/cincinnati",
         "color": "blue"
       }
     ]
@@ -790,7 +790,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/lafayetteOH",
+        "path": "data/NorthAmerica/usa/hitek/lafayetteOH",
         "color": "blue"
       }
     ]
@@ -802,17 +802,17 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/columbusOH",
+        "path": "data/NorthAmerica/usa/hitek/columbusOH",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/columbusOH",
+        "path": "data/NorthAmerica/usa/sos/columbusOH",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/columbusOH",
+        "path": "data/NorthAmerica/usa/kt/columbusOH",
         "color": "blue"
       }
     ]
@@ -824,7 +824,7 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/dayton",
+        "path": "data/NorthAmerica/usa/sos/dayton",
         "color": "blue"
       }
     ]
@@ -836,7 +836,7 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/cleveland",
+        "path": "data/NorthAmerica/usa/sos/cleveland",
         "color": "blue"
       }
     ]
@@ -848,7 +848,7 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/akron",
+        "path": "data/NorthAmerica/usa/sos/akron",
         "color": "blue"
       }
     ]
@@ -860,12 +860,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/troy",
+        "path": "data/NorthAmerica/usa/hitek/troy",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/troy",
+        "path": "data/NorthAmerica/usa/sos/troy",
         "color": "blue"
       }
     ]
@@ -877,12 +877,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/detroit",
+        "path": "data/NorthAmerica/usa/hitek/detroit",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/detroit",
+        "path": "data/NorthAmerica/usa/sos/detroit",
         "color": "blue"
       }
     ]
@@ -894,12 +894,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/ann_arbor",
+        "path": "data/NorthAmerica/usa/hitek/ann_arbor",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/ann_arbor",
+        "path": "data/NorthAmerica/usa/sos/ann_arbor",
         "color": "blue"
       }
     ]
@@ -911,7 +911,7 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/kalamazoo",
+        "path": "data/NorthAmerica/usa/sos/kalamazoo",
         "color": "blue"
       }
     ]
@@ -923,7 +923,7 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/lansing",
+        "path": "data/NorthAmerica/usa/sos/lansing",
         "color": "blue"
       }
     ]
@@ -935,7 +935,7 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/holland",
+        "path": "data/NorthAmerica/usa/sos/holland",
         "color": "blue"
       }
     ]
@@ -947,7 +947,7 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/midland",
+        "path": "data/NorthAmerica/usa/sos/midland",
         "color": "blue"
       }
     ]
@@ -959,12 +959,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/des_moines",
+        "path": "data/NorthAmerica/usa/hitek/des_moines",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/des_moines",
+        "path": "data/NorthAmerica/usa/sos/des_moines",
         "color": "blue"
       }
     ]
@@ -976,12 +976,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/iowa_city",
+        "path": "data/NorthAmerica/usa/hitek/iowa_city",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/iowa_city",
+        "path": "data/NorthAmerica/usa/sos/iowa_city",
         "color": "blue"
       }
     ]
@@ -993,12 +993,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/milwaukee",
+        "path": "data/NorthAmerica/usa/hitek/milwaukee",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/milwaukee",
+        "path": "data/NorthAmerica/usa/sos/milwaukee",
         "color": "blue"
       }
     ]
@@ -1010,12 +1010,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/madison",
+        "path": "data/NorthAmerica/usa/hitek/madison",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/madison",
+        "path": "data/NorthAmerica/usa/sos/madison",
         "color": "blue"
       }
     ]
@@ -1027,12 +1027,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/st_paul",
+        "path": "data/NorthAmerica/usa/hitek/st_paul",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/st_paul",
+        "path": "data/NorthAmerica/usa/sos/st_paul",
         "color": "blue"
       }
     ]
@@ -1044,12 +1044,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/minneapolis",
+        "path": "data/NorthAmerica/usa/hitek/minneapolis",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/minneapolis",
+        "path": "data/NorthAmerica/usa/sos/minneapolis",
         "color": "blue"
       }
     ]
@@ -1061,7 +1061,7 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/rochester",
+        "path": "data/NorthAmerica/usa/sos/rochester",
         "color": "blue"
       }
     ]
@@ -1073,17 +1073,17 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/atlanta",
+        "path": "data/NorthAmerica/usa/hitek/atlanta",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/atlanta",
+        "path": "data/NorthAmerica/usa/sos/atlanta",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/atlanta",
+        "path": "data/NorthAmerica/usa/kt/atlanta",
         "color": "blue"
       }
     ]
@@ -1095,12 +1095,12 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/lagrange",
+        "path": "data/NorthAmerica/usa/sos/lagrange",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/lagrange-cartersville",
+        "path": "data/NorthAmerica/usa/kt/lagrange-cartersville",
         "color": "blue"
       }
     ]
@@ -1112,7 +1112,7 @@
     "links": [
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/augusta",
+        "path": "data/NorthAmerica/usa/kt/augusta",
         "color": "blue"
       }
     ]
@@ -1124,12 +1124,12 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/cartersville",
+        "path": "data/NorthAmerica/usa/sos/cartersville",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/lagrange-cartersville",
+        "path": "data/NorthAmerica/usa/kt/lagrange-cartersville",
         "color": "blue"
       }
     ]
@@ -1141,7 +1141,7 @@
   "links": [
     {
       "type": "SOS",
-      "path": "data/usa/sos/newnan",
+      "path": "data/NorthAmerica/usa/sos/newnan",
       "color": "blue"
     }
   ]
@@ -1153,12 +1153,12 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/savannah",
+        "path": "data/NorthAmerica/usa/sos/savannah",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/savannah",
+        "path": "data/NorthAmerica/usa/kt/savannah",
         "color": "blue"
       }
     ]
@@ -1170,17 +1170,17 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/montgomery",
+        "path": "data/NorthAmerica/usa/hitek/montgomery",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/montgomery",
+        "path": "data/NorthAmerica/usa/sos/montgomery",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/montgomery",
+        "path": "data/NorthAmerica/usa/kt/montgomery",
         "color": "blue"
       }
     ]
@@ -1192,17 +1192,17 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/auburn",
+        "path": "data/NorthAmerica/usa/hitek/auburn",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/auburn",
+        "path": "data/NorthAmerica/usa/sos/auburn",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/auburn",
+        "path": "data/NorthAmerica/usa/kt/auburn",
         "color": "blue"
       }
     ]
@@ -1214,12 +1214,12 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/birmingham",
+        "path": "data/NorthAmerica/usa/sos/birmingham",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/birmingham",
+        "path": "data/NorthAmerica/usa/kt/birmingham",
         "color": "blue"
       }
     ]
@@ -1231,12 +1231,12 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/huntsville",
+        "path": "data/NorthAmerica/usa/sos/huntsville",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/huntsville",
+        "path": "data/NorthAmerica/usa/kt/huntsville",
         "color": "blue"
       }
     ]
@@ -1248,7 +1248,7 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/mobile",
+        "path": "data/NorthAmerica/usa/sos/mobile",
         "color": "blue"
       }
     ]
@@ -1260,17 +1260,17 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/nashville",
+        "path": "data/NorthAmerica/usa/hitek/nashville",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/nashville",
+        "path": "data/NorthAmerica/usa/sos/nashville",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/nashville-knoxville",
+        "path": "data/NorthAmerica/usa/kt/nashville-knoxville",
         "color": "blue"
       }
     ]
@@ -1282,17 +1282,17 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/knoxville",
+        "path": "data/NorthAmerica/usa/hitek/knoxville",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/knoxville",
+        "path": "data/NorthAmerica/usa/sos/knoxville",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/nashville-knoxville",
+        "path": "data/NorthAmerica/usa/kt/nashville-knoxville",
         "color": "blue"
       }
     ]
@@ -1304,17 +1304,17 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/memphis",
+        "path": "data/NorthAmerica/usa/hitek/memphis",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/memphis",
+        "path": "data/NorthAmerica/usa/sos/memphis",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/memphis",
+        "path": "data/NorthAmerica/usa/kt/memphis",
         "color": "blue"
       }
     ]
@@ -1326,7 +1326,7 @@
     "links": [
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/clarksville",
+        "path": "data/NorthAmerica/usa/kt/clarksville",
         "color": "blue"
       }
     ]
@@ -1338,17 +1338,17 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/jackson",
+        "path": "data/NorthAmerica/usa/hitek/jackson",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/jackson",
+        "path": "data/NorthAmerica/usa/sos/jackson",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/jackson",
+        "path": "data/NorthAmerica/usa/kt/jackson",
         "color": "blue"
       }
     ]
@@ -1360,12 +1360,12 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/biloxi",
+        "path": "data/NorthAmerica/usa/sos/biloxi",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/biloxi",
+        "path": "data/NorthAmerica/usa/kt/biloxi",
         "color": "blue"
       }
     ]
@@ -1377,17 +1377,17 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/littlerock",
+        "path": "data/NorthAmerica/usa/hitek/littlerock",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/littlerock",
+        "path": "data/NorthAmerica/usa/sos/littlerock",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/littlerock",
+        "path": "data/NorthAmerica/usa/kt/littlerock",
         "color": "blue"
       }
     ]
@@ -1399,17 +1399,17 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/columbiaSC",
+        "path": "data/NorthAmerica/usa/hitek/columbiaSC",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/columbiaSC",
+        "path": "data/NorthAmerica/usa/sos/columbiaSC",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/columbiaSC",
+        "path": "data/NorthAmerica/usa/kt/columbiaSC",
         "color": "blue"
       }
     ]
@@ -1421,12 +1421,12 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/charleston",
+        "path": "data/NorthAmerica/usa/sos/charleston",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/charleston",
+        "path": "data/NorthAmerica/usa/kt/charleston",
         "color": "blue"
       }
     ]
@@ -1438,7 +1438,7 @@
     "links": [
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/greenville",
+        "path": "data/NorthAmerica/usa/kt/greenville",
         "color": "blue"
       }
     ]
@@ -1450,17 +1450,17 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/charlotte",
+        "path": "data/NorthAmerica/usa/hitek/charlotte",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/charlotte",
+        "path": "data/NorthAmerica/usa/sos/charlotte",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/charlotte",
+        "path": "data/NorthAmerica/usa/kt/charlotte",
         "color": "blue"
       }
     ]
@@ -1472,12 +1472,12 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/greensboro",
+        "path": "data/NorthAmerica/usa/sos/greensboro",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/greensboro",
+        "path": "data/NorthAmerica/usa/kt/greensboro",
         "color": "blue"
       }
     ]
@@ -1489,12 +1489,12 @@
   "links": [
     {
       "type": "SOS",
-      "path": "data/usa/sos/raleigh",
+      "path": "data/NorthAmerica/usa/sos/raleigh",
       "color": "blue"
     },
     {
       "type": "KT EXPRESS",
-      "path": "data/usa/kt/raleigh",
+      "path": "data/NorthAmerica/usa/kt/raleigh",
       "color": "blue"
     }
   ]
@@ -1506,7 +1506,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/durham",
+        "path": "data/NorthAmerica/usa/hitek/durham",
         "color": "blue"
       }
     ]
@@ -1518,7 +1518,7 @@
   "links": [
     {
       "type": "SOS",
-      "path": "data/usa/sos/fayetteville",
+      "path": "data/NorthAmerica/usa/sos/fayetteville",
       "color": "blue"
     }
   ]
@@ -1530,12 +1530,12 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/wilmington",
+        "path": "data/NorthAmerica/usa/sos/wilmington",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/wilmington",
+        "path": "data/NorthAmerica/usa/kt/wilmington",
         "color": "blue"
       }
     ]
@@ -1547,12 +1547,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/fairfax",
+        "path": "data/NorthAmerica/usa/hitek/fairfax",
         "color": "blue"
       },
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
+        "path": "data/NorthAmerica/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
         "color": "blue"
       }
     ]
@@ -1564,7 +1564,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
+        "path": "data/NorthAmerica/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
         "color": "blue"
       }
     ]
@@ -1576,7 +1576,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
+        "path": "data/NorthAmerica/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
         "color": "blue"
       }
     ]
@@ -1588,12 +1588,12 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
+        "path": "data/NorthAmerica/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/norfolk-arlington",
+        "path": "data/NorthAmerica/usa/kt/norfolk-arlington",
         "color": "blue"
       }
     ]
@@ -1605,7 +1605,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
+        "path": "data/NorthAmerica/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
         "color": "blue"
       }
     ]
@@ -1617,7 +1617,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
+        "path": "data/NorthAmerica/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
         "color": "blue"
       }
     ]
@@ -1629,7 +1629,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
+        "path": "data/NorthAmerica/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
         "color": "blue"
       }
     ]
@@ -1641,7 +1641,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
+        "path": "data/NorthAmerica/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
         "color": "blue"
       }
     ]
@@ -1653,7 +1653,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
+        "path": "data/NorthAmerica/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
         "color": "blue"
       }
     ]
@@ -1665,7 +1665,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/manassas",
+        "path": "data/NorthAmerica/usa/keyword/manassas",
         "color": "blue"
       }
     ]
@@ -1677,7 +1677,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/callao",
+        "path": "data/NorthAmerica/usa/keyword/callao",
         "color": "blue"
       }
     ]
@@ -1689,7 +1689,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       }
     ]
@@ -1701,7 +1701,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       }
     ]
@@ -1713,7 +1713,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       }
     ]
@@ -1725,7 +1725,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       }
     ]
@@ -1737,7 +1737,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       }
     ]
@@ -1749,7 +1749,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       }
     ]
@@ -1761,7 +1761,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       }
     ]
@@ -1773,7 +1773,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       }
     ]
@@ -1785,7 +1785,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       }
     ]
@@ -1797,7 +1797,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       }
     ]
@@ -1809,12 +1809,12 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/norfolk-arlington",
+        "path": "data/NorthAmerica/usa/kt/norfolk-arlington",
         "color": "blue"
       }
     ]
@@ -1826,7 +1826,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       }
     ]
@@ -1838,7 +1838,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       }
     ]
@@ -1850,12 +1850,12 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/richmond",
+        "path": "data/NorthAmerica/usa/kt/richmond",
         "color": "blue"
       }
     ]
@@ -1867,7 +1867,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       }
     ]
@@ -1879,7 +1879,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       }
     ]
@@ -1891,7 +1891,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       }
     ]
@@ -1903,7 +1903,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
+        "path": "data/NorthAmerica/usa/keyword/alberta-amherst-bowling_green-charlottesville-fredericksburg-hanover-harrisonburg-la_crosse-lawrenceville-lynchburg-norfolk-petersburg-portsmouth-richmond-rockville-stafford-victoria-virginia_beach",
         "color": "blue"
       }
     ]
@@ -1915,7 +1915,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/austinville-blackridge-bristol-martinsville",
+        "path": "data/NorthAmerica/usa/keyword/austinville-blackridge-bristol-martinsville",
         "color": "blue"
       }
     ]
@@ -1927,7 +1927,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/austinville-blackridge-bristol-martinsville",
+        "path": "data/NorthAmerica/usa/keyword/austinville-blackridge-bristol-martinsville",
         "color": "blue"
       }
     ]
@@ -1939,7 +1939,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/austinville-blackridge-bristol-martinsville",
+        "path": "data/NorthAmerica/usa/keyword/austinville-blackridge-bristol-martinsville",
         "color": "blue"
       }
     ]
@@ -1951,7 +1951,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/austinville-blackridge-bristol-martinsville",
+        "path": "data/NorthAmerica/usa/keyword/austinville-blackridge-bristol-martinsville",
         "color": "blue"
       }
     ]
@@ -1963,7 +1963,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/newark",
+        "path": "data/NorthAmerica/usa/hitek/newark",
         "color": "blue"
       }
     ]
@@ -1975,7 +1975,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -1987,7 +1987,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -1999,7 +1999,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2011,7 +2011,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2023,7 +2023,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2035,7 +2035,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2047,7 +2047,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2059,7 +2059,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2071,7 +2071,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2083,7 +2083,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2095,7 +2095,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2107,7 +2107,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2119,7 +2119,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2131,7 +2131,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2143,7 +2143,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2155,7 +2155,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2167,7 +2167,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2179,7 +2179,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2191,7 +2191,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2203,7 +2203,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2215,7 +2215,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2227,7 +2227,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2239,7 +2239,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2251,7 +2251,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2263,7 +2263,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2275,7 +2275,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
+        "path": "data/NorthAmerica/usa/keyword/cliffside_park-closter-cranford-dover-edgewater-elizabeth-englewood-fort_lee-hackensack-jersey_city-kearny-linden-livingston-lyndhurst-madison-newark-orange-palisades_park-paramus-paterson-plainfield-ridgefield-ridgewood-secaucus-tenafly-wayne",
         "color": "blue"
       }
     ]
@@ -2287,7 +2287,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bloomfield",
+        "path": "data/NorthAmerica/usa/keyword/bloomfield",
         "color": "blue"
       }
     ]
@@ -2299,7 +2299,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/clinton-cranbury-keyport-morristown-new_brunswick-succasunna-trenton",
+        "path": "data/NorthAmerica/usa/keyword/clinton-cranbury-keyport-morristown-new_brunswick-succasunna-trenton",
         "color": "blue"
       }
     ]
@@ -2311,7 +2311,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/clinton-cranbury-keyport-morristown-new_brunswick-succasunna-trenton",
+        "path": "data/NorthAmerica/usa/keyword/clinton-cranbury-keyport-morristown-new_brunswick-succasunna-trenton",
         "color": "blue"
       }
     ]
@@ -2323,7 +2323,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/clinton-cranbury-keyport-morristown-new_brunswick-succasunna-trenton",
+        "path": "data/NorthAmerica/usa/keyword/clinton-cranbury-keyport-morristown-new_brunswick-succasunna-trenton",
         "color": "blue"
       }
     ]
@@ -2335,7 +2335,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/clinton-cranbury-keyport-morristown-new_brunswick-succasunna-trenton",
+        "path": "data/NorthAmerica/usa/keyword/clinton-cranbury-keyport-morristown-new_brunswick-succasunna-trenton",
         "color": "blue"
       }
     ]
@@ -2347,7 +2347,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/clinton-cranbury-keyport-morristown-new_brunswick-succasunna-trenton",
+        "path": "data/NorthAmerica/usa/keyword/clinton-cranbury-keyport-morristown-new_brunswick-succasunna-trenton",
         "color": "blue"
       }
     ]
@@ -2359,7 +2359,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/clinton-cranbury-keyport-morristown-new_brunswick-succasunna-trenton",
+        "path": "data/NorthAmerica/usa/keyword/clinton-cranbury-keyport-morristown-new_brunswick-succasunna-trenton",
         "color": "blue"
       }
     ]
@@ -2371,7 +2371,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/clinton-cranbury-keyport-morristown-new_brunswick-succasunna-trenton",
+        "path": "data/NorthAmerica/usa/keyword/clinton-cranbury-keyport-morristown-new_brunswick-succasunna-trenton",
         "color": "blue"
       }
     ]
@@ -2383,7 +2383,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/asbury_park-atlantic_city-lakewood-lawrenceville-point_pleasant-princeton",
+        "path": "data/NorthAmerica/usa/keyword/asbury_park-atlantic_city-lakewood-lawrenceville-point_pleasant-princeton",
         "color": "blue"
       }
     ]
@@ -2395,7 +2395,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/asbury_park-atlantic_city-lakewood-lawrenceville-point_pleasant-princeton",
+        "path": "data/NorthAmerica/usa/keyword/asbury_park-atlantic_city-lakewood-lawrenceville-point_pleasant-princeton",
         "color": "blue"
       }
     ]
@@ -2407,7 +2407,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/asbury_park-atlantic_city-lakewood-lawrenceville-point_pleasant-princeton",
+        "path": "data/NorthAmerica/usa/keyword/asbury_park-atlantic_city-lakewood-lawrenceville-point_pleasant-princeton",
         "color": "blue"
       }
     ]
@@ -2419,7 +2419,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/asbury_park-atlantic_city-lakewood-lawrenceville-point_pleasant-princeton",
+        "path": "data/NorthAmerica/usa/keyword/asbury_park-atlantic_city-lakewood-lawrenceville-point_pleasant-princeton",
         "color": "blue"
       }
     ]
@@ -2431,7 +2431,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/asbury_park-atlantic_city-lakewood-lawrenceville-point_pleasant-princeton",
+        "path": "data/NorthAmerica/usa/keyword/asbury_park-atlantic_city-lakewood-lawrenceville-point_pleasant-princeton",
         "color": "blue"
       }
     ]
@@ -2443,7 +2443,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/asbury_park-atlantic_city-lakewood-lawrenceville-point_pleasant-princeton",
+        "path": "data/NorthAmerica/usa/keyword/asbury_park-atlantic_city-lakewood-lawrenceville-point_pleasant-princeton",
         "color": "blue"
       }
     ]
@@ -2455,7 +2455,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/camden",
+        "path": "data/NorthAmerica/usa/keyword/camden",
         "color": "blue"
       }
     ]
@@ -2467,7 +2467,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/waterford",
+        "path": "data/NorthAmerica/usa/keyword/waterford",
         "color": "blue"
       }
     ]
@@ -2479,7 +2479,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/vineland",
+        "path": "data/NorthAmerica/usa/keyword/vineland",
         "color": "blue"
       }
     ]
@@ -2491,7 +2491,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/new_york",
+        "path": "data/NorthAmerica/usa/hitek/new_york",
         "color": "blue"
       }
     ]
@@ -2503,7 +2503,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
+        "path": "data/NorthAmerica/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
         "color": "blue"
       }
     ]
@@ -2515,7 +2515,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
+        "path": "data/NorthAmerica/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
         "color": "blue"
       }
     ]
@@ -2527,7 +2527,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
+        "path": "data/NorthAmerica/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
         "color": "blue"
       }
     ]
@@ -2539,7 +2539,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
+        "path": "data/NorthAmerica/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
         "color": "blue"
       }
     ]
@@ -2551,7 +2551,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
+        "path": "data/NorthAmerica/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
         "color": "blue"
       }
     ]
@@ -2563,7 +2563,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
+        "path": "data/NorthAmerica/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
         "color": "blue"
       }
     ]
@@ -2575,7 +2575,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
+        "path": "data/NorthAmerica/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
         "color": "blue"
       }
     ]
@@ -2587,7 +2587,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
+        "path": "data/NorthAmerica/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
         "color": "blue"
       }
     ]
@@ -2599,7 +2599,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
+        "path": "data/NorthAmerica/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
         "color": "blue"
       }
     ]
@@ -2611,7 +2611,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
+        "path": "data/NorthAmerica/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
         "color": "blue"
       }
     ]
@@ -2623,7 +2623,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
+        "path": "data/NorthAmerica/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
         "color": "blue"
       }
     ]
@@ -2635,7 +2635,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
+        "path": "data/NorthAmerica/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
         "color": "blue"
       }
     ]
@@ -2647,7 +2647,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
+        "path": "data/NorthAmerica/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
         "color": "blue"
       }
     ]
@@ -2659,7 +2659,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
+        "path": "data/NorthAmerica/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
         "color": "blue"
       }
     ]
@@ -2671,7 +2671,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
+        "path": "data/NorthAmerica/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
         "color": "blue"
       }
     ]
@@ -2683,7 +2683,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
+        "path": "data/NorthAmerica/usa/keyword/albertson-bayside-dobbs_ferry-elmont-floral_park-franklin_sq-garden_city-great_neck-harrison-oceanside-plainview-port_washington-staten_island-tarrytown-white_plains-yonkers",
         "color": "blue"
       }
     ]
@@ -2695,7 +2695,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/tappan",
+        "path": "data/NorthAmerica/usa/keyword/tappan",
         "color": "blue"
       }
     ]
@@ -2707,7 +2707,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
+        "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
         "color": "blue"
       }
     ]
@@ -2719,7 +2719,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
+        "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
         "color": "blue"
       }
     ]
@@ -2731,7 +2731,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
+        "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
         "color": "blue"
       }
     ]
@@ -2743,7 +2743,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
+        "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
         "color": "blue"
       }
     ]
@@ -2755,7 +2755,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
+        "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
         "color": "blue"
       }
     ]
@@ -2767,7 +2767,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
+        "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
         "color": "blue"
       }
     ]
@@ -2779,7 +2779,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
+        "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
         "color": "blue"
       }
     ]
@@ -2791,7 +2791,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
+        "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
         "color": "blue"
       }
     ]
@@ -2803,7 +2803,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
+        "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
         "color": "blue"
       }
     ]
@@ -2815,7 +2815,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bay_shore-brentwood-lindenhurst",
+        "path": "data/NorthAmerica/usa/keyword/bay_shore-brentwood-lindenhurst",
         "color": "blue"
       }
     ]
@@ -2827,7 +2827,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bay_shore-brentwood-lindenhurst",
+        "path": "data/NorthAmerica/usa/keyword/bay_shore-brentwood-lindenhurst",
         "color": "blue"
       }
     ]
@@ -2839,7 +2839,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bay_shore-brentwood-lindenhurst",
+        "path": "data/NorthAmerica/usa/keyword/bay_shore-brentwood-lindenhurst",
         "color": "blue"
       }
     ]
@@ -2851,7 +2851,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/long_island_city-manhattan",
+        "path": "data/NorthAmerica/usa/keyword/long_island_city-manhattan",
         "color": "blue"
       }
     ]
@@ -2863,7 +2863,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/long_island_city-manhattan",
+        "path": "data/NorthAmerica/usa/keyword/long_island_city-manhattan",
         "color": "blue"
       }
     ]
@@ -2875,7 +2875,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
+        "path": "data/NorthAmerica/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
         "color": "blue"
       }
     ]
@@ -2887,7 +2887,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
+        "path": "data/NorthAmerica/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
         "color": "blue"
       }
     ]
@@ -2899,7 +2899,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
+        "path": "data/NorthAmerica/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
         "color": "blue"
       }
     ]
@@ -2911,7 +2911,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
+        "path": "data/NorthAmerica/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
         "color": "blue"
       }
     ]
@@ -2923,7 +2923,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
+        "path": "data/NorthAmerica/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
         "color": "blue"
       }
     ]
@@ -2935,7 +2935,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
+        "path": "data/NorthAmerica/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
         "color": "blue"
       }
     ]
@@ -2947,7 +2947,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/carmel-middletown-port_jefferson-poughkeepsie",
+        "path": "data/NorthAmerica/usa/keyword/carmel-middletown-port_jefferson-poughkeepsie",
         "color": "blue"
       }
     ]
@@ -2959,7 +2959,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/carmel-middletown-port_jefferson-poughkeepsie",
+        "path": "data/NorthAmerica/usa/keyword/carmel-middletown-port_jefferson-poughkeepsie",
         "color": "blue"
       }
     ]
@@ -2971,7 +2971,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/carmel-middletown-port_jefferson-poughkeepsie",
+        "path": "data/NorthAmerica/usa/keyword/carmel-middletown-port_jefferson-poughkeepsie",
         "color": "blue"
       }
     ]
@@ -2983,7 +2983,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/carmel-middletown-port_jefferson-poughkeepsie",
+        "path": "data/NorthAmerica/usa/keyword/carmel-middletown-port_jefferson-poughkeepsie",
         "color": "blue"
       }
     ]
@@ -2995,7 +2995,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/kingston",
+        "path": "data/NorthAmerica/usa/keyword/kingston",
         "color": "blue"
       }
     ]
@@ -3007,7 +3007,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/fishers_island",
+        "path": "data/NorthAmerica/usa/keyword/fishers_island",
         "color": "blue"
       }
     ]
@@ -3019,7 +3019,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/albany",
+        "path": "data/NorthAmerica/usa/keyword/albany",
         "color": "blue"
       }
     ]
@@ -3031,7 +3031,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
+        "path": "data/NorthAmerica/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
         "color": "blue"
       }
     ]
@@ -3043,7 +3043,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
+        "path": "data/NorthAmerica/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
         "color": "blue"
       }
     ]
@@ -3055,7 +3055,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
+        "path": "data/NorthAmerica/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
         "color": "blue"
       }
     ]
@@ -3067,7 +3067,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
+        "path": "data/NorthAmerica/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
         "color": "blue"
       }
     ]
@@ -3079,7 +3079,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
+        "path": "data/NorthAmerica/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
         "color": "blue"
       }
     ]
@@ -3091,7 +3091,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
+        "path": "data/NorthAmerica/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
         "color": "blue"
       }
     ]
@@ -3103,7 +3103,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
+        "path": "data/NorthAmerica/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
         "color": "blue"
       }
     ]
@@ -3115,7 +3115,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
+        "path": "data/NorthAmerica/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
         "color": "blue"
       }
     ]
@@ -3127,7 +3127,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/glens_falls",
+        "path": "data/NorthAmerica/usa/keyword/glens_falls",
         "color": "blue"
       }
     ]
@@ -3139,7 +3139,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/belmont",
+        "path": "data/NorthAmerica/usa/keyword/belmont",
         "color": "blue"
       }
     ]
@@ -3151,7 +3151,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/rome",
+        "path": "data/NorthAmerica/usa/keyword/rome",
         "color": "blue"
       }
     ]
@@ -3163,7 +3163,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/rochester",
+        "path": "data/NorthAmerica/usa/keyword/rochester",
         "color": "blue"
       }
     ]
@@ -3175,7 +3175,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/salamanca",
+        "path": "data/NorthAmerica/usa/keyword/salamanca",
         "color": "blue"
       }
     ]
@@ -3187,7 +3187,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/watertown",
+        "path": "data/NorthAmerica/usa/keyword/watertown",
         "color": "blue"
       }
     ]
@@ -3199,7 +3199,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
+        "path": "data/NorthAmerica/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
         "color": "blue"
       }
     ]
@@ -3211,7 +3211,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
+        "path": "data/NorthAmerica/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
         "color": "blue"
       }
     ]
@@ -3223,7 +3223,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
+        "path": "data/NorthAmerica/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
         "color": "blue"
       }
     ]
@@ -3235,7 +3235,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
+        "path": "data/NorthAmerica/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
         "color": "blue"
       }
     ]
@@ -3247,7 +3247,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
+        "path": "data/NorthAmerica/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
         "color": "blue"
       }
     ]
@@ -3259,7 +3259,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
+        "path": "data/NorthAmerica/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
         "color": "blue"
       }
     ]
@@ -3271,12 +3271,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/hartford",
+        "path": "data/NorthAmerica/usa/hitek/hartford",
         "color": "blue"
       },
       {
         "type": "keyword",
-        "path": "data/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
+        "path": "data/NorthAmerica/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
         "color": "blue"
       }
     ]
@@ -3288,7 +3288,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/greenwich",
+        "path": "data/NorthAmerica/usa/keyword/greenwich",
         "color": "blue"
       }
     ]
@@ -3300,7 +3300,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/stamford",
+        "path": "data/NorthAmerica/usa/keyword/stamford",
         "color": "blue"
       }
     ]
@@ -3312,7 +3312,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
+        "path": "data/NorthAmerica/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
         "color": "blue"
       }
     ]
@@ -3324,7 +3324,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
+        "path": "data/NorthAmerica/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
         "color": "blue"
       }
     ]
@@ -3336,7 +3336,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
+        "path": "data/NorthAmerica/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
         "color": "blue"
       }
     ]
@@ -3348,7 +3348,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
+        "path": "data/NorthAmerica/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
         "color": "blue"
       }
     ]
@@ -3360,7 +3360,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
+        "path": "data/NorthAmerica/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
         "color": "blue"
       }
     ]
@@ -3372,7 +3372,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
+        "path": "data/NorthAmerica/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
         "color": "blue"
       }
     ]
@@ -3384,7 +3384,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
+        "path": "data/NorthAmerica/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
         "color": "blue"
       }
     ]
@@ -3396,7 +3396,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
+        "path": "data/NorthAmerica/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
         "color": "blue"
       }
     ]
@@ -3408,7 +3408,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
+        "path": "data/NorthAmerica/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
         "color": "blue"
       }
     ]
@@ -3420,7 +3420,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
+        "path": "data/NorthAmerica/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
         "color": "blue"
       }
     ]
@@ -3432,7 +3432,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
+        "path": "data/NorthAmerica/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
         "color": "blue"
       }
     ]
@@ -3444,7 +3444,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/norwich",
+        "path": "data/NorthAmerica/usa/keyword/norwich",
         "color": "blue"
       }
     ]
@@ -3456,7 +3456,7 @@
   "links": [
     {
       "type": "keyword",
-      "path": "data/usa/keyword/washington",
+      "path": "data/NorthAmerica/usa/keyword/washington",
       "color": "blue"
     }
   ]
@@ -3468,7 +3468,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/newark",
+        "path": "data/NorthAmerica/usa/keyword/newark",
         "color": "blue"
       }
     ]
@@ -3480,7 +3480,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/millsboro",
+        "path": "data/NorthAmerica/usa/keyword/millsboro",
         "color": "blue"
       }
     ]
@@ -3492,7 +3492,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/springfield",
+        "path": "data/NorthAmerica/usa/keyword/springfield",
         "color": "blue"
       }
     ]
@@ -3504,7 +3504,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/amherst-northampton",
+        "path": "data/NorthAmerica/usa/keyword/amherst-northampton",
         "color": "blue"
       }
     ]
@@ -3516,7 +3516,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/amherst-northampton",
+        "path": "data/NorthAmerica/usa/keyword/amherst-northampton",
         "color": "blue"
       }
     ]
@@ -3528,7 +3528,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/fall_river-leominster-taunton-worcester",
+        "path": "data/NorthAmerica/usa/keyword/fall_river-leominster-taunton-worcester",
         "color": "blue"
       }
     ]
@@ -3540,7 +3540,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/fall_river-leominster-taunton-worcester",
+        "path": "data/NorthAmerica/usa/keyword/fall_river-leominster-taunton-worcester",
         "color": "blue"
       }
     ]
@@ -3552,7 +3552,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/fall_river-leominster-taunton-worcester",
+        "path": "data/NorthAmerica/usa/keyword/fall_river-leominster-taunton-worcester",
         "color": "blue"
       }
     ]
@@ -3564,7 +3564,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/fall_river-leominster-taunton-worcester",
+        "path": "data/NorthAmerica/usa/keyword/fall_river-leominster-taunton-worcester",
         "color": "blue"
       }
     ]
@@ -3576,7 +3576,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "path": "data/NorthAmerica/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
         "color": "blue"
       }
     ]
@@ -3588,7 +3588,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "path": "data/NorthAmerica/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
         "color": "blue"
       }
     ]
@@ -3600,7 +3600,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "path": "data/NorthAmerica/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
         "color": "blue"
       }
     ]
@@ -3612,7 +3612,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "path": "data/NorthAmerica/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
         "color": "blue"
       }
     ]
@@ -3624,7 +3624,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "path": "data/NorthAmerica/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
         "color": "blue"
       }
     ]
@@ -3636,7 +3636,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "path": "data/NorthAmerica/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
         "color": "blue"
       }
     ]
@@ -3648,7 +3648,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "path": "data/NorthAmerica/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
         "color": "blue"
       }
     ]
@@ -3660,7 +3660,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "path": "data/NorthAmerica/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
         "color": "blue"
       }
     ]
@@ -3672,7 +3672,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "path": "data/NorthAmerica/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
         "color": "blue"
       }
     ]
@@ -3684,7 +3684,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "path": "data/NorthAmerica/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
         "color": "blue"
       }
     ]
@@ -3696,7 +3696,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
+        "path": "data/NorthAmerica/usa/keyword/arlington-boston-brockton-cambridge-everett-lexington-lowell-lynn-medford-new_bedford-newton",
         "color": "blue"
       }
     ]
@@ -3708,7 +3708,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/lawrence-quincy-salem",
+        "path": "data/NorthAmerica/usa/keyword/lawrence-quincy-salem",
         "color": "blue"
       }
     ]
@@ -3720,7 +3720,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/lawrence-quincy-salem",
+        "path": "data/NorthAmerica/usa/keyword/lawrence-quincy-salem",
         "color": "blue"
       }
     ]
@@ -3732,7 +3732,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/lawrence-quincy-salem",
+        "path": "data/NorthAmerica/usa/keyword/lawrence-quincy-salem",
         "color": "blue"
       }
     ]
@@ -3744,7 +3744,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/edgewood",
+        "path": "data/NorthAmerica/usa/keyword/edgewood",
         "color": "blue"
       }
     ]
@@ -3756,7 +3756,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/baltimore-ellicott_city",
+        "path": "data/NorthAmerica/usa/keyword/baltimore-ellicott_city",
         "color": "blue"
       }
     ]
@@ -3768,7 +3768,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/baltimore-ellicott_city",
+        "path": "data/NorthAmerica/usa/keyword/baltimore-ellicott_city",
         "color": "blue"
       }
     ]
@@ -3780,7 +3780,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/annapolis-college_park-columbia-silver_spring-westminster",
+        "path": "data/NorthAmerica/usa/keyword/annapolis-college_park-columbia-silver_spring-westminster",
         "color": "blue"
       }
     ]
@@ -3792,7 +3792,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/annapolis-college_park-columbia-silver_spring-westminster",
+        "path": "data/NorthAmerica/usa/keyword/annapolis-college_park-columbia-silver_spring-westminster",
         "color": "blue"
       }
     ]
@@ -3804,7 +3804,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/annapolis-college_park-columbia-silver_spring-westminster",
+        "path": "data/NorthAmerica/usa/keyword/annapolis-college_park-columbia-silver_spring-westminster",
         "color": "blue"
       }
     ]
@@ -3816,7 +3816,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/annapolis-college_park-columbia-silver_spring-westminster",
+        "path": "data/NorthAmerica/usa/keyword/annapolis-college_park-columbia-silver_spring-westminster",
         "color": "blue"
       }
     ]
@@ -3828,7 +3828,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/annapolis-college_park-columbia-silver_spring-westminster",
+        "path": "data/NorthAmerica/usa/keyword/annapolis-college_park-columbia-silver_spring-westminster",
         "color": "blue"
       }
     ]
@@ -3840,7 +3840,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
+        "path": "data/NorthAmerica/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
         "color": "blue"
       }
     ]
@@ -3852,7 +3852,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
+        "path": "data/NorthAmerica/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
         "color": "blue"
       }
     ]
@@ -3864,7 +3864,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
+        "path": "data/NorthAmerica/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
         "color": "blue"
       }
     ]
@@ -3876,7 +3876,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
+        "path": "data/NorthAmerica/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
         "color": "blue"
       }
     ]
@@ -3888,7 +3888,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
+        "path": "data/NorthAmerica/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
         "color": "blue"
       }
     ]
@@ -3900,7 +3900,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
+        "path": "data/NorthAmerica/usa/keyword/berlin-frederick-gaithersburg-potomac-rockville-salisbury",
         "color": "blue"
       }
     ]
@@ -3912,7 +3912,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/brunswick",
+        "path": "data/NorthAmerica/usa/keyword/brunswick",
         "color": "blue"
       }
     ]
@@ -3924,7 +3924,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/clarksburg-lexington_park",
+        "path": "data/NorthAmerica/usa/keyword/clarksburg-lexington_park",
         "color": "blue"
       }
     ]
@@ -3936,7 +3936,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/clarksburg-lexington_park",
+        "path": "data/NorthAmerica/usa/keyword/clarksburg-lexington_park",
         "color": "blue"
       }
     ]
@@ -3948,7 +3948,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/portland-auburn",
+        "path": "data/NorthAmerica/usa/keyword/portland-auburn",
         "color": "blue"
       }
     ]
@@ -3960,7 +3960,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/portland-auburn",
+        "path": "data/NorthAmerica/usa/keyword/portland-auburn",
         "color": "blue"
       }
     ]
@@ -3972,7 +3972,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/keene",
+        "path": "data/NorthAmerica/usa/keyword/keene",
         "color": "blue"
       }
     ]
@@ -3984,7 +3984,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/claremont",
+        "path": "data/NorthAmerica/usa/keyword/claremont",
         "color": "blue"
       }
     ]
@@ -3996,7 +3996,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/manchester-nashua",
+        "path": "data/NorthAmerica/usa/keyword/manchester-nashua",
         "color": "blue"
       }
     ]
@@ -4008,7 +4008,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/manchester-nashua",
+        "path": "data/NorthAmerica/usa/keyword/manchester-nashua",
         "color": "blue"
       }
     ]
@@ -4020,7 +4020,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/concord-dover-lebanon",
+        "path": "data/NorthAmerica/usa/keyword/concord-dover-lebanon",
         "color": "blue"
       }
     ]
@@ -4032,7 +4032,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/concord-dover-lebanon",
+        "path": "data/NorthAmerica/usa/keyword/concord-dover-lebanon",
         "color": "blue"
       }
     ]
@@ -4044,7 +4044,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/concord-dover-lebanon",
+        "path": "data/NorthAmerica/usa/keyword/concord-dover-lebanon",
         "color": "blue"
       }
     ]
@@ -4056,7 +4056,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/laconia-rochester",
+        "path": "data/NorthAmerica/usa/keyword/laconia-rochester",
         "color": "blue"
       }
     ]
@@ -4068,7 +4068,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/laconia-rochester",
+        "path": "data/NorthAmerica/usa/keyword/laconia-rochester",
         "color": "blue"
       }
     ]
@@ -4081,7 +4081,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/tallahassee",
+        "path": "data/NorthAmerica/usa/hitek/tallahassee",
         "color": "blue"
       }
     ]
@@ -4093,7 +4093,7 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/pensacola",
+        "path": "data/NorthAmerica/usa/hitek/pensacola",
         "color": "blue"
       }
     ]
@@ -4105,12 +4105,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/gainesville",
+        "path": "data/NorthAmerica/usa/hitek/gainesville",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/gainesville",
+        "path": "data/NorthAmerica/usa/sos/gainesville",
         "color": "blue"
       }
     ]
@@ -4122,17 +4122,17 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/tampa",
+        "path": "data/NorthAmerica/usa/hitek/tampa",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/tampa",
+        "path": "data/NorthAmerica/usa/sos/tampa",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/tampa-orlando",
+        "path": "data/NorthAmerica/usa/kt/tampa-orlando",
         "color": "blue"
       }
     ]
@@ -4144,17 +4144,17 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/orlando",
+        "path": "data/NorthAmerica/usa/hitek/orlando",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/orlando",
+        "path": "data/NorthAmerica/usa/sos/orlando",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/tampa-orlando",
+        "path": "data/NorthAmerica/usa/kt/tampa-orlando",
         "color": "blue"
       }
     ]
@@ -4166,17 +4166,17 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/usa/hitek/miami",
+        "path": "data/NorthAmerica/usa/hitek/miami",
         "color": "blue"
       },
       {
         "type": "SOS",
-        "path": "data/usa/sos/miami",
+        "path": "data/NorthAmerica/usa/sos/miami",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/miami",
+        "path": "data/NorthAmerica/usa/kt/miami",
         "color": "blue"
       }
     ]
@@ -4188,12 +4188,12 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/jacksonville",
+        "path": "data/NorthAmerica/usa/sos/jacksonville",
         "color": "blue"
       },
       {
         "type": "KT EXPRESS",
-        "path": "data/usa/kt/jacksonville",
+        "path": "data/NorthAmerica/usa/kt/jacksonville",
         "color": "blue"
       }
     ]
@@ -4205,12 +4205,12 @@
     "links": [
       {
         "type": "SOS",
-        "path": "data/usa/sos/pittsburgh",
+        "path": "data/NorthAmerica/usa/sos/pittsburgh",
         "color": "blue"
       },
       {
         "type": "keyword",
-        "path": "data/usa/keyword/pittsburgh-wilkinsburg",
+        "path": "data/NorthAmerica/usa/keyword/pittsburgh-wilkinsburg",
         "color": "blue"
       }
     ]
@@ -4222,7 +4222,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/pittsburgh-wilkinsburg",
+        "path": "data/NorthAmerica/usa/keyword/pittsburgh-wilkinsburg",
         "color": "blue"
       }
     ]
@@ -4234,7 +4234,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/new_hope",
+        "path": "data/NorthAmerica/usa/keyword/new_hope",
         "color": "blue"
       }
     ]
@@ -4246,7 +4246,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
+        "path": "data/NorthAmerica/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
         "color": "blue"
       }
     ]
@@ -4258,7 +4258,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
+        "path": "data/NorthAmerica/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
         "color": "blue"
       }
     ]
@@ -4270,7 +4270,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
+        "path": "data/NorthAmerica/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
         "color": "blue"
       }
     ]
@@ -4282,7 +4282,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
+        "path": "data/NorthAmerica/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
         "color": "blue"
       }
     ]
@@ -4294,7 +4294,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
+        "path": "data/NorthAmerica/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
         "color": "blue"
       }
     ]
@@ -4306,7 +4306,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
+        "path": "data/NorthAmerica/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
         "color": "blue"
       }
     ]
@@ -4318,7 +4318,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/norristown",
+        "path": "data/NorthAmerica/usa/keyword/norristown",
         "color": "blue"
       }
     ]
@@ -4330,7 +4330,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/scranton",
+        "path": "data/NorthAmerica/usa/keyword/scranton",
         "color": "blue"
       }
     ]
@@ -4342,7 +4342,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bloomsburg-pittston",
+        "path": "data/NorthAmerica/usa/keyword/bloomsburg-pittston",
         "color": "blue"
       }
     ]
@@ -4354,7 +4354,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bloomsburg-pittston",
+        "path": "data/NorthAmerica/usa/keyword/bloomsburg-pittston",
         "color": "blue"
       }
     ]
@@ -4366,7 +4366,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/reading",
+        "path": "data/NorthAmerica/usa/keyword/reading",
         "color": "blue"
       }
     ]
@@ -4378,7 +4378,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/wilkes_barre",
+        "path": "data/NorthAmerica/usa/keyword/wilkes_barre",
         "color": "blue"
       }
     ]
@@ -4390,7 +4390,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/lancaster",
+        "path": "data/NorthAmerica/usa/keyword/lancaster",
         "color": "blue"
       }
     ]
@@ -4402,7 +4402,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/camp_hill-harrisburg-york",
+        "path": "data/NorthAmerica/usa/keyword/camp_hill-harrisburg-york",
         "color": "blue"
       }
     ]
@@ -4414,7 +4414,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/camp_hill-harrisburg-york",
+        "path": "data/NorthAmerica/usa/keyword/camp_hill-harrisburg-york",
         "color": "blue"
       }
     ]
@@ -4426,7 +4426,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/camp_hill-harrisburg-york",
+        "path": "data/NorthAmerica/usa/keyword/camp_hill-harrisburg-york",
         "color": "blue"
       }
     ]
@@ -4438,7 +4438,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/sunbury",
+        "path": "data/NorthAmerica/usa/keyword/sunbury",
         "color": "blue"
       }
     ]
@@ -4450,7 +4450,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bellefonte-state_college",
+        "path": "data/NorthAmerica/usa/keyword/bellefonte-state_college",
         "color": "blue"
       }
     ]
@@ -4462,7 +4462,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bellefonte-state_college",
+        "path": "data/NorthAmerica/usa/keyword/bellefonte-state_college",
         "color": "blue"
       }
     ]
@@ -4474,7 +4474,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/altoona",
+        "path": "data/NorthAmerica/usa/keyword/altoona",
         "color": "blue"
       }
     ]
@@ -4486,7 +4486,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/johnstown",
+        "path": "data/NorthAmerica/usa/keyword/johnstown",
         "color": "blue"
       }
     ]
@@ -4498,7 +4498,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/warren",
+        "path": "data/NorthAmerica/usa/keyword/warren",
         "color": "blue"
       }
     ]
@@ -4510,7 +4510,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/bedford",
+        "path": "data/NorthAmerica/usa/keyword/bedford",
         "color": "blue"
       }
     ]
@@ -4522,7 +4522,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/new_castle",
+        "path": "data/NorthAmerica/usa/keyword/new_castle",
         "color": "blue"
       }
     ]
@@ -4534,7 +4534,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/providence",
+        "path": "data/NorthAmerica/usa/keyword/providence",
         "color": "blue"
       }
     ]
@@ -4546,7 +4546,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/morgantown",
+        "path": "data/NorthAmerica/usa/keyword/morgantown",
         "color": "blue"
       }
     ]
@@ -4558,7 +4558,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/burlington-south_burlington-essex",
+        "path": "data/NorthAmerica/usa/keyword/burlington-south_burlington-essex",
         "color": "blue"
       }
     ]
@@ -4570,7 +4570,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/burlington-south_burlington-essex",
+        "path": "data/NorthAmerica/usa/keyword/burlington-south_burlington-essex",
         "color": "blue"
       }
     ]
@@ -4582,7 +4582,7 @@
     "links": [
       {
         "type": "keyword",
-        "path": "data/usa/keyword/burlington-south_burlington-essex",
+        "path": "data/NorthAmerica/usa/keyword/burlington-south_burlington-essex",
         "color": "blue"
       }
     ]
@@ -4594,7 +4594,7 @@
     "links": [
       {
         "type": "PANTRANS",
-        "path": "data/mexico/pantrans/mexicocity",
+        "path": "data/NorthAmerica/mexico/pantrans/mexicocity",
         "color": "blue"
       }
     ]
@@ -4606,7 +4606,7 @@
     "links": [
       {
         "type": "PANTRANS",
-        "path": "data/mexico/pantrans/puebla",
+        "path": "data/NorthAmerica/mexico/pantrans/puebla",
         "color": "blue"
       }
     ]
@@ -4618,7 +4618,7 @@
     "links": [
       {
         "type": "PANTRANS",
-        "path": "data/mexico/pantrans/queretaro",
+        "path": "data/NorthAmerica/mexico/pantrans/queretaro",
         "color": "blue"
       }
     ]
@@ -4630,7 +4630,7 @@
     "links": [
       {
         "type": "PANTRANS",
-        "path": "data/mexico/pantrans/tampicocity",
+        "path": "data/NorthAmerica/mexico/pantrans/tampicocity",
         "color": "blue"
       }
     ]
@@ -4642,7 +4642,7 @@
     "links": [
       {
         "type": "PANTRANS",
-        "path": "data/mexico/pantrans/altamiracity",
+        "path": "data/NorthAmerica/mexico/pantrans/altamiracity",
         "color": "blue"
       }
     ]
@@ -4654,7 +4654,7 @@
     "links": [
       {
         "type": "PANTRANS",
-        "path": "data/mexico/pantrans/saltillo",
+        "path": "data/NorthAmerica/mexico/pantrans/saltillo",
         "color": "blue"
       }
     ]
@@ -4666,7 +4666,7 @@
     "links": [
       {
         "type": "PANTRANS",
-        "path": "data/mexico/pantrans/monterrey",
+        "path": "data/NorthAmerica/mexico/pantrans/monterrey",
         "color": "blue"
       }
     ]
@@ -4678,7 +4678,7 @@
     "links": [
       {
         "type": "PANTRANS",
-        "path": "data/mexico/pantrans/san_luis_potosi",
+        "path": "data/NorthAmerica/mexico/pantrans/san_luis_potosi",
         "color": "blue"
       }
     ]
@@ -4690,7 +4690,7 @@
     "links": [
       {
         "type": "PANTRANS",
-        "path": "data/mexico/pantrans/guadalajara",
+        "path": "data/NorthAmerica/mexico/pantrans/guadalajara",
         "color": "blue"
       }
     ]
@@ -4702,7 +4702,7 @@
     "links": [
       {
         "type": "PANTRANS",
-        "path": "data/mexico/pantrans/faja_de_oro",
+        "path": "data/NorthAmerica/mexico/pantrans/faja_de_oro",
         "color": "blue"
       }
     ]
@@ -4714,7 +4714,7 @@
     "links": [
       {
         "type": "PANTRANS",
-        "path": "data/mexico/pantrans/valle_oriente(sonoma)",
+        "path": "data/NorthAmerica/mexico/pantrans/valle_oriente(sonoma)",
         "color": "blue"
       }
     ]
@@ -4726,7 +4726,7 @@
     "links": [
       {
         "type": "PANTRANS",
-        "path": "data/mexico/pantrans/monterrey_centro",
+        "path": "data/NorthAmerica/mexico/pantrans/monterrey_centro",
         "color": "blue"
       }
     ]
@@ -4738,7 +4738,7 @@
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/canada/canadashipping/mississauga",
+        "path": "data/NorthAmerica/canada/canadashipping/mississauga",
         "color": "blue"
       }
     ]
@@ -4750,7 +4750,7 @@
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/canada/canadashipping/toronto",
+        "path": "data/NorthAmerica/canada/canadashipping/toronto",
         "color": "blue"
       }
     ]
@@ -4762,7 +4762,7 @@
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/canada/canadashipping/ontario",
+        "path": "data/NorthAmerica/canada/canadashipping/ontario",
         "color": "blue"
       }
     ]
@@ -4774,7 +4774,7 @@
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/canada/canadashipping/quebec",
+        "path": "data/NorthAmerica/canada/canadashipping/quebec",
         "color": "blue"
       }
     ]
@@ -4786,7 +4786,7 @@
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/canada/canadashipping/vancouver",
+        "path": "data/NorthAmerica/canada/canadashipping/vancouver",
         "color": "blue"
       }
     ]
@@ -4798,7 +4798,7 @@
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/canada/canadashipping/montreal",
+        "path": "data/NorthAmerica/canada/canadashipping/montreal",
         "color": "blue"
       }
     ]
@@ -4810,7 +4810,7 @@
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/canada/canadashipping/ottawa",
+        "path": "data/NorthAmerica/canada/canadashipping/ottawa",
         "color": "blue"
       }
     ]
