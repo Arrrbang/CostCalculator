@@ -1,0 +1,52 @@
+{
+  "nonDiplomat": {
+      "20DRY": {
+        "description": "Coord. Logistics(통관비용)\nDestination Services (Import) I.P.(배송작업비용)\nOTM Transport I.T.(항구>창고 비용) \nLocal Transport I.T.(창구>자택 비용)\nSatelital security seal (protekto) I.T.(차량 화물 고정 비용)", 
+        "1-5" : 2089,
+        "6-10" : 2170,
+        "11-15" : 2359,
+        "16-20" : 2379,
+        "21-25" : 2517,
+        "26-30" : 2517,
+        "ANY": "40HC 확인"
+      },
+      "40HC": {
+        "description": "Coord. Logistics(통관비용)\nDestination Services (Import) I.P.(배송작업비용)\nOTM Transport I.T.(항구>창고 비용) \nLocal Transport I.T.(창구>자택 비용)\nSatelital security seal (protekto) I.T.(차량 화물 고정 비용)",
+        "31-35" : 3156,
+        "36-40" : 3184,
+        "41-45" : 3244,
+        "46-50" : 3244,
+        "51-55" : 3281,
+        "56-60" : 3281
+        "ANY": "별도 문의"
+      }
+  },
+  "diplomat": {
+      "20DRY": {
+        "description": "Coord. Logistics(통관비용)\nDestination Services (Import) I.P.(배송작업비용)\nOTM Transport I.T.(항구>창고 비용) \nLocal Transport I.T.(창구>자택 비용)\nSatelital security seal (protekto) I.T.(차량 화물 고정 비용)",
+        "1-5" : 2157,
+        "6-10" : 2208,
+        "11-15" : 2393,
+        "16-20" : 2417,
+        "21-25" : 2548,
+        "26-30" : 2548,
+        "ANY": "별도 문의"
+      },
+      "40HC": {
+        "description": "Coord. Logistics(통관비용)\nDestination Services (Import) I.P.(배송작업비용)\nOTM Transport I.T.(항구>창고 비용) \nLocal Transport I.T.(창구>자택 비용)\nSatelital security seal (protekto) I.T.(차량 화물 고정 비용)", 
+        "31-35" : 3246,
+        "36-40" : 3271,
+        "41-45" : 3322,
+        "46-50" : 3322,
+        "51-55" : 3349,
+        "56-60" : 3349
+        "ANY": "별도 문의"
+      }
+  },
+  "containerType": [
+    "20DRY",
+    "40HC"
+  ],
+  "delivery": "Bogota, Colombia",
+  "partner": "INTRAMAR"
+}
