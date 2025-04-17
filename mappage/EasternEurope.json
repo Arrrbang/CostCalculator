@@ -6,7 +6,7 @@
     "links": [
       {
         "type": "K-PACK",
-        "path": "data/poland/kpack/krakow",
+        "path": "data/EasternEurope/poland/kpack/krakow",
         "color": "blue"
       }
     ]
@@ -18,12 +18,12 @@
     "links": [
       {
         "type": "Arres",
-        "path": "data/poland/arres/poznan",
+        "path": "data/EasternEurope/poland/arres/poznan",
         "color": "blue"
       },
       {
         "type": "K-PACK",
-        "path": "data/poland/kpack/poznan",
+        "path": "data/EasternEurope/poland/kpack/poznan",
         "color": "blue"
       }
     ]
@@ -35,12 +35,12 @@
     "links": [
       {
         "type": "Arres",
-        "path": "data/poland/arres/warsaw",
+        "path": "data/EasternEurope/poland/arres/warsaw",
         "color": "blue"
       },
         {
         "type": "K-PACK",
-        "path": "data/poland/kpack/warsaw",
+        "path": "data/EasternEurope/poland/kpack/warsaw",
         "color": "blue"
       }
     ]
@@ -52,7 +52,7 @@
     "links": [
       {
         "type": "K-PACK",
-        "path": "data/poland/kpack/wronki",
+        "path": "data/EasternEurope/poland/kpack/wronki",
         "color": "blue"
       }
     ]
@@ -64,7 +64,7 @@
     "links": [
       {
         "type": "K-PACK",
-        "path": "data/poland/kpack/katowice",
+        "path": "data/EasternEurope/poland/kpack/katowice",
         "color": "blue"
       }
     ]
@@ -76,12 +76,12 @@
     "links": [
       {
         "type": "Arres",
-        "path": "data/poland/arres/wroclaw",
+        "path": "data/EasternEurope/poland/arres/wroclaw",
         "color": "blue"
       },
       {
         "type": "K-PACK",
-        "path": "data/poland/kpack/wroclaw",
+        "path": "data/EasternEurope/poland/kpack/wroclaw",
         "color": "blue"
       }
     ]
@@ -93,7 +93,7 @@
     "links": [
       {
         "type": "K-PACK",
-        "path": "data/poland/kpack/stalowawola",
+        "path": "data/EasternEurope/poland/kpack/stalowawola",
         "color": "blue"
       }
     ]
@@ -105,7 +105,7 @@
     "links": [
       {
         "type": "K-PACK",
-        "path": "data/poland/kpack/szczecin",
+        "path": "data/EasternEurope/poland/kpack/szczecin",
         "color": "blue"
       }
     ]
@@ -117,17 +117,17 @@
     "links": [
       {
         "type": "AGS",
-        "path": "data/czechia/ags/prague",
+        "path": "data/EasternEurope/czechia/ags/prague",
         "color": "blue"
       },
       {
         "type": "K-PACK",
-        "path": "data/czechia/kpack/prague",
+        "path": "data/EasternEurope/czechia/kpack/prague",
         "color": "blue"
       },
       {
         "type": "MOVE ONE FZE",
-        "path": "data/czechia/moveone/prague",
+        "path": "data/EasternEurope/czechia/moveone/prague",
         "color": "blue"
       }
     ]
@@ -139,17 +139,17 @@
     "links": [
       {
         "type": "AGS",
-        "path": "data/czechia/ags/ostrava",
+        "path": "data/EasternEurope/czechia/ags/ostrava",
         "color": "blue"
       },
       {
         "type": "K-PACK",
-        "path": "data/czechia/kpack/ostrava",
+        "path": "data/EasternEurope/czechia/kpack/ostrava",
         "color": "blue"
       },
       {
         "type": "MOVE ONE FZE",
-        "path": "data/czechia/moveone/ostrava",
+        "path": "data/EasternEurope/czechia/moveone/ostrava",
         "color": "blue"
       }
     ]
@@ -161,7 +161,7 @@
     "links": [
       {
         "type": "K-PACK",
-        "path": "data/czechia/kpack/brno",
+        "path": "data/EasternEurope/czechia/kpack/brno",
         "color": "blue"
       }
     ]
@@ -173,7 +173,7 @@
     "links": [
       {
         "type": "K-PACK",
-        "path": "data/czechia/kpack/dobris",
+        "path": "data/EasternEurope/czechia/kpack/dobris",
         "color": "blue"
       }
     ]
@@ -185,17 +185,17 @@
     "links": [
       {
         "type": "K-PACK",
-        "path": "data/slovakia/kpack/bratislava",
+        "path": "data/EasternEurope/slovakia/kpack/bratislava",
         "color": "blue"
       },
       {
         "type": "FALCON",
-        "path": "data/slovakia/falcon/bratislava",
+        "path": "data/EasternEurope/slovakia/falcon/bratislava",
         "color": "blue"
       },
         {
         "type": "Move One FZE",
-        "path": "data/slovakia/moveone/bratislava",
+        "path": "data/EasternEurope/slovakia/moveone/bratislava",
         "color": "blue"
       }
     ]
@@ -207,7 +207,7 @@
     "links": [
       {
         "type": "K-PACK",
-        "path": "data/slovakia/kpack/zilina",
+        "path": "data/EasternEurope/slovakia/kpack/zilina",
         "color": "blue"
       }
     ]
@@ -219,12 +219,12 @@
   "links": [
     {
       "type": "FALCON",
-      "path": "data/slovakia/falcon/galanta",
+      "path": "data/EasternEurope/slovakia/falcon/galanta",
       "color": "blue"
     },
     {
       "type": "Move One FZE",
-      "path": "data/slovakia/moveone/galanta",
+      "path": "data/EasternEurope/slovakia/moveone/galanta",
       "color": "blue"
     }
   ]
