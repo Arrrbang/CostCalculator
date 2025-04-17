@@ -13,14 +13,14 @@
   
     "basic-cost-1": {
         "name": "DTHC",
-        "description": "BETWEEN USD 395/490",
+        "description": "20ft : $450~500 \n40hc : $500~650",
         "NonDiplomat": {
-            "20DRY": 450,
-            "40HC": 450
+            "20DRY": 480,
+            "40HC": 600
         }
         "Diplomat": {
-            "20DRY": 450,
-            "40HC": 450
+            "20DRY": 480,
+            "40HC": 600
         }
     },
     "basic-cost-2": {
