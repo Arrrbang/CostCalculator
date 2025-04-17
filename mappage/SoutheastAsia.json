@@ -6,7 +6,7 @@
     "links": [
       {
         "type": "ANEKATRANS",
-        "path": "data/indonesia/anekatrans/cikarang",
+        "path": "data/SoutheastAsia/indonesia/anekatrans/cikarang",
         "color": "blue"
       }
     ]
@@ -18,7 +18,7 @@
     "links": [
       {
         "type": "ANEKATRANS",
-        "path": "data/indonesia/anekatrans/jakarta",
+        "path": "data/SoutheastAsia/indonesia/anekatrans/jakarta",
         "color": "blue"
       }
     ]
@@ -30,7 +30,7 @@
     "links": [
       {
         "type": "ANEKATRANS",
-        "path": "data/indonesia/anekatrans/surabaya",
+        "path": "data/SoutheastAsia/indonesia/anekatrans/surabaya",
         "color": "blue"
       }
     ]
@@ -42,7 +42,7 @@
     "links": [
       {
         "type": "ANEKATRANS",
-        "path": "data/indonesia/anekatrans/tangerang",
+        "path": "data/SoutheastAsia/indonesia/anekatrans/tangerang",
         "color": "blue"
       }
     ]
@@ -54,7 +54,7 @@
     "links": [
       {
         "type": "ANEKATRANS",
-        "path": "data/indonesia/anekatrans/bali",
+        "path": "data/SoutheastAsia/indonesia/anekatrans/bali",
         "color": "blue"
       }
     ]
@@ -66,7 +66,7 @@
     "links": [
       {
         "type": "JEX",
-        "path": "data/vietnam/jex/hanoi",
+        "path": "data/SoutheastAsia/vietnam/jex/hanoi",
         "color": "blue"
       }
     ]
@@ -78,7 +78,7 @@
     "links": [
       {
         "type": "JEX",
-        "path": "data/vietnam/jex/hochiminh",
+        "path": "data/SoutheastAsia/vietnam/jex/hochiminh",
         "color": "blue"
       }
     ]
@@ -90,7 +90,7 @@
     "links": [
       {
         "type": "JEX",
-        "path": "data/vietnam/jex/bacninh",
+        "path": "data/SoutheastAsia/vietnam/jex/bacninh",
         "color": "blue"
       }
     ]
@@ -102,7 +102,7 @@
     "links": [
       {
         "type": "JEX",
-        "path": "data/vietnam/jex/danang",
+        "path": "data/SoutheastAsia/vietnam/jex/danang",
         "color": "blue"
       }
     ]
@@ -114,7 +114,7 @@
     "links": [
       {
         "type": "JEX",
-        "path": "data/vietnam/jex/haiphong",
+        "path": "data/SoutheastAsia/vietnam/jex/haiphong",
         "color": "blue"
       }
     ]
@@ -126,7 +126,7 @@
     "links": [
       {
         "type": "JEX",
-        "path": "data/vietnam/jex/baria-vungtau",
+        "path": "data/SoutheastAsia/vietnam/jex/baria-vungtau",
         "color": "blue"
       }
     ]
@@ -138,7 +138,7 @@
     "links": [
       {
         "type": "JEX",
-        "path": "data/vietnam/jex/thainguyen",
+        "path": "data/SoutheastAsia/vietnam/jex/thainguyen",
         "color": "blue"
       }
     ]
@@ -150,7 +150,7 @@
     "links": [
       {
         "type": "JEX",
-        "path": "data/vietnam/jex/binhduong",
+        "path": "data/SoutheastAsia/vietnam/jex/binhduong",
         "color": "blue"
       }
     ]
@@ -162,7 +162,7 @@
     "links": [
       {
         "type": "JEX",
-        "path": "data/vietnam/jex/dongnai",
+        "path": "data/SoutheastAsia/vietnam/jex/dongnai",
         "color": "blue"
       }
     ]
@@ -174,7 +174,7 @@
     "links": [
       {
         "type": "JEX",
-        "path": "data/vietnam/jex/phumyhung",
+        "path": "data/SoutheastAsia/vietnam/jex/phumyhung",
         "color": "blue"
       }
     ]
@@ -186,7 +186,7 @@
     "links": [
       {
         "type": "JEX",
-        "path": "data/vietnam/jex/hanam",
+        "path": "data/SoutheastAsia/vietnam/jex/hanam",
         "color": "blue"
       }
     ]
@@ -198,7 +198,7 @@
     "links": [
       {
         "type": "JEX",
-        "path": "data/vietnam/jex/bienhoa",
+        "path": "data/SoutheastAsia/vietnam/jex/bienhoa",
         "color": "blue"
       }
     ]
@@ -210,7 +210,7 @@
     "links": [
       {
         "type": "JEX",
-        "path": "data/vietnam/jex/vinhphuc",
+        "path": "data/SoutheastAsia/vietnam/jex/vinhphuc",
         "color": "blue"
       }
     ]
@@ -222,7 +222,7 @@
     "links": [
       {
         "type": "SHON MOVING",
-        "path": "data/thailand/shon/bangkok",
+        "path": "data/SoutheastAsia/thailand/shon/bangkok",
         "color": "blue"
       }
     ]
@@ -234,7 +234,7 @@
     "links": [
       {
         "type": "SHON MOVING",
-        "path": "data/thailand/shon/pattaya",
+        "path": "data/SoutheastAsia/thailand/shon/pattaya",
         "color": "blue"
       }
     ]
@@ -246,7 +246,7 @@
     "links": [
       {
         "type": "SHON MOVING",
-        "path": "data/thailand/shon/rayong",
+        "path": "data/SoutheastAsia/thailand/shon/rayong",
         "color": "blue"
       }
     ]
@@ -258,7 +258,7 @@
     "links": [
       {
         "type": "SHON MOVING",
-        "path": "data/thailand/shon/khonkaen",
+        "path": "data/SoutheastAsia/thailand/shon/khonkaen",
         "color": "blue"
       }
     ]
@@ -270,7 +270,7 @@
     "links": [
       {
         "type": "SHON MOVING",
-        "path": "data/thailand/shon/chiangmai",
+        "path": "data/SoutheastAsia/thailand/shon/chiangmai",
         "color": "blue"
       }
     ]
@@ -282,7 +282,7 @@
     "links": [
       {
         "type": "SHON MOVING",
-        "path": "data/thailand/shon/phuket",
+        "path": "data/SoutheastAsia/thailand/shon/phuket",
         "color": "blue"
       }
     ]
@@ -294,7 +294,7 @@
     "links": [
       {
         "type": "SHON MOVING",
-        "path": "data/thailand/shon/kohsamui",
+        "path": "data/SoutheastAsia/thailand/shon/kohsamui",
         "color": "blue"
       }
     ]
@@ -306,7 +306,7 @@
   "links": [
     {
       "type": "wmobility",
-      "path": "data/singapore/wmobility/singapore",
+      "path": "data/SoutheastAsia/singapore/wmobility/singapore",
       "color": "blue"
     }
   ]
