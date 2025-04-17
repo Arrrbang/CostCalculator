@@ -1,0 +1,89 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/BUENAVENTURA-CALLAO-MANZANILLO-1980b10191ce8035a62cd00bf9c478e2?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/INTRAMAR-SHIPPING-1d70b10191ce80439173dbabff81b73c?p=1d70b10191ce8091ade8dfb456b9a11e&pm=s"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "Port Charges",
+        "description": "20FT 외교화물 기준 비용\n$500 : Deconsolidation per BL(화물 분류비)\n$240 : 20'Documental Inspection per container\n$195 : 20'THC per container\n$210 : B/L endorsement(BL승인비용)\n$190 : Storage at Port(5days)\n$500 : torage during the CLC\n$650 : Demurrage during the OTM process\n*OTM : Order to Move",
+        "NonDiplomat": {
+            "20DRY": 2080,
+            "40HC": 2620
+        },
+        "Diplomat": {
+            "20DRY": 2485,
+            "40HC": 3060
+        }
+    },
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "",
+            "20DRY": {"단가" : 7.53},
+            "40HC": {"단가" : 7.53}
+        },
+    "extra-cost-2": {
+        "name": "WEEKEND CHARGE",
+        "description": "",
+            "20DRY": {"단가" : 7.68},
+            "40HC": {"단가" : 7.68}
+        },
+    "extra-cost-3": {
+        "name": "SHUTTLE",
+        "description": "",
+            "20DRY": {"단가" : 9.13},
+            "40HC": {"단가" : 9.13}
+        },
+    "extra-cost-4": {
+        "name": "LONG CARRY",
+        "description": "",
+            "20DRY": {"단가" : 10},
+            "40HC": {"단가" : 10}
+        },
+    "extra-cost-5": {
+        "name": "UPLIGHT PIANO",
+        "description": "",
+            "20DRY": 64,
+            "40HC": 64
+        },
+    "extra-cost-6": {
+        "name": "PARKING PERMIT",
+        "description": "",
+            "20DRY": 100,
+            "40HC": 100
+        },
+    "STAIR CHARGE": {
+        "description": "",
+        "CBM단가": 8
+    },
+    "HEAVY ITEM": {
+        "description": "",
+        "단위": "CBM",
+        "단가": 8
+    },
+    "STORAGE CHARGE": {
+        "description": "",
+        "단위": "개월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+    },
+    "additional-info-1": {
+        "name": "진행 전에 quotation받고 시작합니다. \n배송 전에 prepaid로 비용 지급 후\n배송 후에 final invoice로 정산합니다.",
+        "description": ""
+    },
+
+    "DATA BASE": {
+  	  "description": "업데이트 : 2025.04.17 확인 완료\n기초자료 : 2024.10. 이트너스 비딩자료"
+    }
+}
