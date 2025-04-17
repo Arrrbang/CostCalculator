@@ -80,7 +80,7 @@
     },
     "additional-info-1": {
         "name": "진행 전 확인 사항",
-        "description": "진행 전에 quotation받고 시작합니다. \n배송 전에 prepaid로 비용 지급 후\n배송 후에 final invoice로 정산합니다."
+        "description": "진행 전에 quotation받고 시작합니다. \n배송 전에 prepaid로 비용 지급 후, 배송 후에 final invoice로 정산합니다."
     },
     "additional-info-2": {
         "name": "사용 가능 선사",
