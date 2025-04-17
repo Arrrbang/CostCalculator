@@ -1,0 +1,76 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/ANTWERP-HAMBURG-SOUTHAMPTON-ROTTERDAM-LE-HAVRE-1970b10191ce802cb9e4f179c5c2dd0a?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/SITCO-1d80b10191ce80f2b704c337e0d6a328"
+        }
+    ],
+    "화폐단위": "€",
+  
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "",
+            "CONSOLE": {"단가" : 20},
+            "20DRY": {"단가" : 20},
+            "40HC": {"단가" : 20}
+        },
+    "extra-cost-2": {
+        "name": "SHUTTLE",
+        "description": "PER TRUCK",
+            "20DRY": 280,
+            "40HC": 280
+        },
+    "extra-cost-3": {
+        "name": "LONG CARRY",
+        "description": "",
+            "20DRY": {"단가" : 10},
+            "40HC": {"단가" : 10}
+        },
+    "extra-cost-4": {
+        "name": "LIFT CHARGE",
+        "description": "반나절 사용 €320, 하루 사용 €580",
+            "20DRY": 0,
+            "40HC": 0
+        },
+    "extra-cost-5": {
+        "name": "PARKING PERMIT",
+        "description": "€70-€100",
+            "20DRY": {"단가" : 10},
+            "40HC": {"단가" : 10}
+        },
+    "STAIR CHARGE": {
+        "description": "INCLUDED",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "",
+        "단위": "CBM",
+        "단가": 15
+    },
+    "STORAGE CHARGE": {
+        "description": "보관 비용 미확인",
+        "단위": "개월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+    },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": "파리 근교만 배송 가능. "
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "HMM/YML/ONE : T/T 60 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "업데이트 : 2025.04\n기초자료 : 2024.10 이트너스 비딩조사"
+    }
+}
