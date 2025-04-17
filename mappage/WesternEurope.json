@@ -6,12 +6,12 @@
     "links": [
       {
         "type": "BAE SERVICE",
-        "path": "data/germany/baeservice/frankfurt",
+        "path": "data/WesternEurope/germany/baeservice/frankfurt",
         "color": "blue"
       },
       {
         "type": "KRUMPF",
-        "path": "data/germany/krumpf/eschborn",
+        "path": "data/WesternEurope/germany/krumpf/eschborn",
         "color": "blue"
       }
     ]
@@ -23,17 +23,17 @@
     "links": [
       {
         "type": "BAE SERVICE",
-        "path": "data/germany/baeservice/frankfurt",
+        "path": "data/WesternEurope/germany/baeservice/frankfurt",
         "color": "blue"
       },
       {
         "type": "KRUMPF",
-        "path": "data/germany/krumpf/frankfurt",
+        "path": "data/WesternEurope/germany/krumpf/frankfurt",
         "color": "blue"
       },
       {
         "type": "STB",
-        "path": "data/germany/stb/frankfurt",
+        "path": "data/WesternEurope/germany/stb/frankfurt",
         "color": "blue"
       }
     ]
@@ -45,17 +45,17 @@
     "links": [
       {
         "type": "BAE SERVICE",
-        "path": "data/germany/baeservice/muenchen",
+        "path": "data/WesternEurope/germany/baeservice/muenchen",
         "color": "blue"
       },
       {
         "type": "KRUMPF",
-        "path": "data/germany/krumpf/muenchen",
+        "path": "data/WesternEurope/germany/krumpf/muenchen",
         "color": "blue"
       },
       {
         "type": "STB",
-        "path": "data/germany/stb/muenchen",
+        "path": "data/WesternEurope/germany/stb/muenchen",
         "color": "blue"
       }
     ]
@@ -67,12 +67,12 @@
     "links": [
       {
         "type": "BAE SERVICE",
-        "path": "data/germany/baeservice/frankfurt",
+        "path": "data/WesternEurope/germany/baeservice/frankfurt",
         "color": "blue"
       },
       {
         "type": "KRUMPF",
-        "path": "data/germany/krumpf/schwalbach",
+        "path": "data/WesternEurope/germany/krumpf/schwalbach",
         "color": "blue"
       }
     ]
@@ -84,17 +84,17 @@
     "links": [
       {
         "type": "BAE SERVICE",
-        "path": "data/germany/baeservice/hamburg",
+        "path": "data/WesternEurope/germany/baeservice/hamburg",
         "color": "blue"
       },
       {
         "type": "KRUMPF",
-        "path": "data/germany/krumpf/hamburg",
+        "path": "data/WesternEurope/germany/krumpf/hamburg",
         "color": "blue"
       },
       {
         "type": "STB",
-        "path": "data/germany/stb/hamburg",
+        "path": "data/WesternEurope/germany/stb/hamburg",
         "color": "blue"
       }
     ]
@@ -106,17 +106,17 @@
     "links": [
       {
         "type": "BAE SERVICE",
-        "path": "data/germany/baeservice/bonn",
+        "path": "data/WesternEurope/germany/baeservice/bonn",
         "color": "blue"
       },
       {
         "type": "KRUMPF",
-        "path": "data/germany/krumpf/bonn",
+        "path": "data/WesternEurope/germany/krumpf/bonn",
         "color": "blue"
       },
       {
         "type": "STB",
-        "path": "data/germany/stb/bonn",
+        "path": "data/WesternEurope/germany/stb/bonn",
         "color": "blue"
       }
     ]
@@ -128,12 +128,12 @@
     "links": [
       {
         "type": "BAE SERVICE",
-        "path": "data/germany/baeservice/duesseldorf",
+        "path": "data/WesternEurope/germany/baeservice/duesseldorf",
         "color": "blue"
       },
       {
         "type": "STB",
-        "path": "data/germany/stb/duesseldorf",
+        "path": "data/WesternEurope/germany/stb/duesseldorf",
         "color": "blue"
       }
     ]
@@ -145,12 +145,12 @@
     "links": [
       {
         "type": "BAE SERVICE",
-        "path": "data/germany/baeservice/berlin",
+        "path": "data/WesternEurope/germany/baeservice/berlin",
         "color": "blue"
       },
       {
         "type": "STB",
-        "path": "data/germany/stb/berlin",
+        "path": "data/WesternEurope/germany/stb/berlin",
         "color": "blue"
       }
     ]
@@ -162,12 +162,12 @@
     "links": [
       {
         "type": "BAE SERVICE",
-        "path": "data/germany/baeservice/stuttgart",
+        "path": "data/WesternEurope/germany/baeservice/stuttgart",
         "color": "blue"
       },
       {
         "type": "STB",
-        "path": "data/germany/stb/stuttgart",
+        "path": "data/WesternEurope/germany/stb/stuttgart",
         "color": "blue"
       }
     ]
@@ -179,7 +179,7 @@
     "links": [
       {
         "type": "STB",
-        "path": "data/germany/stb/leipzig",
+        "path": "data/WesternEurope/germany/stb/leipzig",
         "color": "blue"
       }
     ]
@@ -191,7 +191,7 @@
     "links": [
       {
         "type": "STB",
-        "path": "data/germany/stb/dresden",
+        "path": "data/WesternEurope/germany/stb/dresden",
         "color": "blue"
       }
     ]
@@ -203,7 +203,7 @@
     "links": [
       {
         "type": "STB",
-        "path": "data/germany/stb/koeln",
+        "path": "data/WesternEurope/germany/stb/koeln",
         "color": "blue"
       }
     ]
@@ -215,7 +215,7 @@
     "links": [
       {
         "type": "STB",
-        "path": "data/germany/stb/hannover",
+        "path": "data/WesternEurope/germany/stb/hannover",
         "color": "blue"
       }
     ]
