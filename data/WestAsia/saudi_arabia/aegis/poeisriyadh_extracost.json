@@ -1,0 +1,143 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/RIYADH-1980b10191ce805c9a44d61e82ac671e?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/AEGIS-LOGISTICS-INTERNATIONAL-MOVERS-1d90b10191ce8094b990ee8be5af790c"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "Customs Clearance",
+        "description": "Customs Clearance, Port Labor, \nDocumentations & Container Haulage",
+        "NonDiplomat": {
+            "20DRY": 749,
+            "40HC": 749
+        },
+        "Diplomat": {
+            "20DRY": "별도 문의",
+            "40HC": "별도 문의"
+        }
+    },
+    "basic-cost-2": {
+        "name": "Port Charges (as Per Actual)",
+        "description": "대략적인 금액. 모든 증빙 첨부하여 실비로 청구함\n이 금액에 quotation에 있는 \nNon- Palletized Penalty SAR 1,000이 포함되어있음. ",
+        "NonDiplomat": {
+            "20DRY": 650,
+            "40HC": 650
+        },
+        "Diplomat": {
+            "20DRY": "별도 문의",
+            "40HC": "별도 문의"
+        }
+    },
+    "basic-cost-3": {
+        "name": "DO CHARGE (as Per Actual)",
+        "description": "대략적인 금액. 모든 증빙 첨부하여 실비로 청구함",
+        "NonDiplomat": {
+            "20DRY": 300,
+            "40HC": 300
+        },
+        "Diplomat": {
+            "20DRY": "별도 문의",
+            "40HC": "별도 문의"
+        }
+    },
+    "basic-cost-4": {
+        "name": "Bayan Charges (as Per Actual)",
+        "description": "대략적인 금액. 모든 증빙 첨부하여 실비로 청구함",
+        "NonDiplomat": {
+            "20DRY": 4,
+            "40HC": 4
+        },
+        "Diplomat": {
+            "20DRY": "별도 문의",
+            "40HC": "별도 문의"
+        }
+    },
+    "basic-cost-5": {
+        "name": "Fasah Truck Appointment Charges",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 10,
+            "40HC": 10
+        },
+        "Diplomat": {
+            "20DRY": "별도 문의",
+            "40HC": "별도 문의"
+        }
+    },
+    "basic-cost-6": {
+        "name": "Bank Fee",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 30,
+            "40HC": 30
+        },
+        "Diplomat": {
+            "20DRY": "별도 문의",
+            "40HC": "별도 문의"
+        }
+    },
+
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "",
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        },
+    "extra-cost-2": {
+        "name": "Warehouse Handling",
+        "description": "Minimum 450",
+            "20DRY": {"단가" : 8},
+            "40HC": {"단가" : 8}
+        },
+    "extra-cost-3": {
+        "name": "Long Carry",
+        "description": "",
+            "20DRY": {"단가" : 6},
+            "40HC": {"단가" : 6}
+        },
+    "extra-cost-4": {
+        "name": "Handyman",
+        "description": "Handyman (Minimum 450 for first 3 hours)\n(Additional hours $38/hr)",
+            "20DRY": 0,
+            "40HC": 0
+        },
+    "STAIR CHARGE": {
+        "description": "(per cbm)(per floor above 1st floor)",
+        "CBM단가": 6
+    },
+    "HEAVY ITEM": {
+        "description": "(4 men handling)",
+        "단위": "ITEM",
+        "단가": 138
+    },
+
+    "STORAGE CHARGE": {
+        "description": "Minimum $450",
+        "단위": "1개월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 12
+        }
+    },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": "GreenLight 받고 진행할 것."
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "CMA CGM : T/T 40 DAYS (T/S NINGBO)"
+    },
+
+    "DATA BASE": {
+  	  "description": "업데이트 : 2025.04.18\n기초자료 : 2024.10 이트너스 비딩조사"
+    }
+}
