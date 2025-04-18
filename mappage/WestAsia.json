@@ -58,5 +58,77 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Dammam, Saudi Arabia",
+    "lat": 26.4207,
+    "lng": 50.0888,
+    "links": [
+      {
+        "type": "AEGIS",
+        "path": "data/WestAsia/saudi_arabia/aegis/dammam",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Jeddah, Saudi Arabia",
+    "lat": 21.4858,
+    "lng": 39.1925,
+    "links": [
+      {
+        "type": "AEGIS",
+        "path": "data/WestAsia/saudi_arabia/aegis/jeddah",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Riyadh, Saudi Arabia",
+    "lat": 24.7136,
+    "lng": 46.6753,
+    "links": [
+      {
+        "type": "AEGIS",
+        "path": "data/WestAsia/saudi_arabia/aegis/riyadh",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Jubail, Saudi Arabia",
+    "lat": 27.0047,
+    "lng": 49.6460,
+    "links": [
+      {
+        "type": "AEGIS",
+        "path": "data/WestAsia/saudi_arabia/aegis/jubail",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hawiyah, Saudi Arabia",
+    "lat": 21.3796,
+    "lng": 40.4931,
+    "links": [
+      {
+        "type": "AEGIS",
+        "path": "data/WestAsia/saudi_arabia/aegis/hawiyah",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hufuf, Saudi Arabia",
+    "lat": 25.3520,
+    "lng": 49.5832,
+    "links": [
+      {
+        "type": "AEGIS",
+        "path": "data/WestAsia/saudi_arabia/aegis/hufuf",
+        "color": "blue"
+      }
+    ]
   }
 ]
