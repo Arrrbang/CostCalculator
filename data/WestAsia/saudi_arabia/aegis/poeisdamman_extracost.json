@@ -25,10 +25,10 @@
     },
     "basic-cost-2": {
         "name": "Port Charges (as Per Actual)",
-        "description": "대략적인 금액. 모든 증빙 첨부하여 실비로 청구함\n이 금액에 quotation에 있는 \nNon- Palletized Penalty SAR 1,000이 포함되어있음. ",
+        "description": "대략적인 금액. 모든 증빙 첨부하여 실비로 청구함\n이 금액에 quotation에 있는 \nNon- Palletized Penalty SAR 1,000/1250이 포함되어있음. ",
         "NonDiplomat": {
             "20DRY": 650,
-            "40HC": 650
+            "40HC": 780
         },
         "Diplomat": {
             "20DRY": "별도 문의",
@@ -40,7 +40,7 @@
         "description": "대략적인 금액. 모든 증빙 첨부하여 실비로 청구함",
         "NonDiplomat": {
             "20DRY": 300,
-            "40HC": 300
+            "40HC": 350
         },
         "Diplomat": {
             "20DRY": "별도 문의",
