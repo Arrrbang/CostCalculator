@@ -243,5 +243,77 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Amsterdam, Netherlands",
+    "lat": 52.3676,
+    "lng": 4.9041,
+    "links": [
+      {
+        "type": "ATI",
+        "path": "data/WesternEurope/netherlands/ati/amsterdam",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Amstelveen, Netherlands",
+    "lat": 52.3114,
+    "lng": 4.8701,
+    "links": [
+      {
+        "type": "ATI",
+        "path": "data/WesternEurope/netherlands/ati/amstelveen",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hague, Netherlands",
+    "lat": 52.0705,
+    "lng": 4.3007,
+    "links": [
+      {
+        "type": "ATI",
+        "path": "data/WesternEurope/netherlands/ati/hague",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Wassenaar, Netherlands",
+    "lat": 52.1450,
+    "lng": 4.4022,
+    "links": [
+      {
+        "type": "ATI",
+        "path": "data/WesternEurope/netherlands/ati/wassenaar",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rotterdam, Netherlands",
+    "lat": 51.9244,
+    "lng": 4.4777,
+    "links": [
+      {
+        "type": "ATI",
+        "path": "data/WesternEurope/netherlands/ati/rotterdam",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Delft, Netherlands",
+    "lat": 52.0116,
+    "lng": 4.3571,
+    "links": [
+      {
+        "type": "ATI",
+        "path": "data/WesternEurope/netherlands/ati/delft",
+        "color": "blue"
+      }
+    ]
   }
 ]
