@@ -1,0 +1,94 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/BUDAPEST-1980b10191ce805e81c7e4b69d7e5ee8?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/MOVE-ONE-KFT-HUNGARY-1c20b10191ce8069839fc211f72f95d8"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC/POC",
+        "description": "대략적인 금액. 증빙 첨부하여 실비 청구됨.",
+        "NonDiplomat": {
+            "20DRY": 450,
+            "40HC": 630
+        },
+        "Diplomat": {
+            "20DRY": 450,
+            "40HC": 630
+        }
+    },
+    "basic-cost-2": {
+        "name": "THC/POC disbursement fee",
+        "description": "보통 19%정도 나오는 것 같음",
+        "NonDiplomat": {
+            "20DRY": 85,
+            "40HC": 120
+        },
+        "Diplomat": {
+            "20DRY": 85,
+            "40HC": 120
+        }
+    },
+    "extra-cost-1": {
+        "name": "SHUTTLE",
+        "description": "MIN $300",
+            "20DRY": {"단가" : 11},
+            "40HC": {"단가" : 11}
+        },
+    "extra-cost-2": {
+        "name": "LONG CARRY",
+        "description": "",
+            "20DRY": {"단가" : 2.5},
+            "40HC": {"단가" : 2.5}
+        },
+    "extra-cost-3": {
+        "name": "UPLIGHT PIANO",
+        "description": "이동 1층 추가마다 $80 추가",
+            "20DRY": 165,
+            "40HC": 165
+        },
+    "extra-cost-4": {
+        "name": "PARKING PERMIT",
+        "description": "",
+            "20DRY": 100,
+            "40HC": 100
+        },
+    "STAIR CHARGE": {
+        "description": "INCLUDED",
+        "CBM단가": 2.5
+    },
+    "HEAVY ITEM": {
+        "description": "FLAT",
+        "단위": "ITEM",
+        "단가": 190
+    },
+    "STORAGE CHARGE": {
+        "description": "",
+        "단위": "개월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+    },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": ""
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "HMM/YML : T/T 60 DAYS(T/S HAMBURG + RAIL)"
+    },
+
+    "DATA BASE": {
+  	  "description": "업데이트 : 2025.04.18\n기초자료 : 2024.10 이트너스 비딩자료"
+    }
+}
+
