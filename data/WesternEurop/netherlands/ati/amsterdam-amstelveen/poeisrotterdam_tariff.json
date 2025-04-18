@@ -1,0 +1,52 @@
+{
+  "nonDiplomat": {
+      "20DRY": {
+        "description": "Amsterdam/Amstelveen Area Sur Charge 추가되어있음.", 
+        "1-5" : 2420,
+        "6-10" : 2420,
+        "11-15" : 2540,
+        "16-20" : 2750,
+        "21-25" : 2960,
+        "26-30" : 3170,
+        "ANY": "40HC 확인"
+      },
+      "40HC": {
+        "description": "Amsterdam/Amstelveen Area Sur Charge 추가되어있음.", 
+        "31-35" : 3700,
+        "36-40" : 3700,
+        "41-45" : 3900,
+        "46-50" : 4100,
+        "51-55" : 4400,
+        "56-60" : 4600
+        "ANY": "별도 문의"
+      }
+  },
+  "diplomat": {
+      "20DRY": {
+        "description": "Amsterdam/Amstelveen Area Sur Charge 추가되어있음.", 
+        "1-5" : 2420,
+        "6-10" : 2420,
+        "11-15" : 2540,
+        "16-20" : 2750,
+        "21-25" : 2960,
+        "26-30" : 3170,
+        "ANY": "40HC 확인"
+      },
+      "40HC": {
+        "description": "Amsterdam/Amstelveen Area Sur Charge 추가되어있음.", 
+        "31-35" : 3700,
+        "36-40" : 3700,
+        "41-45" : 3900,
+        "46-50" : 4100,
+        "51-55" : 4400,
+        "56-60" : 4600
+        "ANY": "별도 문의"
+      }
+  },
+  "containerType": [
+    "20DRY",
+    "40HC"
+  ],
+  "delivery": "Amsterdam/Amstelveen, Netherlands",
+  "partner": "A.T.I"
+}
