@@ -1,0 +1,105 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/ANTWERP-HAMBURG-SOUTHAMPTON-ROTTERDAM-LE-HAVRE-1970b10191ce802cb9e4f179c5c2dd0a?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/A-T-I-1d80b10191ce80669bb5c7483c430f84"
+        }
+    ],
+    "화폐단위": "€",
+  
+    "basic-cost-1": {
+        "name": "CUSTOM CLEARANCE FEE",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 75,
+            "40HC": 75
+        },
+        "Diplomat": {
+            "20DRY": 75,
+            "40HC": 75
+        }
+    },
+    "basic-cost-2": {
+        "name": "Container gas measurement",
+        "description": "FOR IMPORT CONTAINER, ALWAYS CHARGEABLE",
+        "NonDiplomat": {
+            "20DRY": 90,
+            "40HC": 90
+        },
+        "Diplomat": {
+            "20DRY": 90,
+            "40HC": 90
+        }
+    },
+    "basic-cost-2": {
+        "name": "PORT CONGESTION FEE",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 55,
+            "40HC": 55
+        },
+        "Diplomat": {
+            "20DRY": 55,
+            "40HC": 55
+        }
+    },
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "EUR 38 PER MAN HOUR EUR 250 AS MINIMUM",
+            "20DRY": 0,
+            "40HC": 0
+        },
+    "extra-cost-2": {
+        "name": "SHUTTLE",
+        "description": "",
+            "20DRY": {"단가" : 13},
+            "40HC": {"단가" : 13}
+        },
+    "extra-cost-3": {
+        "name": "LONG CARRY",
+        "description": "",
+            "20DRY": {"단가" : 13},
+            "40HC": {"단가" : 13}
+        },
+    "extra-cost-4": {
+        "name": "PARKING PERMIT",
+        "description": "",
+          "20DRY": "€300~450 발생",
+            "40HC": "€300~450 발생",
+        },
+    "STAIR CHARGE": {
+        "description": "",
+        "CBM단가": 7
+    },
+    "HEAVY ITEM": {
+        "description": "",
+        "단위": "ITEM",
+        "단가": 210
+    },
+    "STORAGE CHARGE": {
+        "description": "",
+        "단위": "개월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+    },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": ""
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "HMM/ONE/YML : T/T 60 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "업데이트 : 2025.04.18\n기초자료 : 2025년도 변경 타리프 확인해야 함."
+    }
+}
