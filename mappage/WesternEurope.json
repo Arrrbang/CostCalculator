@@ -299,7 +299,7 @@
     "links": [
       {
         "type": "ATI",
-        "path": "data/WesternEurope/netherlands/ati/rotterdam",
+        "path": "data/WesternEurope/netherlands/ati/rotterdam-delft",
         "color": "blue"
       }
     ]
@@ -311,7 +311,7 @@
     "links": [
       {
         "type": "ATI",
-        "path": "data/WesternEurope/netherlands/ati/delft",
+        "path": "data/WesternEurope/netherlands/ati/rotterdam-delft",
         "color": "blue"
       }
     ]
