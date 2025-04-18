@@ -251,7 +251,7 @@
     "links": [
       {
         "type": "ATI",
-        "path": "data/WesternEurope/netherlands/ati/amsterdam",
+        "path": "data/WesternEurope/netherlands/ati/amsterdam-amstelveen",
         "color": "blue"
       }
     ]
@@ -263,7 +263,7 @@
     "links": [
       {
         "type": "ATI",
-        "path": "data/WesternEurope/netherlands/ati/amstelveen",
+        "path": "data/WesternEurope/netherlands/ati/amsterdam-amstelveen",
         "color": "blue"
       }
     ]
@@ -275,7 +275,7 @@
     "links": [
       {
         "type": "ATI",
-        "path": "data/WesternEurope/netherlands/ati/hague",
+        "path": "data/WesternEurope/netherlands/ati/hague-wassenaar",
         "color": "blue"
       }
     ]
@@ -287,7 +287,7 @@
     "links": [
       {
         "type": "ATI",
-        "path": "data/WesternEurope/netherlands/ati/wassenaar",
+        "path": "data/WesternEurope/netherlands/ati/hague-wassenaar",
         "color": "blue"
       }
     ]
