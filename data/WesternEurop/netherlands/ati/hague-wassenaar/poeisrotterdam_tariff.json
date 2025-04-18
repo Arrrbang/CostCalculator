@@ -1,0 +1,52 @@
+{
+  "nonDiplomat": {
+      "20DRY": {
+        "description": "Hague/Wassenaar Area Sur Charge 추가되어있음.", 
+        "1-5" : 2330,
+        "6-10" : 2330,
+        "11-15" : 2450,
+        "16-20" : 2660,
+        "21-25" : 2870,
+        "26-30" : 3080,
+        "ANY": "40HC 확인"
+      },
+      "40HC": {
+        "description": "Hague/Wassenaar Area Sur Charge 추가되어있음.", 
+        "31-35" : 3610,
+        "36-40" : 3610,
+        "41-45" : 3810,
+        "46-50" : 4010,
+        "51-55" : 4310,
+        "56-60" : 4510
+        "ANY": "별도 문의"
+      }
+  },
+  "diplomat": {
+      "20DRY": {
+        "description": "Hague/Wassenaar Area Sur Charge 추가되어있음.", 
+        "1-5" : 2330,
+        "6-10" : 2330,
+        "11-15" : 2450,
+        "16-20" : 2660,
+        "21-25" : 2870,
+        "26-30" : 3080,
+        "ANY": "40HC 확인"
+      },
+      "40HC": {
+        "description": "Hague/Wassenaar Area Sur Charge 추가되어있음.", 
+        "31-35" : 3610,
+        "36-40" : 3610,
+        "41-45" : 3810,
+        "46-50" : 4010,
+        "51-55" : 4310,
+        "56-60" : 4510
+        "ANY": "별도 문의"
+      }
+  },
+  "containerType": [
+    "20DRY",
+    "40HC"
+  ],
+  "delivery": "Hague/Wassenaar, Netherlands",
+  "partner": "A.T.I"
+}
