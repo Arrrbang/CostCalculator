@@ -212,22 +212,58 @@
       }
     ]
   },
-{
-  "name": "Galanta, Slovakia",
-  "lat": 48.1903,
-  "lng": 17.7276,
-  "links": [
-    {
-      "type": "FALCON",
-      "path": "data/EasternEurope/slovakia/falcon/galanta",
-      "color": "blue"
-    },
-    {
-      "type": "Move One FZE",
-      "path": "data/EasternEurope/slovakia/moveone/galanta",
-      "color": "blue"
-    }
-  ]
-}
+  {
+    "name": "Galanta, Slovakia",
+    "lat": 48.1903,
+    "lng": 17.7276,
+    "links": [
+      {
+        "type": "FALCON",
+        "path": "data/EasternEurope/slovakia/falcon/galanta",
+        "color": "blue"
+      },
+      {
+        "type": "Move One FZE",
+        "path": "data/EasternEurope/slovakia/moveone/galanta",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Budapest, Hungary",
+    "lat": 47.4979,
+    "lng": 19.0402,
+    "links": [
+      {
+        "type": "MOVE ONE KFT",
+        "path": "data/EasternEurope/hungary/moveonekft/budapest",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Nyíregyháza, Hungary",
+    "lat": 47.9554,
+    "lng": 21.7167,
+    "links": [
+      {
+        "type": "MOVE ONE KFT",
+        "path": "data/EasternEurope/hungary/moveonekft/nyiregyhaza",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tatabánya, Hungary",
+    "lat": 47.5847,
+    "lng": 18.3933,
+    "links": [
+      {
+        "type": "MOVE ONE KFT",
+        "path": "data/EasternEurope/hungary/moveonekft/tatabanya",
+        "color": "blue"
+      }
+    ]
+  }
 ]
 
