@@ -17,7 +17,7 @@
         "NonDiplomat": {
             "20DRY": 480,
             "40HC": 600
-        }
+        },
         "Diplomat": {
             "20DRY": 480,
             "40HC": 600
@@ -29,7 +29,7 @@
         "NonDiplomat": {
             "20DRY": 0,
             "40HC": 0
-        }
+        },
         "Diplomat": {
             "20DRY": 0,
             "40HC": 0
@@ -41,7 +41,7 @@
         "NonDiplomat": {
             "20DRY": 50,
             "40HC": 50
-        }
+        },
         "Diplomat": {
             "20DRY": 50,
             "40HC": 50
