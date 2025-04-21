@@ -21,10 +21,6 @@
       }
   },
   "diplomat": {
-      "CONSOLE": {
-        "description": "", 
-        "ANY": "별도 문의"
-      },
       "20DRY": {
         "description": "",
         "ANY": "별도 문의"
@@ -35,7 +31,6 @@
       }
   },
   "containerType": [
-    "CONSOLE",
     "20DRY",
     "40HC"
   ],
