@@ -91,7 +91,7 @@
         },
     "STAIR CHARGE": {
         "description": "고정가격 \n $150/20DR, $250/40HC",
-        "CBM단가": 
+        "CBM단가": ""
     },
     "HEAVY ITEM": {
         "description": "",
