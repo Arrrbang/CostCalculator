@@ -1,0 +1,44 @@
+{
+  "nonDiplomat": {
+      "20DRY": {
+        "description": "",
+        "1-5" : 650,
+        "6-10" : 800,
+        "11-15" : 925,
+        "16-20" : 1025,
+        "21-25" : 1075,
+        "26-30" : 1125
+      },
+      "40HC": {
+        "description": "", 
+        "ANY": "별도 문의",
+        "31-35" : 1250,
+        "36-40" : 1500,
+        "41-45" : 1725,
+        "46-50" : 1925,
+        "51-55" : 2100,
+        "56-60" : 2250
+      }
+  },
+  "diplomat": {
+      "CONSOLE": {
+        "description": "", 
+        "ANY": "별도 문의"
+      },
+      "20DRY": {
+        "description": "",
+        "ANY": "별도 문의"
+      },
+      "40HC": {
+        "description": "", 
+        "ANY": "별도 문의"
+      }
+  },
+  "containerType": [
+    "CONSOLE",
+    "20DRY",
+    "40HC"
+  ],
+  "delivery": "Hong Kong",
+  "partner": "UWT Hong Kong"
+}
