@@ -1302,5 +1302,17 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Hong Kong, Hong kong",
+    "lat": 22.3193,
+    "lng": 114.1694,
+    "links": [
+      {
+        "type": "WAC(REPS)",
+        "path": "data/EastAsia/hong_kong/wac_reps/hong_kong",
+        "color": "blue"
+      }
+    ]
   }
 ]
