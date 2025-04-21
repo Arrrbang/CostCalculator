@@ -1,0 +1,51 @@
+{
+  "nonDiplomat": {
+      "CONSOLE": {
+        "description": "INCLUDED : THC, Haulage Doc, LSS charge, and Full setting", 
+        "1-3": 550,
+        "4" : 650,
+        "5" : 700,
+        "6" : 800,
+        "7" : 900,
+        "8" : 1000,
+        "9" : 1100,
+        "10" : 1200,
+        "11" : 1300,
+        "12" : 1400,
+        "13" : 1500,
+        "14" : 1600,
+        "15" : 1700,
+        "16" : 1800,
+        "17" : 1900
+      },
+      "20DRY": {
+        "description": "INCLUDED : THC, Haulage Doc, LSS charge, and Full setting", 
+        "ANY": 2250
+      },
+      "40HC": {
+        "description": "INCLUDED : THC, Haulage Doc, LSS charge, and Full setting", 
+        "ANY": 3600
+      }
+  },
+  "diplomat": {
+      "CONSOLE": {
+        "description": "", 
+        "ANY" : "별도 문의"
+      },
+      "20DRY": {
+        "description": "", 
+        "ANY": "별도 문의"
+      },
+      "40HC": {
+        "description": "", 
+        "ANY": "별도 문의"
+      }
+  },
+  "containerType": [
+    "CONSOLE",
+    "20DRY",
+    "40HC"
+  ],
+  "delivery": "Hong Kong",
+  "partner": "WAC(REPS)"
+}
