@@ -30,6 +30,11 @@
       "type": "World Bridge",
       "path": "data/EastAsia/china/worldbridge/dalian",
       "color": "blue"
+    },
+    {
+      "type": "World Bridge",
+      "path": "data/EastAsia/china/worldbridge/dalian",
+      "color": "blue"
     }
   ]
 },
@@ -1311,6 +1316,11 @@
       {
         "type": "WAC(REPS)",
         "path": "data/EastAsia/hong_kong/wac_reps/hong_kong",
+        "color": "blue"
+      },
+      {
+        "type": "유니월드 홍콩",
+        "path": "data/EastAsia/hong_kong/UWThongkong/hong_kong",
         "color": "blue"
       }
     ]
