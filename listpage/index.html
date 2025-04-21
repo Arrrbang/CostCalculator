@@ -337,7 +337,7 @@ const initializePage = async () => {
     const countries = [
       ...new Set(
         locations
-          .flatMap(loc => loc.links.map(link => link.path.split("/")[2])) // [1]번 인덱스는 지역, [2]번은 나라명
+          .flatMap(loc => loc.links.map(link => link.path.split("/")[3])) // [3]번 인덱스로 변경
           .map(country => translateCountry(country))
       )
     ].map(c => ({ text: c, value: c }));
