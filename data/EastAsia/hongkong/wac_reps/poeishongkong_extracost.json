@@ -50,10 +50,10 @@
     },
     "additional-info-2": {
         "name": "사용 가능 선사",
-        "description": "HMM : T/T 40 DAYS"
+        "description": "KMTC/NAMUSNG : T/T 3-4 DAYS(인천/부산 거의 동일)"
     },
 
     "DATA BASE": {
-  	  "description": "업데이트 : 2025.04.11\n기초자료 : 2025.05.15 Boarding 기준 신규 타리프"
+  	  "description": "업데이트 : 2025.04.21\n기초자료 : 2025년 신규 타리프"
     }
 }
