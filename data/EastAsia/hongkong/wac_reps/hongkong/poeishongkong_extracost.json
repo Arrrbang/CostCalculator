@@ -1,0 +1,59 @@
+{
+    "links": [
+        {
+            "label": "INCHEON OFC",
+            "url": "https://www.notion.so/SINGAPORE-1990b10191ce8042a40efac2bf05b968?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/WAC-LOGISTICS-S-PTE-LIMITED-W-MOBILITY-LIMITED-REPS-WAC-1d80b10191ce80e9897df27c05b8023b"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "extra-cost-1": {
+        "name": "Storage handling charge",
+        "description": "",
+            "CONSOLE": {"단가" : 10},
+            "20DRY": {"단가" : 10},
+            "40HC": {"단가" : 10}
+        },
+    "extra-cost-2": {
+        "name": "Disposal charge",
+        "description": "At cost, USD 150 Minimum charge",
+            "CONSOLE": "At Cost",
+            "20DRY": "At Cost",
+            "40HC": "At Cost"
+        },
+    "STAIR CHARGE": {
+        "description": "별도 문의",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "",
+        "단위": "ITEM",
+        "단가": 0
+    },
+    "STORAGE CHARGE": {
+        "description": "",
+        "단위": "일",
+        "무료 보관 기간": 30,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0.8
+        }
+    },
+    "additional-info-1": {
+        "name": "포함/불포함 비용",
+        "description": "포함 비용 : THC, Haulage Doc, LSS charge, and Full setting charge \n불포함비용 : Shuttle, Wooden Box, Heavy Item(Piano, Treadmill), Stair, Long Carry, Handyman"
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "HMM : T/T 40 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "업데이트 : 2025.04.11\n기초자료 : 2025.05.15 Boarding 기준 신규 타리프"
+    }
+}
