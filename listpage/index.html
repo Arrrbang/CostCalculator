@@ -354,7 +354,7 @@ const initializePage = async () => {
       const regions = locations
         .filter(loc =>
           loc.links.some(link =>
-            translateCountry(link.path.split("/")[1]) === selectedCountry
+            translateCountry(link.path.split("/")[3]) === selectedCountry
           )
         )
         .map(loc => ({ text: loc.name, value: loc.name }));
