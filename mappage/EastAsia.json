@@ -1315,12 +1315,12 @@
     "links": [
       {
         "type": "WAC(REPS)",
-        "path": "data/EastAsia/hong_kong/wac_reps/hong_kong",
+        "path": "data/EastAsia/hongkong/wac_reps/hongkong",
         "color": "blue"
       },
       {
         "type": "유니월드 홍콩",
-        "path": "data/EastAsia/hong_kong/UWThongkong/hong_kong",
+        "path": "data/EastAsia/hongkong/UWThongkong/hongkong",
         "color": "blue"
       }
     ]
