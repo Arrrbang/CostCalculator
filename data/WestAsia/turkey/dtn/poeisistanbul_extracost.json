@@ -78,12 +78,6 @@
             "40HC": 300
         },
     "extra-cost-6": {
-        "name": "SHUTTLE SERVICE",
-        "description": "",
-            "20DRY": 200,
-            "40HC": 300
-        },
-    "extra-cost-7": {
         "name": "WEEKEND CHARGE",
         "description": "",
             "20DRY": 200,
