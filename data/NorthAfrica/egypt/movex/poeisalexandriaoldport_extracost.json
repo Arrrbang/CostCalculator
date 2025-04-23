@@ -1,0 +1,62 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/ALEXANDRIA-OLD-PORT-1980b10191ce807dbda5f4051557fe54?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/MOVEX-TRANSPORTATION-INTERNATIONAL-SHIPPING-S-A-1de0b10191ce8052a2c0ff6dea23ed16"
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC",
+        "description": "IMBALANCE SURCHARGE $0/$10, \nEQUIPMENT MAINTENANCE FEE $25/$40, \nTHERMINAL SECURITY CHARGE $12/$12",
+        "NonDiplomat": {
+            "20DRY": {"단가" : },
+            "40HC": {"단가" : }
+        },
+        "Diplomat": {
+            "20DRY": {"단가" : },
+            "40HC": {"단가" : }
+        }
+    },
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "",
+            "20DRY": {"단가" : },
+            "40HC": {"단가" : }
+        },
+    "STAIR CHARGE": {
+        "description": "INCLUDED",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "MORE THAN 100KG",
+        "단위": "ITEM",
+        "단가": 100
+    },
+    "STORAGE CHARGE": {
+        "description": "",
+        "단위": "개월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+    },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": ""
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "HMM : T/T 40 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "업데이트 : 2025.04.11\n기초자료 : 2025.05.15 Boarding 기준 신규 타리프"
+    }
+}
