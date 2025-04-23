@@ -1,20 +1,73 @@
 {
-  "화폐단위": "$",
+      "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/1de0b10191ce805cb276d54d94e65879"
+        }
+    ],
+  "화폐단위": "CAD",
   
   "basic-cost-1": {
-    "name": "THC/POC/DRAYAGE",
-    "description": "",
+    "name": "ACI",
+    "description": "세관 신고 비용",
     "NonDiplomat": {
-      "CONSOLE":"INCLUDED",
-      "20DRY": "INCLUED",
-      "40HC": "INCLUDED"
+      "CONSOLE":40,
+      "20DRY": 40,
+      "40HC": 40
     },
     "Diplomat": {
-      "CONSOLE": "INCLUDED",
-      "20DRY": "INCLUDED",
-      "40HC": "INCLUDED"
+      "CONSOLE": "별도 문의",
+      "20DRY": "별도 문의",
+      "40HC": "별도 문의"
     }
   },
+  "basic-cost-2": {
+    "name": "SSL IMPORT CHARGE",
+    "description": "USD$ 30",
+    "NonDiplomat": {
+      "CONSOLE":0,
+      "20DRY": 43,
+      "40HC": 43
+    },
+    "Diplomat": {
+      "CONSOLE": "별도 문의",
+      "20DRY": "별도 문의",
+      "40HC": "별도 문의"
+    }
+  },
+  "basic-cost-3": {
+    "name": "INBOND WAREHOUSE FEE",
+    "description": "",
+    "NonDiplomat": {
+      "CONSOLE":0,
+      "20DRY": 450,
+      "40HC": 550
+    },
+    "Diplomat": {
+      "CONSOLE": "별도 문의",
+      "20DRY": "별도 문의",
+      "40HC": "별도 문의"
+    }
+  },
+  "basic-cost-4": {
+    "name": "PORT CHG/DRAYAGE/THC",
+    "description": "콘솔의 경우 DOC $50 추가",
+    "NonDiplomat": {
+      "CONSOLE":{"단가" : 15},
+      "20DRY": 850,
+      "40HC": 850
+    },
+    "Diplomat": {
+      "CONSOLE": "별도 문의",
+      "20DRY": "별도 문의",
+      "40HC": "별도 문의"
+    }
+  },
+
   "extra-cost-1": {
     "name": "FULL SETTING",
     "description": "$200 /PER 5 CBM",
@@ -27,23 +80,31 @@
     "CBM단가": 0
   },
   "HEAVY ITEM": {
-    "description": "미확인",
+    "description": "돌침대, 피아노, 냉장고, 김치냉장고 등",
     "단위": "ITEM",
-    "단가": 0
+    "단가": 100
   },
   "STORAGE CHARGE": {
-    "description": "미확인",
-    "단위": "주",
-    "무료 보관 기간": 0,
-    "보관 비용 단가": 0
+      "description": "미확인",
+      "단위": "개월",
+      "무료 보관 기간": 0,
+      "보관 비용": {
+        "20DRY": 0,
+        "40HC": 0,
+        "단가": 0
+      }
   },
-  
-  "additional-info-1": {
-    "name": "미확인 추가 비용",
-    "description": "PIANO HDC, SHUTTLE, LONG CARRY.. ETC."
-  },
-  
-  "DATA BASE": {
-    "description": "업데이트 : 2024.10 이트너스 비딩 조사"
-  }
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": ""
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "SM/HMM : T/T 33 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "업데이트 : 2025.04.23\n기초자료 : 2025.04.22 타리프 문의"
+    }
 }
+
