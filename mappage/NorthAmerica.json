@@ -4756,61 +4756,97 @@
     ]
   },
   {
-    "name": "Ontario, Canada",
-    "lat": 50.000000,
-    "lng": -85.000000,
+    "name": "Abbotsford, Canada",
+    "lat": 49.0504,
+    "lng": -122.3045,
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/NorthAmerica/canada/canadashipping/ontario",
+        "path": "data/canada/canadashipping/abbotsford-mission",
         "color": "blue"
       }
     ]
   },
   {
-    "name": "Quebec, Canada",
-    "lat": 52.000000,
-    "lng": -71.000000,
+    "name": "Mission, Canada",
+    "lat": 49.1325,
+    "lng": -122.3123,
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/NorthAmerica/canada/canadashipping/quebec",
+        "path": "data/canada/canadashipping/abbotsford-mission",
         "color": "blue"
       }
     ]
   },
   {
-    "name": "Vancouver, Canada",
-    "lat": 49.282729,
-    "lng": -123.120738,
+    "name": "Chilliwack, Canada",
+    "lat": 49.1579,
+    "lng": -121.9515,
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/NorthAmerica/canada/canadashipping/vancouver",
+        "path": "data/canada/canadashipping/chilliwack",
         "color": "blue"
       }
     ]
   },
   {
-    "name": "Montreal, Canada",
-    "lat": 45.501690,
-    "lng": -73.567253,
+    "name": "Squamish, Canada",
+    "lat": 49.7016,
+    "lng": -123.1558,
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/NorthAmerica/canada/canadashipping/montreal",
+        "path": "data/canada/canadashipping/squamish",
         "color": "blue"
       }
     ]
   },
   {
-    "name": "Ottawa, Canada",
-    "lat": 45.424721,
-    "lng": -75.695000,
+    "name": "Victoria, Canada",
+    "lat": 48.4284,
+    "lng": -123.3656,
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/NorthAmerica/canada/canadashipping/ottawa",
+        "path": "data/canada/canadashipping/victoria-nanaimo-kamloops-kelowna",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Nanaimo, Canada",
+    "lat": 49.1659,
+    "lng": -123.9401,
+    "links": [
+      {
+        "type": "캐나다쉬핑",
+        "path": "data/canada/canadashipping/victoria-nanaimo-kamloops-kelowna",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kamloops, Canada",
+    "lat": 50.6745,
+    "lng": -120.3273,
+    "links": [
+      {
+        "type": "캐나다쉬핑",
+        "path": "data/canada/canadashipping/victoria-nanaimo-kamloops-kelowna",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kelowna, Canada",
+    "lat": 49.8879,
+    "lng": -119.4960,
+    "links": [
+      {
+        "type": "캐나다쉬핑",
+        "path": "data/canada/canadashipping/victoria-nanaimo-kamloops-kelowna",
         "color": "blue"
       }
     ]
