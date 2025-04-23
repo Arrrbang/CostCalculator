@@ -1,0 +1,55 @@
+{
+  "nonDiplomat": {
+      "CONSOLE": {
+        "description": "", 
+        "1-3": 968,
+        "4": 1166,
+        "5": 1298,
+        "6": 1400,
+        "7": 1560,
+        "8": 1680,
+        "9": 1800,
+        "10": 1940,
+        "11": 2060,
+        "12": 2180,
+        "13": 2300,
+        "14": 2420,
+        "15": 2500,
+        "16": 2760,
+        "17": 2880,
+        "18": 3000,
+        "19": 3120,
+        "20": 3240
+        "ANY":"별도 문의"
+      },
+      "20DRY": {
+        "description": "MIN : 20CBM", 
+        "ANY": 4060
+      },
+      "40HC": {
+        "description": "MIN : 30CBM", 
+        "ANY": 5720
+      }
+  },
+  "diplomat": {
+      "CONSOLE": {
+        "description": "", 
+        "ANY": "별도 문의"
+      },
+      "20DRY": {
+        "description": "",
+        "ANY": "별도 문의"
+      },
+      "40HC": {
+        "description": "", 
+        "ANY": "별도 문의"
+      }
+  },
+  "containerType": [
+    "CONSOLE",
+    "20DRY",
+    "40HC"
+  ],
+  "delivery": "Victoria, Nanaimo, Kamloops, Kelowna",
+  "partner": "캐나다쉬핑"
+}
