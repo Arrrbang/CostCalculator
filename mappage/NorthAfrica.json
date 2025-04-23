@@ -1,1 +1,14 @@
-
+[
+  {
+    "name": "Cairo, Egypt",
+    "lat": 30.0444,
+    "lng": 31.2357,
+    "links": [
+      {
+        "type": "MOVEX",
+        "path": "data/NorthAfrica/egypt/movex/cairo",
+        "color": "blue"
+      }
+    ]
+  }
+]
