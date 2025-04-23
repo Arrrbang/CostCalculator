@@ -1,0 +1,55 @@
+{
+  "nonDiplomat": {
+      "CONSOLE": {
+        "description": "", 
+        "1-3": 640,
+        "4": 730,
+        "5": 790,
+        "6": 900,
+        "7": 980,
+        "8": 1040,
+        "9": 1100,
+        "10": 1170,
+        "11": 1230,
+        "12": 1290,
+        "13": 1350,
+        "14": 1410,
+        "15": 1450,
+        "16": 1580,
+        "17": 1640,
+        "18": 1700,
+        "19": 1760,
+        "20": 1820
+        "ANY":"별도 문의"
+      },
+      "20DRY": {
+        "description": "MIN : 20CBM", 
+        "ANY": 2230
+      },
+      "40HC": {
+        "description": "MIN : 30CBM", 
+        "ANY": 3060
+      }
+  },
+  "diplomat": {
+      "CONSOLE": {
+        "description": "", 
+        "ANY": "별도 문의"
+      },
+      "20DRY": {
+        "description": "",
+        "ANY": "별도 문의"
+      },
+      "40HC": {
+        "description": "", 
+        "ANY": "별도 문의"
+      }
+  },
+  "containerType": [
+    "CONSOLE",
+    "20DRY",
+    "40HC"
+  ],
+  "delivery": "Chilliwack",
+  "partner": "캐나다쉬핑"
+}
