@@ -4762,7 +4762,7 @@
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/canada/canadashipping/abbotsford-mission",
+        "path": "data/NorthAmerica/canada/canadashipping/abbotsford-mission",
         "color": "blue"
       }
     ]
@@ -4774,7 +4774,7 @@
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/canada/canadashipping/abbotsford-mission",
+        "path": "data/NorthAmerica/canada/canadashipping/abbotsford-mission",
         "color": "blue"
       }
     ]
@@ -4786,7 +4786,7 @@
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/canada/canadashipping/chilliwack",
+        "path": "data/NorthAmerica/canada/canadashipping/chilliwack",
         "color": "blue"
       }
     ]
@@ -4798,7 +4798,7 @@
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/canada/canadashipping/squamish",
+        "path": "data/NorthAmerica/canada/canadashipping/squamish",
         "color": "blue"
       }
     ]
@@ -4810,7 +4810,7 @@
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/canada/canadashipping/victoria-nanaimo-kamloops-kelowna",
+        "path": "data/NorthAmerica/canada/canadashipping/victoria-nanaimo-kamloops-kelowna",
         "color": "blue"
       }
     ]
@@ -4822,7 +4822,7 @@
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/canada/canadashipping/victoria-nanaimo-kamloops-kelowna",
+        "path": "data/NorthAmerica/canada/canadashipping/victoria-nanaimo-kamloops-kelowna",
         "color": "blue"
       }
     ]
@@ -4834,7 +4834,7 @@
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/canada/canadashipping/victoria-nanaimo-kamloops-kelowna",
+        "path": "data/NorthAmerica/canada/canadashipping/victoria-nanaimo-kamloops-kelowna",
         "color": "blue"
       }
     ]
@@ -4846,7 +4846,7 @@
     "links": [
       {
         "type": "캐나다쉬핑",
-        "path": "data/canada/canadashipping/victoria-nanaimo-kamloops-kelowna",
+        "path": "data/NorthAmerica/canada/canadashipping/victoria-nanaimo-kamloops-kelowna",
         "color": "blue"
       }
     ]
