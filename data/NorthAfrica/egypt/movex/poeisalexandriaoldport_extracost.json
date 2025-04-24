@@ -7,30 +7,91 @@
         {
             "label": "NOTION",
             "url": "https://www.notion.so/MOVEX-TRANSPORTATION-INTERNATIONAL-SHIPPING-S-A-1de0b10191ce8052a2c0ff6dea23ed16"
+        }
     ],
     "화폐단위": "$",
   
     "basic-cost-1": {
-        "name": "THC",
-        "description": "IMBALANCE SURCHARGE $0/$10, \nEQUIPMENT MAINTENANCE FEE $25/$40, \nTHERMINAL SECURITY CHARGE $12/$12",
+        "name": "THC1",
+        "description": "YML증빙 있음\nIMBALANCE SURCHARGE $0/$10, \nEQUIPMENT MAINTENANCE FEE $25/$40, \nTHERMINAL SECURITY CHARGE $12/$12",
         "NonDiplomat": {
-            "20DRY": {"단가" : },
-            "40HC": {"단가" : }
+            "20DRY": 37,
+            "40HC": 62
         },
         "Diplomat": {
-            "20DRY": {"단가" : },
-            "40HC": {"단가" : }
+            "20DRY": 37,
+            "40HC": 62
+        }
+    },
+    "basic-cost-2": {
+        "name": "THC2",
+        "description": "YML증빙 있음\n20FT : EGP 15,476 \n40HC : EGP 26,694",
+        "NonDiplomat": {
+            "20DRY": 310,
+            "40HC": 560
+        },
+        "Diplomat": {
+            "20DRY": 310,
+            "40HC": 560
+        }
+    },
+    "basic-cost-3": {
+        "name": "POC",
+        "description": "EGP통화 증빙 있음\n증빙 맞추기가 까따롭고 건별로 금액이 상이함\n계산기 비용은 정확한 비용이 아님.",
+        "NonDiplomat": {
+            "20DRY": 750,
+            "40HC": 950
+        },
+        "Diplomat": {
+            "20DRY": 750,
+            "40HC": 950
+        }
+    },
+    "basic-cost-4": {
+        "name": "STORAGE/DEMURRAGE",
+        "description": "증빙 첨부 실비 청구 진행\nDEM = 20FT:7일 이전$60, 이후$70\n40HC:$90/1day\n\nSTG\n20FT:EGP700/9일까지 이후 EGP1600/DAYS\n40FT:EGP1300/9일까지 이후 EGP 2550/DAYS",
+        "NonDiplomat": {
+            "20DRY": "실비 청구",
+            "40HC": "실비 청구"
+        },
+        "Diplomat": {
+            "20DRY": "실비 청구",
+            "40HC": "실비 청구"
+        }
+    },
+    "basic-cost-5": {
+        "name": "SHUTTLE",
+        "description": "통상적으로 20/40 : $300/$500 청구",
+        "NonDiplomat": {
+            "20DRY": 300,
+            "40HC": 500
+        },
+        "Diplomat": {
+            "20DRY": 300,
+            "40HC": 500
         }
     },
     "extra-cost-1": {
         "name": "FULL SETTING",
         "description": "",
-            "20DRY": {"단가" : },
-            "40HC": {"단가" : }
+            "20DRY": {"단가" : 50},
+            "40HC": {"단가" : 50}
+        },
+    "extra-cost-2": {
+        "name": "UPLIGHT PIANO",
+        "description": "",
+            "20DRY": 225,
+            "40HC": 225
+        },
+    "extra-cost-3": {
+        "name": "ACID registration",
+        "description": "",
+            "20DRY": 75,
+            "40HC": 75
         },
     "STAIR CHARGE": {
-        "description": "INCLUDED",
-        "CBM단가": 0
+        "description": "",
+        "CBM단가": 5
     },
     "HEAVY ITEM": {
         "description": "MORE THAN 100KG",
@@ -53,10 +114,10 @@
     },
     "additional-info-2": {
         "name": "사용 가능 선사",
-        "description": "HMM : T/T 40 DAYS"
+        "description": "YML : T/T 최대 120 DAYS"
     },
 
     "DATA BASE": {
-  	  "description": "업데이트 : 2025.04.11\n기초자료 : 2025.05.15 Boarding 기준 신규 타리프"
+  	  "description": "업데이트 : 2025.04.24\n기초자료 : 2025 이트너스 비딩자료\n20250424 현지 타리프 요청중"
     }
 }
