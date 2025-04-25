@@ -26,20 +26,26 @@
     "extra-cost-1": {
         "name": "FULL SETTING",
         "description": "",
-        "20DRY": 230,
-        "40HC": 230
+        "20DRY": {"단가" : 12},
+        "40HC": {"단가" : 12}
         },
     "extra-cost-2": {
         "name": "SHUTTLE",
         "description": "",
-        "20DRY": 290,
-        "40HC": 290
+        "20DRY": {"단가" : 12},
+        "40HC": {"단가" : 12}
     },
     "extra-cost-3": {
+        "name": "WEEKEND",
+        "description": "",
+        "20DRY": {"단가" : 20},
+        "40HC": {"단가" : 20}
+    },
+    "extra-cost-4": {
         "name": "PIANO HANDLING",
         "description": "",
-        "20DRY": 150,
-        "40HC": 150
+        "20DRY": "INCLUDED",
+        "40HC": "INCLUDED"
     },
     "STAIR CHARGE": {
         "description": "미확인",
