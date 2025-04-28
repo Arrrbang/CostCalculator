@@ -528,7 +528,7 @@ function updateBasicDeliveryCost() {
 
     // description 값 바로 가져오기 (컨테이너 타입이 없으면 dataCategory에서 바로 가져옴)
     descriptionValue = cbmData["description"] || ""; // description을 가져옴
-    
+
     // CBM 값에 해당하는 범위 또는 개별 값 찾기
     const rangeKey = Object.keys(cbmData).find(key => {
       if (key.includes("-")) {
@@ -544,7 +544,7 @@ function updateBasicDeliveryCost() {
 
   // 값이 숫자인 경우 화폐 단위를 추가
   if (!isNaN(costValue)) {
-    costValue = ${currencySymbol}${Number(costValue).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })};
+    costValue = `${currencySymbol}${Number(costValue).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
   }
 
   // 결과 업데이트
@@ -555,6 +555,11 @@ function updateBasicDeliveryCost() {
   if (descriptionElement && descriptionValue) {
     // \n을 <br>로 변환하여 description을 HTML로 삽입
     descriptionElement.innerHTML = descriptionValue.replace(/\n/g, "<br>");
+
+
+
+
+
   }
 }
 
@@ -627,7 +632,7 @@ function updateDiplomatSensitiveResult(categoryKey) {
       maximumFractionDigits: 2 
     })}`;
   }
-  
+
   // 6. 업데이트
   const labelElement = document.getElementById(`${categoryKey}-label`);
   const valueElement = document.getElementById(`${categoryKey}-value`);
@@ -651,21 +656,21 @@ function calculateTotalCost() {
 
   costValueElements.forEach(costValueElement => {
     const costValueText = costValueElement.textContent || "";
-  
+
     // 화폐 단위 및 쉼표 제거 후 정리
     const cleanedText = costValueText.replace(/[\¥$€₩,]|C\$/g, "").trim();
-  
+
     // 숫자만 포함된 경우만 처리 (문자 포함 시 제외, "~" 포함 시 제외)
     if (!/^\d+(\.\d+)?$/.test(cleanedText) || costValueText.includes("~")) {
       return;
     }
-  
+
     const costValue = parseFloat(cleanedText);
     if (!isNaN(costValue)) {
       totalCost += costValue;
     }
   });
-  
+
   // basic-delivery-value 값도 추가 (동일한 처리 방식 적용)
   const basicDeliveryValueElement = document.getElementById("basic-delivery-value");
   if (basicDeliveryValueElement) {
