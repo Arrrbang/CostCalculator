@@ -552,11 +552,15 @@ function updateBasicDeliveryCost() {
 
   // description 값이 있으면 p 태그에 추가
   const descriptionElement = document.getElementById("basic-delivery-description");
-  if (descriptionElement && descriptionValue) {
-    // \n을 <br>로 변환하여 description을 HTML로 삽입
-    descriptionElement.innerHTML = descriptionValue.replace(/\n/g, "<br>");
+  if (descriptionElement) {
+    if (descriptionValue) {
+      // description이 빈 문자열이 아니면 업데이트
+      descriptionElement.innerHTML = descriptionValue.replace(/\n/g, "<br>");
+    } else {
+      // description이 빈 문자열이면 내용을 비움
+      descriptionElement.innerHTML = "";
+    }
   }
-}
 
 // CBM 드롭다운 값 변경 시 기본 배송 비용 업데이트
 dropdown.addEventListener("change", updateBasicDeliveryCost);
