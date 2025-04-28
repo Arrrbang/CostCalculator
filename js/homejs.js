@@ -544,7 +544,7 @@ function updateBasicDeliveryCost() {
 
   // 값이 숫자인 경우 화폐 단위를 추가
   if (!isNaN(costValue)) {
-    costValue = `${currencySymbol}${Number(costValue).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+    costValue = ${currencySymbol}${Number(costValue).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })};
   }
 
   // 결과 업데이트
@@ -552,14 +552,9 @@ function updateBasicDeliveryCost() {
 
   // description 값이 있으면 p 태그에 추가
   const descriptionElement = document.getElementById("basic-delivery-description");
-  if (descriptionElement) {
-    if (descriptionValue) {
-      // description이 빈 문자열이 아니면 업데이트
-      descriptionElement.innerHTML = descriptionValue.replace(/\n/g, "<br>");
-    } else {
-      // description이 빈 문자열이면 내용을 비움
-      descriptionElement.innerHTML = "";
-    }
+  if (descriptionElement && descriptionValue) {
+    // \n을 <br>로 변환하여 description을 HTML로 삽입
+    descriptionElement.innerHTML = descriptionValue.replace(/\n/g, "<br>");
   }
 }
 
