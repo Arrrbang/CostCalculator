@@ -3,18 +3,6 @@
 
 
   "basic-cost-1": {
-    "name": "ARRIVAL NOTICE(터미널 비용)",
-    "description": "¥70,000~73,000발생. 실비 청구. \n콘솔은 25CBM/20FT 적입 기준",
-    "NonDiplomat": {
-      "CONSOLE": {"단가": 2920},
-      "20DRY": 73000
-    },
-    "Diplomat": {
-      "CONSOLE": {"단가": 2920},
-      "20DRY": 73000
-    }
-  },
-  "basic-cost-2": {
     "name": "CUSTOM CLEARANCE(통관 및 운송료)",
     "description": "¥85,300 고정 비용으로 진행됨. 콘솔은 25CBM/20FT 적입 기준.",
     "NonDiplomat": {
@@ -24,6 +12,18 @@
     "Diplomat": {
       "CONSOLE": {"단가": 3412},
       "20DRY": 85300
+    }
+  },
+  "basic-cost-2": {
+    "name": "ARRIVAL NOTICE(터미널 비용)",
+    "description": "¥70,000~73,000발생. 실비 청구. \n콘솔은 25CBM/20FT 적입 기준",
+    "NonDiplomat": {
+      "CONSOLE": {"단가": 2920},
+      "20DRY": 73000
+    },
+    "Diplomat": {
+      "CONSOLE": {"단가": 2920},
+      "20DRY": 73000
     }
   },
   "basic-cost-3": {
