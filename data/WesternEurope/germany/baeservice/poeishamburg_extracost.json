@@ -111,7 +111,7 @@
     },
     "additional-info-2": {
         "name": "실비 청구 비용",
-        "description": "Port Charge, Container Return Charge \nStorage Charge\nDemurrage & Detention Charge"
+        "description": "*모든 비용 증빙 첨부됨*\nPort Charge, Container Return Charge \nStorage Charge\nDemurrage & Detention Charge"
     },
     "additional-info-3": {
         "name": "사용 가능 선사 및 T/T",
