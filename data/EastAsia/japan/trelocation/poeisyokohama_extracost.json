@@ -31,11 +31,11 @@
     "description": "¥1,000/PER CBM",
     "NonDiplomat": {
       "CONSOLE": {"단가": 1000},
-      "20DRY": "미발생"
+      "20DRY": {"단가": 1000}
     },
     "Diplomat": {
       "CONSOLE": {"단가": 1000},
-      "20DRY": "미발생"
+      "20DRY": {"단가": 1000}
     }
   },
   "extra-cost-1": {
