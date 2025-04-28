@@ -41,20 +41,20 @@
   },
   "basic-cost-3": {
     "name": "Pier Pass",
-    "description": "콘솔 단가는 40HC 60CBM 콘솔 기준",
+    "description": "콘솔 단가는 40HC 55~60CBM 콘솔 기준",
     "NonDiplomat": {
       "CONSOLE": {
-        "단가": 1.18
+        "단가": 1.4
       },
       "20DRY": 35.57,
-      "40HC": 71.14
+      "40HC": 75.42
     },
     "Diplomat": {
       "CONSOLE": {
-        "단가": 1.18
+        "단가": 1.4
       },
       "20DRY": 35.57,
-      "40HC": 71.14
+      "40HC": 75.42
     }
   },
     "basic-cost-4": {
