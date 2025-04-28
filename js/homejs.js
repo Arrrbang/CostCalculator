@@ -561,6 +561,7 @@ function updateBasicDeliveryCost() {
       descriptionElement.innerHTML = "";
     }
   }
+}
 
 // CBM 드롭다운 값 변경 시 기본 배송 비용 업데이트
 dropdown.addEventListener("change", updateBasicDeliveryCost);
