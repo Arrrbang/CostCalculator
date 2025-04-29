@@ -1,0 +1,28 @@
+{
+  "nonDiplomat": {
+      "20DRY": {
+        "description": "", 
+        "ANY": 1800
+      },
+      "40HC": {
+        "description": "", 
+        "ANY": 2500
+      }
+  },
+  "diplomat": {
+      "20DRY": {
+        "description": "", 
+        "ANY": 1800
+      },
+      "40HC": {
+        "description": "", 
+        "ANY": 2500
+      }
+  },
+  "containerType": [
+    "20DRY",
+    "40HC"
+  ],
+  "delivery": "Sao Paulo, Santos",
+  "partner": "Odin"
+}
