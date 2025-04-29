@@ -1,7 +1,7 @@
 {
   "nonDiplomat": {
       "20DRY": {
-        "description": "Coord. Logistics : 수입 통관 비용\nDestination Services (Import) I.P. : 배송 비용\nOTM Transport I.T. : 항구에서 보고타의 창고로 화물을 운송하는 국내 운송 비용\nLocal Transport I.T. : 창고에서 고객의 거주지로 화물 운송 비용\nSatelital security seal (protekto) I.T. : 차량 화물 고정 비용\n\n2025년 콜롬비아 내 운송료 인상으로 \nOTM Transport항목이 추가 청구될 예정., 
+        "description": "Coord. Logistics : 수입 통관 비용\nDestination Services (Import) I.P. : 배송 비용\nOTM Transport I.T. : 항구에서 보고타의 창고로 화물을 운송하는 국내 운송 비용\nLocal Transport I.T. : 창고에서 고객의 거주지로 화물 운송 비용\nSatelital security seal (protekto) I.T. : 차량 화물 고정 비용\n\n2025년 콜롬비아 내 운송료 인상으로 \nOTM Transport항목이 추가 청구될 예정.", 
         "1-5" : 2089,
         "6-10" : 2170,
         "11-15" : 2359,
