@@ -1,0 +1,64 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/BUENAVENTURA-CALLAO-1980b10191ce8035a62cd00bf9c478e2?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/INTRAMAR-SHIPPING-1d70b10191ce80439173dbabff81b73c"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "PORT CHARGE",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 2485,
+            "40HC": "별도 문의"
+        },
+        "Diplomat": {
+            "20DRY": 2485,
+            "40HC": "별도 문의"
+        }
+    },
+    "extra-cost-1": {
+        "name": "",
+        "description": "",
+            "CONSOLE": {"단가" : 0},
+            "20DRY": {"단가" : 0},
+            "40HC": {"단가" : 0}
+        },
+    "STAIR CHARGE": {
+        "description": "INCLUDED",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "",
+        "단위": "-",
+        "단가": 0
+    },
+    "STORAGE CHARGE": {
+        "description": "",
+        "단위": "-",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+    },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": ""
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "HMM : T/T 30~40 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "업데이트 : 2025.04.29\n기초자료 : 2024.10 조사 이트너스 비딩자료"
+    }
+}
