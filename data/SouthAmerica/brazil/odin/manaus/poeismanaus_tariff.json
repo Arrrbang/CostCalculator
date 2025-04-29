@@ -1,22 +1,28 @@
 {
   "nonDiplomat": {
       "20DRY": {
-        "1-30": 1800
+        "description": "", 
+        "ANY": "별도 문의"
       },
       "40HC": {
-        "1-60": 2500
+        "description": "", 
+        "ANY": "별도 문의"
       }
   },
   "diplomat": {
       "20DRY": {
-        "1-30": 1800
+        "description": "", 
+        "ANY": "별도 문의"
       },
       "40HC": {
-        "1-60": 2500
+        "description": "", 
+        "ANY": "별도 문의"
       }
   },
   "containerType": [
     "20DRY",
     "40HC"
-  ]
+  ],
+  "delivery": "Manaus",
+  "partner": "Odin"
 }
