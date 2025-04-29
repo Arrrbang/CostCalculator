@@ -6,7 +6,7 @@
     "links": [
       {
         "type": "ODIN",
-        "path": "data/SouthAmerica/brazil/odin/allofpoesantos",
+        "path": "data/SouthAmerica/brazil/odin/brasilia",
         "color": "blue"
       }
     ]
@@ -18,7 +18,7 @@
     "links": [
       {
         "type": "ODIN",
-        "path": "data/SouthAmerica/brazil/odin/campinas",
+        "path": "data/SouthAmerica/brazil/odin/campinas-piracicaba",
         "color": "blue"
       }
     ]
@@ -42,7 +42,7 @@
     "links": [
       {
         "type": "ODIN",
-        "path": "data/SouthAmerica/brazil/odin/allofpoesantos",
+        "path": "data/SouthAmerica/brazil/odin/rio_de_janeiro",
         "color": "blue"
       }
     ]
@@ -54,7 +54,7 @@
     "links": [
       {
         "type": "ODIN",
-        "path": "data/SouthAmerica/brazil/odin/allofpoesantos",
+        "path": "data/SouthAmerica/brazil/odin/santos-sao_paulo",
         "color": "blue"
       }
     ]
@@ -66,7 +66,7 @@
     "links": [
       {
         "type": "ODIN",
-        "path": "data/SouthAmerica/brazil/odin/allofpoesantos",
+        "path": "data/SouthAmerica/brazil/odin/santos-sao_paulo",
         "color": "blue"
       }
     ]
@@ -78,7 +78,7 @@
     "links": [
       {
         "type": "ODIN",
-        "path": "data/SouthAmerica/brazil/odin/allofpoesantos",
+        "path": "data/SouthAmerica/brazil/odin/santa_cruz",
         "color": "blue"
       }
     ]
@@ -90,7 +90,7 @@
     "links": [
       {
         "type": "ODIN",
-        "path": "data/SouthAmerica/brazil/odin/piracicaba",
+        "path": "data/SouthAmerica/brazil/odin/campinas-piracicaba",
         "color": "blue"
       }
     ]
