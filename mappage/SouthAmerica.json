@@ -36,18 +36,6 @@
     ]
   },
   {
-    "name": "Rio de Janeiro, Brazil",
-    "lat": -22.9068,
-    "lng": -43.1729,
-    "links": [
-      {
-        "type": "ODIN",
-        "path": "data/SouthAmerica/brazil/odin/rio_de_janeiro",
-        "color": "blue"
-      }
-    ]
-  },
-  {
     "name": "Santos, Brazil",
     "lat": -23.9608,
     "lng": -46.3336,
@@ -67,18 +55,6 @@
       {
         "type": "ODIN",
         "path": "data/SouthAmerica/brazil/odin/santos-sao_paulo",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "name": "Santa Cruz, Brazil",
-    "lat": -6.2302,
-    "lng": -36.0204,
-    "links": [
-      {
-        "type": "ODIN",
-        "path": "data/SouthAmerica/brazil/odin/santa_cruz",
         "color": "blue"
       }
     ]
