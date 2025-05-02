@@ -264,6 +264,30 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Moscow, Russia",
+    "lat": 55.7558,
+    "lng": 37.6173,
+    "links": [
+      {
+        "type": "유피알 UPR",
+        "path": "data/EasternEurope/russia/upr/moscow",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Saint Petersburg, Russia",
+    "lat": 59.9343,
+    "lng": 30.3351,
+    "links": [
+      {
+        "type": "유피알 UPR",
+        "path": "data/EasternEurope/russia/upr/saint_petersburg",
+        "color": "blue"
+      }
+    ]
   }
 ]
 
