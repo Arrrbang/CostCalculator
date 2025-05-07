@@ -1,6 +1,32 @@
 {
+    "links": [
+        {
+            "label": "INCHEON OFC",
+            "url": "https://www.notion.so/SHEKOU-1990b10191ce801b957bef965721bcc0?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/UNI-WORLD-SHENZHEN-1de0b10191ce804bbb5bdbb1beb2d74a"
+        }
+    ],
+
   "화폐단위": "$",
   
+  "basic-cost-1": {
+      "name": "ISC 검사비",
+      "description": "",
+      "NonDiplomat": {
+          "CONSOLE": {"단가" : 2.5},
+          "20DRY": 66,
+          "40HC": "미확인"
+      },
+      "Diplomat": {
+          "CONSOLE": "미확인",
+          "20DRY": "미확인",
+          "40HC": "미확인"
+      }
+  },
+
   "extra-cost-1": {
     "name": "UPLIGHT PIANO",
     "description": "",
@@ -53,8 +79,12 @@
     "name": "외교관 화물",
     "description": "영사관 이주화물 PORT NANSHA 진행(일반 비용에 $500추가)"
   },
+  "additional-info-3": {
+    "name": "사용 가능 선사",
+    "description": "부산발 - KMTC/NAMUSNG : T/T 3 DAYS \n인천발 - KMTC/NAMUSNG : T/T 5~8 DAYS"
+  },
   
   "DATA BASE": {
-    "description": "업데이트 : 2024.10 이트너스 비딩 조사"
+    "description": "업데이트 : 2025.05.07\n기초자료 : 2024 심천 타리프"
   }
 }
