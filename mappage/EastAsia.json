@@ -912,7 +912,7 @@
       }
     ]
   },
-{
+  {
     "name": "Kobe(Hyogo), Japan",
     "lat": 34.6901,
     "lng": 135.1955,
@@ -941,7 +941,7 @@
       },
       {
         "type": "KOKUSAI",
-        "path": "data/EastAsia/japan/kokusai/tokyo",
+        "path": "data/EastAsia/japan/kokusai/tokyo-yokohama",
         "color": "blue"
       }
     ]
@@ -958,7 +958,7 @@
       },
       {
         "type": "KOKUSAI",
-        "path": "data/EastAsia/japan/kokusai/tokyo",
+        "path": "data/EastAsia/japan/kokusai/tokyo-yokohama",
         "color": "blue"
       }
     ]
@@ -975,7 +975,7 @@
       },
       {
         "type": "KOKUSAI",
-        "path": "data/EastAsia/japan/kokusai/kanagawa",
+        "path": "data/EastAsia/japan/kokusai/kanagawa-saitama-chiba",
         "color": "blue"
       }
     ]
@@ -992,7 +992,7 @@
       },
       {
         "type": "KOKUSAI",
-        "path": "data/EastAsia/japan/kokusai/saitama",
+        "path": "data/EastAsia/japan/kokusai/kanagawa-saitama-chiba",
         "color": "blue"
       }
     ]
@@ -1009,7 +1009,7 @@
       },
       {
         "type": "KOKUSAI",
-        "path": "data/EastAsia/japan/kokusai/chiba",
+        "path": "data/EastAsia/japan/kokusai/kanagawa-saitama-chiba",
         "color": "blue"
       }
     ]
@@ -1026,7 +1026,7 @@
       },
       {
         "type": "KOKUSAI",
-        "path": "data/EastAsia/japan/kokusai/yamanashi",
+        "path": "data/EastAsia/japan/kokusai/yamanashi-ibaraki",
         "color": "blue"
       }
     ]
@@ -1060,7 +1060,7 @@
       },
       {
         "type": "KOKUSAI",
-        "path": "data/EastAsia/japan/kokusai/ibaraki",
+        "path": "data/EastAsia/japan/kokusai/yamanashi-ibaraki",
         "color": "blue"
       }
     ]
@@ -1077,7 +1077,7 @@
       },
       {
         "type": "KOKUSAI",
-        "path": "data/EastAsia/japan/kokusai/shizuoka",
+        "path": "data/EastAsia/japan/kokusai/shizuoka-gunma",
         "color": "blue"
       }
     ]
@@ -1094,7 +1094,7 @@
       },
       {
         "type": "KOKUSAI",
-        "path": "data/EastAsia/japan/kokusai/gunma",
+        "path": "data/EastAsia/japan/kokusai/shizuoka-gunma",
         "color": "blue"
       }
     ]
