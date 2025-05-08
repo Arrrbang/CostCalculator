@@ -1,6 +1,16 @@
 {
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/YOKOHAMA-1990b10191ce800fba89f31cada2c5a7?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/T-RELOCATION-CO-LTD-1b30b10191ce808797cfd01a3d925b5b"
+        }
+    ],
+  
   "화폐단위": "¥",
-
 
   "basic-cost-1": {
     "name": "CUSTOM CLEARANCE(통관 및 운송료)",
@@ -75,14 +85,13 @@
   },
   
   "additional-info-1": {
-    "name": "별송품 신고서 작성 요망",
-    "description": "수입 신고 서류는 아래 노션 버튼 클릭하여 확인 필요."
-  },
-  
-  "additional-info-2": {
     "name": "20FT 단독 컨테이너의 경우 고정비용",
     "description": "20ft 단독인데 사이즈가 작을 경우 별도 문의 필요.\n10cbm 이상은 모두 고정값. "
   },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "부산발 - KMTC/NAMSUNG : T/T 3 DAYS\n인천발 - KMTC/NAMSUNG : T/T 5 DAYS"
+    },
 
   "DATA BASE": {
     "description": "업데이트 : 2025.03.11 업데이트"
