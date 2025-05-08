@@ -67,6 +67,20 @@
       "40HC": "별도 문의"
     }
   },
+    "basic-cost-5": {
+    "name": "Handling Charge",
+    "description": "",
+    "NonDiplomat": {
+      "CONSOLE": 50,
+      "20DRY": 50,
+      "40HC": 50
+    },
+    "Diplomat": {
+      "CONSOLE": "별도 문의",
+      "20DRY": "별도 문의",
+      "40HC": "별도 문의"
+    }
+  },
   
 "extra-cost-1": {
     "name": "FULL SETTING",
