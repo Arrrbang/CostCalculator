@@ -1452,7 +1452,7 @@
         "type": "KOKUSAI",
         "path": "data/EastAsia/japan/kokusai/fukui",
         "color": "blue"
-      },
+      }
     ]
   },
   {
@@ -1464,7 +1464,7 @@
         "type": "KOKUSAI",
         "path": "data/EastAsia/japan/kokusai/kanazawa",
         "color": "blue"
-      },
+      }
     ]
   },
   {
@@ -1476,7 +1476,7 @@
         "type": "KOKUSAI",
         "path": "data/EastAsia/japan/kokusai/toyama",
         "color": "blue"
-      },
+      }
     ]
   },
   {
