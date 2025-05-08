@@ -1,14 +1,4 @@
 {
-  "links": [
-    {
-      "label": "INCHEON OFC",
-      "url": "https://www.notion.so/YOKOHAMA-1990b10191ce800fba89f31cada2c5a7?pvs=4"
-    },
-    {
-      "label": "NOTION",
-      "url": "https://www.notion.so/T-RELOCATION-CO-LTD-1b30b10191ce808797cfd01a3d925b5b"
-    }
-  ],
   "nonDiplomat": {
     "CONSOLE": {
       "1" : 33000,
@@ -52,5 +42,9 @@
   "containerType": [
     "CONSOLE",
     "20DRY"
-  ]
+  ],
+  
+  "delivery": "Tokyo, Yokohama",
+  "partner": "T relocation"
 }
+
