@@ -913,12 +913,17 @@
     ]
   },
 {
-    "name": "Kobe, Japan",
+    "name": "Kobe(Hyogo), Japan",
     "lat": 34.6901,
     "lng": 135.1955,
     "links": [
       {
         "type": "T RELOCATION",
+        "path": "data/EastAsia/japan/trelocation/kobe",
+        "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
         "path": "data/EastAsia/japan/trelocation/kobe",
         "color": "blue"
       }
@@ -933,6 +938,11 @@
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/tokyo",
         "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/tokyo",
+        "color": "blue"
       }
     ]
   },
@@ -944,6 +954,11 @@
       {
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/tokyo",
+        "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/tokyo",
         "color": "blue"
       }
     ]
@@ -957,6 +972,11 @@
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/kanagawa",
         "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/kanagawa",
+        "color": "blue"
       }
     ]
   },
@@ -968,6 +988,11 @@
       {
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/kanagawa",
+        "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/saitama",
         "color": "blue"
       }
     ]
@@ -981,6 +1006,11 @@
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/kanagawa",
         "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/chiba",
+        "color": "blue"
       }
     ]
   },
@@ -992,6 +1022,11 @@
       {
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/yamanashi",
+        "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/yamanashi",
         "color": "blue"
       }
     ]
@@ -1005,6 +1040,11 @@
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/yamanashi",
         "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/tochigi",
+        "color": "blue"
       }
     ]
   },
@@ -1016,6 +1056,11 @@
       {
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/yamanashi",
+        "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/ibaraki",
         "color": "blue"
       }
     ]
@@ -1029,6 +1074,11 @@
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/yamanashi",
         "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/shizuoka",
+        "color": "blue"
       }
     ]
   },
@@ -1040,6 +1090,11 @@
       {
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/yamanashi",
+        "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/gunma",
         "color": "blue"
       }
     ]
@@ -1053,6 +1108,11 @@
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/nagoya",
         "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/nagoya",
+        "color": "blue"
       }
     ]
   },
@@ -1065,6 +1125,11 @@
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/nagoya",
         "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/nagano",
+        "color": "blue"
       }
     ]
   },
@@ -1076,6 +1141,11 @@
     {
       "type": "T RELOCATION",
       "path": "data/EastAsia/japan/trelocation/nagoya",
+      "color": "blue"
+    },
+    {
+      "type": "KOKUSAI",
+      "path": "data/EastAsia/japan/kokusai/fukushima",
       "color": "blue"
     }
   ]
@@ -1101,6 +1171,11 @@
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/osaka",
         "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/osaka",
+        "color": "blue"
       }
     ]
   },
@@ -1112,6 +1187,11 @@
       {
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/osaka",
+        "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/kyoto",
         "color": "blue"
       }
     ]
@@ -1125,6 +1205,11 @@
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/osaka",
         "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/shiga",
+        "color": "blue"
       }
     ]
   },
@@ -1136,6 +1221,11 @@
       {
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/osaka",
+        "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/nara",
         "color": "blue"
       }
     ]
@@ -1149,6 +1239,11 @@
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/osaka",
         "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/mie",
+        "color": "blue"
       }
     ]
   },
@@ -1160,6 +1255,11 @@
       {
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/osaka",
+        "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/gifu",
         "color": "blue"
       }
     ]
@@ -1173,17 +1273,27 @@
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/sendai",
         "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/sendai",
+        "color": "blue"
       }
     ]
   },
   {
-    "name": "Nigata, Japan",
+    "name": "Niigata, Japan",
     "lat": 37.9162,
     "lng": 139.0364,
     "links": [
       {
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/sendai",
+        "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/niigata",
         "color": "blue"
       }
     ]
@@ -1196,6 +1306,11 @@
       {
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/sendai",
+        "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/yamagata",
         "color": "blue"
       }
     ]
@@ -1221,6 +1336,11 @@
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/hirosima",
         "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/hirosima",
+        "color": "blue"
       }
     ]
   },
@@ -1232,6 +1352,11 @@
       {
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/hirosima",
+        "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/okayama",
         "color": "blue"
       }
     ]
@@ -1257,6 +1382,11 @@
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/hirosima",
         "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/ehime",
+        "color": "blue"
       }
     ]
   },
@@ -1268,6 +1398,11 @@
       {
         "type": "T RELOCATION",
         "path": "data/EastAsia/japan/trelocation/fukuoka",
+        "color": "blue"
+      },
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/fukuoka",
         "color": "blue"
       }
     ]
@@ -1306,6 +1441,42 @@
         "path": "data/EastAsia/japan/trelocation/oita",
         "color": "blue"
       }
+    ]
+  },
+  {
+    "name": "Fukui, Japan",
+    "lat": 36.0641,
+    "lng": 136.2196,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/fukui",
+        "color": "blue"
+      },
+    ]
+  },
+  {
+    "name": "Kanazawa(ISHIKAWA), Japan",
+    "lat": 36.594999,
+    "lng": 136.625000,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/kanazawa",
+        "color": "blue"
+      },
+    ]
+  },
+  {
+    "name": "Toyama, Japan",
+    "lat": 36.695918,
+    "lng": 137.213694,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/toyama",
+        "color": "blue"
+      },
     ]
   },
   {
