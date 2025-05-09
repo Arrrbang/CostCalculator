@@ -1,0 +1,113 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/KOKUSAI-EXPRESS-1ed0b10191ce8021a52dfb0b9cdecbf9"
+        }
+    ],
+    "화폐단위": "¥",
+  
+    "basic-cost-1": {
+        "name": "BAF/LSS",
+        "description": "",
+        "NonDiplomat": {
+            "CONSOLE": {"단가" : 1000},
+            "20DRY": 30000,
+            "40HC": 60000
+        },
+        "Diplomat": {
+            "CONSOLE": {"단가" : 1000},
+            "20DRY": 30000,
+            "40HC": 60000
+        }
+    },
+    "basic-cost-2": {
+        "name": "CLC",
+        "description": "대략적인 비용, 별도 확인 필요",
+        "NonDiplomat": {
+            "CONSOLE": 10000,
+            "20DRY": 10000,
+            "40HC": 10000
+        },
+        "Diplomat": {
+            "CONSOLE": 10000,
+            "20DRY": 10000,
+            "40HC": 10000
+        }
+    },
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "",
+            "CONSOLE": 50000,
+            "20DRY": 50000,
+            "40HC": "별도 문의"
+        },
+    "extra-cost-2": {
+        "name": "STAIR CHARGE",
+        "description": "계단 3F 기준. 층별 추가 ¥ 5,000",
+            "CONSOLE": {
+              "1-10" : 15000,
+              "11-20" : 30000,
+              "21-30" : 45000,
+              "ANY" : "별도문의"
+              },
+            "20DRY": {
+              "1-10" : 15000,
+              "11-20" : 30000,
+              "21-30" : 45000,
+              "ANY" : "별도문의"
+              },
+            "40HC": "별도 문의"
+        },
+    "extra-cost-3": {
+        "name": "PIANO HANDLING CHARGE",
+        "description": "CRAIN CHARGE: 실비청구",
+            "CONSOLE": 30000,
+            "20DRY": 30000,
+            "40HC": 30000
+        },
+    "extra-cost-4": {
+        "name": "WEEKEND CHARGE",
+        "description": "일요일/공휴일 작업 추가 비용\n토요일은 ¥30,000",
+            "CONSOLE": 50000,
+            "20DRY": 50000,
+            "40HC": 50000
+        },
+    "STAIR CHARGE": {
+        "description": "",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "",
+        "단위": "ITEM",
+        "단가": 0
+    },
+    "STORAGE CHARGE": {
+        "description": "콘솔건만 적용됨",
+        "단위": "일",
+        "무료 보관 기간": 14,
+        "보관 비용": {
+          "단가": 200
+        }
+    },
+    "additional-info-1": {
+        "name": "실제 청구서는 US$로 청구됨.",
+        "description": ""
+    },
+    "additional-info-2": {
+        "name": "진행 전에 확인 필수",
+        "description": "아직 KOKUSAIDP 단독컨테이너 Fukuoka 입항 진행이력 없음"
+    },
+    "additional-info-3": {
+        "name": "사용 가능 선사",
+        "description": "확인 필요"
+    },
+
+    "DATA BASE": {
+  	  "description": "업데이트 : 2025.05.08\n기초자료 : 2025.04.01 입항 기준 타리프"
+    }
+}
