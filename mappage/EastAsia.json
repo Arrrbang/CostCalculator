@@ -1576,6 +1576,90 @@
     ]
   },
   {
+    "name": "Fukuoka, Japan",
+    "lat": 33.5900,
+    "lng": 130.4017,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/fukuoka",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Akita, Japan",
+    "lat": 39.7200,
+    "lng": 140.1026,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/akita-aomori-ehime-kouchi",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Aomori, Japan",
+    "lat": 40.8247,
+    "lng": 140.7406,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/akita-aomori-ehime-kouchi",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ehime, Japan",
+    "lat": 33.8357,
+    "lng": 132.7622,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/akita-aomori-ehime-kouchi",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kouchi, Japan",
+    "lat": 33.5587,
+    "lng": 133.5311,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/akita-aomori-ehime-kouchi",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Okinawa, Japan",
+    "lat": 26.2124,
+    "lng": 127.6792,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/okinawa-sapporo",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Sapporo, Japan",
+    "lat": 43.0621,
+    "lng": 141.3544,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/okinawa-sapporo",
+        "color": "blue"
+      }
+    ]
+  },
+  {
     "name": "Hong Kong, Hong kong",
     "lat": 22.3193,
     "lng": 114.1694,
