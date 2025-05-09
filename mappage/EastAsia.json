@@ -1576,18 +1576,6 @@
     ]
   },
   {
-    "name": "Fukuoka, Japan",
-    "lat": 33.5900,
-    "lng": 130.4017,
-    "links": [
-      {
-        "type": "KOKUSAI",
-        "path": "data/EastAsia/japan/kokusai/fukuoka",
-        "color": "blue"
-      }
-    ]
-  },
-  {
     "name": "Akita, Japan",
     "lat": 39.7200,
     "lng": 140.1026,
