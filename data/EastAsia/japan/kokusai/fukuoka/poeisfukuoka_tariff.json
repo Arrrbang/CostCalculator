@@ -2,7 +2,7 @@
   "nonDiplomat": {
       "CONSOLE": {
         "description": "", 
-        "ANY": "Yokohama port 확"
+        "ANY": "Yokohama port 확인"
       },
       "20DRY": {
         "description": "", 
@@ -27,12 +27,11 @@
         "30": 450000
       },
       "40HC": {
-        "description": "", 
-        "ANY": "별도 문의"
+        "description": "55CBM 기준", 
+        "ANY": 875000
       }
   },
   "containerType": [
-    "CONSOLE",
     "20DRY",
     "40HC"
   ],
