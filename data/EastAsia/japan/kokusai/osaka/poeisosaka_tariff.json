@@ -28,11 +28,10 @@
       },
       "40HC": {
         "description": "", 
-        "ANY": "별도 문의"
+        "ANY": 575000
       }
   },
   "containerType": [
-    "CONSOLE",
     "20DRY",
     "40HC"
   ],
