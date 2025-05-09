@@ -1480,6 +1480,102 @@
     ]
   },
   {
+    "name": "Kagawa, Japan",
+    "lat": 34.3401,
+    "lng": 134.0434,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/kagawa-hiroshima-shimane-okayama-wakayama-tottori",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hiroshima, Japan",
+    "lat": 34.3853,
+    "lng": 132.4553,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/kagawa-hiroshima-shimane-okayama-wakayama-tottori",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Shimane, Japan",
+    "lat": 35.4723,
+    "lng": 133.0505,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/kagawa-hiroshima-shimane-okayama-wakayama-tottori",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Okayama, Japan",
+    "lat": 34.6551,
+    "lng": 133.9195,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/kagawa-hiroshima-shimane-okayama-wakayama-tottori",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Wakayama, Japan",
+    "lat": 34.2333,
+    "lng": 135.1670,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/kagawa-hiroshima-shimane-okayama-wakayama-tottori",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tottori, Japan",
+    "lat": 35.5000,
+    "lng": 134.2330,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/kagawa-hiroshima-shimane-okayama-wakayama-tottori",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Iwate, Japan",
+    "lat": 39.7036,
+    "lng": 141.1527,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/iwate-yamagata",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Yamagata, Japan",
+    "lat": 38.2333,
+    "lng": 140.3667,
+    "links": [
+      {
+        "type": "KOKUSAI",
+        "path": "data/EastAsia/japan/kokusai/iwate-yamagata",
+        "color": "blue"
+      }
+    ]
+  },
+  {
     "name": "Hong Kong, Hong kong",
     "lat": 22.3193,
     "lng": 114.1694,
