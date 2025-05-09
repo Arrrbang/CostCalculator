@@ -33,9 +33,7 @@
       }
   },
   "containerType": [
-    "CONSOLE",
-    "20DRY",
-    "40HC"
+    "CONSOLE"
   ],
   "delivery": "Kagawa, Hiroshima, Shimane, Okayama, Wakayama, Tottori",
   "partner": "KOKUSAI"
