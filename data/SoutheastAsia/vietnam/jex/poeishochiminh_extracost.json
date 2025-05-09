@@ -71,6 +71,10 @@
         "name": "추가 정보",
         "description": "FULL SETTING기본 제공"
     },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "KMTC/NAMSUNG : T/T 6~8 DAYS"
+    },
     "DATA BASE": {
         "description": "업데이트 : 2025.01"
     }
