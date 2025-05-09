@@ -46,8 +46,8 @@
         "30": 440000
       },
       "40HC": {
-        "description": "", 
-        "ANY": "별도 문의"
+        "description": "55CBM기준", 
+        "ANY": 855000
       }
   },
   "containerType": [
