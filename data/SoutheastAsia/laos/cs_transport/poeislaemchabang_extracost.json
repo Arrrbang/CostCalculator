@@ -1,0 +1,147 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/CS-TRANSPORT-SOLE-CO-LTD-1ee0b10191ce8030aafbd5b9ae4ca8a7"
+        }
+    ],
+    "화폐단위": "$/€",
+  
+    "basic-cost-1": {
+        "name": "Hualage Container",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 1300,
+            "40HC": 1350
+        },
+        "Diplomat": {
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        }
+    },
+    "basic-cost-2": {
+        "name": "Port Charge",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 100,
+            "40HC": 150
+        },
+        "Diplomat": {
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        }
+    },
+    "basic-cost-3": {
+        "name": "Shipping Line Charge",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 250,
+            "40HC": 350
+        },
+        "Diplomat": {
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        }
+    },
+    "basic-cost-4": {
+        "name": "Customs at Lao",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 200,
+            "40HC": 200
+        },
+        "Diplomat": {
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        }
+    },
+    "basic-cost-5": {
+        "name": "Apply Permit in Lao",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 100,
+            "40HC": 100
+        },
+        "Diplomat": {
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        }
+    },
+    "basic-cost-6": {
+        "name": "X-Ray",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 55,
+            "40HC": 55
+        },
+        "Diplomat": {
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        }
+    },
+    "basic-cost-7": {
+        "name": "Lao Truck",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 200,
+            "40HC": 200
+        },
+        "Diplomat": {
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        }
+    },
+    "basic-cost-8": {
+        "name": "Gate In / Gate Out",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 85,
+            "40HC": 100
+        },
+        "Diplomat": {
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        }
+    },
+    "extra-cost-1": {
+        "name": "PIANO HANDLING",
+        "description": "",
+            "20DRY": 150,
+            "40HC": 150
+        },
+    "STAIR CHARGE": {
+        "description": "미확인",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "미확인",
+        "단위": "ITEM",
+        "단가": 0
+    },
+    "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "개월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+    },
+    "additional-info-1": {
+        "name": "포함/불포함 비용",
+        "description": "NOTION 목록 확인"
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "KMTC/PANCON : T/T 7~10 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "업데이트 : 2025.05\n기초자료 : 2025년 적용 타리프"
+    }
+}
