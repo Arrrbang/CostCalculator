@@ -1,0 +1,30 @@
+{
+  "nonDiplomat": {
+      "20DRY": {
+        "description": "", 
+        "1-15": 580,
+        "16-30": 650
+      },
+      "40HC": {
+        "description": "", 
+        "30-45": 790,
+        "46-75": 820
+      }
+  },
+  "diplomat": {
+      "20DRY": {
+        "description": "",
+        "ANY": "별도 문의"
+      },
+      "40HC": {
+        "description": "", 
+        "ANY": "별도 문의"
+      }
+  },
+  "containerType": [
+    "20DRY",
+    "40HC"
+  ],
+  "delivery": "Vientiane",
+  "partner": "CS Transport"
+}
