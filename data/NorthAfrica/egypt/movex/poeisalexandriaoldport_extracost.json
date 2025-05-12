@@ -13,19 +13,19 @@
   
     "basic-cost-1": {
         "name": "THC1",
-        "description": "YML증빙 있음\nIMBALANCE SURCHARGE $0/$10, \nEQUIPMENT MAINTENANCE FEE $25/$40, \nTHERMINAL SECURITY CHARGE $12/$12",
+        "description": "YML증빙 있음\nIMBALANCE SURCHARGE $-/$10, \nEQUIPMENT MAINTENANCE FEE $-/$45, \nTHERMINAL SECURITY CHARGE $-/$12 \nDOCUMENTATION FEE $-/$23",
         "NonDiplomat": {
             "20DRY": 37,
-            "40HC": 62
+            "40HC": 90
         },
         "Diplomat": {
             "20DRY": 37,
-            "40HC": 62
+            "40HC": 90
         }
     },
     "basic-cost-2": {
         "name": "THC2",
-        "description": "YML증빙 있음\n20FT : EGP 15,476 \n40HC : EGP 26,694",
+        "description": "YML증빙 있음\n20FT : approx. EGP 15,476 \n40HC : approx. EGP 28,818",
         "NonDiplomat": {
             "20DRY": 310,
             "40HC": 560
