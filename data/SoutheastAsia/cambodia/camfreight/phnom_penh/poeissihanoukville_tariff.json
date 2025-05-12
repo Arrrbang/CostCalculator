@@ -1,0 +1,28 @@
+{
+  "nonDiplomat": {
+      "20DRY": {
+        "description": "", 
+        "ANY": 1450
+      },
+      "40HC": {
+        "description": "", 
+        "ANY": 1600
+      }
+  },
+  "diplomat": {
+      "20DRY": {
+        "description": "",
+        "ANY": "별도 문의"
+      },
+      "40HC": {
+        "description": "", 
+        "ANY": "별도 문의"
+      }
+  },
+  "containerType": [
+    "20DRY",
+    "40HC"
+  ],
+  "delivery": "Phnom Penh, Cambodia",
+  "partner": "Cam Freight"
+}
