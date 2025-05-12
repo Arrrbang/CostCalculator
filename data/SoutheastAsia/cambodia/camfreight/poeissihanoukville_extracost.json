@@ -1,0 +1,63 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/CAM-FREIGHT-SERVICES-CO-LTD-1f10b10191ce80c483b2db099bf52438"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "CIC/FSC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 120,
+            "40HC": 240
+        },
+        "Diplomat": {
+            "20DRY": 120,
+            "40HC": 240
+        }
+    },
+    "extra-cost-1": {
+        "name": "SHUTTLE",
+        "description": "",
+            "20DRY": 150,
+            "40HC": 180
+        },
+    "STAIR CHARGE": {
+        "description": "미확인",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "미확인",
+        "단위": "ITEM",
+        "단가": 0
+    },
+    "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "개월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+    },
+    "additional-info-1": {
+        "name": "포함/불포함 비용",
+        "description": "NOTION 확인"
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "STIC : T/T 12 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "업데이트 : 2025.05\n기초자료 : 2025.03.19 현지 비용 확인 \n견적서는 60일간 유효해서 진행 전에 정확하게 재확인 필요"
+    }
+}
