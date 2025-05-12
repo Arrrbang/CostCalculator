@@ -322,5 +322,17 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Phnom Penh, Cambodia",
+    "lat": 11.5564,
+    "lng": 104.9282,
+    "links": [
+      {
+        "type": "Cam Freight",
+        "path": "data/SoutheastAsia/cambodia/camfreight/phnom_penh",
+        "color": "blue"
+      }
+    ]
   }
 ]
