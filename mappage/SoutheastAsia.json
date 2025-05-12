@@ -299,16 +299,28 @@
       }
     ]
   },
-{
-  "name": "Singapore, Singapore",
-  "lat": 1.3521,
-  "lng": 103.8198,
-  "links": [
-    {
-      "type": "wmobility",
-      "path": "data/SoutheastAsia/singapore/wmobility/singapore",
-      "color": "blue"
-    }
-  ]
-}
+  {
+    "name": "Singapore, Singapore",
+    "lat": 1.3521,
+    "lng": 103.8198,
+    "links": [
+      {
+        "type": "wmobility",
+        "path": "data/SoutheastAsia/singapore/wmobility/singapore",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Vientiane, Laos",
+    "lat": 17.9757,
+    "lng": 102.6331,
+    "links": [
+      {
+        "type": "CS Transport",
+        "path": "data/SoutheastAsia/laos/cs_transport/vientiane",
+        "color": "blue"
+      }
+    ]
+  }
 ]
