@@ -346,5 +346,77 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Kuala Lumpur, Malaysia",
+    "lat": 3.1390,
+    "lng": 101.6869,
+    "links": [
+      {
+        "type": "GYOMIN",
+        "path": "data/SoutheastAsia/malaysia/gyomin/kuala_lumpur",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Penang, Malaysia",
+    "lat": 5.4164,
+    "lng": 100.3327,
+    "links": [
+      {
+        "type": "GYOMIN",
+        "path": "data/SoutheastAsia/malaysia/gyomin/penang",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Port Klang, Malaysia",
+    "lat": 2.9960,
+    "lng": 101.3929,
+    "links": [
+      {
+        "type": "GYOMIN",
+        "path": "data/SoutheastAsia/malaysia/gyomin/port_klang",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kota Kinabalu, Malaysia",
+    "lat": 5.9804,
+    "lng": 116.0735,
+    "links": [
+      {
+        "type": "GYOMIN",
+        "path": "data/SoutheastAsia/malaysia/gyomin/kota_kinabalu",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bintulu, Malaysia",
+    "lat": 3.1667,
+    "lng": 113.0333,
+    "links": [
+      {
+        "type": "GYOMIN",
+        "path": "data/SoutheastAsia/malaysia/gyomin/bintulu",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Seremban, Malaysia",
+    "lat": 2.7297,
+    "lng": 101.9381,
+    "links": [
+      {
+        "type": "GYOMIN",
+        "path": "data/SoutheastAsia/malaysia/gyomin/seremban",
+        "color": "blue"
+      }
+    ]
   }
 ]
