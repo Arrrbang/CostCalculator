@@ -1,0 +1,86 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/PORT-KELANG-NORTHPORT-1990b10191ce805894acfe6bb7f51ece?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/GYOMIN-SDN-BHD-1f20b10191ce80108f40f752112e69eb"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THE",
+        "description": "",
+        "NonDiplomat": {
+            "CONSOLE": "INCLUDED",
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        },
+        "Diplomat": {
+            "CONSOLE": "INCLUDED",
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        }
+    },
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "",
+            "CONSOLE": "별도 문의",
+            "20DRY": 300,
+            "40HC": 400
+        },
+    "extra-cost-2": {
+        "name": "LONG CARRY",
+        "description": "",
+            "CONSOLE": "별도 문의",
+            "20DRY": 150,
+            "40HC": 150
+        },
+    "extra-cost-3": {
+        "name": "UPLIGHT PIANO",
+        "description": "",
+            "CONSOLE": 100,
+            "20DRY": 100,
+            "40HC": 100
+        },
+    "extra-cost-4": {
+        "name": "WOODEN BOX CHARGE",
+        "description": "",
+            "CONSOLE": 100,
+            "20DRY": 100,
+            "40HC": 100
+        },
+    "STAIR CHARGE": {
+        "description": "20FT : $100/FLOOR \n40HC : 2층-$200, 3층-$350",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "피아노, 금고, 돌침대, 흙침대, 마블식탁등 헤비 아이템, 까다로운 장롱조립 등",
+        "단위": "ITEM",
+        "단가": 100
+    },
+    "STORAGE CHARGE": {
+        "description": "",
+        "단위": "일괄",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 150,
+          "40HC": 300,
+        }
+    },
+    "additional-info-1": {
+        "name": "추가 정보",
+        "description": "주말 배송 불가"
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "KMTC : T/T 12 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "업데이트 : 2025.05\n기초자료 : 2024.07 타리프"
+    }
+}
