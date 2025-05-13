@@ -936,7 +936,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/tokyo",
+        "path": "data/EastAsia/japan/trelocation/tokyo-yokohama",
         "color": "blue"
       },
       {
@@ -953,7 +953,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/tokyo",
+        "path": "data/EastAsia/japan/trelocation/tokyo-yokohama",
         "color": "blue"
       },
       {
