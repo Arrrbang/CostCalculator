@@ -1,0 +1,63 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/MYANMAR-EXPRESS-INT-L-MOVING-SERVICES-CO-LTD-1f20b10191ce80f2a28fe766ac4bf9fb"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC & shipping line release order fees",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 50,
+            "40HC": 50
+        },
+        "Diplomat": {
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        }
+    },
+    "extra-cost-1": {
+        "name": "Custom inspection",
+        "description": "검사 있을 경우 발생",
+            "20DRY": 50,
+            "40HC": 50
+        },
+    "STAIR CHARGE": {
+        "description": "미확인",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "미확인",
+        "단위": "ITEM",
+        "단가": 0
+    },
+    "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "개월",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+    },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": ""
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "HMM : T/T 30 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "업데이트 : 2025.05\n기초자료 : 2025.05 수취 타리프"
+    }
+}
