@@ -334,5 +334,17 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Yangon, Myanmar",
+    "lat": 16.8409,
+    "lng": 96.1735,
+    "links": [
+      {
+        "type": "MYANMAR EXPRESS",
+        "path": "data/SoutheastAsia/myanmar/myanmar_express/yangon",
+        "color": "blue"
+      }
+    ]
   }
 ]
