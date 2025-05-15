@@ -1020,6 +1020,23 @@ function updatestorageperiodDropdown() {
 
     let costPerUnit = storageCostData[selectedContainer] ?? defaultUnitCost;
 
+    // CBM에 따라 범위 기반 단가 적용
+    if (typeof storageCostData["단가"] === "object") {
+      // 단가가 범위로 주어진 경우
+      let rangeCost = 0;
+
+      for (const range in storageCostData["단가"]) {
+        const [min, max] = range.split("-").map(Number);
+        if (selectedCBM >= min && selectedCBM <= max) {
+          rangeCost = storageCostData["단가"][range];
+          break;
+        }
+      }
+
+      // CBM에 맞는 범위 단가를 찾은 후, 계산
+      costPerUnit = rangeCost;
+    }
+
     console.log("costPerUnit 값:", costPerUnit);
 
     if (costPerUnit === undefined || costPerUnit === null) {
@@ -1029,8 +1046,10 @@ function updatestorageperiodDropdown() {
 
     let calculatedValue;
     if (storageCostData[selectedContainer] && storageCostData[selectedContainer] > 0) {
+      // 단일 단가가 있을 때
       calculatedValue = chargeableDays * costPerUnit;
     } else {
+      // 범위에 따른 단가가 있을 때
       calculatedValue = chargeableDays * costPerUnit * selectedCBM;
     }
 
