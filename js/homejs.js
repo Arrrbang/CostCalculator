@@ -1020,10 +1020,10 @@ function updatestorageperiodDropdown() {
 
     let costPerUnit;
 
-    // 20DRY 또는 40HC에 대한 단가 처리
+    // 20DRY, 40HC 값 처리: CBM과 곱하지 않고 보관 기간만 처리
     if (storageCostData[selectedContainer] !== undefined) {
-      // 20DRY나 40HC 값이 있는 경우
-      costPerUnit = storageCostData[selectedContainer];
+      // 20DRY, 40HC 값이 있는 경우
+      costPerUnit = storageCostData[selectedContainer] * chargeableDays;  // CBM을 곱하지 않고 보관 기간만 곱함
     } else if (typeof storageCostData["CBM 범위"] === "object") {
       // CBM 범위가 있는 경우
       let rangeCost = 0;
@@ -1037,7 +1037,8 @@ function updatestorageperiodDropdown() {
         }
       }
 
-      costPerUnit = rangeCost;
+      // CBM 범위에서 값을 찾았다면, 해당 값만 곱하고, CBM은 곱하지 않음
+      costPerUnit = rangeCost * chargeableDays;
     }
 
     console.log("costPerUnit 값:", costPerUnit);
@@ -1048,12 +1049,12 @@ function updatestorageperiodDropdown() {
     }
 
     let calculatedValue;
-    if (storageCostData[selectedContainer] && storageCostData[selectedContainer] > 0) {
-      // 단일 단가가 있을 때
-      calculatedValue = chargeableDays * costPerUnit;
+    if (storageCostData["단가"] > 0) {
+      // 단가 항목이 있을 때만 CBM과 단가를 곱한 계산을 진행
+      calculatedValue = chargeableDays * storageCostData["단가"] * selectedCBM;
     } else {
-      // 범위에 따른 단가가 있을 때
-      calculatedValue = chargeableDays * costPerUnit * selectedCBM;
+      // CBM 범위나 20DRY, 40HC의 값 처리
+      calculatedValue = costPerUnit;
     }
 
     const formattedValue = `${currencySymbol}${calculatedValue.toLocaleString()}`;
