@@ -17,12 +17,12 @@
         "NonDiplomat": {
             "CONSOLE": 75,
             "20DRY": 75,
-            "40HC": 75,
+            "40HC": 75
         },
         "Diplomat": {
             "CONSOLE": 75,
             "20DRY": 75,
-            "40HC": 75,
+            "40HC": 75
         }
     },
     "basic-cost-2": {
@@ -31,12 +31,12 @@
         "NonDiplomat": {
             "CONSOLE": 125,
             "20DRY": 125,
-            "40HC": 125,
+            "40HC": 125
         },
         "Diplomat": {
             "CONSOLE": 125,
             "20DRY": 125,
-            "40HC": 125,
+            "40HC": 125
         }
     },
     "basic-cost-3": {
