@@ -236,6 +236,11 @@
         "type": "HI-TEK",
         "path": "data/NorthAmerica/usa/hitek/fresno",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/NorthAmerica/usa/pls/fresno",
+        "color": "blue"
       }
     ]
   },
@@ -247,6 +252,11 @@
       {
         "type": "HI-TEK",
         "path": "data/NorthAmerica/usa/hitek/san_jose",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/NorthAmerica/usa/pls/san_jose-san_francisco",
         "color": "blue"
       }
     ]
@@ -263,7 +273,7 @@
       },
       {
         "type": "PLS(YESG2M)",
-        "path": "data/NorthAmerica/usa/pls/san_francisco",
+        "path": "data/NorthAmerica/usa/pls/san_jose-san_francisco",
         "color": "blue"
       }
     ]
@@ -276,6 +286,11 @@
       {
         "type": "HI-TEK",
         "path": "data/NorthAmerica/usa/hitek/sacramento",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/NorthAmerica/usa/pls/sacramento",
         "color": "blue"
       }
     ]
@@ -300,6 +315,11 @@
     {
       "type": "HI-TEK",
       "path": "data/NorthAmerica/usa/hitek/reno",
+      "color": "blue"
+    },
+    {
+      "type": "PLS(YESG2M)",
+      "path": "data/NorthAmerica/usa/pls/reno",
       "color": "blue"
     }
   ]
@@ -337,6 +357,11 @@
         "type": "HI-TEK",
         "path": "data/NorthAmerica/usa/hitek/portland",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/NorthAmerica/usa/pls/portland",
+        "color": "blue"
       }
     ]
   },
@@ -360,6 +385,35 @@
       {
         "type": "HI-TEK",
         "path": "data/NorthAmerica/usa/hitek/seattle",
+        "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/NorthAmerica/usa/pls/seattle-yakima-spokane",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Yakima, WA",
+    "lat": 46.6021,
+    "lng": -120.5059,
+    "links": [
+      {
+        "type": "YESG2M",
+        "path": "data/NorthAmerica/usa/pls/seattle-yakima-spokane",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Spokane, WA",
+    "lat": 47.6588,
+    "lng": -117.4260,
+    "links": [
+      {
+        "type": "YESG2M",
+        "path": "data/NorthAmerica/usa/pls/seattle-yakima-spokane",
         "color": "blue"
       }
     ]
