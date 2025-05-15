@@ -260,6 +260,11 @@
         "type": "HI-TEK",
         "path": "data/NorthAmerica/usa/hitek/san_francisco",
         "color": "blue"
+      },
+      {
+        "type": "PLS(YESG2M)",
+        "path": "data/NorthAmerica/usa/pls/san_francisco",
+        "color": "blue"
       }
     ]
   },
