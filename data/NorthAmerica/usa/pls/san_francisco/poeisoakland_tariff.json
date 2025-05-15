@@ -1,6 +1,5 @@
 {
   "nonDiplomat": {
-        "description": "", 
         "1-3": 500,
         "4": 565,
         "5": 630,
@@ -59,16 +58,27 @@
         "58": 4075,
         "59": 4140,
         "60": 4205
+      }
   },
   "diplomat": {
+      "CONSOLE": {
         "description": "", 
         "ANY": "별도 문의"
+      },
+      "20DRY": {
+        "description": "",
+        "ANY": "별도 문의"
+      },
+      "40HC": {
+        "description": "", 
+        "ANY": "별도 문의"
+      }
   },
   "containerType": [
     "CONSOLE",
     "20DRY",
     "40HC"
   ],
-  "delivery": "San Francisco, CA",
+  "delivery": "SanFrancisco",
   "partner": "PLS(YESG2M)"
 }
