@@ -1018,28 +1018,31 @@ function updatestorageperiodDropdown() {
     let chargeableDays = selectedDays - freeStorageDays;
     chargeableDays = Math.max(chargeableDays, 0); // 0 이하가 되지 않도록 보정
 
-    let costPerUnit = storageCostData[selectedContainer] ?? defaultUnitCost;
+    let costPerUnit;
 
-    // CBM에 따라 범위 기반 단가 적용
-    if (typeof storageCostData["단가"] === "object") {
-      // 단가가 범위로 주어진 경우
+    // 20DRY 또는 40HC에 대한 단가 처리
+    if (storageCostData[selectedContainer] !== undefined) {
+      // 20DRY나 40HC 값이 있는 경우
+      costPerUnit = storageCostData[selectedContainer];
+    } else if (typeof storageCostData["CBM 범위"] === "object") {
+      // CBM 범위가 있는 경우
       let rangeCost = 0;
 
-      for (const range in storageCostData["단가"]) {
+      // CBM에 맞는 범위 단가 찾기
+      for (const range in storageCostData["CBM 범위"]) {
         const [min, max] = range.split("-").map(Number);
         if (selectedCBM >= min && selectedCBM <= max) {
-          rangeCost = storageCostData["단가"][range];
+          rangeCost = storageCostData["CBM 범위"][range];
           break;
         }
       }
 
-      // CBM에 맞는 범위 단가를 찾은 후, 계산
       costPerUnit = rangeCost;
     }
 
     console.log("costPerUnit 값:", costPerUnit);
 
-    if (costPerUnit === undefined || costPerUnit === null) {
+    if (costPerUnit === undefined || costPerUnit === 0) {
       console.error(`컨테이너 ${selectedContainer}에 대한 보관 비용이 없음.`);
       return;
     }
