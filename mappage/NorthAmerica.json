@@ -4572,6 +4572,11 @@
         "type": "KT EXPRESS",
         "path": "data/NorthAmerica/usa/kt/columbiaSC",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/columbiaSC",
+        "color": "blue"
       }
     ]
   },
@@ -4589,6 +4594,11 @@
         "type": "KT EXPRESS",
         "path": "data/NorthAmerica/usa/kt/charleston",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/charleston",
+        "color": "blue"
       }
     ]
   },
@@ -4600,6 +4610,11 @@
       {
         "type": "KT EXPRESS",
         "path": "data/NorthAmerica/usa/kt/greenville",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/greenville",
         "color": "blue"
       }
     ]
@@ -4623,6 +4638,11 @@
         "type": "KT EXPRESS",
         "path": "data/NorthAmerica/usa/kt/charlotte",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/charlotte",
+        "color": "blue"
       }
     ]
   },
@@ -4640,6 +4660,11 @@
         "type": "KT EXPRESS",
         "path": "data/NorthAmerica/usa/kt/greensboro",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/greensboro",
+        "color": "blue"
       }
     ]
   },
@@ -4656,6 +4681,11 @@
     {
       "type": "KT EXPRESS",
       "path": "data/NorthAmerica/usa/kt/raleigh",
+      "color": "blue"
+    },
+    {
+      "type": "YESG2M(PLS)",
+      "path": "data/NorthAmerica/usa/pls/raleigh",
       "color": "blue"
     }
   ]
@@ -7244,6 +7274,11 @@
         "type": "HI-TEK",
         "path": "data/NorthAmerica/usa/hitek/tallahassee",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/tallahassee",
+        "color": "blue"
       }
     ]
   },
@@ -7273,6 +7308,11 @@
         "type": "SOS",
         "path": "data/NorthAmerica/usa/sos/gainesville",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/gainesville",
+        "color": "blue"
       }
     ]
   },
@@ -7294,6 +7334,11 @@
       {
         "type": "KT EXPRESS",
         "path": "data/NorthAmerica/usa/kt/tampa-orlando",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/tampa",
         "color": "blue"
       }
     ]
@@ -7317,6 +7362,11 @@
         "type": "KT EXPRESS",
         "path": "data/NorthAmerica/usa/kt/tampa-orlando",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/orlando",
+        "color": "blue"
       }
     ]
   },
@@ -7339,6 +7389,11 @@
         "type": "KT EXPRESS",
         "path": "data/NorthAmerica/usa/kt/miami",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/miami",
+        "color": "blue"
       }
     ]
   },
@@ -7355,6 +7410,11 @@
       {
         "type": "KT EXPRESS",
         "path": "data/NorthAmerica/usa/kt/jacksonville",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/jacksonville",
         "color": "blue"
       }
     ]
