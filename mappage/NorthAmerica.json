@@ -1,48 +1,629 @@
 [
-{
-  "name": "Gardena, CA",
-  "lat": 33.89361,
-  "lng": -118.30778,
-  "links": [
-    {
-      "type": "HI-TEK",
-      "path": "data/NorthAmerica/usa/hitek/areaA",
-      "color": "blue"
-    }
-  ]
-},
   {
-    "name": "Los Angeles, CA",
-    "lat": 34.0536,
-    "lng": -118.2430,
+    "name": "Carson, CA",
+    "lat": 33.8314,
+    "lng": -118.2820,
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/NorthAmerica/usa/hitek/los_angeles",
+        "path": "data/NorthAmerica/usa/hitek/areaA",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area1",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Compton, CA",
+    "lat": 33.8958,
+    "lng": -118.2201,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaA",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area1",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Dominguez Hills, CA",
+    "lat": 33.8645,
+    "lng": -118.2568,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaA",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area1",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Gardena, CA",
+    "lat": 33.8883,
+    "lng": -118.3089,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaA",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area1",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rancho Dominguez, CA",
+    "lat": 33.8737,
+    "lng": -118.2223,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaA",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area1",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "San Pedro, CA",
+    "lat": 33.7361,
+    "lng": -118.2923,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaA",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area1",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Artesia, CA",
+    "lat": 33.8658,
+    "lng": -118.0831,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bell Garden, CA",
+    "lat": 33.9653,
+    "lng": -118.1515,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bradbury, CA",
+    "lat": 34.1478,
+    "lng": -117.9701,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Brentwood, CA",
+    "lat": 37.9319,
+    "lng": -121.6958,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Bellflower, CA",
+    "lat": 33.8817,
+    "lng": -118.1170,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Cerritos, CA",
+    "lat": 33.8583,
+    "lng": -118.0648,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "City of Commerce, CA",
+    "lat": 34.0006,
+    "lng": -118.1560,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Culver City, CA",
+    "lat": 34.0211,
+    "lng": -118.3965,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Cypress, CA",
+    "lat": 33.8160,
+    "lng": -118.0373,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Downey, CA",
+    "lat": 33.9401,
+    "lng": -118.1332,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "El Segundo, CA",
+    "lat": 33.9192,
+    "lng": -118.4165,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Florence, CA",
+    "lat": 33.9740,
+    "lng": -118.2441,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hancock Park, CA",
+    "lat": 34.0722,
+    "lng": -118.3287,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Harbor City, CA",
+    "lat": 33.7908,
+    "lng": -118.2961,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hawaiian Garden, CA",
+    "lat": 33.8281,
+    "lng": -118.0728,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hawthorne, CA",
+    "lat": 33.9164,
+    "lng": -118.3510,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Highland Park, CA",
+    "lat": 34.1114,
+    "lng": -118.1853,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Huntington Park, CA",
+    "lat": 33.9817,
+    "lng": -118.2251,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Inglewood, CA",
+    "lat": 33.9617,
+    "lng": -118.3531,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Irwindale, CA",
+    "lat": 34.1068,
+    "lng": -117.9353,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lakewood, CA",
+    "lat": 33.8536,
+    "lng": -118.1339,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lawndale, CA",
+    "lat": 33.8872,
+    "lng": -118.3526,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lomita, CA",
+    "lat": 33.7922,
+    "lng": -118.3151,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
         "color": "blue"
       }
     ]
   },
   {
     "name": "Long Beach, CA",
-    "lat": 33.7705,
+    "lat": 33.7701,
     "lng": -118.1937,
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/NorthAmerica/usa/hitek/long_beach",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
         "color": "blue"
       }
     ]
   },
   {
-    "name": "Torrance, CA",
-    "lat": 33.8408,
-    "lng": -118.3454,
+    "name": "Lynwood, CA",
+    "lat": 33.9303,
+    "lng": -118.2115,
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/NorthAmerica/usa/hitek/torrance",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "La Palma, CA",
+    "lat": 33.8492,
+    "lng": -118.0467,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Los Alamitos, CA",
+    "lat": 33.8031,
+    "lng": -118.0728,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Los Angeles, CA",
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Montebello, CA",
+    "lat": 34.0165,
+    "lng": -118.1138,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Norwalk, CA",
+    "lat": 33.9022,
+    "lng": -118.0817,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Palos Verdes, CA",
+    "lat": 33.7878,
+    "lng": -118.4037,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
         "color": "blue"
       }
     ]
@@ -54,7 +635,2477 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/NorthAmerica/usa/hitek/paramount",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Park La Brea, CA",
+    "lat": 34.0721,
+    "lng": -118.3554,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rancho Palos Verdes, CA",
+    "lat": 33.7445,
+    "lng": -118.3870,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Redondo Beach, CA",
+    "lat": 33.8492,
+    "lng": -118.3884,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rolling Hills Estate, CA",
+    "lat": 33.7874,
+    "lng": -118.3580,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Santa Fe Springs, CA",
+    "lat": 33.9472,
+    "lng": -118.0831,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Seal Beach, CA",
+    "lat": 33.7414,
+    "lng": -118.1048,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "South Gate, CA",
+    "lat": 33.9547,
+    "lng": -118.2120,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Temple City, CA",
+    "lat": 34.1072,
+    "lng": -118.0578,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Torrance, CA",
+    "lat": 33.8358,
+    "lng": -118.3406,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Vernon, CA",
+    "lat": 34.0039,
+    "lng": -118.2300,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Westwood, CA",
+    "lat": 34.0635,
+    "lng": -118.4455,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Wilmington, CA",
+    "lat": 33.7804,
+    "lng": -118.2619,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaB",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area2",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Alhambra, CA",
+    "lat": 34.0953,
+    "lng": -118.1270,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Anaheim, CA",
+    "lat": 33.8366,
+    "lng": -117.9143,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Beverly Hills, CA",
+    "lat": 34.0736,
+    "lng": -118.4004,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Buena Park, CA",
+    "lat": 33.8675,
+    "lng": -117.9981,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Baldwin Park, CA",
+    "lat": 34.0853,
+    "lng": -117.9609,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "City of Industry, CA",
+    "lat": 34.0115,
+    "lng": -117.9495,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Costa Mesa, CA",
+    "lat": 33.6411,
+    "lng": -117.9187,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Echo Park, CA",
+    "lat": 34.0782,
+    "lng": -118.2606,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Fountain Valley, CA",
+    "lat": 33.7092,
+    "lng": -117.9537,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Fullerton, CA",
+    "lat": 33.8704,
+    "lng": -117.9243,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Garden Grove, CA",
+    "lat": 33.7743,
+    "lng": -117.9370,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hermosa Beach, CA",
+    "lat": 33.8622,
+    "lng": -118.3995,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hollywood, CA",
+    "lat": 34.0980,
+    "lng": -118.3295,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hollywood Hills, CA",
+    "lat": 34.1177,
+    "lng": -118.3520,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Huntington Beach, CA",
+    "lat": 33.6603,
+    "lng": -117.9992,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "La Habra, CA",
+    "lat": 33.9319,
+    "lng": -117.9464,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "La Mirada, CA",
+    "lat": 33.9172,
+    "lng": -118.0120,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "La Puente, CA",
+    "lat": 34.0200,
+    "lng": -117.9495,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Manhattan Beach, CA",
+    "lat": 33.8847,
+    "lng": -118.4109,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Marina del Rey, CA",
+    "lat": 33.9803,
+    "lng": -118.4517,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Monterey Park, CA",
+    "lat": 34.0625,
+    "lng": -118.1228,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "North Hollywood, CA",
+    "lat": 34.1870,
+    "lng": -118.3813,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Northwood, CA",
+    "lat": 33.7092,
+    "lng": -117.7609,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Orange, CA",
+    "lat": 33.7879,
+    "lng": -117.8531,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Pacific Palisades, CA",
+    "lat": 34.0356,
+    "lng": -118.5156,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Panorama City, CA",
+    "lat": 34.2240,
+    "lng": -118.4420,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Pico Rivera, CA",
+    "lat": 33.9831,
+    "lng": -118.0967,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Playa del Rey, CA",
+    "lat": 33.9603,
+    "lng": -118.4426,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rosemead, CA",
+    "lat": 34.0806,
+    "lng": -118.0728,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "San Dernando, CA",
+    "lat": 34.2820,
+    "lng": -118.4380,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "San Gabriel, CA",
+    "lat": 34.0961,
+    "lng": -118.1058,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Santa Ana, CA",
+    "lat": 33.7455,
+    "lng": -117.8677,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Santa Monica, CA",
+    "lat": 34.0195,
+    "lng": -118.4912,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Sepulveda, CA",
+    "lat": 34.2496,
+    "lng": -118.4674,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "South El Monte, CA",
+    "lat": 34.0512,
+    "lng": -118.0467,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Venice, CA",
+    "lat": 33.9850,
+    "lng": -118.4695,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Westminster, CA",
+    "lat": 33.7513,
+    "lng": -117.9931,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Whittier, CA",
+    "lat": 33.9792,
+    "lng": -118.0328,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaC",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area3",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Altadena, CA",
+    "lat": 34.1890,
+    "lng": -118.1312,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Arcadia, CA",
+    "lat": 34.1397,
+    "lng": -118.0353,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Aliso Viejo, CA",
+    "lat": 33.5769,
+    "lng": -117.7256,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Anaheim Hills, CA",
+    "lat": 33.8501,
+    "lng": -117.7601,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Brea, CA",
+    "lat": 33.9167,
+    "lng": -117.9001,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Burbank, CA",
+    "lat": 34.1808,
+    "lng": -118.3089,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Calabasas, CA",
+    "lat": 34.1367,
+    "lng": -118.6615,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Canoga Park, CA",
+    "lat": 34.2011,
+    "lng": -118.5981,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Chatsworth, CA",
+    "lat": 34.2506,
+    "lng": -118.6148,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Claremont, CA",
+    "lat": 34.0967,
+    "lng": -117.7198,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Covina, CA",
+    "lat": 34.0900,
+    "lng": -117.8903,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Chino Hills, CA",
+    "lat": 33.9890,
+    "lng": -117.7326,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Diamond Bar, CA",
+    "lat": 34.0286,
+    "lng": -117.8103,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Eagle Rock, CA",
+    "lat": 34.1392,
+    "lng": -118.2140,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "El Monte, CA",
+    "lat": 34.0686,
+    "lng": -118.0276,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "El Toro, CA",
+    "lat": 33.6760,
+    "lng": -117.6679,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Fairmont, CA",
+    "lat": 34.7440,
+    "lng": -118.5531,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Glendale, CA",
+    "lat": 34.1425,
+    "lng": -118.2551,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Glendora, CA",
+    "lat": 34.1361,
+    "lng": -117.8653,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Granada Hills, CA",
+    "lat": 34.2794,
+    "lng": -118.5004,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hacienda Heights, CA",
+    "lat": 33.9937,
+    "lng": -117.9680,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Irvine, CA",
+    "lat": 33.6846,
+    "lng": -117.8265,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "La Canada, CA",
+    "lat": 34.2068,
+    "lng": -118.2000,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "La Crescenta, CA",
+    "lat": 34.2328,
+    "lng": -118.2479,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "La Verne, CA",
+    "lat": 34.1008,
+    "lng": -117.7678,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Laguna Beach, CA",
+    "lat": 33.5427,
+    "lng": -117.7854,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Laguna Hills, CA",
+    "lat": 33.6125,
+    "lng": -117.7128,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Laguna Niguel, CA",
+    "lat": 33.5225,
+    "lng": -117.7076,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Laguna Woods, CA",
+    "lat": 33.6103,
+    "lng": -117.7291,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lake Forest, CA",
+    "lat": 33.6469,
+    "lng": -117.6861,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Malibu, CA",
+    "lat": 34.0259,
+    "lng": -118.7798,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Mission Hill, CA",
+    "lat": 34.2178,
+    "lng": -118.4696,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Monrovia, CA",
+    "lat": 34.1481,
+    "lng": -117.9989,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Montrose, CA",
+    "lat": 34.2061,
+    "lng": -118.2256,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Mission Viejo, CA",
+    "lat": 33.6000,
+    "lng": -117.6710,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Montclair, CA",
+    "lat": 34.0775,
+    "lng": -117.6898,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Northridge, CA",
+    "lat": 34.2381,
+    "lng": -118.5301,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Newport Beach, CA",
+    "lat": 33.6189,
+    "lng": -117.9298,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Newport Coast, CA",
+    "lat": 33.5725,
+    "lng": -117.8292,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Norco, CA",
+    "lat": 33.9311,
+    "lng": -117.5487,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ontario, CA",
+    "lat": 34.0633,
+    "lng": -117.6509,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Pacoima, CA",
+    "lat": 34.2640,
+    "lng": -118.4195,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Pasadena, CA",
+    "lat": 34.1478,
+    "lng": -118.1445,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Pomona, CA",
+    "lat": 34.0551,
+    "lng": -117.7490,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Porter Ranch, CA",
+    "lat": 34.2822,
+    "lng": -118.5576,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Placentia, CA",
+    "lat": 33.8720,
+    "lng": -117.8703,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Reseda, CA",
+    "lat": 34.2011,
+    "lng": -118.5368,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rowland Heights, CA",
+    "lat": 33.9761,
+    "lng": -117.9053,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Riverside, CA",
+    "lat": 33.9806,
+    "lng": -117.3755,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "San Dimas, CA",
+    "lat": 34.1067,
+    "lng": -117.8067,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "San Marino, CA",
+    "lat": 34.1214,
+    "lng": -118.1065,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Sherman Oaks, CA",
+    "lat": 34.1481,
+    "lng": -118.4514,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Studio City, CA",
+    "lat": 34.1396,
+    "lng": -118.3871,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Sunland, CA",
+    "lat": 34.2614,
+    "lng": -118.3085,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Sun Valley, CA",
+    "lat": 34.2276,
+    "lng": -118.3812,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tarzana, CA",
+    "lat": 34.1495,
+    "lng": -118.5535,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Topanga Canyon, CA",
+    "lat": 34.0911,
+    "lng": -118.6021,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tujunga, CA",
+    "lat": 34.2545,
+    "lng": -118.2915,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Tustin, CA",
+    "lat": 33.7458,
+    "lng": -117.8262,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Upland, CA",
+    "lat": 34.0975,
+    "lng": -117.6484,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Van Nuys, CA",
+    "lat": 34.1899,
+    "lng": -118.4514,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "West Hills, CA",
+    "lat": 34.1975,
+    "lng": -118.6432,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Walnut, CA",
+    "lat": 34.0203,
+    "lng": -117.8653,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "West Covina, CA",
+    "lat": 34.0686,
+    "lng": -117.9389,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Wood Hills, CA",
+    "lat": 34.1847,
+    "lng": -118.5731,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Woodland Hills, CA",
+    "lat": 34.1683,
+    "lng": -118.6059,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Yorba Linda, CA",
+    "lat": 33.8886,
+    "lng": -117.8136,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaD",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area4",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Agoura Hills, CA",
+    "lat": 34.1533,
+    "lng": -118.7617,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Arrowhead Springs, CA",
+    "lat": 34.1797,
+    "lng": -117.2661,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Alta Loma, CA",
+    "lat": 34.1417,
+    "lng": -117.5814,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Corona, CA",
+    "lat": 33.8753,
+    "lng": -117.5664,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Dana Point, CA",
+    "lat": 33.4672,
+    "lng": -117.6981,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Fontana, CA",
+    "lat": 34.0922,
+    "lng": -117.4350,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Hemet, CA",
+    "lat": 33.7475,
+    "lng": -116.9710,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lancaster, CA",
+    "lat": 34.6868,
+    "lng": -118.1542,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ladera Ranch, CA",
+    "lat": 33.5703,
+    "lng": -117.6351,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Loma Linda, CA",
+    "lat": 34.0486,
+    "lng": -117.2610,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Moorpark, CA",
+    "lat": 34.2856,
+    "lng": -118.8820,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Moreno Valley, CA",
+    "lat": 33.9425,
+    "lng": -117.2297,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Murrieta, CA",
+    "lat": 33.5539,
+    "lng": -117.2139,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Oak View, CA",
+    "lat": 34.3975,
+    "lng": -119.3001,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Oxnard, CA",
+    "lat": 34.1975,
+    "lng": -119.1771,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Palmdale, CA",
+    "lat": 34.5794,
+    "lng": -118.1165,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Rancho Cucamonga, CA",
+    "lat": 34.1064,
+    "lng": -117.5931,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Redlands, CA",
+    "lat": 34.0556,
+    "lng": -117.1825,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Santa Clarita, CA",
+    "lat": 34.3917,
+    "lng": -118.5426,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Saugus, CA",
+    "lat": 34.4265,
+    "lng": -118.5365,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Simi Valley, CA",
+    "lat": 34.2694,
+    "lng": -118.7815,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Stevenson Ranch, CA",
+    "lat": 34.3931,
+    "lng": -118.5804,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Sylmar, CA",
+    "lat": 34.3058,
+    "lng": -118.4572,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Thousand Oaks, CA",
+    "lat": 34.1706,
+    "lng": -118.8376,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Temecula, CA",
+    "lat": 33.4936,
+    "lng": -117.1484,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Valencia, CA",
+    "lat": 34.4433,
+    "lng": -118.5766,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ventura, CA",
+    "lat": 34.2746,
+    "lng": -119.2290,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Westlake Village, CA",
+    "lat": 34.1458,
+    "lng": -118.8059,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/areaE",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/area5",
         "color": "blue"
       }
     ]
@@ -79,90 +3130,6 @@
       {
         "type": "HI-TEK",
         "path": "data/NorthAmerica/usa/hitek/alhambra",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "name": "Garden Grove, CA",
-    "lat": 33.7743,
-    "lng": -117.9370,
-    "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/NorthAmerica/usa/hitek/garden_grove",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "name": "Irvine, CA",
-    "lat": 33.6846,
-    "lng": -117.8265,
-    "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/NorthAmerica/usa/hitek/irvine",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "name": "Burbank, CA",
-    "lat": 34.1808,
-    "lng": -118.3089,
-    "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/NorthAmerica/usa/hitek/burbank",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "name": "Glendale, CA",
-    "lat": 34.1425,
-    "lng": -118.2551,
-    "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/NorthAmerica/usa/hitek/glendale",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "name": "Santa Clarita, CA",
-    "lat": 34.3917,
-    "lng": -118.5426,
-    "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/NorthAmerica/usa/hitek/santa_clarita",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "name": "Rancho Cucamonga, CA",
-    "lat": 34.1064,
-    "lng": -117.5931,
-    "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/NorthAmerica/usa/hitek/rancho_cucamonga",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "name": "Thousand Oaks, CA",
-    "lat": 34.1706,
-    "lng": -118.8376,
-    "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/NorthAmerica/usa/hitek/thousand_oaks",
         "color": "blue"
       }
     ]
