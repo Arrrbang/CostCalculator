@@ -5906,6 +5906,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNY",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
+        "color": "blue"
       }
     ]
   },
@@ -5917,6 +5922,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNY",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
         "color": "blue"
       }
     ]
@@ -5930,6 +5940,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNY",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
+        "color": "blue"
       }
     ]
   },
@@ -5941,6 +5956,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNY",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
         "color": "blue"
       }
     ]
@@ -5954,6 +5974,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNY",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
+        "color": "blue"
       }
     ]
   },
@@ -5965,6 +5990,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNY",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
         "color": "blue"
       }
     ]
@@ -5978,6 +6008,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNY",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
+        "color": "blue"
       }
     ]
   },
@@ -5989,6 +6024,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNY",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
         "color": "blue"
       }
     ]
@@ -6002,6 +6042,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNY",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
+        "color": "blue"
       }
     ]
   },
@@ -6013,6 +6058,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNY",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY2",
         "color": "blue"
       }
     ]
@@ -6026,6 +6076,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNY",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY2",
+        "color": "blue"
       }
     ]
   },
@@ -6037,6 +6092,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNY",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY2",
         "color": "blue"
       }
     ]
@@ -6050,6 +6110,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNY",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
+        "color": "blue"
       }
     ]
   },
@@ -6061,6 +6126,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNY",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY2",
         "color": "blue"
       }
     ]
@@ -6074,6 +6144,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNY",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
+        "color": "blue"
       }
     ]
   },
@@ -6085,6 +6160,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNY",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
         "color": "blue"
       }
     ]
@@ -6098,6 +6178,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/tappan",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY2",
+        "color": "blue"
       }
     ]
   },
@@ -6109,6 +6194,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY3",
         "color": "blue"
       }
     ]
@@ -6122,6 +6212,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
+        "color": "blue"
       }
     ]
   },
@@ -6133,6 +6228,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
         "color": "blue"
       }
     ]
@@ -6146,6 +6246,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
+        "color": "blue"
       }
     ]
   },
@@ -6157,6 +6262,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
         "color": "blue"
       }
     ]
@@ -6170,6 +6280,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
+        "color": "blue"
       }
     ]
   },
@@ -6181,6 +6296,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
         "color": "blue"
       }
     ]
@@ -6194,6 +6314,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/oyster_bay",
+        "color": "blue"
       }
     ]
   },
@@ -6205,6 +6330,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bedford-bronx-brooklyn-douglaston-flushing-fresh_meadows-jamaica-oyster_bay-queens",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY2",
         "color": "blue"
       }
     ]
@@ -6218,6 +6348,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bay_shore-brentwood-lindenhurst",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY3",
+        "color": "blue"
       }
     ]
   },
@@ -6229,6 +6364,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bay_shore-brentwood-lindenhurst",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY3",
         "color": "blue"
       }
     ]
@@ -6242,6 +6382,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bay_shore-brentwood-lindenhurst",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY3",
+        "color": "blue"
       }
     ]
   },
@@ -6253,6 +6398,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/long_island_city-manhattan",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
         "color": "blue"
       }
     ]
@@ -6266,6 +6416,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/long_island_city-manhattan",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY1",
+        "color": "blue"
       }
     ]
   },
@@ -6277,6 +6432,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY5",
         "color": "blue"
       }
     ]
@@ -6290,6 +6450,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY5",
+        "color": "blue"
       }
     ]
   },
@@ -6301,6 +6466,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY3",
         "color": "blue"
       }
     ]
@@ -6314,6 +6484,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY5",
+        "color": "blue"
       }
     ]
   },
@@ -6325,6 +6500,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY3",
         "color": "blue"
       }
     ]
@@ -6338,6 +6518,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/brookhaven-centereach-deer_park-hauppauge-huntington-stony_brook",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY4",
+        "color": "blue"
       }
     ]
   },
@@ -6349,6 +6534,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/carmel-middletown-port_jefferson-poughkeepsie",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY5",
         "color": "blue"
       }
     ]
@@ -6362,6 +6552,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/carmel-middletown-port_jefferson-poughkeepsie",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY4",
+        "color": "blue"
       }
     ]
   },
@@ -6373,6 +6568,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/carmel-middletown-port_jefferson-poughkeepsie",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY4",
         "color": "blue"
       }
     ]
@@ -6386,6 +6586,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/carmel-middletown-port_jefferson-poughkeepsie",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY4",
+        "color": "blue"
       }
     ]
   },
@@ -6397,6 +6602,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/kingston",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY5",
         "color": "blue"
       }
     ]
@@ -6410,6 +6620,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/fishers_island",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/fishers_island",
+        "color": "blue"
       }
     ]
   },
@@ -6421,6 +6636,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/albany",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/albany",
         "color": "blue"
       }
     ]
@@ -6446,6 +6666,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/binghamton",
+        "color": "blue"
       }
     ]
   },
@@ -6457,6 +6682,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/elmira-rome",
         "color": "blue"
       }
     ]
@@ -6470,6 +6700,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/ithaca",
+        "color": "blue"
       }
     ]
   },
@@ -6481,6 +6716,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/little_falls",
         "color": "blue"
       }
     ]
@@ -6494,6 +6734,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/utica-syracuse",
+        "color": "blue"
       }
     ]
   },
@@ -6505,6 +6750,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/troy",
         "color": "blue"
       }
     ]
@@ -6518,6 +6768,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/auburn-binghamton-elmira-ithaca-little_falls-syracuse-troy-utica",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/utica-syracuse",
+        "color": "blue"
       }
     ]
   },
@@ -6529,6 +6784,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/glens_falls",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/glens_falls",
         "color": "blue"
       }
     ]
@@ -6542,6 +6802,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/belmont",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/belmont",
+        "color": "blue"
       }
     ]
   },
@@ -6553,6 +6818,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/rome",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/elmira-rome",
         "color": "blue"
       }
     ]
@@ -6566,6 +6836,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/rochester",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/rochester",
+        "color": "blue"
       }
     ]
   },
@@ -6577,6 +6852,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/salamanca",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/salamanca",
         "color": "blue"
       }
     ]
@@ -6590,6 +6870,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/watertown",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/tonawanda-watertown",
+        "color": "blue"
       }
     ]
   },
@@ -6601,6 +6886,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY6",
         "color": "blue"
       }
     ]
@@ -6614,6 +6904,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY6",
+        "color": "blue"
       }
     ]
   },
@@ -6625,6 +6920,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY6",
         "color": "blue"
       }
     ]
@@ -6638,6 +6938,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY6",
+        "color": "blue"
       }
     ]
   },
@@ -6650,6 +6955,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNY6",
+        "color": "blue"
       }
     ]
   },
@@ -6661,6 +6971,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/brighton-buffalo-lancaster-lockport-niagara_falls-tonawanda",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/tonawanda-watertown",
         "color": "blue"
       }
     ]
@@ -6679,6 +6994,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaCT1",
+        "color": "blue"
       }
     ]
   },
@@ -6690,6 +7010,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/greenwich",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/greenwich",
         "color": "blue"
       }
     ]
@@ -6703,6 +7028,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/stamford",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/stamford",
+        "color": "blue"
       }
     ]
   },
@@ -6714,6 +7044,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaCT1",
         "color": "blue"
       }
     ]
@@ -6775,6 +7110,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bristol-bridgeport-danbury-new_haven-norwalk-waterbury",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/waterbury",
+        "color": "blue"
       }
     ]
   },
@@ -6786,6 +7126,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaCT1",
         "color": "blue"
       }
     ]
@@ -6811,6 +7156,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaCT1",
+        "color": "blue"
       }
     ]
   },
@@ -6822,6 +7172,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaCT1",
         "color": "blue"
       }
     ]
@@ -6835,6 +7190,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/hartford-manchester-new_britain-new_london-west_hartford-windsor",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaCT1",
+        "color": "blue"
       }
     ]
   },
@@ -6846,6 +7206,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/norwich",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/norwich",
         "color": "blue"
       }
     ]
@@ -6859,7 +7224,12 @@
       "type": "keyword",
       "path": "data/NorthAmerica/usa/keyword/washington",
       "color": "blue"
-    }
+    },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/washington",
+        "color": "blue"
+      }
   ]
 },
   {
@@ -6870,6 +7240,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/newark",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/newark",
         "color": "blue"
       }
     ]
@@ -6883,6 +7258,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/millsboro",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/millsboro",
+        "color": "blue"
       }
     ]
   },
@@ -6894,6 +7274,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/springfield",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/springfield",
         "color": "blue"
       }
     ]
@@ -6907,6 +7292,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/amherst-northampton",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/amherst-northampton",
+        "color": "blue"
       }
     ]
   },
@@ -6918,6 +7308,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/amherst-northampton",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/amherst-northampton",
         "color": "blue"
       }
     ]
@@ -6931,6 +7326,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/fall_river-leominster-taunton-worcester",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/fall_river-leominster-taunton-worcester",
+        "color": "blue"
       }
     ]
   },
@@ -6942,6 +7342,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/fall_river-leominster-taunton-worcester",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/fall_river-leominster-taunton-worcester",
         "color": "blue"
       }
     ]
@@ -6955,6 +7360,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/fall_river-leominster-taunton-worcester",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/fall_river-leominster-taunton-worcester",
+        "color": "blue"
       }
     ]
   },
@@ -6966,6 +7376,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/fall_river-leominster-taunton-worcester",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/fall_river-leominster-taunton-worcester",
         "color": "blue"
       }
     ]
@@ -7362,6 +7777,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/portland-auburn",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/auburn",
         "color": "blue"
       }
     ]
