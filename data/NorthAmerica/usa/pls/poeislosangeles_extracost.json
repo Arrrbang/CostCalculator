@@ -1,0 +1,156 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/LOS-ANGELES-1970b10191ce8082b737f46dd64d4d37?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/YESG2M-PLS-1f40b10191ce8065b729fc8ee6e5d563"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "ISF FILLING",
+        "description": "",
+        "NonDiplomat": {
+            "CONSOLE": 75,
+            "20DRY": 75,
+            "40HC": 75
+        },
+        "Diplomat": {
+            "CONSOLE": 75,
+            "20DRY": 75,
+            "40HC": 75
+        }
+    },
+    "basic-cost-2": {
+        "name": "CUSTOMS ENTRY FEE",
+        "description": "",
+        "NonDiplomat": {
+            "CONSOLE": 125,
+            "20DRY": 125,
+            "40HC": 125
+        },
+        "Diplomat": {
+            "CONSOLE": 125,
+            "20DRY": 125,
+            "40HC": 125
+        }
+    },
+    "basic-cost-3": {
+        "name": "CONTAINER DRAYAGE CHG",
+        "description": "콘솔 : 60CBM 기준",
+        "NonDiplomat": {
+            "CONSOLE": {"단가" : 14.16},
+            "20DRY": 850,
+            "40HC": 850
+        },
+        "Diplomat": {
+            "CONSOLE": {"단가" : 14.16},
+            "20DRY": 850,
+            "40HC": 850
+        }
+    },
+    "basic-cost-4": {
+        "name": "CONTAINER UNLODING CHG",
+        "description": "",
+        "NonDiplomat": {
+            "CONSOLE": {"단가" : 5},
+            "20DRY": {"단가" : 5},
+            "40HC": {"단가" : 5}
+        },
+        "Diplomat": {
+            "CONSOLE": {"단가" : 5},
+            "20DRY": {"단가" : 5},
+            "40HC": {"단가" : 5}
+        }
+    },
+    "basic-cost-5": {
+        "name": "PIER PASS(TMF)",
+        "description": "",
+        "NonDiplomat": {
+            "CONSOLE": {"단가" : 1.15},
+            "20DRY": 34.21,
+            "40HC": 68.42
+        },
+        "Diplomat": {
+            "CONSOLE": {"단가" : 1.15},
+            "20DRY": 34.21,
+            "40HC": 68.42
+        }
+    },
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "Area1~5, San Diego: $25/CBM\nOther: $30/CBM (계산기 적용은 $30/CBM)",
+            "CONSOLE": {"단가" : 30},
+            "20DRY": {"단가" : 30},
+            "40HC": {"단가" : 30}
+        },
+    "extra-cost-2": {
+        "name": "PIANO HANDLING",
+        "description": "$200(1FL) / $500(2FL)",
+            "CONSOLE": 200,
+            "20DRY": 200,
+            "40HC": 200
+        },
+    "extra-cost-3": {
+        "name": "W/Box Handling CHG",
+        "description": "per EA",
+            "CONSOLE": 75,
+            "20DRY": 75,
+            "40HC": 75
+        },
+    "extra-cost-4": {
+        "name": "COI Handling CHG",
+        "description": "",
+            "CONSOLE": 100,
+            "20DRY": 100,
+            "40HC": 100
+        },
+    "extra-cost-5": {
+        "name": "Long Distance CHG",
+        "description": "",
+            "CONSOLE": 150,
+            "20DRY": 150,
+            "40HC": 150
+        },
+    "STAIR CHARGE": {
+        "description": "3F House, APT & No EV : $150",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "돌침대 등",
+        "단위": "ITEM",
+        "단가": 300
+    },
+      "STORAGE CHARGE": {
+        "description": "",
+        "단위": "주",
+        "무료 보관 기간": 2,
+        "보관 비용": {
+          "CBM 범위": {
+            "1-10": 50,
+            "11-15": 60,
+            "16-20": 80,
+            "21-25": 100,
+            "26-30": 120,
+            "31-35": 150,
+            "36-60": 200
+          }
+        }
+      },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": "단독 건이어도 YESG2M에 연락해서 진행하면 됨."
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "SM/HMM/YML 대부분 사용 가능. 타선사의 경우 YESG2M에 문의. \nT/T : 15~20 DAYS "
+    },
+
+    "DATA BASE": {
+  	  "description": "업데이트 : 2025년 5월 출항건부터 적용\n기초자료 : 2025 신규 타리프"
+    }
+}
