@@ -83,7 +83,7 @@
     },
     "extra-cost-1": {
         "name": "FULL SETTING",
-        "description": "CA지역: MIN $200 / OTHER : MIN $300",
+        "description": "WA지역: MIN $200 / OTHER : MIN $300",
             "CONSOLE": {"단가" : 30},
             "20DRY": {"단가" : 30},
             "40HC": {"단가" : 30}
