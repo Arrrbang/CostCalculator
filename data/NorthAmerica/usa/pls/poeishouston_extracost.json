@@ -83,10 +83,10 @@
     },
     "extra-cost-1": {
         "name": "FULL SETTING",
-        "description": "Area1~5, San Diego: $25/CBM\nOther: $30/CBM (계산기 적용은 $30/CBM)",
-            "CONSOLE": {"단가" : 30},
-            "20DRY": {"단가" : 30},
-            "40HC": {"단가" : 30}
+        "description": "MIN $250",
+            "CONSOLE": {"단가" : 25},
+            "20DRY": {"단가" : 25},
+            "40HC": {"단가" : 25}
         },
     "extra-cost-2": {
         "name": "PIANO HANDLING",
