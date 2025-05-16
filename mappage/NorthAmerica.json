@@ -5520,6 +5520,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNJ",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNJ1",
+        "color": "blue"
       }
     ]
   },
@@ -5531,6 +5536,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNJ",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNJ1",
         "color": "blue"
       }
     ]
@@ -5544,6 +5554,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNJ",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNJ1",
+        "color": "blue"
       }
     ]
   },
@@ -5556,6 +5571,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNJ",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNJ1",
+        "color": "blue"
       }
     ]
   },
@@ -5567,6 +5587,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaNJ",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNJ1",
         "color": "blue"
       }
     ]
@@ -5682,6 +5707,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/clinton-cranbury-keyport-morristown-new_brunswick-succasunna-trenton",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNJ2",
+        "color": "blue"
       }
     ]
   },
@@ -5693,6 +5723,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/clinton-cranbury-keyport-morristown-new_brunswick-succasunna-trenton",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaNJ2",
         "color": "blue"
       }
     ]
@@ -5825,6 +5860,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/waterford",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/vineland-waterford",
+        "color": "blue"
       }
     ]
   },
@@ -5836,6 +5876,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/vineland",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/vineland-waterford",
         "color": "blue"
       }
     ]
