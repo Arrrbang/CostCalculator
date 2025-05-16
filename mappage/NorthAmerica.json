@@ -3134,18 +3134,23 @@
       }
     ]
   },
-{
-  "name": "San Diego, CA",
-  "lat": 32.7157,
-  "lng": -117.1611,
-  "links": [
-    {
-      "type": "HI-TEK",
-      "path": "data/NorthAmerica/usa/hitek/san_diego",
-      "color": "blue"
-    }
-  ]
-},
+  {
+    "name": "San Diego, CA",
+    "lat": 32.7157,
+    "lng": -117.1611,
+    "links": [
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/san_diego",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/san_diego",
+        "color": "blue"
+      }
+    ]
+  },
   {
     "name": "Chula Vista, CA",
     "lat": 32.6401,
@@ -3154,6 +3159,11 @@
       {
         "type": "HI-TEK",
         "path": "data/NorthAmerica/usa/hitek/chula_vista",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/chula_vista",
         "color": "blue"
       }
     ]
@@ -3167,6 +3177,11 @@
         "type": "HI-TEK",
         "path": "data/NorthAmerica/usa/hitek/el_centro",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/el_centro",
+        "color": "blue"
       }
     ]
   },
@@ -3177,7 +3192,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/NorthAmerica/usa/hitek/bakersfield",
+        "path": "data/NorthAmerica/usa/hitek/bakersfield-santa_barbara",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/bakersfield-santa_barbara",
         "color": "blue"
       }
     ]
@@ -3189,7 +3209,12 @@
     "links": [
       {
         "type": "HI-TEK",
-        "path": "data/NorthAmerica/usa/hitek/santa_barbara",
+        "path": "data/NorthAmerica/usa/hitek/bakersfield-santa_barbara",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/bakersfield-santa_barbara",
         "color": "blue"
       }
     ]
@@ -3271,6 +3296,11 @@
       "type": "HI-TEK",
       "path": "data/NorthAmerica/usa/hitek/las_vegas",
       "color": "blue"
+    },
+    {
+        "type": "PLS(YESG2M)",
+      "path": "data/NorthAmerica/usa/pls/las_vegas",
+      "color": "blue"
     }
   ]
 },
@@ -3300,6 +3330,11 @@
         "type": "HI-TEK",
         "path": "data/NorthAmerica/usa/hitek/phoenix",
         "color": "blue"
+      },
+      {
+      "type": "PLS(YESG2M)",
+        "path": "data/NorthAmerica/usa/pls/phoenix",
+        "color": "blue"
       }
     ]
   },
@@ -3311,6 +3346,11 @@
       {
         "type": "HI-TEK",
         "path": "data/NorthAmerica/usa/hitek/tucson",
+        "color": "blue"
+      },
+      {
+      "type": "PLS(YESG2M)",
+        "path": "data/NorthAmerica/usa/pls/tucson",
         "color": "blue"
       }
     ]
@@ -3367,7 +3407,7 @@
     "lng": -120.5059,
     "links": [
       {
-        "type": "YESG2M",
+        "type": "YESG2M(PLS)",
         "path": "data/NorthAmerica/usa/pls/seattle-yakima-spokane",
         "color": "blue"
       }
@@ -3379,7 +3419,7 @@
     "lng": -117.4260,
     "links": [
       {
-        "type": "YESG2M",
+        "type": "YESG2M(PLS)",
         "path": "data/NorthAmerica/usa/pls/seattle-yakima-spokane",
         "color": "blue"
       }
