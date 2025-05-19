@@ -4745,6 +4745,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA2",
+        "color": "blue"
       }
     ]
   },
@@ -4757,6 +4762,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA1",
+        "color": "blue"
       }
     ]
   },
@@ -4768,6 +4778,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA1",
         "color": "blue"
       }
     ]
@@ -4786,6 +4801,11 @@
         "type": "KT EXPRESS",
         "path": "data/NorthAmerica/usa/kt/norfolk-arlington",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA1",
+        "color": "blue"
       }
     ]
   },
@@ -4797,6 +4817,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA2",
         "color": "blue"
       }
     ]
@@ -4810,6 +4835,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA2",
+        "color": "blue"
       }
     ]
   },
@@ -4821,6 +4851,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA1",
         "color": "blue"
       }
     ]
@@ -4834,6 +4869,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA2",
+        "color": "blue"
       }
     ]
   },
@@ -4845,6 +4885,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/alexandria-annandale-arlington-centreville-fairfax-leesburg-mclean-springfield-vienna",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA1",
         "color": "blue"
       }
     ]
@@ -4858,6 +4903,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/manassas",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA2",
+        "color": "blue"
       }
     ]
   },
@@ -4869,6 +4919,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/callao",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/callao",
         "color": "blue"
       }
     ]
@@ -4882,6 +4937,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaVA",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
+        "color": "blue"
       }
     ]
   },
@@ -4893,6 +4953,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaVA",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
         "color": "blue"
       }
     ]
@@ -4906,6 +4971,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaVA",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
+        "color": "blue"
       }
     ]
   },
@@ -4917,6 +4987,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaVA",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
         "color": "blue"
       }
     ]
@@ -4930,6 +5005,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaVA",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
+        "color": "blue"
       }
     ]
   },
@@ -4941,6 +5021,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaVA",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
         "color": "blue"
       }
     ]
@@ -4954,6 +5039,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaVA",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
+        "color": "blue"
       }
     ]
   },
@@ -4965,6 +5055,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaVA",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
         "color": "blue"
       }
     ]
@@ -4978,6 +5073,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaVA",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
+        "color": "blue"
       }
     ]
   },
@@ -4989,6 +5089,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaVA",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
         "color": "blue"
       }
     ]
@@ -5007,6 +5112,11 @@
         "type": "KT EXPRESS",
         "path": "data/NorthAmerica/usa/kt/norfolk-arlington",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
+        "color": "blue"
       }
     ]
   },
@@ -5019,6 +5129,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaVA",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
+        "color": "blue"
       }
     ]
   },
@@ -5030,6 +5145,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaVA",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
         "color": "blue"
       }
     ]
@@ -5048,6 +5168,11 @@
         "type": "KT EXPRESS",
         "path": "data/NorthAmerica/usa/kt/richmond",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
+        "color": "blue"
       }
     ]
   },
@@ -5059,6 +5184,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaVA",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
         "color": "blue"
       }
     ]
@@ -5072,6 +5202,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaVA",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
+        "color": "blue"
       }
     ]
   },
@@ -5083,6 +5218,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaVA",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
         "color": "blue"
       }
     ]
@@ -5096,6 +5236,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/areaVA",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA3",
+        "color": "blue"
       }
     ]
   },
@@ -5107,6 +5252,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/austinville-blackridge-bristol-martinsville",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA4",
         "color": "blue"
       }
     ]
@@ -5120,6 +5270,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/austinville-blackridge-bristol-martinsville",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA4",
+        "color": "blue"
       }
     ]
   },
@@ -5132,6 +5287,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/austinville-blackridge-bristol-martinsville",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA4",
+        "color": "blue"
       }
     ]
   },
@@ -5143,6 +5303,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/austinville-blackridge-bristol-martinsville",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVA4",
         "color": "blue"
       }
     ]
@@ -8203,6 +8368,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/pittsburgh-wilkinsburg",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/new_castle-pittsburgh-wilkinsburg",
+        "color": "blue"
       }
     ]
   },
@@ -8214,6 +8384,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/pittsburgh-wilkinsburg",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/new_castle-pittsburgh-wilkinsburg",
         "color": "blue"
       }
     ]
@@ -8227,6 +8402,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/new_hope",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/new_hope",
+        "color": "blue"
       }
     ]
   },
@@ -8238,6 +8418,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaPA1",
         "color": "blue"
       }
     ]
@@ -8251,6 +8436,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaPA1",
+        "color": "blue"
       }
     ]
   },
@@ -8262,6 +8452,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaPA1",
         "color": "blue"
       }
     ]
@@ -8275,6 +8470,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaPA1",
+        "color": "blue"
       }
     ]
   },
@@ -8286,6 +8486,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaPA1",
         "color": "blue"
       }
     ]
@@ -8299,6 +8504,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/allentown-bethlehem-bristol-churchville-philadelphia-warrington",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaPA1",
+        "color": "blue"
       }
     ]
   },
@@ -8310,6 +8520,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/norristown",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/norristown",
         "color": "blue"
       }
     ]
@@ -8323,6 +8538,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/scranton",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/scranton",
+        "color": "blue"
       }
     ]
   },
@@ -8334,6 +8554,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bloomsburg-pittston",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/bloomsburg-pittston-wilkes_barre",
         "color": "blue"
       }
     ]
@@ -8347,6 +8572,23 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bloomsburg-pittston",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/bloomsburg-pittston-wilkes_barre",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Wilkes-Barre, PA",
+    "lat": 41.2459149,
+    "lng": -75.8813075,
+    "links": [
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/bloomsburg-pittston-wilkes_barre",
+        "color": "blue"
       }
     ]
   },
@@ -8358,6 +8600,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/reading",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/reading",
         "color": "blue"
       }
     ]
@@ -8383,6 +8630,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/lancaster",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/lancaster",
+        "color": "blue"
       }
     ]
   },
@@ -8394,6 +8646,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/camp_hill-harrisburg-york",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/camp_hill-harrisburg",
         "color": "blue"
       }
     ]
@@ -8407,6 +8664,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/camp_hill-harrisburg-york",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/camp_hill-harrisburg",
+        "color": "blue"
       }
     ]
   },
@@ -8418,6 +8680,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/camp_hill-harrisburg-york",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/york-sunbury",
         "color": "blue"
       }
     ]
@@ -8431,6 +8698,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/sunbury",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/york-sunbury",
+        "color": "blue"
       }
     ]
   },
@@ -8442,6 +8714,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bellefonte-state_college",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/bellefonte-state_college",
         "color": "blue"
       }
     ]
@@ -8455,6 +8732,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bellefonte-state_college",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/bellefonte-state_college",
+        "color": "blue"
       }
     ]
   },
@@ -8466,6 +8748,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/altoona",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/altoona",
         "color": "blue"
       }
     ]
@@ -8479,6 +8766,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/johnstown",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/johnstown",
+        "color": "blue"
       }
     ]
   },
@@ -8490,6 +8782,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/warren",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/warren",
         "color": "blue"
       }
     ]
@@ -8503,6 +8800,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/bedford",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/bedford",
+        "color": "blue"
       }
     ]
   },
@@ -8514,6 +8816,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/new_castle",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/new_castle-pittsburgh-wilkinsburg",
         "color": "blue"
       }
     ]
@@ -8527,6 +8834,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/providence",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/providence",
+        "color": "blue"
       }
     ]
   },
@@ -8538,6 +8850,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/morgantown",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/morgantown",
         "color": "blue"
       }
     ]
@@ -8551,6 +8868,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/burlington-south_burlington-essex",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVT",
+        "color": "blue"
       }
     ]
   },
@@ -8563,6 +8885,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/burlington-south_burlington-essex",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVT",
+        "color": "blue"
       }
     ]
   },
@@ -8574,6 +8901,11 @@
       {
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/burlington-south_burlington-essex",
+        "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/areaVT",
         "color": "blue"
       }
     ]
