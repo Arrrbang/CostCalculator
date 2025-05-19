@@ -12,7 +12,7 @@
     "화폐단위": "$",
   
     "basic-cost-1": {
-        "name": "THE",
+        "name": "THC",
         "description": "",
         "NonDiplomat": {
             "CONSOLE": "INCLUDED",
