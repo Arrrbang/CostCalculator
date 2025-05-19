@@ -1,0 +1,17 @@
+{
+  "nonDiplomat": {
+    "description": "",
+    "ANY": "Case by Case"
+  },
+  "diplomat": {
+    "description": "",
+    "ANY": "별도 문의"
+  },
+  "containerType": [
+    "CONSOLE",
+    "20DRY",
+    "40HC"
+  ],
+  "delivery": "Commonwealth of Virginia",
+  "partner": "YESG2M(PLS)"
+}
