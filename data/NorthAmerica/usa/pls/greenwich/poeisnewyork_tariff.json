@@ -58,7 +58,7 @@
     "57": 3310,
     "58": 3365,
     "59": 3420,
-    "60": 3475,
+    "60": 3475
   },
   "diplomat": {
     "description": "",
@@ -69,6 +69,6 @@
     "20DRY",
     "40HC"
   ],
-  "delivery": "Greenwich, CT""
+  "delivery": "Greenwich, CT",
   "partner": "YESG2M(PLS)"
 }
