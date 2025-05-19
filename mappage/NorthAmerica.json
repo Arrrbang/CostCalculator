@@ -7896,6 +7896,11 @@
         "type": "keyword",
         "path": "data/NorthAmerica/usa/keyword/portland-auburn",
         "color": "blue"
+      },
+      {
+        "type": "YESG2M(PLS)",
+        "path": "data/NorthAmerica/usa/pls/portland-auburn",
+        "color": "blue"
       }
     ]
   },
@@ -7911,7 +7916,7 @@
       },
       {
         "type": "YESG2M(PLS)",
-        "path": "data/NorthAmerica/usa/pls/auburn",
+        "path": "data/NorthAmerica/usa/pls/portland-auburn",
         "color": "blue"
       }
     ]
