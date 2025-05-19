@@ -58,7 +58,7 @@
     "57": 6874,
     "58": 6979,
     "59": 7084,
-    "60": 7189,
+    "60": 7189
   },
   "diplomat": {
     "description": "",
@@ -69,6 +69,6 @@
     "20DRY",
     "40HC"
   ],
-  "delivery": "State of New York""
+  "delivery": "State of New York",
   "partner": "YESG2M(PLS)"
 }

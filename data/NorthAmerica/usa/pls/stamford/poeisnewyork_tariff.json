@@ -58,7 +58,7 @@
     "57": 3360,
     "58": 3415,
     "59": 3470,
-    "60": 3525,
+    "60": 3525
   },
   "diplomat": {
     "description": "",
@@ -69,6 +69,6 @@
     "20DRY",
     "40HC"
   ],
-  "delivery": "Stamford, CT""
+  "delivery": "Stamford, CT",
   "partner": "YESG2M(PLS)"
 }

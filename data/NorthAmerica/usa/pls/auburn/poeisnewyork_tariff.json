@@ -58,7 +58,7 @@
     "57": 3810,
     "58": 3865,
     "59": 3920,
-    "60": 3975,
+    "60": 3975
   },
   "diplomat": {
     "description": "",
@@ -69,6 +69,6 @@
     "20DRY",
     "40HC"
   ],
-  "delivery": "Auburn, NY""
+  "delivery": "Auburn, NY",
   "partner": "YESG2M(PLS)"
 }

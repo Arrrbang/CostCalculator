@@ -58,7 +58,7 @@
     "57": 3710,
     "58": 3765,
     "59": 3820,
-    "60": 3875,
+    "60": 3875
   },
   "diplomat": {
     "description": "",
@@ -69,6 +69,6 @@
     "20DRY",
     "40HC"
   ],
-  "delivery": "Little Falls, NY""
+  "delivery": "Little Falls, NY",
   "partner": "YESG2M(PLS)"
 }

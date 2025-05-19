@@ -58,7 +58,7 @@
     "57": 3460,
     "58": 3515,
     "59": 3570,
-    "60": 3625,
+    "60": 3625
   },
   "diplomat": {
     "description": "",
@@ -69,6 +69,6 @@
     "20DRY",
     "40HC"
   ],
-  "delivery": "Waterbury, CT""
+  "delivery": "Waterbury, CT",
   "partner": "YESG2M(PLS)"
 }

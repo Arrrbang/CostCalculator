@@ -58,7 +58,7 @@
     "57": 3660,
     "58": 3715,
     "59": 3770,
-    "60": 3825,
+    "60": 3825
   },
   "diplomat": {
     "description": "",
@@ -69,6 +69,6 @@
     "20DRY",
     "40HC"
   ],
-  "delivery": "Binghamton, NY""
+  "delivery": "Binghamton, NY",
   "partner": "YESG2M(PLS)"
 }

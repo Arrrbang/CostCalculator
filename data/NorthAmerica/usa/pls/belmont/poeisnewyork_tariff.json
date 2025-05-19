@@ -58,7 +58,7 @@
     "57": 5940,
     "58": 6045,
     "59": 6150,
-    "60": 6255,
+    "60": 6255
   },
   "diplomat": {
     "description": "",
@@ -69,6 +69,6 @@
     "20DRY",
     "40HC"
   ],
-  "delivery": "Belmont, NY""
+  "delivery": "Belmont, NY",
   "partner": "YESG2M(PLS)"
 }

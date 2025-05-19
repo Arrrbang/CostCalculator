@@ -58,7 +58,7 @@
     "57": 5560,
     "58": 5665,
     "59": 5770,
-    "60": 5875,
+    "60": 5875
   },
   "diplomat": {
     "description": "",
@@ -69,6 +69,6 @@
     "20DRY",
     "40HC"
   ],
-  "delivery": "Rochester, NY""
+  "delivery": "Rochester, NY",
   "partner": "YESG2M(PLS)"
 }
