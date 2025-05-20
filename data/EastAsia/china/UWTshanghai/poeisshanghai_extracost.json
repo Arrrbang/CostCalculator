@@ -14,7 +14,7 @@
 
   "basic-cost-1": {
     "name": "ISC",
-    "description": "20FT:RMB 4,000($550) / 40FT:RMB 4,600($630)"\n콘솔 단가 : 20FT에 전체 20cbm 적입 기준,
+    "description": "20FT:RMB 4,000($550) / 40FT:RMB 4,600($630)\n콘솔 단가 : 20FT에 전체 20cbm 적입 기준",
     "NonDiplomat": {
       "CONSOLE":{"단가":27.5},
       "20DRY": 550,
