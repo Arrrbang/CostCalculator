@@ -587,13 +587,15 @@ function updateDiplomatSensitiveResult(categoryKey) {
 
   // 1. CBM 범위가 있는지 확인
   if (typeof costData === "object") {
-    const rangeKey = Object.keys(costData).find((key) => {
-      if (key.includes("-")) {
-        const [start, end] = key.split("-").map(Number);
-        return selectedCBM >= start && selectedCBM <= end;
-      }
-      return false;
-    });
+  const rangeKey = Object.keys(costData).find((key) => {
+    if (key.includes("-")) {
+      const [start, end] = key.split("-").map(Number);
+      return selectedCBM >= start && selectedCBM <= end;
+    } else if (!isNaN(Number(key))) {
+      return selectedCBM === Number(key);
+    }
+    return false;
+  });
 
     if (rangeKey) {
       // 범위에 맞는 값을 출력
