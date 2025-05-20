@@ -353,7 +353,7 @@
     "lng": 101.6869,
     "links": [
       {
-        "type": "GYOMIN",
+        "type": "교민물류",
         "path": "data/SoutheastAsia/malaysia/gyomin/kuala_lumpur",
         "color": "blue"
       }
@@ -365,7 +365,7 @@
     "lng": 100.3327,
     "links": [
       {
-        "type": "GYOMIN",
+        "type": "교민물류",
         "path": "data/SoutheastAsia/malaysia/gyomin/penang",
         "color": "blue"
       }
@@ -377,7 +377,7 @@
     "lng": 101.3929,
     "links": [
       {
-        "type": "GYOMIN",
+        "type": "교민물류",
         "path": "data/SoutheastAsia/malaysia/gyomin/port_klang",
         "color": "blue"
       }
@@ -389,7 +389,7 @@
     "lng": 116.0735,
     "links": [
       {
-        "type": "GYOMIN",
+        "type": "교민물류",
         "path": "data/SoutheastAsia/malaysia/gyomin/kota_kinabalu",
         "color": "blue"
       }
@@ -401,7 +401,7 @@
     "lng": 113.0333,
     "links": [
       {
-        "type": "GYOMIN",
+        "type": "교민물류",
         "path": "data/SoutheastAsia/malaysia/gyomin/bintulu",
         "color": "blue"
       }
@@ -413,8 +413,68 @@
     "lng": 101.9381,
     "links": [
       {
-        "type": "GYOMIN",
+        "type": "교민물류",
         "path": "data/SoutheastAsia/malaysia/gyomin/seremban",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Melaka, Malaysia",
+    "lat": 2.189594,
+    "lng": 102.250087,
+    "links": [
+      {
+        "type": "교민물류",
+        "path": "data/SoutheastAsia/malaysia/gyomin/melaka",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Johor Bahru, Malaysia",
+    "lat": 1.492659,
+    "lng": 103.741359,
+    "links": [
+      {
+        "type": "교민물류",
+        "path": "data/SoutheastAsia/malaysia/gyomin/johor_bahru",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kedah, Malaysia",
+    "lat": 6.000000,
+    "lng": 100.666700,
+    "links": [
+      {
+        "type": "교민물류",
+        "path": "data/SoutheastAsia/malaysia/gyomin/kedah",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Kuching, Malaysia",
+    "lat": 1.607681,
+    "lng": 110.378544,
+    "links": [
+      {
+        "type": "교민물류",
+        "path": "data/SoutheastAsia/malaysia/gyomin/kuching",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Miri, Malaysia",
+    "lat": 4.399280,
+    "lng": 113.991630,
+    "links": [
+      {
+        "type": "교민물류",
+        "path": "data/SoutheastAsia/malaysia/gyomin/miri",
         "color": "blue"
       }
     ]
