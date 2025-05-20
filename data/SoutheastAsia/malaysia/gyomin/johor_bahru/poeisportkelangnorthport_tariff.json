@@ -1,0 +1,43 @@
+{
+  "nonDiplomat": {
+      "CONSOLE": {
+        "description": "", 
+        "1-3": 900,
+        "4-6": 1100,
+        "7-10": 1300,
+        "11-13": 1500,
+        "14-15": 1700,
+        "16-17": 1900,
+        "18-27": 2100
+      },
+      "20DRY": {
+        "description": "27CBM이하는 콘솔가격 또는 20피트 요금만 청구함", 
+        "ANY": 2100
+      },
+      "40HC": {
+        "description": "27CBM이하는 콘솔가격 또는 20피트 요금만 청구함", 
+        "ANY": 2900
+      }
+  },
+  "diplomat": {
+      "CONSOLE": {
+        "description": "", 
+        "ANY": "별도 문의"
+      },
+      "20DRY": {
+        "description": "",
+        "ANY": "별도 문의"
+      },
+      "40HC": {
+        "description": "", 
+        "ANY": "별도 문의"
+      }
+  },
+  "containerType": [
+    "CONSOLE",
+    "20DRY",
+    "40HC"
+  ],
+  "delivery": "Johor Bharu",
+  "partner": "교민물류"
+}

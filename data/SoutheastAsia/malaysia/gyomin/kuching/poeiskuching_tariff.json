@@ -1,0 +1,36 @@
+{
+  "nonDiplomat": {
+      "CONSOLE": {
+        "description": "", 
+        "ANY":"별도 문의"
+      },
+      "20DRY": {
+        "description": "27CBM이하는 콘솔가격 또는 20피트 요금만 청구함", 
+        "ANY": 2400
+      },
+      "40HC": {
+        "description": "27CBM이하는 콘솔가격 또는 20피트 요금만 청구함", 
+        "ANY": 3500
+      }
+  },
+  "diplomat": {
+      "CONSOLE": {
+        "description": "", 
+        "ANY": "별도 문의"
+      },
+      "20DRY": {
+        "description": "",
+        "ANY": "별도 문의"
+      },
+      "40HC": {
+        "description": "", 
+        "ANY": "별도 문의"
+      }
+  },
+  "containerType": [
+    "20DRY",
+    "40HC"
+  ],
+  "delivery": "Kuching",
+  "partner": "교민물류"
+}

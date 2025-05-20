@@ -1,0 +1,43 @@
+{
+  "nonDiplomat": {
+      "CONSOLE": {
+        "description": "", 
+        "1-3": 500,
+        "4-6": 700,
+        "7-10": 900,
+        "11-13": 1100,
+        "14-15": 1300,
+        "16-17": 1500,
+        "18-27": 1700
+      },
+      "20DRY": {
+        "description": "27CBM이하는 콘솔가격 또는 20피트 요금만 청구함", 
+        "ANY": 1700
+      },
+      "40HC": {
+        "description": "27CBM이하는 콘솔가격 또는 20피트 요금만 청구함", 
+        "ANY": 2300
+      }
+  },
+  "diplomat": {
+      "CONSOLE": {
+        "description": "", 
+        "ANY": "별도 문의"
+      },
+      "20DRY": {
+        "description": "",
+        "ANY": "별도 문의"
+      },
+      "40HC": {
+        "description": "", 
+        "ANY": "별도 문의"
+      }
+  },
+  "containerType": [
+    "CONSOLE",
+    "20DRY",
+    "40HC"
+  ],
+  "delivery": "Seremban",
+  "partner": "교민물류"
+}

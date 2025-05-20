@@ -1,0 +1,43 @@
+{
+  "nonDiplomat": {
+      "CONSOLE": {
+        "description": "", 
+        "1-3": 1000,
+        "4-6": 1200,
+        "7-10": 1400,
+        "11-13": 1600,
+        "14-15": 1800,
+        "16-17": 2000,
+        "18-27": 2200
+      },
+      "20DRY": {
+        "description": "27CBM이하는 콘솔가격 또는 20피트 요금만 청구함", 
+        "ANY": 2200
+      },
+      "40HC": {
+        "description": "27CBM이하는 콘솔가격 또는 20피트 요금만 청구함", 
+        "ANY": 3200
+      }
+  },
+  "diplomat": {
+      "CONSOLE": {
+        "description": "", 
+        "ANY": "별도 문의"
+      },
+      "20DRY": {
+        "description": "",
+        "ANY": "별도 문의"
+      },
+      "40HC": {
+        "description": "", 
+        "ANY": "별도 문의"
+      }
+  },
+  "containerType": [
+    "CONSOLE",
+    "20DRY",
+    "40HC"
+  ],
+  "delivery": "Kedah",
+  "partner": "교민물류"
+}
