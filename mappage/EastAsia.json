@@ -400,7 +400,7 @@
       },
       {
         "type": "World Bridge",
-        "path": "data/EastAsia/china/daesung/yantai",
+        "path": "data/EastAsia/china/worldbridge/yantai",
         "color": "blue"
       }
     ]
