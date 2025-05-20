@@ -14,7 +14,7 @@
 
   "basic-cost-1": {
     "name": "ISC",
-    "description": "20FT:RMB 4,000($550) / 40FT:RMB 4,600($630)",
+    "description": "20FT:RMB 4,000($550) / 40FT:RMB 4,600($630)"\n콘솔 단가 : 20FT에 전체 20cbm 적입 기준,
     "NonDiplomat": {
       "CONSOLE":{"단가":27.5},
       "20DRY": 550,
@@ -28,16 +28,16 @@
   },
   "basic-cost-2": {
     "name": "LSS",
-    "description": "20FT:CNY650 / 40FT:CNY1,300",
+    "description": "20FT:CNY650($90) / 40FT:CNY1,300($180)\n콘솔 단가 : 20FT에 전체 20cbm 적입 기준",
     "NonDiplomat": {
-      "CONSOLE":{"단가":4},
-      "20DRY": 100,
-      "40HC": 200
+      "CONSOLE":{"단가":4.5},
+      "20DRY": 90,
+      "40HC": 180
     },
     "Diplomat": {
-      "CONSOLE":{"단가":4},
-      "20DRY": 100,
-      "40HC": 200
+      "CONSOLE":{"단가":4.5},
+      "20DRY": 90,
+      "40HC": 180
     }
   },
   "extra-cost-1": {
