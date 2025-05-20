@@ -16,14 +16,14 @@
     "name": "ISC",
     "description": "20FT:RMB 4,000($550) / 40FT:RMB 4,600($630)",
     "NonDiplomat": {
-      "CONSOLE":{"단가":50.2},
+      "CONSOLE":{"단가":27.5},
       "20DRY": 550,
       "40HC": 630
     },
     "Diplomat": {
-      "CONSOLE":{"단가":50.2},
-      "20DRY": 550,
-      "40HC": 630
+      "CONSOLE":"미확인",
+      "20DRY": "미확인",
+      "40HC": "미확인"
     }
   },
   "basic-cost-2": {
