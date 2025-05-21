@@ -1021,7 +1021,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/yamanashi",
+        "path": "data/EastAsia/japan/trelocation/yamanashi-tochigi-ibaraki-shizuoka-gunma",
         "color": "blue"
       },
       {
@@ -1038,7 +1038,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/yamanashi",
+        "path": "data/EastAsia/japan/trelocation/yamanashi-tochigi-ibaraki-shizuoka-gunma",
         "color": "blue"
       },
       {
@@ -1055,7 +1055,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/yamanashi",
+        "path": "data/EastAsia/japan/trelocation/yamanashi-tochigi-ibaraki-shizuoka-gunma",
         "color": "blue"
       },
       {
@@ -1072,7 +1072,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/yamanashi",
+        "path": "data/EastAsia/japan/trelocation/yamanashi-tochigi-ibaraki-shizuoka-gunma",
         "color": "blue"
       },
       {
@@ -1089,7 +1089,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/yamanashi",
+        "path": "data/EastAsia/japan/trelocation/yamanashi-tochigi-ibaraki-shizuoka-gunma",
         "color": "blue"
       },
       {
@@ -1106,7 +1106,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/nagoya",
+        "path": "data/EastAsia/japan/trelocation/nagoya-nagano-fukushima-hamamatsu",
         "color": "blue"
       },
       {
@@ -1123,7 +1123,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/nagoya",
+        "path": "data/EastAsia/japan/trelocation/nagoya-nagano-fukushima-hamamatsu",
         "color": "blue"
       },
       {
@@ -1140,7 +1140,7 @@
   "links": [
     {
       "type": "T RELOCATION",
-      "path": "data/EastAsia/japan/trelocation/nagoya",
+      "path": "data/EastAsia/japan/trelocation/nagoya-nagano-fukushima-hamamatsu",
       "color": "blue"
     },
     {
@@ -1157,7 +1157,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/nagoya",
+        "path": "data/EastAsia/japan/trelocation/nagoya-nagano-fukushima-hamamatsu",
         "color": "blue"
       }
     ]
@@ -1169,7 +1169,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/osaka",
+        "path": "data/EastAsia/japan/trelocation/osaka-kyoto-shiga-nara-mie-gifu",
         "color": "blue"
       },
       {
@@ -1186,7 +1186,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/osaka",
+        "path": "data/EastAsia/japan/trelocation/osaka-kyoto-shiga-nara-mie-gifu",
         "color": "blue"
       },
       {
@@ -1203,7 +1203,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/osaka",
+        "path": "data/EastAsia/japan/trelocation/osaka-kyoto-shiga-nara-mie-gifu",
         "color": "blue"
       },
       {
@@ -1220,7 +1220,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/osaka",
+        "path": "data/EastAsia/japan/trelocation/osaka-kyoto-shiga-nara-mie-gifu",
         "color": "blue"
       },
       {
@@ -1237,7 +1237,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/osaka",
+        "path": "data/EastAsia/japan/trelocation/osaka-kyoto-shiga-nara-mie-gifu",
         "color": "blue"
       },
       {
@@ -1254,7 +1254,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/osaka",
+        "path": "data/EastAsia/japan/trelocation/osaka-kyoto-shiga-nara-mie-gifu",
         "color": "blue"
       },
       {
@@ -1271,7 +1271,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/sendai",
+        "path": "data/EastAsia/japan/trelocation/sendai-niigata-yamagata-hyogo",
         "color": "blue"
       },
       {
@@ -1288,7 +1288,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/sendai",
+        "path": "data/EastAsia/japan/trelocation/sendai-niigata-yamagata-hyogo",
         "color": "blue"
       },
       {
@@ -1305,7 +1305,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/sendai",
+        "path": "data/EastAsia/japan/trelocation/sendai-niigata-yamagata-hyogo",
         "color": "blue"
       },
       {
@@ -1322,7 +1322,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/sendai",
+        "path": "data/EastAsia/japan/trelocation/sendai-niigata-yamagata-hyogo",
         "color": "blue"
       }
     ]
@@ -1334,7 +1334,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/hirosima",
+        "path": "data/EastAsia/japan/trelocation/hirosima-okayama-kagawa-ehime",
         "color": "blue"
       },
       {
@@ -1351,7 +1351,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/hirosima",
+        "path": "data/EastAsia/japan/trelocation/hirosima-okayama-kagawa-ehime",
         "color": "blue"
       },
       {
@@ -1368,7 +1368,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/hirosima",
+        "path": "data/EastAsia/japan/trelocation/hirosima-okayama-kagawa-ehime",
         "color": "blue"
       }
     ]
@@ -1380,7 +1380,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/hirosima",
+        "path": "data/EastAsia/japan/trelocation/hirosima-okayama-kagawa-ehime",
         "color": "blue"
       },
       {
@@ -1397,7 +1397,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/fukuoka",
+        "path": "data/EastAsia/japan/trelocation/fukuoka-yamaguchi",
         "color": "blue"
       },
       {
@@ -1414,7 +1414,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/fukuoka",
+        "path": "data/EastAsia/japan/trelocation/fukuoka-yamaguchi",
         "color": "blue"
       }
     ]
@@ -1426,7 +1426,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/oita",
+        "path": "data/EastAsia/japan/trelocation/oita-kumamoto",
         "color": "blue"
       }
     ]
@@ -1438,7 +1438,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/oita",
+        "path": "data/EastAsia/japan/trelocation/oita-kumamoto",
         "color": "blue"
       }
     ]
