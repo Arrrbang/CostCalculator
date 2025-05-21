@@ -146,5 +146,17 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Colombo, Sri Lanka",
+    "lat": 6.93548,
+    "lng": 79.84868,
+    "links": [
+      {
+        "type": "WORLD WIDE MOVERS",
+        "path": "data/SouthAsia/sri_lanka/world_wide_movers/colombo",
+        "color": "blue"
+      }
+    ]
   }
 ]
