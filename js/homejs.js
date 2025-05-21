@@ -621,11 +621,11 @@ function updateDiplomatSensitiveResult(categoryKey) {
     result = selectedCBM * defaultMultiplier;
   }
 
-  // 5. 화폐 단위 추가
-  if (typeof result === "number" && !isNaN(result)) {
-    result = `${currencySymbol}${Number(result).toLocaleString(undefined, { 
-      minimumFractionDigits: 2, 
-      maximumFractionDigits: 2 
+  // 5. 화폐 단위 추가 및 천 단위 쉼표 적용
+  if (!isNaN(result)) {
+    result = `${currencySymbol}${Number(result).toLocaleString(undefined, {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
     })}`;
   }
 
