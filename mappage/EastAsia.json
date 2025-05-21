@@ -924,7 +924,7 @@
       },
       {
         "type": "KOKUSAI",
-        "path": "data/EastAsia/japan/trelocation/kobe",
+        "path": "data/EastAsia/japan/kokusai/kobe",
         "color": "blue"
       }
     ]
@@ -970,7 +970,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/kanagawa",
+        "path": "data/EastAsia/japan/trelocation/kanagawa-saitama-chiba",
         "color": "blue"
       },
       {
@@ -987,7 +987,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/kanagawa",
+        "path": "data/EastAsia/japan/trelocation/kanagawa-saitama-chiba",
         "color": "blue"
       },
       {
@@ -1004,7 +1004,7 @@
     "links": [
       {
         "type": "T RELOCATION",
-        "path": "data/EastAsia/japan/trelocation/kanagawa",
+        "path": "data/EastAsia/japan/trelocation/kanagawa-saitama-chiba",
         "color": "blue"
       },
       {
