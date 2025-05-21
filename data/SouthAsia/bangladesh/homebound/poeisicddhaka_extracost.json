@@ -1,0 +1,129 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/HOMEBOUND-PACKERS-SHIPPERS-LTD-1fa0b10191ce801bb4b1ed069147874b"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "Documentation Charge",
+        "description": "",
+        "NonDiplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": 125,
+            "40HC": "미확인"
+        },
+        "Diplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        }
+    },
+    "basic-cost-2": {
+        "name": "Vat/Gst 15%",
+        "description": "",
+        "NonDiplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": "(CDS+DOC)*15%",
+            "40HC": "미확인"
+        },
+        "Diplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        }
+    },
+    "basic-cost-3": {
+        "name": "Port, Shipping Agent & Customs Expenses as per receipts",
+        "description": "THC는 기본 $150-175 발생.\nPOC/CLC 비용이 대중이 없음.\n이 항목에 세금까지 포함 통상 $500 잡으세요.",
+        "NonDiplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": "$300~$1,000",
+            "40HC": "미확인"
+        },
+        "Diplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        }
+    },
+    "basic-cost-4": {
+        "name": "Transportation charge from chattogram to Dhaka",
+        "description": "Sinokor에서 ICD Dhaka로 부킹하면 발생 안 함",
+        "NonDiplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": 675,
+            "40HC": 875
+        },
+        "Diplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        }
+    },
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "",
+            "CONSOLE": "미확인",
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        },
+    "extra-cost-2": {
+        "name": "SHUTTLE CHARGE",
+        "description": "",
+            "CONSOLE": "미확인",
+            "20DRY": 650,
+            "40HC": 850
+        },
+    "extra-cost-3": {
+        "name": "LONG CARRY",
+        "description": "MIN $150",
+            "CONSOLE": "미확인",
+            "20DRY": {"단가":10},
+            "40HC": {"단가":10}
+        },
+    "extra-cost-4": {
+        "name": "WAREHOUSE IN/OUT CHARGE",
+        "description": "$3 per 100lbs(Min $25)",
+            "CONSOLE": "미확인",
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        },
+    "STAIR CHARGE": {
+        "description": "층마다 추가",
+        "CBM단가": 30
+    },
+    "HEAVY ITEM": {
+        "description": "$150-$350 depends on actual weight",
+        "단위": "ITEM",
+        "단가": 150
+    },
+      "STORAGE CHARGE": {
+        "description": "$8/100lbs * 1month min $75",
+        "단위": "주",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0,
+        }
+      },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": ""
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "SINOKOR : T/T 40~50 DAYS (CHATTOGRAM T/S)\n부킹은 chattogram으로 하고 연락해서 ICD Dhaka 까지 연결해야 함"
+    },
+
+    "DATA BASE": {
+  	  "description": "2024.10 이트너스 비딩조사\n진행 전에 문의 필수"
+    }
+}
