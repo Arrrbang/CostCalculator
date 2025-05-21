@@ -1,0 +1,94 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/WORLDWIDE-MOVERS-PVT-LTD-1fa0b10191ce8013aae7f4729f920382"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC",
+        "description": "",
+        "NonDiplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": 100,
+            "40HC": 150
+        },
+        "Diplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        }
+    },
+    "basic-cost-2": {
+        "name": "POC",
+        "description": "대략적인 비용",
+        "NonDiplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": 180,
+            "40HC": 320
+        },
+        "Diplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": "미확인",
+            "40HC": "미확인"
+        }
+    },
+    "extra-cost-1": {
+        "name": "SHUTTLE",
+        "description": "",
+            "CONSOLE": "미확인",
+            "20DRY": 200,
+            "40HC": 350
+        },
+    "extra-cost-2": {
+        "name": "UPLIGHT PIANO",
+        "description": "",
+            "CONSOLE": "미확인",
+            "20DRY": 100,
+            "40HC": 100
+        },
+    "extra-cost-3": {
+        "name": "LONG CARRY",
+        "description": "",
+            "CONSOLE": {"단가" : 5},
+            "20DRY": {"단가" : 5},
+            "40HC": {"단가" : 5}
+        },
+    "STAIR CHARGE": {
+        "description": "CBM*FLOOR",
+        "CBM단가": 2
+    },
+    "HEAVY ITEM": {
+        "description": "별도 문의",
+        "단위": "ITEM",
+        "단가": 0
+    },
+      "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "주",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+      },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": "진행 전 문의"
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "KMTC : T/T 30~40 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "2024.10 이트너스 비딩조사"
+    }
+}
