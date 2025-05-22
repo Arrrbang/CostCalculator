@@ -1,0 +1,109 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/BURRAQ-MOVERS-FREIGHT-INTERNATIONAL-1fa0b10191ce80908021fe572ca05486"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC",
+        "description": "40FT: $450-475",
+        "NonDiplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": 275,
+            "40HC": 475
+        },
+        "Diplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": 275,
+            "40HC": 475
+        }
+    },
+    "basic-cost-2": {
+        "name": "UNLOADING UPTO *TH FLOOR",
+        "description": "층수 추가 비용 대부분 반드시 발생됨\n진행 전에 확인해야함. \n20ft 10층 250 청구 이력 있음. ",
+        "NonDiplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": 250,
+            "40HC": "미확인"
+        },
+        "Diplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": 250,
+            "40HC": "미확인"
+        }
+    },
+    "basic-cost-3": {
+        "name": "POC",
+        "description": "정확한 비용 없음\n실비 청구 진행, 증빙 첨부됨\n20ft 기준 대략 $450-600 발생",
+        "NonDiplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": 550,
+            "40HC": "미확인"
+        },
+        "Diplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": 550,
+            "40HC": "미확인"
+        }
+    },
+    "basic-cost-4": {
+        "name": "DETENTION",
+        "description": "통상 14일정도 추가 발생됨\nFreetime 최대연장 21일 요청할 것",
+        "NonDiplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": 600,
+            "40HC": "미확인"
+        },
+        "Diplomat": {
+            "CONSOLE": "미확인",
+            "20DRY": 600,
+            "40HC": "미확인"
+        }
+    },
+    "extra-cost-1": {
+        "name": "WEEKEND CHARGE",
+        "description": "$25 per Person",
+            "CONSOLE": "계산 필요",
+            "20DRY": "계산 필요",
+            "40HC": "계산 필요"
+        },
+    "STAIR CHARGE": {
+        "description": "",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "",
+        "단위": "ITEM",
+        "단가": 25
+    },
+      "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "주",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+      },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": "진행 확정시 정확한 견적 요청 필요"
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "KMTC : T/T 30-35 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "기초자료 : 2024.10 이트너스 비딩조사"
+    }
+}
+
