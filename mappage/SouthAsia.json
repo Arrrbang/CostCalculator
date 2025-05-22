@@ -158,5 +158,41 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Karachi, Pakistan",
+    "lat": 24.860966,
+    "lng": 66.990501,
+    "links": [
+      {
+        "type": "BURRAQ",
+        "path": "data/SouthAsia/pakistan/burraq/karachi",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Lahore, Pakistan",
+    "lat": 31.582045,
+    "lng": 74.329376,
+    "links": [
+      {
+        "type": "BURRAQ",
+        "path": "data/SouthAsia/pakistan/burraq/lahore",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Islamabad, Pakistan",
+    "lat": 33.7215,
+    "lng": 73.0433,
+    "links": [
+      {
+        "type": "BURRAQ",
+        "path": "data/SouthAsia/pakistan/burraq/islamabad",
+        "color": "blue"
+      }
+    ]
   }
 ]
