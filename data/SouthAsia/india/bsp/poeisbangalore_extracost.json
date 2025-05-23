@@ -1,4 +1,15 @@
 {
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/ICD-BANGALORE-1990b10191ce800699e3ee013b721e95?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/BSP-LOGISTICS-PVT-LTD-1fc0b10191ce8073b47ddd421ec17ae7"
+        }
+    ],
+  
   "화폐단위": "$",
   
   "basic-cost-1": {
@@ -83,12 +94,16 @@
     "단위": "CBM",
     "단가": 5
   },
-  "STORAGE CHARGE": {
-    "description": "보관 비용 확인 필요",
-    "단위": "주",
-    "무료 보관 기간": 0,
-    "보관 비용 단가": 0
-  },
+      "STORAGE CHARGE": {
+        "description": "",
+        "단위": "주",
+        "무료 보관 기간": 2,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+      },
   
   "additional-info-1": {
     "name": "추가 비용",
