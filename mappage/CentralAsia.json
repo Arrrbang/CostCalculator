@@ -46,5 +46,17 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Ashgabat, Turkmenistan",
+    "lat": 37.95,
+    "lng": 58.3833,
+    "links": [
+      {
+        "type": "GLOBALINK LOGISTICS",
+        "path": "data/CentralAsia/turkmenistan/globalink_logistics/ashgabat",
+        "color": "blue"
+      }
+    ]
   }
 ]
