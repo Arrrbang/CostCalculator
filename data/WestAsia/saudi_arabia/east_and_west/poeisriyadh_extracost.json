@@ -1,0 +1,99 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/RIYADH-1980b10191ce805c9a44d61e82ac671e?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/EAST-AND-WEST-EXPRESS-1fc0b10191ce80b49149c8bb2bd38d4a"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 420,
+            "40HC": 550
+        },
+        "Diplomat": {
+            "20DRY": 420,
+            "40HC": 550
+        }
+    },
+    "basic-cost-2": {
+        "name": "POC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 160,
+            "40HC": 200
+        },
+        "Diplomat": {
+            "20DRY": 160,
+            "40HC": 200
+        }
+    },
+    "basic-cost-3": {
+        "name": "INSPECTION FEE",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 220,
+            "40HC": 320
+        },
+        "Diplomat": {
+            "20DRY": 220,
+            "40HC": 320
+        }
+    },
+    "extra-cost-1": {
+        "name": "SHUTTLE CHARGE",
+        "description": "",
+            "20DRY": {"단가" : 18},
+            "40HC": {"단가" : 18}
+        },
+    "extra-cost-2": {
+        "name": "LONG CARRY",
+        "description": "",
+            "20DRY": {"단가" : 10},
+            "40HC": {"단가" : 10}
+        },
+    "extra-cost-3": {
+        "name": "UPLIGHT PIANO",
+        "description": "",
+            "20DRY": 125
+            "40HC": 125
+        },
+    "STAIR CHARGE": {
+        "description": "",
+        "CBM단가": 10
+    },
+    "HEAVY ITEM": {
+        "description": "",
+        "단위": "CBM",
+        "단가": 15
+    },
+      "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "주",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+      },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": ""
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "HMM : T/T 50 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "기초자료 : 2024.10 이트너스 비딩조사"
+    }
+}
