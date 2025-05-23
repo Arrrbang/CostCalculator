@@ -194,5 +194,17 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Kathmandu, Nepal",
+    "lat": 27.7172453,
+    "lng": 85.3239605,
+    "links": [
+      {
+        "type": "CARGO PACKER",
+        "path": "data/SouthAsia/nepal/cargo_packer/kathmandu",
+        "color": "blue"
+      }
+    ]
   }
 ]
