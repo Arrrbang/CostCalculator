@@ -22,5 +22,29 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Almaty, Kazakhstan",
+    "lat": 43.2220146,
+    "lng": 76.8512485,
+    "links": [
+      {
+        "type": "MOVE ONE",
+        "path": "data/CentralAsia/kazakhstan/move_one/almaty",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Astana, Kazakhstan",
+    "lat": 51.1801,
+    "lng": 71.44598,
+    "links": [
+      {
+        "type": "MOVE ONE",
+        "path": "data/CentralAsia/kazakhstan/move_one/astana",
+        "color": "blue"
+      }
+    ]
   }
 ]
