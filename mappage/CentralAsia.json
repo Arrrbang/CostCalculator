@@ -10,5 +10,17 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Tashkent, Uzbekistan",
+    "lat": 41.311081,
+    "lng": 69.240562,
+    "links": [
+      {
+        "type": "MOVE ONE",
+        "path": "data/CentralAsia/uzbekistan/move_one/tashkent",
+        "color": "blue"
+      }
+    ]
   }
 ]
