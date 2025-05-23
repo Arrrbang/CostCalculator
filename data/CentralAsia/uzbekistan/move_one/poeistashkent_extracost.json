@@ -1,0 +1,57 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/MOVE-ONE-FZE-1fc0b10191ce800595bddf316d0a8991"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 260,
+            "40HC": 300
+        },
+        "Diplomat": {
+            "20DRY": 260,
+            "40HC": 300
+        }
+    },
+    "STAIR CHARGE": {
+        "description": "",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "",
+        "단위": "ITEM",
+        "단가": 0
+    },
+      "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "주",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+      },
+    "additional-info-1": {
+        "name": "진행 전 견적서 요청할 것",
+        "description": ""
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "서중물류 : T/T 50 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "업데이트 : 2025.05 \n기초자료 : 2024.10 이트너스 비딩조사"
+    }
+}
