@@ -1,7 +1,7 @@
 {
   "nonDiplomat": {
       "20DRY": {
-        "description": "1-30CBM", 
+        "description": "1-30CBM\nNhava Sheva port to Hyderabad 운송료 포함됨", 
         "1-5": 1450,
         "6-10": 1590,
         "11-15": 1790,
@@ -17,7 +17,7 @@
   },
   "diplomat": {
       "20DRY": {
-        "description": "1-30CBM", 
+        "description": "1-30CBM\nNhava Sheva port to Hyderabad 운송료 포함됨", 
         "1-5": 1450,
         "6-10": 1590,
         "11-15": 1790,
