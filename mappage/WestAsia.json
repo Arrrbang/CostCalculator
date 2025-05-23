@@ -92,6 +92,11 @@
         "type": "AEGIS",
         "path": "data/WestAsia/saudi_arabia/aegis/riyadh",
         "color": "blue"
+      },
+      {
+        "type": "EAST AND WEST",
+        "path": "data/WestAsia/saudi_arabia/east_and_west/riyadh",
+        "color": "blue"
       }
     ]
   },
