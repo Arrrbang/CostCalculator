@@ -136,6 +136,30 @@
     ]
   },
   {
+    "name": "Hyderabad, India",
+    "lat": 17.385044,
+    "lng": 78.486671,
+    "links": [
+      {
+        "type": "KNJ",
+        "path": "data/SouthAsia/india/knj/hyderabad",
+        "color": "blus"
+      }
+    ]
+  },
+  {
+    "name": "Pune, India",
+    "lat": 18.51957,
+    "lng": 73.85535,
+    "links": [
+      {
+        "type": "KNJ",
+        "path": "data/SouthAsia/india/knj/pune",
+        "color": "blue"
+      }
+    ]
+  },
+  {
     "name": "Dhaka, Bangladesh",
     "lat": 23.810332,
     "lng": 90.4125181,
