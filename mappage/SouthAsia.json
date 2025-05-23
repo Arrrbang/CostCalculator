@@ -230,17 +230,5 @@
         "color": "blue"
       }
     ]
-  },
-  {
-    "name": "Bishkek, Kyrgyzstan",
-    "lat": 42.87472,
-    "lng": 74.61222,
-    "links": [
-      {
-        "type": "MOVE ONE",
-        "path": "data/CentralAsia/kyrgyzstan/move_one/bishkek",
-        "color": "blue"
-      }
-    ]
   }
 ]
