@@ -1,0 +1,111 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/CARGO-PACKERS-MOVERS-INTERNATIONAL-PVT-LTD-1fb0b10191ce803a90b9cc48ff916d3f"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 250,
+            "40HC": 350
+        },
+        "Diplomat": {
+            "20DRY": 250,
+            "40HC": 350
+        }
+    },
+    "basic-cost-2": {
+        "name": "BANK FEE",
+        "description": "INVOICE 송금 수수료",
+        "NonDiplomat": {
+            "20DRY": 30,
+            "40HC": 30
+        },
+        "Diplomat": {
+            "20DRY": 30,
+            "40HC": 30
+        }
+    },
+    "basic-cost-3": {
+        "name": "DUTY",
+        "description": "Customs Duty/Tax, Import licence fee\n customs unreceipted charges",
+        "NonDiplomat": {
+            "20DRY": "실비 청구",
+            "40HC": "실비 청구"
+        },
+        "Diplomat": {
+            "20DRY": "실비 청구",
+            "40HC": "실비 청구"
+        }
+    },
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "",
+            "20DRY": {"단가" : 10},
+            "40HC": {"단가" : 10}
+        },
+    "extra-cost-2": {
+        "name": "WEEKEND CHARGE",
+        "description": "",
+            "20DRY": {"단가" : 5},
+            "40HC": {"단가" : 5}
+        },
+    "extra-cost-3": {
+        "name": "SHUTTLE",
+        "description": "",
+            "20DRY": {"단가" : 5},
+            "40HC": {"단가" : 5}
+        },
+    "extra-cost-4": {
+        "name": "LONG CARRY",
+        "description": "",
+            "20DRY": {"단가" : 5},
+            "40HC": {"단가" : 5}
+        },
+    "extra-cost-5": {
+        "name": "UPLIGHT PIANO",
+        "description": "",
+            "20DRY": 100,
+            "40HC": 100
+        },
+    "STAIR CHARGE": {
+        "description": "미확인",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "",
+        "단위": "CBM",
+        "단가": 2
+    },
+      "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "주",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+      },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": "부킹컨펌 소요 시간이 길기 때문에 미리 부킹 진행 필수"
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "HMM : T/T 30 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "기초자료 : 2024.10 이트너스 비딩조사"
+    }
+}
