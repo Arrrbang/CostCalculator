@@ -1,0 +1,106 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/MOVE-ONE-FZE-1ff0b10191ce801098f2e47f26632125"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC/POC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        },
+        "Diplomat": {
+            "20DRY": "INCLUDED",
+            "40HC": "INCLUDED"
+        }
+    },
+    "basic-cost-2": {
+        "name": "Disbursement Fee",
+        "description": "전체 금액의 15% 청구\nMin $75",
+        "NonDiplomat": {
+            "20DRY": 75,
+            "40HC": 75
+        },
+        "Diplomat": {
+            "20DRY": 75,
+            "40HC": 75
+        }
+    },
+    "extra-cost-1": {
+        "name": "Weekend Charge",
+        "description": "$ 40/PER CREW/PER DAY",
+            "20DRY": "",
+            "40HC": ""
+        },
+    "extra-cost-2": {
+        "name": "Shuttle Charge",
+        "description": "$145/PER EACH 15CBM",
+            "20DRY": {
+              "1-15": 145,
+              "16-30": 290
+            },
+            "40HC": {
+              "1-15": 145,
+              "16-30": 290,
+              "31-45": 435,
+              "46-60": 580
+            }
+        },
+    "extra-cost-3": {
+        "name": "Long Carry",
+        "description": "$165/PER EACH 30CBM",
+            "20DRY": {
+              "1-30": 165
+            },
+            "40HC": {
+              "1-30": 165,
+              "31-60": 330
+            }
+        },
+    "extra-cost-4": {
+        "name": "Uplight Piano",
+        "description": "",
+            "20DRY": "60",
+            "40HC": "60"
+        },
+    "STAIR CHARGE": {
+        "description": "",
+        "CBM단가": 8
+    },
+    "HEAVY ITEM": {
+        "description": "",
+        "단위": "ITEM",
+        "단가": 60
+    },
+      "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "주",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+      },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": ""
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": ""
+    },
+
+    "DATA BASE": {
+  	  "description": "기초자료 : 2024.10 이트너스 비딩조사"
+    }
+}
