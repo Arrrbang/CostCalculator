@@ -165,5 +165,29 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Al Ruwais, Qatar",
+    "lat": 26.1301245,
+    "lng": 51.1977605,
+    "links": [
+      {
+        "type": "Move One",
+        "path": "data/WestAsia/qatar/move_one/al_ruwais",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Doha, Qatar",
+    "lat": 25.28545,
+    "lng": 51.53096,
+    "links": [
+      {
+        "type": "Move One",
+        "path": "data/WestAsia/qatar/move_one/doha",
+        "color": "blue"
+      }
+    ]
   }
 ]
