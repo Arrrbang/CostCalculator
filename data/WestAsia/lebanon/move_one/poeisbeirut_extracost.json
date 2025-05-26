@@ -1,0 +1,141 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/BCC-LOGISTICS-1ff0b10191ce80438f19e043799299db"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 350,
+            "40HC": 450
+        },
+        "Diplomat": {
+            "20DRY": 350,
+            "40HC": 450
+        }
+    },
+    "basic-cost-2": {
+        "name": "POC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 600,
+            "40HC": 700
+        },
+        "Diplomat": {
+            "20DRY": 600,
+            "40HC": 700
+        }
+    },
+    "basic-cost-3": {
+        "name": "Drayage Charge",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 250,
+            "40HC": 350
+        },
+        "Diplomat": {
+            "20DRY": 250,
+            "40HC": 350
+        }
+    },
+    "basic-cost-4": {
+        "name": "INSPECTION",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 300,
+            "40HC": 400
+        },
+        "Diplomat": {
+            "20DRY": 300,
+            "40HC": 400
+        }
+    },
+    "basic-cost-5": {
+        "name": "CUSTOM CLEARANCE FEE",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 500,
+            "40HC": 600
+        },
+        "Diplomat": {
+            "20DRY": 500,
+            "40HC": 600
+        }
+    },
+    "extra-cost-1": {
+        "name": "Shuttle",
+        "description": "",
+            "20DRY": {"단가" : 20},
+            "40HC": {"단가" : 20}
+        },
+    "extra-cost-2": {
+        "name": "FULL SETTING",
+        "description": "",
+            "20DRY": {"단가" : 20},
+            "40HC": {"단가" : 20}
+        },
+    "extra-cost-3": {
+        "name": "Shuttle",
+        "description": "",
+            "20DRY": {"단가" : 20},
+            "40HC": {"단가" : 20}
+        },
+    "extra-cost-4": {
+        "name": "Uplight Piano",
+        "description": "",
+            "20DRY": 350,
+            "40HC": 350
+        },
+    "extra-cost-5": {
+        "name": "Long Carry",
+        "description": "",
+            "20DRY": {"단가" : 7},
+            "40HC": {"단가" : 7}
+        },
+    "extra-cost-6": {
+        "name": "Weekend Charge",
+        "description": "",
+            "20DRY": {"단가" : 25},
+            "40HC": {"단가" : 25}
+        },
+    "STAIR CHARGE": {
+        "description": "$7*CBM*Floor",
+        "CBM단가": 7
+    },
+    "HEAVY ITEM": {
+        "description": "",
+        "단위": "CBM",
+        "단가": 25
+    },
+      "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "주",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+      },
+    "additional-info-1": {
+        "name": "진행 전에 견적 요청",
+        "description": ""
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "YML : T/T 60 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "기초자료 : 2024.10 이트너스 비딩조사"
+    }
+}
