@@ -69,8 +69,8 @@
     "extra-cost-4": {
         "name": "Uplight Piano",
         "description": "",
-            "20DRY": "60",
-            "40HC": "60"
+            "20DRY": 60,
+            "40HC": 60
         },
     "STAIR CHARGE": {
         "description": "",
