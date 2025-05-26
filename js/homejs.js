@@ -457,7 +457,7 @@ if (containerType === "CONSOLE") {
     if (!isNaN(value40HC)) {
         // 40HC 값을 60으로 나누고 CBM 값을 곱한 결과 계산
         const consoleValue = (value40HC / 50) * selectedCbm;
-        ofcValueElement.textContent = `${currencySymbol}${Number(consoleValue).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+        ofcValueElement.textContent = `$${Number(consoleValue).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
     } else {
         ofcValueElement.textContent = "";
     }
@@ -469,7 +469,7 @@ if (containerType === "CONSOLE") {
 
     // 값이 숫자라면 화폐 단위를 포함해 형식화 (소수점 두 번째 자리까지)
     if (!isNaN(value)) {
-        value = `${currencySymbol}${Number(value).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`;
+        value = `$${Number(value).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`;
     }
 
 
