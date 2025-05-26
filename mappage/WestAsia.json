@@ -189,5 +189,17 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Beirut, Lebanon",
+    "lat": 33.89332,
+    "lng": 35.50157,
+    "links": [
+      {
+        "type": "Move One",
+        "path": "data/WestAsia/lebanon/move_one/beirut",
+        "color": "blue"
+      }
+    ]
   }
 ]
