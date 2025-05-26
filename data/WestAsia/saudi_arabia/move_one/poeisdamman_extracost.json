@@ -61,7 +61,7 @@
         },
     "extra-cost-5": {
         "name": "Shuttle Charge",
-        "description": "$175 per trip - 15 cbm",
+        "description": "$175 per trip - 15 cbm \nJubail & Hawaiyah & Hufuf: $235 per trip - 15cbm)",
             "20DRY": {
               "1-15": 175,
               "16-30": 350
