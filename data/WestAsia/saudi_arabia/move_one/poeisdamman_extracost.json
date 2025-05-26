@@ -1,0 +1,107 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/DAMMAM-1980b10191ce8026a0cef350c0ddcb95?pvs=4"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/MOVE-ONE-FZE-1ff0b10191ce80eebd9cfcc113d93cc5"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 230,
+            "40HC": 350
+        },
+        "Diplomat": {
+            "20DRY": 230,
+            "40HC": 350
+        }
+    },
+    "basic-cost-2": {
+        "name": "POC",
+        "description": "실비 청구\n진행 전에 견적 요청할 것\n진행 이력이 없어서 금액 확인 불가",
+        "NonDiplomat": {
+            "20DRY": "실비 청구",
+            "40HC": "실비 청구"
+        },
+        "Diplomat": {
+            "20DRY": "실비 청구",
+            "40HC": "실비 청구"
+        }
+    },
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "",
+            "20DRY": "On Request",
+            "40HC": "On Request"
+        },
+    "extra-cost-2": {
+        "name": "Weekend Charge",
+        "description": "$120 per crew per day",
+            "20DRY": "On Request",
+            "40HC": "On Request"
+        },
+    "extra-cost-3": {
+        "name": "Uplight Piano",
+        "description": "",
+            "20DRY": 165,
+            "40HC": 165
+        },
+    "extra-cost-4": {
+        "name": "Long Carry Charge",
+        "description": "Min $260",
+            "20DRY": {"단가": 9.5},
+            "40HC": {"단가": 9.5}
+        },
+    "extra-cost-5": {
+        "name": "Shuttle Charge",
+        "description": "$175 per trip - 15 cbm",
+            "20DRY": {
+              "1-15": 175,
+              "16-30": 350
+            }
+            "40HC": {
+              "1-15": 175,
+              "16-30": 350,
+              "31-45": 525,
+              "46-60": 700
+            }
+        },
+    "STAIR CHARGE": {
+        "description": "$9.5 per cbm per floor",
+        "CBM단가": 9.5
+    },
+    "HEAVY ITEM": {
+        "description": "$165 per item",
+        "단위": "ITEM",
+        "단가": 165
+    },
+      "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "주",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+      },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": ""
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "CMA : T/T 50~80 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "기초자료 : 2024.10 이트너스 비딩조사"
+    }
+}
