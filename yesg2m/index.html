@@ -179,7 +179,7 @@
         <span class="value" id="rateOutput">-</span>
       </div>
       <div class="result-row">
-        <span class="label">장비 사용료 :</span>
+        <span class="label">셔틀 작업비 :</span>
         <span class="value" id="equipmentOutput">-</span>
       </div>
     </div>
@@ -244,7 +244,7 @@
       }
       return null;
     } catch (error) {
-      console.error("장비 사용료 불러오기 실패:", error);
+      console.error("셔틀 작업비 불러오기 실패:", error);
       return null;
     }
   }
@@ -279,7 +279,7 @@
       visitOutput.textContent = "사전 문의";
     }
 
-    // 장비 사용료
+    // 셔틀 작업비
     if (equipmentRate !== null) {
       equipmentOutput.textContent = `₩${equipmentRate.toLocaleString()}`;
     } else {
