@@ -241,14 +241,14 @@
     // 출장비
     if (baseRate !== null) {
       const adjustedRate = cbm >= 31 ? baseRate * 2 : baseRate;
-      rateOutput.textContent = `지역 출장비: ₩${adjustedRate.toLocaleString()}`;
+      rateOutput.textContent = `₩${adjustedRate.toLocaleString()}`;
     } else {
       rateOutput.textContent = "지역 출장비: 사전 문의";
     }
 
     // 방문 견적비
     if (visitRate !== null) {
-      visitOutput.textContent = `방문 견적비: ₩${visitRate.toLocaleString()}`;
+      visitOutput.textContent = `₩${visitRate.toLocaleString()}`;
     } else {
       visitOutput.textContent = "방문 견적비: 사전 문의";
     }
