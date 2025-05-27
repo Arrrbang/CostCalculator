@@ -178,6 +178,10 @@
         <span class="label">지역 출장비 :</span>
         <span class="value" id="rateOutput">-</span>
       </div>
+      <div class="result-row">
+        <span class="label">장비 사용료 :</span>
+        <span class="value" id="equipmentOutput">-</span>
+      </div>
     </div>
   </div>
 
@@ -212,7 +216,7 @@
       }
     }
 
-    return null; // 사전 문의로 표시
+    return null;
   }
 
   function getBaseRateFromAddress(address) {
@@ -226,17 +230,39 @@
     return null;
   }
 
+  async function getEquipmentFee(cbm) {
+    try {
+      const response = await fetch("tarrif.json");
+      const data = await response.json();
+      const feeTable = data.equipment_fee;
+
+      for (const range in feeTable) {
+        const [min, max] = range.split("-").map(Number);
+        if (cbm >= min && cbm <= max) {
+          return feeTable[range];
+        }
+      }
+      return null;
+    } catch (error) {
+      console.error("장비 사용료 불러오기 실패:", error);
+      return null;
+    }
+  }
+
   const addressInput = document.getElementById("addressInput");
   const cbmInput = document.getElementById("cbmInput");
   const rateOutput = document.getElementById("rateOutput");
   const visitOutput = document.getElementById("visitOutput");
+  const equipmentOutput = document.getElementById("equipmentOutput"); 
 
-  function updateRate() {
+  // ✅ 메인 업데이트 함수
+  async function updateRate() {
     const address = addressInput.value;
     const cbm = parseFloat(cbmInput.value);
 
     const baseRate = getBaseRateFromAddress(address);
     const visitRate = getVisitRateFromAddress(address);
+    const equipmentRate = !isNaN(cbm) ? await getEquipmentFee(cbm) : null;
 
     // 출장비
     if (baseRate !== null) {
@@ -252,11 +278,19 @@
     } else {
       visitOutput.textContent = "사전 문의";
     }
+
+    // 장비 사용료
+    if (equipmentRate !== null) {
+      equipmentOutput.textContent = `₩${equipmentRate.toLocaleString()}`;
+    } else {
+      equipmentOutput.textContent = "사전 문의";
+    }
   }
 
   addressInput.addEventListener("input", updateRate);
   cbmInput.addEventListener("input", updateRate);
 </script>
+
 
 
 </body>
