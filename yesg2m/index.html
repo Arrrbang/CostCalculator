@@ -123,42 +123,74 @@
       <input type="number" id="cbmInput" placeholder="예: 12">
     </div>
 
-    <div class="result" id="rateOutput">출장비: -</div>
+    <div class="result" id="rateOutput">지역 출장비: -</div>
+    <div class="result" id="visitOutput">방문 견적비: -</div>
   </div>
 
-  <script>
-    const regionRates = [
-      { regions: ["부산", "강서", "사하", "양산"], rate: 130000 },
-      { regions: ["김해", "장유", "율하"], rate: 170000 },
-      { regions: ["창원", "마산", "진해", "울산"], rate: 190000 },
-      { regions: ["대구", "경산", "진주", "사천", "경주"], rate: 220000 },
-      { regions: ["구미", "칠곡", "김천", "포항", "안동", "거제"], rate: 270000 },
-      { regions: ["남해", "통영", "광양", "순천", "여수"], rate: 300000 }
-    ];
+<script>
+  const regionRates = [
+    { regions: ["부산", "강서", "사하", "양산"], rate: 130000 },
+    { regions: ["김해", "장유", "율하"], rate: 170000 },
+    { regions: ["창원", "마산", "진해", "울산"], rate: 190000 },
+    { regions: ["대구", "경산", "진주", "사천", "경주"], rate: 220000 },
+    { regions: ["구미", "칠곡", "김천", "포항", "안동", "거제"], rate: 270000 },
+    { regions: ["남해", "통영", "광양", "순천", "여수"], rate: 300000 }
+  ];
 
-    function getRateFromAddress(address) {
-      for (const group of regionRates) {
-        for (const region of group.regions) {
-          if (address.includes(region)) {
-            return `₩${group.rate.toLocaleString()}`;
-          }
+  const visitEstimateRates = [
+    { regions: ["양산", "김해", "장유", "울산", "언양"], rate: 120000 },
+    { regions: ["창원", "마산", "진해", "용원", "진영"], rate: 140000 },
+    { regions: ["대구", "경산", "진주", "사천", "경주"], rate: 170000 },
+    { regions: ["구미", "칠곡", "김천", "포항", "안동"], rate: 190000 },
+    { regions: ["거제", "남해", "통영", "광양", "순천"], rate: 220000 }
+  ];
+
+  // 부산 조건 추가: 강서, 사하를 제외한 부산 지역은 50,000원
+  function getVisitRateFromAddress(address) {
+    // 1. 부산 조건 우선 처리
+    if (address.includes("부산") && !address.includes("강서") && !address.includes("사하")) {
+      return "₩50,000";
+    }
+
+    // 2. 일반 지역 검색
+    for (const group of visitEstimateRates) {
+      for (const region of group.regions) {
+        if (address.includes(region)) {
+          return `₩${group.rate.toLocaleString()}`;
         }
       }
-      return "사전 문의";
     }
 
-    const addressInput = document.getElementById("addressInput");
-    const cbmInput = document.getElementById("cbmInput"); // (지금은 로직에 사용 안함)
-    const rateOutput = document.getElementById("rateOutput");
+    return "사전 문의";
+  }
 
-    function updateRate() {
-      const address = addressInput.value;
-      const rate = getRateFromAddress(address);
-      rateOutput.textContent = `출장비: ${rate}`;
+  function getBaseRateFromAddress(address) {
+    for (const group of regionRates) {
+      for (const region of group.regions) {
+        if (address.includes(region)) {
+          return `₩${group.rate.toLocaleString()}`;
+        }
+      }
     }
+    return "사전 문의";
+  }
 
-    addressInput.addEventListener("input", updateRate);
-  </script>
+  const addressInput = document.getElementById("addressInput");
+  const cbmInput = document.getElementById("cbmInput");
+  const rateOutput = document.getElementById("rateOutput");
+  const visitOutput = document.getElementById("visitOutput");
+
+  function updateRate() {
+    const address = addressInput.value;
+    const baseRate = getBaseRateFromAddress(address);
+    const visitRate = getVisitRateFromAddress(address);
+
+    rateOutput.textContent = `출장비: ${baseRate}`;
+    visitOutput.textContent = `방문 견적비: ${visitRate}`;
+  }
+
+  addressInput.addEventListener("input", updateRate);
+</script>
 
 </body>
 </html>
