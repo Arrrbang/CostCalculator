@@ -23,6 +23,30 @@
       z-index: -1; /* 콘텐츠 뒤로 이동 */
     }
 
+      .green-box {
+        background-color: #e8f5e9;
+        padding: 30px 20px;
+        margin-top: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 100%;
+        box-sizing: border-box;
+      }
+    
+      .green-box p {
+        font-size: 22px;
+        font-weight: bold;
+        color: #2e7d32;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    
+      .green-box .button-container {
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
     body {
       font-family: 'Noto Sans KR', Arial, sans-serif; /* Noto Sans KR 폰트 적용 */
       margin: 0;
@@ -66,23 +90,23 @@
       margin-top: 20px;
     }
 
-.button {
-  padding: 20px 50px; /* 버튼 크기 */
-  font-size: 30px; /* 버튼 글씨 크기 */
-  font-weight: bold; /* 버튼 글씨 두껍게 */
-  color: white;
-  background-color: #8BC34A; /* 버튼 색상 */
-  border: none;
-  border-radius: 8px; /* 둥근 버튼 모서리 */
-  cursor: pointer;
-  transition: background-color 0.3s;
-  width: 300px; /* 버튼 너비 설정 */
-  white-space: nowrap; /* 글씨 줄바꿈 방지 */
-  
-  display: flex; /* 플렉스박스를 사용해 자식 요소들을 정렬 */
-  justify-content: center; /* 수평 중앙 정렬 */
-  align-items: center; /* 수직 중앙 정렬 */
-}
+    .button {
+      padding: 20px 50px; /* 버튼 크기 */
+      font-size: 30px; /* 버튼 글씨 크기 */
+      font-weight: bold; /* 버튼 글씨 두껍게 */
+      color: white;
+      background-color: #8BC34A; /* 버튼 색상 */
+      border: none;
+      border-radius: 8px; /* 둥근 버튼 모서리 */
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 300px; /* 버튼 너비 설정 */
+      white-space: nowrap; /* 글씨 줄바꿈 방지 */
+      
+      display: flex; /* 플렉스박스를 사용해 자식 요소들을 정렬 */
+      justify-content: center; /* 수평 중앙 정렬 */
+      align-items: center; /* 수직 중앙 정렬 */
+    }
 
     .button:hover {
       background-color: #6fae3b; /* 호버 시 색상 */
@@ -100,6 +124,15 @@
     margin: 0;
     padding: 0;
   }
+
+    .green-box p {
+      font-size: 18px;
+    }
+
+    .green-box .button-container {
+      flex-direction: column;
+      gap: 10px;
+    }
 
   /* 컨테이너 설정 */
   .container {
@@ -168,16 +201,21 @@
 
   <div class="container">
     <img src="https://arrrbang.github.io/CostCalculator/image/pumexlogonew.png" alt="Login Icon">
-    <p>현지 비용 계산기</p>
-    <div class="button-container">
-      <button class="button" onclick="window.location.href='listpage/';">리스트에서 검색</button>
-      <button class="button" onclick="window.location.href='mappage/MAPS.html';">지도에서 검색</button>
+  
+    <div class="green-box">
+      <p>현지 비용 계산기</p>
+      <div class="button-container">
+        <button class="button" onclick="window.location.href='listpage/';">리스트에서 검색</button>
+        <button class="button" onclick="window.location.href='mappage/MAPS.html';">지도에서 검색</button>
+      </div>
     </div>
-
-    <p>기타 비용 계산기</p>
-    <div class="button-container">
-      <button class="button" onclick="window.location.href='yesg2m/';">YESG2M 작업비</button>
-      <button class="button" onclick="window.location.href='mappage/MAPS.html';">NONE</button>
+  
+    <div class="green-box">
+      <p>기타 비용 계산기</p>
+      <div class="button-container">
+        <button class="button" onclick="window.location.href='yesg2m/';">YESG2M 작업비</button>
+        <button class="button" onclick="window.location.href='mappage/MAPS.html';">NONE</button>
+      </div>
     </div>
   </div>
 
