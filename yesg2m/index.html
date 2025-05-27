@@ -11,37 +11,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
 
   <style>
-    .top-nav {
+    .logo-wrapper {
       position: absolute;
       top: 20px;
       left: 20px;
-      display: flex;
-      align-items: center;
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 8px;
-      padding: 6px 12px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      transition: box-shadow 0.3s ease;
+      z-index: 10;
     }
     
-    .top-nav:hover {
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    .logo-wrapper img {
+      height: 50px;
+    }
+
+    .back-button-wrapper {
+      margin: 20px auto 0;
+      display: flex;
+      justify-content: center;
     }
     
-    .top-nav a {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: #2e7d32;
+    .back-button {
+      background-color: #2e7d32;
+      color: white;
+      padding: 10px 20px;
+      font-size: 14px;
       font-weight: 600;
-      font-size: 15px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+      transition: background-color 0.3s ease;
     }
     
-    .top-nav img {
-      height: 36px;
-      width: auto;
+    .back-button:hover {
+      background-color: #27632a;
     }
+
 
     body::before {
       content: "";
@@ -172,20 +175,6 @@
       .container {
         padding: 30px 20px;
       }
-
-      .top-nav {
-        top: 10px;
-        left: 10px;
-        padding: 4px 8px;
-      }
-    
-      .top-nav img {
-        height: 28px;
-      }
-    
-      .top-nav a {
-        font-size: 13px;
-      }
     
       h1 {
         font-size: 20px;
@@ -224,11 +213,12 @@
 </head>
 <body>
   
-  <div class="top-nav">
-    <a href="https://arrrbang.github.io/CostCalculator/selectpage.html">
-      <img src="https://arrrbang.github.io/CostCalculator/image/pumexlogonew.png" alt="Logo">
-      <span>검색 페이지로 돌아가기</span>
-    </a>
+  <div class="logo-wrapper">
+    <img src="https://arrrbang.github.io/CostCalculator/image/pumexlogonew.png" alt="Logo">
+  </div>
+
+  <div class="back-button-wrapper">
+    <a href="https://arrrbang.github.io/CostCalculator/selectpage.html" class="back-button">검색 페이지로 돌아가기</a>
   </div>
   
   <div class="container">
