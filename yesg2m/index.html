@@ -180,7 +180,7 @@
       </div>
       <div class="result-row">
         <span class="label">셔틀 작업비 :</span>
-        <span class="value" id="equipmentOutput">-</span>
+        <span class="value" id="shuttleOutput">-</span>
       </div>
     </div>
   </div>
@@ -253,7 +253,7 @@
   const cbmInput = document.getElementById("cbmInput");
   const rateOutput = document.getElementById("rateOutput");
   const visitOutput = document.getElementById("visitOutput");
-  const equipmentOutput = document.getElementById("equipmentOutput"); 
+  const shuttleOutput = document.getElementById("shuttleOutput"); 
 
   // ✅ 메인 업데이트 함수
   async function updateRate() {
@@ -281,9 +281,9 @@
 
     // 셔틀 작업비
     if (equipmentRate !== null) {
-      equipmentOutput.textContent = `₩${equipmentRate.toLocaleString()}`;
+      shuttleOutput.textContent = `₩${equipmentRate.toLocaleString()}`;
     } else {
-      equipmentOutput.textContent = "사전 문의";
+      shuttleOutput.textContent = "사전 문의";
     }
   }
 
