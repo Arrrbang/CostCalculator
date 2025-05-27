@@ -35,6 +35,15 @@
       background-color: #f4f4f4; /* 배경색 */
       position: relative;
     }
+    
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 60px 20px;
+      width: 100%;
+    }
 
     .logo {
       width: 150px;
@@ -109,21 +118,23 @@
 </head>
 <body>
 
-  <img src="https://arrrbang.github.io/CostCalculator/image/pumexlogonew.png" alt="PUMEX Logo" class="logo">
+  <div class="wrapper">
+    <img src="https://arrrbang.github.io/CostCalculator/image/pumexlogonew.png" alt="PUMEX Logo" class="logo">
 
-  <div class="section-box">
-    <p>현지 비용 계산기</p>
-    <div class="button-container">
-      <button class="button" onclick="window.location.href='listpage/';">리스트에서 검색</button>
-      <button class="button" onclick="window.location.href='mappage/MAPS.html';">지도에서 검색</button>
+    <div class="section-box">
+      <p>현지 비용 계산기</p>
+      <div class="button-container">
+        <button class="button" onclick="window.location.href='listpage/';">리스트에서 검색</button>
+        <button class="button" onclick="window.location.href='mappage/MAPS.html';">지도에서 검색</button>
+      </div>
     </div>
-  </div>
 
-  <div class="section-box">
-    <p>기타 비용 계산기</p>
-    <div class="button-container">
-      <button class="button" onclick="window.location.href='yesg2m/';">YESG2M 작업비</button>
-      <button class="button" onclick="window.location.href='mappage/MAPS.html';">NONE</button>
+    <div class="section-box">
+      <p>기타 비용 계산기</p>
+      <div class="button-container">
+        <button class="button" onclick="window.location.href='yesg2m/';">YESG2M 작업비</button>
+        <button class="button" onclick="window.location.href='mappage/MAPS.html';">NONE</button>
+      </div>
     </div>
   </div>
 
