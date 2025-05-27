@@ -232,7 +232,7 @@
 
   async function getEquipmentFee(cbm) {
     try {
-      const response = await fetch("tarrif.json");
+      const response = await fetch("tariff.json");
       const data = await response.json();
       const feeTable = data.equipment_fee;
 
