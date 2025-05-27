@@ -234,7 +234,7 @@
     try {
       const response = await fetch("tariff.json");
       const data = await response.json();
-      const feeTable = data.equipment_fee;
+      const feeTable = data.shuttle_fee;
 
       for (const range in feeTable) {
         const [min, max] = range.split("-").map(Number);
