@@ -84,9 +84,15 @@
     }
 
     .result-group {
+      background-color: #e8f5e9; /* 연한 초록 */
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       margin-top: 30px;
       text-align: left;
       display: inline-block;
+      width: 100%;
+      max-width: 400px;
     }
     
     .result-row {
@@ -94,9 +100,8 @@
       justify-content: space-between;
       font-size: 20px;
       font-weight: bold;
-      color: #333;
-      width: 300px;
-      margin: 10px auto;
+      color: #2e7d32; /* 짙은 초록 텍스트 */
+      margin: 10px 0;
     }
     
     .result-row .label {
@@ -107,6 +112,7 @@
       text-align: right;
       color: #0077cc;
     }
+
 
     @media (max-width: 480px) {
       .container {
@@ -128,22 +134,22 @@
       }
     
       .result-group {
-        width: 100%;
+        padding: 15px 20px;
         margin-top: 20px;
+        width: 100%;
+        box-sizing: border-box;
       }
-    
+      
       .result-row {
         font-size: 18px;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
         margin: 8px 0;
       }
-    
+      
       .result-row .label,
       .result-row .value {
         font-size: 18px;
       }
+
     }
 
   </style>
