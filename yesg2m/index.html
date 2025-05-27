@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>YESG2M 포장 비용 계산기</title>
+  <title>퓨멕스 현지비용 계산기 beta</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Fonts -->
@@ -111,7 +111,7 @@
 <body>
 
   <div class="container">
-    <h1>YESG2M 포장 비용 계산기</h1>
+    <h1>출장비 계산기</h1>
 
     <div class="input-group">
       <label for="addressInput">주소</label>
@@ -128,31 +128,19 @@
 
   <script>
     const regionRates = [
-      {
-        regions: ["부산", "강서", "사하", "양산"],
-        cbmRates: [
-          { min: 0, max: 10, rate: 130000 },
-          { min: 11, max: 20, rate: 140000 },
-          { min: 21, max: 1000, rate: 150000 }
-        ]
-      },
-      {
-        regions: ["구미", "칠곡", "김천"],
-        cbmRates: [
-          { min: 0, max: 10, rate: 270000 },
-          { min: 11, max: 20, rate: 280000 },
-          { min: 21, max: 1000, rate: 290000 }
-        ]
-      }
-      // 필요 시 더 추가 가능
+      { regions: ["부산", "강서", "사하", "양산"], rate: 130000 },
+      { regions: ["김해", "장유", "율하"], rate: 170000 },
+      { regions: ["창원", "마산", "진해", "울산"], rate: 190000 },
+      { regions: ["대구", "경산", "진주", "사천", "경주"], rate: 220000 },
+      { regions: ["구미", "칠곡", "김천", "포항", "안동", "거제"], rate: 270000 },
+      { regions: ["남해", "통영", "광양", "순천", "여수"], rate: 300000 }
     ];
 
-    function getRate(address, cbm) {
+    function getRateFromAddress(address) {
       for (const group of regionRates) {
         for (const region of group.regions) {
           if (address.includes(region)) {
-            const matchedRate = group.cbmRates.find(r => cbm >= r.min && cbm <= r.max);
-            return matchedRate ? `₩${matchedRate.rate.toLocaleString()}` : "CBM 범위 초과";
+            return `₩${group.rate.toLocaleString()}`;
           }
         }
       }
@@ -160,24 +148,17 @@
     }
 
     const addressInput = document.getElementById("addressInput");
-    const cbmInput = document.getElementById("cbmInput");
+    const cbmInput = document.getElementById("cbmInput"); // (지금은 로직에 사용 안함)
     const rateOutput = document.getElementById("rateOutput");
 
     function updateRate() {
       const address = addressInput.value;
-      const cbm = parseFloat(cbmInput.value);
-      if (!address || isNaN(cbm)) {
-        rateOutput.textContent = "출장비: -";
-        return;
-      }
-      const rate = getRate(address, cbm);
+      const rate = getRateFromAddress(address);
       rateOutput.textContent = `출장비: ${rate}`;
     }
 
     addressInput.addEventListener("input", updateRate);
-    cbmInput.addEventListener("input", updateRate);
   </script>
 
 </body>
 </html>
-
