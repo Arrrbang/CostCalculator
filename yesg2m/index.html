@@ -5,13 +5,12 @@
   <title>YESG2M 포장 비용 계산기</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts: Noto Sans KR -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
 
   <style>
-    /* 배경 이미지와 블러 효과 */
     body::before {
       content: "";
       position: absolute;
@@ -20,7 +19,7 @@
       width: 100%;
       height: 100%; 
       background: 
-        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
         url('https://arrrbang.github.io/CostCalculator/image/background.jpg') no-repeat center center/cover;
       filter: blur(10px);
       z-index: -1;
@@ -34,7 +33,6 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: #f4f4f4;
       position: relative;
     }
 
@@ -56,12 +54,25 @@
       margin-bottom: 30px;
     }
 
-    input[type="text"] {
-      width: 100%;
-      padding: 15px;
+    .input-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      width: 60px;
+      font-weight: bold;
+      text-align: left;
+      margin-right: 10px;
+    }
+
+    .input-group input {
+      flex: 1;
+      padding: 10px;
       font-size: 16px;
       border: 1px solid #ccc;
-      border-radius: 8px;
+      border-radius: 6px;
       box-sizing: border-box;
     }
 
@@ -81,9 +92,14 @@
         font-size: 20px;
       }
 
-      input[type="text"] {
-        padding: 12px;
-        font-size: 14px;
+      .input-group {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .input-group label {
+        margin-bottom: 5px;
+        width: 100%;
       }
 
       .result {
@@ -95,40 +111,71 @@
 <body>
 
   <div class="container">
-    <h1>출장비 계산기</h1>
-    <input type="text" id="addressInput" placeholder="주소를 입력하세요 (예: 경북 구미시 송정대로 160)">
+    <h1>YESG2M 포장 비용 계산기</h1>
+
+    <div class="input-group">
+      <label for="addressInput">주소</label>
+      <input type="text" id="addressInput" placeholder="예: 경북 구미시 송정대로 160">
+    </div>
+
+    <div class="input-group">
+      <label for="cbmInput">CBM</label>
+      <input type="number" id="cbmInput" placeholder="예: 12">
+    </div>
+
     <div class="result" id="rateOutput">출장비: -</div>
   </div>
 
   <script>
     const regionRates = [
-      { regions: ["부산", "강서", "사하", "양산"], rate: 130000 },
-      { regions: ["김해", "장유", "율하"], rate: 170000 },
-      { regions: ["창원", "마산", "진해", "울산"], rate: 190000 },
-      { regions: ["대구", "경산", "진주", "사천", "경주"], rate: 220000 },
-      { regions: ["구미", "칠곡", "김천", "포항", "안동", "거제"], rate: 270000 },
-      { regions: ["남해", "통영", "광양", "순천", "여수"], rate: 300000 }
+      {
+        regions: ["부산", "강서", "사하", "양산"],
+        cbmRates: [
+          { min: 0, max: 10, rate: 130000 },
+          { min: 11, max: 20, rate: 140000 },
+          { min: 21, max: 1000, rate: 150000 }
+        ]
+      },
+      {
+        regions: ["구미", "칠곡", "김천"],
+        cbmRates: [
+          { min: 0, max: 10, rate: 270000 },
+          { min: 11, max: 20, rate: 280000 },
+          { min: 21, max: 1000, rate: 290000 }
+        ]
+      }
+      // 필요 시 더 추가 가능
     ];
 
-    function getRateFromAddress(address) {
+    function getRate(address, cbm) {
       for (const group of regionRates) {
         for (const region of group.regions) {
           if (address.includes(region)) {
-            return `₩${group.rate.toLocaleString()}`;
+            const matchedRate = group.cbmRates.find(r => cbm >= r.min && cbm <= r.max);
+            return matchedRate ? `₩${matchedRate.rate.toLocaleString()}` : "CBM 범위 초과";
           }
         }
       }
       return "사전 문의";
     }
 
-    const input = document.getElementById("addressInput");
-    const output = document.getElementById("rateOutput");
+    const addressInput = document.getElementById("addressInput");
+    const cbmInput = document.getElementById("cbmInput");
+    const rateOutput = document.getElementById("rateOutput");
 
-    input.addEventListener("input", () => {
-      const address = input.value;
-      const rate = getRateFromAddress(address);
-      output.textContent = `출장비: ${rate}`;
-    });
+    function updateRate() {
+      const address = addressInput.value;
+      const cbm = parseFloat(cbmInput.value);
+      if (!address || isNaN(cbm)) {
+        rateOutput.textContent = "출장비: -";
+        return;
+      }
+      const rate = getRate(address, cbm);
+      rateOutput.textContent = `출장비: ${rate}`;
+    }
+
+    addressInput.addEventListener("input", updateRate);
+    cbmInput.addEventListener("input", updateRate);
   </script>
 
 </body>
