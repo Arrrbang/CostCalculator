@@ -171,6 +171,10 @@
 
     <div class="result-group">
       <div class="result-row">
+        <span class="label">포장 작업비 :</span>
+        <span class="value" id="packingOutput">-</span>
+      </div>
+      <div class="result-row">
         <span class="label">방문 견적비 :</span>
         <span class="value" id="visitOutput">-</span>
       </div>
@@ -266,22 +270,60 @@
     }
   }
 
+  async function getPackingFee(cbm) {
+    try {
+      const response = await fetch("tariff.json");
+      const data = await response.json();
+      const table = data.packing_fee;
+  
+      const baseRanges = Object.keys(table).filter(k => k !== "over 1cbm");
+  
+      for (const key of baseRanges) {
+        if (key.includes("-")) {
+          const [min, max] = key.split("-").map(Number);
+          if (cbm >= min && cbm <= max) {
+            return table[key];
+          }
+        } else {
+          const value = parseInt(key, 10);
+          if (cbm === value) {
+            return table[key];
+          }
+        }
+      }
+  
+      // CBM 초과 (25 이상)
+      if (cbm > 25) {
+        const base = table["25"];
+        const extra = table["over 1cbm"];
+        const overCbm = cbm - 25;
+        return base + (overCbm * extra);
+      }
+  
+      return null;
+    } catch (error) {
+      console.error("포장 작업비 계산 오류:", error);
+      return null;
+    }
+  }
 
   const addressInput = document.getElementById("addressInput");
   const cbmInput = document.getElementById("cbmInput");
   const rateOutput = document.getElementById("rateOutput");
   const visitOutput = document.getElementById("visitOutput");
   const shuttleOutput = document.getElementById("shuttleOutput"); 
+  const packingOutput = document.getElementById("packingOutput");
 
   // ✅ 메인 업데이트 함수
   async function updateRate() {
     const address = addressInput.value;
     const cbm = parseFloat(cbmInput.value);
-
+  
     const baseRate = getBaseRateFromAddress(address);
     const visitRate = getVisitRateFromAddress(address);
     const shuttleRate = !isNaN(cbm) ? await getShuttleFee(cbm) : null;
-
+    const packingRate = !isNaN(cbm) ? await getPackingFee(cbm) : null;
+  
     // 출장비
     if (baseRate !== null) {
       const adjustedRate = cbm >= 31 ? baseRate * 2 : baseRate;
@@ -289,27 +331,32 @@
     } else {
       rateOutput.textContent = "사전 문의";
     }
-
+  
     // 방문 견적비
     if (visitRate !== null) {
       visitOutput.textContent = `₩${visitRate.toLocaleString()}`;
     } else {
       visitOutput.textContent = "사전 문의";
     }
-
+  
     // 셔틀 작업비
     if (shuttleRate !== null) {
       shuttleOutput.textContent = `₩${shuttleRate.toLocaleString()}`;
     } else {
       shuttleOutput.textContent = "사전 문의";
     }
+  
+    // 포장 작업비
+    if (packingRate !== null) {
+      packingOutput.textContent = `₩${packingRate.toLocaleString()}`;
+    } else {
+      packingOutput.textContent = "사전 문의";
+    }
   }
 
   addressInput.addEventListener("input", updateRate);
   cbmInput.addEventListener("input", updateRate);
 </script>
-
-
 
 </body>
 </html>
