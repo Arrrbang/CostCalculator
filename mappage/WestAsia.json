@@ -201,5 +201,17 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Tbilisi, Georgia",
+    "lat": 41.725000,
+    "lng": 44.790833,
+    "links": [
+      {
+        "type": "GLOBALINK",
+        "path": "data/WestAsia/georgia/globalink/tbilisi",
+        "color": "blue"
+      },
+    ]
   }
 ]
