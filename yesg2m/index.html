@@ -83,29 +83,69 @@
       margin-top: 30px;
     }
 
+    .result-group {
+      margin-top: 30px;
+      text-align: left;
+      display: inline-block;
+    }
+    
+    .result-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      width: 300px;
+      margin: 10px auto;
+    }
+    
+    .result-row .label {
+      text-align: left;
+    }
+    
+    .result-row .value {
+      text-align: right;
+      color: #0077cc;
+    }
+
     @media (max-width: 480px) {
       .container {
         padding: 30px 20px;
       }
-
+    
       h1 {
         font-size: 20px;
       }
-
+    
       .input-group {
         flex-direction: column;
         align-items: stretch;
       }
-
+    
       .input-group label {
         margin-bottom: 5px;
         width: 100%;
       }
-
-      .result {
-        font-size: 20px;
+    
+      .result-group {
+        width: 100%;
+        margin-top: 20px;
+      }
+    
+      .result-row {
+        font-size: 18px;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: 8px 0;
+      }
+    
+      .result-row .label,
+      .result-row .value {
+        font-size: 18px;
       }
     }
+
   </style>
 </head>
 <body>
@@ -123,8 +163,16 @@
       <input type="number" id="cbmInput" placeholder="예: 12">
     </div>
 
-    <div class="result" id="rateOutput">지역 출장비: -</div>
-    <div class="result" id="visitOutput">방문 견적비: -</div>
+    <div class="result-group">
+      <div class="result-row">
+        <span class="label">방문 견적비 :</span>
+        <span class="value" id="visitOutput">-</span>
+      </div>
+      <div class="result-row">
+        <span class="label">지역 출장비 :</span>
+        <span class="value" id="rateOutput">-</span>
+      </div>
+    </div>
   </div>
 
 <script>
