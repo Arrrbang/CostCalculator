@@ -226,14 +226,24 @@
         <span class="value" id="shuttleOutput">-</span>
       </div>
 
-      <h2 style="text-align: center; margin-top: 30px;">&lt;EXTRA CHARGE&gt;</h2>
+      <h2 class="toggle-label" style="text-align: center; margin-top: 30px;" onclick="toggleExtra('extraChargeInfo')">&lt;EXTRA CHARGE&gt;</h2>
+      
+      <div id="extraChargeInfo" class="region-info" style="display: none;">
+        <ul>
+          <li>장비 사용료(사다리차/지게차/EV사용료)실비 청구</li>
+          <li>분해가 난해한 가구,그랜드 피아노 등 특수 악기<br>흙/돌침대, 에어컨 해체, 홈씨어터 등의 전자 장비<br>악기 등의 전문기사 비용</li>
+          <li>현장 투입 차량 이외의 추가 운송료</li>
+          <li>해외 포장 작업 제외한 고객 요청으로 인한 <br>기타 작업(허역, 폐기, 배송 등)</li>
+          <li>폐기물 처리 비용</li>
+        </ul>
+      </div
       
         <div class="result-row">
           <span class="label toggle-label" onclick="toggleExtra('woodenInfo')">WOODEN CRATE</span>
           <span class="value">₩90,000</span>
         </div>
         <div id="woodenInfo" class="region-info" style="display: none;">
-          WOODEN CRATE 단품으로 제작시에는 CBM 단가와 다를 수 있습니다.
+          WOODEN CRATE 단품으로 제작시에는 <br>CBM 단가와 다를 수 있습니다.
         </div>
       
         <!-- 1인 추가 인력 비용 -->
