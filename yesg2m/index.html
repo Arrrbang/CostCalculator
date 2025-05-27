@@ -230,24 +230,42 @@
     return null;
   }
 
-  async function getEquipmentFee(cbm) {
+  async function getShuttleFee(cbm) {
     try {
-      const response = await fetch("tariff.json");
+      const response = await fetch("tarrif.json");
       const data = await response.json();
       const feeTable = data.shuttle_fee;
-
-      for (const range in feeTable) {
-        const [min, max] = range.split("-").map(Number);
-        if (cbm >= min && cbm <= max) {
-          return feeTable[range];
+  
+      let remaining = cbm;
+      let totalFee = 0;
+  
+      while (remaining > 0) {
+        let matched = null;
+  
+        for (const range in feeTable) {
+          const [min, max] = range.split("-").map(Number);
+          const cbmToCheck = Math.min(remaining, 25); // 한 번에 최대 25까지만 처리
+  
+          if (cbmToCheck >= min && cbmToCheck <= max) {
+            matched = feeTable[range];
+            totalFee += matched;
+            remaining -= cbmToCheck;
+            break;
+          }
         }
+  
+        // 혹시 매칭이 안 되는 CBM 범위가 있을 경우 예외 처리
+        if (!matched) break;
       }
-      return null;
+  
+      return totalFee || null;
+  
     } catch (error) {
       console.error("셔틀 작업비 불러오기 실패:", error);
       return null;
     }
   }
+
 
   const addressInput = document.getElementById("addressInput");
   const cbmInput = document.getElementById("cbmInput");
@@ -262,7 +280,7 @@
 
     const baseRate = getBaseRateFromAddress(address);
     const visitRate = getVisitRateFromAddress(address);
-    const equipmentRate = !isNaN(cbm) ? await getEquipmentFee(cbm) : null;
+    const shuttleRate = !isNaN(cbm) ? await getShuttleFee(cbm) : null;
 
     // 출장비
     if (baseRate !== null) {
@@ -280,8 +298,8 @@
     }
 
     // 셔틀 작업비
-    if (equipmentRate !== null) {
-      shuttleOutput.textContent = `₩${equipmentRate.toLocaleString()}`;
+    if (shuttleRate !== null) {
+      shuttleOutput.textContent = `₩${shuttleRate.toLocaleString()}`;
     } else {
       shuttleOutput.textContent = "사전 문의";
     }
