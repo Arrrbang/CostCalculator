@@ -11,6 +11,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
 
   <style>
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 10;
+    }
+  
+    .top-nav a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #2e7d32;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  
+    .top-nav img {
+      height: 40px;
+      width: auto;
+    }
+
     body::before {
       content: "";
       position: absolute;
@@ -140,6 +164,19 @@
       .container {
         padding: 30px 20px;
       }
+
+        .top-nav {
+          top: 10px;
+          left: 10px;
+        }
+    
+        .top-nav a {
+          font-size: 14px;
+        }
+    
+        .top-nav img {
+          height: 30px;
+        }
     
       h1 {
         font-size: 20px;
@@ -177,7 +214,14 @@
   </style>
 </head>
 <body>
-
+  
+  <div class="top-nav">
+    <a href="https://arrrbang.github.io/CostCalculator/selectpage.html">
+      <img src="https://arrrbang.github.io/CostCalculator/image/pumexlogonew.png" alt="Logo">
+      <span>검색 페이지로 돌아가기</span>
+    </a>
+  </div>
+  
   <div class="container">
     <h1>YESG2M 포장 비용 계산기</h1>
 
