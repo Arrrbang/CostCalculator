@@ -11,16 +11,17 @@
     /* 배경 이미지와 블러 효과 */
     body::before {
       content: "";
-      position: absolute;
+      position: fixed; /* 👈 absolute → fixed로 변경 */
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%; 
+      height: 100%;
       background: 
-        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), /* 반투명 흰색 오버레이 */
+        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
         url('https://arrrbang.github.io/CostCalculator/image/background.jpg') no-repeat center center/cover;
-      filter: blur(10px); /* 블러 효과 */
-      z-index: -1; /* 콘텐츠 뒤로 이동 */
+      background-attachment: fixed; /* 👈 추가 */
+      filter: blur(10px);
+      z-index: -1;
     }
 
       .green-box {
