@@ -2,38 +2,103 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>출장비 계산기</title>
+  <title>YESG2M 포장 비용 계산기</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts: Noto Sans KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+
   <style>
+    /* 배경 이미지와 블러 효과 */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; 
+      background: 
+        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+        url('https://arrrbang.github.io/CostCalculator/image/background.jpg') no-repeat center center/cover;
+      filter: blur(10px);
+      z-index: -1;
+    }
+
     body {
-      font-family: 'Arial', sans-serif;
-      padding: 40px;
-      background-color: #f9f9f9;
+      font-family: 'Noto Sans KR', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      position: relative;
     }
+
+    .container {
+      background-color: #ffffff;
+      padding: 50px 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 90%;
+      max-width: 600px;
+      box-sizing: border-box;
+    }
+
     h1 {
+      font-size: 28px;
+      font-weight: bold;
       color: #333;
+      margin-bottom: 30px;
     }
+
     input[type="text"] {
       width: 100%;
-      max-width: 500px;
-      padding: 10px;
+      padding: 15px;
       font-size: 16px;
-      margin-bottom: 20px;
       border: 1px solid #ccc;
-      border-radius: 6px;
+      border-radius: 8px;
+      box-sizing: border-box;
     }
+
     .result {
-      font-size: 20px;
+      font-size: 24px;
       font-weight: bold;
       color: #0077cc;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      input[type="text"] {
+        padding: 12px;
+        font-size: 14px;
+      }
+
+      .result {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>출장비 계산기</h1>
-  <input type="text" id="addressInput" placeholder="주소를 입력하세요 (예: 경북 구미시 송정대로 160)" />
-
-  <div class="result" id="rateOutput">출장비: -</div>
+  <div class="container">
+    <h1>출장비 계산기</h1>
+    <input type="text" id="addressInput" placeholder="주소를 입력하세요 (예: 경북 구미시 송정대로 160)">
+    <div class="result" id="rateOutput">출장비: -</div>
+  </div>
 
   <script>
     const regionRates = [
@@ -68,3 +133,4 @@
 
 </body>
 </html>
+
