@@ -232,7 +232,7 @@
 
   async function getShuttleFee(cbm) {
     try {
-      const response = await fetch("tarrif.json");
+      const response = await fetch("tariff.json");
       const data = await response.json();
       const feeTable = data.shuttle_fee;
   
