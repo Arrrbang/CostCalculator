@@ -214,7 +214,7 @@
       </div>
       <div id="regionInfo" class="region-info" style="display: none;">
         <ul>
-          <li>투입 인원 5인 초과시 지역출장비는 2회 발생됩니다. <br></ㅠㄱ>(40FT 물량 작업 등)</li>
+          <li>투입 인원 5인 초과시 지역출장비는 2회 발생됩니다. <br>(40FT 물량 작업 등)</li>
           <li>각종 화물차 5인 이상 탑승 불가능하므로 <br>견적시 꼭 참고 바랍니다.<br>1톤 차량(자재적재) + 승용차(작업인원)</li>
           <li>TARIFF 명시되지 않은 지역은 꼭 사전 확인 바랍니다.</li>
           <li>컨테이너 현장 도어 작업 외 <br>셔틀/보관/외고 운송료는 별도입니다.</li>
@@ -224,6 +224,38 @@
       <div class="result-row">
         <span class="label">셔틀 작업비 :</span>
         <span class="value" id="shuttleOutput">-</span>
+      </div>
+
+      <h2 style="text-align: center; margin-top: 30px;">&lt;EXTRA CHARGE&gt;</h2>
+      
+        <div class="result-row">
+          <span class="label toggle-label" onclick="toggleExtra('woodenInfo')">WOODEN CRATE</span>
+          <span class="value">₩90,000</span>
+        </div>
+        <div id="woodenInfo" class="region-info" style="display: none;">
+          WOODEN CRATE 단품으로 제작시에는 CBM 단가와 다를 수 있습니다.
+        </div>
+      
+        <!-- 1인 추가 인력 비용 -->
+        <div class="result-row">
+          <span class="label">1인 추가 인력 비용</span>
+          <span class="value">₩250,000</span>
+        </div>
+      
+        <!-- 창고 보관료 -->
+        <div class="result-row">
+          <span class="label toggle-label" onclick="toggleExtra('storageInfo')">창고 보관료</span>
+          <span class="value">₩200,000</span>
+        </div>
+        <div id="storageInfo" class="region-info" style="display: none;">
+          25CBM 1달 보관 기준 (무료 진행 불가)
+        </div>
+      
+        <!-- 보관화물 상/하차 비용 -->
+        <div class="result-row">
+          <span class="label">보관화물 상/하차 비용</span>
+          <span class="value" id="loadingFeeOutput">-</span>
+        </div>
       </div>
     </div>
   </div>
@@ -362,6 +394,8 @@
     const visitRate = getVisitRateFromAddress(address);
     const shuttleRate = !isNaN(cbm) ? await getShuttleFee(cbm) : null;
     const packingRate = !isNaN(cbm) ? await getPackingFee(cbm) : null;
+    const loadingFeeOutput = document.getElementById("loadingFeeOutput");
+    const loadingFee = !isNaN(cbm) ? cbm * 16000 : null;
   
     // 출장비
     if (baseRate !== null) {
@@ -391,6 +425,13 @@
     } else {
       packingOutput.textContent = "사전 문의";
     }
+
+    // 보관화물 상,하차 비용
+    if (loadingFee !== null) {
+      loadingFeeOutput.textContent = `₩${loadingFee.toLocaleString()}`;
+    } else {
+      loadingFeeOutput.textContent = "사전 문의";
+    }
   }
 
   addressInput.addEventListener("input", updateRate);
@@ -403,6 +444,10 @@
   function toggleEstimateInfo() {
     const info = document.getElementById("estimateInfo");
     info.style.display = info.style.display === "none" ? "block" : "none";
+  }
+  function toggleExtra(id) {
+    const el = document.getElementById(id);
+    el.style.display = el.style.display === "none" ? "block" : "none";
   }
 
 </script>
