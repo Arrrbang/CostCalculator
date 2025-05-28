@@ -1,0 +1,100 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/GLOBALINK-LOGISTICS-GROUP-2000b10191ce80b1af58e231e9d5fe49"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC",
+        "description": "actual + 10% pre-financing fee (min.50USD)",
+        "NonDiplomat": {
+            "20DRY": 500,
+            "40HC": 600
+        },
+        "Diplomat": {
+            "20DRY": 500,
+            "40HC": 600
+        }
+    },
+    "basic-cost-2": {
+        "name": "DRAYAGE CHARGE",
+        "description": "trucking from Poti to Tbilisi\nactual + 10% pre-financing fee (min.50USD)",
+        "NonDiplomat": {
+            "20DRY": 900,
+            "40HC": 1100
+        },
+        "Diplomat": {
+            "20DRY": 900,
+            "40HC": 1100
+        }
+    },
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "MIN $150",
+            "20DRY": {"단가" : 15},
+            "40HC": {"단가" : 15}
+        },
+    "extra-cost-2": {
+        "name": "SHUTTLE",
+        "description": "MIN $250",
+            "20DRY": 25,
+            "40HC": 25
+        },
+    "extra-cost-3": {
+        "name": "UPLIGHT PIANO",
+        "description": "",
+            "20DRY": 250,
+            "40HC": 250
+        },
+    "extra-cost-4": {
+        "name": "LONG CARRY",
+        "description": "MIN $100",
+            "20DRY": {"단가" : 15},
+            "40HC": {"단가" : 15}
+        },
+    "extra-cost-5": {
+        "name": "WEEKEND CHARGE",
+        "description": "12$ /PER man /per hour	",
+            "20DRY": "",
+            "40HC": ""
+        },
+
+    "STAIR CHARGE": {
+        "description": "MIN $100",
+        "CBM단가": 15
+    },
+    "HEAVY ITEM": {
+        "description": "MIN $100",
+        "단위": "CBM",
+        "단가": 15
+    },
+      "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "주",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+      },
+    "additional-info-1": {
+        "name": "진행 전 견적 문의 필수",
+        "description": ""
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "CMA CGM : T/T 50 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "기초자료 : 2024.10 이트너스 비딩조사"
+    }
+}
