@@ -1,0 +1,68 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/MOVE-ONE-FZE-2010b10191ce80d1a5bac435b5f18170"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "extra-cost-1": {
+        "name": "LONG CARRY",
+        "description": "",
+            "20DRY": {"단가" : 3},
+            "40HC": {"단가" : 3}
+        },
+    "extra-cost-2": {
+        "name": "SHUTTLE CHARGE",
+        "description": "",
+            "20DRY": 160,
+            "40HC": 160
+        },
+    "extra-cost-3": {
+        "name": "WEEKEND CHARGE",
+        "description": "$ 40/PER CREW/PER HOUR",
+            "20DRY": "",
+            "40HC": ""
+        },
+    "extra-cost-4": {
+        "name": "UPLIGHT PIANO",
+        "description": "",
+            "20DRY": 195,
+            "40HC": 195
+        },
+    "STAIR CHARGE": {
+        "description": "",
+        "CBM단가": 3
+    },
+    "HEAVY ITEM": {
+        "description": "",
+        "단위": "ITEM",
+        "단가": 130
+    },
+      "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "주",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+      },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": ""
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "CMA CGM : T/T 50 DAYS"
+    },
+    "DATA BASE": {
+  	  "description": "기초자료 : 2024.10 이트너스 비딩조사"
+    }
+}
