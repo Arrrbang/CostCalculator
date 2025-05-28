@@ -249,5 +249,17 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Baku, Azerbaijan",
+    "lat": 40.409264,
+    "lng": 49.867092,
+    "links": [
+      {
+        "type": "GLOBALINK",
+        "path": "data/WestAsia/azerbaijan/GLOBALINK/baku",
+        "color": "blue"
+      }
+    ]
   }
 ]
