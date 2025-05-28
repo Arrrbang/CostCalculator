@@ -61,11 +61,10 @@
         },
     "extra-cost-5": {
         "name": "WEEKEND CHARGE",
-        "description": "12$ /PER man /per hour	",
+        "description": "12$ /PER man /per hour",
             "20DRY": "",
             "40HC": ""
         },
-
     "STAIR CHARGE": {
         "description": "MIN $100",
         "CBM단가": 15
