@@ -44,8 +44,8 @@
     "extra-cost-2": {
         "name": "SHUTTLE",
         "description": "MIN $250",
-            "20DRY": 25,
-            "40HC": 25
+            "20DRY": {"단가" : 25},
+            "40HC": {"단가" : 25}
         },
     "extra-cost-3": {
         "name": "UPLIGHT PIANO",
