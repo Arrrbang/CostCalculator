@@ -40,7 +40,7 @@
         "CBM단가": 5
     },
     "HEAVY ITEM": {
-        "description": "MORE THAN 100KG",
+        "description": "",
         "단위": "ITEM",
         "단가": 250
     },
