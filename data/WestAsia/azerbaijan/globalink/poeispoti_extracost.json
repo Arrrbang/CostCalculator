@@ -24,12 +24,6 @@
             "40HC": {"단가" : 5}
         },
     "extra-cost-3": {
-        "name": "SHUTTLE",
-        "description": "",
-            "20DRY": {"단가" : 5},
-            "40HC": {"단가" : 5}
-        },
-    "extra-cost-4": {
         "name": "LONG CARRY",
         "description": "",
             "20DRY": {"단가" : 5},
@@ -62,7 +56,6 @@
         "name": "사용 가능 선사",
         "description": "CMA CGM : T/T 50 DAYS"
     },
-
     "DATA BASE": {
   	  "description": "기초자료 : 2024.10 이트너스 비딩조사"
     }
