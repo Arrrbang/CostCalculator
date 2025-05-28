@@ -225,5 +225,29 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Muscat, Oman",
+    "lat": 23.614328,
+    "lng": 58.545284,
+    "links": [
+      {
+        "type": "GAC",
+        "path": "data/WestAsia/oman/gac/muscat",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Duqm, Oman",
+    "lat": 19.6394818,
+    "lng": 57.6779106,
+    "links": [
+      {
+        "type": "GAC",
+        "path": "data/WestAsia/oman/gac/duqm",
+        "color": "blue"
+      }
+    ]
   }
 ]
