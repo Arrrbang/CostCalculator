@@ -1,0 +1,75 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/GULF-AGENCY-COMPANY-OMAN-2010b10191ce80a284f5ec1012e05955"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 350,
+            "40HC": 450
+        },
+        "Diplomat": {
+            "20DRY": 350,
+            "40HC": 450
+        }
+    },
+    "extra-cost-1": {
+        "name": "SHUTTLE CHARGE",
+        "description": "MIN $250",
+            "20DRY": {"단가" : 20},
+            "40HC": {"단가" : 20}
+        },
+    "extra-cost-2": {
+        "name": "WEEKEND CHARGE",
+        "description": "",
+            "20DRY": {"단가" : 20},
+            "40HC": {"단가" : 20}
+        },
+    "extra-cost-3": {
+        "name": "UPLIGHT PIANO",
+        "description": "",
+            "20DRY": 350,
+            "40HC": 350
+        },
+    "STAIR CHARGE": {
+        "description": "$10 /PER CBM above 3 FLOOR",
+        "CBM단가": 10
+    },
+    "HEAVY ITEM": {
+        "description": "",
+        "단위": "CBM",
+        "단가": 10
+    },
+      "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "주",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+      },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": "진행 전에 견적 요청 및 문의 필수"
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "YML : T/T 40 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "기초자료 : 2024.10 이트너스 비딩조사"
+    }
+}
