@@ -1,0 +1,87 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/MOVE-ONE-FZE-2010b10191ce80a8ad46d268a3ba565b"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "THC",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 115,
+            "40HC": 140
+        },
+        "Diplomat": {
+            "20DRY": 115,
+            "40HC": 140
+        }
+    },
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "",
+            "20DRY": {"단가" : 9.5},
+            "40HC": {"단가" : 9.5}
+        },
+    "extra-cost-2": {
+        "name": "SHUTTLE",
+        "description": "",
+            "20DRY": {"1-15": 225, "16-30": 450},
+            "40HC": {"31-45": 675, "46-60": 900}
+        },
+    "extra-cost-3": {
+        "name": "LONG CARRY",
+        "description": "",
+            "20DRY": {"1-15": 130, "16-30": 260},
+            "40HC": {"31-45": 390, "46-60": 520}
+        },
+    "extra-cost-4": {
+        "name": "PIAON HANDLING",
+        "description": "",
+            "20DRY": "260",
+            "40HC": "260"
+        },
+    "extra-cost-5": {
+        "name": "WEEKEND CHARGE",
+        "description": "$195 per crew, per day",
+            "20DRY": "",
+            "40HC": ""
+        },
+    "STAIR CHARGE": {
+        "description": "",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "",
+        "단위": "ITEM",
+        "단가": 200
+    },
+      "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "주",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+      },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": "진행 전 견적 요청 필수"
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "CMA CGM : T/T 35 DAYS"
+    },
+
+    "DATA BASE": {
+  	  "description": "기초자료 : 2024.10 이트너스 비딩조사"
+    }
+}
