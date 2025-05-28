@@ -257,7 +257,12 @@
     "links": [
       {
         "type": "GLOBALINK",
-        "path": "data/WestAsia/azerbaijan/GLOBALINK/baku",
+        "path": "data/WestAsia/azerbaijan/globalink/baku",
+        "color": "blue"
+      },
+      {
+        "type": "MOVE ONE",
+        "path": "data/WestAsia/azerbaijan/move_one/baku",
         "color": "blue"
       }
     ]
