@@ -13,12 +13,12 @@
   
     "extra-cost-1": {
         "name": "WEEKEND CHARGE",
-        "description": "15$ /PER man per hour	",
+        "description": "15$ /PER man per hour",
             "20DRY": "",
             "40HC": ""
         },
     "extra-cost-2": {
-        "name": "SHUTTLE",
+        "name": "SHUTTLE CHARGE",
         "description": "",
             "20DRY": {"단가" : 5},
             "40HC": {"단가" : 5}
@@ -50,7 +50,7 @@
       },
     "additional-info-1": {
         "name": "진행 전 확인 사항",
-        "description": "진행 전 견적 요청 필"
+        "description": "진행 전 견적 요청 필수"
     },
     "additional-info-2": {
         "name": "사용 가능 선사",
@@ -60,4 +60,3 @@
   	  "description": "기초자료 : 2024.10 이트너스 비딩조사"
     }
 }
-
