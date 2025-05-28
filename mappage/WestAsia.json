@@ -213,5 +213,17 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Kuwait City, KW",
+    "lat": 29.36972,
+    "lng": 47.97833,
+    "links": [
+      {
+        "type": "MOVE ONE",
+        "path": "data/WestAsia/kuwait/move_one/kuwait_city",
+        "color": "blue"
+      }
+    ]
   }
 ]
