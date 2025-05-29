@@ -1,0 +1,62 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/MEDEX-SERVICES-2020b10191ce80b4b9efe47c7b991391"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "",
+            "20DRY": {"단가" : 5},
+            "40HC": {"단가" : 5}
+        },
+    "extra-cost-2": {
+        "name": "Shuttle Charge",
+        "description": "",
+            "20DRY": {"단가" : 8},
+            "40HC": {"단가" : 8}
+        },
+    "extra-cost-3": {
+        "name": "Long Carry Charge",
+        "description": "",
+            "20DRY": 100,
+            "40HC": "확인 필요"
+        },
+    "STAIR CHARGE": {
+        "description": "$100/floor",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "MORE THAN 100KG",
+        "단위": "ITEM",
+        "단가": 150
+    },
+      "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "주",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+      },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": "사용해본 곳은 아님"
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "YML/CMA CGM : T/T 60 DAYS"
+    },
+    "DATA BASE": {
+  	  "description": "기초자료 : 2024.10 이트너스 비딩조사"
+    }
+}
