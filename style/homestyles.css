@@ -11,6 +11,23 @@
     overflow-y: auto;
   }
 
+    .region-info {
+      background-color: #f8f8f8;
+      border: 1px solid #ccc;
+      padding: 12px 16px;
+      margin-top: 10px;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #444;
+    }
+    .region-info ul {
+      padding-left: 16px;
+      margin: 0;
+    }
+    .region-info li {
+      margin-bottom: 6px;
+    }
+
   .form-container {
     background-color: #ffffff;
     padding: 20px;
