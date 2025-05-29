@@ -266,5 +266,16 @@
         "color": "blue"
       }
     ]
-  }
+  },
+  {
+    "name": "Amman, Jordan",
+    "lat": 31.9552,
+    "lng": 35.9450,
+    "links": [
+      {
+        "type": "SPEED TEAM LOGISTICS",
+        "path": "data/WestAsia/speed_team_logistics/amman",
+        "color": "blue"
+      }
+    ]
 ]
