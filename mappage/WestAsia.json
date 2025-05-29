@@ -276,6 +276,11 @@
         "type": "SPEED TEAM LOGISTICS",
         "path": "data/WestAsia/jordan/speed_team_logistics/amman",
         "color": "blue"
+      },
+      {
+        "type": "MEDEX SERVICE",
+        "path": "data/WestAsia/jordan/medex_service/amman",
+        "color": "blue"
       }
     ]
   }
