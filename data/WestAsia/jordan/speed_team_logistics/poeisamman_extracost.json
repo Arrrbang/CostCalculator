@@ -1,0 +1,62 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": ""
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/SPEED-TEAM-LOGISTICS-2010b10191ce80b89cc6f84d8b20e360"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "extra-cost-1": {
+        "name": "Shuttle",
+        "description": "",
+            "20DRY": {"단가" : 6},
+            "40HC": {"단가" : 6}
+        },
+    "extra-cost-1": {
+        "name": "Long Carry",
+        "description": "",
+            "20DRY": {"단가" : 4},
+            "40HC": {"단가" : 4}
+        },
+    "extra-cost-3": {
+        "name": "Uplight Piano",
+        "description": "",
+            "20DRY": 150,
+            "40HC": 150
+        },
+    "STAIR CHARGE": {
+        "description": "$100/Floor",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "MORE THAN 100KG",
+        "단위": "ITEM",
+        "단가": 100
+    },
+      "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "주",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0
+        }
+      },
+    "additional-info-1": {
+        "name": "진행 전 확인 사항",
+        "description": "도착지 비용 포함됨\nFULL SETTING 기본 제공."
+    },
+    "additional-info-2": {
+        "name": "사용 가능 선사",
+        "description": "YML/CMA CGM : T/T 60 DAYS"
+    },
+    "DATA BASE": {
+  	  "description": "기초자료 : 2024.10 이트너스 비딩조사"
+    }
+}
