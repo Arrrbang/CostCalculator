@@ -1121,3 +1121,9 @@ diplomat.addEventListener("change", updateAllCosts);
 stairCbmDropdown.addEventListener("change", calculateStairCharge);
 stairFloorDropdown.addEventListener("change", calculateStairCharge);
 dropdown.addEventListener("change", updateStairChargeDropdown);
+
+function toggleBasicDelivery() {
+  const desc = document.getElementById("basic-delivery-description");
+  desc.style.display = desc.style.display === "none" ? "block" : "none";
+}
+
