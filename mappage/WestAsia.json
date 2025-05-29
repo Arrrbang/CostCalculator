@@ -283,5 +283,29 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Tel Aviv, Israel",
+    "lat": 32.08088,
+    "lng": 34.78057,
+    "links": [
+      {
+        "type": "SONIGO",
+        "path": "data/WestAsia/israel/sonigo/tel_aviv",
+        "color": "blue"
+      }
+    ]
+  },
+  {
+    "name": "Ramallah, Palestine",
+    "lat": 31.8996,
+    "lng": 35.2042,
+    "links": [
+      {
+        "type": "SONIGO",
+        "path": "data/WestAsia/palestine/sonigo/ramallah",
+        "color": "blue"
+      }
+    ]
   }
 ]
