@@ -17,7 +17,7 @@
             "20DRY": {"단가" : 6},
             "40HC": {"단가" : 6}
         },
-    "extra-cost-1": {
+    "extra-cost-2": {
         "name": "Long Carry",
         "description": "",
             "20DRY": {"단가" : 4},
