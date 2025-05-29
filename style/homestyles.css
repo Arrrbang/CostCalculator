@@ -139,6 +139,8 @@
   font-weight: bold; /* 굵기 추가 */
   text-align: left;
   padding-left: 10px; /* 라벨 왼쪽 간격 */
+  text-decoration: underline;
+  color: #0077cc;
 }
 
 #basic-delivery-value {
