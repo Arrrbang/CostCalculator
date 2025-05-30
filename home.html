@@ -79,15 +79,17 @@
       <span id="basic-delivery-value">None</span>
     </div>
     
-    <div id="basic-delivery-description" class="region-info" style="display: none;">
+    <div id="basic-delivery-description" class="region-info">
       <div id="basic-delivery-summary"></div>
-    
-      <p class="toggle-label" onclick="toggleExtra('includedInfo')" style="margin-top:10px;">▶ 포함비용</p>
-      <div id="includedInfo" class="region-info" style="display: none;"></div>
-    
-      <p class="toggle-label" onclick="toggleExtra('excludedInfo')" style="margin-top:10px;">▶ 불포함비용</p>
-      <div id="excludedInfo" class="region-info" style="display: none;"></div>
     </div>
+    
+    <!-- 이건 바깥에 따로 둠 -->
+    <p class="toggle-label" onclick="toggleExtra('includedInfo')">▶ 포함비용</p>
+    <div id="includedInfo" class="region-info" style="display: none;"></div>
+    
+    <p class="toggle-label" onclick="toggleExtra('excludedInfo')">▶ 불포함비용</p>
+    <div id="excludedInfo" class="region-info" style="display: none;"></div>
+
 
     
 
