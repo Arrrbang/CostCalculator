@@ -1127,3 +1127,8 @@ function toggleBasicDelivery() {
   desc.style.display = desc.style.display === "none" ? "block" : "none";
 }
 
+function toggleExtra(id) {
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "none" ? "block" : "none";
+}
+
