@@ -78,8 +78,17 @@
       <span id="basic-delivery-label" class="toggle-label" onclick="toggleBasicDelivery()">기본 배송 비용</span>
       <span id="basic-delivery-value">None</span>
     </div>
-    <p id="basic-delivery-description" class="region-info" style="display: none;">
-    </p>
+    
+    <div id="basic-delivery-description" class="region-info" style="display: none;">
+      <p id="basic-delivery-summary"></p>
+    
+      <p class="toggle-label" onclick="toggleExtra('includedInfo')" style="margin-top:10px;">▶ 포함비용</p>
+      <div id="includedInfo" class="region-info" style="display: none;"></div>
+    
+      <p class="toggle-label" onclick="toggleExtra('excludedInfo')" style="margin-top:10px;">▶ 불포함비용</p>
+      <div id="excludedInfo" class="region-info" style="display: none;"></div>
+    </div>
+
   
   <div class="additional-costs">
     <div class="result-row">
