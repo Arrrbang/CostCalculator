@@ -268,10 +268,10 @@ async function fetchData() {
       const description = extraCostData[jsonKey]?.description || "";
       const el = document.getElementById(elementId);
       if (el) {
-        el.innerHTML = description
-            .replace(/\\li/g, "<li>")
-            .replace(/\\\/li/g, "</li>")
-            .replace(/\n/g, "<br>");
+        // li 태그를 ul로 감싸서 HTML 구조를 올바르게 만듦
+        el.innerHTML = `<ul>${description
+          .replace(/\\li/g, "<li>")
+          .replace(/\\\/li/g, "</li>")}</ul>`.replace(/\n/g, "<br>");
       }
     });
 
