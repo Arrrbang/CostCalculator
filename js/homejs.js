@@ -258,13 +258,22 @@ async function fetchData() {
     // 화폐 단위 저장
     currencySymbol = extraCostData["화폐단위"] || "";
 
-    // "DATA BASE"의 description 값 가져오기
-    const dataBaseDescription = extraCostData["DATA BASE"]?.description || ""; // 기본값 설정
-    const dataDescriptionElement = document.getElementById("data-description");
-    if (dataDescriptionElement) {
-      // \n을 <br>로 변경하여 HTML로 삽입
-      dataDescriptionElement.innerHTML = dataBaseDescription.replace(/\n/g, "<br>");
-    }
+    const keysToLoad = [
+      { jsonKey: "DATA BASE", elementId: "data-description" },
+      { jsonKey: "includedInfo", elementId: "includedInfo" },
+      { jsonKey: "excludedInfo", elementId: "excludedInfo" }
+    ];
+    
+    keysToLoad.forEach(({ jsonKey, elementId }) => {
+      const description = extraCostData[jsonKey]?.description || "";
+      const el = document.getElementById(elementId);
+      if (el) {
+        el.innerHTML = description
+            .replace(/\\li/g, "<li>")
+            .replace(/\\\/li/g, "</li>")
+            .replace(/\n/g, "<br>");
+      }
+    });
 
     //additional info 가져오기
     let additionalInfoIndex = 1;  // 추가 정보 항목의 번호 (예: 1, 2, 3 ...)
