@@ -70,5 +70,11 @@
     },
     "DATA BASE": {
   	  "description": "기초자료 : 2024.10 이트너스 비딩조사"
+    },
+    "includedInfo": {
+        "description": "\\li포함 1\\\li\\li포함 2\\\li\\li\n포함 3\\\li"
+    },
+    "excludedInfo": {
+        "description": "불포함 1\n불포함 2"
     }
 }
