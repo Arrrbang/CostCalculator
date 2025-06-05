@@ -15,8 +15,8 @@
       }
       
       .left-container {
-      background-color: white; /* 흰색 박스 */
-        width: 500px;
+            background-color: white; /* 흰색 박스 */
+            width: 500px;
         padding: 20px;
         margin-left: 30px; /* ← 화면 왼쪽과의 거리 확보 */
         flex-shrink: 0;
