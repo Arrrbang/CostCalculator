@@ -57,9 +57,10 @@
         margin: 0;
         padding: 0;
         height: 100%;
-        overflow: hidden;
         font-family: 'Noto Sans KR', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f4f4f4;
+        background-color: transparent; /* 배경 투명하게 */
+        overflow: auto; /* ✅ 반드시 hidden ❌ */
+        position: relative; /* ✅ 기준점 보장 */
       }
 
       .layout {
