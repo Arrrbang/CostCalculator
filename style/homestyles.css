@@ -10,17 +10,19 @@
       .layout {
         display: flex;
         height: 100vh;
-        gap: 40px; /* 좌우 컨테이너 사이 간격 */
+        padding: 30px;       /* 좌우, 상하 전체 여백 */
+        gap: 40px;           /* 컨테이너 사이 간격 */
         overflow: hidden;
+        box-sizing: border-box;
       }
       
       .left-container {
-            background-color: white; /* 흰색 박스 */
-            width: 500px;
+        width: 500px;
         padding: 20px;
-        margin-left: 30px; /* ← 화면 왼쪽과의 거리 확보 */
-        flex-shrink: 0;
+        background-color: white;
+        border-radius: 5px;
         overflow-y: auto;
+        flex-shrink: 0;
         box-sizing: border-box;
       }
       
