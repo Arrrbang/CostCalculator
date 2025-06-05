@@ -10,10 +10,11 @@
       .layout {
         display: flex;
         height: 100vh;
+        padding: 30px;
         gap: 40px;
-        padding: 20px;
-        box-sizing: border-box;
         overflow: hidden;
+        box-sizing: border-box;
+        align-items: flex-start; /* ⭐ 중요 */
       }
       
       .left-container {
@@ -24,8 +25,8 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
         flex-shrink: 0;
         overflow-y: auto;
-        max-height: calc(100vh - 40px);  /* ← 여기 중요 */
         box-sizing: border-box;
+        height: auto; /* ⭐ 내용만큼만 늘어나도록 */
       }
       
       .form-container-left:last-child {
