@@ -11,7 +11,6 @@
         display: block;
       }
 
-    
       .back-button-under-logo {
         position: absolute;
         top: 95px;
@@ -20,7 +19,6 @@
         width: 150px; 
       }
 
-    
     .back-button-under-logo a {
       display: block;
       width: 100%;            /* 부모 너비 채움 */
@@ -39,6 +37,20 @@
     
     .back-button-under-logo a:hover {
       background-color: #d0ebd2;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; 
+      background: 
+        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+        url('https://arrrbang.github.io/CostCalculator/image/background.jpg') no-repeat center center/cover;
+      filter: blur(10px);
+      z-index: -1;
     }
 
       html, body {
