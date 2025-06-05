@@ -15,6 +15,7 @@
       }
       
       .left-container {
+      background-color: white; /* 흰색 박스 */
         width: 500px;
         padding: 20px;
         margin-left: 30px; /* ← 화면 왼쪽과의 거리 확보 */
@@ -24,7 +25,6 @@
       }
       
       .form-container-left {
-        background-color: white; /* 흰색 박스 */
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* 부드러운 그림자 */
