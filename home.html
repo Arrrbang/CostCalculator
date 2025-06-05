@@ -15,81 +15,78 @@
   </a>
 
   <div class="layout">
-  <div class="left-container">
-    <!-- 왼쪽 고정 영역: 메뉴, 로고 등 -->
-  <div class="form-container">
-    <h2>기본 정보 입력</h2>
-
-    <table>
-    <tr>
-      <td>Delivery address</td>
-      <td><span id="delivery-address-result" class="result-value"></span></td>
-    </tr>
-    <tr>
-      <td>Partner</td>
-      <td><span id="partner-result" class="result-value"></span></td>
-    </tr>
+    <div class="left-container">
+      <div class="form-container-left">
+        <h2>기본 정보 입력</h2>
+        <table>
+          <tr>
+            <td>Delivery address</td>
+            <td><span id="delivery-address-result" class="result-value"></span></td>
+          </tr>
+          <tr>
+            <td>Partner</td>
+            <td><span id="partner-result" class="result-value"></span></td>
+          </tr>
+          <tr>
+            <td>Port of Entry</td>
+            <td>
+              <select id="poe-dropdown" style="width: 100%;">
+                <option value="">-- POE 선택 --</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>외교화물 유무</td>
+            <td class="checkbox-group">
+              <label><input type="checkbox" id="non-diplomat" name="cargoType" value="Non-Diplomat"> Non-Diplomat</label>
+              <label><input type="checkbox" id="diplomat" name="cargoType" value="Diplomat"> Diplomat</label>
+            </td>
+          </tr>
+          <tr>
+            <td>CBM</td>
+            <td>
+              <select id="cbm-dropdown" style="width: 100%;">
+                <option value="">-- CBM 선택 --</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>CONTAINER TYPE</td>
+            <td>
+              <select id="container-dropdown" style="width: 100%;">
+                <option value="">-- CONTAINER TYPE 선택 --</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </div>
     
-    <!-- "Port of Entry" 위에 구분선이 들어가게 하기 -->
-    <tr>
-      <td>Port of Entry</td>
-      <td>
-          <select id="poe-dropdown" style="width: 100%;">
-            <option value="">-- POE 선택 --</option>
-          </select>
-      </td>
-    </tr> 
-      <tr>
-        <td>외교화물 유무</td>
-        <td class="checkbox-group">
-          <label><input type="checkbox" id="non-diplomat" name="cargoType" value="Non-Diplomat"> Non-Diplomat</label>
-          <label><input type="checkbox" id="diplomat" name="cargoType" value="Diplomat"> Diplomat</label>
-        </td>
-      </tr>
-      <tr>
-        <td>CBM</td>
-        <td>
-          <select id="cbm-dropdown" style="width: 100%;">
-            <option value="">-- CBM 선택 --</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>CONTAINER TYPE</td>
-        <td>
-          <select id="container-dropdown" style="width: 100%;">
-            <option value="">-- CONTAINER TYPE 선택 --</option>
-          </select>
-        </td>
-      </tr>
-    </table>
-  </div>
+      <div class="form-container-left">
+        <h2>국내 비용</h2>
+        <div class="result-row">
+          <span id="average-ofc-label">평균 OFC</span>
+          <span id="average-ofc-value"></span>
+        </div>
+        <p class="charge-info-left">
+          정확한 OFC는 하단 링크를 통해 노션에서 확인 필요 <br>
+          콘솔은 40HC에 50cbm 적입 기준
+        </p>
+      </div>
     
-<div class="form-container">
-  <h2>국내 비용</h2>
-  <div class="result-row">
-      <span id="average-ofc-label">평균 OFC</span>
-      <span id="average-ofc-value"></span>
-  </div>
-    <p class="charge-info">
-      정확한 OFC는 하단 링크를 통해 노션에서 확인 필요 <br>
-      콘솔은 40HC에 50cbm 적입 기준
-    </p>
-</div>
+      <div class="form-container-left">
+        <div class="link-container-left">
+          <div class="link-box-left" id="link1">OFC</div>
+          <div class="link-box-left" id="link2">NOTION</div>
+        </div>
+      </div>
     
-  <div class="form-container">
-    <div class="link-container">
-      <div class="link-box" id="link1">OFC</div>
-      <div class="link-box" id="link2">NOTION</div>
+      <div class="form-container-left">
+        <p id="data-description" class="charge-info-left">
+          This is a description for data base.
+        </p>
+      </div>
     </div>
-  </div>
 
-<div class="form-container">
-  <p id="data-description" class="charge-info">
-      This is a description for data base.
-  </p>
-</div>  
-</div>
     
 <div class="right-container">
 <div class="form-container">
