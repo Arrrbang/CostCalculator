@@ -76,7 +76,7 @@
       .left-container {
         width: 500px;
         padding: 20px;
-            padding-top: 130px; /* ← 로고 + 버튼 높이만큼 띄움 */
+        margin-top: 130px; /* ✅ 로고 + 버튼만큼 위에 여백 확보 */
         background-color: white;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
