@@ -10,34 +10,26 @@
       .layout {
         display: flex;
         height: 100vh;
-        padding: 30px;       /* 좌우, 상하 전체 여백 */
-        gap: 40px;           /* 컨테이너 사이 간격 */
-        overflow: hidden;
+        gap: 40px;
+        padding: 20px;
         box-sizing: border-box;
+        overflow: hidden;
       }
       
       .left-container {
         width: 500px;
         padding: 20px;
-        padding-bottom: 30px; 
         background-color: white;
         border-radius: 5px;
-        overflow-y: auto;
-        box-sizing: border-box;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
         flex-shrink: 0;
+        overflow-y: auto;
+        max-height: calc(100vh - 40px);  /* ← 여기 중요 */
+        box-sizing: border-box;
       }
       
-      .form-container-left {
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* 부드러운 그림자 */
-        width: 100%;
-        max-width: 400px;
-        margin: 20px auto; /* 위아래 간격 + 중앙 정렬 */
-        text-align: center;
-      }
       .form-container-left:last-child {
-        margin-bottom: 40px; /* ✅ 맨 아래 박스 공간 확보 */
+        margin-bottom: 40px;  /* 마지막 박스 아래에 띄우기 */
       }
 
       
