@@ -17,21 +17,23 @@
       .left-container {
         width: 500px;
         padding: 20px;
-        background: white;
-        border-radius: 5px;
-        overflow-y: auto;
+        margin-left: 30px; /* ← 화면 왼쪽과의 거리 확보 */
         flex-shrink: 0;
+        overflow-y: auto;
+        box-sizing: border-box;
       }
-
+      
       .form-container-left {
-        background-color: transparent;
+        background-color: white; /* 흰색 박스 */
         padding: 20px;
         border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* 부드러운 그림자 */
         width: 100%;
         max-width: 400px;
-        margin: 0 auto 30px;
+        margin: 20px auto; /* 위아래 간격 + 중앙 정렬 */
         text-align: center;
       }
+
       
       .charge-info-left {
         font-size: 0.8rem;
