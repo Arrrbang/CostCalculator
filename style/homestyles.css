@@ -13,13 +13,17 @@
 
       .sub-toggle-group {
         margin-top: 6px; /* 기본 배송비와 간격 줄임 */
+        text-align: left; /* ← 추가 */
+      }
+      
+      .toggle-label {
+        cursor: pointer; /* 모든 toggle-label 공통 */
       }
       
       .sub-toggle-group .toggle-label {
-        margin-left: 16px;  /* 들여쓰기 적용 */
+        margin-left: 16px;
         margin-top: 4px;
         font-size: 14px;
-        cursor: pointer;
       }
 
     .region-info {
