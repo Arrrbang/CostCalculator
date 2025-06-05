@@ -19,11 +19,12 @@
       .left-container {
         width: 500px;
         padding: 20px;
+        padding-bottom: 30px; 
         background-color: white;
         border-radius: 5px;
         overflow-y: auto;
-        flex-shrink: 0;
         box-sizing: border-box;
+        flex-shrink: 0;
       }
       
       .form-container-left {
@@ -34,6 +35,9 @@
         max-width: 400px;
         margin: 20px auto; /* 위아래 간격 + 중앙 정렬 */
         text-align: center;
+      }
+      .form-container-left:last-child {
+        margin-bottom: 40px; /* ✅ 맨 아래 박스 공간 확보 */
       }
 
       
