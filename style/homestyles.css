@@ -10,19 +10,17 @@
       .layout {
         display: flex;
         height: 100vh;
+        gap: 40px; /* 좌우 컨테이너 사이 간격 */
         overflow: hidden;
       }
       
       .left-container {
         width: 500px;
-        padding: 0 50px;
-        background-color: #ffffff;        /* 배경 흰색 */
-        border-radius: 5px;               /* 둥근 모서리 */
-        margin: 20px;                     /* 네 방향 여백 */
+        padding: 20px;
+        background: white;
+        border-radius: 5px;
         overflow-y: auto;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* 은은한 그림자 */
         flex-shrink: 0;
-        box-sizing: border-box;          /* padding 포함 크기 계산 */
       }
 
       .form-container-left {
