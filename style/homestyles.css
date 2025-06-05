@@ -1,3 +1,46 @@
+      .logo-wrapper {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 10;
+      }
+      
+      .logo-wrapper img {
+        height: auto;
+        width: 150px;
+        display: block;
+      }
+
+    
+      .back-button-under-logo {
+        position: absolute;
+        top: 95px;
+        left: 20px;
+        z-index: 10;
+        width: 150px; 
+      }
+
+    
+    .back-button-under-logo a {
+      display: block;
+      width: 100%;            /* 부모 너비 채움 */
+      text-align: center;
+      font-size: 14px;
+      color: #2e7d32;
+      text-decoration: none;
+      background-color: #e8f5e9;
+      padding: 8px 0;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.2s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      white-space: nowrap;
+    }
+    
+    .back-button-under-logo a:hover {
+      background-color: #d0ebd2;
+    }
+
       html, body {
         margin: 0;
         padding: 0;
