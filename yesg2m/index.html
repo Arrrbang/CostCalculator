@@ -283,9 +283,19 @@
           <li>제주도 등, 장거리 지역은 사전 확인 바랍니다.</li>
         </ul>
       </div>
+      
       <div class="result-row">
-        <span class="label">셔틀 작업비 :</span>
+        <span class="label toggle-label" onclick="toggleExtra('shuttleInfo')">셔틀 작업비 :</span>
         <span class="value" id="shuttleOutput">-</span>
+      </div>
+      <div id="shuttleInfo" class="region-info" style="display: none;">
+        <ul>
+          <li>1.00CBM ~ 3.00CBM : KRW 50,000</li>
+          <li>4.00CBM ~ 10.00CBM : KRW 100,000</li>
+          <li>11.00CBM ~ 17.00CBM : KRW 170,000</li>
+          <li>18.00CBM ~ 25.00CBM : KRW 250,000</li>
+          <li>※25CBM 초과 볼륨은 25CBM 비용 + 초과된 볼륨 비용</li>
+        </ul>
       </div>
 
       <h2 class="toggle-label" style="text-align: center; margin-top: 30px;" onclick="toggleExtra('extraChargeInfo')">&lt;EXTRA CHARGE&gt;</h2>
