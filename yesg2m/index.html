@@ -290,12 +290,20 @@
       </div>
       <div id="shuttleInfo" class="region-info" style="display: none;">
         <ul>
-          <li>1.00CBM ~ 3.00CBM : KRW 50,000</li>
-          <li>4.00CBM ~ 10.00CBM : KRW 100,000</li>
-          <li>11.00CBM ~ 17.00CBM : KRW 170,000</li>
-          <li>18.00CBM ~ 25.00CBM : KRW 250,000</li>
-          <li>※25CBM 초과 볼륨은 25CBM 비용 + 초과된 볼륨 비용</li>
-          <li>※40HC 단독작업은 KRW 500,000로 청구</li>
+          <li><strong>SHUTTLE 비용 타리프 내용</strong><BR>1.00CBM ~ 3.00CBM : KRW 50,000<BR>4.00CBM ~ 10.00CBM : KRW 100,000<BR>11.00CBM ~ 17.00CBM : KRW 170,000<BR>18.00CBM ~ 25.00CBM : KRW 250,000</li>
+          <li>소량 혹은 작업자 추가 불가하여 가용된 인원으로 진행하는 경우</li>
+        </ul>
+      </div>
+
+      <div class="result-row">
+        <span class="label toggle-label" onclick="toggleExtra('personnelInfo')">1인 추가 인력 비용<br>항목명 : ㅇ인 추가(+셔틀)</span>
+        <span class="value" id="personnelFeeOutput">-</span>
+      </div>
+      <div id="personnelInfo" class="region-info" style="display: none;">
+        <ul>
+          <li><strong>상기 셔틀과 항목명이 다릅니다. 정확하게 확인 바랍니다.</strong></li>
+          <li>셔틀 작업을 위해 추가 인력이 투입된 경우 해당 비용으로 계산됩니다.</li>
+          <li><strong>인력 추가 타리프 내용</strong><br>20FT 기준: 1인 ₩250,000<br>40HC 기준: 2인 ₩500,000<br>작업지근처 셔틀불가-창고입고/야간작업 3인 ₩750,000 </li>
         </ul>
       </div>
 
@@ -319,11 +327,6 @@
           WOODEN CRATE 단품으로 제작시에는 <br>CBM 단가와 다를 수 있습니다.
         </div>
       
-        <!-- 1인 추가 인력 비용 -->
-        <div class="result-row">
-          <span class="label">1인 추가 인력 비용</span>
-          <span class="value">₩250,000</span>
-        </div>
       
         <!-- 창고 보관료 -->
         <div class="result-row">
@@ -466,7 +469,14 @@
   const visitOutput = document.getElementById("visitOutput");
   const shuttleOutput = document.getElementById("shuttleOutput"); 
   const packingOutput = document.getElementById("packingOutput");
+  const personnelFeeOutput = document.getElementById("personnelFeeOutput");
 
+  function getPersonnelFee(cbm) {
+    if (isNaN(cbm)) return null;
+    if (cbm <= 25) return 250000;
+    if (cbm >= 26) return 500000;
+    return null;
+  }
   // ✅ 메인 업데이트 함수
   async function updateRate() {
     const address = addressInput.value;
@@ -478,6 +488,7 @@
     const packingRate = !isNaN(cbm) ? await getPackingFee(cbm) : null;
     const loadingFeeOutput = document.getElementById("loadingFeeOutput");
     const loadingFee = !isNaN(cbm) ? cbm * 16000 : null;
+    const personnelFee = !isNaN(cbm) ? getPersonnelFee(cbm) : null;
   
     // 출장비
     if (baseRate !== null) {
@@ -513,6 +524,13 @@
       loadingFeeOutput.textContent = `₩${loadingFee.toLocaleString()}`;
     } else {
       loadingFeeOutput.textContent = "사전 문의";
+    }
+    
+    // 1인 추가 인력 비용
+    if (personnelFee !== null) {
+      personnelFeeOutput.textContent = `₩${personnelFee.toLocaleString()}`;
+    } else {
+      personnelFeeOutput.textContent = "사전 문의";
     }
   }
 
