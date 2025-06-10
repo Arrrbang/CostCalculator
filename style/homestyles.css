@@ -13,7 +13,7 @@
       .logo-column {
         flex: 0 0 180px; /* 검색버튼+로고 크기만큼 고정 (더 줄이고 싶으면 120~150px도 가능) */
         min-width: 120px;
-        max-width: 200px;
+        max-width: 150px;
         padding: 50px 0 0 24px;
         background: transparent;
         box-sizing: border-box;
@@ -87,9 +87,7 @@
       }
 
       .info-column {
-        flex: 0 0 440px; /* left-container 크기만큼 고정 */
-        min-width: 340px;
-        max-width: 500px;
+        flex: 0 0 400px; /* left-container 크기만큼 고정 */
         padding: 50px 0 0 0;
         background: transparent;
         box-sizing: border-box;
@@ -101,7 +99,7 @@
       }
       
       .left-container {
-        width: 500px;
+        width: 100%;
         padding: 20px;
         margin-top: 50px; /* ✅ 로고 + 버튼만큼 위에 여백 확보 */
         background-color: white;
