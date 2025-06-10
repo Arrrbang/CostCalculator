@@ -103,7 +103,7 @@
       .left-container {
         width: 500px;
         padding: 20px;
-        margin-top: 130px; /* ✅ 로고 + 버튼만큼 위에 여백 확보 */
+        margin-top: 50px; /* ✅ 로고 + 버튼만큼 위에 여백 확보 */
         background-color: white;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -172,7 +172,7 @@
         border-radius: 12px;            /* 둥글기 더 강조 가능 */
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.10);  /* 그림자 좀 더 강하게 */
         width: 95%;                     /* 폭 조금 더 늘림 */
-        max-width: 1000px;              /* 최대폭 두 배로 */
+        max-width: 800px;              /* 최대폭 두 배로 */
         margin: 0 auto 30px;
         text-align: center;
         min-height: auto;
