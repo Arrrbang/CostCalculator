@@ -94,7 +94,7 @@
         flex-direction: column;    /* 세로로 쌓기 */
         align-items: center;       /* column 내부를 중앙에 */
         gap: 18px;
-        padding: 50px 0 0 0;
+        padding: 25px 0 0 0;
         background: transparent;
         box-sizing: border-box;
         height: 100vh;
