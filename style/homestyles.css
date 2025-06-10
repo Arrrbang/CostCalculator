@@ -133,7 +133,7 @@
         box-sizing: border-box;
       }
             
-      .form-container {
+      .form-container-right {
         background-color: #ffffff;
         padding: 40px;                  /* 패딩도 늘림 */
         border-radius: 12px;            /* 둥글기 더 강조 가능 */
