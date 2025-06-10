@@ -185,6 +185,26 @@
         border-collapse: collapse;
         margin-top: 10px;
       }
+      
+        td {
+          padding: 10px;
+          vertical-align: middle;
+          word-wrap: break-word; /* 글자 줄바꿈 허용 */
+          font-size: 1rem; /* 기본 폰트 크기 */
+        }
+      
+        td:first-child {
+          text-align: center;
+          font-weight: bold;
+          font-size: 1.2rem; /* 테이블 주요 텍스트 크기 */
+        }
+      
+      td:last-child {
+        text-align: left;    /* 오른쪽 값은 왼쪽 정렬(기본) */
+        width: 220px;        /* 적당한 폭 할당, 필요시 더 넓게 */
+        font-weight: normal;
+        font-size: 1rem;
+      }
                   
                   h2 {
                     background-color: #8BC34A;
@@ -231,18 +251,7 @@
             
 
             
-              td {
-                padding: 10px;
-                vertical-align: middle;
-                word-wrap: break-word; /* 글자 줄바꿈 허용 */
-                font-size: 1rem; /* 기본 폰트 크기 */
-              }
-            
-              td:first-child {
-                text-align: center;
-                font-weight: bold;
-                font-size: 1.2rem; /* 테이블 주요 텍스트 크기 */
-              }
+
             
               label {
                 font-weight: bold;
