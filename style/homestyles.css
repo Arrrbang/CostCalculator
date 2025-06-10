@@ -1,11 +1,23 @@
-      .header-row {
+      .three-column-layout {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 48px;  /* 로고 아래 넉넉한 공간 */
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
+        flex-direction: row;
+        min-height: 100vh;
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+        gap: 30px;
+        background: transparent;
+        align-items: flex-start;
+      }
+
+      .logo-column {
+        flex: 0 0 180px;   /* 고정폭/원하는 만큼 */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 60px;
+        min-width: 150px;
+      background-color: transparent;
       }
 
       .logo-wrapper {
@@ -73,14 +85,15 @@
         position: relative; /* ✅ 기준점 보장 */
       }
 
-      .main-row {
+      .info-column {
+        flex: 1 1 520px;   /* 가운데(기본정보) */
+        max-width: 600px;
+        min-width: 400px;
+        padding-top: 60px;
         display: flex;
-        height: 100vh;
-        padding: 30px;
-        gap: 40px;
-        overflow: hidden;
-        box-sizing: border-box;
-        align-items: flex-start; /* ⭐ 중요 */
+        flex-direction: column;
+        align-items: center;
+      background-color: transparent;
       }
       
       .left-container {
@@ -88,7 +101,7 @@
         padding: 20px;
         margin-top: 130px; /* ✅ 로고 + 버튼만큼 위에 여백 확보 */
         background-color: white;
-        border-radius: 5px;
+        border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
         flex-shrink: 0;
         overflow-y: auto;
@@ -134,14 +147,17 @@
         background-color: #4CAF50;
       }
             
-      .cost-row {
-        flex-grow: 1;
-        height: 100%;             
-        overflow-y: auto;         
-        padding: 20px;
-        background-color: transparent;
-        box-sizing: border-box;
+      .cost-column {
+      flex: 1 1 680px;   /* 오른쪽(현지비용) */
+      min-width: 500px;
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: transparent;
       }
+
+
             
       .form-container-right {
         background-color: #ffffff;
