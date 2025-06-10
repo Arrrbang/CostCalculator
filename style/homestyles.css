@@ -126,24 +126,24 @@
             
       .right-container {
         flex-grow: 1;
-        height: 100%;               /* 부모만큼 높이 */
-        overflow-y: auto;           /* ✅ 스크롤 가능하게 */
+        height: 100%;             
+        overflow-y: auto;         
         padding: 20px;
-        background-color: #f4f4f4;
+        background-color: transparent;
         box-sizing: border-box;
       }
             
-                  .form-container {
-                    background-color: #ffffff;
-                    padding: 20px;
-                    border-radius: 8px;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                    width: 90%;
-                    max-width: 500px;
-                    margin: 0 auto 30px;
-                    text-align: center;
-                    min-height: auto;
-                  }
+      .form-container {
+        background-color: #ffffff;
+        padding: 40px;                  /* 패딩도 늘림 */
+        border-radius: 12px;            /* 둥글기 더 강조 가능 */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.10);  /* 그림자 좀 더 강하게 */
+        width: 95%;                     /* 폭 조금 더 늘림 */
+        max-width: 1000px;              /* 최대폭 두 배로 */
+        margin: 0 auto 30px;
+        text-align: center;
+        min-height: auto;
+      }
                   
                   h2 {
                     background-color: #8BC34A;
