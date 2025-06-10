@@ -87,9 +87,9 @@
       }
 
       .info-column {
-        flex: 0 0 420px;           /* 원하는 폭으로 조정 가능 */
-        min-width: 340px;
-        max-width: 480px;
+        flex: 0 0 500px;           /* 원하는 폭으로 조정 가능 */
+        min-width: 400px;
+        max-width: 540px;
         display: flex;
         flex-direction: column;    /* 세로로 쌓기 */
         align-items: center;       /* column 내부를 중앙에 */
@@ -102,8 +102,8 @@
       
       .left-container {
         width: 100%;
-        max-width: 420px;          /* info-column보다 살짝 좁게, 필요시 동일하게 */
-        min-width: 320px;
+        max-width: 500px;          /* info-column보다 살짝 좁게, 필요시 동일하게 */
+        min-width: 350px;
         margin-bottom: 16px;
         background: #fff;
         border-radius: 8px;
