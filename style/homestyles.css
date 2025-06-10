@@ -87,28 +87,31 @@
       }
 
       .info-column {
-        flex: 0 0 400px; /* left-container 크기만큼 고정 */
+        flex: 0 0 420px;           /* 원하는 폭으로 조정 가능 */
+        min-width: 340px;
+        max-width: 480px;
+        display: flex;
+        flex-direction: column;    /* 세로로 쌓기 */
+        align-items: center;       /* column 내부를 중앙에 */
+        gap: 18px;
         padding: 50px 0 0 0;
         background: transparent;
         box-sizing: border-box;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
         height: 100vh;
-        /* 스크롤 없음! */
       }
       
       .left-container {
         width: 100%;
-        padding: 20px;
-        margin-top: 50px; /* ✅ 로고 + 버튼만큼 위에 여백 확보 */
-        background-color: white;
+        max-width: 420px;          /* info-column보다 살짝 좁게, 필요시 동일하게 */
+        min-width: 320px;
+        margin-bottom: 16px;
+        background: #fff;
         border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-        flex-shrink: 0;
-        overflow-y: auto;
+        box-shadow: 0 0 8px rgba(0,0,0,0.07);
+        padding: 24px 20px;
         box-sizing: border-box;
-        height: auto; /* ⭐ 내용만큼만 늘어나도록 */
+        height: auto;
+        flex-shrink: 0;
       }
       
       .form-container-left:last-child {
@@ -175,6 +178,13 @@
         text-align: center;
         min-height: auto;
       }
+
+      table {
+        width: 100%;
+        max-width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
                   
                   h2 {
                     background-color: #8BC34A;
@@ -219,11 +229,7 @@
                 }
             
             
-              table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-top: 10px;
-              }
+
             
               td {
                 padding: 10px;
