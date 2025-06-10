@@ -201,7 +201,7 @@
       
       td:last-child {
         text-align: left;    /* 오른쪽 값은 왼쪽 정렬(기본) */
-        width: 230px;        /* 적당한 폭 할당, 필요시 더 넓게 */
+        width: 220px;        /* 적당한 폭 할당, 필요시 더 넓게 */
         font-weight: normal;
         font-size: 1rem;
       }
