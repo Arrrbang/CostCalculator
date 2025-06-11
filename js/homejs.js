@@ -109,21 +109,16 @@ async function updateDeliveryInfoAndDetails() {
     ];
 
     keysToLoad.forEach(({ jsonKey, elementId }) => {
-      const value = data[jsonKey];
-      const targetEl = document.getElementById(elementId);
-
-      if (targetEl) {
-        if (Array.isArray(value)) {
-          // 리스트 항목이면 <ul> 처리
-          targetEl.innerHTML = `<ul>${value.map(item => `<li>${item}</li>`).join('')}</ul>`;
-        } else {
-          // 일반 텍스트
-          targetEl.textContent = value || "";
-        }
+      const description = data[jsonKey]?.description || "";
+      const el = document.getElementById(elementId);
+      if (el) {
+        el.innerHTML = `<ul>${description
+          .replace(/\\li/g, "<li>")
+          .replace(/\\\/li/g, "</li>")}</ul>`.replace(/\n/g, "<br>");
       }
     });
 
-    console.log("✅ All delivery info and additional data updated");
+    console.log("✅ All delivery info and description fields updated");
   } catch (error) {
     console.error("🚨 Error fetching or parsing POE JSON:", error);
   }
@@ -277,23 +272,6 @@ async function fetchData() {
 
     // 화폐 단위 저장
     currencySymbol = extraCostData["화폐단위"] || "";
-
-    const keysToLoad = [
-      { jsonKey: "DATA BASE", elementId: "data-description" },
-      { jsonKey: "includedInfo", elementId: "includedInfo" },
-      { jsonKey: "excludedInfo", elementId: "excludedInfo" }
-    ];
-    
-    keysToLoad.forEach(({ jsonKey, elementId }) => {
-      const description = extraCostData[jsonKey]?.description || "";
-      const el = document.getElementById(elementId);
-      if (el) {
-        // li 태그를 ul로 감싸서 HTML 구조를 올바르게 만듦
-        el.innerHTML = `<ul>${description
-          .replace(/\\li/g, "<li>")
-          .replace(/\\\/li/g, "</li>")}</ul>`.replace(/\n/g, "<br>");
-      }
-    });
 
     //additional info 가져오기
     let additionalInfoIndex = 1;  // 추가 정보 항목의 번호 (예: 1, 2, 3 ...)
