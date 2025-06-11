@@ -68,8 +68,8 @@ function getPathFromURL() {
   return urlParams.get('path'); // 'path' 파라미터의 값을 반환
 }
 
-// updateDeliveryAddressAndPartnerOnPoeChange 함수
-async function updateDeliveryAddressAndPartnerOnPoeChange() {
+
+async function updateDeliveryInfoAndDetails() {
   const path = getPathFromURL();  // path를 추출
   const poeValue = poeDropdown.value;
 
@@ -79,7 +79,7 @@ async function updateDeliveryAddressAndPartnerOnPoeChange() {
   }
 
   const basePath = "https://arrrbang.github.io/CostCalculator";
-  const jsonPath = `${basePath}/${path}/poeis${poeValue}_tariff.json`;  // POE 값에 맞는 JSON 파일 경로
+  const jsonPath = `${basePath}/${path}/poeis${poeValue}_tariff.json`;
 
   try {
     const response = await fetch(jsonPath);
@@ -91,26 +91,46 @@ async function updateDeliveryAddressAndPartnerOnPoeChange() {
     const data = await response.json();
     console.log("Fetched POE JSON data:", data);
 
+    // 기본 항목 업데이트
     const deliveryAddress = data.delivery;
     const partner = data.partner;
 
     const deliveryAddressElement = document.getElementById('delivery-address-result');
     const partnerElement = document.getElementById('partner-result');
 
-    if (deliveryAddressElement && partnerElement) {
-      deliveryAddressElement.innerText = deliveryAddress;
-      partnerElement.innerText = partner;
-      console.log("✅ Delivery address and partner updated");
-    } else {
-      console.error("❌ Missing DOM elements: delivery-address-result or partner-result");
-    }
+    if (deliveryAddressElement) deliveryAddressElement.innerText = deliveryAddress || "";
+    if (partnerElement) partnerElement.innerText = partner || "";
+
+    // 추가 항목 업데이트 (DATA BASE, 포함/불포함비용 등)
+    const keysToLoad = [
+      { jsonKey: "DATA BASE", elementId: "data-description" },
+      { jsonKey: "includedInfo", elementId: "includedInfo" },
+      { jsonKey: "excludedInfo", elementId: "excludedInfo" }
+    ];
+
+    keysToLoad.forEach(({ jsonKey, elementId }) => {
+      const value = data[jsonKey];
+      const targetEl = document.getElementById(elementId);
+
+      if (targetEl) {
+        if (Array.isArray(value)) {
+          // 리스트 항목이면 <ul> 처리
+          targetEl.innerHTML = `<ul>${value.map(item => `<li>${item}</li>`).join('')}</ul>`;
+        } else {
+          // 일반 텍스트
+          targetEl.textContent = value || "";
+        }
+      }
+    });
+
+    console.log("✅ All delivery info and additional data updated");
   } catch (error) {
     console.error("🚨 Error fetching or parsing POE JSON:", error);
   }
 }
 
 // POE 드롭다운 값이 변경될 때마다 실행
-poeDropdown.addEventListener("change", updateDeliveryAddressAndPartnerOnPoeChange);
+poeDropdown.addEventListener("change", updateDeliveryInfoAndDetails);
 
 //-----------------------------------------------------------------------------------------
 // resetDropdown 함수 변경
