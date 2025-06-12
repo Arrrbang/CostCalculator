@@ -150,7 +150,7 @@ function resetDropdown(dropdownElement, placeholder = "-- CBM 선택 --") {
 
 // 링크 초기화
 function initializeLinks() {
-  link1Element.textContent = "문의 필요";
+  link1Element.textContent = "POE를 선택하세요.";
   link1Element.onclick = null;
   link1Element.classList.add("disabled-link");
 
