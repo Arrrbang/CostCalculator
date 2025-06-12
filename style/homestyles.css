@@ -197,13 +197,12 @@
         text-align: center;
         font-weight: bold;
         font-size: 1.2rem;
-        width: 100px; /* 원하는 폭으로 조절 (예: 80~120px 정도) */
+        width: 120px; /* 원하는 폭으로 조절 (예: 80~120px 정도) */
       }
 
       
       td:last-child {
         text-align: left;    /* 오른쪽 값은 왼쪽 정렬(기본) */
-        width: 220px;        /* 적당한 폭 할당, 필요시 더 넓게 */
         font-weight: normal;
         font-size: 1rem;
       }
