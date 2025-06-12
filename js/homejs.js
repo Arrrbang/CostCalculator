@@ -1141,11 +1141,19 @@ stairCbmDropdown.addEventListener("change", calculateStairCharge);
 stairFloorDropdown.addEventListener("change", calculateStairCharge);
 dropdown.addEventListener("change", updateStairChargeDropdown);
 
+//-------토글 관련----------
 
-function toggleVisibilityById(id) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  el.style.display = el.style.display === "none" ? "block" : "none";
+function toggleSection(labelElement, contentId) {
+  const content = document.getElementById(contentId);
+  if (!content) return;
+
+  const isOpen = content.style.display === "block";
+  content.style.display = isOpen ? "none" : "block";
+
+  const arrow = labelElement.querySelector('.arrow');
+  if (arrow) {
+    arrow.textContent = isOpen ? '▶' : '▼';
+  }
 }
 
 
