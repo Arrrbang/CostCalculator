@@ -154,7 +154,6 @@ function initializeLinks() {
   link1Element.onclick = null;
   link1Element.classList.add("disabled-link");
 
-  link2Element.textContent = "Default Link 2";
   link2Element.onclick = null;
   link2Element.classList.add("disabled-link");
 }
