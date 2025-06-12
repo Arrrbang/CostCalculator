@@ -21,23 +21,19 @@
   flex: 0 0 180px;
   min-width: 120px;
   max-width: 150px;
-  padding: 120px 0 0 24px; 
+  padding: 50px 0 0 24px;  /* ← 네가 원하던 여백 */
   background: transparent;
   box-sizing: border-box;
   height: 100vh;
-  position: relative;
 }
 
 .logo-wrapper {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 10;
+  margin-bottom: 20px;  /* 로고와 버튼 사이 간격 */
 }
 
 .button-under-logo {
   width: 150px;
-  margin-bottom: 10px; /* 버튼 간 간격 */
+  margin-bottom: 10px;  /* 버튼끼리 간격 */
 }
 
 .button-under-logo a,
@@ -59,28 +55,6 @@
 }
 
 .button-under-logo a:hover,
-#link2:hover {
-  background-color: #d0ebd2;
-}
-
-#link2 {
-  display: block;
-  width: 150px;
-  text-align: center;
-  font-size: 14px;
-  color: #2e7d32;
-  text-decoration: none;
-  background-color: #e8f5e9;
-  padding: 8px 0;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  white-space: normal; /* 줄바꿈 허용 */
-  cursor: pointer;
-  margin-top: 8px; /* 첫 번째 버튼과의 간격 */
-}
-
 #link2:hover {
   background-color: #d0ebd2;
 }
