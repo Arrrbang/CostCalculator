@@ -97,6 +97,14 @@
         font-size: 1.2rem;
         text-align: center; 
       }
+
+      h2 .arrow {
+        display: inline-block;
+        width: 1.2em;
+        text-align: center;
+        margin-right: 6px;
+        font-weight: bold;
+      }
 /*-----------------------------------*/
 
 
