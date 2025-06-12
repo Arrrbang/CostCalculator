@@ -79,13 +79,17 @@
       <div class="form-container-left">
         <h2>국내 비용</h2>
         <div class="result-row">
-          <span id="average-ofc-label">평균 OFC</span>
+          <p id="average-ofc-label" class="toggle-label" onclick="toggleSection(this, 'ofc-description')">
+            <span class="arrow">▶</span> 평균 OFC
+          </p>
           <span id="average-ofc-value"></span>
         </div>
-        <p class="charge-info-left">
-          정확한 OFC는 하단 링크를 통해 노션에서 확인 필요 <br>
-          콘솔은 40HC에 50cbm 적입 기준
-        </p>
+
+        <!-- 토글 내용 영역 -->
+        <div id="ofc-description" class="ofc-toggle-box" style="display: none;">
+          <p class="ofc-text">정확한 OFC는 하단 노션 링크를 통해 조회해주세요.<br>컨테이너 타입 [Console] : 40HC 50CBM 적입 기준</p>
+          <button id="link1" class="notion-button">노션으로 이동하여 상세운임 조회</button>
+        </div>
       </div>
     
       <div class="form-container-left">
