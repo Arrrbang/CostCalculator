@@ -178,11 +178,9 @@ function updateLinks(links) {
 
   // 링크 2
   if (links[1]?.url) {
-    link2Element.textContent = "노션에서 파트너 정보 확인";
     link2Element.classList.remove("disabled-link");
     link2Element.onclick = () => window.open(links[1].url, "_blank");
   } else {
-    link2Element.textContent = "등록 예정";
     link2Element.onclick = null;
     link2Element.classList.add("disabled-link");
   }
