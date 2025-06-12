@@ -85,7 +85,7 @@ async function updateAllInfo() {
 
   // 👉 1. tariff.json 처리
   try {
-    const tariffRes = await fetch(tariffJsonPath);
+    const tariffRes = await fetch(tableJsonPath);
     if (!tariffRes.ok) throw new Error("Failed to fetch tariff JSON");
     const tariffData = await tariffRes.json();
 
