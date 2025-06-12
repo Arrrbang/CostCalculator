@@ -246,9 +246,14 @@
         font-weight: bold;
       }
 
-/*포함 비용&불포함 비용 들여쓰기*/
+      /*포함 비용&불포함 비용 들여쓰기*/
       .toggle-label.sub-item {
         margin-left: 24px; 
+      }
+
+      .sub-toggle-group {
+        margin-top: 6px; /* 기본 배송비와 간격 줄임 */
+        text-align: left; /* ← 추가 */
       }
             
 
@@ -261,12 +266,7 @@
                     border-radius: 5px 5px 0 0;
                     font-size: 1.2rem;
                   }
-            
-                  .sub-toggle-group {
-                    margin-top: 6px; /* 기본 배송비와 간격 줄임 */
-                    text-align: left; /* ← 추가 */
-                  }
-                  
+                 
                   
                   .sub-toggle-group .toggle-label {
                     margin-left: 16px;
