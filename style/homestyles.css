@@ -125,7 +125,7 @@
 
 /* 버튼 스타일 */
 .notion-button {
-  margin: 10px auto;         /* 가운데 정렬 */
+  margin: 0 auto 10px auto; 
   background-color: #a6d5fa; /* 파스텔 블루 */
   border: none;
   border-radius: 6px;
