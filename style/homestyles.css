@@ -64,7 +64,7 @@
 
 #link2 {
   position: absolute;
-  top: 125px;         /* 기존 버튼보다 30px 아래 */
+  top: 155px;         /* 기존 버튼보다 60px 아래 */
   left: 20px;
   z-index: 10;
   width: 150px;
