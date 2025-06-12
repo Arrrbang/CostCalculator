@@ -569,9 +569,8 @@ function updateBasicDeliveryCost() {
   // 결과 업데이트
   result.textContent = costValue;
 
-    const descriptionElement = document.getElementById("basic-delivery-description");
+    const descriptionElement = document.getElementById("basic-delivery-summary");
     if (descriptionElement) {
-      // description이 빈 문자열이어도 업데이트
       descriptionElement.innerHTML = descriptionValue.replace(/\n/g, "<br>");
     }
   }
