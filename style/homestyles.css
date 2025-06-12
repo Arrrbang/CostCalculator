@@ -289,7 +289,7 @@
     .region-info {
       max-width: 80%;
       width: 100%;
-      margin-left: 16px; /* 정렬 맞춤용 여유 */
+      margin: 10px auto 0 auto; /* ← 가운데 정렬 */
       margin-top: 0px;
       background-color: #f8f8f8;
       border: 1px solid #ccc;
@@ -325,7 +325,8 @@
 
       /*포함 비용&불포함 비용 들여쓰기*/
       .toggle-label.sub-item {
-        margin-left: 24px; 
+        padding-left: 16px; /* 들여쓰기 */
+        margin-left: 0;      /* 기존 제거 */
       }
 
       .sub-toggle-group {
