@@ -1141,13 +1141,11 @@ stairCbmDropdown.addEventListener("change", calculateStairCharge);
 stairFloorDropdown.addEventListener("change", calculateStairCharge);
 dropdown.addEventListener("change", updateStairChargeDropdown);
 
-function toggleBasicDelivery() {
-  const desc = document.getElementById("basic-delivery-description");
-  desc.style.display = desc.style.display === "none" ? "block" : "none";
-}
 
-function toggleExtra(id) {
+function toggleVisibilityById(id) {
   const el = document.getElementById(id);
+  if (!el) return;
   el.style.display = el.style.display === "none" ? "block" : "none";
 }
+
 
