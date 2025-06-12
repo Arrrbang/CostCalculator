@@ -181,80 +181,140 @@
   </div>
 
   <div class="form-container-right">
-    <h2>추가 비용</h2>
-    <div class="result-row">
-      <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-1-label"></span>
-      <span class="result-value" id="extra-cost-1-value"></span>
+    <h2 onclick="toggleSection(this, 'extra-cost-wrapper')" style="cursor: pointer;">
+      <span class="arrow">▶</span> 추가 비용
+    </h2>
+    <div id="extra-cost-wrapper" style="display: none;">
+      <div class="result-row">
+        <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-1-label"></span>
+        <span class="result-value" id="extra-cost-1-value"></span>
+      </div>
+      <p id="extra-cost-1-description" class="charge-info">
+      </p>
+      <div class="result-row">
+        <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-2-label"></span>
+        <span class="result-value" id="extra-cost-2-value"></span>
+      </div>
+      <p id="extra-cost-2-description" class="charge-info">
+      </p>
+      <div class="result-row">
+        <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-3-label"></span>
+        <span class="result-value" id="extra-cost-3-value"></span>
+      </div>
+      <p id="extra-cost-3-description" class="charge-info">
+      </p>
+      <div class="result-row">
+        <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-4-label"></span>
+        <span class="result-value" id="extra-cost-4-value"></span>
+      </div>
+      <p id="extra-cost-4-description" class="charge-info">
+      </p>
+      <div class="result-row">
+        <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-5-label"></span>
+        <span class="result-value" id="extra-cost-5-value"></span>
+      </div>
+      <p id="extra-cost-5-description" class="charge-info">
+      </p>
+      <div class="result-row">
+        <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-6-label"></span>
+        <span class="result-value" id="extra-cost-6-value"></span>
+      </div>
+      <p id="extra-cost-6-description" class="charge-info">
+      </p>
+      <div class="result-row">
+        <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-7-label"></span>
+        <span class="result-value" id="extra-cost-7-value"></span>
+      </div>
+      <p id="extra-cost-7-description" class="charge-info">
+      </p>
+      <div class="result-row">
+        <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-8-label"></span>
+        <span class="result-value" id="extra-cost-8-value"></span>
+      </div>
+      <p id="extra-cost-8-description" class="charge-info">
+      </p>
+      <div class="result-row">
+        <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-9-label"></span>
+        <span class="result-value" id="extra-cost-9-value"></span>
+      </div>
+      <p id="extra-cost-9-description" class="charge-info">
+      </p>
+      <div class="result-row">
+        <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-10-label"></span>
+        <span class="result-value" id="extra-cost-10-value"></span>
+      </div>
+      <p id="extra-cost-10-description" class="charge-info">
+      </p>
+      <div class="result-row">
+        <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-11-label"></span>
+        <span class="result-value" id="extra-cost-11-value"></span>
+      </div>
+      <p id="extra-cost-11-description" class="charge-info">
+      </p>
+      <div class="result-row">
+        <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-12-label"></span>
+        <span class="result-value" id="extra-cost-12-value"></span>
+      </div>
+      <p id="extra-cost-12-description" class="charge-info">
+      </p>
+
+                <!-- STAIR CHARGE OPTIONS 추가 -->
+      <div class="result-row" id="stairchargetitle">
+        <span class="result-label" style="font-size: 1rem; font-weight: bold;">STAIR CHARGE OPTIONS</span>
+      </div>
+      <div class="result-row" id="stair-charge-options">
+        <div class="stair-container">
+        <span class="stairchargelabel">CBM</span>
+        <select id="staircbm">
+          <option value="">이동 CBM 선택</option>
+        </select>
+        </div>
+      </div>
+      <div class="result-row" id="stair-charge-options">
+        <div class="stair-container">
+        <span class="stairchargelabel">FLOOR</span>
+        <select id="stairfloor">
+          <option value="">이동 층 선택</option>
+        </select>
+        </div>
+      </div>
+  
+          <!-- ●STAIR CHARGE 결과 -->
+      <div class="result-row" id="stair-charge-row">
+        <span class="result-label"></span>
+        <span class="result-value" id="stair-charge">None</span>
+      </div>
+        <p id="stair-description" class="charge-info">
+        This is a description for stair carry.
+        </p>
+  
+      <div class="result-row" id="heavyitemrow">
+        <span class="result-label" style="font-size: 1rem; font-weight: bold;">HEAVY ITEM CHARGE</span>
+        <select id="heavyitemunit">
+          <option value="">중량 화물 개수 선택</option>
+        </select>
+      </div>
+      <div class="result-row">
+        <span class="result-value" id="heavyitem-value">None</span>
+      </div>
+      <p id="heavyitem-description" class="charge-info">
+      </p>
+  
+      <div class="result-row" id="storagerow">
+        <span class="result-label" style="font-size: 1rem; font-weight: bold;">STORAGE CHARGE</span>
+        <select id="storageperiod">
+          <option value="">보관 기간 선택</option>
+        </select>
+      </div>
+      <div class="result-row">
+        <span class="result-value" id="storage-value">None</span>
+      </div>
+      <p id="storage-description" class="charge-info">
+      </p>
     </div>
-    <p id="extra-cost-1-description" class="charge-info">
-    </p>
-    <div class="result-row">
-      <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-2-label"></span>
-      <span class="result-value" id="extra-cost-2-value"></span>
-    </div>
-    <p id="extra-cost-2-description" class="charge-info">
-    </p>
-    <div class="result-row">
-      <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-3-label"></span>
-      <span class="result-value" id="extra-cost-3-value"></span>
-    </div>
-    <p id="extra-cost-3-description" class="charge-info">
-    </p>
-    <div class="result-row">
-      <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-4-label"></span>
-      <span class="result-value" id="extra-cost-4-value"></span>
-    </div>
-    <p id="extra-cost-4-description" class="charge-info">
-    </p>
-    <div class="result-row">
-      <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-5-label"></span>
-      <span class="result-value" id="extra-cost-5-value"></span>
-    </div>
-    <p id="extra-cost-5-description" class="charge-info">
-    </p>
-    <div class="result-row">
-      <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-6-label"></span>
-      <span class="result-value" id="extra-cost-6-value"></span>
-    </div>
-    <p id="extra-cost-6-description" class="charge-info">
-    </p>
-    <div class="result-row">
-      <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-7-label"></span>
-      <span class="result-value" id="extra-cost-7-value"></span>
-    </div>
-    <p id="extra-cost-7-description" class="charge-info">
-    </p>
-    <div class="result-row">
-      <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-8-label"></span>
-      <span class="result-value" id="extra-cost-8-value"></span>
-    </div>
-    <p id="extra-cost-8-description" class="charge-info">
-    </p>
-    <div class="result-row">
-      <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-9-label"></span>
-      <span class="result-value" id="extra-cost-9-value"></span>
-    </div>
-    <p id="extra-cost-9-description" class="charge-info">
-    </p>
-    <div class="result-row">
-      <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-10-label"></span>
-      <span class="result-value" id="extra-cost-10-value"></span>
-    </div>
-    <p id="extra-cost-10-description" class="charge-info">
-    </p>
-    <div class="result-row">
-      <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-11-label"></span>
-      <span class="result-value" id="extra-cost-11-value"></span>
-    </div>
-    <p id="extra-cost-11-description" class="charge-info">
-    </p>
-    <div class="result-row">
-      <span class="result-label" style="font-size: 1rem; font-weight: normal;" id="extra-cost-12-label"></span>
-      <span class="result-value" id="extra-cost-12-value"></span>
-    </div>
-    <p id="extra-cost-12-description" class="charge-info">
-    </p>
-    
+  </div>
+
+  <div class="form-container-right">
     <div class="result-row">
       <label class="result-label" style="font-size: 1rem; font-weight: bold;" id="additional-info-1-label"></label>
     </div>
@@ -271,60 +331,6 @@
       <label class="result-label" style="font-size: 1rem; font-weight: bold;" id="additional-info-4-label"></label>
     </div>
     <p id="additional-info-4-description" class="add-info"></p>
-
-              <!-- STAIR CHARGE OPTIONS 추가 -->
-    <div class="result-row" id="stairchargetitle">
-      <span class="result-label" style="font-size: 1rem; font-weight: bold;">STAIR CHARGE OPTIONS</span>
-    </div>
-    <div class="result-row" id="stair-charge-options">
-      <div class="stair-container">
-      <span class="stairchargelabel">CBM</span>
-      <select id="staircbm">
-        <option value="">이동 CBM 선택</option>
-      </select>
-      </div>
-    </div>
-    <div class="result-row" id="stair-charge-options">
-      <div class="stair-container">
-      <span class="stairchargelabel">FLOOR</span>
-      <select id="stairfloor">
-        <option value="">이동 층 선택</option>
-      </select>
-      </div>
-    </div>
-
-        <!-- ●STAIR CHARGE 결과 -->
-    <div class="result-row" id="stair-charge-row">
-      <span class="result-label"></span>
-      <span class="result-value" id="stair-charge">None</span>
-    </div>
-      <p id="stair-description" class="charge-info">
-      This is a description for stair carry.
-      </p>
-
-    <div class="result-row" id="heavyitemrow">
-      <span class="result-label" style="font-size: 1rem; font-weight: bold;">HEAVY ITEM CHARGE</span>
-      <select id="heavyitemunit">
-        <option value="">중량 화물 개수 선택</option>
-      </select>
-    </div>
-    <div class="result-row">
-      <span class="result-value" id="heavyitem-value">None</span>
-    </div>
-    <p id="heavyitem-description" class="charge-info">
-    </p>
-
-    <div class="result-row" id="storagerow">
-      <span class="result-label" style="font-size: 1rem; font-weight: bold;">STORAGE CHARGE</span>
-      <select id="storageperiod">
-        <option value="">보관 기간 선택</option>
-      </select>
-    </div>
-    <div class="result-row">
-      <span class="result-value" id="storage-value">None</span>
-    </div>
-    <p id="storage-description" class="charge-info">
-    </p>
   </div>
 </div>
 </div>
