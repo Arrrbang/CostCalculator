@@ -175,7 +175,7 @@
         width: 95%;                     /* 폭 조금 더 늘림 */
         max-width: 800px;              /* 최대폭 두 배로 */
         margin: 0 auto 30px;
-        text-align: center;
+        text-align: left;
         min-height: auto;
       }
 
@@ -272,6 +272,9 @@
                     margin-left: 16px;
                     margin-top: 4px;
                     font-size: 14px;
+                    text-align: left !important;
+                    display: block !important;
+                    color: #000 !important;
                   }
             
             
