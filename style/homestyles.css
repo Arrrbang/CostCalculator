@@ -244,6 +244,11 @@
         margin-right: 6px;
         font-weight: bold;
       }
+
+/*포함 비용&불포함 비용 들여쓰기*/
+      .toggle-label.sub-item {
+        margin-left: 24px; 
+      }
             
 
 /*----------------여기까지------------------*/
