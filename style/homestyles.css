@@ -20,7 +20,7 @@
   flex: 0 0 180px;
   min-width: 120px;
   max-width: 150px;
-  padding: 120px 0 0 0px;  /* ← 버튼이 로고 아래로 내려오도록 패딩 줌 */
+  padding: 120px 0 0 24px;  /* ← 버튼이 로고 아래로 내려오도록 패딩 줌 */
   background: transparent;
   box-sizing: border-box;
   height: 100vh;
