@@ -80,7 +80,7 @@ async function updateAllInfo() {
 
   const basePath = "https://arrrbang.github.io/CostCalculator";
   const tariffJsonPath = `${basePath}/${path}/poeis${poeValue}_tariff.json`;
-  const extraCostJsonPath = `${basePath}/${path}/poeis${poeValue}_extracost.json`;
+  const extraCostJsonPath = `${basePath}/${modifiedPath}/poeis${poeValue}_extracost.json`;
 
   // 👉 1. tariff.json 처리
   try {
