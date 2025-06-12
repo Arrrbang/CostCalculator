@@ -128,8 +128,8 @@
 /* 버튼 스타일 */
 .notion-button {
   display: block;
-  margin-left: auto;
-  margin-right: 0;
+  margin-left: 0;
+  margin-right: auto;
   background-color: #a6d5fa; /* 파스텔 블루 */
   border: none;
   border-radius: 6px;
