@@ -167,22 +167,22 @@ function updateLinks(links) {
 
   // 링크 1
   if (links[0]?.url) {
-    link1Element.textContent = links[0].label || "업무팀에 별도 문의 바랍니다.";
+    link1Element.textContent = "노션으로 이동하여 상세운임 조회";
     link1Element.classList.remove("disabled-link");
     link1Element.onclick = () => window.open(links[0].url, "_blank");
   } else {
-    link1Element.textContent = "업무팀에 별도 문의 바랍니다.";
+    link1Element.textContent = "업무팀에 별도 문의";
     link1Element.onclick = null;
     link1Element.classList.add("disabled-link");
   }
 
   // 링크 2
   if (links[1]?.url) {
-    link2Element.textContent = links[1].label || "Default Link 2";
+    link2Element.textContent = "노션에서 파트너 정보 확인";
     link2Element.classList.remove("disabled-link");
     link2Element.onclick = () => window.open(links[1].url, "_blank");
   } else {
-    link2Element.textContent = "Default Link 2";
+    link2Element.textContent = "등록 예정";
     link2Element.onclick = null;
     link2Element.classList.add("disabled-link");
   }
