@@ -102,9 +102,9 @@
   <div class="form-container-right">
     <h2>현지 비용</h2>
       <div class="result-row">
-        <span id="basic-delivery-label" class="toggle-label" onclick="toggleSection(this, 'basic-delivery-description')">
+        <p id="basic-delivery-label" class="toggle-label" onclick="toggleSection(this, 'basic-delivery-description')">
           <span class="arrow">▶</span> 기본 배송 비용
-        </span>
+        </p>
         <span id="basic-delivery-value">None</span>
       </div>
       
@@ -113,12 +113,12 @@
       </div>
       
       <div class="sub-toggle-group">
-        <p class="toggle-label" onclick="toggleSection(this, 'includedInfo')">
+        <p class="toggle-label sub-item" onclick="toggleSection(this, 'includedInfo')">
           <span class="arrow">▶</span> 포함비용
         </p>
         <div id="includedInfo" class="region-info" style="display: none;"></div>
         
-        <p class="toggle-label" onclick="toggleSection(this, 'excludedInfo')">
+        <p class="toggle-label sub-item" onclick="toggleSection(this, 'excludedInfo')">
           <span class="arrow">▶</span> 불포함비용
         </p>
         <div id="excludedInfo" class="region-info" style="display: none;"></div>
