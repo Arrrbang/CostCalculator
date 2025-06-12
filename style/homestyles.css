@@ -342,6 +342,7 @@
               font-weight: bold; /* 굵기 추가 */
               text-align: left;
               padding-left: 0px !importent; /* 라벨 왼쪽 간격 */
+            margin-left: 0 !important; /* ✅ 추가 */
               text-decoration: underline;
               color: #0077cc;
             }
