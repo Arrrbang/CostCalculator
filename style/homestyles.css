@@ -1,6 +1,5 @@
       .three-column-layout {
         display: flex;
-        gap: 30px; /* ✅ 가운데 열과 왼쪽 열 사이 간격 */
         flex-direction: row;
         width: 100vw;
         min-height: 100vh;
@@ -10,12 +9,6 @@
         align-items: flex-start;
         overflow: hidden; /* cost만 스크롤 되게 */
       }
-
-.logo-wrapper img {
-  max-width: 150px;
-  height: auto;
-  display: block;
-}
 
 .logo-column {
   flex: 0 0 180px;
@@ -29,6 +22,12 @@
 
 .logo-wrapper {
   margin-bottom: 20px;  /* 로고와 버튼 사이 간격 */
+}
+
+.logo-wrapper img {
+  width: 150px;
+  height: auto;
+  display: block;
 }
 
 .button-under-logo {
