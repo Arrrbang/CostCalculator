@@ -110,20 +110,26 @@ async function updateAllInfo() {
     keysToLoad.forEach(({ jsonKey, elementId }) => {
       const el = document.getElementById(elementId);
       if (!el) return;
-
-      let description = "";
-
+    
+      const data = extraCostData[jsonKey];
+      if (!data || typeof data.description !== 'string') return;
+    
+      let description = data.description;
+    
       if (jsonKey === "DATA BASE") {
-        description = extraCostData[jsonKey] || "";
         el.innerText = description;
-      } else {
-        description = extraCostData[jsonKey]?.description || "";
-        el.innerHTML = `<ul>${description
+      } else if (description.includes("\\li") && description.includes("\\/li")) {
+        // li 태그 형식으로 감싸진 경우
+        const listHtml = `<ul>${description
           .replace(/\\li/g, "<li>")
-          .replace(/\\\/li/g, "</li>")}</ul>`.replace(/\n/g, "<br>");
+          .replace(/\\\/li/g, "</li>")
+          .replace(/\n/g, "<br>")}</ul>`;
+        el.innerHTML = listHtml;
+      } else {
+        // 단순 줄바꿈 또는 일반 텍스트
+        el.innerHTML = description.replace(/\n/g, "<br>");
       }
     });
-
   } catch (err) {
     console.error("❌ ExtraCost fetch error:", err);
   }
