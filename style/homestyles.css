@@ -1,5 +1,6 @@
       .three-column-layout {
         display: flex;
+        gap: 30px; /* ✅ 가운데 열과 왼쪽 열 사이 간격 */
         flex-direction: row;
         width: 100vw;
         min-height: 100vh;
@@ -20,11 +21,11 @@
   flex: 0 0 180px;
   min-width: 120px;
   max-width: 150px;
-  padding: 120px 0 0 24px;  /* ← 버튼이 로고 아래로 내려오도록 패딩 줌 */
+  padding: 120px 0 0 24px; 
   background: transparent;
   box-sizing: border-box;
   height: 100vh;
-  position: relative; /* 로고 위치 기준점 보장 */
+  position: relative;
 }
 
 .logo-wrapper {
