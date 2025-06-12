@@ -171,28 +171,25 @@ function updateLinks(links) {
 
    // 링크 1 업데이트
   if (links[0]?.url) {
-    link1Element.textContent = links[0].label || "문의 필요";
-    link1Element.style.pointerEvents = "auto";
-    link1Element.style.color = "white";
-    link1Element.onclick = () => {
-      window.open(links[0].url, "_blank");
-    };
+    link1Element.textContent = links[0].label || "업무팀에 별도 문의 바랍니다.";
+    link1Element.onclick = () => window.open(links[0].url, "_blank");
+    link1Element.classList.remove("disabled-link");
   } else {
-    link1Element.textContent = "문의 필요";
-    link1Element.style.pointerEvents = "none";
-    link1Element.style.color = "gray";
+    link1Element.textContent = "업무팀에 별도 문의 바랍니다.";
+    link1Element.onclick = null;
+    link1Element.classList.add("disabled-link");
   }
 
   // 링크 2 업데이트
   if (links[1]?.url) {
-    link2Element.textContent = links[1].label || "Default Link 2";
+    link2Element.textContent = links[1].label || "등록 예정";
     link2Element.style.pointerEvents = "auto";
     link2Element.style.color = "white";
     link2Element.onclick = () => {
       window.open(links[1].url, "_blank");
     };
   } else {
-    link2Element.textContent = "Default Link 2";
+    link2Element.textContent = "등록 예정";
     link2Element.style.pointerEvents = "none";
     link2Element.style.color = "gray";
   }
