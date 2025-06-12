@@ -113,7 +113,7 @@
   padding: 12px 16px;
   border-radius: 8px;
   width: fit-content;
-  width: 70%;                /* 부모 너비의 70% */
+  width: 80%;                /* 부모 너비 대비 */
 }
 
 /* 설명 텍스트 */
