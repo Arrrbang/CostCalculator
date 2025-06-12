@@ -10,65 +10,50 @@
         overflow: hidden; /* cost만 스크롤 되게 */
       }
 
-      .logo-column {
-        flex: 0 0 180px; /* 검색버튼+로고 크기만큼 고정 (더 줄이고 싶으면 120~150px도 가능) */
-        min-width: 120px;
-        max-width: 150px;
-        padding: 50px 0 0 24px;
-        background: transparent;
-        box-sizing: border-box;
-        /* 스크롤 없음! */
-        height: 100vh;
-      }
+.logo-column {
+  flex: 0 0 180px;
+  min-width: 120px;
+  max-width: 150px;
+  padding: 120px 0 0 24px;  /* ← 버튼이 로고 아래로 내려오도록 패딩 줌 */
+  background: transparent;
+  box-sizing: border-box;
+  height: 100vh;
+}
 
-      .logo-wrapper {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        z-index: 10;
-      }
-      
-      .logo-wrapper img {
-        height: auto;
-        width: 150px;
-        display: block;
-      }
+.logo-wrapper {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
 
-      .button-under-logo {
-        position: absolute;
-        top: 95px;
-        left: 20px;
-        z-index: 10;
-        width: 150px; 
-      }
+.button-under-logo {
+  width: 150px;
+  margin-bottom: 10px; /* 버튼 간 간격 */
+}
 
-    .button-under-logo a {
-      display: block;
-      width: 100%;            /* 부모 너비 채움 */
-      text-align: center;
-      font-size: 14px;
-      color: #2e7d32;
-      text-decoration: none;
-      background-color: #e8f5e9;
-      padding: 8px 0;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: background-color 0.2s ease;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      white-space: nowrap;
-    }
+.button-under-logo a,
+#link2 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #2e7d32;
+  text-decoration: none;
+  background-color: #e8f5e9;
+  padding: 8px 0;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  white-space: normal;
+  cursor: pointer;
+}
 
-      .button-under-logo:first-of-type {
-        top: 95px;
-      }
-      
-      .button-under-logo:nth-of-type(2) {
-        top: 140px; 
-      }
-    
-    .button-under-logo a:hover {
-      background-color: #d0ebd2;
-    }
+.button-under-logo a:hover,
+#link2:hover {
+  background-color: #d0ebd2;
+}
 
 #link2 {
   display: block;
