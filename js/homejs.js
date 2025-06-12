@@ -69,8 +69,8 @@ function getPathFromURL() {
 }
 
 
-async function updateDeliveryInfoAndDetails() {
-  const path = getPathFromURL();  // path를 추출
+async function updateAllInfo() {
+  const path = getPathFromURL();
   const poeValue = poeDropdown.value;
 
   if (!path || !poeValue) {
@@ -79,29 +79,28 @@ async function updateDeliveryInfoAndDetails() {
   }
 
   const basePath = "https://arrrbang.github.io/CostCalculator";
-  const jsonPath = `${basePath}/${path}/poeis${poeValue}_tariff.json`;
+  const tariffJsonPath = `${basePath}/${path}/poeis${poeValue}_tariff.json`;
+  const extraCostJsonPath = `${basePath}/${path}/poeis${poeValue}_extracost.json`;
 
+  // 👉 1. tariff.json 처리
   try {
-    const response = await fetch(jsonPath);
+    const tariffRes = await fetch(tariffJsonPath);
+    if (!tariffRes.ok) throw new Error("Failed to fetch tariff JSON");
+    const tariffData = await tariffRes.json();
 
-    if (!response.ok) {
-      throw new Error(`Failed to load JSON from ${jsonPath}`);
-    }
+    document.getElementById('delivery-address-result').innerText = tariffData.delivery || "";
+    document.getElementById('partner-result').innerText = tariffData.partner || "";
 
-    const data = await response.json();
-    console.log("Fetched POE JSON data:", data);
+  } catch (err) {
+    console.error("❌ Tariff fetch error:", err);
+  }
 
-    // 기본 항목 업데이트
-    const deliveryAddress = data.delivery;
-    const partner = data.partner;
+  // 👉 2. extracost.json 처리
+  try {
+    const extraRes = await fetch(extraCostJsonPath);
+    if (!extraRes.ok) throw new Error("Failed to fetch extraCost JSON");
+    const extraCostData = await extraRes.json();
 
-    const deliveryAddressElement = document.getElementById('delivery-address-result');
-    const partnerElement = document.getElementById('partner-result');
-
-    if (deliveryAddressElement) deliveryAddressElement.innerText = deliveryAddress || "";
-    if (partnerElement) partnerElement.innerText = partner || "";
-
-    // 추가 항목 업데이트 (DATA BASE, 포함/불포함비용 등)
     const keysToLoad = [
       { jsonKey: "DATA BASE", elementId: "data-description" },
       { jsonKey: "includedInfo", elementId: "includedInfo" },
@@ -109,23 +108,29 @@ async function updateDeliveryInfoAndDetails() {
     ];
 
     keysToLoad.forEach(({ jsonKey, elementId }) => {
-      const description = data[jsonKey]?.description || "";
       const el = document.getElementById(elementId);
-      if (el) {
+      if (!el) return;
+
+      let description = "";
+
+      if (jsonKey === "DATA BASE") {
+        description = extraCostData[jsonKey] || "";
+        el.innerText = description;
+      } else {
+        description = extraCostData[jsonKey]?.description || "";
         el.innerHTML = `<ul>${description
           .replace(/\\li/g, "<li>")
           .replace(/\\\/li/g, "</li>")}</ul>`.replace(/\n/g, "<br>");
       }
     });
 
-    console.log("✅ All delivery info and description fields updated");
-  } catch (error) {
-    console.error("🚨 Error fetching or parsing POE JSON:", error);
+  } catch (err) {
+    console.error("❌ ExtraCost fetch error:", err);
   }
 }
 
 // POE 드롭다운 값이 변경될 때마다 실행
-poeDropdown.addEventListener("change", updateDeliveryInfoAndDetails);
+poeDropdown.addEventListener("change", updateAllInfo);
 
 //-----------------------------------------------------------------------------------------
 // resetDropdown 함수 변경
