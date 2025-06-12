@@ -102,26 +102,28 @@
   <div class="form-container-right">
     <h2>현지 비용</h2>
       <div class="result-row">
-        <p id="basic-delivery-label" class="toggle-label" onclick="toggleSection(this, 'basic-delivery-description')">
-          <span class="arrow">▶</span> 기본 배송 비용
-        </p>
+      <p id="basic-delivery-label" class="toggle-label" onclick="toggleSection(this, 'basic-delivery-description')">
+        <span class="arrow">▶</span> 기본 배송 비용
+      </p>
         <span id="basic-delivery-value">None</span>
       </div>
       
       <div id="basic-delivery-description" class="region-info" style="display: none;">
-        <div id="basic-delivery-summary"></div>
-      </div>
+        <!-- 요약 -->
+        <div id="basic-delivery-summary">1-30CBM<br>진행 전에 견적 요청 필수</div>
       
-      <div class="sub-toggle-group">
-        <p class="toggle-label sub-item" onclick="toggleSection(this, 'includedInfo')">
-          <span class="arrow">▶</span> 포함비용
-        </p>
-        <div id="includedInfo" class="region-info" style="display: none;"></div>
-        
-        <p class="toggle-label sub-item" onclick="toggleSection(this, 'excludedInfo')">
-          <span class="arrow">▶</span> 불포함비용
-        </p>
-        <div id="excludedInfo" class="region-info" style="display: none;"></div>
+        <!-- 포함/불포함 토글 그룹 (이제 안으로 포함됨) -->
+        <div class="sub-toggle-group">
+          <p class="toggle-label sub-item" onclick="toggleSection(this, 'includedInfo')">
+            <span class="arrow">▶</span> 포함비용
+          </p>
+          <div id="includedInfo" class="region-info" style="display: none;"></div>
+      
+          <p class="toggle-label sub-item" onclick="toggleSection(this, 'excludedInfo')">
+            <span class="arrow">▶</span> 불포함비용
+          </p>
+          <div id="excludedInfo" class="region-info" style="display: none;"></div>
+        </div>
       </div>
     
     <div class="additional-costs">
