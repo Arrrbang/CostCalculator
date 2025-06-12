@@ -86,6 +86,20 @@
         position: relative; /* ✅ 기준점 보장 */
       }
 
+
+/*공통컨텐츠*/
+      h2 {
+        background-color: #8BC34A;
+        color: white;
+        padding: 10px 0;
+        margin: 0;
+        border-radius: 5px 5px 0 0;
+        font-size: 1.2rem;
+      }
+/*-----------------------------------*/
+
+
+
       .info-column {
         flex: 0 0 500px;           /* 원하는 폭으로 조정 가능 */
         min-width: 400px;
@@ -166,14 +180,13 @@
       }
 
 
-            
       .form-container-right {
         background-color: #ffffff;
-        padding: 40px;                  /* 패딩도 늘림 */
-        border-radius: 12px;            /* 둥글기 더 강조 가능 */
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.10);  /* 그림자 좀 더 강하게 */
-        width: 95%;                     /* 폭 조금 더 늘림 */
-        max-width: 800px;              /* 최대폭 두 배로 */
+        padding: 10px 15px;
+        border-radius: 12px; 
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.10); 
+        width: 95%;   
+        max-width: 800px; 
         margin: 0 auto 30px;
         text-align: left;
         min-height: auto;
@@ -268,14 +281,7 @@
             
 
 /*----------------여기까지------------------*/
-                  h2 {
-                    background-color: #8BC34A;
-                    color: white;
-                    padding: 10px 0;
-                    margin: 0;
-                    border-radius: 5px 5px 0 0;
-                    font-size: 1.2rem;
-                  }
+
                  
                   
                   .sub-toggle-group .toggle-label {
