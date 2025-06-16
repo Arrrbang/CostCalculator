@@ -986,6 +986,17 @@ function updateHeavyItemDropdown() {
     }
   });
 }
+
+document.getElementById("heavyitemrow").addEventListener("click", () => {
+  const details = document.getElementById("heavyitem-details");
+  const label   = document.getElementById("heavyitem-toggle");
+
+  const hidden = details.style.display === "none";
+  details.style.display = hidden ? "block" : "none";
+  label.textContent     = `${hidden ? "▼" : "▶"} HEAVY ITEM CHARGE`;
+});
+
+
 //----------------------storage charge 계산-----------------
 function updatestorageperiodDropdown() {
   const storageData = basicExtraCost["STORAGE CHARGE"];
