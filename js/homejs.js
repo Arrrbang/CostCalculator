@@ -69,6 +69,36 @@ function getPathFromURL() {
 }
 
 
+async function fetchMapInfo(fullPath) {
+  const parts = fullPath.split("/");
+  if (parts.length < 2) return null;
+
+  const regionFolder = parts[1]; // 예: "WestAsia"
+  const mapJsonUrl = `https://arrrbang.github.io/CostCalculator/mappage/${regionFolder}.json`;
+
+  try {
+    const res = await fetch(mapJsonUrl);
+    if (!res.ok) throw new Error("Map JSON fetch failed");
+    const mapData = await res.json();
+
+    for (const item of mapData) {
+      if (!Array.isArray(item.links)) continue;
+      const matched = item.links.find(link => link.path === fullPath);
+      if (matched) {
+        return {
+          name: item.name || "",
+          partner: matched.type || ""
+        };
+      }
+    }
+  } catch (err) {
+    console.error("❌ mappage fetch error:", err);
+  }
+
+  return null;
+}
+
+// 🔹 메인 업데이트 함수
 async function updateAllInfo() {
   const path = getPathFromURL();
   const poeValue = poeDropdown.value;
@@ -78,27 +108,14 @@ async function updateAllInfo() {
     return;
   }
 
-  const parts = path.split("/"); 
-  if (parts.length >= 5) {
-    const countryPart  = parts[2];   
-    const partnerPart  = parts[3];  
-    const cityPart     = parts[4];  
-
-    // 도시 이름을 Title-Case로, 국가·파트너는 전부 대문자
-    const toTitle = (str) =>
-      str.split(/[\s-_]+/)
-         .map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
-         .join(" ");
-
-    const cityLabel    = toTitle(cityPart); 
-    const countryLabel = countryPart.toUpperCase();
-    const partnerLabel = partnerPart.toUpperCase();
-
-    document.getElementById("delivery-address-result").innerText =
-      `${cityLabel}, ${countryLabel}`;
-    document.getElementById("partner-result").innerText = partnerLabel;
+  // 🔸 mappage에서 name 및 type 가져와서 DOM에 반영
+  const mapInfo = await fetchMapInfo(path);
+  if (mapInfo) {
+    document.getElementById("delivery-address-result").innerText = mapInfo.name;
+    document.getElementById("partner-result").innerText = mapInfo.partner;
+  } else {
+    console.warn("📭 No matching mappage entry found for path:", path);
   }
-
     const basePath = "https://arrrbang.github.io/CostCalculator";
     const tableJsonPath = `${basePath}/${path}/poeis${poeValue}_tariff.json`;
     const modifiedPath = path.replace(/\/[^/]+\/?$/, "");
