@@ -13,7 +13,7 @@ function initExtraCosts () {
     .sort((a, b) => +(a.match(/\d+/)) - +(b.match(/\d+/)));
 
   /* 2) DOM 생성 */
-  costKeys.forEach(key => {
+  costKeys.forEach((key, idx) => {
     /* result-row ------------------------------ */
     const row   = document.createElement("div");
     row.className = "result-row";
@@ -36,6 +36,12 @@ function initExtraCosts () {
     desc.id        = `${key}-description`;
     container.appendChild(desc);
 
+    /* ✅ 짝수줄 회색 배경 */
+    if (idx % 2 === 0) {
+      row.classList.add("striped-background");
+      desc.classList.add("striped-background");
+    }
+
     /* 3) 토글 기능 ----------------------------- */
     label.textContent  = `▶ ${basicExtraCost[key].name || ""}`;
     desc.style.display = "none";
@@ -45,6 +51,7 @@ function initExtraCosts () {
       label.textContent  = `${hidden ? "▼" : "▶"} ${basicExtraCost[key].name || ""}`;
     });
   });
+
 
   /* 4) 계산 함수 ― updateExtraCostResult 사용 */
   const recalc = () => costKeys.forEach(updateExtraCostResult);
