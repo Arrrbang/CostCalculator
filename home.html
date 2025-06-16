@@ -140,12 +140,10 @@
       <span class="result-label" id="stair-charge-toggle">
         ▶ STAIR CHARGE OPTIONS
       </span>
-      <span class="result-value" id="stair-charge">미확인</span>
+      <span class="result-value" id="stair-charge"></span>
     </div>
     
-    <!-- ② 설명 먼저, 그 아래 드롭다운 2개 -->
     <p id="stair-description" class="charge-info" style="display:none;">
-      기본 $100 / 12층 이상 $150
     </p>
     
     <div id="stair-charge-details" style="display:none;">
@@ -165,19 +163,25 @@
       </div>
     
     </div>
-  
-      <div class="result-row" id="heavyitemrow">
-        <span class="result-label" style="font-size: 1rem; font-weight: bold;">HEAVY ITEM CHARGE</span>
-        <select id="heavyitemunit">
-          <option value="">중량 화물 개수 선택</option>
-        </select>
-      </div>
-      <div class="result-row">
+      
+      <!-- HEAVY ITEM CHARGE OPTIONS -->
+      <div class="result-row" id="heavyitemrow" style="cursor: pointer;">
+        <span class="result-label" style="font-size: 1rem; font-weight: bold;" id="heavyitem-toggle">
+          ▶ HEAVY ITEM CHARGE
+        </span>
         <span class="result-value" id="heavyitem-value">None</span>
       </div>
-      <p id="heavyitem-description" class="charge-info">
-      </p>
-  
+      
+      <div id="heavyitem-details" style="display: none;">
+        <div class="heavy-row">
+          <select id="heavyitemunit">
+            <option value="">중량 화물 개수 선택</option>
+          </select>
+        </div>
+        <p id="heavyitem-description" class="charge-info"></p>
+      </div>
+
+      
       <div class="result-row" id="storagerow">
         <span class="result-label" style="font-size: 1rem; font-weight: bold;">STORAGE CHARGE</span>
         <select id="storageperiod">
