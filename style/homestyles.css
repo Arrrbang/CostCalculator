@@ -395,6 +395,7 @@
                 text-align: left;
                 font-weight: bold;
                 padding-left: 10px;
+              cursor:pointer;       /* 마우스 올리면 손가락 모양 */
               }
             
               .result-value {
@@ -532,6 +533,8 @@
                 }
             
                 .charge-info {
+                    display:none;         /* 처음엔 안 보이도록 */
+                    margin:0 0 8px 0;
                   font-size: 0.8rem;
                   margin: 0 auto;
                   text-align: left;
