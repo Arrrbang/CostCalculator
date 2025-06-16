@@ -98,6 +98,32 @@ async function fetchMapInfo(fullPath) {
   return null;
 }
 
+    //additional info 가져오기
+    function fillBasicDeliverySummary(extraCostData) {
+      const summaryDiv = document.getElementById("basic-delivery-summary");
+      if (!summaryDiv) return;
+    
+      let idx = 1;
+      let html = "";                       // <li> 들을 모을 문자열
+    
+      while (extraCostData[`additional-info-${idx}`]) {
+        const info = extraCostData[`additional-info-${idx}`];
+        const name = info.name || "";
+        const desc = (info.description || "").replace(/\n/g, "<br>");
+    
+        // ▸ 이름만 진하게, 설명은 일반 텍스트
+        html += `
+          <li style="margin-bottom:6px;">
+            <strong>${name}</strong><br>
+            <span>${desc}</span>
+          </li>`;
+        idx++;
+      }
+    
+      // 최종 삽입 (ul 리스트로 감싸기)
+      summaryDiv.innerHTML = `<ul style="padding-left:18px; margin:0;">${html}</ul>`;
+    }
+
 // 🔹 메인 업데이트 함수
 async function updateAllInfo() {
   const path = getPathFromURL();
@@ -137,8 +163,7 @@ async function updateAllInfo() {
     if (!extraRes.ok) throw new Error("Failed to fetch extraCost JSON");
     
     const extraCostData = await extraRes.json();
-    window.extraCostData = extraCostData;        // 필요 시 전역 저장
-    fillBasicDeliverySummary(extraCostData);
+    window.extraCostData = extraCostData; 
     
     const keysToLoad = [
       { jsonKey: "DATA BASE", elementId: "data-description" },
@@ -173,6 +198,8 @@ async function updateAllInfo() {
     console.error("❌ ExtraCost fetch error:", err);
   }
 }
+
+    fillBasicDeliverySummary(extraCostData);
 
 // POE 드롭다운 값이 변경될 때마다 실행
 poeDropdown.addEventListener("change", updateAllInfo);
@@ -310,31 +337,6 @@ async function fetchData() {
     // 화폐 단위 저장
     currencySymbol = extraCostData["화폐단위"] || "";
 
-    //additional info 가져오기
-    function fillBasicDeliverySummary(extraCostData) {
-      const summaryDiv = document.getElementById("basic-delivery-summary");
-      if (!summaryDiv) return;
-    
-      let idx = 1;
-      let html = "";                       // <li> 들을 모을 문자열
-    
-      while (extraCostData[`additional-info-${idx}`]) {
-        const info = extraCostData[`additional-info-${idx}`];
-        const name = info.name || "";
-        const desc = (info.description || "").replace(/\n/g, "<br>");
-    
-        // ▸ 이름만 진하게, 설명은 일반 텍스트
-        html += `
-          <li style="margin-bottom:6px;">
-            <strong>${name}</strong><br>
-            <span>${desc}</span>
-          </li>`;
-        idx++;
-      }
-    
-      // 최종 삽입 (ul 리스트로 감싸기)
-      summaryDiv.innerHTML = `<ul style="padding-left:18px; margin:0;">${html}</ul>`;
-    }
 
     // 링크 업데이트
     if (Array.isArray(tableData.links) && tableData.links.length > 0) {
@@ -601,10 +603,11 @@ function updateBasicDeliveryCost() {
 
   // 결과 업데이트
   result.textContent = costValue;
-
-    const descriptionElement = document.getElementById("basic-delivery-summary");
-    if (descriptionElement) {
-      descriptionElement.innerHTML = descriptionValue.replace(/\n/g, "<br>");
+  
+/* 기본 배송 설명은 basic-delivery-description 영역에만 표시 */
+    const descBox = document.getElementById("basic-delivery-description");
+    if (descBox) {
+      descBox.innerHTML = `<div>${descriptionValue.replace(/\n/g, "<br>")}</div>` + descBox.innerHTML;
     }
   }
 
