@@ -135,35 +135,39 @@
     <div id="extra-cost-wrapper" style="display: none;">
       <div id="extra-costs" class="extra-costs"></div>
 
-                <!-- STAIR CHARGE OPTIONS 추가 -->
-      <div class="result-row" id="stairchargetitle">
-        <span class="result-label" style="font-size: 1rem; font-weight: bold;">STAIR CHARGE OPTIONS</span>
-      </div>
-      <div class="result-row" id="stair-charge-options">
+    <!-- STAIR CHARGE OPTIONS -->
+    <div class="result-row" id="stairchargetitle" style="cursor: pointer;">
+      <span class="result-label" style="font-size: 1rem; font-weight: bold;" id="stair-charge-toggle">
+        ▶ STAIR CHARGE OPTIONS
+      </span>
+    </div>
+    
+    <!-- 🔽 토글 대상 전체 묶음 -->
+    <div id="stair-charge-details" style="display: none;">
+      <div class="result-row">
         <div class="stair-container">
-        <span class="stairchargelabel">CBM</span>
-        <select id="staircbm">
-          <option value="">이동 CBM 선택</option>
-        </select>
+          <span class="stairchargelabel">CBM</span>
+          <select id="staircbm">
+            <option value="">이동 CBM 선택</option>
+          </select>
         </div>
       </div>
-      <div class="result-row" id="stair-charge-options">
+      <div class="result-row">
         <div class="stair-container">
-        <span class="stairchargelabel">FLOOR</span>
-        <select id="stairfloor">
-          <option value="">이동 층 선택</option>
-        </select>
+          <span class="stairchargelabel">FLOOR</span>
+          <select id="stairfloor">
+            <option value="">이동 층 선택</option>
+          </select>
         </div>
       </div>
-  
-          <!-- ●STAIR CHARGE 결과 -->
       <div class="result-row" id="stair-charge-row">
         <span class="result-label"></span>
         <span class="result-value" id="stair-charge">None</span>
       </div>
-        <p id="stair-description" class="charge-info">
+      <p id="stair-description" class="charge-info">
         This is a description for stair carry.
-        </p>
+      </p>
+    </div>
   
       <div class="result-row" id="heavyitemrow">
         <span class="result-label" style="font-size: 1rem; font-weight: bold;">HEAVY ITEM CHARGE</span>
