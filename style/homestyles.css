@@ -400,6 +400,37 @@
   box-sizing: border-box;
 }
 
+/*STORAGE CHARGE 관련*/
+#storagerow {
+  border-top: 1px dashed #8BC34A;
+  margin-top: 10px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#storage-toggle {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#storage-value {
+  font-size: 1rem;
+  text-align: right;
+}
+
+.storage-row {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+#storageperiod {
+  width: 180px;
+  padding: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
 
 
     /* 드롭다운 스타일 */
@@ -542,24 +573,6 @@
               }
             
 
-            
-            
-                  #storagerow {
-                 border-top: 1px dashed #8BC34A; /* 초록색 구분선 */
-                 margin-top: 10px; /* 위쪽 간격 */
-                 padding-top: 10px; /* 구분선과 텍스트 간격 */
-                }
-                 #storageperiod {
-                  width: 180px; /* 드롭다운 크기 설정 */
-                  padding: 8px; /* 내부 여백 */
-                  font-size: 1rem; /* 폰트 크기 */
-                  box-sizing: border-box; /* 패딩 포함 크기 계산 */
-                }
-            
-                   #storage-value {
-                  text-align: right; /* 텍스트를 오른쪽으로 정렬 */
-                  margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
-                }
             
                 .charge-info {
                     display:none;         /* 처음엔 안 보이도록 */
