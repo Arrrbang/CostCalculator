@@ -338,6 +338,44 @@
   background-color:#f7f7f7;   /* 원하는 회색 코드로 변경 가능 */
 }
 
+/*STAIR CARRY CHARGE 관련*/
+
+#stairchargetitle {
+  border-top: 1px dashed #8BC34A;
+  margin-top: 10px;
+  padding: 10px 0;
+  display:flex;                  /* 제목·값 좌우 배치 */
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.stair-row {
+  display:flex;
+  align-items:center;
+  gap:12px;                      /* 라벨-드롭다운 간격 */
+  margin:8px 0;
+}
+     .stair-container { 
+    display: flex;
+    justify-content: flex-end; /* 라벨을 오른쪽 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    gap: 30px; /* 라벨과 드롭다운 간의 간격 */
+    width: 100%; /* 부모 컨테이너의 너비를 채우기 */
+  }
+
+.stairchargelabel {
+  width:70px;                    /* 라벨 고정폭, 필요시 조절 */
+  white-space:nowrap;
+}
+
+    /* 드롭다운 스타일 */
+    #staircbm, #stairfloor {
+      width: 180px; /* 드롭다운 너비 */
+      padding: 8px; /* 내부 여백 */
+      font-size: 1rem; /* 폰트 크기 */
+      box-sizing: border-box; /* 패딩 포함 크기 계산 */
+    }
+
 /*----------------여기까지------------------*/
 
                  
@@ -469,38 +507,9 @@
                 margin: 0 10px; /* 좌우 여백 */
               }
             
-              /* 추가 비용 섹션 */
-               #stairchargetitle {
-                 border-top: 1px dashed #8BC34A; /* 초록색 구분선 */
-                 margin-top: 10px; /* 위쪽 간격 */
-                 padding-top: 10px; /* 구분선과 텍스트 간격 */
-                }
+
             
-            
-                  /* CBM과 FLOOR의 라벨 스타일 */
-            
-                 .stair-container { 
-                display: flex;
-                justify-content: flex-end; /* 라벨을 오른쪽 정렬 */
-                align-items: center; /* 수직 가운데 정렬 */
-                gap: 30px; /* 라벨과 드롭다운 간의 간격 */
-                width: 100%; /* 부모 컨테이너의 너비를 채우기 */
-              }
-            
-                .stairchargelabel {
-                  text-align: right; /* 텍스트 우측 정렬 */
-                  font-size: 1rem; /* 기본 폰트 크기 */
-                  white-space: nowrap; /* 텍스트 줄바꿈 방지 */
-                }
-            
-                /* 드롭다운 스타일 */
-                #staircbm, #stairfloor {
-                  width: 180px; /* 드롭다운 너비 */
-                  padding: 8px; /* 내부 여백 */
-                  font-size: 1rem; /* 폰트 크기 */
-                  box-sizing: border-box; /* 패딩 포함 크기 계산 */
-                }
-            
+
                 #heavyitemrow {
                  border-top: 1px dashed #8BC34A; /* 초록색 구분선 */
                  margin-top: 10px; /* 위쪽 간격 */
