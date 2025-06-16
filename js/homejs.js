@@ -304,6 +304,8 @@ async function fetchData() {
 
     // 데이터 업데이트
     basicExtraCost = extraCostData;
+    window.basicExtraCost = extraCostData;   // 🔹 전역(window)에 복사
+    document.dispatchEvent(new Event("basicCostReady")); // 🔹 데이터 준비 알림
     dataNonDiplomat = tableData.nonDiplomat || {};
     dataDiplomat = tableData.diplomat || {};
     containerTypes = tableData.containerType || [];
