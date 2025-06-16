@@ -301,7 +301,7 @@
       text-align: left;
     }
     .region-info ul {
-      padding-left: 2px;
+      padding-left: 16px;
       margin: 0;
     }
     .region-info li {
@@ -325,7 +325,7 @@
 
       /*포함 비용&불포함 비용 들여쓰기*/
       .toggle-label.sub-item {
-        padding-left: 16px; /* 들여쓰기 */
+        padding-left: 2px; /* 들여쓰기 */
         margin-left: 0;      /* 기존 제거 */
       }
 
