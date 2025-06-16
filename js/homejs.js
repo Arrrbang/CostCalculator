@@ -641,7 +641,6 @@ function updateDiplomatSensitiveResult(categoryKey) {
   const valueElement = document.getElementById(`${categoryKey}-value`);
   const descriptionElement = document.getElementById(`${categoryKey}-description`);
 
-  if (labelElement) labelElement.textContent = categoryData.name || "";
   if (valueElement) valueElement.textContent = result;
   if (descriptionElement) {
     const descriptionText = categoryData.description || "";
@@ -860,7 +859,6 @@ function updateExtraCostResult(categoryKey) {
   const valueElement = document.getElementById(`${categoryKey}-value`);
   const descriptionElement = document.getElementById(`${categoryKey}-description`);
 
-  if (labelElement) labelElement.textContent = categoryData.name || "";
   if (valueElement) valueElement.textContent = result;
   if (descriptionElement) {
     const descriptionText = categoryData.description || "";
