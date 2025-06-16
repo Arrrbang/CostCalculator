@@ -183,20 +183,27 @@
 
       </div>
 
-      
-      <div class="result-row" id="storagerow">
-        <span class="result-label" style="font-size: 1rem; font-weight: bold;">STORAGE CHARGE</span>
-        <select id="storageperiod">
-          <option value="">보관 기간 선택</option>
-        </select>
-      </div>
-      <div class="result-row">
+      <!-- STORAGE CHARGE OPTIONS -->
+      <div class="result-row" id="storagerow" style="cursor: pointer;">
+        <span class="result-label" style="font-size: 1rem; font-weight: bold;" id="storage-toggle">
+          ▶ STORAGE CHARGE
+        </span>
         <span class="result-value" id="storage-value">None</span>
       </div>
-      <p id="storage-description" class="charge-info">
-      </p>
+      
+      <div id="storage-details" style="display: none;">
+        <p id="storage-description" class="charge-info">
+        </p>
+        <div class="storage-row">
+          <select id="storageperiod">
+            <option value="">보관 기간 선택</option>
+          </select>
+        </div>
+      </div>
+      
     </div>
   </div>
+  
 </div>
 </div>
   <script src="js/homejs.js"></script>
