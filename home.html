@@ -136,37 +136,34 @@
       <div id="extra-costs" class="extra-costs"></div>
 
     <!-- STAIR CHARGE OPTIONS -->
-    <div class="result-row" id="stairchargetitle" style="cursor: pointer;">
-      <span class="result-label" style="font-size: 1rem; font-weight: bold;" id="stair-charge-toggle">
+    <div class="result-row" id="stairchargetitle" style="cursor:pointer;">
+      <span class="result-label" id="stair-charge-toggle">
         ▶ STAIR CHARGE OPTIONS
       </span>
+      <span class="result-value" id="stair-charge">미확인</span>
     </div>
     
-    <!-- 🔽 토글 대상 전체 묶음 -->
-    <div id="stair-charge-details" style="display: none;">
-      <div class="result-row">
-        <div class="stair-container">
-          <span class="stairchargelabel">CBM</span>
-          <select id="staircbm">
-            <option value="">이동 CBM 선택</option>
-          </select>
-        </div>
+    <!-- ② 설명 먼저, 그 아래 드롭다운 2개 -->
+    <p id="stair-description" class="charge-info" style="display:none;">
+      기본 $100 / 12층 이상 $150
+    </p>
+    
+    <div id="stair-charge-details" style="display:none;">
+    
+      <div class="stair-row">
+        <label class="stairchargelabel" for="staircbm">CBM</label>
+        <select id="staircbm">
+          <option value="">이동 CBM 선택</option>
+        </select>
       </div>
-      <div class="result-row">
-        <div class="stair-container">
-          <span class="stairchargelabel">FLOOR</span>
-          <select id="stairfloor">
-            <option value="">이동 층 선택</option>
-          </select>
-        </div>
+    
+      <div class="stair-row">
+        <label class="stairchargelabel" for="stairfloor">FLOOR</label>
+        <select id="stairfloor">
+          <option value="">이동 층 선택</option>
+        </select>
       </div>
-      <div class="result-row" id="stair-charge-row">
-        <span class="result-label"></span>
-        <span class="result-value" id="stair-charge">None</span>
-      </div>
-      <p id="stair-description" class="charge-info">
-        This is a description for stair carry.
-      </p>
+    
     </div>
   
       <div class="result-row" id="heavyitemrow">
