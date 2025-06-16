@@ -34,7 +34,7 @@
     container.innerHTML = "";
 
   const costKeys = Object.keys(basicExtraCost)
-        .filter(key => /^basic-cost-\\d+$/.test(key))       // ← basic-cost-숫자만
+        .filter(key => /^basic-cost-\d+$/.test(key))       // ← basic-cost-숫자만
         .sort((a, b) => {
       const ai = +(a.match(/\d+/) || [0])[0];
       const bi = +(b.match(/\d+/) || [0])[0];
