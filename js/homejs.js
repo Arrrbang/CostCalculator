@@ -78,6 +78,27 @@ async function updateAllInfo() {
     return;
   }
 
+  const parts = path.split("/"); 
+  if (parts.length >= 5) {
+    const countryPart  = parts[2];   
+    const partnerPart  = parts[3];  
+    const cityPart     = parts[4];  
+
+    // 도시 이름을 Title-Case로, 국가·파트너는 전부 대문자
+    const toTitle = (str) =>
+      str.split(/[\s-_]+/)
+         .map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
+         .join(" ");
+
+    const cityLabel    = toTitle(cityPart); 
+    const countryLabel = countryPart.toUpperCase();
+    const partnerLabel = partnerPart.toUpperCase();
+
+    document.getElementById("delivery-address-result").innerText =
+      `${cityLabel}, ${countryLabel}`;
+    document.getElementById("partner-result").innerText = partnerLabel;
+  }
+
     const basePath = "https://arrrbang.github.io/CostCalculator";
     const tableJsonPath = `${basePath}/${path}/poeis${poeValue}_tariff.json`;
     const modifiedPath = path.replace(/\/[^/]+\/?$/, "");
@@ -88,9 +109,6 @@ async function updateAllInfo() {
     const tariffRes = await fetch(tableJsonPath);
     if (!tariffRes.ok) throw new Error("Failed to fetch tariff JSON");
     const tariffData = await tariffRes.json();
-
-    document.getElementById('delivery-address-result').innerText = tariffData.delivery || "";
-    document.getElementById('partner-result').innerText = tariffData.partner || "";
 
   } catch (err) {
     console.error("❌ Tariff fetch error:", err);
