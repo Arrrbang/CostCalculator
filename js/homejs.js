@@ -934,16 +934,16 @@ function calculateStairCharge() {
   }
 }
 
+//토글부분
 document.getElementById("stairchargetitle").addEventListener("click", () => {
   const details = document.getElementById("stair-charge-details");
-  const label = document.getElementById("stair-charge-toggle");
-  const isHidden = details.style.display === "none";
+  const desc    = document.getElementById("stair-description");
+  const label   = document.getElementById("stair-charge-toggle");
 
-  // toggle block <-> none
-  details.style.display = isHidden ? "block" : "none";
-
-  // toggle ▶ <-> ▼
-  label.textContent = `${isHidden ? "▼" : "▶"} STAIR CHARGE OPTIONS`;
+  const hidden = details.style.display === "none";
+  details.style.display = hidden ? "block" : "none";
+  desc.style.display    = hidden ? "block" : "none";
+  label.textContent     = `${hidden ? "▼" : "▶"} STAIR CHARGE OPTIONS`;
 });
 
 //--------------------------------heavy items-----------------------------
