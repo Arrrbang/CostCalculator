@@ -164,6 +164,7 @@ async function updateAllInfo() {
     
     const extraCostData = await extraRes.json();
     window.extraCostData = extraCostData; 
+    fillBasicDeliverySummary(extraCostData);
     
     const keysToLoad = [
       { jsonKey: "DATA BASE", elementId: "data-description" },
@@ -198,8 +199,6 @@ async function updateAllInfo() {
     console.error("❌ ExtraCost fetch error:", err);
   }
 }
-
-    fillBasicDeliverySummary(extraCostData);
 
 // POE 드롭다운 값이 변경될 때마다 실행
 poeDropdown.addEventListener("change", updateAllInfo);
