@@ -135,8 +135,11 @@ async function updateAllInfo() {
   try {
     const extraRes = await fetch(extraCostJsonPath);
     if (!extraRes.ok) throw new Error("Failed to fetch extraCost JSON");
+    
     const extraCostData = await extraRes.json();
-
+    window.extraCostData = extraCostData;        // 필요 시 전역 저장
+    fillBasicDeliverySummary(extraCostData);
+    
     const keysToLoad = [
       { jsonKey: "DATA BASE", elementId: "data-description" },
       { jsonKey: "includedInfo", elementId: "includedInfo" },
@@ -308,25 +311,30 @@ async function fetchData() {
     currencySymbol = extraCostData["화폐단위"] || "";
 
     //additional info 가져오기
-    let additionalInfoIndex = 1;  // 추가 정보 항목의 번호 (예: 1, 2, 3 ...)
-      while (extraCostData[`additional-info-${additionalInfoIndex}`]) {
-        const additionalInfo = extraCostData[`additional-info-${additionalInfoIndex}`];
-
-        // name을 추가
-        const labelElement = document.getElementById(`additional-info-${additionalInfoIndex}-label`);
-        if (labelElement) {
-          labelElement.textContent = additionalInfo.name || "";  // name을 업데이트
-        }
-
-        // description을 추가
-        const descriptionElement = document.getElementById(`additional-info-${additionalInfoIndex}-description`);
-      if (descriptionElement) {
-        const descriptionText = additionalInfo.description || "";
-        descriptionElement.innerHTML = descriptionText.replace(/\n/g, "<br>");  // \n을 <br>로 변경하여 HTML로 삽입
+    function fillBasicDeliverySummary(extraCostData) {
+      const summaryDiv = document.getElementById("basic-delivery-summary");
+      if (!summaryDiv) return;
+    
+      let idx = 1;
+      let html = "";                       // <li> 들을 모을 문자열
+    
+      while (extraCostData[`additional-info-${idx}`]) {
+        const info = extraCostData[`additional-info-${idx}`];
+        const name = info.name || "";
+        const desc = (info.description || "").replace(/\n/g, "<br>");
+    
+        // ▸ 이름만 진하게, 설명은 일반 텍스트
+        html += `
+          <li style="margin-bottom:6px;">
+            <strong>${name}</strong><br>
+            <span>${desc}</span>
+          </li>`;
+        idx++;
       }
-
-        additionalInfoIndex++;  // 다음 항목으로 넘어감
-      }
+    
+      // 최종 삽입 (ul 리스트로 감싸기)
+      summaryDiv.innerHTML = `<ul style="padding-left:18px; margin:0;">${html}</ul>`;
+    }
 
     // 링크 업데이트
     if (Array.isArray(tableData.links) && tableData.links.length > 0) {
@@ -360,6 +368,7 @@ async function fetchData() {
     updateHeavyItemDropdown();
     updatestorageperiodDropdown();
     calculateTotalCost();
+    
 
     const stairDescription = basicExtraCost["STAIR CHARGE"]?.description || "";
     const stairDescriptionElement = document.getElementById("stair-description");
