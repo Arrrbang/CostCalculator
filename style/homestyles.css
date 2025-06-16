@@ -334,6 +334,9 @@
         text-align: left; /* ← 추가 */
       }
             
+.striped-background {
+  background-color:#f7f7f7;   /* 원하는 회색 코드로 변경 가능 */
+}
 
 /*----------------여기까지------------------*/
 
