@@ -41,38 +41,45 @@
       return ai - bi;
     });
 
-    costKeys.forEach((key) => {
-      // result-row
-      const row = document.createElement("div");
-      row.className = "result-row";
+costKeys.forEach((key, idx) => {
+  // result-row
+  const row = document.createElement("div");
+  row.className = "result-row";
 
-      const label = document.createElement("span");
-      label.className = "result-label";
-      label.style.cssText = "font-size:1rem;font-weight:normal";
-      label.id = `${key}-label`;
+  const label = document.createElement("span");
+  label.className = "result-label";
+  label.style.cssText = "font-size:1rem;font-weight:normal";
+  label.id = `${key}-label`;
 
-      const value = document.createElement("span");
-      value.className = "result-value";
-      value.id = `${key}-value`;
+  const value = document.createElement("span");
+  value.className = "result-value";
+  value.id = `${key}-value`;
 
-      row.append(label, value);
-      container.appendChild(row);
+  row.append(label, value);
+  container.appendChild(row);
 
-      // description
-      const desc = document.createElement("p");
-      desc.className = "charge-info";
-      desc.id = `${key}-description`;
-      container.appendChild(desc);
-      
+  // description
+  const desc = document.createElement("p");
+  desc.className = "charge-info";
+  desc.id = `${key}-description`;
+  container.appendChild(desc);
+
+  /* ✅ 짝수 인덱스일 때 회색 배경 적용 */
+  if (idx % 2 === 0) {
+    row.classList.add("striped-background");
+    desc.classList.add("striped-background");
+  }
+
   /* 토글 기능 ----------------------------- */
-      label.textContent   = `▶ ${basicExtraCost[key].name || ""}`;
-      desc.style.display  = "none";
-      label.addEventListener("click", () => {
-        const hidden = desc.style.display === "none";
-        desc.style.display = hidden ? "block" : "none";
-        label.textContent  = `${hidden ? "▼" : "▶"} ${basicExtraCost[key].name || ""}`;
-      });
-    });
+  label.textContent   = `▶ ${basicExtraCost[key].name || ""}`;
+  desc.style.display  = "none";
+  label.addEventListener("click", () => {
+    const hidden = desc.style.display === "none";
+    desc.style.display = hidden ? "block" : "none";
+    label.textContent  = `${hidden ? "▼" : "▶"} ${basicExtraCost[key].name || ""}`;
+  });
+});
+
 
     // 재계산
     const recalc = () => costKeys.forEach(updateDiplomatSensitiveResult);
