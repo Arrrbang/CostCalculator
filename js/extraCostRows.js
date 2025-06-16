@@ -55,3 +55,6 @@ function initExtraCosts () {
 
   recalc();  // 최초 1회
 }
+
+document.addEventListener("basicCostReady", initExtraCosts);
+if (window.basicExtraCost) initExtraCosts();
