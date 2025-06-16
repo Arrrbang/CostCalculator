@@ -3111,30 +3111,6 @@
     ]
   },
   {
-    "name": "Monterey Park, CA",
-    "lat": 34.0625,
-    "lng": -118.1228,
-    "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/NorthAmerica/usa/hitek/monterey_park",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "name": "Alhambra, CA",
-    "lat": 34.0953,
-    "lng": -118.1270,
-    "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/NorthAmerica/usa/hitek/alhambra",
-        "color": "blue"
-      }
-    ]
-  },
-  {
     "name": "San Diego, CA",
     "lat": 32.7157,
     "lng": -117.1611,
@@ -5313,18 +5289,6 @@
     ]
   },
   {
-    "name": "Newark, NJ",
-    "lat": 40.7357,
-    "lng": -74.1724,
-    "links": [
-      {
-        "type": "HI-TEK",
-        "path": "data/NorthAmerica/usa/hitek/newark",
-        "color": "blue"
-      }
-    ]
-  },
-  {
     "name": "Cliffside Park, NJ",
     "lat": 40.8210,
     "lng": -73.9879,
@@ -5587,6 +5551,11 @@
       {
         "type": "YESG2M(PLS)",
         "path": "data/NorthAmerica/usa/pls/areaNJ1",
+        "color": "blue"
+      },
+      {
+        "type": "HI-TEK",
+        "path": "data/NorthAmerica/usa/hitek/newark",
         "color": "blue"
       }
     ]
@@ -8589,6 +8558,11 @@
         "type": "YESG2M(PLS)",
         "path": "data/NorthAmerica/usa/pls/bloomsburg-pittston-wilkes_barre",
         "color": "blue"
+      },
+      {
+        "type": "keyword",
+        "path": "data/NorthAmerica/usa/keyword/wilkes_barre",
+        "color": "blue"
       }
     ]
   },
@@ -8605,18 +8579,6 @@
       {
         "type": "YESG2M(PLS)",
         "path": "data/NorthAmerica/usa/pls/reading",
-        "color": "blue"
-      }
-    ]
-  },
-  {
-    "name": "Wilkes-Barre, PA",
-    "lat": 41.2459,
-    "lng": -75.8813,
-    "links": [
-      {
-        "type": "keyword",
-        "path": "data/NorthAmerica/usa/keyword/wilkes_barre",
         "color": "blue"
       }
     ]
