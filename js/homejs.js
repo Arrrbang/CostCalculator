@@ -934,6 +934,17 @@ function calculateStairCharge() {
   }
 }
 
+document.getElementById("stairchargetitle").addEventListener("click", () => {
+  const details = document.getElementById("stair-charge-details");
+  const label = document.getElementById("stair-charge-toggle");
+  const isHidden = details.style.display === "none";
+
+  // toggle block <-> none
+  details.style.display = isHidden ? "block" : "none";
+
+  // toggle ▶ <-> ▼
+  label.textContent = `${isHidden ? "▼" : "▶"} STAIR CHARGE OPTIONS`;
+});
 
 //--------------------------------heavy items-----------------------------
 function updateHeavyItemDropdown() {
