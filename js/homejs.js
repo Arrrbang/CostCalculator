@@ -1094,6 +1094,15 @@ function updatestorageperiodDropdown() {
   });
 }
 
+document.getElementById("storagerow").addEventListener("click", () => {
+  const details = document.getElementById("storage-details");
+  const label   = document.getElementById("storage-toggle");
+
+  const hidden = details.style.display === "none";
+  details.style.display = hidden ? "block" : "none";
+  label.textContent     = `${hidden ? "▼" : "▶"} STORAGE CHARGE`;
+});
+
 //--------------------------------------------------------------------------------
 
 
