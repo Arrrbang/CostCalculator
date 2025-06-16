@@ -63,6 +63,15 @@
       desc.className = "charge-info";
       desc.id = `${key}-description`;
       container.appendChild(desc);
+      
+  /* 토글 기능 ----------------------------- */
+      label.textContent   = `▶ ${basicExtraCost[key].name || ""}`;
+      desc.style.display  = "none";
+      label.addEventListener("click", () => {
+        const hidden = desc.style.display === "none";
+        desc.style.display = hidden ? "block" : "none";
+        label.textContent  = `${hidden ? "▼" : "▶"} ${basicExtraCost[key].name || ""}`;
+      });
     });
 
     // 재계산
