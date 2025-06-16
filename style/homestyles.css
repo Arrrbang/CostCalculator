@@ -352,8 +352,9 @@
 .stair-row {
   display:flex;
   align-items:center;
-  gap:12px;                      /* 라벨-드롭다운 간격 */
+  gap:12px;
   margin:8px 0;
+  padding-left: 16px;
 }
      .stair-container { 
     display: flex;
