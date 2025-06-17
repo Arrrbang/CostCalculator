@@ -123,7 +123,30 @@ async function fetchMapInfo(fullPath) {
       // 최종 삽입 (ul 리스트로 감싸기)
       summaryDiv.innerHTML = `<ul style="padding-left:18px; margin:0;">${html}</ul>`;
     }
-
+  //포함&불포함 비용 리스트 가져오기기
+  function renderInfoList(data, targetId) {
+    const box = document.getElementById(targetId);
+    if (!box) return;
+  
+    const items = Array.isArray(data) ? data : [data];
+  
+    const html = items.map(({ name = "", description = "" }) => {
+      let descHtml = description.replace(/\n/g, "<br>");
+      if (descHtml.includes("\\li")) {
+        descHtml = `<ul style="margin:0 0 0 16px;">${descHtml
+          .replace(/\\li/g, "<li>")
+          .replace(/\\\/li/g, "</li>")}</ul>`;
+      }
+  
+      return `
+        <div class="info-item">
+          <p class="tit">• ${name}</p>
+          <p class="desc">${descHtml}</p>
+        </div>`;
+    }).join("");
+  
+    box.innerHTML = html;
+  
 // 🔹 메인 업데이트 함수
 async function updateAllInfo() {
   const path = getPathFromURL();
@@ -161,40 +184,21 @@ async function updateAllInfo() {
   try {
     const extraRes = await fetch(extraCostJsonPath);
     if (!extraRes.ok) throw new Error("Failed to fetch extraCost JSON");
-    
     const extraCostData = await extraRes.json();
-    window.extraCostData = extraCostData; 
+    window.extraCostData = extraCostData;
     fillBasicDeliverySummary(extraCostData);
-    
-    const keysToLoad = [
-      { jsonKey: "DATA BASE", elementId: "data-description" },
-      { jsonKey: "includedInfo", elementId: "includedInfo" },
-      { jsonKey: "excludedInfo", elementId: "excludedInfo" }
-    ];
-
-    keysToLoad.forEach(({ jsonKey, elementId }) => {
-      const el = document.getElementById(elementId);
-      if (!el) return;
-    
-      const data = extraCostData[jsonKey];
-      if (!data || typeof data.description !== 'string') return;
-    
-      let description = data.description;
-    
-      if (jsonKey === "DATA BASE") {
-        el.innerText = description;
-      } else if (description.includes("\\li") && description.includes("\\/li")) {
-        // li 태그 형식으로 감싸진 경우
-        const listHtml = `<ul>${description
-          .replace(/\\li/g, "<li>")
-          .replace(/\\\/li/g, "</li>")
-          .replace(/\n/g, "<br>")}</ul>`;
-        el.innerHTML = listHtml;
-      } else {
-        // 단순 줄바꿈 또는 일반 텍스트
-        el.innerHTML = description.replace(/\n/g, "<br>");
-      }
-    });
+  
+    // DATA BASE는 기존 방식 유지
+    const baseBox = document.getElementById("data-description");
+    const baseInfo = extraCostData["DATA BASE"];
+    if (baseBox && baseInfo?.description) {
+      baseBox.innerText = baseInfo.description;
+    }
+  
+    // 포함/불포함 항목 렌더링
+    renderInfoList(extraCostData["includedInfo"], "includedInfo");
+    renderInfoList(extraCostData["excludedInfo"], "excludedInfo");
+  
   } catch (err) {
     console.error("❌ ExtraCost fetch error:", err);
   }
