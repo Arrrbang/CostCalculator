@@ -575,7 +575,7 @@ function updateBasicDeliveryCost() {
 /* 기본 배송 설명은 basic-delivery-description 영역에만 표시 */
     const descBox = document.getElementById("basic-delivery-description");
     if (descBox) {
-      descBox.innerHTML = `<div>${descriptionValue.replace(/\n/g, "<br>")}</div>` + descBox.innerHTML;
+      descBox.innerHTML = `<div>${descriptionValue.replace(/\n/g, "<br>")}</div>`;
     }
   }
 
