@@ -302,6 +302,10 @@
   padding-left: 0;
 }
 
+.delivery-desc {
+  margin-bottom: 16px;
+}
+
 /*--------left-container 위아래 여백 맞추기용-----*/
 
 .left-container table {
