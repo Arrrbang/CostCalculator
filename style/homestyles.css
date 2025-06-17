@@ -273,6 +273,12 @@
         font-weight: normal;
         font-size: 1rem;
       }
+
+/*---------Cost 부분 관련------*/
+#basic-delivery-description {
+  margin-bottom: 16px; 
+}
+
 /*--------left-container 위아래 여백 맞추기용-----*/
 
 .left-container table {
