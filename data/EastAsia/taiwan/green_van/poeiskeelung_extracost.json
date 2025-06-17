@@ -1,0 +1,139 @@
+{
+    "links": [
+        {
+            "label": "OFC",
+            "url": "https://www.notion.so/KEELUNG-1990b10191ce80c49c6de00f916e6880?source=copy_link"
+        },
+        {
+            "label": "NOTION",
+            "url": "https://www.notion.so/GREEN-VAN-INTL-CO-LTD-1ee0b10191ce80d5bf01d9c46b028e20"
+        }
+    ],
+    "화폐단위": "$",
+  
+    "basic-cost-1": {
+        "name": "Customs Clearance",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 150,
+            "40HC": 190
+        },
+        "Diplomat": {
+            "20DRY": 150,
+            "40HC": 190
+        }
+    },
+    "basic-cost-2": {
+        "name": "D/O Fee",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 130,
+            "40HC": 130
+        },
+        "Diplomat": {
+            "20DRY": 130,
+            "40HC": 130
+        }
+    },
+    "basic-cost-3": {
+        "name": "THC & Port Charge",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 275,
+            "40HC": 367
+        },
+        "Diplomat": {
+            "20DRY": 275,
+            "40HC": 367
+        }
+    },
+    "basic-cost-4": {
+        "name": "LSS",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 148.2,
+            "40HC": 296.3
+        },
+        "Diplomat": {
+            "20DRY": 148.2,
+            "40HC": 296.3
+        }
+    },
+    "basic-cost-5": {
+        "name": "Customs Inspection Fee",
+        "description": "",
+        "NonDiplomat": {
+            "20DRY": 250,
+            "40HC": 400
+        },
+        "Diplomat": {
+            "20DRY": 250,
+            "40HC": 400
+        }
+    },
+    "extra-cost-1": {
+        "name": "FULL SETTING",
+        "description": "타리프에는 $150/container 라고 되어있음 \n 20ft $180은 이전 이력",
+            "20DRY": 180,
+            "40HC": "별도 문의"
+        },
+    "extra-cost-2": {
+        "name": "LONG CARRY",
+        "description": "타리프에는 $13.5 per CBM 라고 되어있음 \n 계산기 비용은 이전 실제 청구 비용",
+            "20DRY": 250,
+            "40HC": 300
+        },
+    "extra-cost-3": {
+        "name": "SHUTTLE",
+        "description": "타리프에는 $13.5 per CBM 라고 되어있음 \n 계산기 비용은 이전 실제 청구 비용",
+            "20DRY": 250,
+            "40HC": 300
+        },
+    "STAIR CHARGE": {
+        "description": "미확인 별도문의",
+        "CBM단가": 0
+    },
+    "HEAVY ITEM": {
+        "description": "미확인 별도문의",
+        "단위": "ITEM",
+        "단가": 0
+    },
+      "STORAGE CHARGE": {
+        "description": "미확인",
+        "단위": "주",
+        "무료 보관 기간": 0,
+        "보관 비용": {
+          "20DRY": 0,
+          "40HC": 0,
+          "단가": 0,
+          "CBM 범위": {
+            "1-10": 0,
+            "11-15": 0,
+            "16-20": 0,
+            "21-25": 0,
+            "26-30": 0,
+            "31-35": 0,
+            "36-60": 0
+          }
+        }
+      },
+    "additional-info-1": {
+        "name": "VISA거류증(ARC) 또는 워킹 퍼밋 필수",
+        "description": "대만인이 아닐 경우 상기 서류가 없을 경우 아예 통관 자체가 불가함. \n 대만인의 경우 여권 사본, 입국 도장, 세관 신고서, 대만 신분증 앞뒷면으로 통관"
+    },
+    "additional-info-2": {
+        "name": "입국시 공항에서 세관 신고서 발급 필수",
+        "description": "노션에서 자세한 내용 확인 가능"
+    },
+    "includedInfo": {
+        "name": "",
+        "description": ""
+    },
+    "excludedInfo": {
+        "name": "",
+        "description": ""
+    },
+    "DATA BASE": {
+  	  "description": "2025.06. 업데이트"
+    }
+}
