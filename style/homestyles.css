@@ -288,6 +288,20 @@
   padding-left: 0 !important;  /* ← 혹시 있을 패딩도 제거 */
 }
 
+/* 포함비용 제목에만 위 여백 추가하고 왼쪽 여백 제거 */
+.sub-toggle-group > .toggle-label.sub-item:first-of-type {
+  margin-top: 12px;   /* ✅ 포함비용 위 여백 */
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* 불포함비용 (두 번째 제목)은 여백 없이 */
+.sub-toggle-group > .toggle-label.sub-item:not(:first-of-type) {
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
 /*--------left-container 위아래 여백 맞추기용-----*/
 
 .left-container table {
