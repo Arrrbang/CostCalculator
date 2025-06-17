@@ -1663,5 +1663,41 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Hsinchu City, Taiwan",
+    "lat": 24.80361,
+    "lng": 120.96861,
+    "links": [
+      {
+        "path": "data/EastAsia/taiwan/green_van/hsinchu",
+        "type": "GREEN VAN",
+        "continent": "asia"
+      }
+    ]
+  },
+  {
+    "name": "Keelung City, Taiwan",
+    "lat": 25.13089,
+    "lng": 121.74094,
+    "links": [
+      {
+        "path": "data/EastAsia/taiwan/green_van/keelung",
+        "type": "GREEN VAN",
+        "continent": "asia"
+      }
+    ]
+  },
+  {
+    "name": "Taipei City, Taiwan",
+    "lat": 25.105497,
+    "lng": 121.597366,
+    "links": [
+      {
+        "path": "data/EastAsia/taiwan/green_van/taipei",
+        "type": "GREEN VAN",
+        "continent": "asia"
+      }
+    ]
   }
 ]
