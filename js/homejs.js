@@ -1175,7 +1175,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // 모든 카테고리를 동적으로 업데이트
 function updateAllCosts() {
   updateOfcValue(); 
-  // basic 비용 업데이트
+  
   Object.keys(basicExtraCost).forEach((categoryKey) => {
     if (categoryKey.startsWith("basic-cost-")) {
       updateDiplomatSensitiveResult(categoryKey);
@@ -1188,6 +1188,8 @@ function updateAllCosts() {
       updateExtraCostResult(categoryKey);
     }
   });
+
+    calculateTotalCost();
 }
 
 // JSON 데이터 로드 후 호출
