@@ -572,12 +572,24 @@ function updateBasicDeliveryCost() {
   // 결과 업데이트
   result.textContent = costValue;
   
-/* 기본 배송 설명은 basic-delivery-description 영역에만 표시 */
-    const descBox = document.getElementById("basic-delivery-description");
-    if (descBox) {
-      descBox.innerHTML = `<div class="delivery-desc">${descriptionValue.replace(/\n/g, "<br>")}</div>`;
-    }
+  setBasicDeliveryDesc(descriptionValue);
   }
+
+function setBasicDeliveryDesc(descriptionValue) {
+  const descBox = document.getElementById("basic-delivery-description");
+  if (!descBox) return;
+
+  // 기존 .delivery-desc 요소가 있으면 찾고, 없으면 새로 만든다
+  let descElem = descBox.querySelector(".delivery-desc");
+  if (!descElem) {
+    descElem = document.createElement("div");
+    descElem.className = "delivery-desc";
+    descBox.prepend(descElem);          // 설명을 맨 위에 삽입
+  }
+
+  // 내용만 교체
+  descElem.innerHTML = descriptionValue.replace(/\n/g, "<br>");
+}
 
 // CBM 드롭다운 값 변경 시 기본 배송 비용 업데이트
 dropdown.addEventListener("change", updateBasicDeliveryCost);
