@@ -283,6 +283,11 @@
 .info-item .tit  { font-weight: 700; margin:0; }
 .info-item .desc { margin:2px 0 0 16px; font-size:0.9em; }
 
+.sub-toggle-group .toggle-label.sub-item {
+  margin-left: 0 !important;   /* ← 여백 제거 */
+  padding-left: 0 !important;  /* ← 혹시 있을 패딩도 제거 */
+}
+
 /*--------left-container 위아래 여백 맞추기용-----*/
 
 .left-container table {
