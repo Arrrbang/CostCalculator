@@ -279,6 +279,10 @@
   margin-bottom: 16px; 
 }
 
+.info-item { margin-bottom: 10px; }
+.info-item .tit  { font-weight: 700; margin:0; }
+.info-item .desc { margin:2px 0 0 16px; font-size:0.9em; }
+
 /*--------left-container 위아래 여백 맞추기용-----*/
 
 .left-container table {
