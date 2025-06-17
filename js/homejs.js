@@ -146,6 +146,7 @@ async function fetchMapInfo(fullPath) {
     }).join("");
   
     box.innerHTML = html;
+  }
   
 // 🔹 메인 업데이트 함수
 async function updateAllInfo() {
