@@ -50,7 +50,14 @@
         "name": "사용 가능 선사",
         "description": "서중물류"
     },
-
+    "includedInfo": {
+        "name": "제목 입력1",
+        "description": "포함 비용 설명 입력"
+    },
+    "excludedInfo": {
+        "name": "제목 입력2",
+        "description": "불포함 비용 설명 입력"
+    }
     "DATA BASE": {
   	  "description": "기초자료 : 2024.10 이트너스 비딩조사"
     }
