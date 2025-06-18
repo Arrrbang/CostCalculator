@@ -100,8 +100,8 @@
         "description": ""
       },
       {
-        "name": "사용 가능 선사",
-        "description": "부산발 - KMTC/NAMSUNG : T/T 3 DAYS\n인천발 - KMTC/NAMSUNG : T/T 5 DAYS"
+        "name": "KOCUSAI로 단독컨테이너 OSAKA 입항 진행이력 없음",
+        "description": ""
       }
     ],
     "includedInfo": [
@@ -123,8 +123,7 @@
         "name": "보관료",
         "description": "단독 컨테이너의 경우 보관료 실비 청구"
       }
-    ]
-
+    ],
     "DATA BASE": {
   	  "description": "2025.04.01 입항 기준 타리프"
     }
