@@ -1,14 +1,9 @@
 {
-  "links": [
-    {
-      "label": "INCHEON OFC",
-      "url": "https://www.notion.so/XINGANG-f0e0241542844e1da734e0f66027a704?pvs=4"
-    },
-    {
-      "label": "NOTION",
-      "url": "https://www.notion.so/UNI-WORLD-BEIJING-1af0b10191ce804dabe1d251d5b1a34c"
-    }
-  ],
+"links": [
+  { "label": "busanOFC",    "url": "https://www.notion.so/XINGANG-1990b10191ce80d09ca9f2099cb840ad?source=copy_link"   },
+  { "label": "incheonOFC",  "url": "https://www.notion.so/XINGANG-f0e0241542844e1da734e0f66027a704?pvs=4" },
+  { "label": "partnerInfo", "url": "https://www.notion.so/UNI-WORLD-BEIJING-1af0b10191ce804dabe1d251d5b1a34c"      }
+],
   "화폐단위": "$",
   
   "basic-cost-1": {
