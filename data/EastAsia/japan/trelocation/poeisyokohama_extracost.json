@@ -83,17 +83,35 @@
     "무료 보관 기간": 30,
     "보관 비용 단가": 200
   },
-  
-  "additional-info-1": {
-    "name": "20FT 단독 컨테이너의 경우 고정비용",
-    "description": "20ft 단독인데 사이즈가 작을 경우 별도 문의 필요.\n10cbm 이상은 모두 고정값. "
+    "STORAGE CHARGE": {
+    "description": "30일 무료 보관 진행",
+    "단위": "일",
+    "무료 보관 기간": 30,
+    "보관 비용": {
+      "단가": 200
+    }
   },
-    "additional-info-2": {
-        "name": "사용 가능 선사",
-        "description": "부산발 - KMTC/NAMSUNG : T/T 3 DAYS\n인천발 - KMTC/NAMSUNG : T/T 5 DAYS"
-    },
-
+	"additional-info": [
+	  {
+	    "name": "20FT 단독 컨테이너의 경우 고정비용",
+	    "description": "20ft 단독인데 사이즈가 작을 경우 별도 문의 필요.\n10cbm 이상은 모두 고정값."
+	  },
+	  {
+	    "name": "콘솔의 경우 1인 명의로 통관 진행",
+	    "description": "특별한 사유가 없는 이상 1인 명의로 통관을 진행하는 것이 저렴함"
+	  },
+	  {
+	    "name": "사용 가능 선사",
+	    "description": "부산발 - KMTC/NAMSUNG : T/T 3 DAYS\n인천발 - KMTC/NAMSUNG : T/T 5 DAYS"
+	  }
+	],
+	"excludedInfo": [
+	  {
+	    "name": "주의사항",
+	    "description": "새 화물은 조립서비스 대상 제외입니다.\n장식장, 옷장 등 가구 안에 과다한 중량의 화물을 넣은 후 포장은 삼가해 주시기 바랍니다\n기본셋팅이며, 맨션의 경우는 엘리베이터 사용시의 금액입니다.\n피아노, 계단작업, 화물의 특이사항등으로 인한 별도 작업시에는 추가비용이 발생됩니다.\n배송시 발생되는 주차 요금은 별도 청구입니다. \n세관 검사비, 세금은 포함되어 있지 않습니다."
+	  }
+	],
   "DATA BASE": {
-    "description": "업데이트 : 2025.03.11 업데이트"
+	  "description": "2024.06.01 입항부터 적용"
   }
 }
