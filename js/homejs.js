@@ -63,30 +63,27 @@ async function fetchMapInfo(fullPath) {
 }
 
     //additional info 가져오기
-    function fillBasicDeliverySummary(extraCostData) {
-      const summaryDiv = document.getElementById("basic-delivery-summary");
-      if (!summaryDiv) return;
-    
-      let idx = 1;
-      let html = "";                       // <li> 들을 모을 문자열
-    
-      while (extraCostData[`additional-info-${idx}`]) {
-        const info = extraCostData[`additional-info-${idx}`];
-        const name = info.name || "";
-        const desc = (info.description || "").replace(/\n/g, "<br>");
-    
-        // ▸ 이름만 진하게, 설명은 일반 텍스트
-        html += `
-          <li style="margin-bottom:6px;">
-            <strong>${name}</strong><br>
-            <span>${desc}</span>
-          </li>`;
-        idx++;
-      }
-    
-      // 최종 삽입 (ul 리스트로 감싸기)
-      summaryDiv.innerHTML = `<ul style="padding-left:18px; margin:0;">${html}</ul>`;
+const additionalInfos = basicExtraCost["additional-info"];
+if (Array.isArray(additionalInfos)) {
+  additionalInfos.forEach((info) => {
+    const infoDiv = document.createElement("div");
+    infoDiv.className = "additional-info-block";
+
+    const title = document.createElement("strong");
+    title.textContent = info.name || "";
+    infoDiv.appendChild(title);
+
+    if (info.description) {
+      const desc = document.createElement("p");
+      desc.innerHTML = info.description.replace(/\n/g, "<br>");
+      infoDiv.appendChild(desc);
     }
+
+    document.getElementById("additional-costs")?.appendChild(infoDiv);
+  });
+}
+
+
   //포함&불포함 비용 리스트 가져오기기
   function renderInfoList(data, targetId) {
     const box = document.getElementById(targetId);
