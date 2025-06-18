@@ -1,14 +1,22 @@
 {
     "links": [
-        {
-            "label": "OFC",
-            "url": "https://www.notion.so/KEELUNG-1990b10191ce80c49c6de00f916e6880?source=copy_link"
-        },
-        {
-            "label": "NOTION",
-            "url": "https://www.notion.so/GREEN-VAN-INTL-CO-LTD-1ee0b10191ce80d5bf01d9c46b028e20"
-        }
+      { "label": "busanOFC",    "url": "https://www.notion.so/KEELUNG-1990b10191ce80c49c6de00f916e6880?source=copy_link"},
+      { "label": "incheonOFC",  "url": ""},
+      { "label": "partnerInfo", "url": "https://www.notion.so/GREEN-VAN-INTL-CO-LTD-1ee0b10191ce80d5bf01d9c46b028e20"}
     ],
+	
+	"ofc": {
+	  "busan": {
+	    "shipping-line1": {
+	      "name": "KMTC",
+	      "tt": "T/T 2 days"
+	    },
+	    "shipping-line2": {
+	      "name": "NAMSUNG",
+	      "tt": "T/T 4 days"
+	    }
+	  }
+	},
     "화폐단위": "$",
   
     "basic-cost-1": {
