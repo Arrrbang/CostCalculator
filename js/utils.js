@@ -56,14 +56,12 @@ function toggleSection (labelEl, contentId) {
 
 /* ▷ 파트너/부산·인천 OFC 링크 초기화 */
 function initializeLinks () {
-  [podBusanLink, podIncheonLink].forEach(a => {
-    if (a) { a.href="#"; a.classList.add("disabled-link"); }
+  // 세 버튼 모두 ‘숨김’ 상태로 시작
+  [podBusanLink, podIncheonLink, partnerLink3].forEach(btn => {
+    if (!btn) return;
+    btn.style.display = "none";   // ← 화면에 보이지 않도록
+    btn.onclick = null;           // 혹시 남아있을 click 제거
   });
-
-  if (partnerLink3) {
-    partnerLink3.onclick = null;
-    partnerLink3.classList.add("disabled-link");
-  }
 }
 
 /* ▷ POD TT 리스트 렌더 */
