@@ -3,6 +3,33 @@
 --------------------------------------------------*/
 "use strict";
 
+function updateLinks(links = []) {
+  // ① 일단 두 버튼을 모두 숨김
+  if (podBusanLink)   podBusanLink.style.display = "none";
+  if (podIncheonLink) podIncheonLink.style.display = "none";
+
+  // ② Busan / Incheon / Partner 링크 찾기
+  const lBusan   = links.find(l => l.label?.toLowerCase() === "busanofc"   && l.url);
+  const lIncheon = links.find(l => l.label?.toLowerCase() === "incheonofc" && l.url);
+  const lPartner = links.find(l => l.label?.toLowerCase() === "partnerinfo"&& l.url);
+
+  // ③ 링크가 있을 때만 버튼을 보이게 하고 클릭 이벤트 부여
+  if (lBusan && podBusanLink) {
+    podBusanLink.style.display = "inline-block";
+    podBusanLink.onclick = () => window.open(lBusan.url, "_blank");
+  }
+  if (lIncheon && podIncheonLink) {
+    podIncheonLink.style.display = "inline-block";
+    podIncheonLink.onclick = () => window.open(lIncheon.url, "_blank");
+  }
+  if (lPartner && partnerLink3) {
+    partnerLink3.style.display = "inline-block";
+    partnerLink3.onclick = () => window.open(lPartner.url, "_blank");
+  } else if (partnerLink3) {
+    partnerLink3.style.display = "none";
+  }
+}
+
 /* ▷ URL 파라미터에서 path 추출 */
 function getPathFromURL () {
   const urlParams = new URLSearchParams(window.location.search);
