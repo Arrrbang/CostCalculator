@@ -4,6 +4,31 @@
   { "label": "incheonOFC",  "url": "https://www.notion.so/XINGANG-f0e0241542844e1da734e0f66027a704?pvs=4" },
   { "label": "partnerInfo", "url": "https://www.notion.so/UNI-WORLD-BEIJING-1af0b10191ce804dabe1d251d5b1a34c"      }
 ],
+	
+"ofc": {
+  "busan": {
+    "shipping-line1": {
+      "name": "KMTC",
+      "tt": "T/T 2 days"
+    },
+    "shipping-line2": {
+      "name": "NAMSUNG",
+      "tt": "T/T 6 days"
+    }
+  },
+  "incheon": {
+    "shipping-line1": {
+      "name": "KMTC",
+      "tt": "T/T 10 days",
+      "note": "*특이사항 기재"
+    },
+    "shipping-line2": {
+      "name": "NAMSUNG",
+      "tt": "T/T 3 days"
+    }
+  }
+},
+	
   "화폐단위": "$",
   
   "basic-cost-1": {
