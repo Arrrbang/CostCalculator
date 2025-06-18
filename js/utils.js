@@ -66,24 +66,6 @@ function initializeLinks () {
   }
 }
 
-/* ▷ 링크 실제 반영 */
-function updateLinks (links) {
-  if (!Array.isArray(links)) { initializeLinks(); return; }
-
-  if (podBusanLink && links[0]?.url) {
-    podBusanLink.onclick = () => window.open(links[0].url, "_blank");
-    podBusanLink.classList.remove("disabled-link");
-  }
-  if (podIncheonLink && links[1]?.url) {
-    podIncheonLink.onclick = () => window.open(links[1].url, "_blank");
-    podIncheonLink.classList.remove("disabled-link");
-  }
-  if (partnerLink3 && links[2]?.url) {
-    partnerLink3.onclick = () => window.open(links[2].url, "_blank");
-    partnerLink3.classList.remove("disabled-link");
-  }
-}
-
 /* ▷ POD TT 리스트 렌더 */
 function renderPodTT (ofcData) {
   const listBusan   = document.getElementById("podpusan");
