@@ -62,7 +62,7 @@
       background-color: #d0ebd2;
     }
 
-#link2 {
+#link3 {
   position: absolute;
   top: 155px;         /* 기존 버튼보다 60px 아래 */
   left: 20px;
@@ -83,7 +83,7 @@
   cursor: pointer;
 }
 
-#link2:hover {
+#link3:hover {
   background-color: #d0ebd2;
 }
 
