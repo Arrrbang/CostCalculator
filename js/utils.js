@@ -41,7 +41,7 @@ function initializeLinks () {
 
 /* ▷ 링크 실제 반영 */
 function updateLinks (links) {
-  if (!Array.isArray(links) || links.length < 3) { initializeLinks(); return; }
+  if (!Array.isArray(links)) { initializeLinks(); return; }
 
   if (podBusanLink && links[0]?.url) {
     podBusanLink.onclick = () => window.open(links[0].url, "_blank");
