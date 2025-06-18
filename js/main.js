@@ -17,25 +17,38 @@ document.addEventListener("DOMContentLoaded", async ()=>{
   }
 
   // ▼ 이벤트 --------------------------
-  poeDropdown     .addEventListener("change", ()=>{ fetchData().then(updateAllCosts); });
-  dropdown        .addEventListener("change", ()=>{ updateAllCosts(); updateStairChargeDropdown(); });
-  containerDropdown.addEventListener("change", ()=>{ updateAllCosts(); toggleConsoleNote(); });
+  poeDropdown.addEventListener("change", () => {
+    fetchData().then(() => {
+      updateAllInfo();          // ← 추가
+      updateAllCosts();         // ← 기존
+    });
+  });
 
-  [nonDiplomat, diplomat].forEach(chk=>{
-    chk.addEventListener("change", ()=>{
-      if (chk===nonDiplomat && chk.checked) diplomat.checked=false;
-      if (chk===diplomat    && chk.checked) nonDiplomat.checked=false;
+  dropdown.addEventListener("change", () => {
+    updateAllInfo();            // CBM 바뀌어도 다시 채움(선택)
+    updateAllCosts();
+    updateStairChargeDropdown();
+  });
+
+  containerDropdown.addEventListener("change", () => {
+    updateAllInfo();            // 컨테이너 바뀔 때도 필요
+    updateAllCosts();
+    toggleConsoleNote();
+  });
+
+  [nonDiplomat, diplomat].forEach(chk => {
+    chk.addEventListener("change", () => {
+      if (chk === nonDiplomat && chk.checked) diplomat.checked = false;
+      if (chk === diplomat && chk.checked)    nonDiplomat.checked = false;
+      updateAllInfo();          // diplomat 구분이 바뀌면 설명도 달라질 수 있음
       updateAllCosts();
     });
   });
 
-  stairCbmDropdown   .addEventListener("change", calculateStairCharge);
-  stairFloorDropdown .addEventListener("change", calculateStairCharge);
+  stairCbmDropdown  .addEventListener("change", calculateStairCharge);
+  stairFloorDropdown.addEventListener("change", calculateStairCharge);
 
   // TOTAL → KRW 변환 모니터링
-  const obs=new MutationObserver(updateKrwValueWithAPI);
-  if (totalCostElement) obs.observe(totalCostElement,{childList:true});
+  const obs = new MutationObserver(updateKrwValueWithAPI);
+  if (totalCostElement) obs.observe(totalCostElement, { childList: true });
 });
-
-/* TOTAL 변화 초기 반영 */
-document.addEventListener("basicCostReady", ()=>{ updateAllCosts(); });
