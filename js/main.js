@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", async ()=>{
   if (path) {
     await initializePoeDropdown(path);
     await fetchData();
+     await updateAllInfo();
     updateAllCosts();
     updateHeavyItemDropdown();
   }
