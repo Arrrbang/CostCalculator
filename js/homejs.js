@@ -19,8 +19,9 @@ const storageperiodDropdown = document.getElementById("storageperiod");
 const storageValue = document.getElementById("storage-value");
 const totalCostElement = document.getElementById("total-value");
 const poeDropdown = document.getElementById("poe-dropdown");
-const link1Element = document.getElementById("link1");
-const link2Element = document.getElementById("link2");
+const podBusanLink   = document.getElementById("pod-link-busan");
+const podIncheonLink = document.getElementById("pod-link-incheon");
+const partnerLink3   = document.getElementById("link3");   // logo-column 버튼
 const notionBackendURL = 'https://notion-backend-liard.vercel.app/notion';
 const ofcValueElement = document.getElementById('average-ofc-value');
 
@@ -166,6 +167,7 @@ async function updateAllInfo() {
     const extraCostData = await extraRes.json();
     window.extraCostData = extraCostData;
     fillBasicDeliverySummary(extraCostData);
+    renderPodTT(extraCostData.ofc);
   
     // DATA BASE는 기존 방식 유지
     const baseBox = document.getElementById("data-description");
@@ -197,42 +199,52 @@ function resetDropdown(dropdownElement, placeholder = "-- CBM 선택 --") {
 
 // 링크 초기화
 function initializeLinks() {
-  link1Element.textContent = "POE를 선택하세요.";
-  link1Element.onclick = null;
-  link1Element.classList.add("disabled-link");
+  // POD 링크(부산‧인천) 초기 비활성
+  [podBusanLink, podIncheonLink].forEach(a => {
+    if (a) { a.href = "#"; a.classList.add("disabled-link"); }
+  });
 
-  link2Element.onclick = null;
-  link2Element.classList.add("disabled-link");
+  // 파트너 버튼 초기화
+  if (partnerLink3) {
+    partnerLink3.onclick = null;
+    partnerLink3.classList.add("disabled-link");
+  }
 }
+
 
 function updateLinks(links) {
-  if (!Array.isArray(links) || links.length < 2) {
-    initializeLinks();
-    return;
+  if (!Array.isArray(links) || links.length < 3) { initializeLinks(); return; }
+
+  // 0️⃣ 부산 OFC
+  if (podBusanLink && links[0]?.url) {
+    podBusanLink.href = links[0].url;
+    podBusanLink.classList.remove("disabled-link");
   }
 
-  // 링크 1
-  if (links[0]?.url) {
-    link1Element.textContent = "노션으로 이동하여 상세운임 조회";
-    link1Element.classList.remove("disabled-link");
-    link1Element.onclick = () => window.open(links[0].url, "_blank");
-  } else {
-    link1Element.textContent = "업무팀에 별도 문의";
-    link1Element.onclick = null;
-    link1Element.classList.add("disabled-link");
+  // 1️⃣ 인천 OFC
+  if (podIncheonLink && links[1]?.url) {
+    podIncheonLink.href = links[1].url;
+    podIncheonLink.classList.remove("disabled-link");
   }
 
-  // 링크 2
-  if (links[1]?.url) {
-    link2Element.classList.remove("disabled-link");
-    link2Element.onclick = () => window.open(links[1].url, "_blank");
-  } else {
-    link2Element.onclick = null;
-    link2Element.classList.add("disabled-link");
+  // 2️⃣ 파트너 정보
+  if (partnerLink3 && links[2]?.url) {
+    partnerLink3.onclick = () => window.open(links[2].url, "_blank");
+    partnerLink3.classList.remove("disabled-link");
   }
 }
 
+function renderPodTT(ofcData) {
+  const listBusan   = document.getElementById("podpusan");
+  const listIncheon = document.getElementById("podincheon");
+  if (!listBusan || !listIncheon || !ofcData) return;
 
+  const makeLi = ({name = "", tt = "", note = ""}) =>
+    `<li>${name} : ${tt}${note ? `<br><span class="note">${note}</span>` : ""}</li>`;
+
+  listBusan.innerHTML   = Object.values(ofcData.busan   || {}).map(makeLi).join("");
+  listIncheon.innerHTML = Object.values(ofcData.incheon || {}).map(makeLi).join("");
+}
 
 async function initializePoeDropdown(path) {
   try {
