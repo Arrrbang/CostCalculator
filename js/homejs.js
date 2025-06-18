@@ -62,27 +62,39 @@ async function fetchMapInfo(fullPath) {
   return null;
 }
 
+
+
     //additional info 가져오기
-const additionalInfos = basicExtraCost["additional-info"];
-if (Array.isArray(additionalInfos)) {
-  additionalInfos.forEach((info) => {
-    const infoDiv = document.createElement("div");
-    infoDiv.className = "additional-info-block";
 
-    const title = document.createElement("strong");
-    title.textContent = info.name || "";
-    infoDiv.appendChild(title);
+function fillBasicDeliverySummary(extraCostData) {
+  const box = document.getElementById("basic-delivery-summary");
+  if (!box) return;
 
-    if (info.description) {
-      const desc = document.createElement("p");
-      desc.innerHTML = info.description.replace(/\n/g, "<br>");
-      infoDiv.appendChild(desc);
-    }
+  let html = "";
+  let idx = 1;
 
-    document.getElementById("additional-costs")?.appendChild(infoDiv);
+  // 배열형(권장) -or- 객체 시리즈 모두 지원
+  const list =
+    Array.isArray(extraCostData["additional-info"])
+      ? extraCostData["additional-info"]
+      : (() => {
+          const tmp = [];
+          while (extraCostData[`additional-info-${idx}`]) {
+            tmp.push(extraCostData[`additional-info-${idx}`]);
+            idx++;
+          }
+          return tmp;
+        })();
+
+  list.forEach(({ name = "", description = "" }) => {
+    html += `<li style="margin-bottom:6px;">
+               <strong>${name}</strong><br>
+               ${description.replace(/\n/g, "<br>")}
+             </li>`;
   });
-}
 
+  box.innerHTML = `<ul style="padding-left:18px;margin:0;">${html}</ul>`;
+}
 
   //포함&불포함 비용 리스트 가져오기기
   function renderInfoList(data, targetId) {
