@@ -24,7 +24,6 @@ const podIncheonLink = document.getElementById("pod-link-incheon");
 const partnerLink3   = document.getElementById("link3");   // logo-column 버튼
 const notionBackendURL = 'https://notion-backend-liard.vercel.app/notion';
 const ofcValueElement = document.getElementById('average-ofc-value');
-const containerDropdown = document.getElementById("container-dropdown");
 const consoleNote       = document.getElementById("console-note");
 
 
