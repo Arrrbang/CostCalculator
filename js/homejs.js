@@ -217,13 +217,13 @@ function updateLinks(links) {
 
   // 0️⃣ 부산 OFC
   if (podBusanLink && links[0]?.url) {
-    podBusanLink.href = links[0].url;
+    podBusanLink.onclick = () => window.open(links[0].url, "_blank");
     podBusanLink.classList.remove("disabled-link");
   }
 
   // 1️⃣ 인천 OFC
   if (podIncheonLink && links[1]?.url) {
-    podIncheonLink.href = links[1].url;
+    podBusanLink.onclick = () => window.open(links[1].url, "_blank");
     podIncheonLink.classList.remove("disabled-link");
   }
 
