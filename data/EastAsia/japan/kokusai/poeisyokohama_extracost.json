@@ -94,16 +94,38 @@
           "단가": 200
         }
     },
-    "additional-info-1": {
+    "additional-info": [
+      {
         "name": "실제 청구서는 US$로 청구됨.",
         "description": ""
-    },
-    "additional-info-2": {
+      },
+      {
         "name": "사용 가능 선사",
         "description": "부산발 - KMTC/NAMSUNG : T/T 3 DAYS\n인천발 - KMTC/NAMSUNG : T/T 5 DAYS"
-    },
+      }
+    ],
+    "includedInfo": [
+      {
+        "name": "PORT CHARGE",
+        "description": "※콘솔의 경우 PORT CHARGE 실비 청구"
+      },
+      {
+        "name": "",
+        "description": ""
+      }
+    ],
+    "excludedInfo": [
+      {
+        "name": "검사 발생 비용 실비 청구",
+        "description": ""
+      },
+      {
+        "name": "보관료",
+        "description": "단독 컨테이너의 경우 보관료 실비 청구"
+      }
+    ]
 
     "DATA BASE": {
-  	  "description": "업데이트 : 2025.05.08\n기초자료 : 2025.04.01 입항 기준 타리프"
+  	  "description": "2025.04.01 입항 기준 타리프"
     }
 }
