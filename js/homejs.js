@@ -24,10 +24,13 @@ const podIncheonLink = document.getElementById("pod-link-incheon");
 const partnerLink3   = document.getElementById("link3");   // logo-column 버튼
 const notionBackendURL = 'https://notion-backend-liard.vercel.app/notion';
 const ofcValueElement = document.getElementById('average-ofc-value');
+const containerDropdown = document.getElementById("container-dropdown");
+const consoleNote       = document.getElementById("console-note");
 
 
 
 //---------------------------------------------------------------------------------
+
 function getPathFromURL() {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get('path'); // 'path' 파라미터의 값을 반환
@@ -187,6 +190,14 @@ async function updateAllInfo() {
 
 // POE 드롭다운 값이 변경될 때마다 실행
 poeDropdown.addEventListener("change", updateAllInfo);
+
+function toggleConsoleNote() {
+  if (containerDropdown.value === "CONSOLE") {
+    consoleNote.style.display = "block";
+  } else {
+    consoleNote.style.display = "none";
+  }
+}
 
 //-----------------------------------------------------------------------------------------
 // resetDropdown 함수 변경
@@ -1205,9 +1216,13 @@ fetchData().then(() => {
 
 poeDropdown.addEventListener("change", updateAllCosts);
 dropdown.addEventListener("change", updateAllCosts);
-containerDropdown.addEventListener("change", updateAllCosts);
+containerDropdown.addEventListener("change", () => {
+  updateAllCosts();
+  toggleConsoleNote();   // ← 한 줄만 추가
+});
 nonDiplomat.addEventListener("change", updateAllCosts);
 diplomat.addEventListener("change", updateAllCosts);
+document.addEventListener("DOMContentLoaded", toggleConsoleNote);
 
 stairCbmDropdown.addEventListener("change", calculateStairCharge);
 stairFloorDropdown.addEventListener("change", calculateStairCharge);
