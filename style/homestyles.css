@@ -474,6 +474,44 @@
       box-sizing: border-box; /* 패딩 포함 크기 계산 */
     }
 
+
+
+/*OFC 관련*/
+
+.pod-section {
+  margin-top: 12px;
+}
+
+.pod-section h4 {
+  margin: 8px 0 4px;
+  font-size: 1rem;
+}
+
+.pod-section ul {
+  padding-left: 16px;
+  margin: 0;
+}
+
+.pod-section li {
+  margin-bottom: 4px;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.pod-section h4 a {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.pod-section h4 a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
 /*----------------여기까지------------------*/
 
                  
