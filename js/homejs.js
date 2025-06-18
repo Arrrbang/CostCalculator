@@ -1099,7 +1099,7 @@ function updatestorageperiodDropdown() {
 
     console.log("costPerUnit 값:", costPerUnit);
 
-    if (costPerUnit === undefined || costPerUnit === 0) {
+    if ((costPerUnit === undefined || costPerUnit === 0) && !(storageCostData["단가"] > 0)) {
       console.error(`컨테이너 ${selectedContainer}에 대한 보관 비용이 없음.`);
       return;
     }
