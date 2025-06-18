@@ -99,11 +99,16 @@ function fillBasicDeliverySummary(extraCostData) {
   //포함&불포함 비용 리스트 가져오기기
   function renderInfoList(data, targetId) {
     const box = document.getElementById(targetId);
-    if (!box) return;
+    if (!box || !data) {
+      if (box) box.innerHTML = "";
+      return;
+    }
   
     const items = Array.isArray(data) ? data : [data];
   
-    const html = items.map(({ name = "", description = "" }) => {
+    const html = items
+    .filter(Boolean)
+    .map(({ name = "", description = "" }) => {
       let descHtml = description.replace(/\n/g, "<br>");
       if (descHtml.includes("\\li")) {
         descHtml = `<ul style="margin:0 0 0 16px;">${descHtml
