@@ -27,7 +27,7 @@
       }
     ],
 "DATA BASE": {
-  "description": ""
+  "description": "2022.01.01~ 타리프"
 },    
     "화폐단위": "$",
   
@@ -80,16 +80,5 @@
           "40HC": 0,
           "단가": 0
         }
-    },
-    "additional-info-1": {
-        "name": "BAF/CAF/LSS 해운비부가비용, DEMURRAGE, 2차배송비, 풀세팅.피아노비용\n중국관세, 콘테이너 청소비,수리비",
-        "description": ""
-    },
-    "additional-info-2": {
-        "name": "사용 가능 선사",
-        "description": "인천발\nCOSCO(코흥), DOOWOO : T/T 1 DAYS"
-    },
-    "DATA BASE": {
-        "description": "2022.01.01~ 타리프"
     }
 }
