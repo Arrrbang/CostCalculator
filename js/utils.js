@@ -9,9 +9,8 @@ function initializeLinks () {
   if (podIncheonLink) podIncheonLink.style.display = "none";
 
   if (partnerLink3) {
-    partnerLink3.style.display   = "inline-block";
-    partnerLink3.onclick         = null;
-    partnerLink3.classList.add("disabled-link");
+    partnerLink3.onclick = null;
+    partnerLink3.classList.add("disabled-link"); // 클릭만 차단
   }
 }
 
