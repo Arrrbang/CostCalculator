@@ -55,3 +55,5 @@ async function updateOfcValue () {
      }
    }
 }
+
+renderOFCOriginNote();
