@@ -40,4 +40,19 @@ async function updateOfcValue () {
     console.error("OFC fetch err:",e);
     ofcValueElement.textContent="오류 발생";
   }
+
+   /* --- 평균 OFC 기준 안내문 -------------------- */
+   const originNoteEl = document.getElementById("ofc-origin-note");
+   if (originNoteEl) {
+     const rawVal = (ofcValueElement.textContent || "")
+                      .replace(/[^\d.]+/g, "");   // 숫자만 추출
+     const isZero = rawVal === "" || Number(rawVal) === 0;
+   
+     if (!isZero && window.ofcOrigin) {
+       originNoteEl.textContent = `평균 OFC는 ${window.ofcOrigin}발 기준`;
+       originNoteEl.style.display = "block";
+     } else {
+       originNoteEl.style.display = "none";
+     }
+   }
 }
