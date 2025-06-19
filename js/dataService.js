@@ -53,7 +53,7 @@ function renderInfoList (data, targetId) {
 
   const items = Array.isArray(data) ? data : [data];
   box.innerHTML = items.filter(Boolean).map(({name="",description=""})=>{
-    let descHtml = description.replace(/\n/g,"<br>");
+    let descHtml = description.replace(/\\n|\n/g, "<br>");
     if (descHtml.includes("\\li")) {
       descHtml = `<ul style="margin:0 0 0 16px;">${descHtml.replace(/\\li/g,"<li>").replace(/\\\/li/g,"</li>")}</ul>`;
     }
