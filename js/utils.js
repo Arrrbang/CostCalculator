@@ -4,13 +4,15 @@
 "use strict";
 
 function initializeLinks () {
-  // Busan·Incheon: 숨김 / Partner: 보이지만 비활성
+  // Busan·Incheon 버튼은 초기에 숨김
   if (podBusanLink)   podBusanLink.style.display = "none";
   if (podIncheonLink) podIncheonLink.style.display = "none";
 
+  // Partner 버튼은 **항상** 보이지만, 처음엔 비활성(회색)
   if (partnerLink3) {
-    partnerLink3.onclick = null;
-    partnerLink3.classList.add("disabled-link"); // 클릭만 차단
+    partnerLink3.style.display   = "inline-block";
+    partnerLink3.onclick         = null;
+    partnerLink3.classList.add("disabled-link");
   }
 }
 
@@ -83,15 +85,6 @@ function toggleSection (labelEl, contentId) {
   if (arrow) arrow.textContent = isOpen ? "▶" : "▼";
 }
 
-/* ▷ 파트너/부산·인천 OFC 링크 초기화 */
-function initializeLinks () {
-  // 세 버튼 모두 ‘숨김’ 상태로 시작
-  [podBusanLink, podIncheonLink, partnerLink3].forEach(btn => {
-    if (!btn) return;
-    btn.style.display = "none";   // ← 화면에 보이지 않도록
-    btn.onclick = null;           // 혹시 남아있을 click 제거
-  });
-}
 
 /* ▷ POD TT 리스트 렌더 */
 function renderPodTT (ofcData) {
