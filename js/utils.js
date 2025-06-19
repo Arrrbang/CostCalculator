@@ -4,50 +4,59 @@
 "use strict";
 
 function initializeLinks () {
-  // Busan·Incheon 버튼은 처음엔 숨기고,
-  // Partner( id="link3" ) 버튼은 항상 보이되 비활성 상태로 둡니다.
-  if (podBusanLink)   { podBusanLink.style.display = "none"; }
-  if (podIncheonLink) { podIncheonLink.style.display = "none"; }
+  // Busan·Incheon: 숨김 / Partner: 보이지만 비활성
+  if (podBusanLink)   podBusanLink.style.display = "none";
+  if (podIncheonLink) podIncheonLink.style.display = "none";
 
   if (partnerLink3) {
-    partnerLink3.style.display   = "inline-block";   // ← 항상 보이게
-    partnerLink3.onclick         = null;             // 아직 URL 없음
-    partnerLink3.classList.add("disabled-link");     // 회색·클릭 차단용 클래스
+    partnerLink3.style.display   = "inline-block";
+    partnerLink3.onclick         = null;
+    partnerLink3.classList.add("disabled-link");
   }
 }
 
-/* ▷ 링크 실제 반영 */
-function updateLinks (links = []) {
-  // Busan / Incheon / Partner 링크 추출
-  const lBusan   = links.find(l => l.label?.toLowerCase() === "busanofc"   && l.url);
-  const lIncheon = links.find(l => l.label?.toLowerCase() === "incheonofc" && l.url);
-  const lPartner = links.find(l => l.label?.toLowerCase() === "partnerinfo"&& l.url);
 
-  // Busan 버튼
-  if (lBusan && podBusanLink) {
+/* ▷ 링크 실제 반영 */
+function updateLinks(links = []) {
+  /* 0. 기본 상태 설정 ----------------------------------- */
+  // Busan·Incheon 버튼은 기본값: 숨김
+  if (podBusanLink)   podBusanLink.style.display = "none";
+  if (podIncheonLink) podIncheonLink.style.display = "none";
+
+  // Partner 버튼은 기본값: 보이지만 비활성
+  if (partnerLink3) {
+    partnerLink3.style.display   = "inline-block";
+    partnerLink3.onclick         = null;
+    partnerLink3.classList.add("disabled-link");
+  }
+
+  /* 1. JSON 배열이 없으면 그대로 종료 -------------------- */
+  if (!Array.isArray(links) || links.length === 0) return;
+
+  /* 2. label 또는 index 로 링크 추출 --------------------- */
+  const pick = (idx, label) =>
+    links.find(l => l.label?.toLowerCase() === label && l.url) || links[idx];
+
+  const lBusan   = pick(0, "busanofc");
+  const lIncheon = pick(1, "incheonofc");
+  const lPartner = pick(2, "partnerinfo");
+
+  /* 3. Busan 버튼 --------------------------------------- */
+  if (lBusan?.url && podBusanLink) {
     podBusanLink.style.display = "inline-block";
     podBusanLink.onclick = () => window.open(lBusan.url, "_blank");
-  } else if (podBusanLink) {
-    podBusanLink.style.display = "none";
   }
 
-  // Incheon 버튼
-  if (lIncheon && podIncheonLink) {
+  /* 4. Incheon 버튼 ------------------------------------- */
+  if (lIncheon?.url && podIncheonLink) {
     podIncheonLink.style.display = "inline-block";
     podIncheonLink.onclick = () => window.open(lIncheon.url, "_blank");
-  } else if (podIncheonLink) {
-    podIncheonLink.style.display = "none";
   }
 
-  // Partner 버튼은 **항상 보임** ― URL 있으면 활성, 없으면 비활성
-  if (partnerLink3) {
-    if (lPartner) {
-      partnerLink3.classList.remove("disabled-link");
-      partnerLink3.onclick = () => window.open(lPartner.url, "_blank");
-    } else {
-      partnerLink3.classList.add("disabled-link");
-      partnerLink3.onclick = null;
-    }
+  /* 5. Partner 버튼 ------------------------------------- */
+  if (lPartner?.url && partnerLink3) {
+    partnerLink3.classList.remove("disabled-link");   // 활성화
+    partnerLink3.onclick = () => window.open(lPartner.url, "_blank");
   }
 }
 
