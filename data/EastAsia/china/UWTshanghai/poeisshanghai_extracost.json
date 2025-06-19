@@ -6,6 +6,7 @@
   ],
   
   "ofc": {
+	  "notion_ofc": "인천",
     "busan": {
       "shipping-line1": {
         "name": "KMTC",
