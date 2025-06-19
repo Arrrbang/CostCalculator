@@ -1,14 +1,50 @@
 {
-    "links": [
-    {
-      "label": "INCHEON OFC",
-      "url": "https://www.notion.so/SHANGHAI-1990b10191ce80e2b69be47a34cceb4f?pvs=4"
+  "links": [
+    { "label": "busanOFC",    "url": "https://www.notion.so/SHANGHAI-1990b10191ce8074b36cd4bb6e202d33?source=copy_link" },
+    { "label": "incheonOFC",  "url": "https://www.notion.so/SHANGHAI-1990b10191ce80e2b69be47a34cceb4f?source=copy_link" },
+    { "label": "partnerInfo", "url": "https://www.notion.so/SEA-DRAGON-INTERNATIONAL-1ba0b10191ce80c6a60cd31e1cd2900a?source=copy_link" }
+  ],
+
+  "ofc": {
+    "busan": {
+      "shipping-line1": {
+        "name": "KMTC",
+        "tt": "T/T 2 days"
+      },
+      "shipping-line2": {
+        "name": "NANSUNG",
+        "tt": "T/T 2 days"
+      }
     },
+    "incheon": {
+      "shipping-line1": {
+        "name": "KMTC",
+        "tt": "T/T 3 days"
+      },
+      "shipping-line2": {
+        "name": "NAMSUNG",
+        "tt": "T/T 2 days"
+      }
+    }
+  },
+
+  "includedInfo": [
     {
-      "label": "NOTION",
-      "url": "https://www.notion.so/SEA-DRAGON-INTERNATIONAL-1ba0b10191ce80c6a60cd31e1cd2900a"
+      "name": "통관료,THC,항잡비,배송서비스",
+      "description": ""
     }
   ],
+
+  "excludedInfo": [
+    {
+      "name": "관세(발생시), 검사비(무조건 발생), 통관지체료, BAF/CAF \nLSS,2차 D/O비용,피아노핸드링차지($100불) \n풀세팅,컨테이너 훼손비용,컨테이너 반납비용 \n계단 작업비 (ELEVATOR 없을 경우) 별도",
+      "description": ""
+    }
+  ],
+
+  "DATA BASE": {
+    "description": "2024.10 이트너스 비딩조사"
+  },
   
   "화폐단위": "$",
 
@@ -68,26 +104,5 @@
     "단위": "일",
     "무료 보관 기간": 0,
     "보관 비용 단가": 0
-  },
-  
-  "additional-info-1": {
-    "name": "포함 비용",
-    "description": "통관료,THC,항잡비,배송서비스"
-  },
-  "additional-info-2": {
-    "name": "불포함 비용",
-    "description": "관세(발생시), 검사비(무조건 발생), 통관지체료, BAF/CAF \nLSS,2차 D/O비용,피아노핸드링차지($100불) \n풀세팅,컨테이너 훼손비용,컨테이너 반납비용 \n계단 작업비 (ELEVATOR 없을 경우) 별도"
-  },
-  "additional-info-3": {
-    "name": "부산발",
-    "description": "KMTC : T/T 2 DAYS \nNAMSUNG : T/T 2 DAYS"
-  },
-  "additional-info-4": {
-    "name": "인천발",
-    "description": "KMTC : T/T 3 DAYS \nNAMSUNG : T/T 3 DAYS"
-  },
-  
-  "DATA BASE": {
-    "description": "업데이트 : 2024.10 이트너스 비딩 조사"
   }
 }
