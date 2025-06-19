@@ -9,7 +9,8 @@ async function updateOfcValue () {
   const selectedCbm   = parseInt(dropdown.value,10);
 
   if (!poe || !containerType || isNaN(selectedCbm)) {
-    ofcValueElement.textContent="";
+    ofcValueElement.textContent = "";
+    renderOFCOriginNote();   // ← 값 초기화할 때도 안내문 갱신
     return;
   }
 
@@ -18,8 +19,10 @@ async function updateOfcValue () {
     if (!res.ok) throw new Error(res.status);
     const notionData = await res.json();
 
-    const matched = notionData.data.find(item=>item.name.toLowerCase()===poe.toLowerCase());
-    if (!matched) { ofcValueElement.textContent=""; return; }
+    const matched = notionData.data.find(
+      item => item.name.toLowerCase() === poe.toLowerCase()
+    );
+    if (!matched) { ofcValueElement.textContent = ""; renderOFCOriginNote(); return; }
 
     // CONSOLE 처리
     if (containerType==="CONSOLE") {
@@ -40,20 +43,9 @@ async function updateOfcValue () {
     console.error("OFC fetch err:",e);
     ofcValueElement.textContent="오류 발생";
   }
-
-   /* --- 평균 OFC 기준 안내문 -------------------- */
-   const originNoteEl = document.getElementById("ofc-origin-note");
-   if (originNoteEl) {
-     const rawVal = ofcValueElement?.textContent?.replace(/[^\d.]/g, "") || "0";
-     const isZero = Number(rawVal) === 0;
    
-     if (!isZero && window.ofcOrigin) {
-       originNoteEl.textContent = `평균 OFC는 ${window.ofcOrigin}발 기준`;
-       originNoteEl.style.display = "block";
-     } else {
-       originNoteEl.style.display = "none";
-     }
-   }
+   renderOFCOriginNote();
+   console.log("OFC Origin:", window.ofcOrigin);
 }
 
-renderOFCOriginNote();
+
