@@ -3,14 +3,30 @@
 --------------------------------------------------*/
 "use strict";
 
+function renderOFCOriginNote () {
+  const originNoteEl = document.getElementById("ofc-origin-note");
+  if (!originNoteEl) return;
+
+  const raw = (ofcValueElement.textContent || "").replace(/[^\d.]/g, "");
+  const isZero = Number(raw) === 0;
+
+  if (!isZero && window.ofcOrigin) {
+    originNoteEl.textContent = `평균 OFC는 ${window.ofcOrigin}발 기준`;
+    originNoteEl.style.display = "block";
+  } else {
+    originNoteEl.style.display = "none";
+  }
+}
+
+/* 2️⃣ 실제 OFC 값을 계산하는 메인 함수 */
 async function updateOfcValue () {
   const poe = poeDropdown.value;
   const containerType = containerDropdown.value;
-  const selectedCbm   = parseInt(dropdown.value,10);
+  const selectedCbm = parseInt(dropdown.value, 10);
 
   if (!poe || !containerType || isNaN(selectedCbm)) {
     ofcValueElement.textContent = "";
-    renderOFCOriginNote();   // ← 값 초기화할 때도 안내문 갱신
+    renderOFCOriginNote();               // 값 초기화 시에도 갱신
     return;
   }
 
