@@ -1,14 +1,68 @@
 {
-    "links": [
+  "links": [
+    { "label": "busanOFC",    "url": "https://www.notion.so/XINGANG-1990b10191ce80d09ca9f2099cb840ad?source=copy_link" },
+    { "label": "incheonOFC",  "url": "https://www.notion.so/XINGANG-1990b10191ce8086a24ef04b57d5ab53?source=copy_link" },
+    { "label": "partnerInfo", "url": "https://www.notion.so/UNI-WORLD-TIANJIN-1ba0b10191ce80d3afeaded6cbc30594?source=copy_link" }
+  ],
+
+  "ofc": {
+	  "notion_OFC": "인천",
+    "busan": {
+      "shipping-line1": {
+        "name": "KMTC",
+        "tt": "T/T 2 days"
+      },
+      "shipping-line2": {
+        "name": "NAMUSNG",
+        "tt": "T/T 6 days"
+      }
+    },
+    "incheon": {
+      "shipping-line1": {
+        "name": "KMTC",
+        "tt": "T/T 10 days",
+        "note": "*인천 출항 부산 T/S라서 손해. 사용하지 않음"
+      },
+      "shipping-line2": {
+        "name": "선사명",
+        "tt": "T/T 3 days"
+      }
+    }
+  },
+
+  "additional-info": [
     {
-      "label": "INCHEON OFC",
-      "url": "https://www.notion.so/UNI-WORLD-TIANJIN-1ba0b10191ce80d3afeaded6cbc30594"
+      "name": "20FT 최소 비용",
+      "description": "20피트 총CBM이 15CBM이하일경우는, Door 비용합계 1350불 기준 적용."
     },
     {
-      "label": "NOTION",
-      "url": "https://www.notion.so/XINGANG-f0e0241542844e1da734e0f66027a704?pvs=4"
+      "name": "콘솔 컨테이너 다수 명의로 통관",
+      "description": "연번처리하지 않고, 화주본인명의 통관시 통관비 250불/인 추가"
+    },
+    {
+      "name": "40피트 FCL의 경우 별도문의",
+      "description": "총CBM 반영하여 별도적용"
     }
   ],
+
+  "includedInfo": [
+    {
+      "name": "통관료,보세운송료,THC등 항잡비,배송비",
+      "description": ""
+    }
+  ],
+
+  "excludedInfo": [
+    {
+      "name": "검역비/정밀검사비/통관세금/BAF,CAF/통관지체료/부두사용료/화물적재비",
+      "description": "화물적재비(货物堆存费)는 2016년8월 천진항폭발사고이후부터 발생한 비용이며, \n천진 CY내에서 아이템별 화물분류작업시 발생하는 비용이며 통상 60불-100불사이임."
+    }
+  ],
+
+  "DATA BASE": {
+    "description": "2024.10 이트너스 비딩 조사"
+  },
+
   "화폐단위": "$",
 
     "extra-cost-1": {
@@ -18,9 +72,26 @@
     "20DRY": 500,
     "40HC": 500
   },
+    "extra-cost-2": {
+    "name": "휴일 작업 비용",
+    "description": "2차운송비+추가인건비(공휴일 근무시 200~300%수당지급 기준)",
+    "CONSOLE":{
+        "1-5": 100,
+        "6-10": 150,
+        "11-20": 200,
+        "21-25": 250
+    },
+    "20DRY": {
+        "1-5": 100,
+        "6-10": 150,
+        "11-20": 200,
+        "21-25": 250
+    },
+    "40HC": "별도 문의"
+  },
   
   "STAIR CHARGE": {
-    "description": "미확인",
+    "description": "엘리베이터가 없는, 3층 이상 운반시 층당 $50추가(4층의 경우 100불).",
     "CBM단가": 0
   },
   "HEAVY ITEM": {
@@ -30,24 +101,21 @@
   },
   "STORAGE CHARGE": {
     "description": "미확인",
-    "단위": "일",
+    "단위": "주",
     "무료 보관 기간": 0,
-    "보관 비용 단가": 0
-  },
-  
-  "additional-info-1": {
-    "name": "20FT 최소 비용",
-    "description": "20피트 총CBM이 15CBM이하일경우는, Door 비용합계 1350불 기준 적용."
-  },
-  "additional-info-2": {
-    "name": "비용 관련",
-    "description": "포함 비용\n통관료,보세운송료,THC등 항잡비,배송비\n\n불포함 비용\n검역비/화물검사비/통관세금/BAF,CAF\n통관지체료/부두사용료/화물적재비\n연번처리하지 않고 화주본인명의 통관시 통관비 $250/인 추가"
-  },
-  "additional-info-3": {
-    "name": "사용 가능 선사 및 T/T",
-    "description": "부산발\nKMTC : T/T 2 days\nNAMSUNG : T/T 6 days\n\n인천발\nKMTC : T/T 10 days *부산에서 t/s해서 가는 거라서 손해\nNAMSUNG : T/T 3 days"
-  },
-  "DATA BASE": {
-    "description": "업데이트 : 2024.10 이트너스 비딩 조사\n2023년 6월 이후 작업 없어 상세 비용 확인 불가"
+    "보관 비용": {
+      "20DRY": 0,
+      "40HC": 0,
+      "단가": 0,
+      "CBM 범위": {
+        "1-10": 0,
+        "11-15": 0,
+        "16-20": 0,
+        "21-25": 0,
+        "26-30": 0,
+        "31-35": 0,
+        "36-60": 0
+      }
+    }
   }
 }
