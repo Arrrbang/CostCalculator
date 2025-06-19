@@ -24,6 +24,9 @@
         "description": ""
       }
     ],
+	"DATA BASE": {
+	  "description": "2022.01.01~ 타리프"
+	},
     "화폐단위": "$",
   
     "basic-cost-1": {
