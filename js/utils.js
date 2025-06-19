@@ -3,30 +3,51 @@
 --------------------------------------------------*/
 "use strict";
 
-function updateLinks(links = []) {
-  // ① 일단 두 버튼을 모두 숨김
-  if (podBusanLink)   podBusanLink.style.display = "none";
-  if (podIncheonLink) podIncheonLink.style.display = "none";
+function initializeLinks () {
+  // Busan·Incheon 버튼은 처음엔 숨기고,
+  // Partner( id="link3" ) 버튼은 항상 보이되 비활성 상태로 둡니다.
+  if (podBusanLink)   { podBusanLink.style.display = "none"; }
+  if (podIncheonLink) { podIncheonLink.style.display = "none"; }
 
-  // ② Busan / Incheon / Partner 링크 찾기
+  if (partnerLink3) {
+    partnerLink3.style.display   = "inline-block";   // ← 항상 보이게
+    partnerLink3.onclick         = null;             // 아직 URL 없음
+    partnerLink3.classList.add("disabled-link");     // 회색·클릭 차단용 클래스
+  }
+}
+
+/* ▷ 링크 실제 반영 */
+function updateLinks (links = []) {
+  // Busan / Incheon / Partner 링크 추출
   const lBusan   = links.find(l => l.label?.toLowerCase() === "busanofc"   && l.url);
   const lIncheon = links.find(l => l.label?.toLowerCase() === "incheonofc" && l.url);
   const lPartner = links.find(l => l.label?.toLowerCase() === "partnerinfo"&& l.url);
 
-  // ③ 링크가 있을 때만 버튼을 보이게 하고 클릭 이벤트 부여
+  // Busan 버튼
   if (lBusan && podBusanLink) {
     podBusanLink.style.display = "inline-block";
     podBusanLink.onclick = () => window.open(lBusan.url, "_blank");
+  } else if (podBusanLink) {
+    podBusanLink.style.display = "none";
   }
+
+  // Incheon 버튼
   if (lIncheon && podIncheonLink) {
     podIncheonLink.style.display = "inline-block";
     podIncheonLink.onclick = () => window.open(lIncheon.url, "_blank");
+  } else if (podIncheonLink) {
+    podIncheonLink.style.display = "none";
   }
-  if (lPartner && partnerLink3) {
-    partnerLink3.style.display = "inline-block";
-    partnerLink3.onclick = () => window.open(lPartner.url, "_blank");
-  } else if (partnerLink3) {
-    partnerLink3.style.display = "none";
+
+  // Partner 버튼은 **항상 보임** ― URL 있으면 활성, 없으면 비활성
+  if (partnerLink3) {
+    if (lPartner) {
+      partnerLink3.classList.remove("disabled-link");
+      partnerLink3.onclick = () => window.open(lPartner.url, "_blank");
+    } else {
+      partnerLink3.classList.add("disabled-link");
+      partnerLink3.onclick = null;
+    }
   }
 }
 
