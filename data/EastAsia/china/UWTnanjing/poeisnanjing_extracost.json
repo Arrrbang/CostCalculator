@@ -10,8 +10,7 @@
     "busan": {
       "shipping-line1": {
         "name": "NAMUSNG",
-        "tt": "T/T 2 days",
-        "note": "*특이사항 기재"
+        "tt": "T/T 2 days"
       },
       "shipping-line2": {
         "name": "KMTC",
