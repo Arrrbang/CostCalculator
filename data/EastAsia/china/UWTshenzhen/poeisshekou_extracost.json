@@ -1,15 +1,33 @@
 {
-    "links": [
-        {
-            "label": "INCHEON OFC",
-            "url": "https://www.notion.so/SHEKOU-1990b10191ce801b957bef965721bcc0?pvs=4"
-        },
-        {
-            "label": "NOTION",
-            "url": "https://www.notion.so/UNI-WORLD-SHENZHEN-1de0b10191ce804bbb5bdbb1beb2d74a"
-        }
+"links": [
+  { "label": "busanOFC",    "url": "https://www.notion.so/SHEKOU-1990b10191ce80069a41dbd7e79c191d?source=copy_link"},
+  { "label": "incheonOFC",  "url": "https://www.notion.so/SHEKOU-1990b10191ce801b957bef965721bcc0?pvs=4"},
+  { "label": "partnerInfo", "url": "https://www.notion.so/UNI-WORLD-SHENZHEN-1de0b10191ce804bbb5bdbb1beb2d74a"}
     ],
-
+	
+	"ofc": {
+	  "busan": {
+	    "shipping-line1": {
+	      "name": "KMTC",
+	      "tt": "T/T 3 days"
+	    },
+	    "shipping-line2": {
+	      "name": "NAMSUNG",
+	      "tt": "T/T 3 days"
+	    }
+	  },
+	  "incheon": {
+	    "shipping-line1": {
+	      "name": "KMTC",
+	      "tt": "T/T 5 days"
+	    },
+	    "shipping-line2": {
+	      "name": "NAMSUNG",
+	      "tt": "T/T 8 days"
+	    }
+	  }
+	},
+    
   "화폐단위": "$",
   
   "basic-cost-1": {
@@ -70,20 +88,22 @@
     "무료 보관 기간": 0,
     "보관 비용 단가": 0
   },
-  
-  "additional-info-1": {
-    "name": "Exclude charge 불포함 비용",
-    "description": "세금,BAF/CAF, 컨테이너 지체료, 항구 지체료, 20'검사비(~$155)"
-  },
-  "additional-info-2": {
+"additional-info": [
+  {
     "name": "외교관 화물",
     "description": "영사관 이주화물 PORT NANSHA 진행(일반 비용에 $500추가)"
   },
-  "additional-info-3": {
-    "name": "사용 가능 선사",
-    "description": "부산발 - KMTC/NAMUSNG : T/T 3 DAYS \n인천발 - KMTC/NAMUSNG : T/T 5~8 DAYS"
-  },
-  
+  {
+    "name": "이케아, 일룸, 한샘 가구 조립불가",
+    "description": ""
+  }
+],
+"excludedInfo": [
+  {
+    "name": "세금,BAF/CAF, 컨테이너 지체료, 항구 지체료, 20'검사비(~$155)",
+    "description": ""
+  }
+],
   "DATA BASE": {
     "description": "업데이트 : 2025.05.07\n기초자료 : 2024 심천 타리프"
   }
