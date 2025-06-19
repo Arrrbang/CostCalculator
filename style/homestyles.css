@@ -512,10 +512,9 @@
   color: #007bff;
 }
 
-.ofc-text {
-  font-size: 0.9rem;
+#average-ofc-value small {
+  font-size: 0.8em;
   color: #555;
-  margin: 4px 0;
 }
 
 
