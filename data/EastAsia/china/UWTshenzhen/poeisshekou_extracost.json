@@ -5,6 +5,7 @@
   { "label": "partnerInfo", "url": "https://www.notion.so/UNI-WORLD-SHENZHEN-1de0b10191ce804bbb5bdbb1beb2d74a?source=copy_link"}
     ],
 	"ofc": {
+	  "notion_OFC": "인천",
 	  "busan": {
 	    "shipping-line1": {
 	      "name": "KMTC",
