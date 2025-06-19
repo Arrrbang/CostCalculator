@@ -120,11 +120,11 @@ async function fetchData () {
     containerTypes    = tariffData.containerType || [];
 
     // 링크
-    if (Array.isArray(tariffData.links) && tariffData.links.length)
-         updateLinks(tariffData.links);
-    else if (Array.isArray(extraCostData.links) && extraCostData.links.length)
-         updateLinks(extraCostData.links);
-    else initializeLinks();
+   if (Array.isArray(extraCostData.links) && extraCostData.links.length) {
+     updateLinks(extraCostData.links);
+   } else {
+     initializeLinks();
+   }
 
     // CBM/컨테이너 드롭다운 갱신
     updateCbmDropdown(dropdown, parseInt(dropdown.value,10)||null);
