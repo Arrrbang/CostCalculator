@@ -10,12 +10,12 @@ function renderOFCOriginNote () {
   const raw = (ofcValueElement.textContent || "").replace(/[^\d.]/g, "");
   const isZero = Number(raw) === 0;
 
-  if (!isZero && window.ofcOrigin) {
-    originNoteEl.textContent = `평균 OFC는 ${window.ofcOrigin}발 기준`;
-    originNoteEl.style.display = "block";
-  } else {
-    originNoteEl.style.display = "none";
-  }
+   if (!isZero && window.ofcOrigin) {
+     const origin = `${window.ofcOrigin}발`;
+     ofcValueElement.textContent = `${origin} $${raw}`;
+   } else {
+     ofcValueElement.textContent = `$${raw || "0.00"}`;
+   }
 }
 
 /* 2️⃣ 실제 OFC 값을 계산하는 메인 함수 */
