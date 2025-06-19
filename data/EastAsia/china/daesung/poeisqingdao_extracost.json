@@ -1,25 +1,36 @@
 {
-    "links": [
-        {
-            "label": "문의 필요",
-            "url": ""
-        },
-        {
-            "label": "NOTION",
-            "url": "https://www.notion.so/DAESUNG-LOGISTICS-CO-LTD-1c40b10191ce80ea8899fdfff03dc8b7"
-        }
+"links": [
+  { "label": "busanOFC",    "url": ""},
+  { "label": "incheonOFC",  "url": ""},
+  { "label": "partnerInfo", "url": "https://www.notion.so/DAESUNG-LOGISTICS-CO-LTD-1c40b10191ce80ea8899fdfff03dc8b7"}
+	],
+	
+	"ofc": [
+	  "incheon": {
+	    "shipping-line1": {
+	      "name": "COSCO",
+	      "tt": "T/T 1 days"
+	    }
+	  }
     ],
+    "includedInfo": [
+      {
+        "name": "화주 1인통관료, 내륙운송료, THC등 항잡비, 배송서비스",
+        "description": ""
+      }
+    ],
+    "excludedInfo": [
+      {
+        "name": "BAF/CAF/LSS 해운비부가비용, DEMURRAGE, 2차배송비, 풀세팅.피아노비용\n중국관세, 콘테이너 청소비, 수리비, 세관검역비",
+        "description": ""
+      }
+    ],
+"DATA BASE": {
+  "description": ""
+},    
     "화폐단위": "$",
   
     "basic-cost-1": {
-        "name": "THC/CLC/INLAND TRUCKING",
-        "description": "",
-        "NonDiplomat": {
-            "20DRY": "INCLUDED",
-            "40HC": "INCLUDED"
-        }
-    },
-    "basic-cost-2": {
         "name": "세관검역비(ISC)",
         "description": "",
         "NonDiplomat": {
@@ -27,7 +38,7 @@
             "40HC": 460
         }
     },
-    "basic-cost-3": {
+    "basic-cost-2": {
         "name": "LSS",
         "description": "",
         "NonDiplomat": {
@@ -35,7 +46,7 @@
             "40HC": 280
         }
     },
-    "basic-cost-4": {
+    "basic-cost-3": {
         "name": "DUTY",
         "description": "실비 진행",
         "NonDiplomat": {
@@ -78,6 +89,6 @@
         "description": "인천발\nCOSCO(코흥), DOOWOO : T/T 1 DAYS"
     },
     "DATA BASE": {
-        "description": "2025/3/20 업데이트"
+        "description": "2022.01.01~ 타리프"
     }
 }
