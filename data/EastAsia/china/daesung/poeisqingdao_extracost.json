@@ -5,7 +5,7 @@
   { "label": "partnerInfo", "url": "https://www.notion.so/DAESUNG-LOGISTICS-CO-LTD-1c40b10191ce80ea8899fdfff03dc8b7"}
 	],
 	
-	"ofc": [
+	"ofc": {
 	  "incheon": {
 	    "shipping-line1": {
 	      "name": "천경해운",
@@ -13,7 +13,7 @@
 	      "note": "*최근에는 QINGDAO 부킹으로 안 나가고 WEIHAI로 많이 나감"
 	    }
 	  }
-    	],
+	},
     "includedInfo": [
       {
         "name": "화주 1인통관료, 내륙운송료, THC등 항잡비, 배송서비스",
