@@ -113,6 +113,7 @@ async function fetchData () {
     currencySymbol    = extraCostData["화폐단위"] || "";
     basicExtraCost    = extraCostData;
     window.basicExtraCost = extraCostData;
+    window.ofcOrigin = extraCostData.ofc?.notion_OFC || "";
     document.dispatchEvent(new Event("basicCostReady"));
 
     dataNonDiplomat   = tariffData.nonDiplomat || {};
