@@ -9,8 +9,8 @@ function renderOFCOriginNote () {
   const isZero = Number(raw) === 0;
 
    if (!isZero && window.ofcOrigin) {
-     const origin = `${window.ofcOrigin}발`;
-     ofcValueElement.textContent = `${origin} $${raw}`;
+     const origin = `<small>${window.ofcOrigin}발</small>`;
+     ofcValueElement.innerHTML = `${origin} $${raw}`;
    } else {
      ofcValueElement.textContent = `$${raw || "0.00"}`;
    }
