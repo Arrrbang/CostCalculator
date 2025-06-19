@@ -19,8 +19,7 @@
   "incheon": {
     "shipping-line1": {
       "name": "KMTC",
-      "tt": "T/T 10 days",
-      "note": "*특이사항 기재"
+      "tt": "T/T 10 days"
     },
     "shipping-line2": {
       "name": "NAMSUNG",
