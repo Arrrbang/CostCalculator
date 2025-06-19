@@ -52,13 +52,14 @@ function renderInfoList (data, targetId) {
   if (!data) { box.innerHTML=""; return; }
 
   const items = Array.isArray(data) ? data : [data];
-  box.innerHTML = items.filter(Boolean).map(({name="",description=""})=>{
-    let descHtml = description.replace(/\\n|\n/g, "<br>");
-    if (descHtml.includes("\\li")) {
-      descHtml = `<ul style="margin:0 0 0 16px;">${descHtml.replace(/\\li/g,"<li>").replace(/\\\/li/g,"</li>")}</ul>`;
-    }
-    return `<div class="info-item"><p class="tit">• ${name}</p><p class="desc">${descHtml}</p></div>`;
-  }).join("");
+   box.innerHTML = items.filter(Boolean).map(({name="",description=""})=>{
+     const nameHtml = name.replace(/\\n|\n/g, "<br>");
+     let descHtml = description.replace(/\\n|\n/g, "<br>");
+     if (descHtml.includes("\\li")) {
+       descHtml = `<ul style="margin:0 0 0 16px;">${descHtml.replace(/\\li/g,"<li>").replace(/\\\/li/g,"</li>")}</ul>`;
+     }
+     return `<div class="info-item"><p class="tit">• ${nameHtml}</p><p class="desc">${descHtml}</p></div>`;
+   }).join("");
 }
 
 /* ▷ POE 드롭다운 로드 */
