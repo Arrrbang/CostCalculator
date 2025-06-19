@@ -4,8 +4,6 @@
 "use strict";
 
 function renderOFCOriginNote () {
-  const originNoteEl = document.getElementById("ofc-origin-note");
-  if (!originNoteEl) return;
 
   const raw = (ofcValueElement.textContent || "").replace(/[^\d.]/g, "");
   const isZero = Number(raw) === 0;
