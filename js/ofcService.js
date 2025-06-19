@@ -44,9 +44,8 @@ async function updateOfcValue () {
    /* --- 평균 OFC 기준 안내문 -------------------- */
    const originNoteEl = document.getElementById("ofc-origin-note");
    if (originNoteEl) {
-     const rawVal = (ofcValueElement.textContent || "")
-                      .replace(/[^\d.]+/g, "");   // 숫자만 추출
-     const isZero = rawVal === "" || Number(rawVal) === 0;
+     const rawVal = ofcValueElement?.textContent?.replace(/[^\d.]/g, "") || "0";
+     const isZero = Number(rawVal) === 0;
    
      if (!isZero && window.ofcOrigin) {
        originNoteEl.textContent = `평균 OFC는 ${window.ofcOrigin}발 기준`;
