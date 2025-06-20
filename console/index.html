@@ -210,6 +210,12 @@
         margin-right: 6px;
         transition: transform 0.3s ease;
       }
+
+      .currency-total {
+        text-align: right;
+        font-weight: bold;
+        margin: 4px 0;
+      }
      
   </style>
 </head>
@@ -380,33 +386,41 @@ document.getElementById('console-select').addEventListener('change', e => {
   }
 
 function updateDomesticDesc() {
-  const poeKey     = poeSel.value;
-  const consoleKey = consoleSel.value;
-  if (!poeKey || !consoleKey) { domesticBox.innerHTML = ""; return; }
+  const poeKey      = poeSel.value;
+  const consoleKey  = consoleSel.value;
+  const cbmRate     = parseFloat(cbmRateInput.value)   || 0;
+  const consoleCbm  = parseFloat(consoleCbmInput.value)|| 0;
 
-  const cbmRate   = parseFloat(cbmRateInput.value)   || 0;
-  const consoleCbm = parseFloat(consoleCbmInput.value) || 0;
-  const node      = gData[poeKey];
-  const company   = node?.console?.[consoleKey] || {};
+  if (!poeKey || !consoleKey) { domesticDesc.innerHTML = ""; return; }
 
-  // ① OFC
-  const ofcUSD = cbmRate * consoleCbm;
-  let html = `OFC : $${ofcUSD.toLocaleString()}`;
+  const node    = gData[poeKey];
+  const company = node?.console?.[consoleKey] || {};
 
-  // ② 나머지 항목
-  Object.entries(company).forEach(([key, obj]) => {
-    if (key === "OFC") return;                   // 혹시 JSON에 OFC 있을 때 제외
-    const cur = obj.CURRENCY || "";
-    const val = obj.단가 ? obj.단가 * consoleCbm : obj.COST ?? 0;
-    const sign = cur === "USD" ? "$" : "₩";
-    html += `<br>${key} : ${sign}${val.toLocaleString()}`;
+  /* ① OFC (USD 고정) */
+  let usdTotal = cbmRate * consoleCbm;   // OFC
+
+  /* ② 콘솔 업체 항목 */
+  let krwTotal = 0;
+  Object.values(company).forEach(obj=>{
+    const cur = obj.CURRENCY;
+    if (obj.단가) {
+      const val = obj.단가 * consoleCbm;
+      cur === "USD" ? usdTotal += val : krwTotal += val;
+    } else if ('COST' in obj) {
+      cur === "USD" ? usdTotal += obj.COST : krwTotal += obj.COST;
+    }
   });
 
-  domesticBox.innerHTML = html;
+  /* ③ 화면 출력: 통화별 합계만 */
+  domesticDesc.innerHTML =
+    `<div class="currency-total">$ ${usdTotal.toLocaleString()}</div>`+
+    `<div class="currency-total">₩ ${krwTotal.toLocaleString()}</div>`;
 }
-  
+
+/* 호출 트리거 */
 [poeSel, consoleSel, cbmRateInput, consoleCbmInput]
   .forEach(el => el.addEventListener('change', updateDomesticDesc));
+
   
 </script>
 
