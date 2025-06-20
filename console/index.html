@@ -343,6 +343,7 @@ const pumexDomesticCostBox = document.getElementById('pumex-domestic-cost');
 const pumexDomesticDescBox = document.getElementById('pumex-domestic-desc');
 const pumexArrivalCostBox  = document.getElementById('pumex-arrival-cost');
 const pumexArrivalDescBox  = document.getElementById('pumex-arrival-desc');
+const rate40hcInput  = document.getElementById('rate-40hc');
 
 
 
@@ -416,15 +417,16 @@ document.getElementById('console-select').addEventListener('change', e => {
     }
   }
 
-
 function updateDomesticDesc () {
   const poeKey      = poeSel.value;
   const consoleKey  = consoleSel.value;
-  const cbmRate     = +cbmRateInput.value    || 0;
+  const cbmRate     = +cbmRateInput.value    || 0;   // CBM당 운임 (예전 그대로 사용 가능)
+  const rate40      = +rate40hcInput.value   || 0;   // 40HC 운임
+  const totalCbm    = +totalCbmInput.value   || 0;   // 전체 CBM
   const consoleCbm  = +consoleCbmInput.value || 0;
 
   /* 선택 미완료 시 리셋 */
-  if (!poeKey || !consoleKey) {
+  if (!poeKey || !consoleKey || !totalCbm || !consoleCbm) {
     domesticCostBox.innerHTML = '₩0';
     domesticDescBox.innerHTML = '';
     return;
@@ -433,14 +435,17 @@ function updateDomesticDesc () {
   const node    = gData[poeKey];
   const company = node.console?.[consoleKey] || {};
 
-  /* ------------------ 계산 ------------------ */
-  let usdTotal = cbmRate * consoleCbm;         // OFC
-  let krwTotal = 0;
-
+  /* 0) 40HC OFC 계산 (USD 고정) */
+  let usdTotal = (rate40 / totalCbm) * consoleCbm;     // 40HC 운임 비례 배분
   const detailLines = [
-    `OFC : $${usdTotal.toLocaleString()}`
+    `OFC : $${usdTotal.toLocaleString()}`              // 맨 위에 기록
   ];
 
+  /* ① (선택) CBM당 운임 항목이 있다면 추가로 계산하고 싶으면 여기서 처리
+         ─ 이미 사용 중인 cbmRate * consoleCbm 부분이 필요 없으면 주석 처리 */
+
+  /* ② 콘솔 업체 항목 */
+  let krwTotal = 0;
   Object.entries(company).forEach(([key, obj]) => {
     const cur = obj.CURRENCY;
     const val = obj.단가 ? obj.단가 * consoleCbm
@@ -452,14 +457,12 @@ function updateDomesticDesc () {
     detailLines.push(`${key} : ${sign}${val.toLocaleString()}`);
   });
 
-  /* ------------------ 화면 반영 ------------------ */
-  /* ① 국내비용 오른쪽 칸 : 합계 */
+  /* ③ 화면 반영 */
   domesticCostBox.innerHTML =
       `$ ${usdTotal.toLocaleString()}<br>₩ ${krwTotal.toLocaleString()}`;
-
-  /* ② 토글 박스 : 세부 내역 */
   domesticDescBox.innerHTML = detailLines.join('<br>');
 }
+
 
   function updateArrivalDesc () {
   const poeKey     = poeSel.value;        // 도착지
@@ -569,8 +572,7 @@ function updatePumexArrivalDesc () {
 
   
 /* 변경·입력 때마다 실행 */
-[poeSel, partnerSel, consoleSel,
- cbmRateInput, consoleCbmInput, totalCbmInput].forEach(el => {
+[poeSel, partnerSel, consoleSel, cbmRateInput, rate40hcInput, consoleCbmInput, totalCbmInput].forEach(el => {
   el.addEventListener('change', () => {
     updateDomesticDesc();
     updateArrivalDesc();
@@ -584,6 +586,7 @@ function updatePumexArrivalDesc () {
     updatePumexArrivalDesc();
   });
 });
+
 
   
 </script>
