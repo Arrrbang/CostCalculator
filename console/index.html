@@ -350,7 +350,18 @@ const pumexArrivalCostBox  = document.getElementById('pumex-arrival-cost');
 const pumexArrivalDescBox  = document.getElementById('pumex-arrival-desc');
 const rate40hcInput  = document.getElementById('rate-40hc');
 
-
+let usdToKrw = 1400;                                // 기본값
+async function refreshRate(){
+  try{
+    const r = await fetch("https://api.exchangerate-api.com/v4/latest/KRW");
+    const j = await r.json();
+    usdToKrw = j.rates.USD ? 1 / j.rates.USD : usdToKrw;   // KRW→USD 값 → 뒤집어서 USD→KRW
+  }catch(e){
+    console.error("환율 API 오류", e);
+  }
+}
+refreshRate();                         // 최초 1회
+setInterval(refreshRate, 3600_000);    // 1시간마다
 
 /* 통화별 반올림 + 서식 */
 function formatCurrency(v, cur){
@@ -359,6 +370,41 @@ function formatCurrency(v, cur){
     : `₩ ${Math.round(v).toLocaleString('ko-KR')}`;
 }
 
+  /* ---------- 콘솔 합계(KRW) 계산 ---------- */
+function updateConsoleTotal(){
+  // ① 국내비용 KRW ------------- (두 번째 줄, ₩ 123,456)
+  const krwTxt = domesticCostBox.innerHTML.split('<br>')[1] || '₩0';
+  const krwVal = +krwTxt.replace(/[^\d.]/g,'') || 0;
+
+  // ② 도착지 USD --------------
+  const usdVal = +arrivalCostBox.textContent.replace(/[^\d.]/g,'') || 0;
+
+  // ③ USD→KRW 변환 후 합산
+  const totalKrw = Math.round(krwVal + usdVal * usdToKrw);
+
+  // ④ 화면 표시
+  document.getElementById('console-total-krw').textContent =
+        totalKrw.toLocaleString('ko-KR');
+}
+
+/* ---------- PUMEX 합계(KRW) ---------- */
+function updatePumexTotal(){
+  // ① 국내 KRW 줄 (두 번째 <br> 뒤)
+  const krwTxt = pumexDomesticCostBox.innerHTML.split('<br>')[1] || '₩0';
+  const krwVal = +krwTxt.replace(/[^\d.]/g,'') || 0;
+
+  // ② 도착지 USD
+  const usdVal = +pumexArrivalCostBox.textContent.replace(/[^\d.]/g,'') || 0;
+
+  // ③ USD→KRW 변환 후 합산
+  const total = Math.round(krwVal + usdVal * usdToKrw);
+
+  // ④ 화면 표시
+  document.getElementById('pumex-total-krw').textContent =
+        total.toLocaleString('ko-KR');
+}
+
+  
 /* ---------- ① JSON 불러오기 ---------- */
 let gData = {};                  // 전역에 저장
 fetch('cost.json')
@@ -593,12 +639,16 @@ function updatePumexArrivalDesc () {
     updateArrivalDesc();
     updatePumexDomesticDesc();
     updatePumexArrivalDesc();
+    updateConsoleTotal();   // 타업체 합계
+    updatePumexTotal();     // ★ PUMEX 합계
   });
   el.addEventListener('input', () => {
     updateDomesticDesc();
     updateArrivalDesc();
     updatePumexDomesticDesc();
     updatePumexArrivalDesc();
+    updateConsoleTotal();
+    updatePumexTotal();     // ★
   });
 });
 
