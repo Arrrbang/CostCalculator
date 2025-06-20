@@ -12,45 +12,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
 
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-
+ <style>
+    /* 추가·수정해야 할 최소한의 스타일만 넣었습니다 */
+    /* 배경 고정 효과 */
     body {
       background:
         linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
         url('https://arrrbang.github.io/CostCalculator/image/background.jpg') no-repeat center center / cover;
       background-attachment: fixed;
-      font-family: sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      font-family: 'Noto Sans KR', sans-serif;
     }
 
-    .container {
-      background-color: white;
-      border-radius: 20px;
-      padding: 40px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-      width: 90%;
-      max-width: 500px;
-    }
-
-    .row {
+    /* 가운데 폼 카드 내부 전용 */
+    .left-container .form-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
-
-    .row label {
+    .left-container .form-row label {
       font-weight: bold;
       flex: 1;
     }
-
-    .row input {
+    .left-container .form-row input {
       flex: 1;
       margin-left: 10px;
       padding: 8px 12px;
@@ -59,16 +43,47 @@
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <div class="row">
-      <label for="total-cbm">컨테이너 전체 CBM :</label>
-      <input type="number" id="total-cbm" placeholder="예: 20" />
+  <div class="three-column-layout">
+
+    <!-- ① 로고/버튼 열 -->
+    <div class="logo-column">
+      <div class="logo-wrapper">
+        <img src="https://arrrbang.github.io/CostCalculator/image/pumexlogonew.png" alt="Logo">
+      </div>
+
+      <div class="button-under-logo">
+        <a href="https://arrrbang.github.io/CostCalculator/selectpage.html">← 검색 페이지로</a>
+      </div>
+
+      <div class="button-under-logo" id="link3">
+        노션에서<br>파트너 정보 확인
+      </div>
     </div>
-    <div class="row">
-      <label for="cbm-rate">CBM당 운임 :</label>
-      <input type="number" id="cbm-rate" placeholder="예: 150" />
+
+    <!-- ② 정보(입력) 열 -->
+    <div class="info-column">
+      <div class="left-container">
+        <h2><span class="arrow">▶</span> 포장 비용 계산</h2>
+
+        <div class="form-row">
+          <label for="total-cbm">컨테이너 전체 CBM :</label>
+          <input type="number" id="total-cbm" placeholder="예: 65">
+        </div>
+
+        <div class="form-row">
+          <label for="cbm-rate">CBM당 운임 :</label>
+          <input type="number" id="cbm-rate" placeholder="예: 120">
+        </div>
+      </div>
     </div>
+
+    <!-- ③ 결과·추가내용 열(비워둠) -->
+    <div class="cost-column">
+      <!-- 추후 결과 출력용 공간 -->
+    </div>
+
   </div>
 </body>
 </html>
