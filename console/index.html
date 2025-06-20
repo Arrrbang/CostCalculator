@@ -200,22 +200,52 @@
 </body>
 
 <script>
-  fetch('cost.json')
-    .then(response => response.json())
-    .then(data => {
-      const select = document.getElementById('console-select');
-      const companyNames = Object.keys(data);
+/* ---------- ① JSON 불러오기 ---------- */
+let gData = {};                  // 전역에 저장
+fetch('cost.json')
+  .then(r => r.json())
+  .then(json => {
+    gData = json.poe || {};      // {chicago:{…}} 형태
+    fillPOE();                   // POE 드롭다운 채우기
+  })
+  .catch(err => console.error('cost.json 로드 오류:', err));
 
-      companyNames.forEach(name => {
-        const option = document.createElement('option');
-        option.value = name;
-        option.textContent = name;
-        select.appendChild(option);
-      });
-    })
-    .catch(error => {
-      console.error('업체 목록 불러오기 실패:', error);
+/* ---------- ② 드롭다운 요소 ----------- */
+const poeSel      = document.getElementById('poe');
+const partnerSel  = document.getElementById('partner');
+const consoleSel  = document.getElementById('console-select');
+
+/* ---------- ③ POE 채우기 & 이벤트 ------ */
+function fillPOE() {
+  Object.keys(gData).forEach(k => {
+    const opt = new Option(k.toUpperCase(), k); // 표시: 대문자
+    poeSel.appendChild(opt);
+  });
+  poeSel.addEventListener('change', handlePOEChange);
+}
+
+/* ---------- ④ POE 선택 시 하위 드롭다운 ----- */
+function handlePOEChange() {
+  const key = poeSel.value;          // 예: "chicago"
+  // 초기화
+  partnerSel.innerHTML = '<option value="">선택하세요</option>';
+  consoleSel.innerHTML = '<option value="">선택하세요</option>';
+  if (!key) return;                  // 선택 안 했으면 종료
+
+  const node = gData[key];           // 해당 POE 객체
+  // 1) 파트너
+  if (node.partner) {
+    Object.keys(node.partner).forEach(p => {
+      partnerSel.appendChild(new Option(p, p));
     });
+  }
+  // 2) 콘솔업체
+  if (node.console) {
+    Object.keys(node.console).forEach(c => {
+      consoleSel.appendChild(new Option(c, c));
+    });
+  }
+}
 </script>
 
 </html>
