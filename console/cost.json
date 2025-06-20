@@ -1,9 +1,25 @@
 {
-  "A": {
-    "THC": "",
-    "TRC": "",
-    "DEST_DO": "",
-    "AMS": ""
+  "IMS": {
+    "THC": {
+      "CURRENCY": "KRW",
+      "COST": 3708
+    },
+    "TRC": {
+      "CURRENCY": "KRW",
+      "COST": 16000
+    },
+    "DOC": {
+      "CURRENCY": "KRW",
+      "COST": 40000
+    },
+    "DEST_DO": {
+      "CURRENCY": "USD",
+      "COST": 50
+    },
+    "AMS": {
+      "CURRENCY": "USD",
+      "COST": 20
+    }
   },
   "B": {
     "THC": "",
