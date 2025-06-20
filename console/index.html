@@ -372,34 +372,32 @@ function formatCurrency(v, cur){
 
   /* ---------- 콘솔 합계(KRW) 계산 ---------- */
 function updateConsoleTotal(){
-  // ① 국내비용 KRW ------------- (두 번째 줄, ₩ 123,456)
-  const krwTxt = domesticCostBox.innerHTML.split('<br>')[1] || '₩0';
-  const krwVal = +krwTxt.replace(/[^\d.]/g,'') || 0;
+  // ① 국내 비용 ── USD·KRW 모두 추출
+  const [usdTxtDom, krwTxtDom='₩0'] = domesticCostBox.innerHTML.split('<br>');
+  const usdDom = +usdTxtDom.replace(/[^\d.]/g,'') || 0;
+  const krwDom = +krwTxtDom.replace(/[^\d.]/g,'') || 0;
 
-  // ② 도착지 USD --------------
-  const usdVal = +arrivalCostBox.textContent.replace(/[^\d.]/g,'') || 0;
+  // ② 도착지 USD
+  const usdArr = +arrivalCostBox.textContent.replace(/[^\d.]/g,'') || 0;
 
-  // ③ USD→KRW 변환 후 합산
-  const totalKrw = Math.round(krwVal + usdVal * usdToKrw);
-
-  // ④ 화면 표시
+  // ③ 합계
+  const totalKrw = Math.round(krwDom + (usdDom + usdArr) * usdToKrw);
   document.getElementById('console-total-krw').textContent =
         totalKrw.toLocaleString('ko-KR');
 }
 
 /* ---------- PUMEX 합계(KRW) ---------- */
 function updatePumexTotal(){
-  // ① 국내 KRW 줄 (두 번째 <br> 뒤)
-  const krwTxt = pumexDomesticCostBox.innerHTML.split('<br>')[1] || '₩0';
-  const krwVal = +krwTxt.replace(/[^\d.]/g,'') || 0;
+  // ① 국내 비용 USD·KRW
+  const [usdTxtDom, krwTxtDom='₩0'] = pumexDomesticCostBox.innerHTML.split('<br>');
+  const usdDom = +usdTxtDom.replace(/[^\d.]/g,'') || 0;
+  const krwDom = +krwTxtDom.replace(/[^\d.]/g,'') || 0;
 
   // ② 도착지 USD
-  const usdVal = +pumexArrivalCostBox.textContent.replace(/[^\d.]/g,'') || 0;
+  const usdArr = +pumexArrivalCostBox.textContent.replace(/[^\d.]/g,'') || 0;
 
-  // ③ USD→KRW 변환 후 합산
-  const total = Math.round(krwVal + usdVal * usdToKrw);
-
-  // ④ 화면 표시
+  // ③ 합계
+  const total = Math.round(krwDom + (usdDom + usdArr) * usdToKrw);
   document.getElementById('pumex-total-krw').textContent =
         total.toLocaleString('ko-KR');
 }
