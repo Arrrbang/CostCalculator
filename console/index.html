@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>More actions
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -41,7 +41,7 @@
       left: 20px;
       z-index: 10;
     }
-    
+
     .logo-wrapper img {
       width: 150px;
       height: auto;
@@ -90,14 +90,14 @@
       background: transparent;  /* ♻ 흰 배경 제거 */
       padding: 0;               /* ♻ 내부 패딩 제거 */
     }
-    
+
     .left-container {
       background: #ffffff;
       border-radius: 20px;
       padding: 30px;
       box-shadow: 0 4px 16px rgba(0,0,0,0.2);
     }
-    
+
 
     .form-row {
       display: flex;
@@ -131,7 +131,7 @@
       -webkit-appearance: none;
       -moz-appearance: none;
     }
-    
+
     .cost-column {
       flex: 1;
       display: flex;
@@ -140,13 +140,13 @@
       background: transparent;
       padding: 0;
     }
-    
+
     /* 오른쪽 열 안에서 흰색 박스 감싸는 래퍼 */
     .right-container {
       display: flex;
       justify-content: center;
     }
-    
+
     /* 흰색 박스 자체 */
     .right-box {
       background: #ffffff;
@@ -157,7 +157,7 @@
       max-width: 500px;   /* 가운데 열과 맞춤 */
       box-sizing: border-box;
     }
-    
+
     /* 값 출력 영역도 input/select처럼 스타일 통일 */
     .readonly-output {
       flex: 1;
@@ -168,7 +168,7 @@
       font-size: 1rem;
       background-color: #f9f9f9;
     }
-        
+
     h2 {
       background-color: #8BC34A;   /* 연두색 배경 */
       color: white;
@@ -184,7 +184,7 @@
     .toggle-row {
       cursor: pointer;
     }
-    
+
       .description-box {
         max-height: 0;
         overflow: hidden;
@@ -202,7 +202,7 @@
         padding: 12px 16px;
         max-height: 200px;
       }
-    
+
       .arrow {
         display: inline-block;
         width: 1.2em;
@@ -216,7 +216,7 @@
         font-weight: bold;
         margin: 4px 0;
       }
-     
+
   </style>
 </head>
 
@@ -247,16 +247,16 @@
           <option value="">선택하세요</option>
         </select>
       </div>
-  
+
       <div class="form-row">
         <label for="partner">도착지 파트너 :</label>
         <select id="partner">
           <option value="">선택하세요</option>
         </select>
       </div>
-      
+
     </div>
-  
+
     <div class="left-container" id="console-card">
       <div class="form-row">
         <label for="console-select">콘솔업체 :</label>
@@ -274,7 +274,7 @@
         <label for="total-cbm">컨테이너 전체 CBM :</label>
         <input type="number" id="total-cbm" placeholder="예: 65">
       </div>
-  
+
       <div class="form-row">
         <label for="cbm-rate">CBM당 운임 :</label>
         <input type="number" id="cbm-rate" placeholder="예: 120">
@@ -286,14 +286,14 @@
       <div class="right-container">
         <div class="right-box" id="cost-summary-box">
           <h2 id="console-cost-title">[콘솔업체 콘솔 작업시 비용]</h2>
-          
+
             <!-- 국내 비용 -->
             <div class="form-row toggle-row" onclick="toggleDesc('domestic-desc', this)">
               <label><span class="arrow">▶</span> 국내 비용 :</label>
               <div class="readonly-output" id="domestic-cost">₩0</div>
             </div>
             <div class="description-box" id="domestic-desc"></div>
-            
+
             <!-- 도착지 비용 -->
             <div class="form-row toggle-row" onclick="toggleDesc('arrival-desc', this)">
               <label><span class="arrow">▶</span> 도착지 비용 :</label>
@@ -305,18 +305,18 @@
           </div>
         </div>
       </div>
-      
+
       <div class="right-container">
         <div class="right-box" id="pumex-cost-summary-box">
           <h2 id="pumex-cost-title">[PUMEX 콘솔 작업시 비용]</h2>
-      
+
           <!-- 국내 비용 -->
           <div class="form-row toggle-row" onclick="toggleDesc('pumex-domestic-desc', this)">
             <label><span class="arrow">▶</span> 국내 비용 :</label>
             <div class="readonly-output" id="pumex-domestic-cost">₩0</div>
           </div>
           <div class="description-box" id="pumex-domestic-desc"></div>
-      
+
           <!-- 도착지 비용 -->
           <div class="form-row toggle-row" onclick="toggleDesc('pumex-arrival-desc', this)">
             <label><span class="arrow">▶</span> 도착지 비용 :</label>
@@ -328,193 +328,246 @@
           </div>
         </div>
       </div>
-      
+
     </div>
-    
+
   </div>
 </body>
 
 <script>
-  
-// --------- 전역 변수 ---------
-let gData = {};
-let usdToKrwRate = 1400; // 기본값, 이후 환율 API로 갱신됨
 
-// --------- 요소 선택 ---------
-const poeSel = document.getElementById('poe');
-const partnerSel = document.getElementById('partner');
-const consoleSel = document.getElementById('console-select');
-const cbmRateInput = document.getElementById('cbm-rate');
-const rate40hcInput = document.getElementById('rate-40hc');
+const cbmRateInput   = document.getElementById('cbm-rate');
 const consoleCbmInput = document.getElementById('console-cbm');
-const totalCbmInput = document.getElementById('total-cbm');
-
 const domesticCostBox = document.getElementById('domestic-cost');
+const domesticDesc = document.getElementById('domestic-desc');
 const domesticDescBox = document.getElementById('domestic-desc');
-const arrivalCostBox = document.getElementById('arrival-cost');
-const arrivalDescBox = document.getElementById('arrival-desc');
-const domesticSumBox = document.getElementById('domestic-total-krw');
-
+const arrivalCostBox  = document.getElementById('arrival-cost');
+const arrivalDescBox  = document.getElementById('arrival-desc');
+const totalCbmInput   = document.getElementById('total-cbm');
 const pumexDomesticCostBox = document.getElementById('pumex-domestic-cost');
 const pumexDomesticDescBox = document.getElementById('pumex-domestic-desc');
-const pumexArrivalCostBox = document.getElementById('pumex-arrival-cost');
-const pumexArrivalDescBox = document.getElementById('pumex-arrival-desc');
-const pumexSumBox = document.getElementById('pumex-total-krw');
+const pumexArrivalCostBox  = document.getElementById('pumex-arrival-cost');
+const pumexArrivalDescBox  = document.getElementById('pumex-arrival-desc');
+const rate40hcInput  = document.getElementById('rate-40hc');
 
 
-// --------- 초기 JSON 로드 ---------
-fetch('cost.json')
-  .then(res => res.json())
-  .then(json => {
-    gData = json.poe || {};
-    Object.keys(gData).forEach(k => {
-      const opt = new Option(k.toUpperCase(), k);
-      poeSel.appendChild(opt);
-    });
-  });
-
-// --------- 환율 정보 로드 ---------
-fetch('https://quotation-api-cdn.dunamu.com/v1/forex/recent?codes=FRX.KRWUSD')
-  .then(res => res.json())
-  .then(data => {
-    const rate = parseFloat(data?.[0]?.basePrice);
-    if (!isNaN(rate)) usdToKrwRate = rate;
-  });
-
-// --------- POE 변경시 드롭다운 ---------
-poeSel.addEventListener('change', () => {
-  const key = poeSel.value;
-  partnerSel.innerHTML = '<option value="">선택하세요</option>';
-  consoleSel.innerHTML = '<option value="">선택하세요</option>';
-  if (!key) return;
-  const node = gData[key];
-  if (node.partner) Object.keys(node.partner).forEach(p => partnerSel.appendChild(new Option(p, p)));
-  if (node.console) Object.keys(node.console).forEach(c => consoleSel.appendChild(new Option(c, c)));
-});
-
-// --------- 콘솔업체 이름 표시 ---------
-consoleSel.addEventListener('change', e => {
-  const name = e.target.value;
-  document.getElementById('console-cost-title').textContent = name ? `[${name}] 콘솔 작업시 비용` : `[콘솔업체] 콘솔 작업시 비용`;
-});
-
-// --------- 토글 ---------
-function toggleDesc(id, trigger) {
-  const box = document.getElementById(id);
-  if (!box) return;
-  const isOpen = box.classList.toggle("open");
-  if (trigger) {
-    const arrow = trigger.querySelector(".arrow");
-    if (arrow) arrow.style.transform = isOpen ? "rotate(90deg)" : "rotate(0deg)";
+/* 통화별 반올림·서식 */
+function formatCurrency(val, cur){
+  if (cur === 'USD') {                 // 달러: 소수점 2자리까지
+    const v = Math.round(val * 100) / 100;                 // 3째 자리 반올림
+    return `$ ${v.toLocaleString('en-US', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    })}`;
+  } else {                             // 그 외(원화 등): 소수점 제거
+    const v = Math.round(val);                           // 1원 단위 반올림
+    return `₩ ${v.toLocaleString('ko-KR')}`;
   }
 }
 
-// --------- 반올림 함수 ---------
-const roundKRW = v => Math.round(v);
-const roundUSD = v => Math.round(v * 100) / 100;
 
-// --------- 콘솔업체 국내 비용 ---------
-function updateDomesticDesc() {
-  const poeKey = poeSel.value;
-  const consoleKey = consoleSel.value;
-  const cbmRate = +cbmRateInput.value || 0;
-  const consoleCbm = +consoleCbmInput.value || 0;
+/* ---------- ① JSON 불러오기 ---------- */
+let gData = {};                  // 전역에 저장
+fetch('cost.json')
+  .then(r => r.json())
+  .then(json => {
+    gData = json.poe || {};      // {chicago:{…}} 형태
+    fillPOE();                   // POE 드롭다운 채우기
+  })
+  .catch(err => console.error('cost.json 로드 오류:', err));
 
-  if (!poeKey || !consoleKey) {
+/* ---------- ② 드롭다운 요소 ----------- */
+const poeSel      = document.getElementById('poe');
+const partnerSel  = document.getElementById('partner');
+const consoleSel  = document.getElementById('console-select');
+
+/* ---------- ③ POE 채우기 & 이벤트 ------ */
+function fillPOE() {
+  Object.keys(gData).forEach(k => {
+    const opt = new Option(k.toUpperCase(), k); // 표시: 대문자
+    poeSel.appendChild(opt);
+  });
+  poeSel.addEventListener('change', handlePOEChange);
+}
+
+/* ---------- ④ POE 선택 시 하위 드롭다운 ----- */
+function handlePOEChange() {
+  const key = poeSel.value;          // 예: "chicago"
+  // 초기화
+  partnerSel.innerHTML = '<option value="">선택하세요</option>';
+  consoleSel.innerHTML = '<option value="">선택하세요</option>';
+  if (!key) return;                  // 선택 안 했으면 종료
+
+  const node = gData[key];           // 해당 POE 객체
+  // 1) 파트너
+  if (node.partner) {
+    Object.keys(node.partner).forEach(p => {
+      partnerSel.appendChild(new Option(p, p));
+    });
+  }
+  // 2) 콘솔업체
+  if (node.console) {
+    Object.keys(node.console).forEach(c => {
+      consoleSel.appendChild(new Option(c, c));
+    });
+  }
+}
+
+document.getElementById('console-select').addEventListener('change', e => {
+  const name = e.target.value;
+  document.getElementById('console-cost-title').textContent = name
+    ? `[${name}] 콘솔 작업시 비용`
+    : `[콘솔업체] 콘솔 작업시 비용`;
+});
+
+  function toggleDesc(id, trigger) {
+    const box = document.getElementById(id);
+    if (!box) return;
+
+    const isOpen = box.classList.toggle("open");
+
+    // 아이콘 회전 처리 (trigger가 있을 경우)
+    if (trigger) {
+      const arrow = trigger.querySelector(".arrow");
+      if (arrow) {
+        arrow.style.transform = isOpen ? "rotate(90deg)" : "rotate(0deg)";
+      }
+    }
+  }
+
+function updateDomesticDesc () {
+  const poeKey      = poeSel.value;
+  const consoleKey  = consoleSel.value;
+  const cbmRate     = +cbmRateInput.value    || 0;   // CBM당 운임
+  const totalCbm    = +totalCbmInput.value   || 0;   // 전체 CBM
+  const consoleCbm  = +consoleCbmInput.value || 0;
+
+  /* 선택 미완료 시 리셋 */
+  if (!poeKey || !consoleKey || !totalCbm || !consoleCbm) {
     domesticCostBox.innerHTML = '₩0';
     domesticDescBox.innerHTML = '';
-    domesticSumBox.innerHTML = '합계(KRW) : ₩0';
     return;
   }
 
-  const node = gData[poeKey];
+  const node    = gData[poeKey];
   const company = node.console?.[consoleKey] || {};
 
+  /* ---- OFC (USD) : CBM당 운임 × 콘솔 CBM ---- */
   let usdTotal = cbmRate * consoleCbm;
+  const detailLines = [
+    `OFC : $${usdTotal.toLocaleString()}`
+  ];
+
+  /* ---- 콘솔 업체 항목 ---- */
   let krwTotal = 0;
+  Object.entries(company).forEach(([key, obj]) => {
+    const cur = obj.CURRENCY;
+    const val = obj.단가 ? obj.단가 * consoleCbm
+                         : (obj.COST ?? 0);
 
-  const lines = [`OFC : $${roundUSD(usdTotal).toLocaleString()}`];
+    if (cur === 'USD') usdTotal += val; else krwTotal += val;
 
-  Object.entries(company).forEach(([k, v]) => {
-    const val = v.단가 ? v.단가 * consoleCbm : (v.COST || 0);
-    if (v.CURRENCY === 'USD') usdTotal += val;
-    else krwTotal += val;
-    const sign = v.CURRENCY === 'USD' ? '$' : '₩';
-    lines.push(`${k} : ${sign}${v.CURRENCY === 'USD' ? roundUSD(val).toLocaleString() : roundKRW(val).toLocaleString()}`);
+    const sign = cur === 'USD' ? '$' : '₩';
+    detailLines.push(`${key} : ${sign}${val.toLocaleString()}`);
   });
 
-  domesticCostBox.innerHTML = `$ ${roundUSD(usdTotal).toLocaleString()}<br>₩ ${roundKRW(krwTotal).toLocaleString()}`;
-  domesticDescBox.innerHTML = lines.join('<br>');
-
-  const sum = roundKRW(usdTotal * usdToKrwRate) + roundKRW(krwTotal);
-  domesticSumBox.innerHTML = `합계(KRW) : ₩${sum.toLocaleString()}`;
+  /* ---- 화면 반영 ---- */
+  domesticCostBox.innerHTML =
+      `$ ${usdTotal.toLocaleString()}<br>₩ ${krwTotal.toLocaleString()}`;
+  domesticDescBox.innerHTML = detailLines.join('<br>');
 }
 
-// --------- 콘솔업체 도착지 비용 ---------
-function updateArrivalDesc() {
-  const poeKey = poeSel.value;
-  const partnerKey = partnerSel.value;
-  const totalCbm = +totalCbmInput.value || 0;
-  const consoleCbm = +consoleCbmInput.value || 0;
 
+
+  function updateArrivalDesc () {
+  const poeKey     = poeSel.value;        // 도착지
+  const partnerKey = partnerSel.value;    // 파트너
+  const totalCbm   = +totalCbmInput.value   || 0;   // 컨테이너 전체 CBM
+  const consoleCbm = +consoleCbmInput.value || 0;   // 콘솔 CBM
+
+  /* 선택이 완전하지 않으면 리셋 */
   if (!poeKey || !partnerKey || !totalCbm || !consoleCbm) {
     arrivalCostBox.innerHTML = '$0';
     arrivalDescBox.innerHTML = '';
     return;
   }
 
-  const node = gData[poeKey]?.partner?.[partnerKey];
-  const drayage = (node.drayage || 0) / totalCbm * consoleCbm;
-  const devaning = (node.devaning || 0) / totalCbm * consoleCbm;
-  const total = drayage + devaning;
-
-  arrivalCostBox.innerHTML = `$ ${roundUSD(total).toLocaleString()}`;
-  arrivalDescBox.innerHTML = `DRAYAGE : $${roundUSD(drayage).toLocaleString()}<br>DEVANING : $${roundUSD(devaning).toLocaleString()}`;
-}
-
-// --------- PUMEX 국내 비용 ---------
-function updatePumexDomesticDesc() {
-  const poeKey = poeSel.value;
-  const totalCbm = +totalCbmInput.value || 0;
-  const consoleCbm = +consoleCbmInput.value || 0;
-  const rate40 = +rate40hcInput.value || 0;
-
-  if (!poeKey || !totalCbm || !consoleCbm) {
-    pumexDomesticCostBox.innerHTML = '₩0';
-    pumexDomesticDescBox.innerHTML = '';
-    pumexSumBox.innerHTML = '합계(KRW) : ₩0';
+  const partnerNode = gData[poeKey]?.partner?.[partnerKey];
+  if (!partnerNode) {                     // 예외 처리
+    arrivalCostBox.innerHTML = '$0';
+    arrivalDescBox.innerHTML = '';
     return;
   }
 
-  const node = gData[poeKey];
-  const list = node.OFC || {};
+  /* ① 항목별 계산 */
+  const drayageUnit  = partnerNode.drayage  || 0;   // 전체 컨테이너 기준
+  const devaningUnit = partnerNode.devaning || 0;
 
-  let usdTotal = (rate40 / totalCbm * consoleCbm);
-  const lines = [`OFC : $${roundUSD(usdTotal).toLocaleString()}`];
-  let krwTotal = 0;
+  const drayage  = drayageUnit  / totalCbm * consoleCbm;
+  const devaning = devaningUnit / totalCbm * consoleCbm;
 
-  Object.entries(list).forEach(([k, v]) => {
-    const val = v.COST || 0;
-    const result = val / totalCbm * consoleCbm;
-    if (v.CURRENCY === 'USD') usdTotal += result;
-    else krwTotal += result;
-    const sign = v.CURRENCY === 'USD' ? '$' : '₩';
-    lines.push(`${k} : ${sign}${v.CURRENCY === 'USD' ? roundUSD(result).toLocaleString() : roundKRW(result).toLocaleString()}`);
-  });
+  const arrivalTotal = drayage + devaning;
 
-  pumexDomesticCostBox.innerHTML = `$ ${roundUSD(usdTotal).toLocaleString()}<br>₩ ${roundKRW(krwTotal).toLocaleString()}`;
-  pumexDomesticDescBox.innerHTML = lines.join('<br>');
-
-  const sum = roundKRW(usdTotal * usdToKrwRate) + roundKRW(krwTotal);
-  pumexSumBox.innerHTML = `합계(KRW) : ₩${sum.toLocaleString()}`;
+  /* ② 화면 반영 */
+  arrivalCostBox.innerHTML = `$ ${arrivalTotal.toLocaleString()}`;
+  arrivalDescBox.innerHTML =
+    `DRAYAGE : $${drayage.toLocaleString()}<br>` +
+    `DEVANING : $${devaning.toLocaleString()}`;
 }
 
-// --------- PUMEX 도착지 비용 ---------
-function updatePumexArrivalDesc() {
-  const poeKey = poeSel.value;
-  const totalCbm = +totalCbmInput.value || 0;
-  const consoleCbm = +consoleCbmInput.value || 0;
+function updatePumexDomesticDesc () {
+  const poeKey     = poeSel.value;
+  const totalCbm   = +totalCbmInput.value   || 0;   // 컨테이너 전체 CBM
+  const consoleCbm = +consoleCbmInput.value || 0;   // 콘솔 CBM
+  const rate40     = +rate40hcInput.value   || 0;   // 현재 40HC 운임 (USD)
+
+  /* 선택·입력이 부족할 때 리셋 */
+  if (!poeKey || !totalCbm || !consoleCbm) {
+    pumexDomesticCostBox.innerHTML = '$0<br>₩0';
+    pumexDomesticDescBox.innerHTML = '';
+    return;
+  }
+
+  const ofcNode = gData[poeKey]?.OFC;
+  if (!ofcNode) {                    // OFC 데이터가 없으면 리셋
+    pumexDomesticCostBox.innerHTML = '$0<br>₩0';
+    pumexDomesticDescBox.innerHTML = '';
+    return;
+  }
+
+  /* ── ① OFC(40HC) 계산 ───────────────── */
+  const ofcUsd = (rate40 / totalCbm) * consoleCbm;   // USD 고정
+  let usdTotal = ofcUsd;                             // USD 합계 초기값
+  let krwTotal = 0;                                  // KRW 합계
+
+  const detail = [
+    `OFC : $${ofcUsd.toLocaleString()}`              // 첫 줄로 기록
+  ];
+
+  /* ── ② OFC 하위 항목 계산 ─────────────── */
+  Object.entries(ofcNode).forEach(([key, obj]) => {
+    const cur = obj.CURRENCY;
+    const unit = obj.COST ?? 0;                      // OFC 하위 항목은 COST
+    const val  = unit / totalCbm * consoleCbm;       // 비례 계산
+
+    if (cur === 'USD') usdTotal += val; else krwTotal += val;
+
+    const sign = cur === 'USD' ? '$' : '₩';
+    detail.push(`${key} : ${sign}${val.toLocaleString()}`);
+  });
+
+  /* ── ③ 화면 반영 ──────────────────────── */
+  pumexDomesticCostBox.innerHTML =
+      `$ ${usdTotal.toLocaleString()}<br>₩ ${krwTotal.toLocaleString()}`;
+
+  pumexDomesticDescBox.innerHTML = detail.join('<br>');
+}
+
+function updatePumexArrivalDesc () {
+  const poeKey     = poeSel.value;
   const partnerKey = partnerSel.value;
+  const totalCbm   = +totalCbmInput.value   || 0;
+  const consoleCbm = +consoleCbmInput.value || 0;
 
   if (!poeKey || !partnerKey || !totalCbm || !consoleCbm) {
     pumexArrivalCostBox.innerHTML = '$0';
@@ -522,32 +575,42 @@ function updatePumexArrivalDesc() {
     return;
   }
 
-  const node = gData[poeKey]?.partner?.[partnerKey];
-  const drayage = (node.drayage || 0) / totalCbm * consoleCbm;
-  const devaning = (node.devaning || 0) / totalCbm * consoleCbm;
-  const total = drayage + devaning;
+  const partnerNode = gData[poeKey]?.partner?.[partnerKey];
+  if (!partnerNode) {
+    pumexArrivalCostBox.innerHTML = '$0';
+    pumexArrivalDescBox.innerHTML = '';
+    return;
+  }
 
-  pumexArrivalCostBox.innerHTML = `$ ${roundUSD(total).toLocaleString()}`;
-  pumexArrivalDescBox.innerHTML = `DRAYAGE : $${roundUSD(drayage).toLocaleString()}<br>DEVANING : $${roundUSD(devaning).toLocaleString()}`;
+  const drayage  = (partnerNode.drayage  || 0) / totalCbm * consoleCbm;
+  const devaning = (partnerNode.devaning || 0) / totalCbm * consoleCbm;
+  const total    = drayage + devaning;
+
+  pumexArrivalCostBox.innerHTML = `$ ${total.toLocaleString()}`;
+  pumexArrivalDescBox.innerHTML =
+    `DRAYAGE : $${drayage.toLocaleString()}<br>` +
+    `DEVANING : $${devaning.toLocaleString()}`;
 }
 
-// --------- 이벤트 연결 ---------
-[poeSel, partnerSel, consoleSel, cbmRateInput, rate40hcInput, consoleCbmInput, totalCbmInput]
-  .forEach(el => {
-    el.addEventListener('change', () => {
-      updateDomesticDesc();
-      updateArrivalDesc();
-      updatePumexDomesticDesc();
-      updatePumexArrivalDesc();
-    });
-    el.addEventListener('input', () => {
-      updateDomesticDesc();
-      updateArrivalDesc();
-      updatePumexDomesticDesc();
-      updatePumexArrivalDesc();
-    });
+
+/* 변경·입력 때마다 실행 */
+[poeSel, partnerSel, consoleSel, cbmRateInput, rate40hcInput, consoleCbmInput, totalCbmInput].forEach(el => {
+  el.addEventListener('change', () => {
+    updateDomesticDesc();
+    updateArrivalDesc();
+    updatePumexDomesticDesc();
+    updatePumexArrivalDesc();
   });
-  
+  el.addEventListener('input', () => {
+    updateDomesticDesc();
+    updateArrivalDesc();
+    updatePumexDomesticDesc();
+    updatePumexArrivalDesc();
+  });
+});
+
+
+
 </script>
 <script src="exchange.js"></script>
   
