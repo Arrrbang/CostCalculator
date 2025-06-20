@@ -316,6 +316,10 @@ const consoleCbmInput = document.getElementById('console-cbm');
 const domesticCostBox = document.getElementById('domestic-cost');
 const domesticDesc = document.getElementById('domestic-desc');
 const domesticDescBox = document.getElementById('domestic-desc');
+const arrivalCostBox  = document.getElementById('arrival-cost');
+const arrivalDescBox  = document.getElementById('arrival-desc');
+const totalCbmInput   = document.getElementById('total-cbm');
+
 
 
 
@@ -388,11 +392,6 @@ document.getElementById('console-select').addEventListener('change', e => {
     }
   }
 
-/* 변경·입력 때마다 실행 */
-[poeSel, consoleSel, cbmRateInput, consoleCbmInput].forEach(el => {
-  el.addEventListener('change', updateDomesticDesc);
-  el.addEventListener('input',  updateDomesticDesc);
-});
 
 function updateDomesticDesc () {
   const poeKey      = poeSel.value;
@@ -438,6 +437,55 @@ function updateDomesticDesc () {
   domesticDescBox.innerHTML = detailLines.join('<br>');
 }
 
+  function updateArrivalDesc () {
+  const poeKey     = poeSel.value;        // 도착지
+  const partnerKey = partnerSel.value;    // 파트너
+  const totalCbm   = +totalCbmInput.value   || 0;   // 컨테이너 전체 CBM
+  const consoleCbm = +consoleCbmInput.value || 0;   // 콘솔 CBM
+
+  /* 선택이 완전하지 않으면 리셋 */
+  if (!poeKey || !partnerKey || !totalCbm || !consoleCbm) {
+    arrivalCostBox.innerHTML = '$0';
+    arrivalDescBox.innerHTML = '';
+    return;
+  }
+
+  const partnerNode = gData[poeKey]?.partner?.[partnerKey];
+  if (!partnerNode) {                     // 예외 처리
+    arrivalCostBox.innerHTML = '$0';
+    arrivalDescBox.innerHTML = '';
+    return;
+  }
+
+  /* ① 항목별 계산 */
+  const drayageUnit  = partnerNode.drayage  || 0;   // 전체 컨테이너 기준
+  const devaningUnit = partnerNode.devaning || 0;
+
+  const drayage  = drayageUnit  / totalCbm * consoleCbm;
+  const devaning = devaningUnit / totalCbm * consoleCbm;
+
+  const arrivalTotal = drayage + devaning;
+
+  /* ② 화면 반영 */
+  arrivalCostBox.innerHTML = `$ ${arrivalTotal.toLocaleString()}`;
+  arrivalDescBox.innerHTML =
+    `DRAYAGE : $${drayage.toLocaleString()}<br>` +
+    `DEVANING : $${devaning.toLocaleString()}`;
+}
+
+
+/* 변경·입력 때마다 실행 */
+[poeSel, partnerSel, consoleSel, cbmRateInput, consoleCbmInput, totalCbmInput]
+  .forEach(el => {
+    el.addEventListener('change', () => {
+      updateDomesticDesc();   // 국내 비용 갱신
+      updateArrivalDesc();    // 도착지 비용 갱신
+    });
+    el.addEventListener('input', () => {
+      updateDomesticDesc();
+      updateArrivalDesc();
+    });
+  });
   
 </script>
 
