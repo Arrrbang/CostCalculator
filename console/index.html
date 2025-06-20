@@ -300,7 +300,27 @@
               <div class="readonly-output" id="arrival-cost">$0</div>
             </div>
             <div class="description-box" id="arrival-desc"></div>
-
+        </div>
+      </div>
+      
+      <div class="right-container">
+        <div class="right-box" id="pumex-cost-summary-box">
+          <h2 id="pumex-cost-title">[PUMEX 콘솔 작업시 비용]</h2>
+      
+          <!-- 국내 비용 -->
+          <div class="form-row toggle-row" onclick="toggleDesc('pumex-domestic-desc', this)">
+            <label><span class="arrow">▶</span> 국내 비용 :</label>
+            <div class="readonly-output" id="pumex-domestic-cost">₩0</div>
+          </div>
+          <div class="description-box" id="pumex-domestic-desc"></div>
+      
+          <!-- 도착지 비용 -->
+          <div class="form-row toggle-row" onclick="toggleDesc('pumex-arrival-desc', this)">
+            <label><span class="arrow">▶</span> 도착지 비용 :</label>
+            <div class="readonly-output" id="pumex-arrival-cost">$0</div>
+          </div>
+          <div class="description-box" id="pumex-arrival-desc"></div>
+      
         </div>
       </div>
       
@@ -319,6 +339,10 @@ const domesticDescBox = document.getElementById('domestic-desc');
 const arrivalCostBox  = document.getElementById('arrival-cost');
 const arrivalDescBox  = document.getElementById('arrival-desc');
 const totalCbmInput   = document.getElementById('total-cbm');
+const pumexDomesticCostBox = document.getElementById('pumex-domestic-cost');
+const pumexDomesticDescBox = document.getElementById('pumex-domestic-desc');
+const pumexArrivalCostBox  = document.getElementById('pumex-arrival-cost');
+const pumexArrivalDescBox  = document.getElementById('pumex-arrival-desc');
 
 
 
@@ -473,19 +497,94 @@ function updateDomesticDesc () {
     `DEVANING : $${devaning.toLocaleString()}`;
 }
 
+function updatePumexDomesticDesc () {
+  const poeKey     = poeSel.value;
+  const totalCbm   = +totalCbmInput.value   || 0;
+  const consoleCbm = +consoleCbmInput.value || 0;
 
-/* 변경·입력 때마다 실행 */
-[poeSel, partnerSel, consoleSel, cbmRateInput, consoleCbmInput, totalCbmInput]
-  .forEach(el => {
-    el.addEventListener('change', () => {
-      updateDomesticDesc();   // 국내 비용 갱신
-      updateArrivalDesc();    // 도착지 비용 갱신
-    });
-    el.addEventListener('input', () => {
-      updateDomesticDesc();
-      updateArrivalDesc();
-    });
+  /* 선택 미완료 시 리셋 */
+  if (!poeKey || !totalCbm || !consoleCbm) {
+    pumexDomesticCostBox.innerHTML = '₩0';
+    pumexDomesticDescBox.innerHTML = '';
+    return;
+  }
+
+  const ofcNode = gData[poeKey]?.OFC;
+  if (!ofcNode) {             // OFC 데이터 없을 때
+    pumexDomesticCostBox.innerHTML = '₩0';
+    pumexDomesticDescBox.innerHTML = '';
+    return;
+  }
+
+  /* ---- 계산 ---- */
+  let usdTotal = 0;
+  let krwTotal = 0;
+  const detail = [];
+
+  Object.entries(ofcNode).forEach(([key, obj]) => {
+    const cur = obj.CURRENCY;
+    const unitVal = obj.COST ?? 0;                // OFC 는 모두 COST
+    const val = unitVal / totalCbm * consoleCbm;  // 비례 계산
+
+    if (cur === 'USD') usdTotal += val; else krwTotal += val;
+
+    const sign = cur === 'USD' ? '$' : '₩';
+    detail.push(`${key} : ${sign}${val.toLocaleString()}`);
   });
+
+  /* ---- 출력 ---- */
+  pumexDomesticCostBox.innerHTML =
+      `$ ${usdTotal.toLocaleString()}<br>₩ ${krwTotal.toLocaleString()}`;
+  pumexDomesticDescBox.innerHTML = detail.join('<br>');
+}
+
+function updatePumexArrivalDesc () {
+  const poeKey     = poeSel.value;
+  const partnerKey = partnerSel.value;
+  const totalCbm   = +totalCbmInput.value   || 0;
+  const consoleCbm = +consoleCbmInput.value || 0;
+
+  if (!poeKey || !partnerKey || !totalCbm || !consoleCbm) {
+    pumexArrivalCostBox.innerHTML = '$0';
+    pumexArrivalDescBox.innerHTML = '';
+    return;
+  }
+
+  const partnerNode = gData[poeKey]?.partner?.[partnerKey];
+  if (!partnerNode) {
+    pumexArrivalCostBox.innerHTML = '$0';
+    pumexArrivalDescBox.innerHTML = '';
+    return;
+  }
+
+  const drayage  = (partnerNode.drayage  || 0) / totalCbm * consoleCbm;
+  const devaning = (partnerNode.devaning || 0) / totalCbm * consoleCbm;
+  const total    = drayage + devaning;
+
+  pumexArrivalCostBox.innerHTML = `$ ${total.toLocaleString()}`;
+  pumexArrivalDescBox.innerHTML =
+    `DRAYAGE : $${drayage.toLocaleString()}<br>` +
+    `DEVANING : $${devaning.toLocaleString()}`;
+}
+
+  
+/* 변경·입력 때마다 실행 */
+[poeSel, partnerSel, consoleSel,
+ cbmRateInput, consoleCbmInput, totalCbmInput].forEach(el => {
+  el.addEventListener('change', () => {
+    updateDomesticDesc();
+    updateArrivalDesc();
+    updatePumexDomesticDesc();
+    updatePumexArrivalDesc();
+  });
+  el.addEventListener('input', () => {
+    updateDomesticDesc();
+    updateArrivalDesc();
+    updatePumexDomesticDesc();
+    updatePumexArrivalDesc();
+  });
+});
+
   
 </script>
 
