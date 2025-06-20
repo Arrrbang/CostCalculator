@@ -6,9 +6,9 @@
 let usdKrwRate = 1300;        // 예비값
 async function refreshRate(){
   try{
-    const res = await fetch("https://api.exchangerate-api.com/v4/latest/KRW");
+    const res = await fetch("https://api.exchangerate-api.com/v4/latest/USD");
     const j = await res.json();
-    usdKrwRate = j.rates.USD || usdKrwRate;           // KRW 기준
+    usdKrwRate = j.rates.KRW || usdKrwRate;   // USD → KRW 직접 환율
   }catch(e){
     console.error("환율 API 오류:", e);
   }
@@ -28,7 +28,8 @@ function updateConsoleTotal(){
   const krwVal = parseFloat(krwTxt.replace(/[^\d.]/g,"")) || 0;
 
   const total = Math.round(krwVal + usdVal * usdKrwRate);
-  document.getElementById("console-total-krw").textContent = total.toLocaleString();
+   document.getElementById("console-total-krw").textContent =
+         formatCurrency(total,'KRW').replace('₩ ','');
 }
 
 function updatePumexTotal(){
