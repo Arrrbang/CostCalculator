@@ -313,6 +313,7 @@
 
 const cbmRateInput   = document.getElementById('cbm-rate');
 const consoleCbmInput = document.getElementById('console-cbm');
+const domesticCostBox = document.getElementById('domestic-cost');
 const domesticDesc = document.getElementById('domestic-desc');
 
 
@@ -386,41 +387,55 @@ document.getElementById('console-select').addEventListener('change', e => {
     }
   }
 
-function updateDomesticDesc() {
+/* 변경·입력 때마다 실행 */
+[poeSel, consoleSel, cbmRateInput, consoleCbmInput].forEach(el => {
+  el.addEventListener('change', updateDomesticDesc);
+  el.addEventListener('input',  updateDomesticDesc);
+});
+
+function updateDomesticDesc () {
   const poeKey      = poeSel.value;
   const consoleKey  = consoleSel.value;
-  const cbmRate     = parseFloat(cbmRateInput.value)   || 0;
-  const consoleCbm  = parseFloat(consoleCbmInput.value)|| 0;
+  const cbmRate     = +cbmRateInput.value    || 0;
+  const consoleCbm  = +consoleCbmInput.value || 0;
 
-  if (!poeKey || !consoleKey) { domesticDesc.innerHTML = ""; return; }
+  /* 선택 미완료 시 리셋 */
+  if (!poeKey || !consoleKey) {
+    domesticCostBox.innerHTML = '₩0';
+    domesticDescBox.innerHTML = '';
+    return;
+  }
 
   const node    = gData[poeKey];
-  const company = node?.console?.[consoleKey] || {};
+  const company = node.console?.[consoleKey] || {};
 
-  /* ① OFC (USD 고정) */
-  let usdTotal = cbmRate * consoleCbm;   // OFC
-
-  /* ② 콘솔 업체 항목 */
+  /* ------------------ 계산 ------------------ */
+  let usdTotal = cbmRate * consoleCbm;         // OFC
   let krwTotal = 0;
-  Object.values(company).forEach(obj=>{
+
+  const detailLines = [
+    `OFC : $${usdTotal.toLocaleString()}`
+  ];
+
+  Object.entries(company).forEach(([key, obj]) => {
     const cur = obj.CURRENCY;
-    if (obj.단가) {
-      const val = obj.단가 * consoleCbm;
-      cur === "USD" ? usdTotal += val : krwTotal += val;
-    } else if ('COST' in obj) {
-      cur === "USD" ? usdTotal += obj.COST : krwTotal += obj.COST;
-    }
+    const val = obj.단가 ? obj.단가 * consoleCbm
+                         : (obj.COST ?? 0);
+
+    if (cur === 'USD') usdTotal += val; else krwTotal += val;
+
+    const sign = cur === 'USD' ? '$' : '₩';
+    detailLines.push(`${key} : ${sign}${val.toLocaleString()}`);
   });
 
-  /* ③ 화면 출력: 통화별 합계만 */
-  domesticDesc.innerHTML =
-    `<div class="currency-total">$ ${usdTotal.toLocaleString()}</div>`+
-    `<div class="currency-total">₩ ${krwTotal.toLocaleString()}</div>`;
-}
+  /* ------------------ 화면 반영 ------------------ */
+  /* ① 국내비용 오른쪽 칸 : 합계 */
+  domesticCostBox.innerHTML =
+      `$ ${usdTotal.toLocaleString()}<br>₩ ${krwTotal.toLocaleString()}`;
 
-/* 호출 트리거 */
-[poeSel, consoleSel, cbmRateInput, consoleCbmInput]
-  .forEach(el => el.addEventListener('change', updateDomesticDesc));
+  /* ② 토글 박스 : 세부 내역 */
+  domesticDescBox.innerHTML = detailLines.join('<br>');
+}
 
   
 </script>
