@@ -352,7 +352,12 @@ const rate40hcInput  = document.getElementById('rate-40hc');
 
 
 
-
+/* 통화별 반올림 + 서식 */
+function formatCurrency(v, cur){
+  return (cur==='USD')
+    ? `$ ${(Math.round(v*100)/100).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}`
+    : `₩ ${Math.round(v).toLocaleString('ko-KR')}`;
+}
 
 /* ---------- ① JSON 불러오기 ---------- */
 let gData = {};                  // 전역에 저장
@@ -442,9 +447,9 @@ function updateDomesticDesc () {
 
   /* ---- OFC (USD) : CBM당 운임 × 콘솔 CBM ---- */
   let usdTotal = cbmRate * consoleCbm;
-  const detailLines = [
-    `OFC : ${formatCurrency(cbmRate * consoleCbm, 'USD')}`
-  ];
+   const detailLines = [
+     `OFC : ${formatCurrency(cbmRate * consoleCbm, 'USD')}`
+   ];
 
   /* ---- 콘솔 업체 항목 ---- */
   let krwTotal = 0;
