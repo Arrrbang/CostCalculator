@@ -328,7 +328,14 @@
           </div>
         </div>
       </div>
-
+      
+      <div class="right-container">
+        <div class="right-box" id="breakpoint-box">
+          <h2>최적 CBM 탐색 결과</h2>
+          <div id="breakpoint-msg">아직 계산되지 않았습니다.</div>
+        </div>
+      </div>
+      
     </div>
 
   </div>
@@ -629,26 +636,87 @@ function updatePumexArrivalDesc () {
    `DEVANING : ${formatCurrency(devaning, 'USD')}`;
 }
 
+/* ---------- 최적 CBM 탐색 ---------- */
+function findBreakpoint(){
+  const savedTotal = +totalCbmInput.value || 0;   // 사용자가 쓴 값 백업
+  const poeKey     = poeSel.value;
+  const partnerKey = partnerSel.value;
+  const consoleKey = consoleSel.value;
+  if (!poeKey || !partnerKey || !consoleKey) {
+    document.getElementById('breakpoint-msg').textContent = '입력을 먼저 완료하세요.';
+    return;
+  }
+
+  let answer = null;
+
+  // 1~65 CBM 루프
+  for(let cbm=1; cbm<=65; cbm++){
+    // 총 CBM만 가상 변경
+    const tCbm = cbm;
+    const cCbm = +consoleCbmInput.value || 0;
+    const cbmRate = +cbmRateInput.value || 0;
+    const rate40  = +rate40hcInput.value || 0;
+
+    /* ---- 타업체 합계 ---- */
+    // 국내 USD + KRW
+    let usdDom=cbmRate*cCbm,  krwDom=0;
+    const company = gData[poeKey].console?.[consoleKey]||{};
+    Object.values(company).forEach(o=>{
+      const v=o.단가? o.단가*cCbm : (o.COST||0);
+      (o.CURRENCY==='USD') ? usdDom+=v : krwDom+=v;
+    });
+    // 도착지 USD
+    const pNode=gData[poeKey].partner?.[partnerKey];
+    const usdArr=((pNode.drayage||0)/tCbm*cCbm)+((pNode.devaning||0)/tCbm*cCbm);
+    const consoleKRW = Math.round(krwDom + (usdDom+usdArr)*usdToKrw);
+
+    /* ---- PUMEX 합계 ---- */
+    // 국내
+    let usdP=rate40/tCbm*cCbm, krwP=0;
+    const ofc=gData[poeKey].OFC||{};
+    Object.values(ofc).forEach(o=>{
+      const v=(o.COST||0)/tCbm*cCbm;
+      (o.CURRENCY==='USD') ? usdP+=v : krwP+=v;
+    });
+    // 도착지(동일)
+    const pumexKRW = Math.round(krwP + (usdP+usdArr)*usdToKrw);
+
+    /* 비교 */
+    if (pumexKRW < consoleKRW){ answer = cbm; break; }
+  }
+
+  // 결과 출력
+  document.getElementById('breakpoint-msg').textContent =
+    answer
+      ? `전체 컨테이너 ${answer}CBM 콘솔부터 PUMEX 콘솔이 저렴함`
+      : '1~65CBM 범위에서 PUMEX가 더 저렴한 경우가 없습니다.';
+
+  // 사용자 입력 복원 & 화면 재계산
+  if (savedTotal){
+    totalCbmInput.value = savedTotal;
+    updateDomesticDesc(); updateArrivalDesc();
+    updatePumexDomesticDesc(); updatePumexArrivalDesc();
+    updateConsoleTotal(); updatePumexTotal();
+  }
+}
+
+/* ── 합계까지 계산한 뒤 항상 호출 ── */
+function recalcAll(){
+  updateDomesticDesc();   updateArrivalDesc();
+  updatePumexDomesticDesc(); updatePumexArrivalDesc();
+  updateConsoleTotal();   updatePumexTotal();
+  findBreakpoint();       // ★ 추가
+}
 
 /* 변경·입력 때마다 실행 */
-[poeSel, partnerSel, consoleSel, cbmRateInput, rate40hcInput, consoleCbmInput, totalCbmInput].forEach(el => {
-  el.addEventListener('change', () => {
-    updateDomesticDesc();
-    updateArrivalDesc();
-    updatePumexDomesticDesc();
-    updatePumexArrivalDesc();
-    updateConsoleTotal();   // 타업체 합계
-    updatePumexTotal();     // ★ PUMEX 합계
+  [
+    poeSel, partnerSel, consoleSel,
+    cbmRateInput, rate40hcInput,
+    totalCbmInput, consoleCbmInput
+  ].forEach(el=>{
+    el.addEventListener('change', recalcAll);
+    el.addEventListener('input',  recalcAll);
   });
-  el.addEventListener('input', () => {
-    updateDomesticDesc();
-    updateArrivalDesc();
-    updatePumexDomesticDesc();
-    updatePumexArrivalDesc();
-    updateConsoleTotal();
-    updatePumexTotal();     // ★
-  });
-});
 
 </script>
 
