@@ -120,19 +120,24 @@
     </div>
 
     <!-- 입력 폼 열 -->
-    <div class="info-column">
-      <h2><span class="arrow">▶</span> 포장 비용 계산</h2>
-
-      <div class="form-row">
-        <label for="total-cbm">컨테이너 전체 CBM :</label>
-        <input type="number" id="total-cbm" placeholder="예: 65">
-      </div>
-
-      <div class="form-row">
-        <label for="cbm-rate">CBM당 운임 :</label>
-        <input type="number" id="cbm-rate" placeholder="예: 120">
-      </div>
+  <div class="info-column">
+    <div class="form-row">
+      <label for="console-select">콘솔업체 :</label>
+      <select id="console-select">
+        <option value="">선택하세요</option>
+      </select>
     </div>
+  
+    <div class="form-row">
+      <label for="total-cbm">컨테이너 전체 CBM :</label>
+      <input type="number" id="total-cbm" placeholder="예: 65">
+    </div>
+  
+    <div class="form-row">
+      <label for="cbm-rate">CBM당 운임 :</label>
+      <input type="number" id="cbm-rate" placeholder="예: 120">
+    </div>
+  </div>
 
     <!-- 결과 열 (비워둠) -->
     <div class="cost-column">
@@ -140,4 +145,24 @@
     </div>
   </div>
 </body>
+
+<script>
+  fetch('cost.json')
+    .then(response => response.json())
+    .then(data => {
+      const select = document.getElementById('console-select');
+      const companyNames = Object.keys(data);
+
+      companyNames.forEach(name => {
+        const option = document.createElement('option');
+        option.value = name;
+        option.textContent = name;
+        select.appendChild(option);
+      });
+    })
+    .catch(error => {
+      console.error('업체 목록 불러오기 실패:', error);
+    });
+</script>
+
 </html>
