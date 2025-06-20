@@ -185,16 +185,31 @@
       cursor: pointer;
     }
     
-    .description-box {
-      padding: 12px 16px;
-      margin: -8px 0 16px 0;
-      background-color: #f8f8f8;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      color: #444;
-      display: none;
-    }
+      .description-box {
+        max-height: 0;
+        overflow: hidden;
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: -8px 0 16px 0;
+        padding: 0 16px;
+        font-size: 0.9rem;
+        color: #444;
+        transition: all 0.3s ease;
+      }
+
+      .description-box.open {
+        padding: 12px 16px;
+        max-height: 200px;
+      }
+    
+      .arrow {
+        display: inline-block;
+        width: 1.2em;
+        text-align: center;
+        margin-right: 6px;
+        transition: transform 0.3s ease;
+      }
      
   </style>
 </head>
@@ -262,18 +277,18 @@
           <h2 id="console-cost-title">[콘솔업체 콘솔 작업시 비용]</h2>
           
             <!-- 국내 비용 -->
-            <div class="form-row toggle-row" onclick="toggleDesc('domestic-desc')">
-              <label>국내 비용 :</label>
+            <div class="form-row toggle-row" onclick="toggleDesc('domestic-desc', this)">
+              <label><span class="arrow">▶</span> 국내 비용 :</label>
               <div class="readonly-output" id="domestic-cost">₩0</div>
             </div>
-            <div class="description-box" id="domestic-desc" style="display:none;"></div>
+            <div class="description-box" id="domestic-desc"></div>
             
             <!-- 도착지 비용 -->
-            <div class="form-row toggle-row" onclick="toggleDesc('arrival-desc')">
-              <label>도착지 비용 :</label>
+            <div class="form-row toggle-row" onclick="toggleDesc('arrival-desc', this)">
+              <label><span class="arrow">▶</span> 도착지 비용 :</label>
               <div class="readonly-output" id="arrival-cost">$0</div>
             </div>
-            <div class="description-box" id="arrival-desc" style="display:none;"></div>
+            <div class="description-box" id="arrival-desc"></div>
 
         </div>
       </div>
@@ -338,10 +353,19 @@ document.getElementById('console-select').addEventListener('change', e => {
     : `[콘솔업체] 콘솔 작업시 비용`;
 });
 
-  function toggleDesc(id) {
-    const el = document.getElementById(id);
-    if (!el) return;
-    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  function toggleDesc(id, trigger) {
+    const box = document.getElementById(id);
+    if (!box) return;
+  
+    const isOpen = box.classList.toggle("open");
+  
+    // 아이콘 회전 처리 (trigger가 있을 경우)
+    if (trigger) {
+      const arrow = trigger.querySelector(".arrow");
+      if (arrow) {
+        arrow.style.transform = isOpen ? "rotate(90deg)" : "rotate(0deg)";
+      }
+    }
   }
   
 </script>
