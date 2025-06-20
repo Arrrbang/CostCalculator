@@ -346,6 +346,19 @@ const pumexArrivalDescBox  = document.getElementById('pumex-arrival-desc');
 const rate40hcInput  = document.getElementById('rate-40hc');
 
 
+/* 통화별 반올림·서식 */
+function formatCurrency(val, cur){
+  if (cur === 'USD') {                 // 달러: 소수점 2자리까지
+    const v = Math.round(val * 100) / 100;                 // 3째 자리 반올림
+    return `$ ${v.toLocaleString('en-US', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    })}`;
+  } else {                             // 그 외(원화 등): 소수점 제거
+    const v = Math.round(val);                           // 1원 단위 반올림
+    return `₩ ${v.toLocaleString('ko-KR')}`;
+  }
+}
 
 
 /* ---------- ① JSON 불러오기 ---------- */
