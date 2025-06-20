@@ -8,7 +8,8 @@
         "SLC": {"CURRENCY": "KRW", "COST": 100000},
         "WFC": {"CURRENCY": "KRW", "COST": 8858},
         "PFS": {"CURRENCY": "KRW", "COST": 172},
-        "PSM": {"CURRENCY": "KRW", "COST": 502}
+        "PSM": {"CURRENCY": "KRW", "COST": 502},
+        "TRC": {"CURRENCY": "KRW", "COST": 780000}
         },
       "partner":{
         "SOS" : {"drayage" : 820, "devaning" : 300}
