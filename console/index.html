@@ -131,7 +131,45 @@
       -webkit-appearance: none;
       -moz-appearance: none;
     }
+    
+    .cost-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      background: transparent;
+      padding: 0;
+    }
+    
+    /* 오른쪽 열 안에서 흰색 박스 감싸는 래퍼 */
+    .right-container {
+      display: flex;
+      justify-content: center;
+    }
+    
+    /* 흰색 박스 자체 */
+    .right-box {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 500px;   /* 가운데 열과 맞춤 */
+      box-sizing: border-box;
+    }
+    
+    /* 값 출력 영역도 input/select처럼 스타일 통일 */
+    .readonly-output {
+      flex: 1;
+      margin-left: 10px;
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      background-color: #f9f9f9;
+    }
 
+    
   </style>
 </head>
 
@@ -193,17 +231,19 @@
   </div>
 
     <div class="cost-column">
-      <div class="form-container-right" id="cost-summary-box">
-        <h2 id="console-cost-title">[콘솔업체 콘솔 작업시 비용]</h2>
-        
-        <div class="result-row">
-          <div class="result-label">국내 비용 :</div>
-          <div class="result-value" id="domestic-cost">₩0</div>
-        </div>
-      
-        <div class="result-row">
-          <div class="result-label">도착지 비용 :</div>
-          <div class="result-value" id="arrival-cost">$0</div>
+      <div class="right-container">
+        <div class="right-box" id="cost-summary-box">
+          <h2 id="console-cost-title">[콘솔업체 콘솔 작업시 비용]</h2>
+          
+          <div class="form-row">
+            <label>국내 비용 :</label>
+            <div class="readonly-output" id="domestic-cost">₩0</div>
+          </div>
+    
+          <div class="form-row">
+            <label>도착지 비용 :</label>
+            <div class="readonly-output" id="arrival-cost">$0</div>
+          </div>
         </div>
       </div>
       
