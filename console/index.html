@@ -436,7 +436,10 @@ function updateDomesticDesc () {
   const company = node.console?.[consoleKey] || {};
 
   /* 0) 40HC OFC 계산 (USD 고정) */
-  let usdTotal = (rate40 / totalCbm) * consoleCbm;     // 40HC 운임 비례 배분
+  let usdTotal = cbmRate * consoleCbm;      // ← 이렇게 바꿉니다
+  const detailLines = [
+    `OFC : $${usdTotal.toLocaleString()}`
+  ];
   const detailLines = [
     `OFC : $${usdTotal.toLocaleString()}`              // 맨 위에 기록
   ];
