@@ -180,7 +180,22 @@
       text-align: center;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
+    .toggle-row {
+      cursor: pointer;
+    }
     
+    .description-box {
+      padding: 12px 16px;
+      margin: -8px 0 16px 0;
+      background-color: #f8f8f8;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: #444;
+      display: none;
+    }
+     
   </style>
 </head>
 
@@ -246,15 +261,20 @@
         <div class="right-box" id="cost-summary-box">
           <h2 id="console-cost-title">[콘솔업체 콘솔 작업시 비용]</h2>
           
-          <div class="form-row">
-            <label>국내 비용 :</label>
-            <div class="readonly-output" id="domestic-cost">₩0</div>
-          </div>
-    
-          <div class="form-row">
-            <label>도착지 비용 :</label>
-            <div class="readonly-output" id="arrival-cost">$0</div>
-          </div>
+            <!-- 국내 비용 -->
+            <div class="form-row toggle-row" onclick="toggleDesc('domestic-desc')">
+              <label>국내 비용 :</label>
+              <div class="readonly-output" id="domestic-cost">₩0</div>
+            </div>
+            <div class="description-box" id="domestic-desc" style="display:none;"></div>
+            
+            <!-- 도착지 비용 -->
+            <div class="form-row toggle-row" onclick="toggleDesc('arrival-desc')">
+              <label>도착지 비용 :</label>
+              <div class="readonly-output" id="arrival-cost">$0</div>
+            </div>
+            <div class="description-box" id="arrival-desc" style="display:none;"></div>
+
         </div>
       </div>
       
@@ -318,6 +338,12 @@ document.getElementById('console-select').addEventListener('change', e => {
     : `[콘솔업체] 콘솔 작업시 비용`;
 });
 
+  function toggleDesc(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+  
 </script>
 
 </html>
