@@ -127,21 +127,44 @@
 
     <!-- 입력 폼 열 -->
   <div class="info-column">
-    <div class="form-row">
-      <label for="console-select">콘솔업체 :</label>
-      <select id="console-select">
-        <option value="">선택하세요</option>
-      </select>
+    <div class="left-container" id="rate-card">
+      <div class="form-row">
+        <label for="rate-40hc">현재 40HC 운임 :</label>
+        <input type="number" id="rate-40hc" placeholder="예: 2850">
+      </div>
+  
+      <div class="form-row">
+        <label for="partner">도착지 파트너 :</label>
+        <select id="partner">
+          <option value="">선택하세요</option>
+        </select>
+      </div>
+  
+      <div class="form-row">
+        <label for="poe">도착지 :</label>
+        <select id="poe">
+          <option value="">선택하세요</option>
+        </select>
+      </div>
     </div>
   
-    <div class="form-row">
-      <label for="total-cbm">컨테이너 전체 CBM :</label>
-      <input type="number" id="total-cbm" placeholder="예: 65">
-    </div>
+    <div class="left-container" id="console-card">
+      <div class="form-row">
+        <label for="console-select">콘솔업체 :</label>
+        <select id="console-select">
+          <option value="">선택하세요</option>
+        </select>
+      </div>
   
-    <div class="form-row">
-      <label for="cbm-rate">CBM당 운임 :</label>
-      <input type="number" id="cbm-rate" placeholder="예: 120">
+      <div class="form-row">
+        <label for="total-cbm">컨테이너 전체 CBM :</label>
+        <input type="number" id="total-cbm" placeholder="예: 65">
+      </div>
+  
+      <div class="form-row">
+        <label for="cbm-rate">CBM당 운임 :</label>
+        <input type="number" id="cbm-rate" placeholder="예: 120">
+      </div>
     </div>
   </div>
 
