@@ -83,12 +83,21 @@
     }
 
     .info-column {
-      background: white;
+      display: flex;
+      flex-direction: column;   /* 세로 방향 */
+      gap: 24px;                /* 카드 간 간격 */
+      flex: 1;
+      background: transparent;  /* ♻ 흰 배경 제거 */
+      padding: 0;               /* ♻ 내부 패딩 제거 */
+    }
+    
+    .left-container {
+      background: #ffffff;
       border-radius: 20px;
       padding: 30px;
       box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-      flex: 1;
     }
+    
 
     .form-row {
       display: flex;
