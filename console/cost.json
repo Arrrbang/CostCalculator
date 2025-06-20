@@ -1,34 +1,25 @@
 {
   "poe": {
     "chicago":{
+      "OFC" :{
+        "AMS": {"CURRENCY": "USD", "COST": 35},
+        "THC": {"CURRENCY": "KRW", "COST": 210000},
+        "DOC": {"CURRENCY": "KRW", "COST": 500000},
+        "SLC": {"CURRENCY": "KRW", "COST": 100000},
+        "WFC": {"CURRENCY": "KRW", "COST": 8858},
+        "PFS": {"CURRENCY": "KRW", "COST": 172},
+        "PSM": {"CURRENCY": "KRW", "COST": 502}
+        },
       "partner":{
-        "SOS" : {
-            "drayage" : 820,
-            "devaning" : 300
-          }
+        "SOS" : {"drayage" : 820, "devaning" : 300}
         },
       "console":{
         "IMS": {
-          "THC": {
-            "CURRENCY": "KRW",
-            "COST": 3708
-          },
-          "TRC": {
-            "CURRENCY": "KRW",
-            "COST": 16000
-          },
-          "DOC": {
-            "CURRENCY": "KRW",
-            "COST": 40000
-          },
-          "DEST_DO": {
-            "CURRENCY": "USD",
-            "COST": 50
-          },
-          "AMS": {
-            "CURRENCY": "USD",
-            "COST": 20
-          }
+          "THC": {"CURRENCY": "KRW", "COST": 3708},
+          "TRC": {"CURRENCY": "KRW", "COST": 16000},
+          "DOC": {"CURRENCY": "KRW", "COST": 40000},
+          "DEST_DO": {"CURRENCY": "USD", "COST": 50},
+          "AMS": {"CURRENCY": "USD", "COST": 20}
         }
       }
     }
