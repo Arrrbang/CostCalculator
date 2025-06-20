@@ -259,6 +259,14 @@ function handlePOEChange() {
     });
   }
 }
+
+document.getElementById('console-select').addEventListener('change', e => {
+  const name = e.target.value;
+  document.getElementById('console-cost-title').textContent = name
+    ? `[${name}] 콘솔 작업시 비용`
+    : `[콘솔업체] 콘솔 작업시 비용`;
+});
+
 </script>
 
 </html>
