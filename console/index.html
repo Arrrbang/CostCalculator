@@ -499,32 +499,38 @@ function updateDomesticDesc () {
 
 function updatePumexDomesticDesc () {
   const poeKey     = poeSel.value;
-  const totalCbm   = +totalCbmInput.value   || 0;
-  const consoleCbm = +consoleCbmInput.value || 0;
+  const totalCbm   = +totalCbmInput.value   || 0;   // 컨테이너 전체 CBM
+  const consoleCbm = +consoleCbmInput.value || 0;   // 콘솔 CBM
+  const rate40     = +rate40hcInput.value   || 0;   // 현재 40HC 운임 (USD)
 
-  /* 선택 미완료 시 리셋 */
+  /* 선택·입력이 부족할 때 리셋 */
   if (!poeKey || !totalCbm || !consoleCbm) {
-    pumexDomesticCostBox.innerHTML = '₩0';
+    pumexDomesticCostBox.innerHTML = '$0<br>₩0';
     pumexDomesticDescBox.innerHTML = '';
     return;
   }
 
   const ofcNode = gData[poeKey]?.OFC;
-  if (!ofcNode) {             // OFC 데이터 없을 때
-    pumexDomesticCostBox.innerHTML = '₩0';
+  if (!ofcNode) {                    // OFC 데이터가 없으면 리셋
+    pumexDomesticCostBox.innerHTML = '$0<br>₩0';
     pumexDomesticDescBox.innerHTML = '';
     return;
   }
 
-  /* ---- 계산 ---- */
-  let usdTotal = 0;
-  let krwTotal = 0;
-  const detail = [];
+  /* ── ① OFC(40HC) 계산 ───────────────── */
+  const ofcUsd = (rate40 / totalCbm) * consoleCbm;   // USD 고정
+  let usdTotal = ofcUsd;                             // USD 합계 초기값
+  let krwTotal = 0;                                  // KRW 합계
 
+  const detail = [
+    `OFC : $${ofcUsd.toLocaleString()}`              // 첫 줄로 기록
+  ];
+
+  /* ── ② OFC 하위 항목 계산 ─────────────── */
   Object.entries(ofcNode).forEach(([key, obj]) => {
     const cur = obj.CURRENCY;
-    const unitVal = obj.COST ?? 0;                // OFC 는 모두 COST
-    const val = unitVal / totalCbm * consoleCbm;  // 비례 계산
+    const unit = obj.COST ?? 0;                      // OFC 하위 항목은 COST
+    const val  = unit / totalCbm * consoleCbm;       // 비례 계산
 
     if (cur === 'USD') usdTotal += val; else krwTotal += val;
 
@@ -532,9 +538,10 @@ function updatePumexDomesticDesc () {
     detail.push(`${key} : ${sign}${val.toLocaleString()}`);
   });
 
-  /* ---- 출력 ---- */
+  /* ── ③ 화면 반영 ──────────────────────── */
   pumexDomesticCostBox.innerHTML =
       `$ ${usdTotal.toLocaleString()}<br>₩ ${krwTotal.toLocaleString()}`;
+
   pumexDomesticDescBox.innerHTML = detail.join('<br>');
 }
 
