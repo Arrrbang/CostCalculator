@@ -2,7 +2,7 @@
   "poe": {
     "chicago":{
       "OFC" :{
-        "AMS": {"CURRENCY": "USD", "BL": 35},
+        "AMS": {"CURRENCY": "USD", "COST": 70},
         "THC": {"CURRENCY": "KRW", "COST": 210000},
         "DOC": {"CURRENCY": "KRW", "COST": 500000},
         "SLC": {"CURRENCY": "KRW", "COST": 100000},
