@@ -28,19 +28,32 @@
     }
 
     .logo-column {
-      width: 200px;
-      flex-shrink: 0;
+      position: relative;
+      flex: 0 0 180px;
+      min-width: 120px;
+      max-width: 150px;
+      padding: 50px 0 0 24px;
     }
 
+    .logo-wrapper {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+    }
+    
     .logo-wrapper img {
-      width: 160px;
+      width: 150px;
       height: auto;
       display: block;
-      margin-bottom: 20px;
     }
 
     .button-under-logo {
-      margin-bottom: 15px;
+      position: absolute;
+      top: 95px;                     /* 로고 아래로 75px */
+      left: 20px;
+      z-index: 10;
+      width: 150px;
     }
 
     .button-under-logo a {
