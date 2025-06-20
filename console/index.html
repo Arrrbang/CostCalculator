@@ -502,10 +502,10 @@ function updateDomesticDesc () {
   const arrivalTotal = drayage + devaning;
 
   /* ② 화면 반영 */
-  arrivalCostBox.innerHTML = `$ ${arrivalTotal.toLocaleString()}`;
+  arrivalCostBox.innerHTML = formatCurrency(arrivalTotal, 'USD');
   arrivalDescBox.innerHTML =
-    `DRAYAGE : $${drayage.toLocaleString()}<br>` +
-    `DEVANING : $${devaning.toLocaleString()}`;
+    `DRAYAGE : ${formatCurrency(drayage, 'USD')}<br>` +
+    `DEVANING : ${formatCurrency(devaning, 'USD')}`;
 }
 
 function updatePumexDomesticDesc () {
@@ -534,7 +534,7 @@ function updatePumexDomesticDesc () {
   let krwTotal = 0;                                  // KRW 합계
 
   const detail = [
-    `OFC : $${ofcUsd.toLocaleString()}`              // 첫 줄로 기록
+    `OFC : ${formatCurrency(ofcUsd, 'USD')}`             // 첫 줄로 기록
   ];
 
   /* ── ② OFC 하위 항목 계산 ─────────────── */
@@ -546,7 +546,7 @@ function updatePumexDomesticDesc () {
     if (cur === 'USD') usdTotal += val; else krwTotal += val;
 
     const sign = cur === 'USD' ? '$' : '₩';
-    detail.push(`${key} : ${sign}${val.toLocaleString()}`);
+    detail.push(`${key} : ${formatCurrency(val, cur)}`);
   });
 
   /* ── ③ 화면 반영 ──────────────────────── */
@@ -579,10 +579,10 @@ function updatePumexArrivalDesc () {
   const devaning = (partnerNode.devaning || 0) / totalCbm * consoleCbm;
   const total    = drayage + devaning;
 
-  pumexArrivalCostBox.innerHTML = `$ ${total.toLocaleString()}`;
-  pumexArrivalDescBox.innerHTML =
-    `DRAYAGE : $${drayage.toLocaleString()}<br>` +
-    `DEVANING : $${devaning.toLocaleString()}`;
+ pumexArrivalCostBox.innerHTML = formatCurrency(total, 'USD');
+ pumexArrivalDescBox.innerHTML =
+   `DRAYAGE : ${formatCurrency(drayage, 'USD')}<br>` +
+   `DEVANING : ${formatCurrency(devaning, 'USD')}`;
 }
 
 
