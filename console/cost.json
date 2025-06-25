@@ -2,7 +2,7 @@
   "poe": {
     "chicago":{
       "OFC" :{
-        "AMS": {"CURRENCY": "USD", "COST": 35},
+        "AMS": {"CURRENCY": "USD", "CASE": 35},
         "THC": {"CURRENCY": "KRW", "COST": 210000},
         "DOC": {"CURRENCY": "KRW", "COST": 500000},
         "SLC": {"CURRENCY": "KRW", "COST": 100000},
@@ -18,15 +18,15 @@
         "IMS": {
           "THC": {"CURRENCY": "KRW", "단가": 3708},
           "TRC": {"CURRENCY": "KRW", "단가": 16000},
-          "DOC": {"CURRENCY": "KRW", "COST": 40000},
-          "DEST_DO": {"CURRENCY": "USD", "COST": 50},
-          "AMS": {"CURRENCY": "USD", "COST": 20}
+          "DOC": {"CURRENCY": "KRW", "CASE": 40000},
+          "DEST_DO": {"CURRENCY": "USD", "CASE": 50},
+          "AMS": {"CURRENCY": "USD", "CASE": 20}
         }
       }
     },
     "SAVANNAH":{
       "OFC":{
-        "AMS": {"CURRENCY": "USD", "COST": 35},
+        "AMS": {"CURRENCY": "USD", "CASE": 35},
         "THC": {"CURRENCY": "KRW", "COST": 210000},
         "DOC": {"CURRENCY": "KRW", "COST": 50000},
         "SLC": {"CURRENCY": "KRW", "COST": 10000},
@@ -41,10 +41,10 @@
         },
       "console":{
         "아메리카콘솔사":{
-          "AMS": {"CURRENCY": "USD", "COST": 35},
+          "AMS": {"CURRENCY": "USD", "CASE": 35},
           "THC": {"CURRENCY": "KRW", "단가": 3530},
-          "DOC": {"CURRENCY": "KRW", "COST": 50000},
-          "SLC": {"CURRENCY": "KRW", "COST": 5000},
+          "DOC": {"CURRENCY": "KRW", "CASE": 50000},
+          "SLC": {"CURRENCY": "KRW", "CASE": 5000},
           "WFC": {"CURRENCY": "KRW", "단가": 192},
           "TRC": {"CURRENCY": "KRW", "단가": 16100}
         }
@@ -52,7 +52,7 @@
     },
     "lOS ANGELES":{
       "OFC":{
-        "AMS": {"CURRENCY": "USD", "COST": 35},
+        "AMS": {"CURRENCY": "USD", "CASE": 35},
         "DOC": {"CURRENCY": "KRW", "COST": 50000},
         "PFS": {"CURRENCY": "KRW", "COST": 172},
         "THC": {"CURRENCY": "KRW", "COST": 210000},
@@ -67,9 +67,9 @@
       "console":{
         "YESG2M(PLS)":{
           "THC": {"CURRENCY": "KRW", "단가": 3400},
-          "AMS": {"CURRENCY": "USD", "COST": 15},
+          "AMS": {"CURRENCY": "USD", "CASE": 15},
           "SLC": {"CURRENCY": "KRW", "단가": 146},
-          "DOC": {"CURRENCY": "KRW", "COST": 50000},
+          "DOC": {"CURRENCY": "KRW", "CASE": 50000},
           "TRC": {"CURRENCY": "KRW", "단가": 17000}
         }
       }
