@@ -506,8 +506,10 @@ function updateDomesticDesc () {
   let krwTotal = 0;
   Object.entries(company).forEach(([key, obj]) => {
     const cur = obj.CURRENCY;
-    const val = obj.단가 ? obj.단가 * consoleCbm
-                         : (obj.COST ?? 0);
+    let val = 0;
+    if ("단가" in obj) val = obj.단가 * consoleCbm;
+    else if ("COST" in obj) val = (obj.COST / totalCbm) * consoleCbm;
+    else if ("CASE" in obj) val = obj.CASE;
 
     if (cur === 'USD') usdTotal += val; else krwTotal += val;
 
