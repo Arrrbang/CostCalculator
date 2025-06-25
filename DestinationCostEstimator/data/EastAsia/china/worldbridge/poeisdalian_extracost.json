@@ -1,90 +1,130 @@
 {
-    "links": [
-        {
-            "label": "문의 필요",
-            "url": ""
-        },
-        {
-            "label": "NOTION",
-            "url": "https://www.notion.so/WORLD-BRIDGE-CO-LTD-1c20b10191ce800a93dff2f569dbe954"
-        }
-    ],
-    "화폐단위": "$",
-  
-    "basic-cost-1": {
-        "name": "DUTY",
-        "description": "실비청구",
-        "NonDiplomat": {
-            "20DRY": "실비청구\n약 $500~1,000정도 발생",
-            "40HC": "실비청구"
-        }
-    },
-    "basic-cost-2": {
-        "name": "ISC",
-        "description": "CNY 1660/2900",
-        "NonDiplomat": {
-            "20DRY": 230,
-            "40HC": 400
-        }
-    },
-    "basic-cost-3": {
-        "name": "STORAGE CHARGE",
-        "description": "정확한 비용 확인 불가, 통상적인 금액",
-        "NonDiplomat": {
-            "20DRY": 28,
-            "40HC": 50
-        }
-    },
-    "basic-cost-4": {
-        "name": "LSS",
-        "description": "비용 확인 중",
-        "NonDiplomat": {
-            "20DRY": 140,
-            "40HC": 280
-        }
-    },
-    "basic-cost-5": {
-        "name": "SHC",
-        "description": "대략적인 금액",
-        "NonDiplomat": {
-            "20DRY": 70,
-            "40HC": 100
-        }
-    },
-    "extra-cost-1": {
-        "name": "FULL SETTING",
-        "description": "",
-        "20DRY": "$200~$250",
-        "40HC": "$400~$450"
-    },
-    "STAIR CHARGE": {
-        "description": "미확인",
-        "CBM단가": 0
-    },
-    "HEAVY ITEM": {
-        "description": "미확인",
-        "단위": "ITEM",
-        "단가": 0
-    },
-    "STORAGE CHARGE": {
-        "description": "미확인",
-        "단위": "개월",
-        "무료 보관 기간": 0,
-        "보관 비용": {
-            "20DRY": 0,
-            "40HC": 0,
-            "단가": 0
-        }
-    },
-    "additional-info-1": {
-        "name": "불포함 비용",
-        "description": "관세, 창고료, 컨테이너이전료, 검역비BAF/CAF 등별도."
-    },
-    "additional-info-2": {
-        "name": "사용 가능 선사",
-        "description": "인천발\nDoowoo : T/T 1 DAYS (인코 부킹)"
-    },
-    "DATA BASE": {
-        "description": "2025/3/26 업데이트"
+  "links": [
+    { "label": "busanOFC",    "url": "" },
+    { "label": "incheonOFC",  "url": "" },
+    { "label": "partnerInfo", "url": "https://www.notion.so/WORLD-BRIDGE-CO-LTD-1c20b10191ce800a93dff2f569dbe954?source=copy_link" }
+  ],
+
+  "ofc": {
+	  "notion_OFC": "인천",
+    "incheon": {
+      "shipping-line1": {
+        "name": "DOOWOO",
+        "tt": "T/T 1~2 days",
+        "note": ""
+      },
+      "shipping-line2": {
+        "name": "선사명",
+        "tt": "T/T 0 days",
+        "note": "*특이사항 기재"
+      }
     }
+  },
+
+  "additional-info": [
+    {
+      "name": "",
+      "description": ""
+    }
+  ],
+
+  "includedInfo": [
+    {
+      "name": "",
+      "description": ""
+    }
+  ],
+
+  "excludedInfo": [
+    {
+      "name": "관세",
+      "description": "실비청구. 약 $500~1,000정도 발생"
+    },
+    {
+      "name": "창고료, 컨테이너이전료, 검역비BAF/CAF 등별도",
+      "description": ""
+    }
+  ],
+
+  "DATA BASE": {
+    "description": "2025.1.1~2025.12.31 타리프"
+  },
+
+  "화폐단위": "$",
+
+  "basic-cost-1": {
+    "name": "ISC",
+    "description": "대략적인 금액. CNY 1660/2900",
+    "NonDiplomat": {
+      "20DRY": 230,
+      "40HC": 400
+    }
+  },
+
+  "basic-cost-2": {
+    "name": "STORAGE CHARGE",
+    "description": "정확한 비용 확인 불가, 통상적인 금액",
+    "NonDiplomat": {
+      "20DRY":25,
+      "40HC": 50
+    }
+  },
+
+  "basic-cost-3": {
+    "name": "LSS",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY":140,
+      "40HC": 180
+    }
+  },
+
+
+  "basic-cost-4": {
+    "name": "SHC",
+    "description": "대략적인 금액",
+    "NonDiplomat": {
+      "20DRY":70,
+      "40HC": 100
+    }
+  },
+
+  "extra-cost-1": {
+    "name": "FULL SETTING",
+    "description": "",
+    "20DRY": "$200~$250",
+    "40HC": "$400~$450"
+  },
+
+  "STAIR CHARGE": {
+    "description": "미확인",
+    "CBM단가": 0
+  },
+
+  "HEAVY ITEM": {
+    "description": "미확인",
+    "단위": "ITEM",
+    "단가": 0
+  },
+
+  "STORAGE CHARGE": {
+    "description": "미확인",
+    "단위": "주",
+    "무료 보관 기간": 0,
+    "보관 비용": {
+      "20DRY": 0,
+      "40HC": 0,
+      "단가": 0,
+      "CBM 범위": {
+        "1-10": 0,
+        "11-15": 0,
+        "16-20": 0,
+        "21-25": 0,
+        "26-30": 0,
+        "31-35": 0,
+        "36-60": 0
+      }
+    }
+  }
 }
+
