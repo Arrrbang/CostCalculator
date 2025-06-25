@@ -41,7 +41,7 @@ async function fetchMapInfo(fullPath) {
   if (parts.length < 2) return null;
 
   const regionFolder = parts[1]; // 예: "WestAsia"
-  const mapJsonUrl = `https://arrrbang.github.io/CostCalculator/mappage/${regionFolder}.json`;
+  const mapJsonUrl = `https://arrrbang.github.io/CostCalculator/DestinationCostEstimator/mappage/${regionFolder}.json`;
 
   try {
     const res = await fetch(mapJsonUrl);
@@ -147,7 +147,7 @@ async function updateAllInfo() {
   } else {
     console.warn("📭 No matching mappage entry found for path:", path);
   }
-    const basePath = "https://arrrbang.github.io/CostCalculator";
+    const basePath = "https://arrrbang.github.io/CostCalculator/DestinationCostEstimator";
     const tableJsonPath = `${basePath}/${path}/poeis${poeValue}_tariff.json`;
     const modifiedPath = path.replace(/\/[^/]+\/?$/, "");
     const extraCostJsonPath = `${basePath}/${modifiedPath}/poeis${poeValue}_extracost.json`;
@@ -319,7 +319,7 @@ async function fetchData() {
     }
 
 
-    const basePath = "https://arrrbang.github.io/CostCalculator";
+    const basePath = "https://arrrbang.github.io/CostCalculator/DestinationCostEstimator";
     const tableJsonPath = `${basePath}/${path}/poeis${poeValue}_tariff.json`;
     const modifiedPath = path.replace(/\/[^/]+\/?$/, "");
     const extraCostJsonPath = `${basePath}/${modifiedPath}/poeis${poeValue}_extracost.json`;
