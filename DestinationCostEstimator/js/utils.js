@@ -92,9 +92,15 @@ function renderPodTT (ofcData) {
   const listIncheon = document.getElementById("podincheon");
   if (!listBusan || !listIncheon || !ofcData) return;
 
+     const normalizeTT = (tt) => {
+       if (!tt) return "";
+       if (tt.startsWith("T/T")) return tt;
+       return `T/T ${tt} days`;            
+     };
+   
   const makeLi = ({name="", tt="", note=""}) =>
-    `<li>${name} : ${tt}${note ? `<br><span class="note">${note}</span>`: ""}</li>`;
-
+    `<li>${name} : ${normalizeTT(tt)}${note ? `<br><span class="note">${note}</span>`: ""}</li>`;
+   
   listBusan.innerHTML   = Object.values(ofcData.busan   || {}).map(makeLi).join("");
   listIncheon.innerHTML = Object.values(ofcData.incheon || {}).map(makeLi).join("");
 }
