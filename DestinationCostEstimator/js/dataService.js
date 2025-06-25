@@ -9,7 +9,7 @@ async function fetchMapInfo (fullPath) {
   if (parts.length < 2) return null;
 
   const regionFolder = parts[1];
-  const mapJsonUrl   = `https://arrrbang.github.io/CostCalculator/mappage/${regionFolder}.json`;
+  const mapJsonUrl   = `https://arrrbang.github.io/CostCalculator/DestinationCostEstimator/mappage/${regionFolder}.json`;
 
   try {
     const res = await fetch(mapJsonUrl);
@@ -100,7 +100,7 @@ async function fetchData () {
     const poe  = poeDropdown.value;
     if (!path || !poe) return;
 
-    const basePath       = "https://arrrbang.github.io/CostCalculator";
+    const basePath       = "https://arrrbang.github.io/CostCalculator/DestinationCostEstimator";
     const tariffURL      = `${basePath}/${path}/poeis${poe}_tariff.json`;
     const modifiedPath   = path.replace(/\/[^/]+\/?$/,"");
     const extraCostURL   = `${basePath}/${modifiedPath}/poeis${poe}_extracost.json`;
@@ -151,7 +151,7 @@ async function updateAllInfo () {
     document.getElementById("partner-result").innerText          = mapInfo.partner;
   }
 
-  const basePath     = "https://arrrbang.github.io/CostCalculator";
+  const basePath     = "https://arrrbang.github.io/CostCalculator/DestinationCostEstimator";
   const tariffURL    = `${basePath}/${path}/poeis${poe}_tariff.json`;
   const extraCostURL = `${basePath}/${path.replace(/\/[^/]+\/?$/,"")}/poeis${poe}_extracost.json`;
 
