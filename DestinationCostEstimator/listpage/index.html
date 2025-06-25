@@ -217,23 +217,23 @@
 // 여러 개의 JSON 파일을 로드하는 함수
 const fetchLocations = async () => {
   const jsonFiles = [
-    '/CostCalculator/mappage/EastAsia.json',        // 동아시아
-    '/CostCalculator/mappage/SoutheastAsia.json',   // 동남아시아
-    '/CostCalculator/mappage/SouthAsia.json',       // 남아시아
-    '/CostCalculator/mappage/CentralAsia.json',     // 중앙아시아
-    '/CostCalculator/mappage/WestAsia.json',        // 서아시아
-    '/CostCalculator/mappage/EastAfrica.json',      // 동아프리카
-    '/CostCalculator/mappage/WestAfrica.json',      // 서아프리카
-    '/CostCalculator/mappage/NorthAfrica.json',     // 북아프리카
-    '/CostCalculator/mappage/SouthAfrica.json',     // 남아프리카
-    '/CostCalculator/mappage/NorthernEurope.json',  // 북유럽
-    '/CostCalculator/mappage/SouthernEurope.json',  // 남유럽
-    '/CostCalculator/mappage/EasternEurope.json',   // 동유럽
-    '/CostCalculator/mappage/WesternEurope.json',   // 서유럽
-    '/CostCalculator/mappage/NorthAmerica.json',    // 북아메리카
-    '/CostCalculator/mappage/CentralAmerica.json',  // 중앙아메리카
-    '/CostCalculator/mappage/SouthAmerica.json',    // 남아메리카
-    '/CostCalculator/mappage/Oceania.json'          // 오세아니아
+    '/CostCalculator/DestinationCostEstimator/mappage/EastAsia.json',        // 동아시아
+    '/CostCalculator/DestinationCostEstimator/mappage/SoutheastAsia.json',   // 동남아시아
+    '/CostCalculator/DestinationCostEstimator/mappage/SouthAsia.json',       // 남아시아
+    '/CostCalculator/DestinationCostEstimator/mappage/CentralAsia.json',     // 중앙아시아
+    '/CostCalculator/DestinationCostEstimator/mappage/WestAsia.json',        // 서아시아
+    '/CostCalculator/DestinationCostEstimator/mappage/EastAfrica.json',      // 동아프리카
+    '/CostCalculator/DestinationCostEstimator/mappage/WestAfrica.json',      // 서아프리카
+    '/CostCalculator/DestinationCostEstimator/mappage/NorthAfrica.json',     // 북아프리카
+    '/CostCalculator/DestinationCostEstimator/mappage/SouthAfrica.json',     // 남아프리카
+    '/CostCalculator/DestinationCostEstimator/mappage/NorthernEurope.json',  // 북유럽
+    '/CostCalculator/DestinationCostEstimator/mappage/SouthernEurope.json',  // 남유럽
+    '/CostCalculator/DestinationCostEstimator/mappage/EasternEurope.json',   // 동유럽
+    '/CostCalculator/DestinationCostEstimator/mappage/WesternEurope.json',   // 서유럽
+    '/CostCalculator/DestinationCostEstimator/mappage/NorthAmerica.json',    // 북아메리카
+    '/CostCalculator/DestinationCostEstimator/mappage/CentralAmerica.json',  // 중앙아메리카
+    '/CostCalculator/DestinationCostEstimator/mappage/SouthAmerica.json',    // 남아메리카
+    '/CostCalculator/DestinationCostEstimator/mappage/Oceania.json'          // 오세아니아
   ];
 
   try {
@@ -277,7 +277,7 @@ let countryTranslations = {};
 
 const loadCountryTranslations = async () => {
   try {
-    const response = await fetch('/CostCalculator/listpage/countryname.json');
+    const response = await fetch('/CostCalculator/DestinationCostEstimator/listpage/countryname.json');
     if (!response.ok) throw new Error("국가 이름 데이터를 불러오지 못했습니다.");
     countryTranslations = await response.json();
   } catch (error) {
@@ -378,7 +378,7 @@ const initializePage = async () => {
               alert("회사를 선택해주세요.");
               return;
             }
-            window.location.href = `/CostCalculator/home.html?path=${encodeURIComponent(selectedPath)}`;
+            window.location.href = `/CostCalculator/DestinationCostEstimator/home.html?path=${encodeURIComponent(selectedPath)}`;
           };
         });
 
