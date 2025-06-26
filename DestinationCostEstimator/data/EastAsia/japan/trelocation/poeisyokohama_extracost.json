@@ -1,15 +1,76 @@
 {
-    "links": [
-        {
-            "label": "OFC",
-            "url": "https://www.notion.so/YOKOHAMA-1990b10191ce800fba89f31cada2c5a7?pvs=4"
-        },
-        {
-            "label": "NOTION",
-            "url": "https://www.notion.so/T-RELOCATION-CO-LTD-1b30b10191ce808797cfd01a3d925b5b"
-        }
-    ],
-  
+  "links": [
+    { "label": "busanOFC",    "url": "https://www.notion.so/YOKOHAMA-1990b10191ce8002b79de10af1523941?source=copy_link" },
+    { "label": "incheonOFC",  "url": "https://www.notion.so/YOKOHAMA-1990b10191ce800fba89f31cada2c5a7?source=copy_link" },
+    { "label": "partnerInfo", "url": "https://www.notion.so/T-RELOCATION-CO-LTD-1b30b10191ce808797cfd01a3d925b5b?source=copy_link" }
+  ],
+
+  "ofc": {
+	  "notion_OFC": "인천",
+    "busan": {
+      "shipping-line1": {
+        "name": "KMTC",
+        "tt": "3",
+        "note": ""
+      },
+      "shipping-line2": {
+        "name": "NAMSUNG",
+        "tt": "3",
+        "note": ""
+      }
+    },
+    "incheon": {
+      "shipping-line1": {
+        "name": "KMTC",
+        "tt": "5",
+        "note": ""
+      }
+    }
+  },
+
+  "additional-info": [
+    {
+      "name": "20FT 단독 컨테이너의 경우 고정비용",
+      "description": "20ft 단독인데 사이즈가 작을 경우 별도 문의 필요.\n10cbm 이상은 모두 고정값."
+    },
+    {
+      "name": "콘솔의 경우 1인 명의로 통관 진행",
+      "description": "특별한 사유가 없는 이상 1인 명의로 통관을 진행하는 것이 저렴함"
+    },
+    {
+      "name": "장식장, 옷장 등 가구 안에 과다한 중량의 화물을 넣은 후 포장은 삼가해 주시기 바랍니다",
+      "description": ""
+    }
+  ],
+
+
+  "excludedInfo": [
+    {
+      "name": "새 화물은 조립서비스 대상 제외입니다.",
+      "description": ""
+    },
+    {
+      "name": "기본셋팅이며, 맨션의 경우는 엘리베이터 사용시의 금액입니다.",
+      "description": ""
+    },
+    {
+      "name": "피아노, 계단작업, 화물의 특이사항등으로 인한 별도 작업시에는 추가비용이 발생됩니다",
+      "description": ""
+    },
+    {
+      "name": "배송시 발생되는 주차 요금은 별도 청구입니다.",
+      "description": ""
+    },
+    {
+      "name": "세관 검사비, 세금은 포함되어 있지 않습니다.",
+      "description": ""
+    }
+  ],
+
+  "DATA BASE": {
+    "description": "2024.06.01 입항부터 적용"
+  },
+
   "화폐단위": "¥",
 
   "basic-cost-1": {
@@ -68,50 +129,25 @@
     "20DRY": "인건비 ¥15,000+LOC ¥15,000"
   },
 
+
   "STAIR CHARGE": {
     "description": "2층은 무료, 3층 부터 비용 발생\n1-3cbm : ¥10,000\n 4-9cbm : ¥20,000\n10-19cbm : ¥30,000\n 20cbm : 45,000\n4층이상 : 3층 금액+4층부터 각층당 ¥10,000",
     "CBM단가": 0
   },
+
   "HEAVY ITEM": {
     "description": "돌침대, 대리석 등",
     "단위": "ITEM",
-    "단가": "업체 별도 문의"
+    "단가": "별도 문의"
   },
+
   "STORAGE CHARGE": {
-    "description": "30일 무료 보관 진행",
-    "단위": "일",
-    "무료 보관 기간": 30,
-    "보관 비용 단가": 200
-  },
-    "STORAGE CHARGE": {
     "description": "30일 무료 보관 진행",
     "단위": "일",
     "무료 보관 기간": 30,
     "보관 비용": {
       "단가": 200
     }
-  },
-	"additional-info": [
-	  {
-	    "name": "20FT 단독 컨테이너의 경우 고정비용",
-	    "description": "20ft 단독인데 사이즈가 작을 경우 별도 문의 필요.\n10cbm 이상은 모두 고정값."
-	  },
-	  {
-	    "name": "콘솔의 경우 1인 명의로 통관 진행",
-	    "description": "특별한 사유가 없는 이상 1인 명의로 통관을 진행하는 것이 저렴함"
-	  },
-	  {
-	    "name": "사용 가능 선사",
-	    "description": "부산발 - KMTC/NAMSUNG : T/T 3 DAYS\n인천발 - KMTC/NAMSUNG : T/T 5 DAYS"
-	  }
-	],
-	"excludedInfo": [
-	  {
-	    "name": "주의사항",
-	    "description": "새 화물은 조립서비스 대상 제외입니다.\n장식장, 옷장 등 가구 안에 과다한 중량의 화물을 넣은 후 포장은 삼가해 주시기 바랍니다\n기본셋팅이며, 맨션의 경우는 엘리베이터 사용시의 금액입니다.\n피아노, 계단작업, 화물의 특이사항등으로 인한 별도 작업시에는 추가비용이 발생됩니다.\n배송시 발생되는 주차 요금은 별도 청구입니다. \n세관 검사비, 세금은 포함되어 있지 않습니다."
-	  }
-	],
-  "DATA BASE": {
-	  "description": "2024.06.01 입항부터 적용"
   }
 }
+
