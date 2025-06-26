@@ -1,125 +1,141 @@
 {
-    "links": [
-        {
-            "label": "INCHEON OFC",
-            "url": "https://www.notion.so/HONG-KONG-1990b10191ce80b9aa35e180d853eccc?pvs=4"
-        },
-        {
-            "label": "NOTION",
-            "url": "https://www.notion.so/UNI-WORLD-TRANS-CO-LTD-1dc0b10191ce80fdaa33f468109bb879"
-        }
-    ],
-    "화폐단위": "$",
-  
-    "basic-cost-1": {
-        "name": "THC",
-        "description": "",
-        "NonDiplomat": {
-            "20DRY": 435,
-            "40HC": 750
-        },
-        "Diplomat": {
-            "CONSOLE": "별도문의",
-            "20DRY": "별도문의",
-            "40HC": "별도문의"
-        }
-    },
-    "basic-cost-2": {
-        "name": "Haulage",
-        "description": "",
-        "NonDiplomat": {
-            "20DRY": 400,
-            "40HC": 500
-        },
-        "Diplomat": {
-            "CONSOLE": "별도문의",
-            "20DRY": "별도문의",
-            "40HC": "별도문의"
-        }
-    },
-    "basic-cost-3": {
-        "name": "Document Fee",
-        "description": "",
-        "NonDiplomat": {
-            "20DRY": 100,
-            "40HC": 100
-        },
-        "Diplomat": {
-            "CONSOLE": "별도문의",
-            "20DRY": "별도문의",
-            "40HC": "별도문의"
-        }
-    },
-    "extra-cost-1": {
-        "name": "FULL SETTING",
-        "description": "Minimum USD150.00 over 10cbm",
-            "20DRY": 300,
-            "40HC": 600
-        },
-    "extra-cost-2": {
-        "name": "WEEKEND CHARGE",
-        "description": "Saturday waive, Sunday working charge",
-            "20DRY": 400,
-            "40HC": 400
-        },
-    "extra-cost-3": {
-        "name": "LONG CARRY",
-        "description": "Minimum USD150, if volume over 10CBM Additional USD15/CBM",
-            "20DRY": 150,
-            "40HC": 150
-        },
-    "extra-cost-4": {
-        "name": "LONG CARRY",
-        "description": "Minimum USD150, if volume over 10CBM Additional USD15/CBM",
-            "20DRY": 150,
-            "40HC": 150
-        },
-    "extra-cost-5": {
-        "name": "INSPECTION FEE",
-        "description": "Handling charge",
-            "20DRY": 200,
-            "40HC": 350
-        },
-    "extra-cost-6": {
-        "name": "Wooden material disposal charge",
-        "description": "",
-            "20DRY": 50,
-            "40HC": 50
-        },
-    "extra-cost-7": {
-        "name": "PARKING PERMIT",
-        "description": "",
-            "20DRY": "$50-100",
-            "40HC": "$100-200"
-        },
-    "STAIR CHARGE": {
-        "description": "1-3/F USD500.00 20FT",
-        "CBM단가": 0
-    },
-    "HEAVY ITEM": {
-        "description": "10CBM 초과 시 면제, 10CBM 이하 USD150.00",
-        "단위": "ITEM",
-        "단가": 150
-    },
-    "STORAGE CHARGE": {
-        "description": "",
-        "단위": "개월",
-        "무료 보관 기간": 0,
-        "보관 비용": {
-          "20DRY": 0,
-          "40HC": 0,
-          "단가": 0
-        }
-    },
-    "additional-info-1": {
-        "name": "진행 전 확인 사항",
-        "description": ""
-    },
-    "additional-info-2": {
-        "name": "사용 가능 선사",
-        "description": "KMTC/NAMUSNG : T/T 3-4 DAYS(인천/부산 거의 동일)"
-    },
-    "DATA BASE": {
-  	  "description": "업데이트 : 2025.04.11\n기초자료 : 2025.05.15 Boarding 기준 신규 타리프"
+  "links": [
+    { "label": "busanOFC",    "url": "https://www.notion.so/HONG-KONG-1990b10191ce808f91f4ea36c2f34a7f?source=copy_link" },
+    { "label": "incheonOFC",  "url": "https://www.notion.so/HONG-KONG-1990b10191ce80b9aa35e180d853eccc?source=copy_link" },
+    { "label": "partnerInfo", "url": "https://www.notion.so/UNI-WORLD-TRANS-CO-LTD-1dc0b10191ce80fdaa33f468109bb879?source=copy_link" }
+  ],
+
+  "ofc": {
+	  "notion_OFC": "부산",
+    "busan": {
+      "shipping-line1": {
+        "name": "KMTC",
+        "tt": "3",
+        "note": ""
+      },
+      "shipping-line2": {
+        "name": "NAMUSNG",
+        "tt": "5",
+        "note": ""
+      }
     }
+  },
+
+  "DATA BASE": {
+    "description": "2025.05.15 Boarding 기준 신규 타리프"
+  },
+
+  "화폐단위": "$",
+
+  "basic-cost-1": {
+    "name": "THC",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY": 435,
+      "40HC": 750
+    },
+    "Diplomat": {
+      "20DRY":   "별도 문의",
+      "40HC":    "별도 문의"
+    }
+  },
+
+  "basic-cost-2": {
+    "name": "HAULAGE",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY": 400,
+      "40HC": 500
+    },
+    "Diplomat": {
+      "20DRY":   "별도 문의",
+      "40HC":    "별도 문의"
+    }
+  },
+
+  "basic-cost-3": {
+    "name": "DOCUMENT FEE",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY": 100,
+      "40HC": 100
+    },
+    "Diplomat": {
+      "20DRY":   "별도 문의",
+      "40HC":    "별도 문의"
+    }
+  },
+
+  "extra-cost-1": {
+    "name": "FULL SETTING",
+    "description": "Minimum USD150.00 over 10cbm",
+    "20DRY":   300,
+    "40HC":    600
+  },
+
+  "extra-cost-2": {
+    "name": "WEEKEND CHARGE",
+    "description": "Saturday waive, Sunday working charge",
+    "20DRY":   400,
+    "40HC":    400
+  },
+
+  "extra-cost-3": {
+    "name": "LONG CARRY",
+    "description": "Minimum USD150, if volume over 10CBM Additional USD15/CBM",
+    "20DRY":   150,
+    "40HC":    150
+  },
+
+  "extra-cost-4": {
+    "name": "INSPECTION FEE",
+    "description": "Handling charge",
+    "20DRY":   200,
+    "40HC":    350
+  },
+
+  "extra-cost-5": {
+    "name": "Wooden material disposal charge",
+    "description": "",
+    "20DRY":   50,
+    "40HC":    50
+  },
+
+    "extra-cost-6": {
+    "name": "PARKING PERMIT",
+    "description": "",
+    "20DRY":   "$50-100",
+    "40HC":    "$100-200"
+  },
+  "STAIR CHARGE": {
+    "description": "1-3/F USD500.00 20FT",
+    "CBM단가": 0
+  },
+
+  "HEAVY ITEM": {
+    "description": "10CBM 초과 시 면제, 10CBM 이하 USD150.00",
+    "단위": "ITEM",
+    "단가": 150
+  },
+
+  "STORAGE CHARGE": {
+    "description": "미확인",
+    "단위": "주",
+    "무료 보관 기간": 0,
+    "보관 비용": {
+      "20DRY": 0,
+      "40HC": 0,
+      "단가": 0,
+      "CBM 범위": {
+        "1-10": 0,
+        "11-15": 0,
+        "16-20": 0,
+        "21-25": 0,
+        "26-30": 0,
+        "31-35": 0,
+        "36-60": 0
+      }
+    }
+  }
 }
+

@@ -1,59 +1,80 @@
 {
-    "links": [
-        {
-            "label": "INCHEON OFC",
-            "url": "https://www.notion.so/HONG-KONG-1990b10191ce80b9aa35e180d853eccc?pvs=4"
-        },
-        {
-            "label": "NOTION",
-            "url": "https://www.notion.so/WAC-LOGISTICS-S-PTE-LIMITED-W-MOBILITY-LIMITED-REPS-WAC-1d80b10191ce80e9897df27c05b8023b"
-        }
-    ],
-    "화폐단위": "$",
-  
-    "extra-cost-1": {
-        "name": "Storage handling charge",
-        "description": "",
-            "CONSOLE": {"단가" : 10},
-            "20DRY": {"단가" : 10},
-            "40HC": {"단가" : 10}
-        },
-    "extra-cost-2": {
-        "name": "Disposal charge",
-        "description": "At cost, USD 150 Minimum charge",
-            "CONSOLE": "At Cost",
-            "20DRY": "At Cost",
-            "40HC": "At Cost"
-        },
-    "STAIR CHARGE": {
-        "description": "별도 문의",
-        "CBM단가": 0
-    },
-    "HEAVY ITEM": {
-        "description": "",
-        "단위": "ITEM",
-        "단가": 0
-    },
-    "STORAGE CHARGE": {
-        "description": "",
-        "단위": "일",
-        "무료 보관 기간": 30,
-        "보관 비용": {
-          "20DRY": 0,
-          "40HC": 0,
-          "단가": 0.8
-        }
-    },
-    "additional-info-1": {
-        "name": "포함/불포함 비용",
-        "description": "포함 비용 : THC, Haulage Doc, LSS charge, and Full setting charge \n불포함비용 : Shuttle, Wooden Box, Heavy Item(Piano, Treadmill), Stair, Long Carry, Handyman"
-    },
-    "additional-info-2": {
-        "name": "사용 가능 선사",
-        "description": "KMTC/NAMUSNG : T/T 3-4 DAYS(인천/부산 거의 동일)"
-    },
+  "links": [
+    { "label": "busanOFC",    "url": "https://www.notion.so/HONG-KONG-1990b10191ce808f91f4ea36c2f34a7f?source=copy_link" },
+    { "label": "incheonOFC",  "url": "https://www.notion.so/HONG-KONG-1990b10191ce80b9aa35e180d853eccc?source=copy_link" },
+    { "label": "partnerInfo", "url": "https://www.notion.so/WAC-LOGISTICS-S-PTE-LIMITED-W-MOBILITY-LIMITED-REPS-WAC-1d80b10191ce80e9897df27c05b8023b?source=copy_link" }
+  ],
 
-    "DATA BASE": {
-  	  "description": "업데이트 : 2025.04.21\n기초자료 : 2025년 신규 타리프"
+  "ofc": {
+	  "notion_OFC": "부산",
+    "busan": {
+      "shipping-line1": {
+        "name": "KMTC",
+        "tt": "3",
+        "note": ""
+      },
+      "shipping-line2": {
+        "name": "NAMUSNG",
+        "tt": "5",
+        "note": ""
+      }
     }
+  },
+
+  "includedInfo": [
+    {
+      "name": "THC, Haulage Doc, LSS charge, and Full setting charge",
+      "description": ""
+    }
+  ],
+
+  "excludedInfo": [
+    {
+      "name": "Shuttle, Wooden Box, Heavy Item(Piano, Treadmill), Stair, Long Carry, Handyman",
+      "description": ""
+    }
+  ],
+
+  "DATA BASE": {
+    "description": "2025년 신규 타리프"
+  },
+
+  "화폐단위": "$",
+
+  "extra-cost-1": {
+    "name": "Storage handling charge",
+    "description": "",
+    "CONSOLE": { "단가": 10 },
+    "20DRY":   { "단가": 10 },
+    "40HC":    { "단가": 10 }
+  },
+
+  "extra-cost-2": {
+    "name": "Disposal charge",
+    "description": "At cost, USD 150 Minimum charge",
+    "CONSOLE": "At Cost",
+    "20DRY":   "At Cost",
+    "40HC":    "At Cost"
+  },
+
+  "STAIR CHARGE": {
+    "description": "별도 문의",
+    "CBM단가": 0
+  },
+
+  "HEAVY ITEM": {
+    "description": "",
+    "단위": "ITEM",
+    "단가": 0
+  },
+
+  "STORAGE CHARGE": {
+    "description": "미확인",
+    "단위": "주",
+    "무료 보관 기간": 30,
+    "보관 비용": {
+      "단가": 0.8
+    }
+  }
 }
+
