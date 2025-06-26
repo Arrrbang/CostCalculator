@@ -478,5 +478,16 @@
         "color": "blue"
       }
     ]
+  },
+  {
+    "name": "Dili, Timor‑Leste",
+    "lat": -8.55861,
+    "lng": 125.57361,
+    "links": [
+      {
+        "type": "JVK-NAGA MOVERS LTD.",
+        "path": "data/SoutheastAsia/timor_leste/jvk/dili"
+      }
+    ]
   }
 ]
