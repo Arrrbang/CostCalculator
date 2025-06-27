@@ -1,0 +1,144 @@
+{
+  "links": [
+    { "label": "busanOFC",    "url": "" },
+    { "label": "incheonOFC",  "url": "" },
+    { "label": "partnerInfo", "url": "https://www.notion.so/JVK-NAGA-MOVERS-LTD-1f20b10191ce806c9c25f36a14b372ea?source=copy_link" }
+  ],
+
+  "ofc": {
+	  "notion_OFC": "부산",
+    "busan": {
+      "shipping-line1": {
+        "name": "MARIANA/CMA CGM",
+        "tt": "25",
+        "note": "DILI항 서비스를 Swire, Mariana, CMA/CGM에서만 제공함"
+      }
+    }
+  },
+
+  "includedInfo": [
+    {
+      "name": "PORT CHARGE, INSPECTION FEE, STAIR CHARGE, PARKING PERMIT",
+      "description": ""
+    }
+  ],
+
+  "excludedInfo": [
+    {
+      "name": "BANK FEE $25",
+      "description": ""
+    }
+  ],
+
+  "DATA BASE": {
+    "description": "2024.10 이트너스 비딩조사"
+  },
+
+  "화폐단위": "$",
+
+  "basic-cost-1": {
+    "name": "THC",
+    "description": "대략적인 비용",
+    "NonDiplomat": {
+      "20DRY":   600,
+      "40HC":    1000
+    },
+    "Diplomat": {
+      "20DRY":   600,
+      "40HC":    1000
+    }
+  },
+
+  "basic-cost-2": {
+    "name": "DRAYAGE CHARGE",
+    "description": "대략적인 비용",
+    "NonDiplomat": {
+      "20DRY":   500,
+      "40HC":    1000
+    },
+    "Diplomat": {
+      "20DRY":   500,
+      "40HC":    1000
+    }
+  },
+
+  "basic-cost-3": {
+    "name": "CUSTOM CLEARANCE FEE",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY":   350,
+      "40HC":    350
+    },
+    "Diplomat": {
+      "20DRY":   350,
+      "40HC":    350
+    }
+  },
+
+  "extra-cost-1": {
+    "name": "FULL SETTING",
+    "description": "",
+    "20DRY":   { "단가": 25 },
+    "40HC":    { "단가": 25 }
+  },
+
+  "extra-cost-2": {
+    "name": "WEEKEND CHARGE",
+    "description": "",
+    "20DRY":   { "단가": 25 },
+    "40HC":    { "단가": 25 }
+  },
+
+  "extra-cost-3": {
+    "name": "SHUTTLE CHARGE",
+    "description": "",
+    "20DRY":   { "단가": 25 },
+    "40HC":    { "단가": 25 }
+  },
+
+  "extra-cost-4": {
+    "name": "LONG CARRY CHARGE",
+    "description": "",
+    "20DRY":   { "단가": 25 },
+    "40HC":    { "단가": 25 }
+  },
+
+  "extra-cost-5": {
+    "name": "UPLIGHT PIANO",
+    "description": "",
+    "20DRY":   200,
+    "40HC":    200
+  },
+
+  "STAIR CHARGE": {
+    "description": "포함됨",
+    "CBM단가": 0
+  },
+
+  "HEAVY ITEM": {
+    "description": "",
+    "단위": "CBM",
+    "단가": 100
+  },
+
+  "STORAGE CHARGE": {
+    "description": "미확인",
+    "단위": "주",
+    "무료 보관 기간": 0,
+    "보관 비용": {
+      "20DRY": 0,
+      "40HC": 0,
+      "단가": 0,
+      "CBM 범위": {
+        "1-10": 0,
+        "11-15": 0,
+        "16-20": 0,
+        "21-25": 0,
+        "26-30": 0,
+        "31-35": 0,
+        "36-60": 0
+      }
+    }
+  }
+}
+
