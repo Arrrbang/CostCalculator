@@ -50,6 +50,32 @@
         }
       }
     },
+    "ATLANTA":{
+      "OFC":{
+        "AMS": {"CURRENCY": "USD", "CASE": 35},
+        "THC": {"CURRENCY": "KRW", "COST": 210000},
+        "DOC": {"CURRENCY": "KRW", "COST": 50000},
+        "SLC": {"CURRENCY": "KRW", "COST": 10000},
+        "WFC": {"CURRENCY": "KRW", "COST": 8858},
+        "PFS": {"CURRENCY": "KRW", "COST": 172},
+        "PSM": {"CURRENCY": "KRW", "COST": 502},
+        "TRC": {"CURRENCY": "KRW", "COST": 780000}
+      },
+      "partner":{
+        "SOS" : {"drayage": 1055, "devaning": 300},
+        "KT" : {"drayage": 1100, "devaning": 300},
+        "PLS(예스지투엠)" : {"drayage": 0, "devaning": 300}
+        },
+      "console":{
+        "PLS(예스지투엠)":{
+          "THC": {"CURRENCY": "KRW", "단가": 3400},
+          "WFC": {"CURRENCY": "KRW", "단가": 192},
+          "AMS": {"CURRENCY": "USD", "CASE": 15},
+          "DOC": {"CURRENCY": "KRW", "CASE": 50000},
+          "TRC": {"CURRENCY": "KRW", "단가": 17000}
+        }
+      }
+    },
     "lOS ANGELES":{
       "OFC":{
         "AMS": {"CURRENCY": "USD", "CASE": 35},
@@ -62,7 +88,8 @@
         "TRC": {"CURRENCY": "KRW", "COST": 780000}
       },
       "partner":{
-        "HI-TEK" : {"drayage": 0, "devaning": 0}
+        "HI-TEK" : {"drayage": 0, "devaning": 0},
+        "PLS" : {"drayage": 0, "devaning": 0}
         },
       "console":{
         "YESG2M(PLS)":{
