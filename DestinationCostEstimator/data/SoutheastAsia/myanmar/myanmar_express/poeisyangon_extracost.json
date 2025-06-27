@@ -1,63 +1,89 @@
 {
-    "links": [
-        {
-            "label": "OFC",
-            "url": ""
-        },
-        {
-            "label": "NOTION",
-            "url": "https://www.notion.so/MYANMAR-EXPRESS-INT-L-MOVING-SERVICES-CO-LTD-1f20b10191ce80f2a28fe766ac4bf9fb"
-        }
-    ],
-    "화폐단위": "$",
-  
-    "basic-cost-1": {
-        "name": "THC & shipping line release order fees",
-        "description": "",
-        "NonDiplomat": {
-            "20DRY": 50,
-            "40HC": 50
-        },
-        "Diplomat": {
-            "20DRY": "미확인",
-            "40HC": "미확인"
-        }
-    },
-    "extra-cost-1": {
-        "name": "Custom inspection",
-        "description": "검사 있을 경우 발생",
-            "20DRY": 50,
-            "40HC": 50
-        },
-    "STAIR CHARGE": {
-        "description": "미확인",
-        "CBM단가": 0
-    },
-    "HEAVY ITEM": {
-        "description": "미확인",
-        "단위": "ITEM",
-        "단가": 0
-    },
-    "STORAGE CHARGE": {
-        "description": "미확인",
-        "단위": "개월",
-        "무료 보관 기간": 0,
-        "보관 비용": {
-          "20DRY": 0,
-          "40HC": 0,
-          "단가": 0
-        }
-    },
-    "additional-info-1": {
-        "name": "진행 전 확인 사항",
-        "description": ""
-    },
-    "additional-info-2": {
-        "name": "사용 가능 선사",
-        "description": "HMM : T/T 30 DAYS"
-    },
+  "links": [
+    { "label": "busanOFC",    "url": "" },
+    { "label": "incheonOFC",  "url": "" },
+    { "label": "partnerInfo", "url": "https://www.notion.so/MYANMAR-EXPRESS-INT-L-MOVING-SERVICES-CO-LTD-1f20b10191ce80f2a28fe766ac4bf9fb?source=copy_link" }
+  ],
 
-    "DATA BASE": {
-  	  "description": "업데이트 : 2025.05\n기초자료 : 2025.05 수취 타리프"
+  "ofc": {
+	  "notion_OFC": "",
+    "busan": {
+      "shipping-line1": {
+        "name": "SITC/PIL/HMM/YML",
+        "tt": "20~30",
+        "note": "보통 1 T/S"
+      }
+    },
+    "incheon": {
+      "shipping-line1": {
+        "name": "NAMSUNG/PIL/YML/SITC",
+        "tt": "30",
+        "note": "보통 1 T/S"
+      }
     }
+  },
+
+  "DATA BASE": {
+    "description": "Rate valid until December 2025"
+  },
+
+  "화폐단위": "$",
+
+  "basic-cost-1": {
+    "name": "THC & shipping line release order fees",
+    "description": "대략적인 비용",
+    "NonDiplomat": {
+      "20DRY":   50,
+      "40HC":    50
+    },
+    "Diplomat": {
+      "20DRY":   50,
+      "40HC":    50
+    }
+  },
+
+  "basic-cost-2": {
+    "name": "Custom inspection",
+    "description": "",
+    "NonDiplomat": {
+      "20DRY":   50,
+      "40HC":    50
+    },
+    "Diplomat": {
+      "20DRY":   50,
+      "40HC":    50
+    }
+  },
+
+  "STAIR CHARGE": {
+    "description": "미확인",
+    "CBM단가": 0
+  },
+
+  "HEAVY ITEM": {
+    "description": "미확인",
+    "단위": "ITEM",
+    "단가": ""
+  },
+
+  "STORAGE CHARGE": {
+    "description": "미확인",
+    "단위": "주",
+    "무료 보관 기간": 0,
+    "보관 비용": {
+      "20DRY": 0,
+      "40HC": 0,
+      "단가": 0,
+      "CBM 범위": {
+        "1-10": 0,
+        "11-15": 0,
+        "16-20": 0,
+        "21-25": 0,
+        "26-30": 0,
+        "31-35": 0,
+        "36-60": 0
+      }
+    }
+  }
 }
+
