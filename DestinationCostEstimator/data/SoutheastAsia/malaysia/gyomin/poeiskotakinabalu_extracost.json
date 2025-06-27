@@ -1,86 +1,103 @@
 {
-    "links": [
-        {
-            "label": "OFC",
-            "url": ""
-        },
-        {
-            "label": "NOTION",
-            "url": "https://www.notion.so/GYOMIN-SDN-BHD-1f20b10191ce80108f40f752112e69eb"
-        }
-    ],
-    "화폐단위": "$",
-  
-    "basic-cost-1": {
-        "name": "THC",
-        "description": "",
-        "NonDiplomat": {
-            "CONSOLE": "INCLUDED",
-            "20DRY": "INCLUDED",
-            "40HC": "INCLUDED"
-        },
-        "Diplomat": {
-            "CONSOLE": "INCLUDED",
-            "20DRY": "INCLUDED",
-            "40HC": "INCLUDED"
-        }
-    },
-    "extra-cost-1": {
-        "name": "FULL SETTING",
-        "description": "",
-            "CONSOLE": "별도 문의",
-            "20DRY": 300,
-            "40HC": 400
-        },
-    "extra-cost-2": {
-        "name": "LONG CARRY",
-        "description": "",
-            "CONSOLE": "별도 문의",
-            "20DRY": 150,
-            "40HC": 150
-        },
-    "extra-cost-3": {
-        "name": "UPLIGHT PIANO",
-        "description": "",
-            "CONSOLE": 100,
-            "20DRY": 100,
-            "40HC": 100
-        },
-    "extra-cost-4": {
-        "name": "WOODEN BOX CHARGE",
-        "description": "",
-            "CONSOLE": 100,
-            "20DRY": 100,
-            "40HC": 100
-        },
-    "STAIR CHARGE": {
-        "description": "20FT : $100/FLOOR \n40HC : 2층-$200, 3층-$350",
-        "CBM단가": 0
-    },
-    "HEAVY ITEM": {
-        "description": "피아노, 금고, 돌침대, 흙침대, 마블식탁등 헤비 아이템, 까다로운 장롱조립 등",
-        "단위": "ITEM",
-        "단가": 100
-    },
-    "STORAGE CHARGE": {
-        "description": "",
-        "단위": "일괄",
-        "무료 보관 기간": 0,
-        "보관 비용": {
-          "20DRY": 150,
-          "40HC": 300
-        }
-    },
-    "additional-info-1": {
-        "name": "추가 정보",
-        "description": "주말 배송 불가"
-    },
-    "additional-info-2": {
-        "name": "사용 가능 선사",
-        "description": "PIL(항도부킹) : T/T 20 DAYS"
-    },
+  "links": [
+    { "label": "busanOFC",    "url": "" },
+    { "label": "incheonOFC",  "url": "" },
+    { "label": "partnerInfo", "url": "https://www.notion.so/GYOMIN-SDN-BHD-1f20b10191ce80108f40f752112e69eb?source=copy_link" }
+  ],
 
-    "DATA BASE": {
-  	  "description": "업데이트 : 2025.05\n기초자료 : 2024.07 타리프"
+  "ofc": {
+	  "notion_OFC": "",
+    "busan": {
+      "shipping-line1": {
+        "name": "PIL",
+        "tt": "20",
+        "note": "HONG KONG T/S 되는 경우도 있음"
+      }
+    },
+    "incheon": {
+      "shipping-line1": {
+        "name": "PIL",
+        "tt": "20",
+        "note": "SINGAPORE T/S "
+      }
     }
+  },
+
+  "additional-info": [
+    {
+      "name": "비용 관련",
+      "description": "40피트는 28CBM이상 되는 화주가 포함 되었을경우 40피트 요금 청구함\n27CBM이하는 콘솔가격 또는 20피트 요금만 청구함"
+    },
+    {
+      "name": "KOTA KINABLU, KUCHING, BINTULU, MIRI지역 사전 문의 필수",
+      "description": "주요도시 외에 배송이 어려운 지역이 있을 수 있음"
+    },
+    {
+      "name": "추가 발생되는 셔틀비는 없음. ",
+      "description": ""
+    }
+  ],
+
+  "includedInfo": [
+    {
+      "name": "검사비용",
+      "description": "2022년부터 모든 이사 컨테이너 의무 검사 진행"
+    }
+  ],
+
+  "DATA BASE": {
+    "description": "2024.07 타리프"
+  },
+
+  "화폐단위": "$",
+
+
+  "extra-cost-1": {
+    "name": "계단 비용",
+    "description": "일반주택 또는 복층콘도의 경우 계단을 이용한 운반시 추가 차지",
+    "20DRY":   "2층: $100 / 3층: $200",
+    "40HC":    "2층: $200 / 3층: $350"
+  },
+
+  "extra-cost-2": {
+    "name": "FULL SETTING",
+    "description": "화주분이 지정한 곳에 박스 해체 정리 서비스 차지\n(KL지역은 전문 정리 메이드 투입 2023년부터)",
+    "20DRY":   300,
+    "40HC":    400
+  },
+
+  "extra-cost-3": {
+    "name": "우든 케이스 해체 비용",
+    "description": "나무상자이용시 해체 및 처리비용",
+    "20DRY":   "문의 필요",
+    "40HC":    "문의 필요"
+  },
+
+  "extra-cost-4": {
+    "name": "예외콘도",
+    "description": "아래의 콘도를 포함하여 차량진입이 불가한 콘도\nSeri maya condo, One central park, Mk28 Mont Kiara codo\nRAGRANDE Mont Kiara, PUTRI PALMA condo, I con residence condo\nSeni condo, Armanee Terrace condo, G Residence condo\nTropicana Avenue",
+    "20DRY":   150,
+    "40HC":    150
+  },
+  "STAIR CHARGE": {
+    "description": "",
+    "CBM단가": 0
+  },
+
+  "HEAVY ITEM": {
+    "description": "피아노, 금고, 돌침대, 흙침대, 마블식탁등 헤비 아이템, 까다로운 장롱조립, 등 각각 차지",
+    "단위": "ITEM",
+    "단가": 100
+  },
+
+  "STORAGE CHARGE": {
+    "description": "보관 기간 확인 필요",
+    "단위": "컨테이너",
+    "무료 보관 기간": 0,
+    "보관 비용": {
+      "20DRY": 150,
+      "40HC": 300
+    }
+  }
 }
+
