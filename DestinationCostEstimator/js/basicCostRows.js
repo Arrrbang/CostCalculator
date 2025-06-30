@@ -97,10 +97,15 @@ costKeys.forEach((key, idx) => {
       .forEach(el => el && el.addEventListener("change", recalc));
 
     recalc();
+  }
   
-    [diplomat, nonDiplomat].forEach(el => {
-      if (el) {
-        el.addEventListener("change", initAdditionalCosts);
-      }
-    });
+  [diplomat, nonDiplomat].forEach(el => {
+    if (el) {
+      el.addEventListener("change", () => {
+        initAdditionalCosts();  // 리스트 새로 그림
+        updateAllCosts();       // 전체 재계산
+      });
+    }
+  });
+
 })();
