@@ -88,6 +88,6 @@ costKeys.forEach((key, idx) => {
     [containerDropdown, dropdown, nonDiplomat, diplomat]
       .forEach(el => el && el.addEventListener("change", recalc));
 
-    recalc();
+    recalc();More actions
   }
 })();
