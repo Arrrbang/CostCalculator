@@ -97,5 +97,10 @@ costKeys.forEach((key, idx) => {
       .forEach(el => el && el.addEventListener("change", recalc));
 
     recalc();
-  }
+  
+    [diplomat, nonDiplomat].forEach(el => {
+      if (el) {
+        el.addEventListener("change", initAdditionalCosts);
+      }
+    });
 })();
