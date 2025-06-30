@@ -1,4 +1,4 @@
-/* -------------------------------------------------
+/* -------------------------------------------------More actions
    데이터 Fetch & 최초 초기화
 --------------------------------------------------*/
 "use strict";
@@ -115,9 +115,7 @@ async function fetchData () {
     basicExtraCost    = extraCostData;
     window.basicExtraCost = extraCostData;
     window.ofcOrigin = extraCostData.ofc?.notion_OFC || "";
-       if (diplomat?.checked || nonDiplomat?.checked) {
-     document.dispatchEvent(new Event("basicCostReady"));
-   }
+    document.dispatchEvent(new Event("basicCostReady"));
 
     dataNonDiplomat   = tariffData.nonDiplomat || {};
     dataDiplomat      = tariffData.diplomat    || {};
