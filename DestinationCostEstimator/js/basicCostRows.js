@@ -1,4 +1,4 @@
-//basic cost html 생성More actions
+//basic cost html 생성
 (function () {
   // 두 조건이 모두 충족될 때 init 실행
   let domReady    = false;
@@ -33,11 +33,19 @@
 
     container.innerHTML = "";
 
-
+  const isDiplomatSelected = diplomat?.checked;
 
   const costKeys = Object.keys(basicExtraCost)
-        .filter(key => /^basic-cost-\d+$/.test(key))       // ← basic-cost-숫자만
-        .sort((a, b) => {
+    .filter(key => {
+      const item = basicExtraCost[key];
+      if (!/^basic-cost-\d+$/.test(key)) return false;
+
+      // diplomat 체크되었는데 Diplomat 값이 없으면 제외
+      if (isDiplomatSelected && !item?.Diplomat) return false;
+
+      return true;
+    })
+    .sort((a, b) => {
       const ai = +(a.match(/\d+/) || [0])[0];
       const bi = +(b.match(/\d+/) || [0])[0];
       return ai - bi;
@@ -90,4 +98,13 @@ costKeys.forEach((key, idx) => {
 
     recalc();
   }
+  
+    [diplomat, nonDiplomat].forEach(el => {
+      if (el) {
+        el.addEventListener("change", () => {
+          initAdditionalCosts();  // 리스트 다시 그림
+          updateAllCosts();       // 전체 값 다시 계산
+        });
+      }
+    });
 })();

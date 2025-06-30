@@ -84,6 +84,9 @@ async function initializePoeDropdown (path) {
 function handlePoeChange () {
   if (poeDropdown.value) {
     fetchData().then(()=>{
+      // 🔔 basic cost 섹션 다시 생성하도록 강제 트리거
+      document.dispatchEvent(new Event("basicCostReady"));
+
       updateAllDiplomatSensitiveResults();
       const stairDescElem = document.getElementById("stair-description");
       if (stairDescElem) {
@@ -115,9 +118,7 @@ async function fetchData () {
     basicExtraCost    = extraCostData;
     window.basicExtraCost = extraCostData;
     window.ofcOrigin = extraCostData.ofc?.notion_OFC || "";
-       if (diplomat?.checked || nonDiplomat?.checked) {
-     document.dispatchEvent(new Event("basicCostReady"));
-   }
+    document.dispatchEvent(new Event("basicCostReady"));
 
     dataNonDiplomat   = tariffData.nonDiplomat || {};
     dataDiplomat      = tariffData.diplomat    || {};
