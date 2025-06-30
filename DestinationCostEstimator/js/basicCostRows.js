@@ -97,7 +97,9 @@ costKeys.forEach((key, idx) => {
     [diplomat, nonDiplomat].forEach(el => {
       if (el) {
         el.addEventListener("change", () => {
+          // 기본 비용 섹션 다시 생성
           initAdditionalCosts();
+          // 비용 전체 다시 계산
           updateAllCosts();
         });
       }
