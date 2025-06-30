@@ -34,10 +34,10 @@
     .filter(key => {
       const item = basicExtraCost[key];
       if (!/^basic-cost-\d+$/.test(key)) return false;
-
-      // diplomat 체크되었는데 Diplomat 값이 없으면 제외
+  
       if (isDiplomatSelected && !item?.Diplomat) return false;
-
+      if (!isDiplomatSelected && !item?.NonDiplomat) return false;
+  
       return true;
     })
     .sort((a, b) => {
