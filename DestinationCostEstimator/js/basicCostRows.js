@@ -20,11 +20,6 @@
     domReady = true;
   }
 
-  // 2) 데이터 준비(custom event)
-  document.addEventListener("basicCostReady", () => {
-    costReady = true;
-    tryInit();
-  }, { once: true });
 
   /* ---------------- 내부 함수 ---------------- */
   function initAdditionalCosts () {
