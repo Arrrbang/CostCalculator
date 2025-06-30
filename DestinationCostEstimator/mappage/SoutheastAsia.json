@@ -344,6 +344,11 @@
         "type": "MYANMAR EXPRESS",
         "path": "data/SoutheastAsia/myanmar/myanmar_express/yangon",
         "color": "blue"
+      },
+      {
+        "type": "Global Moving & Storage Ltd",
+        "path": "data/SoutheastAsia/myanmar/global_moving/yangon",
+        "color": "blue"
       }
     ]
   },

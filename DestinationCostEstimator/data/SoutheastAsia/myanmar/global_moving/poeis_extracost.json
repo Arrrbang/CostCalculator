@@ -1,0 +1,146 @@
+{
+  "links": [
+    { "label": "busanOFC",    "url": "" },
+    { "label": "incheonOFC",  "url": "" },
+    { "label": "partnerInfo", "url": "https://www.notion.so/GLOBAL-MOVING-STORAGE-LTD-1f20b10191ce8094904dd1149ecf79cf?source=copy_link" }
+  ],
+
+  "ofc": {
+	  "notion_OFC": "",
+    "busan": {
+      "shipping-line1": {
+        "name": "SITC/PIL/HMM/YML",
+        "tt": "20~30",
+        "note": "보통 1 T/S"
+      }
+    },
+    "incheon": {
+      "shipping-line1": {
+        "name": "NAMSUNG/PIL/YML/SITC",
+        "tt": "30",
+        "note": "보통 1 T/S"
+      }
+    }
+  },
+
+  "additional-info": [
+    {
+      "name": "별도 견적서 없음",
+      "description": "10/25CBM into 20DR, 40/50CBM into 40HC에 대한 견적서만 수취함\n 비용 차이가 크지 않아서 대부분 저 비용 내에서 해결될 것."
+    },
+    {
+      "name": "배송 전 송금 진행",
+      "description": "싱가포르 본사 계좌로 송금 진행. 미얀마로 송금 불가"
+    }
+  ],
+
+  "includedInfo": [
+    {
+      "name": "일반적인 미얀마 수입 통관 (중고 가사용품으로 통관)",
+      "description": ""
+    },
+    {
+      "name": "터미널에서 당사 창고까지의 운송 및 고객 자택(양곤 시내)까지 당사 트럭으로 재적재 후 배송",
+      "description": ""
+    },
+    {
+      "name": "개봉 서비스 및 당일 포장 잔재물 제거",
+      "description": ""
+    }
+  ],
+
+  "excludedInfo": [
+    {
+      "name": "관세 및 세금, 필수 수수료",
+      "description": ""
+    },
+    {
+      "name": "항만에서의 디머리지 및 디텐션 비용",
+      "description": ""
+    },
+    {
+      "name": "중량 화물 취급 수수료",
+      "description": ""
+    },
+    {
+      "name": "다중 배송비, 셔틀 서비스 비용",
+      "description": ""
+    },
+    {
+      "name": "2층까지의 배송, 행잉 서비스, 이케아 가구 조립 비용",
+      "description": ""
+    },
+    {
+      "name": "양곤 시 외 지역 배송(예: 푼할링, 탄린, 밍갈라돈 등)",
+      "description": ""
+    },
+    {
+      "name": "해외 송금 수수료",
+      "description": ""
+    },
+    {
+      "name": "외곽 항구로 빈 컨테이너 반납 비용",
+      "description": "20ft 컨테이너 기준: USD 100\n40ft 컨테이너 기준: USD 125"
+    }
+  ],
+
+  "DATA BASE": {
+    "description": "2025.06.27 문의"
+  },
+
+  "화폐단위": "$",
+
+  "basic-cost-1": {
+    "name": "DTHC&DO COLLECTION",
+    "description": "APPROX.",
+    "NonDiplomat": {
+      "20DRY":   50,
+      "40HC":    75
+    },
+    "Diplomat": {
+      "20DRY":   50,
+      "40HC":    75
+    }
+  },
+
+  "basic-cost-2": {
+    "name": "INSPECTION CHARGE",
+    "description": "If Non diplomatic shipment customs pre inspection charges",
+    "NonDiplomat": {
+      "20DRY":   300,
+      "40HC":    300
+    }
+  },
+
+  "STAIR CHARGE": {
+    "description": "미확인",
+    "CBM단가": 0
+  },
+
+  "HEAVY ITEM": {
+    "description": "미확인",
+    "단위": "ITEM",
+    "단가": 0
+  },
+
+  "STORAGE CHARGE": {
+    "description": "미확인",
+    "단위": "주",
+    "무료 보관 기간": 0,
+    "보관 비용": {
+      "20DRY": 0,
+      "40HC": 0,
+      "단가": 0,
+      "CBM 범위": {
+        "1-10": 0,
+        "11-15": 0,
+        "16-20": 0,
+        "21-25": 0,
+        "26-30": 0,
+        "31-35": 0,
+        "36-60": 0
+      }
+    }
+  }
+}
+
