@@ -1,4 +1,4 @@
-//basic cost html 생성
+//basic cost html 생성More actions
 (function () {
   // 두 조건이 모두 충족될 때 init 실행
   let domReady    = false;
@@ -20,6 +20,11 @@
     domReady = true;
   }
 
+  // 2) 데이터 준비(custom event)
+  document.addEventListener("basicCostReady", () => {
+    costReady = true;
+    tryInit();
+  }, { once: true });
 
   /* ---------------- 내부 함수 ---------------- */
   function initAdditionalCosts () {
@@ -28,19 +33,11 @@
 
     container.innerHTML = "";
 
-  const isDiplomatSelected = diplomat?.checked;
+
 
   const costKeys = Object.keys(basicExtraCost)
-    .filter(key => {
-      const item = basicExtraCost[key];
-      if (!/^basic-cost-\d+$/.test(key)) return false;
-  
-      if (isDiplomatSelected && !item?.Diplomat) return false;
-      if (!isDiplomatSelected && !item?.NonDiplomat) return false;
-  
-      return true;
-    })
-    .sort((a, b) => {
+        .filter(key => /^basic-cost-\d+$/.test(key))       // ← basic-cost-숫자만
+        .sort((a, b) => {
       const ai = +(a.match(/\d+/) || [0])[0];
       const bi = +(b.match(/\d+/) || [0])[0];
       return ai - bi;
@@ -93,15 +90,4 @@ costKeys.forEach((key, idx) => {
 
     recalc();
   }
-  
-    [diplomat, nonDiplomat].forEach(el => {
-      if (el) {
-        el.addEventListener("change", () => {
-          // 기본 비용 섹션 다시 생성
-          initAdditionalCosts();
-          // 비용 전체 다시 계산
-          updateAllCosts();
-        });
-      }
-    });
 })();

@@ -84,9 +84,6 @@ async function initializePoeDropdown (path) {
 function handlePoeChange () {
   if (poeDropdown.value) {
     fetchData().then(()=>{
-      // 🔔 basic cost 섹션 다시 생성하도록 강제 트리거
-      document.dispatchEvent(new Event("basicCostReady"));
-
       updateAllDiplomatSensitiveResults();
       const stairDescElem = document.getElementById("stair-description");
       if (stairDescElem) {
