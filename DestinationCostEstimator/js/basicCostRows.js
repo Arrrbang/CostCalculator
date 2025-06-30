@@ -99,13 +99,12 @@ costKeys.forEach((key, idx) => {
     recalc();
   }
   
-  [diplomat, nonDiplomat].forEach(el => {
-    if (el) {
-      el.addEventListener("change", () => {
-        initAdditionalCosts();  // 리스트 새로 그림
-        updateAllCosts();       // 전체 재계산
-      });
-    }
-  });
-
+    [diplomat, nonDiplomat].forEach(el => {
+      if (el) {
+        el.addEventListener("change", () => {
+          initAdditionalCosts();  // 리스트 다시 그림
+          updateAllCosts();       // 전체 값 다시 계산
+        });
+      }
+    });
 })();
