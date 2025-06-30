@@ -33,9 +33,19 @@
 
     container.innerHTML = "";
 
+  const isDiplomatSelected = diplomat?.checked;
+
   const costKeys = Object.keys(basicExtraCost)
-        .filter(key => /^basic-cost-\d+$/.test(key))       // ← basic-cost-숫자만
-        .sort((a, b) => {
+    .filter(key => {
+      const item = basicExtraCost[key];
+      if (!/^basic-cost-\d+$/.test(key)) return false;
+
+      // diplomat 체크되었는데 Diplomat 값이 없으면 제외
+      if (isDiplomatSelected && !item?.Diplomat) return false;
+
+      return true;
+    })
+    .sort((a, b) => {
       const ai = +(a.match(/\d+/) || [0])[0];
       const bi = +(b.match(/\d+/) || [0])[0];
       return ai - bi;
