@@ -118,7 +118,9 @@ async function fetchData () {
     basicExtraCost    = extraCostData;
     window.basicExtraCost = extraCostData;
     window.ofcOrigin = extraCostData.ofc?.notion_OFC || "";
-    document.dispatchEvent(new Event("basicCostReady"));
+       if (diplomat?.checked || nonDiplomat?.checked) {
+     document.dispatchEvent(new Event("basicCostReady"));
+   }
 
     dataNonDiplomat   = tariffData.nonDiplomat || {};
     dataDiplomat      = tariffData.diplomat    || {};
