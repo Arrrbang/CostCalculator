@@ -35,9 +35,9 @@
         },
     "extra-cost-2": {
         "name": "FULL SETTING",
-        "description": "",
-            "20DRY": {"단가": 8},
-            "40HC": {"단가": 8}
+        "description": "이트너스 비딩조사에 $8/CBM으로 왔는데, 실청구에서 $6/CBM으로 와서 적용함.",
+            "20DRY": {"단가": 6},
+            "40HC": {"단가": 6}
     },
     "extra-cost-3": {
         "name": "WEEKEND CHARGE",
@@ -47,9 +47,9 @@
     },
     "extra-cost-4": {
         "name": "SHUTTLE",
-        "description": "",
-            "20DRY": {"단가": 6},
-            "40HC": {"단가": 6}
+        "description": "이전에 $6/CBM 이었는데, 2025/7/4 인보이스에서 $7/CBM으로 확인됨.",
+            "20DRY": {"단가": 7},
+            "40HC": {"단가": 7}
     },
     "extra-cost-5": {
         "name": "UPLIGHT",
