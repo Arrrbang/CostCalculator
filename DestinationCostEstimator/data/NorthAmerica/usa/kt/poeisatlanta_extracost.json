@@ -57,9 +57,9 @@
     "name": "ISF & Customs Clearance Fee",
     "description": "",
     "NonDiplomat": {
-      "CONSOLE": 160,
-      "20DRY": 160,
-      "40HC": 160
+      "CONSOLE": 180,
+      "20DRY": 180,
+      "40HC": 180
     },
     "Diplomat": {
       "CONSOLE": "별도 문의",
